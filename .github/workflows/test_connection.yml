@@ -1,0 +1,94 @@
+name: Test Gmail Connection
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test-draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create test draft
+        uses: actions/github-script@v7
+        env:
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          GMAIL_SENDER_EMAIL: ${{ secrets.GMAIL_SENDER_EMAIL }}
+        with:
+          script: |
+            const https = require('https');
+
+            function httpsRequest(options, body) {
+              return new Promise((resolve, reject) => {
+                const req = https.request(options, (res) => {
+                  let data = '';
+                  res.on('data', (chunk) => data += chunk);
+                  res.on('end', () => resolve({ statusCode: res.statusCode, body: data }));
+                });
+                req.on('error', reject);
+                if (body) req.write(body);
+                req.end();
+              });
+            }
+
+            const tokenBody = new URLSearchParams({
+              client_id: process.env.GMAIL_CLIENT_ID,
+              client_secret: process.env.GMAIL_CLIENT_SECRET,
+              refresh_token: process.env.GMAIL_REFRESH_TOKEN,
+              grant_type: 'refresh_token'
+            }).toString();
+
+            const tokenRes = await httpsRequest({
+              hostname: 'oauth2.googleapis.com',
+              path: '/token',
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+            }, tokenBody);
+
+            if (tokenRes.statusCode !== 200) {
+              core.setFailed(`Token refresh failed: ${tokenRes.body}`);
+              return;
+            }
+
+            const { access_token } = JSON.parse(tokenRes.body);
+            console.log('Access token obtained successfully');
+
+            const email = [
+              `From: ${process.env.GMAIL_SENDER_EMAIL}`,
+              `To: ${process.env.GMAIL_SENDER_EMAIL}`,
+              `Subject: Telescope Outreach System - Test`,
+              `Content-Type: text/plain; charset=utf-8`,
+              '',
+              'This is a test draft from the Telescope Outreach System.',
+              '',
+              'If you can see this in your drafts, the Gmail API connection is working.',
+              '',
+              `Test run at: ${new Date().toISOString()}`
+            ].join('\r\n');
+
+            const encodedEmail = Buffer.from(email)
+              .toString('base64')
+              .replace(/\+/g, '-')
+              .replace(/\//g, '_')
+              .replace(/=+$/, '');
+
+            const draftBody = JSON.stringify({
+              message: { raw: encodedEmail }
+            });
+
+            const draftRes = await httpsRequest({
+              hostname: 'gmail.googleapis.com',
+              path: '/gmail/v1/users/me/drafts',
+              method: 'POST',
+              headers: {
+                'Authorization': `Bearer ${access_token}`,
+                'Content-Type': 'application/json'
+              }
+            }, draftBody);
+
+            if (draftRes.statusCode === 200 || draftRes.statusCode === 201) {
+              const draft = JSON.parse(draftRes.body);
+              console.log(`Test draft created successfully! Draft ID: ${draft.id}`);
+            } else {
+              core.setFailed(`Draft creation failed: ${draftRes.body}`);
+            }
