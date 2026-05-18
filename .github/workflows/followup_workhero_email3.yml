@@ -27,10 +27,7 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e36a878629b316"
           EMAIL_SUBJECT: "WorkHero + Telescope"
           EMAIL_BODY: "<div>Hey Kyler,<br><br>One more thing. We've been spending time with companies serving frontline and trades workers and the common thread is that these businesses are desperate for help but most software is still designed for desk workers. The companies that figure out how to meet these operators where they are tend to build really sticky products. If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
-          EMAIL_NUMBER: "3"
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
-        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "3"        run: node scripts/send_followup.js
 
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
