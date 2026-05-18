@@ -1,0 +1,74 @@
+[
+  {
+    "company": "Trouve AI",
+    "founder": "Shafin Siddique",
+    "founderEmail": "shafin@trouve.ai",
+    "domain": "trouve.ai",
+    "threadId": "19e36fcd57677a64",
+    "messageId": "19e36fcd57677a64",
+    "subject": "AI agents for CRM ops | Telescope intro",
+    "email2": {
+      "date": "2026-05-19",
+      "body": "<div>Hey Shafin,<br><br>Wanted to follow up with something I thought was interesting. I was looking at some data recently on CRM implementation costs and the average mid-market company is spending $150-300K+ just on initial Salesforce or NetSuite customization, and then another $50-100K a year maintaining it. That's a lot of money going to consultants for work that AI should be able to handle. Curious how you're thinking about the expansion path from config automation into ongoing optimization. Do customers start with one system and expand, or are they bringing you in across the full stack from day one?<br><br>Either way, would love to get 20 minutes on the calendar if you're open to it.</div>"
+    },
+    "email3": {
+      "date": "2026-05-24",
+      "body": "<div>Hey Shafin,<br><br>One more thing I wanted to share. We've been talking to a few portfolio companies recently who are spending 6 figures a year on Salesforce consultants just to keep their instance running the way they want. The pain is real and it's recurring, which is what makes the Trouve approach so compelling. If now isn't the right time, totally understand. But would love to trade notes whenever you have a window.</div>"
+    },
+    "pushedAt": "2026-05-18T15:52:56.646Z"
+  },
+  {
+    "company": "Kipling Secure",
+    "founder": "Saurabh Sandhir",
+    "founderEmail": "saurabh@kiplingsecure.ai",
+    "domain": "kiplingsecure.ai",
+    "threadId": "19e36dcf0b3defc5",
+    "messageId": "19e36dcf0b3defc5",
+    "subject": "AI-native security for MSPs | Telescope intro",
+    "email2": {
+      "date": "2026-05-19",
+      "body": "<div>Hey Saurabh,<br><br>Wanted to follow up with a quick thought. I've been talking to a few MSP-focused companies in our network and the consistent theme is that MSPs are getting hammered with more sophisticated attacks but their security tooling hasn't kept up. Most are stitching together 3-4 different products that don't talk to each other. The single-platform approach Kipling is taking feels like the right answer. Curious how the early MSP conversations are going and whether you're seeing more pull from the channel or direct.<br><br>Would love to get 20 minutes if you're open to it.</div>"
+    },
+    "email3": {
+      "date": "2026-05-24",
+      "body": "<div>Hey Saurabh,<br><br>Last thought from me. We've worked closely with companies like Rewst and Auvik in the MSP space and the demand signal for consolidated security tooling is only getting stronger. If now isn't the right time, totally understand. But if there's ever a window to connect, even just to trade notes on how MSPs are thinking about security consolidation, I'd be up for it.</div>"
+    },
+    "pushedAt": "2026-05-18T15:52:56.648Z"
+  },
+  {
+    "company": "Kroo",
+    "founder": "Barry Chiu",
+    "founderEmail": "barry@getkroo.com",
+    "domain": "getkroo.com",
+    "threadId": "19e36d8c77a3142d",
+    "messageId": "19e36d8c77a3142d",
+    "subject": "Building the data layer for GCs | Telescope intro",
+    "email2": {
+      "date": "2026-05-19",
+      "body": "<div>Hey Barry,<br><br>Wanted to follow up with something relevant. I was talking to our operating partner Harrison Doyle (ex-Procore VP of Finance) recently about the data problem in construction and his take was that the industry is sitting on a goldmine of operational data but nobody has built the connective tissue to make it useful. The companies that crack the data infrastructure layer will end up owning the AI layer too, which feels like exactly where Kroo is headed. Curious how you're thinking about the AI roadmap once the data foundation is in place.<br><br>Would love to get 20 minutes if you're open to it.</div>"
+    },
+    "email3": {
+      "date": "2026-05-24",
+      "body": "<div>Hey Barry,<br><br>One last note. I was chatting with a GC recently who told me they have 14 different software systems and zero way to get a unified view of a project's health. Felt like exactly the problem Kroo is solving. If now isn't the right time, totally understand. But if there's ever a window to connect I'd love to hear how things are going.</div>"
+    },
+    "pushedAt": "2026-05-18T15:52:56.648Z"
+  },
+  {
+    "company": "WorkHero",
+    "founder": "Kyler Evitt",
+    "founderEmail": "kyler@workhero.pro",
+    "domain": "workhero.pro",
+    "threadId": "19e36a878629b316",
+    "messageId": "19e36a878629b316",
+    "subject": "WorkHero + Telescope",
+    "email2": {
+      "date": "2026-05-19",
+      "body": "<div>Hey Kyler,<br><br>Wanted to follow up with a thought. I've been digging into the HVAC market and the labor shortage numbers are pretty staggering. The industry needs something like 115,000 new technicians a year but can barely fill half of that. That means the admin burden per shop is only going to get worse as they try to do more with fewer people. Feels like the tailwind for WorkHero is structural and growing. Curious how the early customer conversations are going and what the biggest pull is from the HVAC operators you're talking to.<br><br>Would love to get 20 minutes if you're open to it.</div>"
+    },
+    "email3": {
+      "date": "2026-05-24",
+      "body": "<div>Hey Kyler,<br><br>One more thing. We've been spending time with companies serving frontline and trades workers and the common thread is that these businesses are desperate for help but most software is still designed for desk workers. The companies that figure out how to meet these operators where they are tend to build really sticky products. If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+    },
+    "pushedAt": "2026-05-18T15:52:56.648Z"
+  }
+]
