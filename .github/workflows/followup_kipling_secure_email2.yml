@@ -27,10 +27,7 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e36dcf0b3defc5"
           EMAIL_SUBJECT: "AI-native security for MSPs | Telescope intro"
           EMAIL_BODY: "<div>Hey Saurabh,<br><br>Wanted to follow up with a quick thought. I've been talking to a few MSP-focused companies in our network and the consistent theme is that MSPs are getting hammered with more sophisticated attacks but their security tooling hasn't kept up. Most are stitching together 3-4 different products that don't talk to each other. The single-platform approach Kipling is taking feels like the right answer. Curious how the early MSP conversations are going and whether you're seeing more pull from the channel or direct.<br><br>Would love to get 20 minutes if you're open to it.</div>"
-          EMAIL_NUMBER: "2"
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
-        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "2"        run: node scripts/send_followup.js
 
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
