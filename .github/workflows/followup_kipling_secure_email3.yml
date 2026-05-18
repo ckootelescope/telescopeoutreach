@@ -27,10 +27,7 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e36dcf0b3defc5"
           EMAIL_SUBJECT: "AI-native security for MSPs | Telescope intro"
           EMAIL_BODY: "<div>Hey Saurabh,<br><br>Last thought from me. We've worked closely with companies like Rewst and Auvik in the MSP space and the demand signal for consolidated security tooling is only getting stronger. If now isn't the right time, totally understand. But if there's ever a window to connect, even just to trade notes on how MSPs are thinking about security consolidation, I'd be up for it.</div>"
-          EMAIL_NUMBER: "3"
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
-        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "3"        run: node scripts/send_followup.js
 
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
