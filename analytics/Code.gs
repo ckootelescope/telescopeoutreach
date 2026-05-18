@@ -196,6 +196,40 @@ function backfillData() {
   Logger.log('Backfilled ' + rows.length + ' rows.');
 }
 
+function backfillMay18Sent() {
+  const ss = SpreadsheetApp.openById(SHEET_ID);
+  const sheet = ss.getSheetByName(ACTIVITY_TAB);
+
+  const batch3 = [
+    ['MindFort', 'mindfort.ai', 'Brandon Veiseh', 'brandon@mindfort.ai', '19e3cb47118d6479'],
+    ['Cotool', 'cotool.ai', 'Max Pollard', 'max@cotool.ai', '19e3cae7ded9b5d3'],
+    ['RiskFront', 'riskfront.ai', 'Andy Bethurum', 'andy.bethurum@gmail.com', '19e3ca2599a580ef'],
+    ['WiseBee', 'wisebee.ai', 'Stoyan Stoyanov', 'stoyan@wisebee.ai', '19e3c9b92b2f991c'],
+    ['CognitiveView', 'cognitiveview.com', 'Dilip Mohapatra', 'dilip@cognitiveview.com', '19e3c5834fad039b'],
+    ['Entangl', 'entangl.ai', 'Shapol', 'shapol@entangl.ai', '19e3c54ccf15048b'],
+    ['CrunchAtlas', 'crunchatlas.com', 'Ben', 'ben@crunchatlas.com', '19e3c50bd6d6639e'],
+    ['Advance', 'advancehq.com', 'Omer Rimoch', 'omer@advancehq.com', '19e3c34b27d9707e'],
+    ['Dearborn Labs', 'dearbornlabs.com', 'Kyle Nakatsuji', 'kyle@dearbornlabs.com', '19e3c15a110f24ee'],
+    ['Caribou', 'usecaribou.com', 'Juan Andrade', 'juan@usecaribou.com', '19e3be9fc5da6cb8'],
+    ['Specmade', 'specmade.com', 'Matt Pierce', 'matt@specmade.com', '19e3be5d204d4ca1'],
+    ['Assail AI', 'assailai.com', 'Alissa Knight', 'alissa.knight@assailai.com', '19e3be35d5296cb4']
+  ];
+
+  const rows = [];
+  batch3.forEach(([co, dom, fn, em, tid]) => {
+    rows.push(['2026-05-18T08:00:00Z', co, dom, fn, em, 'SENT', 'Email 1', tid, '']);
+    rows.push(['2026-05-18T08:00:00Z', co, dom, fn, em, 'FOLLOWUP_SCHEDULED', 'Email 2', tid, 'May 20']);
+    rows.push(['2026-05-18T08:00:00Z', co, dom, fn, em, 'FOLLOWUP_SCHEDULED', 'Email 3', tid, 'May 25']);
+    rows.push(['2026-05-18T08:00:00Z', co, dom, fn, em, 'LINKEDIN_REMINDER_SET', '', tid, 'Calendar reminder created']);
+  });
+
+  rows.push(['2026-05-18T12:00:00Z', 'Trouve AI', 'trouve.ai', 'Shafin Siddique', 'shafin@trouve.ai', 'REPLIED', '', '19e36fcd', 'Cadence cancelled']);
+
+  const lastRow = sheet.getLastRow();
+  sheet.getRange(lastRow + 1, 1, rows.length, 9).setValues(rows);
+  Logger.log('Backfilled ' + rows.length + ' rows for May 18 batch.');
+}
+
 function _getActivityRows() {
   const ss = SpreadsheetApp.openById(SHEET_ID);
   const sheet = ss.getSheetByName(ACTIVITY_TAB);

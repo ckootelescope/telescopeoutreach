@@ -13,8 +13,8 @@ const ORIGINAL_MESSAGE_ID = process.env.ORIGINAL_MESSAGE_ID;
 const EMAIL_SUBJECT = process.env.EMAIL_SUBJECT;
 const EMAIL_BODY = process.env.EMAIL_BODY;
 const EMAIL_NUMBER = process.env.EMAIL_NUMBER;
-const APPS_SCRIPT_URL = process.env.APPS_SCRIPT_URL;
-const OUTREACH_API_KEY = process.env.OUTREACH_API_KEY;
+const SHEET_ID = '1Sk9HndYNzXj_tHg8-T4EGqSqkPk1QKXH2UOQt23s7CA';
+const SHEET_TAB = 'Activity Log';
 
 function httpsRequest(options, body) {
   return new Promise((resolve, reject) => {
@@ -147,30 +147,31 @@ async function createFollowUpDraft(accessToken) {
   return JSON.parse(res.body);
 }
 
-async function logToSheet(event, emailStage, notes) {
-  if (!APPS_SCRIPT_URL || !OUTREACH_API_KEY) return;
+async function logToSheet(accessToken, event, emailStage, notes) {
   try {
-    const url = new URL(APPS_SCRIPT_URL);
-    const body = JSON.stringify({
-      api_key: OUTREACH_API_KEY,
-      action: 'log',
-      timestamp: new Date().toISOString(),
-      company: COMPANY_NAME,
-      domain: COMPANY_DOMAIN,
-      founder: FOUNDER_NAME,
-      email: FOUNDER_EMAIL,
-      event: event,
-      email_stage: emailStage,
-      thread_id: ORIGINAL_THREAD_ID,
-      notes: notes || ''
-    });
-    await httpsRequest({
-      hostname: url.hostname,
-      path: url.pathname + url.search,
+    const row = [
+      new Date().toISOString(),
+      COMPANY_NAME, COMPANY_DOMAIN, FOUNDER_NAME, FOUNDER_EMAIL,
+      event, emailStage, ORIGINAL_THREAD_ID, notes || ''
+    ];
+    const body = JSON.stringify({ values: [row] });
+    const path = '/v4/spreadsheets/' + SHEET_ID + '/values/' +
+      encodeURIComponent(SHEET_TAB + '!A:I') + ':append?valueInputOption=RAW&insertDataOption=INSERT_ROWS';
+    const res = await httpsRequest({
+      hostname: 'sheets.googleapis.com',
+      path: path,
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(body) }
+      headers: {
+        'Authorization': 'Bearer ' + accessToken,
+        'Content-Type': 'application/json',
+        'Content-Length': Buffer.byteLength(body)
+      }
     }, body);
-    console.log('Logged to sheet: ' + event);
+    if (res.statusCode >= 200 && res.statusCode < 300) {
+      console.log('Logged to sheet: ' + event);
+    } else {
+      console.log('Warning: Sheet logging returned ' + res.statusCode + ': ' + res.body);
+    }
   } catch (err) {
     console.log('Warning: Sheet logging failed: ' + err.message);
   }
@@ -193,7 +194,7 @@ async function main() {
     if (await checkForBounces(accessToken)) {
       console.log('BOUNCE DETECTED for ' + FOUNDER_EMAIL);
       fs.appendFileSync(process.env.GITHUB_OUTPUT, 'result=BOUNCED\n');
-      await logToSheet('BOUNCED', 'Email ' + EMAIL_NUMBER, 'Bounce detected');
+      await logToSheet(accessToken, 'BOUNCED', 'Email ' + EMAIL_NUMBER, 'Bounce detected');
       return;
     }
     console.log('No bounces.\n');
@@ -203,13 +204,13 @@ async function main() {
     if (replyCheck.isBounce) {
       console.log('BOUNCE DETECTED via reply check.');
       fs.appendFileSync(process.env.GITHUB_OUTPUT, 'result=BOUNCED\n');
-      await logToSheet('BOUNCED', 'Email ' + EMAIL_NUMBER, 'Bounce via reply check');
+      await logToSheet(accessToken, 'BOUNCED', 'Email ' + EMAIL_NUMBER, 'Bounce via reply check');
       return;
     }
     if (replyCheck.hasReply) {
       console.log('REPLY DETECTED! Skipping follow-up.');
       fs.appendFileSync(process.env.GITHUB_OUTPUT, 'result=REPLIED\n');
-      await logToSheet('REPLIED', '', 'Cadence cancelled');
+      await logToSheet(accessToken, 'REPLIED', '', 'Cadence cancelled');
       return;
     }
     console.log('No replies.\n');
@@ -218,7 +219,7 @@ async function main() {
     const draft = await createFollowUpDraft(accessToken);
     console.log('Draft created! ID: ' + draft.id);
     fs.appendFileSync(process.env.GITHUB_OUTPUT, 'result=DRAFT_CREATED\n');
-    await logToSheet('FOLLOWUP_DRAFTED', 'Email ' + EMAIL_NUMBER, 'Draft ID: ' + draft.id);
+    await logToSheet(accessToken, 'FOLLOWUP_DRAFTED', 'Email ' + EMAIL_NUMBER, 'Draft ID: ' + draft.id);
 
   } catch (error) {
     console.error('ERROR:', error.message);
