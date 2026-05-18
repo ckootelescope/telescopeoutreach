@@ -1,0 +1,63 @@
+name: "Follow-up: 2 - WorkHero"
+
+on:
+  schedule:
+    - cron: '17 15 19 5 *'
+  workflow_dispatch:
+
+jobs:
+  send-followup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run follow-up script
+        id: followup
+        env:
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          GMAIL_SENDER_EMAIL: ${{ secrets.GMAIL_SENDER_EMAIL }}
+          COMPANY_NAME: "WorkHero"
+          FOUNDER_NAME: "Kyler Evitt"
+          FOUNDER_EMAIL: "kyler@workhero.pro"
+          COMPANY_DOMAIN: "workhero.pro"
+          ORIGINAL_THREAD_ID: "19e36a878629b316"
+          ORIGINAL_MESSAGE_ID: "19e36a878629b316"
+          EMAIL_SUBJECT: "WorkHero + Telescope"
+          EMAIL_BODY: "<div>Hey Kyler,<br><br>Wanted to follow up with a thought. I've been digging into the HVAC market and the labor shortage numbers are pretty staggering. The industry needs something like 115,000 new technicians a year but can barely fill half of that. That means the admin burden per shop is only going to get worse as they try to do more with fewer people. Feels like the tailwind for WorkHero is structural and growing. Curious how the early customer conversations are going and what the biggest pull is from the HVAC operators you're talking to.<br><br>Would love to get 20 minutes if you're open to it.</div>"
+          EMAIL_NUMBER: "2"
+        run: node scripts/send_followup.js
+
+      - name: Cancel remaining cadence
+        if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const result = '${{ steps.followup.outputs.result }}';
+            const company = 'workhero';
+            console.log(result + ': Cleaning up remaining workflows for ' + company);
+            const { data: contents } = await github.rest.repos.getContent({
+              owner: context.repo.owner, repo: context.repo.repo, path: '.github/workflows'
+            });
+            const companyFiles = contents.filter(f => f.name.startsWith('followup_' + company + '_'));
+            for (const file of companyFiles) {
+              await github.rest.repos.deleteFile({
+                owner: context.repo.owner, repo: context.repo.repo, path: file.path,
+                message: '[auto] ' + result + ' - cancel cadence for ' + company, sha: file.sha
+              });
+            }
+
+      - name: Clean up this workflow
+        if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: file } = await github.rest.repos.getContent({
+              owner: context.repo.owner, repo: context.repo.repo, path: '.github/workflows/followup_workhero_email2.yml'
+            });
+            await github.rest.repos.deleteFile({
+              owner: context.repo.owner, repo: context.repo.repo, path: '.github/workflows/followup_workhero_email2.yml',
+              message: '[auto] completed - Email 2 for WorkHero', sha: file.sha
+            });
