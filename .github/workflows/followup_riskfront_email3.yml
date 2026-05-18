@@ -28,6 +28,8 @@ jobs:
           EMAIL_SUBJECT: "Telescope Partners <> RiskFront Intro"
           EMAIL_BODY: "<div>Hey Andy, a couple of fintech founders in our network have mentioned that compliance costs are becoming one of their biggest line items as they scale. Feels like there's a real pull for what you're building.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
           EMAIL_NUMBER: "3"
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
         run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
