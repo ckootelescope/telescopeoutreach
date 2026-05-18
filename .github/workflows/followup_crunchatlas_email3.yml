@@ -27,10 +27,7 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e3c50bd6d6639e"
           EMAIL_SUBJECT: "Telescope Partners <> CrunchAtlas Intro"
           EMAIL_BODY: "<div>Hey Ben, Chris has been hearing from a few portfolio companies that network visibility is one of their top security priorities this year. Happy to share more on what we're seeing across the portfolio.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
-          EMAIL_NUMBER: "3"
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
-        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "3"        run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
