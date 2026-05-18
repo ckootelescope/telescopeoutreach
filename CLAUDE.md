@@ -195,6 +195,86 @@ When Calvin provides multiple URLs:
 - Reply detection: handled by GitHub Actions workflow automatically
 - Auto-reply filtering: GitHub Actions ignores OOO and auto-replies
 
+## Analytics & Tracking
+
+### Data Layer: Google Sheet
+
+Every outreach action gets logged to a Google Sheet called "Outreach Tracker" in Calvin's Telescope Google Drive. Use the Google Sheets API to append rows.
+
+**Sheet structure — "Activity Log" tab:**
+
+| Timestamp | Company | Domain | Founder | Email | Action | Email Stage | Thread ID | Notes |
+|---|---|---|---|---|---|---|---|---|
+| 2026-05-17T15:30:00Z | Kroo | getkroo.com | Barry Chiu | barry@getkroo.com | DRAFT_CREATED | Email 1 | 19e36d8c | |
+| 2026-05-17T16:00:00Z | Kroo | getkroo.com | Barry Chiu | barry@getkroo.com | SENT | Email 1 | 19e36d8c | |
+| 2026-05-19T15:27:00Z | Kroo | getkroo.com | Barry Chiu | barry@getkroo.com | FOLLOWUP_DRAFTED | Email 2 | 19e36d8c | Auto via GitHub Actions |
+| 2026-05-20T10:15:00Z | Kroo | getkroo.com | Barry Chiu | barry@getkroo.com | REPLIED | | 19e36d8c | Cadence cancelled |
+
+**Actions to log:**
+- DRAFT_CREATED — Email 1 draft sent to Superhuman
+- SENT — Calvin confirmed he sent Email 1
+- FOLLOWUP_SCHEDULED — Workflow files pushed to GitHub
+- FOLLOWUP_DRAFTED — GitHub Actions created a follow-up draft
+- REPLIED — Reply detected, cadence cancelled
+- BOUNCED — Email bounced, cadence cancelled
+- GUARDRAIL_BLOCKED — 90-day overlap stopped outreach
+- FOUNDER_DEPARTED — Founder left company, flagged
+- CANCELLED — Calvin manually cancelled cadence
+
+**When to log:**
+- After creating Email 1 draft → log DRAFT_CREATED
+- After Calvin says "I sent it" → log SENT
+- After pushing workflow files → log FOLLOWUP_SCHEDULED
+- GitHub Actions logs its own events (FOLLOWUP_DRAFTED, REPLIED, BOUNCED) — these get written by the send_followup.js script
+
+**Sheet structure — "Weekly Summary" tab (auto-calculated):**
+
+| Week Starting | Company Outreach | Company Conversations | Conversion Rate | Emails Sent (E1) | Emails Sent (E2) | Emails Sent (E3) | Bounced | Guardrail Blocked |
+|---|---|---|---|---|---|---|---|---|
+
+This tab uses formulas to aggregate from the Activity Log. Company Outreach = count of SENT actions per week. Company Conversations = count of REPLIED actions per week (manually adjusted by Calvin).
+
+### Dashboard: Google Apps Script Web App
+
+Build a Google Apps Script web app (served via doGet) that:
+1. Reads from the "Outreach Tracker" Google Sheet
+2. Renders a dashboard similar to the design in this repo's docs
+3. Deployed as a web app within the Telescope Google Workspace
+
+**Dashboard sections:**
+1. **Tier 1 — Weekly Report** (top): Company Outreach count, Company Conversations count (Calvin logs manually), Conversion Rate. Week-over-week trend with sparklines.
+2. **Tier 2 — Optimization** (below):
+   - Reply rate by email stage (Email 1 vs 2 vs 3)
+   - Reply rate by sector (pull sector from Affinity or tag in sheet)
+   - Cadence funnel (entered → Email 1 → Email 2 → Email 3 → Replied)
+   - Guardrail block stats
+   - Average time-to-reply
+3. **Active Cadences table**: All companies with active follow-up schedules, current status, next action date
+
+**Tech stack:**
+- Google Apps Script for backend + serving HTML
+- HTML/CSS/JS for the frontend (served via HtmlService)
+- Google Sheets as the database
+- No external hosting needed
+
+**When Calvin asks to build the dashboard or analytics:**
+1. Create the Google Sheet with the structure above
+2. Build the Apps Script project with doGet() serving the dashboard HTML
+3. Deploy as a web app
+4. Add the sheet ID to .env so the outreach system can log to it
+
+### Updating Affinity
+
+In addition to the Google Sheet, update Affinity status fields at each step:
+- After Email 1 draft → Status: "Email 1 Drafted"
+- After Email 1 sent → Status: "Email 1 Sent"  
+- After follow-ups scheduled → add cadence dates to notes
+- After reply detected → Status: "Responded"
+- After bounce → Status: "Bounced"
+- After cancel → Status: "Cancelled"
+
+Use Affinity MCP to update the company record on list 350032.
+
 ## What GitHub Actions Does (for reference, you don't run this)
 
 The workflow files you push run automatically on their cron schedule. Each one:
@@ -203,3 +283,4 @@ The workflow files you push run automatically on their cron schedule. Each one:
 3. If no reply → creates a threaded follow-up draft in Calvin's inbox
 4. If reply → cancels remaining follow-ups, deletes workflow files
 5. Self-deletes after execution
+6. Logs the action to the Google Sheet (FOLLOWUP_DRAFTED, REPLIED, or BOUNCED)

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d0d1a; color: #e0e0e0; padding: 24px; }
+    h1 { font-size: 22px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+    .subtitle { font-size: 13px; color: #888; margin-bottom: 24px; }
+    .tier { margin-bottom: 28px; }
+    .tier-label { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; color: #666; margin-bottom: 12px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; }
+    .card { background: #1a1a2e; border-radius: 10px; padding: 20px; border: 1px solid #2a2a3e; }
+    .card .label { font-size: 12px; color: #888; margin-bottom: 6px; }
+    .card .value { font-size: 32px; font-weight: 700; color: #fff; }
+    .card .delta { font-size: 12px; margin-top: 4px; }
+    .delta.up { color: #4ade80; }
+    .delta.down { color: #f87171; }
+    .delta.flat { color: #888; }
+    .funnel { display: flex; gap: 0; align-items: flex-end; margin-top: 16px; height: 160px; }
+    .funnel-bar { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+    .funnel-bar .bar { width: 60%; border-radius: 6px 6px 0 0; background: linear-gradient(180deg, #6366f1, #4f46e5); min-height: 8px; transition: height 0.3s; }
+    .funnel-bar .bar-label { font-size: 11px; color: #888; margin-top: 6px; text-align: center; }
+    .funnel-bar .bar-count { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 4px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+    th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; color: #666; padding: 8px 12px; border-bottom: 1px solid #2a2a3e; }
+    td { font-size: 13px; padding: 10px 12px; border-bottom: 1px solid #1a1a2e; }
+    tr:hover td { background: #1a1a2e; }
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+    .badge-active { background: #1e3a5f; color: #60a5fa; }
+    .badge-sent { background: #1a3a2a; color: #4ade80; }
+    .badge-draft { background: #3a2a1a; color: #fbbf24; }
+    .mini-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+    .mini-card { background: #1a1a2e; border-radius: 8px; padding: 14px; border: 1px solid #2a2a3e; text-align: center; }
+    .mini-card .label { font-size: 11px; color: #888; }
+    .mini-card .value { font-size: 20px; font-weight: 700; color: #fff; margin-top: 4px; }
+    .loading { text-align: center; padding: 40px; color: #666; }
+  </style>
+</head>
+<body>
+  <h1>Telescope Outreach</h1>
+  <p class="subtitle" id="updated"></p>
+
+  <div id="content"><div class="loading">Loading dashboard...</div></div>
+
+  <script>
+    google.script.run.withSuccessHandler(render).getDashboardData();
+
+    function render(d) {
+      const w = d.weekly;
+      const f = d.funnel;
+
+      document.getElementById('updated').textContent = 'Last updated: ' + new Date().toLocaleString();
+
+      let html = '';
+
+      // Tier 1: Weekly Report
+      html += '<div class="tier"><div class="tier-label">This Week</div><div class="cards">';
+      html += metricCard('Companies Outreached', w.outreach, w.prevOutreach);
+      html += metricCard('Conversations', w.conversations, w.prevConversations);
+      html += `<div class="card"><div class="label">Conversion Rate</div><div class="value">${w.rate}%</div></div>`;
+      html += `<div class="card"><div class="label">Total Companies</div><div class="value">${d.totalCompanies}</div></div>`;
+      html += '</div></div>';
+
+      // Tier 2: Optimization
+      html += '<div class="tier"><div class="tier-label">Optimization</div><div class="mini-cards">';
+      html += miniCard('Avg Time to Reply', d.avgTimeToReply ? d.avgTimeToReply + 'd' : '--');
+      html += miniCard('Bounced', d.bounced);
+      html += miniCard('Guardrail Blocked', d.guardrailBlocked);
+      html += miniCard('Active Cadences', d.activeCadences.length);
+      html += '</div>';
+
+      // Funnel
+      const maxFunnel = Math.max(f.entered, 1);
+      html += '<div style="margin-top:18px"><div class="tier-label">Cadence Funnel</div><div class="funnel">';
+      html += funnelBar('Entered', f.entered, maxFunnel);
+      html += funnelBar('E1 Drafted', f.email1Drafted, maxFunnel);
+      html += funnelBar('E1 Sent', f.email1Sent, maxFunnel);
+      html += funnelBar('E2 Sent', f.email2, maxFunnel);
+      html += funnelBar('E3 Sent', f.email3, maxFunnel);
+      html += funnelBar('Replied', f.replied, maxFunnel);
+      html += '</div></div></div>';
+
+      // Tier 3: Active Cadences
+      html += '<div class="tier"><div class="tier-label">Active Cadences</div>';
+      if (d.activeCadences.length === 0) {
+        html += '<div style="color:#666;padding:12px">No active cadences.</div>';
+      } else {
+        html += '<table><thead><tr><th>Company</th><th>Domain</th><th>Founder</th><th>Last Action</th><th>Stage</th><th>Date</th></tr></thead><tbody>';
+        d.activeCadences.forEach(c => {
+          const badge = c.lastAction === 'FOLLOWUP_SCHEDULED' ? 'badge-active' : c.lastAction === 'SENT' ? 'badge-sent' : 'badge-draft';
+          const dateStr = c.lastDate ? new Date(c.lastDate).toLocaleDateString() : '';
+          html += `<tr><td><strong>${esc(c.company)}</strong></td><td>${esc(c.domain)}</td><td>${esc(c.founder)}</td>`;
+          html += `<td><span class="badge ${badge}">${esc(c.lastAction)}</span></td><td>${esc(c.lastStage)}</td><td>${dateStr}</td></tr>`;
+        });
+        html += '</tbody></table>';
+      }
+      html += '</div>';
+
+      document.getElementById('content').innerHTML = html;
+    }
+
+    function metricCard(label, val, prev) {
+      const diff = val - prev;
+      const cls = diff > 0 ? 'up' : diff < 0 ? 'down' : 'flat';
+      const arrow = diff > 0 ? '↑' : diff < 0 ? '↓' : '→';
+      return `<div class="card"><div class="label">${label}</div><div class="value">${val}</div><div class="delta ${cls}">${arrow} ${Math.abs(diff)} vs last week</div></div>`;
+    }
+
+    function miniCard(label, val) {
+      return `<div class="mini-card"><div class="label">${label}</div><div class="value">${val}</div></div>`;
+    }
+
+    function funnelBar(label, count, max) {
+      const pct = Math.max((count / max) * 100, 5);
+      return `<div class="funnel-bar"><div class="bar-count">${count}</div><div class="bar" style="height:${pct}%"></div><div class="bar-label">${label}</div></div>`;
+    }
+
+    function esc(s) { const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }
+  </script>
+</body>
+</html>
