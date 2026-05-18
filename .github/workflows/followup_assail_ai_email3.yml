@@ -28,6 +28,8 @@ jobs:
           EMAIL_SUBJECT: "Telescope <> Assail AI Intro"
           EMAIL_BODY: "<div>Hey Alissa, Chris was recently talking to security leaders at a couple portfolio companies and API security keeps coming up as a top priority for 2026. Happy to share more on what we're hearing from buyers.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
           EMAIL_NUMBER: "3"
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
         run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
