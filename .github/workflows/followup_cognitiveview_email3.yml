@@ -28,6 +28,8 @@ jobs:
           EMAIL_SUBJECT: "AI governance and compliance | Telescope intro"
           EMAIL_BODY: "<div>Hey Dilip, a few companies in our portfolio have started asking us about AI governance solutions as they ramp up their own AI deployments. Happy to connect you if that would be helpful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
           EMAIL_NUMBER: "3"
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
         run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
