@@ -28,6 +28,8 @@ jobs:
           EMAIL_SUBJECT: "AI governance and compliance | Telescope intro"
           EMAIL_BODY: "<div>Hey Dilip,<br><br>Saw the EU AI Act enforcement timelines are getting closer and most companies I talk to still don't have a clear plan for compliance. The ones who move early on governance tooling are going to have a real advantage. Curious how the regulatory timeline is affecting your conversations with buyers.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
         run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
