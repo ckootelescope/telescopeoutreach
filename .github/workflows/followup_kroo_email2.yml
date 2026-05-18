@@ -28,6 +28,8 @@ jobs:
           EMAIL_SUBJECT: "Building the data layer for GCs | Telescope intro"
           EMAIL_BODY: "<div>Hey Barry,<br><br>Wanted to follow up with something relevant. I was talking to our operating partner Harrison Doyle (ex-Procore VP of Finance) recently about the data problem in construction and his take was that the industry is sitting on a goldmine of operational data but nobody has built the connective tissue to make it useful. The companies that crack the data infrastructure layer will end up owning the AI layer too, which feels like exactly where Kroo is headed. Curious how you're thinking about the AI roadmap once the data foundation is in place.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
         run: node scripts/send_followup.js
 
       - name: Cancel remaining cadence
