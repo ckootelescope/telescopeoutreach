@@ -27,10 +27,7 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e3c54ccf15048b"
           EMAIL_SUBJECT: "Telescope Partners <> Entangl Intro"
           EMAIL_BODY: "<div>Hey Shapol,<br><br>The more I look at the data center buildout wave the more I think the verification bottleneck is going to become a real problem. I've seen estimates that design errors caught late can cost 10x what they would have if caught early. That math alone makes the case for what you're building.<br><br>Would love to get 20 minutes if you're open to it.</div>"
-          EMAIL_NUMBER: "2"
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
-        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "2"        run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
