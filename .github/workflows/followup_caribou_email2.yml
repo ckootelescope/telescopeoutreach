@@ -28,6 +28,8 @@ jobs:
           EMAIL_SUBJECT: "Killing Big Four transfer pricing | Telescope Partners Intro"
           EMAIL_BODY: "<div>Hey Juan,<br><br>Been thinking more about the transfer pricing problem and it's pretty telling that 20% of UK YC companies are already using Caribou. That kind of adoption rate usually means the product is solving a real pain point founders have been hacking around for years. Curious how the US expansion is going.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
         run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
