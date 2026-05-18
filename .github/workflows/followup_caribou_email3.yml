@@ -27,10 +27,7 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e3be9fc5da6cb8"
           EMAIL_SUBJECT: "Killing Big Four transfer pricing | Telescope Partners Intro"
           EMAIL_BODY: "<div>Hey Juan, a few founders in our portfolio with international operations have mentioned how painful transfer pricing has been to set up. Usually one of those things that falls through the cracks until the auditors show up.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
-          EMAIL_NUMBER: "3"
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
-        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "3"        run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
