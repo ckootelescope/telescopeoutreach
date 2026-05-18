@@ -28,6 +28,8 @@ jobs:
           EMAIL_SUBJECT: "Telescope Partners <> Mindfort"
           EMAIL_BODY: "<div>Hey Brandon,<br><br>Was thinking more about the continuous security testing space. One thing I keep hearing from CISOs is that they spend more time managing pen test reports than actually fixing anything. Companies that can close the loop automatically, finding the vuln AND remediating it, are going to win big here. Curious how you think about the remediation side of things.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
         run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
