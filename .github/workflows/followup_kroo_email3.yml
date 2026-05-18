@@ -27,10 +27,7 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e36d8c77a3142d"
           EMAIL_SUBJECT: "Building the data layer for GCs | Telescope intro"
           EMAIL_BODY: "<div>Hey Barry,<br><br>One last note. I was chatting with a GC recently who told me they have 14 different software systems and zero way to get a unified view of a project's health. Felt like exactly the problem Kroo is solving. If now isn't the right time, totally understand. But if there's ever a window to connect I'd love to hear how things are going.</div>"
-          EMAIL_NUMBER: "3"
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
-        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "3"        run: node scripts/send_followup.js
 
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
