@@ -1,0 +1,63 @@
+name: "Follow-up: 2 - Trouve AI"
+
+on:
+  schedule:
+    - cron: '18 15 19 5 *'
+  workflow_dispatch:
+
+jobs:
+  send-followup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Run follow-up script
+        id: followup
+        env:
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          GMAIL_SENDER_EMAIL: ${{ secrets.GMAIL_SENDER_EMAIL }}
+          COMPANY_NAME: "Trouve AI"
+          FOUNDER_NAME: "Shafin Siddique"
+          FOUNDER_EMAIL: "shafin@trouve.ai"
+          COMPANY_DOMAIN: "trouve.ai"
+          ORIGINAL_THREAD_ID: "19e36fcd57677a64"
+          ORIGINAL_MESSAGE_ID: "19e36fcd57677a64"
+          EMAIL_SUBJECT: "AI agents for CRM ops | Telescope intro"
+          EMAIL_BODY: "<div>Hey Shafin,<br><br>Wanted to follow up with something I thought was interesting. I was looking at some data recently on CRM implementation costs and the average mid-market company is spending $150-300K+ just on initial Salesforce or NetSuite customization, and then another $50-100K a year maintaining it. That's a lot of money going to consultants for work that AI should be able to handle. Curious how you're thinking about the expansion path from config automation into ongoing optimization. Do customers start with one system and expand, or are they bringing you in across the full stack from day one?<br><br>Either way, would love to get 20 minutes on the calendar if you're open to it.</div>"
+          EMAIL_NUMBER: "2"
+        run: node scripts/send_followup.js
+
+      - name: Cancel remaining cadence
+        if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const result = '${{ steps.followup.outputs.result }}';
+            const company = 'trouve_ai';
+            console.log(result + ': Cleaning up remaining workflows for ' + company);
+            const { data: contents } = await github.rest.repos.getContent({
+              owner: context.repo.owner, repo: context.repo.repo, path: '.github/workflows'
+            });
+            const companyFiles = contents.filter(f => f.name.startsWith('followup_' + company + '_'));
+            for (const file of companyFiles) {
+              await github.rest.repos.deleteFile({
+                owner: context.repo.owner, repo: context.repo.repo, path: file.path,
+                message: '[auto] ' + result + ' - cancel cadence for ' + company, sha: file.sha
+              });
+            }
+
+      - name: Clean up this workflow
+        if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: file } = await github.rest.repos.getContent({
+              owner: context.repo.owner, repo: context.repo.repo, path: '.github/workflows/followup_trouve_ai_email2.yml'
+            });
+            await github.rest.repos.deleteFile({
+              owner: context.repo.owner, repo: context.repo.repo, path: '.github/workflows/followup_trouve_ai_email2.yml',
+              message: '[auto] completed - Email 2 for Trouve AI', sha: file.sha
+            });
