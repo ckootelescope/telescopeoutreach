@@ -28,6 +28,8 @@ jobs:
           EMAIL_SUBJECT: "Telescope Partners <> Mindfort"
           EMAIL_BODY: "<div>Hey Brandon, one of the portfolio companies Chris works with was recently looking at replacing their annual pen testing contract with something more continuous. Feels like this shift is happening faster than most people realize.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
           EMAIL_NUMBER: "3"
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
         run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
