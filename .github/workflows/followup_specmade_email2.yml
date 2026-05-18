@@ -27,10 +27,7 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e3be5d204d4ca1"
           EMAIL_SUBJECT: "Telescope Partners <> Specmade Intro"
           EMAIL_BODY: "<div>Hey Matt,<br><br>Was thinking about the home inspection space and one thing that struck me is how fragmented the market is. Most inspectors are independent or small shops, which means the product needs to just work out of the box. The fact that you built offline mode from the start tells me you really understand the user.<br><br>Would love to get 20 minutes if you're open to it.</div>"
-          EMAIL_NUMBER: "2"
-          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
-          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
-        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "2"        run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
