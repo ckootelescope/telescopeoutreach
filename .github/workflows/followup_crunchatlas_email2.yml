@@ -28,6 +28,8 @@ jobs:
           EMAIL_SUBJECT: "Telescope Partners <> CrunchAtlas Intro"
           EMAIL_BODY: "<div>Hey Ben,<br><br>Was talking to a security engineer last week who said their biggest frustration is that most NDR tools either flood them with false positives or miss novel threats entirely. The behavioral approach that actually learns what normal looks like for each network seems like the only way to catch zero-days and lateral movement early.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
+          APPS_SCRIPT_URL: ${{ secrets.APPS_SCRIPT_URL }}
+          OUTREACH_API_KEY: ${{ secrets.OUTREACH_API_KEY }}
         run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
