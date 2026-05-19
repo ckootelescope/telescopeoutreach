@@ -1,0 +1,75 @@
+name: "Follow-up: 2 - Kaizntree"
+ 
+on:
+  schedule:
+    - cron: '19 15 21 5 *'
+  workflow_dispatch:
+ 
+jobs:
+  send-followup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+ 
+      - name: Run follow-up script
+        id: followup
+        env:
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          GMAIL_SENDER_EMAIL: ${{ secrets.GMAIL_SENDER_EMAIL }}
+          COMPANY_NAME: "Kaizntree"
+          FOUNDER_NAME: "Marcos"
+          FOUNDER_EMAIL: "marcos@kaizntree.com"
+          COMPANY_DOMAIN: "kaizntree.com"
+          ORIGINAL_THREAD_ID: "19e4172f6a7d7bc1"
+          ORIGINAL_MESSAGE_ID: "19e4172f6a7d7bc1"
+          EMAIL_SUBJECT: "Telescope Partners <> Kaizntree Intro"
+          EMAIL_BODY: "<div>Hey Marcos,<br><br>Talked to another CPG founder last week who told me their ops person quits every 6-8 months because the job is basically copying and pasting between Shopify, their 3PL, and a spreadsheet all day. It's the kind of role that burns people out because it's repetitive but high-stakes. One wrong number and you're either overstocked or out of stock. Curious how brands are finding you.<br><br>Would love to get 20 minutes if you're open to it.</div>"
+          EMAIL_NUMBER: "2"
+        run: node scripts/send_followup.js
+ 
+      - name: Cancel remaining cadence
+        if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const result = '${{ steps.followup.outputs.result }}';
+            const company = 'kaizntree';
+            console.log(result + ': Cleaning up remaining workflows for ' + company);
+            const { data: contents } = await github.rest.repos.getContent({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: '.github/workflows'
+            });
+            const companyFiles = contents.filter(f => f.name.startsWith('followup_' + company + '_'));
+            for (const file of companyFiles) {
+              console.log('Deleting: ' + file.name);
+              await github.rest.repos.deleteFile({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                path: file.path,
+                message: '[auto] ' + result + ' - cancel cadence for ' + company,
+                sha: file.sha
+              });
+            }
+ 
+      - name: Clean up this workflow
+        if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const path = '.github/workflows/followup_kaizntree_email2.yml';
+            const { data: file } = await github.rest.repos.getContent({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: path
+            });
+            await github.rest.repos.deleteFile({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: path,
+              message: '[auto] completed - Email 2 for COMPANY_NAME_VALUE',
+              sha: file.sha
+            });
