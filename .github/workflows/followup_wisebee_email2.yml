@@ -27,7 +27,8 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e3c9b92b2f991c"
           EMAIL_SUBJECT: "Telescope Partners <> Wisebee Intro"
           EMAIL_BODY: "<div>Hey Stoyan,<br><br>Been spending more time with security teams lately and the alert fatigue problem keeps coming up. One CISO told me their team ignores over 40% of alerts because they just can't get to them all. The companies that can cut through that noise and surface what actually matters are going to be in huge demand.<br><br>Would love to get 20 minutes if you're open to it.</div>"
-          EMAIL_NUMBER: "2"        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "2"
+        run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
@@ -69,6 +70,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               path: path,
-              message: '[auto] completed - Email 2 for WiseBee',
+              message: '[auto] completed - Email 2 for COMPANY_NAME_VALUE',
               sha: file.sha
             });

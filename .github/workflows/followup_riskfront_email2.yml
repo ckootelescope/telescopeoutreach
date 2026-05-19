@@ -27,7 +27,8 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e3ca2599a580ef"
           EMAIL_SUBJECT: "Telescope Partners <> RiskFront Intro"
           EMAIL_BODY: "<div>Hey Andy,<br><br>Was reading more about the AML and sanctions screening landscape and it's kind of wild how much manual work still goes into false positive review. Teams that can use AI to triage alerts accurately in real time are going to save compliance departments a fortune. Curious where you're seeing the most demand from customers.<br><br>Would love to get 20 minutes if you're open to it.</div>"
-          EMAIL_NUMBER: "2"        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "2"
+        run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
@@ -69,6 +70,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               path: path,
-              message: '[auto] completed - Email 2 for RiskFront',
+              message: '[auto] completed - Email 2 for COMPANY_NAME_VALUE',
               sha: file.sha
             });

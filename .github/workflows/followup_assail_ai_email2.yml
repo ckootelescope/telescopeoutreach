@@ -27,7 +27,8 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e3be35d5296cb4"
           EMAIL_SUBJECT: "Telescope <> Assail AI Intro"
           EMAIL_BODY: "<div>Hey Alissa,<br><br>The more I dig into API security the more it feels like most tools are built for finding vulnerabilities but not actually testing them the way an attacker would. Offensive testing that simulates real attacks against live APIs is a different category entirely. Curious how enterprises are thinking about the shift from passive scanning to active testing.<br><br>Would love to get 20 minutes if you're open to it.</div>"
-          EMAIL_NUMBER: "2"        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "2"
+        run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
@@ -69,6 +70,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               path: path,
-              message: '[auto] completed - Email 2 for Assail AI',
+              message: '[auto] completed - Email 2 for COMPANY_NAME_VALUE',
               sha: file.sha
             });

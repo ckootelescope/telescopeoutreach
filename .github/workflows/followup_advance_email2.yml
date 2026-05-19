@@ -27,7 +27,8 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e3c34b27d9707e"
           EMAIL_SUBJECT: "Telescope Partners Intro | Insurtech Investors"
           EMAIL_BODY: "<div>Hey Omer,<br><br>Was thinking more about the premium finance space and I think the bigger opportunity might be that once you own the financial layer, you become the system of record for how money flows through these agencies. That kind of stickiness is rare. Curious how agencies have been responding so far.<br><br>Would love to get 20 minutes if you're open to it.</div>"
-          EMAIL_NUMBER: "2"        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "2"
+        run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
@@ -69,6 +70,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               path: path,
-              message: '[auto] completed - Email 2 for Advance',
+              message: '[auto] completed - Email 2 for COMPANY_NAME_VALUE',
               sha: file.sha
             });

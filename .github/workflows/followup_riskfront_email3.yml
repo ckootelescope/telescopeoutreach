@@ -27,7 +27,8 @@ jobs:
           ORIGINAL_MESSAGE_ID: "19e3ca2599a580ef"
           EMAIL_SUBJECT: "Telescope Partners <> RiskFront Intro"
           EMAIL_BODY: "<div>Hey Andy, a couple of fintech founders in our network have mentioned that compliance costs are becoming one of their biggest line items as they scale. Feels like there's a real pull for what you're building.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
-          EMAIL_NUMBER: "3"        run: node scripts/send_followup.js
+          EMAIL_NUMBER: "3"
+        run: node scripts/send_followup.js
  
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
@@ -69,6 +70,6 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               path: path,
-              message: '[auto] completed - Email 3 for RiskFront',
+              message: '[auto] completed - Email 3 for COMPANY_NAME_VALUE',
               sha: file.sha
             });
