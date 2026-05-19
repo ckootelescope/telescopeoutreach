@@ -1,17 +1,17 @@
 name: "Follow-up: 2 - Kipling Secure"
-
+ 
 on:
   schedule:
-    - cron: '39 15 19 5 *'
+    - cron: '41 15 20 5 *'
   workflow_dispatch:
-
+ 
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-
+ 
       - name: Run follow-up script
         id: followup
         env:
@@ -20,15 +20,16 @@ jobs:
           GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
           GMAIL_SENDER_EMAIL: ${{ secrets.GMAIL_SENDER_EMAIL }}
           COMPANY_NAME: "Kipling Secure"
-          FOUNDER_NAME: "Saurabh Sandhir"
+          FOUNDER_NAME: "Saurabh"
           FOUNDER_EMAIL: "saurabh@kiplingsecure.ai"
           COMPANY_DOMAIN: "kiplingsecure.ai"
           ORIGINAL_THREAD_ID: "19e36dcf0b3defc5"
           ORIGINAL_MESSAGE_ID: "19e36dcf0b3defc5"
           EMAIL_SUBJECT: "AI-native security for MSPs | Telescope intro"
-          EMAIL_BODY: "<div>Hey Saurabh,<br><br>Wanted to follow up with a quick thought. I've been talking to a few MSP-focused companies in our network and the consistent theme is that MSPs are getting hammered with more sophisticated attacks but their security tooling hasn't kept up. Most are stitching together 3-4 different products that don't talk to each other. The single-platform approach Kipling is taking feels like the right answer. Curious how the early MSP conversations are going and whether you're seeing more pull from the channel or direct.<br><br>Would love to get 20 minutes if you're open to it.</div>"
-          EMAIL_NUMBER: "2"        run: node scripts/send_followup.js
-
+          EMAIL_BODY: "<div>Hey Saurabh,<br><br>Was talking to an MSP owner last week and he said his biggest headache isn't the attacks themselves, it's managing five different security tools across 200 client environments and still having gaps. Every vendor promises consolidation but then requires a six-month rollout that his three-person team can't absorb. Curious what you're seeing in terms of deployment time when an MSP switches over.<br><br>Would love to get 20 minutes if you're open to it.</div>"
+          EMAIL_NUMBER: "2"
+        run: node scripts/send_followup.js
+ 
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -38,25 +39,37 @@ jobs:
             const company = 'kipling_secure';
             console.log(result + ': Cleaning up remaining workflows for ' + company);
             const { data: contents } = await github.rest.repos.getContent({
-              owner: context.repo.owner, repo: context.repo.repo, path: '.github/workflows'
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: '.github/workflows'
             });
             const companyFiles = contents.filter(f => f.name.startsWith('followup_' + company + '_'));
             for (const file of companyFiles) {
+              console.log('Deleting: ' + file.name);
               await github.rest.repos.deleteFile({
-                owner: context.repo.owner, repo: context.repo.repo, path: file.path,
-                message: '[auto] ' + result + ' - cancel cadence for ' + company, sha: file.sha
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                path: file.path,
+                message: '[auto] ' + result + ' - cancel cadence for ' + company,
+                sha: file.sha
               });
             }
-
+ 
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
         with:
           script: |
+            const path = '.github/workflows/followup_kipling_secure_email2.yml';
             const { data: file } = await github.rest.repos.getContent({
-              owner: context.repo.owner, repo: context.repo.repo, path: '.github/workflows/followup_kipling_secure_email2.yml'
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: path
             });
             await github.rest.repos.deleteFile({
-              owner: context.repo.owner, repo: context.repo.repo, path: '.github/workflows/followup_kipling_secure_email2.yml',
-              message: '[auto] completed - Email 2 for Kipling Secure', sha: file.sha
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              path: path,
+              message: '[auto] completed - Email 2 for COMPANY_NAME_VALUE',
+              sha: file.sha
             });
