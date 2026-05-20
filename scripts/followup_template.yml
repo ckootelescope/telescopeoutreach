@@ -5,6 +5,9 @@ on:
     - cron: 'CRON_SCHEDULE'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest

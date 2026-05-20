@@ -45,7 +45,10 @@
   <div id="content"><div class="loading">Loading dashboard...</div></div>
 
   <script>
-    google.script.run.withSuccessHandler(render).getDashboardData();
+    document.getElementById('content').innerHTML = '<div style="color:#4ade80;padding:20px">HTML loaded. Calling getDashboardData...</div>';
+    google.script.run.withSuccessHandler(render).withFailureHandler(function(err) {
+      document.getElementById('content').innerHTML = '<div style="color:#f87171;padding:20px">Error: ' + err.message + '</div>';
+    }).getDashboardData();
 
     function render(d) {
       const w = d.weekly;
@@ -58,7 +61,7 @@
       // Tier 1: Weekly Report
       html += '<div class="tier"><div class="tier-label">This Week</div><div class="cards">';
       html += metricCard('Companies Outreached', w.outreach, w.prevOutreach);
-      html += metricCard('Conversations', w.conversations, w.prevConversations);
+      html += metricCard('Replies', w.conversations, w.prevConversations);
       html += `<div class="card"><div class="label">Conversion Rate</div><div class="value">${w.rate}%</div></div>`;
       html += `<div class="card"><div class="label">Total Companies</div><div class="value">${d.totalCompanies}</div></div>`;
       html += '</div></div>';
@@ -83,18 +86,18 @@
       html += '</div></div></div>';
 
       // Tier 3: Active Cadences
-      html += '<div class="tier"><div class="tier-label">Active Cadences</div>';
+      html += '<div class="tier"><div class="tier-label">Active Cadences (' + d.activeCadences.length + ')</div>';
       if (d.activeCadences.length === 0) {
         html += '<div style="color:#666;padding:12px">No active cadences.</div>';
       } else {
-        html += '<table><thead><tr><th>Company</th><th>Domain</th><th>Founder</th><th>Last Action</th><th>Stage</th><th>Date</th></tr></thead><tbody>';
+        html += '<div style="max-height:320px;overflow-y:auto;border:1px solid #2a2a3e;border-radius:8px">';
+        html += '<table style="margin-top:0"><thead><tr><th>Company</th><th>Founder</th><th>Stage</th><th>Next Follow-up</th></tr></thead><tbody>';
         d.activeCadences.forEach(c => {
-          const badge = c.lastAction === 'FOLLOWUP_SCHEDULED' ? 'badge-active' : c.lastAction === 'SENT' ? 'badge-sent' : 'badge-draft';
-          const dateStr = c.lastDate ? new Date(c.lastDate).toLocaleDateString() : '';
-          html += `<tr><td><strong>${esc(c.company)}</strong></td><td>${esc(c.domain)}</td><td>${esc(c.founder)}</td>`;
-          html += `<td><span class="badge ${badge}">${esc(c.lastAction)}</span></td><td>${esc(c.lastStage)}</td><td>${dateStr}</td></tr>`;
+          const stageClass = c.stage.includes('Awaiting') ? 'badge-sent' : c.stage.includes('Drafted') ? 'badge-draft' : 'badge-active';
+          html += `<tr><td><strong>${esc(c.company)}</strong></td><td>${esc(c.founder)}</td>`;
+          html += `<td><span class="badge ${stageClass}">${esc(c.stage)}</span></td><td>${esc(c.nextDate)}</td></tr>`;
         });
-        html += '</tbody></table>';
+        html += '</tbody></table></div>';
       }
       html += '</div>';
 
