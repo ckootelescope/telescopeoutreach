@@ -1,17 +1,17 @@
 name: "Follow-up: Email 2 - MeltPlan"
- 
+
 on:
   schedule:
     - cron: '16 15 22 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Kanav - wanted to follow up and congrats again on the BVP round. I've been doing a deep dive into AEC and would love to hear how you're thinking about the space post-raise. Harrison on our team (ex-Procore VP of Finance) has a ton of context on the construction workflow.<br><br>Free for 20 minutes this week?</div>"
           Email 2: "2"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
