@@ -1,17 +1,17 @@
 name: "Follow-up: Email 2 - Bixby"
- 
+
 on:
   schedule:
     - cron: '16 15 22 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Shaw - wanted to follow up. I've been talking to a lot of construction companies and the copilot approach keeps resonating with project teams - they don't want another standalone tool, they want something that works alongside what they're already using.<br><br>Would love to hear how field teams are reacting. Free for a quick call?</div>"
           Email 2: "2"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
