@@ -1,17 +1,17 @@
 name: "Follow-up: 2 - APIContext"
- 
+
 on:
   schedule:
     - cron: '56 15 20 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Hey Mayur,<br><br>Was talking to a platform engineering team last week and they mentioned they have over 400 internal APIs and no single person knows what half of them do. The governance gap gets worse as companies scale because everyone is shipping new endpoints but nobody is tracking what's already out there. Curious where you're seeing the most pull from customers.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
