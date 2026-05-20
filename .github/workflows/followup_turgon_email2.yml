@@ -1,17 +1,17 @@
 name: "Follow-up: 2 - Turgon"
- 
+
 on:
   schedule:
     - cron: '31 15 21 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Hey Ankur,<br><br>Was reading about SAP's push at Sapphire this year and the messaging is all about AI agents and clean core, but every IT leader I talk to says the gap between SAP's vision and their actual environment is massive. Most of them are running 15-year-old customizations they're afraid to touch. Curious how the DynPro partnership is changing the types of deals you can go after.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
