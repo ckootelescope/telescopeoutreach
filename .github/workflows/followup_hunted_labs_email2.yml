@@ -1,17 +1,17 @@
 name: "Follow-up: 2 - Hunted Labs"
- 
+
 on:
   schedule:
     - cron: '53 15 20 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Hey Hayden,<br><br>Was reading about the XZ Utils backdoor and it really drove home the point that the biggest software supply chain risks aren't bugs, they're people. Someone spent two years building trust in an open source project just to slip in a backdoor. Most security tools wouldn't catch that because they're only scanning code, not looking at who's writing it.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
