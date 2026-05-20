@@ -1,17 +1,17 @@
 name: "Follow-up: 3 - WorkHero"
- 
+
 on:
   schedule:
     - cron: '14 15 24 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Hey Kyler,<br><br>One more thing. We've been spending time with companies serving frontline and trades workers and the common thread is that these businesses are desperate for help but most software is still designed for desk workers. The companies that figure out how to meet these operators where they are tend to build really sticky products. If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
           EMAIL_NUMBER: "3"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
