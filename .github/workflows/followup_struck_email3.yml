@@ -5,6 +5,9 @@ on:
     - cron: '32 15 27 5 *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
