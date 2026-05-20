@@ -1,17 +1,17 @@
 name: "Follow-up: Email 2 - Spacial"
- 
+
 on:
   schedule:
     - cron: '39 15 21 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Maor - was chatting with Harrison on our team (ex-Procore VP of Finance) and he made an interesting point. A lot of the firms he saw at Procore that started residential eventually moved into commercial, and the ones that did it well had the engineering workflow locked down first.<br><br>Would be curious to hear how you're thinking about that path. Free for 20 minutes anytime this week?</div>"
           Email 2: "2"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
