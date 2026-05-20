@@ -1,17 +1,17 @@
 name: "Follow-up: 2 - ControlTheory"
- 
+
 on:
   schedule:
     - cron: '47 15 20 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Hey Bob,<br><br>Been thinking more about the production debugging problem. One thing that keeps coming up in my conversations is how much time developers spend just trying to reproduce issues, sometimes days before they even start fixing anything. If you can cut that loop down to minutes, the ROI for engineering teams is massive. Curious how you're seeing adoption play out with larger teams.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
