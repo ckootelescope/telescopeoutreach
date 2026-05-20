@@ -1,17 +1,17 @@
 name: "Follow-up: Email 2 - TwinKnowledge"
- 
+
 on:
   schedule:
     - cron: '10 15 22 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Ivan - wanted to follow up. One thing I keep hearing from construction teams is that project knowledge lives in a dozen different places - email, shared drives, field notes, drawings - and nobody can find what they need when they need it.<br><br>Would love to hear more about how teams are using TwinKnowledge day to day. Free for 20 minutes?</div>"
           Email 2: "2"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
