@@ -1,17 +1,17 @@
 name: "Follow-up: 3 - Corvera"
- 
+
 on:
   schedule:
     - cron: '13 15 26 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Hey Chris, Chris Gaertner has been working with a few CPG companies in our portfolio and order ops keeps coming up as one of the messiest parts of scaling. Happy to make intros if that would be useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
           EMAIL_NUMBER: "3"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
