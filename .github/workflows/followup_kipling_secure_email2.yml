@@ -1,17 +1,17 @@
 name: "Follow-up: 2 - Kipling Secure"
- 
+
 on:
   schedule:
     - cron: '41 15 20 5 *'
   workflow_dispatch:
- 
+
 jobs:
   send-followup:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
- 
+
       - name: Run follow-up script
         id: followup
         env:
@@ -29,7 +29,7 @@ jobs:
           EMAIL_BODY: "<div>Hey Saurabh,<br><br>Was talking to an MSP owner last week and he said his biggest headache isn't the attacks themselves, it's managing five different security tools across 200 client environments and still having gaps. Every vendor promises consolidation but then requires a six-month rollout that his three-person team can't absorb. Curious what you're seeing in terms of deployment time when an MSP switches over.<br><br>Would love to get 20 minutes if you're open to it.</div>"
           EMAIL_NUMBER: "2"
         run: node scripts/send_followup.js
- 
+
       - name: Cancel remaining cadence
         if: steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
@@ -54,7 +54,7 @@ jobs:
                 sha: file.sha
               });
             }
- 
+
       - name: Clean up this workflow
         if: steps.followup.outputs.result == 'DRAFT_CREATED' || steps.followup.outputs.result == 'REPLIED' || steps.followup.outputs.result == 'BOUNCED'
         uses: actions/github-script@v7
