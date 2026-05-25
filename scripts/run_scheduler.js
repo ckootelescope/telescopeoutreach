@@ -11,6 +11,8 @@ const GMAIL_SENDER_EMAIL = process.env.GMAIL_SENDER_EMAIL;
 const SHEET_ID = '1Sk9HndYNzXj_tHg8-T4EGqSqkPk1QKXH2UOQt23s7CA';
 const SHEET_TAB = 'Activity Log';
 
+const EMAIL_SIGNATURE = '<br><div><div dir="ltr">Best,<div>Calvin</div><div><br></div><div><table cellpadding="0" cellspacing="0" border="0" style="font-size:medium;color:rgb(26,26,26);line-height:1.5"><tbody><tr><td style="padding-bottom:4px;line-height:0"><img src="https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png" alt="Telescope Partners" width="96" height="24"></td></tr><tr><td style="font-size:12px;font-weight:bold;letter-spacing:0.5px">CALVIN KOO | INVESTOR</td></tr><tr><td style="font-size:12px"><a href="mailto:calvin@telescopepartners.com">calvin@telescopepartners.com</a> | <a href="tel:213-503-9944">(213) 503-9944</a></td></tr></tbody></table></div></div></div>';
+
 function httpsRequest(options, body) {
   return new Promise((resolve, reject) => {
     const req = https.request(options, (res) => {
@@ -116,7 +118,7 @@ async function createDraft(accessToken, senderEmail, entry) {
     'In-Reply-To: ' + entry.messageId,
     'References: ' + entry.messageId,
     '',
-    entry.body
+    entry.body + EMAIL_SIGNATURE
   ];
   const encoded = Buffer.from(emailLines.join('\r\n'))
     .toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
