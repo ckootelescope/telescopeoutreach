@@ -305,8 +305,8 @@ a) Search Gmail: "from:me to:{founder_email} newer_than:7d"
 b) Extract thread ID and message ID
 c) Draft Email 2 and Email 3 content yourself (same writing rules apply)
 d) Calculate dates: Email 2 = send date + 2 days, Email 3 = Email 2 date + 5 days
-e) Generate workflow YAML from templates/followup_template.yml
-f) Push to GitHub via Contents API using PAT from .env
+e) Add Email 2 and Email 3 entries to followups.json (see Follow-up Scheduler section)
+f) Push updated followups.json to GitHub via Contents API using PAT from .env — THIS IS CRITICAL, the scheduler only reads the remote file
 g) Create LinkedIn calendar reminder (Step 5)
 h) Log to Google Sheet (Analytics section)
 i) Tell Calvin: "Follow-ups scheduled. Email 2 on [date], Email 3 on [date]."
@@ -332,25 +332,80 @@ Full cadence: Day 0 Email 1 + LinkedIn, Day 2 Email 2, Day 7 Email 3.
 
 Same writing rules as Email 1. Same kill list. Same audit step.
 
-**Email 2 (+48 hours):** New value — market insight, data point, genuine question. Never "just following up." Shorter than Email 1. No sign-off.
+### CRITICAL: Research Before Writing ANY Follow-up
 
-**Email 3 (+5 days after Email 2):** Portfolio anecdote or buyer-side signal. Shortest of all. End with "If now isn't the right time, totally understand." Never "last note from me." No sign-off.
+**NEVER batch-generate follow-up content without researching each company first.** This was the single biggest quality issue — Email 2s and 3s were generic market observations that showed zero knowledge of the actual product. Calvin had to rewrite every single one.
 
-## Pushing to GitHub
+Before writing Email 2 or Email 3 for any company:
+1. **Web search** the company for recent news, product updates, blog posts
+2. **Fetch their website** to understand the actual product, features, and GTM
+3. Reference something **specific** about the company's product, strategy, or approach — not a generic industry observation
 
-PAT from .env. PUT to:
+### NEVER Fabricate Conversations
+
+**ABSOLUTE RULE: Do NOT write "was talking to someone who mentioned..." or "was chatting with a [title] recently who said..." unless referencing a REAL conversation** (like Chris actually talking to a portfolio company, or Harrison sharing a real Procore experience).
+
+Calvin cannot back up fabricated anecdotes. If a founder asks "who were you talking to?", Calvin has nothing to say. This destroys credibility immediately.
+
+**BAD hooks (fabricated):**
+- "was talking to a manufacturing exec recently who mentioned that indirect labor is the fastest-growing line item nobody tracks properly"
+- "was chatting with a CTO recently who mentioned that AI tool proliferation is creating a new version of the shadow IT problem"
+- "was talking to someone in aviation training recently and they mentioned that most flight schools still track student progress on whiteboards"
+
+**GOOD hooks (product-specific, verifiable):**
+- "I was looking at how you guys deliver recommendations directly into Outlook and Teams instead of making people log into another dashboard"
+- "I was looking at how you guys are going vertical into insurance and financial services rather than trying to be a generic call coaching tool"
+- "circling back on this — been thinking more about the [specific feature/approach] and curious how [specific question about their strategy]"
+
+### Email 2 (+48 hours)
+
+Show you actually looked at the product. Reference a specific feature, integration, GTM approach, or strategic decision. Ask a genuine question about their strategy. Shorter than Email 1. No sign-off (signature is appended by scheduler).
+
+### Email 3 (+5 days after Email 2)
+
+Portfolio anecdote or buyer-side signal. Can reference a REAL portfolio company connection (Chris + iLife, Harrison + Procore, etc.) but only if the connection is genuine and relevant. Shortest of all. End with "If now isn't the right time, totally understand." Never "last note from me." No sign-off (signature is appended by scheduler).
+
+## Follow-up Scheduler (centralized system)
+
+Follow-ups are managed via `followups.json` + a single daily GitHub Actions workflow (`followup_scheduler.yml`).
+
+**How it works:**
+- `followup_scheduler.yml` runs daily at 3pm UTC (8am PT) via cron
+- It runs `scripts/run_scheduler.js`, which reads `followups.json`, processes all entries where `sendDate <= today` and `status === "pending"`
+- For each entry: checks Gmail for bounces/replies, skips if found, otherwise creates a draft
+- Updates entry status to `completed`, `replied`, or `bounced`
+- Commits the updated `followups.json` back to the repo
+
+**Adding follow-up entries (Step 4e-f):**
+Add entries to the local `followups.json` `pending` array with this shape:
+```json
+{
+  "slug": "company_name",
+  "company": "Company Name",
+  "founder": "Founder Name",
+  "email": "founder@company.com",
+  "domain": "company.com",
+  "threadId": "gmail_thread_id",
+  "messageId": "gmail_message_id",
+  "subject": "Original email subject",
+  "body": "<div>HTML email body</div>",
+  "emailNumber": 2,
+  "sendDate": "2026-05-27",
+  "status": "pending"
+}
 ```
-https://api.github.com/repos/ckootelescope/telescopeoutreach/contents/.github/workflows/{filename}
-```
+Then IMMEDIATELY push to GitHub via Contents API:
+1. GET `https://api.github.com/repos/ckootelescope/telescopeoutreach/contents/followups.json` to get current SHA
+2. Strip CRLF (replace \r\n with \n), base64 encode the updated file
+3. PUT with `{ message, content, sha }` to the same URL
+
 Headers: Authorization Bearer {GH_PAT}, Accept application/vnd.github+json, X-GitHub-Api-Version 2022-11-28
 
-Files: followup_{slug}_email2.yml and email3.yml
-Cron: {random 10-39} 15 {day} {month} * (8am PT)
-Use templates/followup_template.yml, replace all placeholders.
+**CRITICAL: If you add entries to followups.json but don't push to remote, the scheduler will never see them. This is the #1 failure mode of this system. Always push immediately after adding entries.**
 
 ## Cancel Outreach
 
-Delete all followup_{slug}_* files from .github/workflows/ via GitHub API.
+Set status to "cancelled" for all entries matching the company slug in followups.json, then push the updated file to remote.
 
 ## Batch Mode
 
@@ -391,3 +446,49 @@ List 350032: Email 1 Drafted → Email 1 Sent → Responded / Bounced / Cancelle
 - James Winter — Head of Marketing
 - Erin Cruz — Finance/Compliance
 - Emily Spradlin — Office Coordinator
+
+## Weekly Team Email Format (updated 5/23/2026)
+
+Calvin's weekly team update follows this exact structure. Do NOT deviate.
+
+### Structure
+```
+Weekly Metrics
+• Company outreach: [number]
+• Company conversations: [count]
+• Customer/network outreach: [Calvin fills in]
+• Customer/network conversations: [Calvin fills in]
+
+Active Market Dives
+• [Calvin fills in or N/A]
+
+Companies Actively Working
+• [Calvin fills in or N/A]
+
+Company First Call Summaries
+• [Company Name](link)
+   • Product: [text]
+   • Why Now: [text]
+   • Metrics: [text]
+   • Next Steps: [text]
+```
+
+### Content Rules
+
+**Product** (1-2 lines): Lead with competitor/category context if relevant (e.g., "Buildcheck competitor -"). Simple explanation + who the customer is. No jargon.
+
+**Why Now** (1-2 lines MAX): Market thesis only — why this opportunity exists now. NOT founder backstory. NOT paragraphs. Tight and investment-focused.
+
+**Metrics** (1 line): Lead with ARR estimate ("Likely ~$1M ARR -") if not explicitly stated. Pack in numbers: customers, growth, ACV, NRR, team size, funding.
+
+**Next Steps** (1 line): Must include investment decision — pass/continue/follow-up timing with specific reasoning and dates. Examples: "communicate pass - prioritizing Buildcheck", "CG set up in-person coffee in LA on 5/29", "likely too early - check in later this year".
+
+### Data Source Priority for Meeting Notes
+Granola → Affinity → Fathom. Granola has Calvin's private notes and is the richest source.
+
+### Formatting
+- Use `•` bullets only (no other characters — they break in Gmail)
+- Bold category labels: **Product**, **Why Now**, **Metrics**, **Next Steps**
+- No "Reply Highlights" section unless requested
+- No sign-off — ends after last company
+- Section title is "Company First Call Summaries" NOT "Company Conversations"
