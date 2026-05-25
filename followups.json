@@ -12,7 +12,8 @@
       "body": "<div>Hey Kyle, Chris was recently catching up with the iLife team and they mentioned carrier partners are actively looking for modern underwriting infrastructure. Happy to make intros if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-05-25T17:58:40.192Z"
     },
     {
       "slug": "modern_industrials",
@@ -26,7 +27,8 @@
       "body": "<div>Hey Austin, a few portfolio companies we work with that sell into traditional industries have found that the biggest unlock is getting the first workflow adopted, and then everything else follows. Happy to share more on what's worked.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-05-25T17:58:41.242Z"
     },
     {
       "slug": "specmade",
@@ -40,7 +42,8 @@
       "body": "<div>Hey Matt, a few of the vertical SaaS companies in our portfolio have found that once you own the report or the document of record, you can expand into payments, scheduling, and other adjacent workflows pretty naturally.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:42.680Z"
     },
     {
       "slug": "struck",
@@ -54,7 +57,8 @@
       "body": "<div>Nikhil - we work with a handful of construction and AEC companies and I think there could be some interesting overlap and intros we could make.<br><br>If now isn't the right time, totally understand - happy to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-05-25T17:58:43.723Z"
     },
     {
       "slug": "advance",
@@ -516,7 +520,8 @@
       "body": "<div>Hey Vishal, was talking to someone at an insurance agency recently and they mentioned how much time their team wastes on data entry across different carrier portals. Curious how you're thinking about the multi-carrier integration challenge.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:44.943Z"
     },
     {
       "slug": "kay",
@@ -544,7 +549,8 @@
       "body": "<div>Hey Jeff, been thinking more about the digital employee framing. Curious whether you're seeing more pull from specific verticals or if it's horizontal across SMBs.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:46.299Z"
     },
     {
       "slug": "arcovo",
@@ -572,7 +578,8 @@
       "body": "<div>Hey Emma, Harrison was telling me about a GC he spoke with recently who said the biggest technology challenge isn't adoption, it's that most software doesn't account for how chaotic a jobsite actually is. Curious how you're thinking about that.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:47.396Z"
     },
     {
       "slug": "constructable",
@@ -600,7 +607,8 @@
       "body": "<div>Hey James, was chatting with a manufacturing exec recently who mentioned that indirect labor is the fastest-growing line item nobody tracks properly. Curious how you're getting initial buy-in from plant managers.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:48.475Z"
     },
     {
       "slug": "complement",
@@ -628,7 +636,8 @@
       "body": "<div>Hey Henry, been thinking about the Meetingbird to Front journey and how that informs what you're building now. Curious how enterprise buyers are responding to the AI interview approach.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:49.337Z"
     },
     {
       "slug": "alpharun",
@@ -656,7 +665,8 @@
       "body": "<div>Hey Ian, was talking to a procurement lead at a mid-sized manufacturer recently and they estimated 15-20% of their parts catalog is redundant. Curious how you're approaching the data normalization piece.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:50.254Z"
     },
     {
       "slug": "resourcly",
@@ -684,7 +694,8 @@
       "body": "<div>Hey Felix, was chatting with a CTO recently who mentioned that AI tool proliferation is creating a new version of the shadow IT problem. Curious how you're thinking about the enterprise adoption motion.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-05-25T17:58:51.071Z"
     },
     {
       "slug": "xtrace",
@@ -712,7 +723,8 @@
       "body": "<div>Hey Nikhil, was talking to someone in specialty distribution recently and they mentioned that the average rep still manages customer relationships in notebooks and spreadsheets. Curious how you're approaching the behavior change challenge with sales teams.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:52.003Z"
     },
     {
       "slug": "corvus",
@@ -740,7 +752,8 @@
       "body": "<div>Hey Paul, was chatting with a healthcare operator recently who mentioned that intake teams spend half their day on phone calls that could be handled by software. Curious how providers have been reacting to the AI approach.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:53.000Z"
     },
     {
       "slug": "archouse",
@@ -768,7 +781,8 @@
       "body": "<div>Hey Julien, was talking to a managing partner at a PI firm recently who said they lose a significant chunk of potential cases just because they can't respond fast enough. Curious how your clients are measuring ROI.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:53.939Z"
     },
     {
       "slug": "superpanel",
@@ -796,7 +810,8 @@
       "body": "<div>Hey Doug, was talking to someone in aviation training recently and they mentioned that most flight schools still track student progress on whiteboards and spreadsheets. Curious how you're approaching the initial onboarding challenge with these operators.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:54.859Z"
     },
     {
       "slug": "flycore",
@@ -824,7 +839,8 @@
       "body": "<div>Hey Dave, been talking to a few wholesale distributors recently and the common thread is that most brands still send them Excel order forms. Curious how you're approaching the onboarding challenge with traditional wholesalers.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:55.750Z"
     },
     {
       "slug": "candid_wholesale",
@@ -852,7 +868,8 @@
       "body": "<div>Hey Meghann, was chatting with a brand operator recently who mentioned that their biggest frustration with wholesale is the lack of visibility into what's actually selling at the retail level. Curious how you're thinking about the data side of the business.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:56.703Z"
     },
     {
       "slug": "repspark",
@@ -880,7 +897,8 @@
       "body": "<div>Hey Boris, your Braintree and Chime background is really relevant here. Curious what the biggest technical challenge has been in building the payments layer for vertical SaaS platforms.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:57.624Z"
     },
     {
       "slug": "streamlined",
@@ -908,7 +926,8 @@
       "body": "<div>Hey Dave, circling back on this. We're flexible on timing so LMK if a different week works better for a quick coffee or Zoom.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:58.649Z"
     },
     {
       "slug": "magenta",
@@ -936,7 +955,8 @@
       "body": "<div>Hey Jeff, circling back on this. We're flexible on timing so LMK if a different week works better for coffee or a quick Zoom.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:58:59.417Z"
     },
     {
       "slug": "procode",
@@ -964,7 +984,8 @@
       "body": "<div>Hey Brent, circling back on this. We're flexible on timing so LMK if a different week works better for coffee or a quick Zoom.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:59:00.169Z"
     },
     {
       "slug": "walkway",
@@ -992,7 +1013,8 @@
       "body": "<div>Hey Albert, was talking to a restaurant operator recently who mentioned they have three different systems for invoices, payroll, and accounting and none of them talk to each other. Curious how you're approaching the integration challenge.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:59:01.153Z"
     },
     {
       "slug": "clipp",
@@ -1020,7 +1042,8 @@
       "body": "<div>Hey Kate, your GrowUp Farms background is really interesting. Curious how that experience shapes the way you think about building for operators who are juggling a million things at once.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:59:02.029Z"
     },
     {
       "slug": "heypesto",
@@ -1048,7 +1071,8 @@
       "body": "<div>Hey Uri, was talking to a wholesale distributor recently who mentioned that their B2B buyers now expect the same experience they get shopping online. Curious how you're thinking about the self-service vs. rep-assisted model.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-25T17:59:02.949Z"
     },
     {
       "slug": "zoey",
