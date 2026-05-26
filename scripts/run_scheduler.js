@@ -2,12 +2,22 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 
+const envPath = path.join(__dirname, '..', '.env');
+if (fs.existsSync(envPath)) {
+  fs.readFileSync(envPath, 'utf-8').split('\n').forEach(line => {
+    const idx = line.indexOf('=');
+    if (idx > 0) process.env[line.slice(0, idx).trim()] = line.slice(idx + 1).trim();
+  });
+}
+
 const configPath = path.join(__dirname, '..', 'followups.json');
+const REPO = 'ckootelescope/telescopeoutreach';
 
 const GMAIL_CLIENT_ID = process.env.GMAIL_CLIENT_ID;
 const GMAIL_CLIENT_SECRET = process.env.GMAIL_CLIENT_SECRET;
 const GMAIL_REFRESH_TOKEN = process.env.GMAIL_REFRESH_TOKEN;
 const GMAIL_SENDER_EMAIL = process.env.GMAIL_SENDER_EMAIL;
+const GH_PAT = process.env.GH_PAT;
 const SHEET_ID = '1Sk9HndYNzXj_tHg8-T4EGqSqkPk1QKXH2UOQt23s7CA';
 const SHEET_TAB = 'Activity Log';
 
@@ -187,7 +197,63 @@ async function processEntry(accessToken, entry) {
   return 'drafted';
 }
 
+function ghApi(method, apiPath, body) {
+  return new Promise((resolve, reject) => {
+    const opts = {
+      hostname: 'api.github.com',
+      path: '/repos/' + REPO + apiPath,
+      method,
+      headers: {
+        'Authorization': 'Bearer ' + GH_PAT,
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+        'User-Agent': 'telescopeoutreach'
+      }
+    };
+    if (body) opts.headers['Content-Type'] = 'application/json';
+    const req = https.request(opts, res => {
+      let d = '';
+      res.on('data', c => d += c);
+      res.on('end', () => {
+        if (res.statusCode >= 400) reject(new Error(res.statusCode + ': ' + d));
+        else resolve(JSON.parse(d));
+      });
+    });
+    req.on('error', reject);
+    if (body) req.write(JSON.stringify(body));
+    req.end();
+  });
+}
+
+async function fetchRemoteConfig() {
+  console.log('Fetching latest followups.json from remote...');
+  const resp = await ghApi('GET', '/contents/followups.json');
+  const content = Buffer.from(resp.content, 'base64').toString('utf-8');
+  fs.writeFileSync(configPath, content);
+  console.log('Remote config fetched (sha: ' + resp.sha.slice(0, 7) + ')');
+  return resp.sha;
+}
+
+async function pushRemoteConfig(sha, summary) {
+  console.log('Pushing updated followups.json to remote...');
+  const content = fs.readFileSync(configPath, 'utf-8').replace(/\r\n/g, '\n');
+  const encoded = Buffer.from(content).toString('base64');
+  await ghApi('PUT', '/contents/followups.json', {
+    message: '[auto] ' + summary,
+    content: encoded,
+    sha: sha
+  });
+  console.log('Remote updated.');
+}
+
 async function main() {
+  const isLocal = !!GH_PAT;
+  let remoteSha = null;
+
+  if (isLocal) {
+    remoteSha = await fetchRemoteConfig();
+  }
+
   const config = JSON.parse(fs.readFileSync(configPath, 'utf-8'));
   const today = new Date().toISOString().split('T')[0];
 
@@ -224,8 +290,14 @@ async function main() {
   }
 
   fs.writeFileSync(configPath, JSON.stringify(config, null, 2) + '\n');
+
+  const summary = 'scheduler processed ' + due.length + ' entries: ' + drafted + ' drafted, ' + replied + ' replied';
   console.log('\n=== Summary ===');
-  console.log('Drafted: ' + drafted + ', Replied: ' + replied + ', Bounced: ' + bounced + ', Errors: ' + errored);
+  console.log(summary + ', Bounced: ' + bounced + ', Errors: ' + errored);
+
+  if (isLocal && remoteSha) {
+    await pushRemoteConfig(remoteSha, summary);
+  }
 }
 
 main().catch(err => { console.error('FATAL:', err.message); process.exit(1); });
