@@ -2331,6 +2331,20 @@
       "emailNumber": 4,
       "sendDate": "2026-05-28",
       "status": "pending"
+    },
+    {
+      "slug": "specmade",
+      "company": "Specmade",
+      "founder": "Matt Pierce",
+      "email": "matt@specmade.com",
+      "domain": "specmade.com",
+      "threadId": "19e3be5d204d4ca1",
+      "messageId": "19e3be5d204d4ca1",
+      "subject": "Telescope Partners <> Specmade Intro",
+      "body": "<div>Hey Matt, one more thought here. Our Head of Ops Harrison Doyle spent several years at Procore so he has a lot of context on how software gets adopted in property and construction workflows. Happy to connect you two if useful, even just as a sounding board on GTM into a space where buyer behavior can be tricky.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
+      "emailNumber": 4,
+      "sendDate": "2026-05-27",
+      "status": "pending"
     }
   ]
 }
