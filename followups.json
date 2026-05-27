@@ -1181,7 +1181,7 @@
       "body": "<div>Kate,<br><br>I was reading more about Pesto and the thing that stands out is the order-to-invoice automation, specifically pulling purchase orders out of emails, PDFs, and EDI and turning them into structured data without someone manually keying it in. For a food manufacturer doing 50 or 100 orders a day across retail and foodservice, that's the kind of workflow where one wrong entry on a delivery note cascades into invoicing problems and delayed payments. The claim of 75% admin reduction is a bold number.<br><br>Curious how much of the early traction is UK retail vs. foodservice, and whether the North America expansion you're planning for this year changes the product at all given how different the buyer landscape is over here.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "cancelled"
     },
     {
       "slug": "zoey",
@@ -1547,7 +1547,7 @@
       "body": "<div>Kate,<br><br>I think the positioning of Pesto as an AI-first ERP purpose-built for food and beverage SMEs is interesting because most of the existing options are either generic ERP systems that don't understand catch weights and perishables, or point solutions that don't talk to each other. The $1.1M raise from Fuel Ventures and the plan to expand into North America in 2026 is well-timed given how much more willing F&B operators have gotten to adopt software in the last couple of years.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "cancelled"
     },
     {
       "slug": "zoey",
