@@ -912,7 +912,8 @@
       "body": "<div>Kanav, circling back on this. I saw you guys are already live with DPR, which is interesting because they're one of the more tech-forward GCs out there. I'd be curious whether the initial pull is more from the code compliance side or the bid leveling side, and if different types of contractors enter through different products.<br><br>Harrison Doyle on our team spent years as VP of Finance at Procore so preconstruction workflows are something we've spent a lot of time around. Would love to compare notes even if you're not raising.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-27",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-27T15:34:16.222Z"
     },
     {
       "slug": "kay",
@@ -2344,7 +2345,8 @@
       "body": "<div>Hey Matt, one more thought here. Our Head of Ops Harrison Doyle spent several years at Procore so he has a lot of context on how software gets adopted in property and construction workflows. Happy to connect you two if useful, even just as a sounding board on GTM into a space where buyer behavior can be tricky.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-27",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-27T15:34:17.048Z"
     }
   ]
 }
