@@ -927,7 +927,8 @@
       "body": "<div>Vishal, circling back. I saw you guys just launched the fully autonomous agent last week. The piece I keep coming back to is that Kay works inside the carrier portals and AMS systems agencies already use rather than asking them to move to something new. That's probably the only way this works for independent agencies where the tech stack is whatever they inherited five years ago.<br><br>I'd be curious how agencies are reacting to the autonomous piece vs. the semi-supervised version, and whether there's a trust curve you're seeing play out.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:06.792Z"
     },
     {
       "slug": "arcovo",
@@ -941,7 +942,8 @@
       "body": "<div>Jeff, one more note on this. I was reading about the Digital Hyve journey and growing that to 56 employees before the exit. I think that experience building a real services business gives you a different lens on what SMBs actually need vs. what most AI companies assume they need.<br><br>With 300 digital employees deployed, I'd be curious whether you're seeing more expansion within existing accounts (adding a second or third agent) or if it's mostly new logos driving growth right now.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:07.754Z"
     },
     {
       "slug": "constructable",
@@ -955,7 +957,8 @@
       "body": "<div>Emma, wanted to follow up one more time. The flat pricing with unlimited users is a smart move for mid-market GCs where the alternative is paying per seat and then half the field team never gets a login. I think that's part of why Procore adoption stalls at a lot of companies in the $20M-$150M range.<br><br>Harrison on our team was VP of Finance at Procore for several years, so he's seen that dynamic firsthand. I'd be curious whether subs and consultants are actually engaging on the platform or if it's still mostly the GC's internal team using it.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:08.647Z"
     },
     {
       "slug": "complement",
@@ -969,7 +972,8 @@
       "body": "<div>James, one more note. Your background is pretty unusual for manufacturing AI. Guidance and control software at Relativity Space, then Neuralink, now factory operations. I'd imagine that experience building systems that have to work in real-time with messy real-world data translates well to a manufacturing floor where nothing runs the way the ERP says it should.<br><br>Curious how you're thinking about the sales motion. Are plant managers finding you, or is it more top-down from operations leadership?</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:09.425Z"
     },
     {
       "slug": "alpharun",
@@ -983,7 +987,8 @@
       "body": "<div>Henry, following up here. I read the Chapter case study and the numbers are pretty striking. Going from managers reviewing a handful of calls a week to scoring 100% of them against 60+ criteria is a real shift in how coaching works. The fact that 93% of advisors improved within two months suggests the feedback loop is actually tight enough to change behavior.<br><br>I'd be curious how the AI voice agent side is developing relative to the coaching product, and whether customers are coming in for one and expanding to the other.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:10.194Z"
     },
     {
       "slug": "resourcly",
@@ -997,7 +1002,8 @@
       "body": "<div>Ian,<br><br>I was reading the CPO Strategy piece about Resourcly and the Sandvik example stood out. The idea that manufacturers are sitting on billions in idle parts not because the parts are broken, but because they're buried across fragmented PLM and ERP systems, is something I keep hearing from procurement teams. I think the similarity analysis approach, where you're actually comparing technical drawings and datasheets to find interchangeable parts, is what separates this from just another data cleanup project. Most spend analytics tools can tell you that you're buying too many variants, but they can't tell you which ones are actually interchangeable. Curious whether the sustainability angle, tracking carbon footprints and recyclability at the part level, is something customers are asking for or if it's more of a differentiator you're leading with proactively.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:10.958Z"
     },
     {
       "slug": "xtrace",
@@ -1027,7 +1033,8 @@
       "body": "<div>Nikhil,<br><br>I was reading your blog post comparing AI agents to chatbots in chemical sales and the example of shrinking solution identification from 6-8 hours of research plus weeks of meetings down to 30 minutes is a great way to frame the value. I think the reason generic CRMs have never worked well for chemical distributors is that the product matching requires actual understanding of TDS and SDS documents, not just keyword search. Your McKinsey background doing digital transformation work in the space probably gives you a clear picture of where the adoption friction actually lives. Curious whether the initial pull is coming more from the large distributors trying to get new reps productive faster, or from mid-size players trying to compete on responsiveness.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:11.736Z"
     },
     {
       "slug": "archouse",
@@ -1041,7 +1048,8 @@
       "body": "<div>Paul,<br><br>I read the Metriport case study about ArcHouse and the part that stuck with me was the example where automated medical record retrieval uncovered a previously missed cardiac condition that changed the patient's care plan. That's a powerful proof point because it reframes the platform from an efficiency tool to something that actually improves clinical outcomes. The hospice market is projected to go from $8B to $33B in the next few years, and the providers scaling to meet that demand can't do it if every referral still requires an hour of manual record gathering and insurance verification. Curious how you're thinking about expanding from hospice into home health and palliative more broadly, or if you're staying focused for now.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:12.500Z"
     },
     {
       "slug": "superpanel",
@@ -1055,7 +1063,8 @@
       "body": "<div>Julien,<br><br>I read through the CPLG case study and the A/B test detail stood out. The fact that clients couldn't tell whether they were interacting with Superpanel or a human intake specialist, and that CPLG doubled their signed cases monthly without adding staff, is the cleanest proof point I've seen for AI intake. I think what makes this hard to replicate is that you're not just routing calls, you're applying the firm's actual qualification rules, objection handling, and escalation logic in real time across voice, SMS, and email simultaneously. Chris has worked with Logikcull and Persuit on the legal tech side and the intake bottleneck comes up constantly. Curious how you're thinking about expanding into insurance and financial services intake, which I noticed on the site, and whether the playbook translates directly or requires meaningful customization per vertical.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:13.237Z"
     },
     {
       "slug": "flycore",
@@ -1069,7 +1078,8 @@
       "body": "<div>Doug, circling back on this. I saw you guys just launched Stripe payments for discovery flights and the conditional logic forms for onboarding. The discovery flight piece is interesting to me because that's really the top of the funnel for every flight school, and most of them are still handling it over the phone or through a generic booking widget that doesn't capture anything useful about the student afterward.<br><br>The All In Aviation case study caught my eye too. A 36% bump in student conversion after switching off HubSpot makes sense when you think about how much of that platform is just irrelevant to a flight school's actual workflow. Curious whether you're seeing more pull from schools that have never used a CRM at all versus ones migrating off something like HubSpot or Salesforce, and which of those segments is easier to land.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:13.961Z"
     },
     {
       "slug": "candid_wholesale",
@@ -1083,7 +1093,8 @@
       "body": "<div>Dave, one more thought on Candid. The distributor use case is what stands out to me. Managing multiple brands, multiple price lists, rep-level commissions, and tiered buyer permissions in one place is a genuinely different problem than just giving a single brand a nicer storefront. Most wholesale platforms start with the brand and bolt on distributor features later, but it seems like you've built for that complexity from the start.<br><br>Curious how much of your growth is coming from distributors pulling their brands onto the platform versus brands bringing their retail buyers in directly. That dynamic usually tells you a lot about where the real pull is.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:14.711Z"
     },
     {
       "slug": "repspark",
@@ -1097,7 +1108,8 @@
       "body": "<div>Meghann, circling back. The Catapult Brand Group deal and the PGA Show panel on special orders got me thinking. Special orders in golf are one of those things where the process is so manual that most pros just avoid doing them unless a member really pushes for it. Turning that from a headache into a revenue channel through automation and real-time inventory feels like a playbook that could work across a lot of the other verticals you're in.<br><br>I'd be curious how you're thinking about the balance between going deeper into golf versus expanding the same approach into your other verticals like outdoor, tactical, and footwear. Feels like there's a strategic question there about where RepSpark Flow gets the most traction first.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:15.482Z"
     },
     {
       "slug": "streamlined",
@@ -1111,7 +1123,8 @@
       "body": "<div>Boris, one more note. The founding story stuck with me. A $90 million payment goes missing at Braintree for two weeks and nobody notices until the client calls. That's wild, but it also makes total sense when you look at how most B2B payments still work. Brands doing serious wholesale volume are reconciling checks, ACH, and credit card payments across different systems, and the invoice-to-cash gap is where everything breaks down.<br><br>At 267% YoY growth and 80,000 businesses, I'm curious whether Shopify B2B has been a tailwind for you guys or if most of your customers are coming from the wholesale side independent of their DTC stack.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:16.248Z"
     },
     {
       "slug": "magenta",
@@ -1125,7 +1138,8 @@
       "body": "<div>Dave, one more thought on Magenta. The supplier data package review workflow is what keeps coming back to me. A quality inspector spending 15 to 30 minutes per package manually cross-referencing material certs, packing slips, and CoCs against PO requirements is exactly the kind of work that should have been automated years ago, but nobody built it because you need people who actually understand AS9100 and NADCAP to get the validation logic right.<br><br>The demo on your site where the AI catches five issues in a single Triton Precision package, including a missing age hardening cert and a spec discrepancy, is a good example of what makes this hard to replicate without deep domain knowledge. Curious how you're thinking about expanding beyond the quality and compliance workflows into the broader manufacturing ops stack.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:17.020Z"
     },
     {
       "slug": "procode",
@@ -1139,7 +1153,8 @@
       "body": "<div>Jeff,<br><br>The acquire-and-integrate playbook is what caught my attention here. Most AI companies in RCM are trying to sell software to billing companies. You bought one, kept the team, and gave them tools that make coders 90% faster. Adding $2M ARR in five months with Auctus while serving 300+ plastic surgery and derm providers is a real proof point that the model works before you start rolling up the next one.<br><br>I'd be curious how you're thinking about the next acquisition targets. Are you staying in surgical specialties or does the playbook port into other high-complexity billing verticals?</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:17.792Z"
     },
     {
       "slug": "walkway",
@@ -1153,7 +1168,8 @@
       "body": "<div>Brent,<br><br>Been thinking about this more. Hotels and airlines figured out dynamic pricing decades ago, but most tour operators still set prices once a year and leave them. Arival's data showing dynamic pricing adoption in tours and activities is about to more than double makes sense given the tooling is finally catching up. The fact that you and Drew saw this play out firsthand at Airbnb and Kayak respectively, where vacation rental pricing went from static to dynamic over a few years, gives you a pretty clear roadmap for what happens next in experiences.<br><br>Curious whether operators are coming to you proactively or if it's more of an education sell right now.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:18.512Z"
     },
     {
       "slug": "clipp",
@@ -1167,7 +1183,8 @@
       "body": "<div>Albert,<br><br>I noticed Choco just launched their voice agent with OpenAI for food distribution ordering, which is interesting timing. They've raised $328M and are coming at this from the enterprise distributor side. You're coming at it from the independent supplier and restaurant buyer side with the QR code onboarding, which feels like a fundamentally different GTM. The question in food distribution has always been whether you build top-down from the biggest distributors or bottom-up from the thousands of smaller suppliers who are still literally taking orders by phone and text.<br><br>I'd be curious how you think about that competitive dynamic and whether Choco going big actually helps you by educating the market.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:19.258Z"
     },
     {
       "slug": "heypesto",
@@ -1195,7 +1212,8 @@
       "body": "<div>Uri,<br><br>I was looking at the Professional Medical Fulfillment case study on your site. 45% sales growth after launch with no additional marketing spend is a pretty compelling data point for the self-service portal model. It makes sense because if a wholesale buyer can reorder at midnight instead of waiting until the next morning to call their rep, you just unlock orders that would have been forgotten or delayed.<br><br>With Zoey being around since 2014 and making the Inc. 5000, I'd be curious how you're thinking about the AI layer. The PDF-to-order ingestion on the mobile app feels like a natural wedge into automating more of the ordering workflow. Are you seeing that pull from existing customers or is it more of a new customer acquisition feature?</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:19.956Z"
     },
     {
       "slug": "coolr",
@@ -1653,7 +1671,8 @@
       "body": "<div>Hey Dilip, circling back on this. I was looking at how you guys handle shadow AI detection, specifically the ability to surface unsanctioned tools like ChatGPT or Copilot that teams are spinning up outside of any approved process. I think that's where a lot of the urgency is going to come from for buyers. The EU AI Act enforcement for high-risk systems kicks in this year, and most companies I talk to still don't even have a full inventory of what AI tools their employees are using, let alone whether any of them touch sensitive data.<br><br>I'd be curious how you're seeing demand shift now that enforcement is actually here. Are companies coming to you proactively, or is it more reactive after an audit flags something?</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:20.905Z"
     },
     {
       "slug": "contractor_commerce",
@@ -1667,7 +1686,8 @@
       "body": "<div>Hey Will, circling back on this. I was reading about the Ferguson strategic alliance and the LG approved provider designation, both in the last few weeks. Locking in distribution partnerships like that is a smart way to get in front of contractors without having to sell them one by one. The ServiceTitan certification is interesting too, being the sole e-commerce partner in that marketplace gives you a pretty clean path to every contractor already on the platform.<br><br>I think what I keep coming back to is that the homeowner expectation has permanently shifted. People want to buy a furnace the same way they buy everything else, with pricing, reviews, and checkout. But the contractor still needs to be in the loop because they're the one doing the install. You guys seem to have figured out that middle ground. I'd be curious whether the Ferguson relationship changes how you think about expanding beyond HVAC into other trades.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:21.649Z"
     },
     {
       "slug": "controltheory",
@@ -1681,7 +1701,8 @@
       "body": "<div>Hey Bob, circling back on this. I spent some more time looking at how Dstl8 works, specifically the edge distillation approach where you analyze telemetry at the source instead of shipping everything to a central platform and paying to store it. I think that's the right instinct. Every engineering team I talk to is spending more on observability than they want to and getting less clarity in return, and it's only getting worse as AI-generated code increases the surface area of what needs monitoring.<br><br>The piece that stood out to me is feeding runtime context directly into coding assistants like Claude Code and Cursor. Most observability tools are still oriented around dashboards that an SRE checks after something breaks. Closing that loop so the developer who wrote the code (or the AI that generated it) gets the feedback automatically feels like a different product category. I'd be curious how adoption has looked since the KubeCon launch, specifically whether the pull is more from teams trying to cut observability costs or teams trying to get better signal out of AI-generated code.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:22.480Z"
     },
     {
       "slug": "corgea",
@@ -1695,7 +1716,8 @@
       "body": "<div>Hey Ahmad, circling back on this. I was looking more closely at how you guys approach fix generation, specifically constraining the problem to roughly 100 vulnerability types with standardized scanner input rather than trying to be a generalist coding tool. I think that's the right architecture for getting fix accuracy high enough that developers actually trust the PRs. The Zapier case is a good proof point, 20% more true positives and 90% fewer false positives compared to their prior tooling is the kind of result that makes a security team want to rip out what they had before.<br><br>I'd be curious how you're thinking about the competitive positioning against Snyk and Semgrep now that you can both scan and fix. Are most customers coming in as a replacement, or are they layering you on top of an existing scanner and using you primarily for the remediation side?</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:23.238Z"
     },
     {
       "slug": "corvera",
@@ -1709,7 +1731,8 @@
       "body": "<div>Hey Chris, circling back on this. I spent more time looking at how Corvera actually works, and the thing that stands out is the insight that the systems themselves aren't the problem, it's the person sitting between them manually moving data from one tool to another. Every CPG brand I've looked at runs on some combination of NetSuite or Cin7, plus Shopify, plus Amazon, plus a 3PL, and the person reconciling all of that is usually the founder or one ops hire who built a bunch of spreadsheets. Your agents logging directly into those systems and executing the workflows end to end feels like the right approach because you're not asking anyone to migrate off their existing stack.<br><br>The traction is impressive too, going from first customer to a dozen brands in five weeks. I'd be curious whether you're seeing more pull from brands at the early stage who are trying to avoid hiring an ops team, or from more established brands who already have the team but can't keep up with the volume.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:23.934Z"
     },
     {
       "slug": "cotool",
@@ -1723,7 +1746,8 @@
       "body": "<div>Hey Max, I was reading the blog post about \"security without the spectacle\" and I think the Cursor/Windsurf analogy is the right framing. Those tools made developers 10x more productive without trying to replace them, and security teams need the same thing. The part that stood out to me is how Detection Agents use natural language intent instead of static rules on live log streams. Something like a dormant API key suddenly enumerating S3 buckets at 2am is technically authorized but behaviorally suspicious, and that's exactly the kind of thing static SIEM rules miss. I'd be curious how you're thinking about the expansion from detection into the full response loop, and whether customers are adopting both at once or starting with one side.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:24.676Z"
     },
     {
       "slug": "diversifi",
@@ -1737,7 +1761,8 @@
       "body": "<div>Hey Caleb, I was looking at the carrier diversification feature and I think the volume band monitoring piece is really clever. Most 3PLs I've heard about are stuck with one or two carriers not because they're the best option, but because they're terrified of falling off their pricing tier if they shift volume. Building AI that manages the allocation across revenue bands automatically, so you can introduce new carriers without jeopardizing discounts, feels like the right unlock. The stat that 74% of rate quotes differ from actual billing also stood out. That's a staggering amount of margin just disappearing between the quote and the invoice. Curious how long it typically takes a new 3PL customer to see the 28% margin improvement, and whether smaller operators adopt differently than larger ones.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:25.427Z"
     },
     {
       "slug": "entangl",
@@ -1751,7 +1776,8 @@
       "body": "<div>Hey Shapol, I've been reading more about what you guys are building and the detail that stood out is how Entangl crawls across knowledge bases like GitHub, Google Drive, and OneDrive to detect changes as they happen and flag the downstream impact across teams. I think that's the right approach because the real problem in complex engineering isn't that reviews don't happen, it's that they happen too late and in silos. One team makes a change and nobody catches how it affects a different system until months later. The aerospace background makes sense here too. Launching reusable rockets means you've lived through the consequences of what happens when cross-system dependencies get missed. Curious whether the Azure Marketplace listing is driving enterprise adoption or if most customers are still coming through direct sales.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:26.134Z"
     },
     {
       "slug": "faction",
@@ -1765,7 +1791,8 @@
       "body": "<div>Hey Kunal, been thinking more about Faction's approach and the thing I keep coming back to is the modular adoption model. Starting with quoting or order entry and then expanding into pricing, procurement, and AP/AR means you're not asking a distributor to rip anything out on day one. That's important because the ERP is sacred in this world and most AI pitches die the moment someone says \"replace your system.\" The 75% reduction in manual data entry from early deployments is impressive, especially given how messy the inputs are. A quote request coming in as a half-complete email from a jobsite is a very different problem than parsing a clean spreadsheet. Curious whether the voice agent piece is seeing early traction or if most customers are starting with the document side.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:26.874Z"
     },
     {
       "slug": "flowgen_labs",
@@ -1779,7 +1806,8 @@
       "body": "<div>Hey Dhruva, been thinking more about the contextual process graph and I think that's the piece that separates FlowGen from the other \"AI for ERP\" pitches I've seen. Most of them try to automate a single workflow in isolation. Reconstructing the full decision tree from transaction history and data lineage so the agents actually understand how processes connect to each other feels like the right architecture for getting to 94% autonomous dispute resolution. The Shell and Aramco examples are interesting because those are environments where getting it wrong has real financial consequences, not a sandbox. Curious how the deployment path differs between SAP and NetSuite customers, and whether mid-market companies are adopting as fast as enterprise.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:27.629Z"
     },
     {
       "slug": "freeflow",
@@ -1793,7 +1821,8 @@
       "body": "<div>Hey Jason, circling back on this. I was looking at the Coworker Agent setup, specifically how it shares its progress and takes feedback from adjusters in real time rather than running as a black box. I think that's the right design for insurance, where the risk of an AI making a bad call on a claim is way higher than in most industries. The fact that you and David already built and sold Young Alfred with 50+ carrier integrations means you've actually lived through the pain of connecting to these legacy core systems, which I think is the hardest part of what you're doing and also the biggest advantage once you're in.<br><br>Curious how carriers are thinking about the ROI conversation. Is it more about headcount reduction, or is the pitch really around catching leakage they never would have found with 5-10% sampling?</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:28.331Z"
     },
     {
       "slug": "hunted_labs",
@@ -1807,7 +1836,8 @@
       "body": "<div>Hey Hayden, been thinking more about Entercept since my last note. The easyjson finding is a good example of why contributor attribution matters. A widely used Go package that turns out to be maintained by developers at VK Group, and most companies pulling it in had no idea. That's not a vulnerability in the traditional CVE sense, it's a trust problem, and I think most existing SCA tools just aren't built to catch it.<br><br>Your background building Platform One for the DoD and hardening 500+ container images through Iron Bank gives you a perspective on this that's hard to replicate. Curious whether the commercial GTM is landing more through security teams or through engineering/DevOps, and if the conversation is different depending on who's buying.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:29.056Z"
     },
     {
       "slug": "kipling_secure",
@@ -1821,7 +1851,8 @@
       "body": "<div>Hey Saurabh, wanted to circle back with one more thought. I was reading about the encrypted traffic analysis approach, where you're detecting threats without needing full payload inspection. I think that's the right tradeoff for MSPs who are managing dozens of client environments and can't realistically do deep packet inspection everywhere. The natural language interface is also interesting. Most MSP techs aren't security specialists, so letting them configure and operate the platform through plain English instead of writing scripts removes a real bottleneck.<br><br>After 16 years at Juniper, you've seen how these tools get deployed at the network level. Curious whether the AI governance piece, detecting unauthorized AI usage across client environments, is becoming more of a pull for MSPs or if it's still early.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:29.815Z"
     },
     {
       "slug": "laborup",
@@ -1835,7 +1866,8 @@
       "body": "<div>Hey Simba, circling back on this. The AI voice agent piece really caught my attention. Instead of asking a machinist or welder to fill out a form, you're basically letting them walk through a conversation and the system builds their profile from that. I think that's the right call for a workforce that isn't sitting at a computer all day. The fact that you left Stanford to move to Tennessee and manually placed workers for months before building the technology shows you actually learned the hiring DNA firsthand, and I think that's why the numbers look the way they do, 10x faster hires, 70% lower cost, 3x retention.<br><br>Curious how the expansion into Alabama, Ohio, and Georgia is going. Are you replicating the same playbook of building the worker network first, or does it look different in markets with different manufacturing concentrations?</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:30.567Z"
     },
     {
       "slug": "riskfront",
@@ -1849,7 +1881,8 @@
       "body": "<div>Hey Andy, circling back on this. I was looking at how AIROS splits the work into three separate agent systems, one for due diligence research, one for transaction analysis, one for document analysis, and I think that modular approach is right for compliance. A bank running KYC onboarding has a completely different workflow than one reviewing sanctions alerts, so having specialized agents that can work together but also operate independently makes the product more deployable across use cases.<br><br>The Lytical Ventures lead is interesting too, given their focus on national security and compliance. Curious whether the early conversations have been more with mid-market fintechs or larger banks, and if the sales cycle looks different between the two.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:31.336Z"
     },
     {
       "slug": "soff",
@@ -1863,7 +1896,8 @@
       "body": "<div>Hey Bernhard, circling back on this. I was looking at how Soff captures RFQs directly from email and auto-generates pricing and PDF quotes that sync back to the distributor's ERP. I think the reason that workflow is so sticky is that it meets distributors exactly where they already work, their inbox, instead of asking them to adopt a new system. The one-day implementation claim is also worth noting. Most distributor ERP integrations take weeks or months, so if you're actually pulling that off, it removes the biggest objection a buyer would have.<br><br>Your Tesla Autopilot and Stanford AI background is an interesting combination for distribution software. Curious whether the initial pull has been stronger from fastener and industrial distributors or if you're seeing demand across verticals like HVAC and aerospace too.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:32.060Z"
     },
     {
       "slug": "structured",
@@ -1877,7 +1911,8 @@
       "body": "<div>Brandon, circling back on this. I was looking at how you guys trained a foundational vision model specifically on engineering symbols to actually read plans the way a senior engineer would. I think that's the right approach, most AI tools in AEC try to work from text or metadata, but the information that matters in QA is on the drawing itself. Curious how firms like Syska Hennessy are using the custom checks feature, whether they're mostly encoding their own internal standards or leaning more on the code compliance side. Harrison on our team is a former Procore VP of Finance and has talked about how the QA/QC bottleneck is one of the biggest reasons projects slip schedule.<br><br>Would love to hear how things are going. LMK if you have a few minutes for a quick Zoom.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:32.785Z"
     },
     {
       "slug": "turgon",
@@ -1891,7 +1926,8 @@
       "body": "<div>Ankur, circling back on this. I was looking at the McCarthy Tire Service case study, going from zero to real-time analytics in 5 weeks at 70% cost savings is a good proof point. I think the Pod model makes sense for this category, the biggest complaint I hear about legacy migration projects is that they balloon in scope because they're 100% consulting hours with no leverage. Having AI agents handle 80% of the execution while FDEs handle the judgment calls compresses timelines without cutting corners on the stuff that actually requires domain expertise. Curious whether the DynPro partnership is opening up a different customer profile than you were reaching on your own, or if it's mostly accelerating deals you were already in.<br><br>Would love to chat if you have a few minutes.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:33.692Z"
     },
     {
       "slug": "twinknowledge",
@@ -1905,7 +1941,8 @@
       "body": "<div>Ivan, circling back on this. I was looking at the Sound Transit case study, going from 26 minutes to 2 minutes per review item across 4,500 as-built drawing sheets biweekly is impressive, especially with a five-person team on the nation's largest transit expansion project. I think the approach of training AI on a firm's historical projects and existing knowledge base is what differentiates this from generic document search. Architects and engineers have decades of institutional knowledge locked up in old project files that nobody can find when they need it. Curious whether you're seeing more pull from the compliance checking side or the RFI acceleration side, and if those tend to land with different buyer personas inside the same firm.<br><br>Would love to hear how things are going since the Camber Creek round.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:34.442Z"
     },
     {
       "slug": "wisebee",
@@ -1919,7 +1956,8 @@
       "body": "<div>Stoyan, circling back on this. I was reading about the DSK Bank deployment where you replaced three legacy platforms costing roughly 100K euros each and delivered board-ready risk reporting within 30 days. I think that's the right wedge for mid-market, showing a CISO they can cut tool spend while getting better coverage, not just adding another dashboard on top of the existing stack. Curious how the conversation differs between European banks that are dealing with DORA requirements versus the US government and fintech pilots you're running. Those seem like very different buyer motions.<br><br>Would love to hear how things are progressing since the pre-seed.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:35.180Z"
     },
     {
       "slug": "workhero",
@@ -1933,7 +1971,8 @@
       "body": "<div>Kyler, circling back on this. I was reading the founding story about Skywalker HVAC and how everything changed when Ryan hired Debbie. I think you've identified the right structural problem, 84% of HVAC businesses have fewer than 15 employees, which means they're too big for the owner to handle everything but too small to justify a $50K office manager hire. The hybrid model of pairing experienced HVAC office managers with AI tools, and plugging into whatever system the contractor already uses, avoids the adoption problem that kills most software in trades. Curious whether the 2,000+ HVAC owners in your podcast audience are converting into customers, or if that's more of a brand play.<br><br>Would love to hear how things are going since the seed round.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:35.925Z"
     },
     {
       "slug": "wyre",
@@ -1947,7 +1986,8 @@
       "body": "<div>Sunil, circling back on this. I was reading about the DiPasquale Construction deployment where Wyre Check caught a conflict between drawings showing a new ATS switch and specs requiring the existing one to remain. That's exactly the kind of thing that turns into a $50K change order if nobody catches it until the subcontractor is already on site. I think the fact that you built and sold Pype to Autodesk gives you a real advantage here, you already know where document analysis breaks down in practice, and you've built Wyre around the specific preconstruction workflows where scope gaps actually get created. Curious how the advisor relationship with Amar Hanspal is shaping the product roadmap, given his perspective from running Autodesk.<br><br>Would love to hear how things have been going since the launch.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:36.685Z"
     },
     {
       "slug": "cognitiveview",
@@ -2269,7 +2309,8 @@
       "body": "<div>Hey Omer,<br><br>Wanted to pass along something that might be useful. Chris Gaertner on our team invested in iLife (insurance distribution platform) and has a good network across insurtech founders, particularly on the MGA and agency side. If it would ever be helpful to connect you with folks who are navigating similar GTM challenges in insurance infrastructure, happy to make some intros.<br><br>Also, I noticed Pathpoint is an early customer. I think the combination of automating premium reconciliation and generating yield on trust accounts is a compelling value prop because it turns a cost center into a revenue line without the agency having to change how they operate day to day.<br><br>If now isn't the right time, totally understand. Either way, the offer to connect you with relevant folks in our network stands.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:37.704Z"
     },
     {
       "slug": "apicontext",
@@ -2283,7 +2324,8 @@
       "body": "<div>Hey Mayur,<br><br>One thing I wanted to flag. Chris Gaertner on our team has spent a lot of time around infrastructure and developer tools (Datadog, among others), and I think he'd have a good perspective on how API governance fits into the broader observability stack as companies start deploying agentic AI. Your report on enterprise API readiness for autonomous agents is timely given how many companies we talk to are thinking through that exact problem.<br><br>Happy to connect you with Chris or anyone else in our network who might be useful as you scale. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:38.519Z"
     },
     {
       "slug": "astrada",
@@ -2297,7 +2339,8 @@
       "body": "<div>Hey Salman,<br><br>Wanted to share something potentially useful. Chris Gaertner on our team has invested in several companies in the spend management and supply chain data space (Parabola, Project44) and knows the fintech infrastructure landscape well. Given that you're working with platforms like Workday, Payhawk, and Zoho, I think there could be some good connections to make on the distribution side as you expand your platform partner network.<br><br>Your Marqeta experience clearly shaped how you think about card infrastructure, and I think building the data layer that sits underneath these platforms is the right approach given how fragmented spend visibility still is. Happy to make relevant intros if helpful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:39.416Z"
     },
     {
       "slug": "bixby",
@@ -2311,7 +2354,8 @@
       "body": "<div>Hey Shaw,<br><br>Wanted to offer something concrete. Harrison Doyle on our team (ex-Procore VP of Finance) still talks regularly with GCs and subs who deal with the submittal review bottleneck firsthand. If it would be helpful to get in front of some of those folks for feedback or early design partners, happy to make those connections.<br><br>I also think the fact that you're going after SOC 2 Type II early signals you're thinking about enterprise readiness from day one, which matters in construction where trust and data security are table stakes for larger firms.<br><br>If now isn't the right time, totally understand. The offer to connect you with Harrison and his network stands regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:40.236Z"
     },
     {
       "slug": "boon",
@@ -2325,7 +2369,8 @@
       "body": "<div>Hey Deepti,<br><br>One more thing I wanted to pass along. Harrison on our team spent years at Procore and still keeps in touch with a lot of preconstruction and ops leaders at GCs and electrical contractors. If it would ever be useful to get introductions to potential customers or design partners, especially as you expand beyond the electrical sub vertical, happy to facilitate that.<br><br>I also noticed you're pricing Boon Agent on a token basis starting at $375, which I think is a smart way to lower the barrier for teams that want to test it on a single project before committing to a subscription. Curious how that's been resonating versus the monthly model.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:41.029Z"
     },
     {
       "slug": "cedar",
@@ -2339,7 +2384,8 @@
       "body": "<div>Hey Kyle,<br><br>Wanted to pass something along. I read your piece on turning zoning chaos into deal flow and I think the \"Excel-shaped on-ramps\" framing is really smart. Meeting developers where they already work instead of asking them to adopt a completely new workflow is how you get sticky adoption in an industry that's historically resistant to new tools.<br><br>Harrison Doyle on our team (ex-Procore VP of Finance) has a broad network across construction and real estate development. As you expand beyond Austin into new cities, happy to connect you with folks who might be useful on the builder and developer side.<br><br>If now isn't the right time, totally understand. The offer stands whenever it would be helpful.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-28T22:07:41.738Z"
     },
     {
       "slug": "specmade",
