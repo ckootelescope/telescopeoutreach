@@ -1209,7 +1209,9 @@
       "body": "<div>Durlabh, one thing I keep thinking about with Coolr. You're deployed across 40+ markets, which means you're sitting on a massive cross-brand dataset that no individual CPG company could build on its own. A brand like Heineken can see what's happening in their own coolers, but Coolr can see patterns across the entire cold aisle. I'd be curious whether that aggregate data is something you're thinking about productizing, or whether the roadmap is more about going deeper within each brand's own execution workflows.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "cancelled",
+      "cancelledAt": "2026-05-28T01:28:31.735Z",
+      "cancelReason": "Meeting booked via LinkedIn"
     },
     {
       "slug": "nexcade",
@@ -1237,7 +1239,9 @@
       "body": "<div>Robert, been thinking more about Freshline. The founding story is interesting to me. You guys ran a seafood marketplace for five years, delivered 500K+ pounds of product, and then built the software layer from that experience. That's a very different starting point than most B2B commerce platforms. I looked at the April product update and 17 new features in a single release across inventory, analytics, and security is a serious pace. I'm curious how the AI ordering agent handles the tricky stuff, like when a chef texts something vague or changes an order mid-fulfillment. That's where most automation falls apart in food.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "cancelled",
+      "cancelledAt": "2026-05-28T01:28:31.735Z",
+      "cancelReason": "Reply received; too small now"
     },
     {
       "slug": "reform",
@@ -1575,7 +1579,9 @@
       "body": "<div>Durlabh,<br><br>I think the decision to position Coolr's value around the analytics layer rather than the hardware is the right call because it means you're not stuck in a hardware refresh cycle and you can work with whatever cameras brands already have installed. Heineken and Carlsberg and Freshpet are meaningful early logos given how operationally conservative those organizations tend to be about new vendor relationships. I'd be curious how you're thinking about expanding the playbook beyond cooler compliance into broader in-store execution for food and bev brands.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-31",
-      "status": "pending"
+      "status": "cancelled",
+      "cancelledAt": "2026-05-28T01:28:31.735Z",
+      "cancelReason": "Meeting booked via LinkedIn"
     },
     {
       "slug": "nexcade",
@@ -1603,7 +1609,9 @@
       "body": "<div>Robert,<br><br>I was looking at how Freshline handles catch weight pricing and complex delivery cutoffs natively rather than patching around them, which I think is what separates a real food distribution platform from a generic B2B eCommerce tool that happens to sell to distributors. 100+ food distributors and a 98% collection rate are both numbers that matter a lot to a buyer evaluating whether this actually works in production. Chris on our team worked with Parabola and Project44 and we've spent time in the food supply chain.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-31",
-      "status": "pending"
+      "status": "cancelled",
+      "cancelledAt": "2026-05-28T01:28:31.735Z",
+      "cancelReason": "Reply received; too small now"
     },
     {
       "slug": "reform",
