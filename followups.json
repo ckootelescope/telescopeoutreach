@@ -1243,7 +1243,8 @@
       "body": "<div>Dan, been thinking more about Nexcade since my last note. The quoting workflow is interesting because it's the one place where speed directly translates to revenue. A forwarder that quotes in 10 minutes instead of 2 hours wins the shipment. I noticed you have Zencargo and Cardinal live already, and 40%+ month-over-month workflow growth during stealth is a real number. Curious whether the forward-deployed engineering model is something you see scaling long term or if the product eventually gets self-serve enough that forwarders can configure their own agents.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:33.027Z"
     },
     {
       "slug": "freshline",
@@ -1273,7 +1274,8 @@
       "body": "<div>Omar, the Frederic Schad case study caught my eye. A 100-year-old logistics company in the Dominican Republic processing 2,500+ invoices a day through Reform, with 98% accuracy and enough efficiency gains to reallocate 75% of their clerical team to customer service. That's a compelling reference for selling into traditional freight operations. I'd be curious how the conversation differs when you're selling into a customs broker versus a freight forwarder. The compliance piece feels like it could be an even stickier wedge than the operational automation.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:33.840Z"
     },
     {
       "slug": "peasy",
@@ -1287,7 +1289,8 @@
       "body": "<div>Ryan, I keep coming back to the pricing decision. Giving the core product away for free is a bold move, especially when most CPG ops tools charge per-seat or per-SKU and price out the exact brands that need them most. Bryan building Mustard &amp; Co and running into these problems firsthand is the kind of founder-market fit that's hard to replicate. Curious what the monetization path looks like once you have distribution. Is it adjacent services, premium features for larger brands, or something else entirely?</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:34.758Z"
     },
     {
       "slug": "meltplan",
@@ -1301,7 +1304,8 @@
       "body": "<div>Kanav - circling back one more time. I was looking at the Melt Bid product and the way it flags missing scope before a GC makes an award decision, and I think that's probably the stickiest wedge you have with general contractors. Our Head of Ops Harrison Doyle is a former VP of Finance at Procore so preconstruction is a space we know well - happy to make any relevant intros if it's useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:35.696Z"
     },
     {
       "slug": "kay",
@@ -2414,7 +2418,8 @@
       "body": "<div>Jeremy, I was looking at the state education agency side of Eddi and the model is interesting. Instead of selling district by district, when a state uses you as their grant distribution infrastructure, every local org in that state becomes a user. Curious how the MGT partnership is translating into actual pipeline on the state side.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:36.902Z"
     },
     {
       "slug": "eddifi",
@@ -2456,7 +2461,8 @@
       "body": "<div>Fred, I was looking at the three-pillar approach (discover, secure, govern) and I think the sequencing is smart. The natural entry point is helping security teams just figure out what MCP servers exist in their environment before they can even think about policy enforcement. Curious whether most of your early customers came in through the discovery use case or if governance was the initial pull.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:37.784Z"
     },
     {
       "slug": "helmet_security",
@@ -2498,7 +2504,8 @@
       "body": "<div>Patrick, I was reading about the CivicPlus partnership. Rather than selling to municipalities one by one, being embedded in the platform that 13,000+ government agencies already use changes the math entirely. Curious how that came together and whether you're seeing more pull from the municipal side or the architecture firm side.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:38.698Z"
     },
     {
       "slug": "codecomply",
@@ -2540,7 +2547,8 @@
       "body": "<div>Lauri, I was looking at how you guys trigger the AI interviews based on behavioral signals rather than random sampling. I think that's the right approach because the most useful feedback comes from users at the exact moment something breaks, not from a survey link they get two weeks later. Curious how many interviews it typically takes before the product graph starts surfacing actionable patterns.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:39.486Z"
     },
     {
       "slug": "userjourneys",
@@ -2582,7 +2590,8 @@
       "body": "<div>Catheryn, I was looking at how you guys built the entire voice stack from scratch. 850ms full-pipeline latency is hard to hit and I think that's what separates this from the off-the-shelf API approach. Curious whether companies are coming to you to augment their existing call center teams or fully replace them.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:40.257Z"
     },
     {
       "slug": "simple",
@@ -2624,7 +2633,8 @@
       "body": "<div>Idan, I was reading about the Web Action Cache approach and I think the architecture is interesting. Moving AI to the planning stage only and then executing cached workflows deterministically is a different bet than most browser automation companies are making. Curious whether enterprise customers are primarily buying on the reliability advantage or the cost advantage from using fewer tokens.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:41.139Z"
     },
     {
       "slug": "anchor_browser",
@@ -2666,7 +2676,8 @@
       "body": "<div>Phillip, I was reading about the pivot mid-YC from testing AI-generated code to building full sandbox environments for AI agents, and I think it's the right move. The problem gets way harder when agents are making Stripe charges and sending Slack messages in production versus just writing code that a human reviews. Curious how the onboarding experience works for teams that want to add new SaaS twins beyond the ones you already support.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-29",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-29T21:28:41.926Z"
     },
     {
       "slug": "arga_labs",
