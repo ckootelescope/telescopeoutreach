@@ -1319,7 +1319,8 @@
       "body": "<div>Vishal,<br><br>I was looking at how Kay operates inside existing agency systems without requiring any API integration or new software, which I think is the right call for independent agencies that already have AMS setups they're not replacing. Chris worked closely with iLife on the insurance distribution side, so this is a space we know well.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:47:59.873Z"
     },
     {
       "slug": "arcovo",
@@ -1333,7 +1334,8 @@
       "body": "<div>Jeff,<br><br>I was looking more closely at the named agent approach, Paula for proposals, Kevin for knowledge management, and the rest. I think building distinct personas for each function rather than one generic AI assistant is the right GTM framing for SMBs who don't think in terms of automation platforms. Curious how customers are first discovering you and whether it's more inbound or direct outreach.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:01.307Z"
     },
     {
       "slug": "constructable",
@@ -1347,7 +1349,8 @@
       "body": "<div>Emma,<br><br>Our Head of Ops Harrison Doyle spent years as VP of Finance at Procore, so construction software is a space we've looked at closely. I think the offline-first approach combined with voice punch lists is the kind of thing that actually gets adopted in the field, where connectivity is spotty and people aren't going to log into a desktop portal between tasks. Curious how you're getting initial traction with GCs vs. subs.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:02.578Z"
     },
     {
       "slug": "complement",
@@ -1361,7 +1364,8 @@
       "body": "<div>James,<br><br>I was looking at how Complement delivers recommendations directly into Outlook and Teams rather than making people log into another system. I think that's what actually changes behavior on the floor, since the people who need to act on those insights aren't sitting at a dashboard. Chris has worked closely with Parabola and Paperless Parts on the manufacturing side, so we've spent a lot of time in this space.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:03.815Z"
     },
     {
       "slug": "alpharun",
@@ -1375,7 +1379,8 @@
       "body": "<div>Henry,<br><br>I was looking at how Alpharun builds the coaching playbook from your own call data rather than a generic framework, which I think matters a lot in insurance and financial services where the compliance language and objection patterns are highly specific to each carrier and product. Chris has worked with iLife on the insurance side and invested in Fathom, so AI for sales conversations is something we've spent real time on.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:05.071Z"
     },
     {
       "slug": "resourcly",
@@ -1389,7 +1394,8 @@
       "body": "<div>Ian,<br><br>Saw you guys just closed a seed round last month, congrats. I was looking at the redundant parts detection angle and I think the consolidation story resonates most with procurement teams at mid-market manufacturers who are sitting on bloated supplier lists they inherited from acquisitions or organic growth. Chris has worked with Paperless Parts and Project44 on the manufacturing and supply chain side. Curious how the German market compares to what you're seeing in the US in terms of appetite for this.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:06.308Z"
     },
     {
       "slug": "xtrace",
@@ -1419,7 +1425,8 @@
       "body": "<div>Nikhil,<br><br>I was looking at the 10,000 SKU problem you're solving for chemical sales teams, where a rep walks into a meeting without knowing which of thousands of products is actually compatible with what the customer uses. I think the chemistry-aware product matching is what makes this genuinely hard to replicate with a generic CRM layer. Curious how you're thinking about expansion beyond chemicals into other specialty distribution verticals.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:07.576Z"
     },
     {
       "slug": "archouse",
@@ -1433,7 +1440,8 @@
       "body": "<div>Paul,<br><br>We've been spending time in healthcare services through a few portfolio companies, Passage Health, Canid, and Carefeed, so the care coordination space is one we follow closely. I was looking at how ArcHouse handles the referral-to-admission workflow, and I think the insurance eligibility verification piece is where a lot of the real delay sits today. Saving an hour per referral sounds modest until you run the math across a provider doing hundreds of admissions a month.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:08.807Z"
     },
     {
       "slug": "superpanel",
@@ -1447,7 +1455,8 @@
       "body": "<div>Julien,<br><br>I was looking at the 95% autonomous completion rate and the 220,000 cases managed number. Chris has worked with Logikcull and Persuit on the legal tech side, and the intake bottleneck at plaintiff firms is something that comes up a lot. I think the multi-channel approach, running voice, SMS, and email simultaneously rather than sequentially, is what makes the follow-up actually persistent instead of annoying.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-05-30T18:48:09.795Z"
     },
     {
       "slug": "flycore",
@@ -1461,7 +1470,8 @@
       "body": "<div>Doug,<br><br>I think the integration with Flight Circle and Flight Schedule Pro is a smart call because it means flight schools don't have to rip out their existing ops stack to get the CRM benefits. Most school owners aren't software people and the last thing they want is to manage two systems that don't talk. If you're ever open to a quick chat, I'd love to hear how you're thinking about expanding beyond flight schools into the broader FBO and charter market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:11.134Z"
     },
     {
       "slug": "candid_wholesale",
@@ -1475,7 +1485,8 @@
       "body": "<div>Dave,<br><br>I was looking at how Candid handles collaborative order forms with messaging and approval workflows built in, rather than just replacing the storefront. I think that's the right layer to own because the back-and-forth between brands and buyers is where orders fall through, not just the browsing. A 42% increase in average order size for one of your customers is a number that's hard to argue with.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:12.330Z"
     },
     {
       "slug": "repspark",
@@ -1489,7 +1500,8 @@
       "body": "<div>Meghann,<br><br>I was looking at the community marketplace you've built where retailers can access 250+ brands through one portal. I think that network effect is what actually differentiates a wholesale platform at scale because once buyers are logging in daily to order across brands, switching cost becomes real. Chris on our team worked with Postscript and Chargeflow and has seen that dynamic play out in other commerce contexts.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:13.571Z"
     },
     {
       "slug": "streamlined",
@@ -1503,7 +1515,8 @@
       "body": "<div>Boris,<br><br>I was looking at how you've built Streamlined specifically around the order-to-cash workflow rather than just being another payments layer on top of Shopify. I think the combination of automated invoicing, built-in dunning, and same-day payouts in one system is what actually moves DSO for brands doing meaningful wholesale volume. Chris on our team has worked with Postscript and Chargeflow and we spend a lot of time in the B2B commerce stack.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:14.773Z"
     },
     {
       "slug": "magenta",
@@ -1517,7 +1530,8 @@
       "body": "<div>Dave,<br><br>I was looking at how Magenta is going after the supplier data package review and CoC generation workflows specifically, rather than trying to automate everything at once. I think that focus on the documents that actually touch aerospace and defense compliance requirements is what gets you in the door, because those are the ones where a missed spec costs real money. The ITAR-compliant, US-only data residency piece is also something that tends to matter a lot for the customers you're talking to.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:16.036Z"
     },
     {
       "slug": "procode",
@@ -1531,7 +1545,8 @@
       "body": "<div>Jeff,<br><br>Congrats on the stealth launch and the Auctus acquisition. I think acquiring an existing RCM services business to immediately add $2M ARR and 300 plastic surgery and derm providers is a smart way to prove the technology works on real volume before scaling it. The combination of a software founder, a practicing surgeon, and an engineer as co-founders is also exactly the kind of team that tends to win in a space where domain credibility is table stakes. We've spent time around healthcare services through Knowtion Health and Passage Health and I'd love to learn more.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:17.162Z"
     },
     {
       "slug": "walkway",
@@ -1545,7 +1560,8 @@
       "body": "<div>Brent,<br><br>I was reading about Walkway's positioning as the pricing intelligence layer for experience operators and I think the Airbnb angle is genuinely useful context here because dynamic pricing for vacation rentals went from exotic to expected, and I'd imagine you're betting the same thing happens in tours and activities over the next few years. The $1.65M pre-seed from Reformation Partners suggests travel-focused investors see the same timing.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:18.415Z"
     },
     {
       "slug": "clipp",
@@ -1559,7 +1575,8 @@
       "body": "<div>Albert,<br><br>I was looking at how Clipp operates as a two-sided platform, giving suppliers an ops and payment layer while giving restaurant buyers a mobile app for 24/7 ordering. I think the two-sided dynamic is actually the harder and more interesting problem to solve in food distribution because it's not enough to automate the supplier side if the buyers are still calling in orders. Being built by people who ran restaurants and food supply businesses tends to matter when you're trying to get operators to change how they actually buy.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:19.678Z"
     },
     {
       "slug": "heypesto",
@@ -1587,7 +1604,8 @@
       "body": "<div>Uri,<br><br>I was looking at the mobile app with barcode scanning and offline functionality and I think that's the piece most wholesale platforms miss because a lot of the actual ordering in distribution still happens in the field, not in front of a desktop. The quote-to-cart flow that avoids manual copy-paste is also genuinely useful for the rep side of the house. Chris on our team worked with PartsTech and ShopGenie so we've spent time in vertical B2B commerce.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:20.853Z"
     },
     {
       "slug": "coolr",
@@ -2005,7 +2023,8 @@
       "body": "<div>Hey Dilip, one more thought on this. I work closely with Chris Gaertner who has spent a lot of time in security and compliance infrastructure, including working with companies like Axonius and JumpCloud. The pattern he keeps seeing is that the companies that win in compliance tooling are the ones that make it easy for the buyer to prove they're covered, not just the ones with the best detection. Your Trust Center approach, where customers can publish a shareable governance profile for regulators and clients, feels like the right version of that.<br><br>Happy to connect you with Chris if that'd be useful. He has a good network across security and compliance buyers. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-05-30T18:48:21.761Z"
     },
     {
       "slug": "contractor_commerce",
@@ -2019,7 +2038,8 @@
       "body": "<div>Hey Will, one more note. I think there's a real connection between what you're building and some of the companies in our portfolio. Chris Gaertner has worked closely with companies like Parabola and Paperless Parts, both of which deal with the same challenge of digitizing buying workflows in industries where people have been doing things manually forever. He also has experience with vertical SaaS companies like ShopGenie and PartsTech that have built distribution through OEM and supplier partnerships, similar to what you're doing with Ferguson and LG.<br><br>Happy to make an intro if it would be useful to compare notes. Even if you're not raising, I think there's real overlap in the playbook. If the timing isn't right, no worries at all.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:23.002Z"
     },
     {
       "slug": "controltheory",
@@ -2033,7 +2053,8 @@
       "body": "<div>Hey Bob, one more thought. Chris Gaertner on our team has spent a lot of time in infrastructure and developer tooling. He worked closely with Datadog and has a good sense of how the observability market has evolved and where the gaps are. Given your team's background, with StackEngine, CopperEgg, and the Oracle Cloud work, I think he'd be a great person to swap notes with on GTM in this space.<br><br>Happy to set up an intro if that'd be interesting. Even outside of an investment conversation, Chris has a strong network across infrastructure and DevOps buyers that could be useful as you scale. If the timing isn't right, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:24.159Z"
     },
     {
       "slug": "corgea",
@@ -2047,7 +2068,8 @@
       "body": "<div>Hey Ahmad, one more note on this. Chris Gaertner on our team has deep experience in security tooling, having worked with companies like Axonius and JumpCloud. He's been following the AppSec space closely, especially the shift from detection-only tools to platforms that actually close the loop on remediation. I think there would be a lot of value in connecting you two, particularly around how security products land and expand inside enterprise accounts.<br><br>Separately, if you're ever looking for intros to security buyers at mid-market companies, Chris has a good network there from his time investing in the space. Happy to be helpful even if you're not actively raising. If now isn't the right time, no worries at all.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:25.321Z"
     },
     {
       "slug": "corvera",
@@ -2061,7 +2083,8 @@
       "body": "<div>Hey Chris, one more thought here. Chris Gaertner on our team has spent a lot of time in supply chain and operations tooling. He worked closely with companies like Parabola, Paperless Parts, and Project44, all of which deal with the same core problem of connecting disparate systems and automating the manual work between them. I think there could be some useful overlap, both in terms of GTM lessons and potential customer intros, especially if you're expanding into larger CPG brands that have more complex supply chain setups.<br><br>Happy to make that connection if it would be useful. Even if you're not raising right now, we'd love to be a resource. If the timing isn't right, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:26.491Z"
     },
     {
       "slug": "cotool",
@@ -2075,7 +2098,8 @@
       "body": "<div>Hey Max, one more thought here. Chris has spent a lot of time with companies like Axonius and JumpCloud, so security infrastructure is a space we know well. I think he'd have a useful perspective on how security buyers are evaluating AI-native tools vs. bolt-on features from incumbents, especially given where the market is right now. Happy to connect you two if that'd be helpful, even just as a sounding board on GTM. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:27.582Z"
     },
     {
       "slug": "diversifi",
@@ -2089,7 +2113,8 @@
       "body": "<div>Hey Caleb, wanted to flag one more thing. Chris has worked closely with companies like Project44 and Parabola, so logistics and supply chain is a space we've spent real time in. Given your background running a 3PL at Unishippers and then building Sifted through the Summit Partners acquisition, I think Chris would be a great person to bounce GTM ideas off, especially around the mid-market expansion. Happy to make the intro if useful. If the timing doesn't work right now, no worries at all.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:28.742Z"
     },
     {
       "slug": "entangl",
@@ -2103,7 +2128,8 @@
       "body": "<div>Hey Shapol, one more thought. Given how much data center capacity is coming online right now, I think the timing is really interesting for what you're building. We've been spending more time around infrastructure software broadly and I'd be curious to hear how the pipeline is shaping up. If it'd be helpful, happy to connect you with a few folks in our network who are close to the data center buildout world. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:29.791Z"
     },
     {
       "slug": "faction",
@@ -2117,7 +2143,8 @@
       "body": "<div>Hey Kunal, one more thought. Your BlackRock and Evercore background is an unusual path into industrial distribution, and I think that financial markets lens probably shapes how you think about pricing optimization and margin capture in a useful way. Chris has worked with companies like Parabola and Paperless Parts, so manufacturing and distribution is a space we've spent real time in. Happy to connect you two if that'd be a valuable conversation, even if you're not raising. If the timing doesn't work, no worries.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:31.758Z"
     },
     {
       "slug": "flowgen_labs",
@@ -2131,7 +2158,8 @@
       "body": "<div>Hey Dhruva, one more thought here. Your path from founding ML engineer at Refuel to building autonomous ERP agents is interesting, and the Stanford plus Amazon Robotics background makes sense for this kind of systems-level problem. I think Chris would enjoy comparing notes with you on how enterprise AI adoption actually plays out. He's worked with companies like Datadog on the infrastructure side and has a good read on how large enterprises evaluate AI tools. Happy to set up a quick intro if that'd be useful. If now isn't the right time, totally get it.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:32.979Z"
     },
     {
       "slug": "freeflow",
@@ -2145,7 +2173,8 @@
       "body": "<div>Jason, wanted to offer something useful here. Chris on our team has worked closely with iLife on the insurance distribution side, and I think there could be a relevant conversation there around how carriers are adopting AI across different parts of the workflow. Happy to make that intro if it would be helpful.<br><br>Also, we've been seeing a pattern across our portfolio where the companies that win in regulated industries are the ones that build compliance (SOC 2, audit trails) into the product from day one rather than bolting it on later. Sounds like you guys are already there.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:34.185Z"
     },
     {
       "slug": "hunted_labs",
@@ -2159,7 +2188,8 @@
       "body": "<div>Hayden, one more thought. Chris on our team has spent a lot of time in infrastructure security, including working with Axonius and JumpCloud, and I think there's a good conversation to be had around how enterprise security buyers are thinking about supply chain risk vs. traditional endpoint/identity threats. Happy to connect you two if that would be useful.<br><br>Also, the SBIR contract with the Space Development Agency is interesting. We've seen a few companies use the DoD/IC channel as a wedge into commercial, and I'd be curious how you're thinking about that path.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:36.008Z"
     },
     {
       "slug": "kipling_secure",
@@ -2173,7 +2203,8 @@
       "body": "<div>Saurabh, wanted to flag something that might be useful. Chris on our team invested in Rewst and Auvik, both in the MSP ecosystem, and has a good view into how MSPs are evaluating and consolidating their security stacks right now. Happy to connect you two if it would be helpful.<br><br>The per-endpoint pricing model that scales linearly is something we keep hearing MSPs ask for. Most security vendors price in ways that make it hard for MSPs to maintain their margins as they add clients, and it sounds like you've thought about that from the start.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:37.187Z"
     },
     {
       "slug": "laborup",
@@ -2187,7 +2218,8 @@
       "body": "<div>Simba, wanted to share something that might be relevant. Chris on our team has worked with companies like Parabola, Paperless Parts, and Project44 in the manufacturing and supply chain space. A few of them have mentioned workforce availability as a bottleneck their customers keep raising, and I think there could be some interesting partnership conversations there. Happy to make an intro if that would be useful.<br><br>Also, the investor lineup is impressive. Jeff Dean from Google DeepMind and Evan Moore from DoorDash backing a manufacturing recruiting company tells me they see this as more of an AI infrastructure play than a staffing company, which I think is the right framing.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:38.308Z"
     },
     {
       "slug": "riskfront",
@@ -2201,7 +2233,8 @@
       "body": "<div>Andy, wanted to share something potentially useful. Chris on our team has worked with companies in adjacent compliance and risk spaces, and we keep hearing that the biggest challenge for compliance teams isn't the technology itself but getting buy-in from risk committees who are skeptical of AI making decisions in regulated workflows. The SOC 2 and third-party audit approach you've taken seems like it's built to address that objection head-on.<br><br>Also, the cross-border transaction monitoring roadmap is interesting. That's a space where the manual research burden gets even worse because of jurisdictional complexity. Happy to be a sounding board on GTM if that would be helpful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:39.459Z"
     },
     {
       "slug": "soff",
@@ -2215,7 +2248,8 @@
       "body": "<div>Bernhard, wanted to flag something that might be relevant. Chris on our team has worked with Parabola, Paperless Parts, and Project44 in the supply chain and manufacturing space, and we've been seeing a pattern where the companies that win in distribution start with one specific workflow (quoting, ordering, inventory) and expand from there. The RFQ-to-quote flow seems like a natural starting point because it's where distributors lose deals, and your metrics around +20% revenue and +7% win rates back that up.<br><br>Happy to connect you with Chris if comparing notes on the distributor GTM would be useful. He's spent a lot of time thinking about how to sell into these businesses.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:40.523Z"
     },
     {
       "slug": "structured",
@@ -2229,7 +2263,8 @@
       "body": "<div>Brandon, one more thought. I was thinking about who in our network might be useful for you guys as you scale into more enterprise AEC firms. Harrison Doyle on our team spent years at Procore and still has deep relationships across the GC and engineering firm landscape, I think he could make some relevant introductions on the customer side. We also work closely with Chris Gaertner who has invested in companies selling into similar enterprise buyer profiles and could be a good sounding board on GTM.<br><br>If now isn't the right time, totally understand. But the offer stands whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:41.565Z"
     },
     {
       "slug": "turgon",
@@ -2243,7 +2278,8 @@
       "body": "<div>Ankur, one more thought. Chris on our team has worked closely with companies like Datadog that sit in the infrastructure layer, and the pain around legacy data migration keeps coming up in those conversations. I think he could be a useful sounding board on how to position against the traditional SI firms that are going to start bolting AI onto their existing offerings. Happy to connect you two if that would be helpful.<br><br>If now isn't the right time, totally understand. But the offer stands whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:43.221Z"
     },
     {
       "slug": "twinknowledge",
@@ -2257,7 +2293,8 @@
       "body": "<div>Ivan, one more thought. Given where you're at post-seed, I think Harrison Doyle on our team could be a good connection. He spent years as VP of Finance at Procore and has deep relationships across the AEC ecosystem, both on the GC side and with the engineering firms that are your core buyers. He's also seen firsthand how construction tech companies navigate the enterprise sales motion in this industry, which can be tricky. Happy to make the intro if useful.<br><br>If now isn't the right time, totally understand. But the offer stands whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:44.247Z"
     },
     {
       "slug": "wisebee",
@@ -2271,7 +2308,8 @@
       "body": "<div>Stoyan, one more thought. Chris on our team has worked closely with companies like Axonius and JumpCloud, so the mid-market security buyer is a profile we know well. I think he'd be a good sounding board on the US go-to-market, especially as you expand from the European base into West Coast accounts. Happy to connect you two if that would be helpful.<br><br>If now isn't the right time, totally understand. But the offer stands whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:46.062Z"
     },
     {
       "slug": "workhero",
@@ -2285,7 +2323,8 @@
       "body": "<div>Kyler, one more thought. I think Chris on our team could be a helpful connection as you think about expanding beyond HVAC into other trades. He's worked with companies like Mangomint and ShopGenie that built vertical SaaS for fragmented, owner-operator markets, and the playbook for going from one trade to the next is something he's thought about a lot. Happy to set up a quick intro if useful.<br><br>If now isn't the right time, totally understand. But the offer stands whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:47.269Z"
     },
     {
       "slug": "wyre",
@@ -2299,7 +2338,8 @@
       "body": "<div>Sunil, one more thought. Harrison Doyle on our team is a former Procore VP of Finance and still has deep relationships with GCs and preconstruction teams across the industry. I think he could make some relevant introductions as you scale, especially with the commercial contractors that are your core buyer. He's also seen firsthand how construction tech companies navigate pilot-to-enterprise deals in this space. Happy to connect you two if useful.<br><br>If now isn't the right time, totally understand. But the offer stands whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-05-30T18:48:48.422Z"
     },
     {
       "slug": "advance",
