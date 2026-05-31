@@ -1657,7 +1657,9 @@
       "body": "<div>Hey Dilip, circling back on this. I was looking at how you guys handle shadow AI detection, specifically the ability to surface unsanctioned tools like ChatGPT or Copilot that teams are spinning up outside of any approved process. I think that's where a lot of the urgency is going to come from for buyers. The EU AI Act enforcement for high-risk systems kicks in this year, and most companies I talk to still don't even have a full inventory of what AI tools their employees are using, let alone whether any of them touch sensitive data.<br><br>I'd be curious how you're seeing demand shift now that enforcement is actually here. Are companies coming to you proactively, or is it more reactive after an audit flags something?</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "cancelled",
+      "cancelledAt": "2026-05-31T18:00:00.000Z",
+      "cancelReason": "Dilip replied May 30 - connect end of year"
     },
     {
       "slug": "contractor_commerce",
@@ -1825,7 +1827,9 @@
       "body": "<div>Hey Saurabh, wanted to circle back with one more thought. I was reading about the encrypted traffic analysis approach, where you're detecting threats without needing full payload inspection. I think that's the right tradeoff for MSPs who are managing dozens of client environments and can't realistically do deep packet inspection everywhere. The natural language interface is also interesting. Most MSP techs aren't security specialists, so letting them configure and operate the platform through plain English instead of writing scripts removes a real bottleneck.<br><br>After 16 years at Juniper, you've seen how these tools get deployed at the network level. Curious whether the AI governance piece, detecting unauthorized AI usage across client environments, is becoming more of a pull for MSPs or if it's still early.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-28",
-      "status": "pending"
+      "status": "cancelled",
+      "cancelledAt": "2026-05-31T18:00:00.000Z",
+      "cancelReason": "Saurabh replied May 31 - open to chat, meeting week of June 15"
     },
     {
       "slug": "laborup",
@@ -1965,7 +1969,9 @@
       "body": "<div>Hey Dilip, one more thought on this. I work closely with Chris Gaertner who has spent a lot of time in security and compliance infrastructure, including working with companies like Axonius and JumpCloud. The pattern he keeps seeing is that the companies that win in compliance tooling are the ones that make it easy for the buyer to prove they're covered, not just the ones with the best detection. Your Trust Center approach, where customers can publish a shareable governance profile for regulators and clients, feels like the right version of that.<br><br>Happy to connect you with Chris if that'd be useful. He has a good network across security and compliance buyers. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "cancelled",
+      "cancelledAt": "2026-05-31T18:00:00.000Z",
+      "cancelReason": "Dilip replied May 30 - connect end of year"
     },
     {
       "slug": "contractor_commerce",
@@ -2133,7 +2139,9 @@
       "body": "<div>Saurabh, wanted to flag something that might be useful. Chris on our team invested in Rewst and Auvik, both in the MSP ecosystem, and has a good view into how MSPs are evaluating and consolidating their security stacks right now. Happy to connect you two if it would be helpful.<br><br>The per-endpoint pricing model that scales linearly is something we keep hearing MSPs ask for. Most security vendors price in ways that make it hard for MSPs to maintain their margins as they add clients, and it sounds like you've thought about that from the start.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-05-30",
-      "status": "pending"
+      "status": "cancelled",
+      "cancelledAt": "2026-05-31T18:00:00.000Z",
+      "cancelReason": "Saurabh replied May 31 - open to chat, meeting week of June 15"
     },
     {
       "slug": "laborup",
