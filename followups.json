@@ -2482,7 +2482,8 @@
       "body": "<div>Jeremy, I spent more time looking at Eddi and I'm curious about the MGT dynamic. They have 2,500+ government and education clients and you're already working together on funding management for two state education departments. How does that work in practice, is MGT actively introducing you into their client relationships or is it more of a co-build on specific projects that opens doors downstream?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-01T22:52:51.913Z"
     },
     {
       "slug": "eddifi",
@@ -2525,7 +2526,8 @@
       "body": "<div>Fred, circling back on this. I'm curious how much of the early playbook from CyberGRX carries over here versus what's fundamentally different. Third-party risk had the advantage of fitting into existing compliance budgets. MCP security feels like it could go that way, but it could also end up as a feature inside the EDR platforms. How are you thinking about making sure this stays its own category?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-01T22:52:53.396Z"
     },
     {
       "slug": "helmet_security",
@@ -2568,7 +2570,8 @@
       "body": "<div>Patrick, one thing I keep thinking about with CodeComply is the accuracy question. You're claiming 98%, but when it's fire codes and ADA, the remaining 2% is where the liability sits. Having someone like Michael Sheehan who did fire protection engineering for 13 years helps build trust with reviewers who are putting their stamp on these plans. I'd be curious whether certain code categories are harder than others for the AI.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-01T22:52:55.048Z"
     },
     {
       "slug": "codecomply",
@@ -2611,7 +2614,8 @@
       "body": "<div>Lauri, the Jungler case study caught my attention. Doubling their conversion rate by catching bugs that were silently killing conversions is a concrete result. Most tools would have shown the drop-off but not told them why.<br><br>I'd be curious whether you're seeing more pull from PLG companies optimizing onboarding or from teams trying to reduce churn.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-01T22:52:56.426Z"
     },
     {
       "slug": "userjourneys",
@@ -2654,7 +2658,8 @@
       "body": "<div>Catheryn, I've been thinking about Simple and the Omaha Steaks detail is what sticks with me. Their phone sales operation is legendary, and your AI is outselling their seasonal reps while callers are calling the agent 'honey.' That's not something you get with a generic voice API. I think the positioning on the revenue side rather than the cost-savings side is smart because it changes the buyer conversation from 'how much can we cut' to 'how much more can we make.'<br><br>I'd be curious how the self-storage and home insurance deployments compare to retail in terms of complexity and whether certain verticals need fundamentally different voice tuning.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-01T22:52:57.877Z"
     },
     {
       "slug": "simple",
@@ -2697,7 +2702,8 @@
       "body": "<div>Idan, I keep thinking about the Cloudflare partnership. Being officially verified by the company whose job is blocking bots isn't something a competitor can easily replicate, and having Groq running their agent platform through you is a good reference to have. I'd be curious how you're thinking about pricing as usage scales, whether credits-based holds up at enterprise volumes or if you end up needing something more predictable.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-01T22:52:59.189Z"
     },
     {
       "slug": "anchor_browser",
@@ -2740,7 +2746,8 @@
       "body": "<div>Phillip, circling back on this. I'm curious how the customer conversations are going now that you've broadened from code testing to full agent sandboxes. That's a bigger problem to solve but also harder to scope. Are teams coming to you with a specific agent they need to test, or are they looking for general infrastructure they can build on?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-01T22:53:00.612Z"
     },
     {
       "slug": "arga_labs",
