@@ -2497,7 +2497,8 @@
       "body": "<div>Jeremy, one last thought. We invested in MedTrainer, which does compliance and training software for healthcare organizations, and there are real parallels between how they navigated selling into large institutional buyers with complex regulatory requirements. If it would be useful, happy to connect you with someone on that team who's been through a similar sales cycle.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:54:56.903Z"
     },
     {
       "slug": "helmet_security",
@@ -2541,7 +2542,8 @@
       "body": "<div>Fred, one last thought. Chris Gaertner on our team worked closely with Axonius during its growth phase, and there are real parallels between what they built for asset visibility and what Helmet is doing for MCP server visibility. If it would be useful to compare notes on category creation and early enterprise sales motion in security infrastructure, happy to connect you two directly.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:54:58.828Z"
     },
     {
       "slug": "codecomply",
@@ -2585,7 +2587,8 @@
       "body": "<div>Patrick, one more thought. Harrison Doyle on our team was VP of Finance at Procore, so he spent years watching how construction software gets adopted and where the resistance shows up. If it would be useful to get his perspective on selling into the AEC space, happy to make that connection.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:54:59.895Z"
     },
     {
       "slug": "userjourneys",
@@ -2629,7 +2632,8 @@
       "body": "<div>Lauri, last thought from me. We've worked closely with companies in the PLG space like Calendly and Expensify, and the analytics-to-action gap you're solving is something that comes up constantly. If it would be useful, happy to connect you with a couple of product leaders in our network who are actively trying to solve this problem.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:00.902Z"
     },
     {
       "slug": "simple",
@@ -2673,7 +2677,8 @@
       "body": "<div>Catheryn, one more thought. We invested in Fathom (meeting recorder) and Chris worked with Otter AI, so we've seen the voice AI space evolve from different angles. If it would be useful to compare notes on how those companies navigated enterprise sales and the audio quality bar that buyers care about, happy to make an intro.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:01.957Z"
     },
     {
       "slug": "anchor_browser",
@@ -2717,7 +2722,8 @@
       "body": "<div>Idan, one last thought. Chris Gaertner on our team has deep relationships in the security infrastructure space from his work with Axonius and JumpCloud. If it would be useful to get introductions to CISOs and security leaders who are evaluating how to manage AI agent access in their environments, happy to make those connections.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:03.031Z"
     },
     {
       "slug": "arga_labs",
@@ -2761,7 +2767,8 @@
       "body": "<div>Phillip, one more thought. We've worked with companies across the dev tools and infrastructure space, and Chris on our team has experience with Datadog and companies building developer-facing products. If it would be useful to compare notes on pricing models and enterprise sales motion for infrastructure tools, happy to make an intro.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:04.058Z"
     },
     {
       "slug": "edwin",
@@ -2775,7 +2782,8 @@
       "body": "<div>Hey Peter, circling back on this. I was looking at the benchmarking tool you guys built, where treasurers can compare their portfolio against similar-sized agencies by region. I think that's a really smart wedge into the sale because it gives someone a reason to engage before they've even committed to switching anything. Curious how you're seeing adoption there and whether it's pulling in inbound interest or if it's more of a sales enablement tool once you're already in a conversation.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:05.117Z"
     },
     {
       "slug": "edwin",
@@ -2817,7 +2825,8 @@
       "body": "<div>Hey Anton, circling back on this. I was looking at how you guys deliver a weekly P&L to operators every Monday morning by pulling from POS, banking, and supplier invoices automatically. I think that's the right approach because most restaurant owners don't need a dashboard, they need someone to just tell them what happened last week. Curious whether you're seeing more traction with single-location operators or multi-site groups at this stage.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:06.126Z"
     },
     {
       "slug": "alpa",
@@ -2859,7 +2868,8 @@
       "body": "<div>Hey Aleks, circling back on this. I was looking at the Haven AI case study where they cut billing prep time by 80% after switching to you guys. I think that speaks to a real pain point, especially for AI companies where usage-based billing adds a ton of complexity that most teams just hack together with scripts and spreadsheets. Curious how much of the initial pull is coming from AI-native companies versus more traditional SaaS at this point.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:07.134Z"
     },
     {
       "slug": "alguna",
@@ -2901,7 +2911,8 @@
       "body": "<div>Hey Mai, circling back on this. I was reading your piece on why a token isn't actually a commodity, the argument that identical token counts reflect totally different economics depending on model size, hardware, and infrastructure choices. I think that framing is really clear and gets at why the financial layer needs to sit beneath the token, not on top of it. Curious whether data center operators or the AI companies buying compute are driving more of the initial pull for gnomos.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:08.113Z"
     },
     {
       "slug": "internet_backyard",
@@ -2943,7 +2954,8 @@
       "body": "<div>Hey Shourya, circling back on this. I was looking at how your agents learn UI policies and interface structures rather than deciding action-by-action, which I think is a smart distinction vs. the computer-use agents from OpenAI/Anthropic/Google. Curious how much of the self-healing actually works in practice when a portal completely redesigns its layout vs. just moving a button around.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:09.063Z"
     },
     {
       "slug": "ramain",
@@ -2985,7 +2997,8 @@
       "body": "<div>Hey Yoel, circling back on this. I was looking at the Credy tool and I think the idea of letting loan officers ask questions in plain English instead of needing a data team to run every analysis is really interesting. Curious how much of the adoption is loan officers actually using it day-to-day vs. it being more of a back-office tool right now.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:10.017Z"
     },
     {
       "slug": "quash",
@@ -3027,7 +3040,8 @@
       "body": "<div>Hey Oli, circling back on this. I saw you guys just set up the Atlanta office for the US push, and the Worldpay partnership is a great distribution channel. Curious whether the US strategy is more about going through payment processors like Worldpay or signing banks directly.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:11.075Z"
     },
     {
       "slug": "ekko",
@@ -3069,7 +3083,8 @@
       "body": "<div>Hey Silvestre, circling back on this. I was looking at how your agents handle supplier substitutions on change orders, specifically the part where they verify certifications and re-run compliance before issuing a new RFQ. That feels like the step where most procurement teams lose days because it's all manual back-and-forth with the supplier. Curious how much of that you can actually automate end-to-end vs. where a human still needs to step in.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:12.095Z"
     },
     {
       "slug": "traza",
@@ -3111,7 +3126,8 @@
       "body": "<div>Hey Travis, circling back on this. I was looking at the Coinbax partnership and I think the approach of embedding compliance checks directly into the settlement layer is interesting rather than bolting it on after the fact. Curious how banks are reacting to that model vs. the traditional approach of running compliance as a separate workflow.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:13.202Z"
     },
     {
       "slug": "balancedtrust",
@@ -3153,7 +3169,8 @@
       "body": "<div>Hey Kieran, circling back on this. I was looking at how you guys handle pricing, letting agencies pass the admin fee to the client instead of paying out of pocket. I think that's a smart way to remove the cost objection entirely. Curious how the split looks between agencies using the free model vs. pay-as-you-go.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:14.388Z"
     },
     {
       "slug": "kotini",
@@ -3195,7 +3212,8 @@
       "body": "<div>Hey Steve, circling back on this. I was looking at how you guys co-developed the platform with Wabash through UP.Labs and I think that's a really interesting way to build, having a real manufacturer pressure-testing the product from day one. Curious how the transition works from that co-development relationship into selling to other OEMs and dealers who might be Wabash competitors.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:15.379Z"
     },
     {
       "slug": "partspulse",
@@ -3237,7 +3255,8 @@
       "body": "<div>Hey Ted, circling back on this. I was looking at the competitive intelligence feature where you pull competitor proposals through public records requests automatically. I think that's a clever angle since most companies bidding on government contracts are flying blind on what actually won last time. Curious how much of the value prop customers respond to first, the opportunity discovery side or the competitive intel side.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:16.368Z"
     },
     {
       "slug": "justwin",
@@ -3279,7 +3298,8 @@
       "body": "<div>Hey Matt, circling back on this. I was looking at how you guys handle the supplier pricing side, pulling live data from 700+ brokers and distributors and surfacing cheaper alternatives automatically. I think that's the piece that makes this sticky beyond just speeding up quotes. Curious how distributors typically react when they see the pricing gaps for the first time.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:17.409Z"
     },
     {
       "slug": "rama",
@@ -3321,7 +3341,8 @@
       "body": "<div>Hey Tadeo, circling back on this. I was looking at the Capriotti's case study, specifically the part where you guys replaced five separate spreadsheets with one unified view across 14 stores. I think that's the kind of thing that sounds simple but is actually what gets operators to adopt. Curious whether franchisors are starting to push Clave top-down or if it's still mostly franchisees pulling you in.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:18.394Z"
     },
     {
       "slug": "clave",
@@ -3363,7 +3384,8 @@
       "body": "<div>Hey Cooper, circling back on this. I was looking at the AME Group case study, 133 BEC attacks caught in 144 days with a 56-second mean time to containment. What stood out is that they deployed across 300+ tenants in a single day. Curious how much of the sales motion is driven by MSPs seeing gaps in what Huntress or Blackpoint are catching vs. you guys proactively showing them.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:19.375Z"
     },
     {
       "slug": "petra_security",
@@ -3405,7 +3427,8 @@
       "body": "<div>Hey Nico, circling back on this. I was reading about how your agents adapt accent and dialect based on who they're calling, like varying the Spanish accent for Mexico vs. Colombia. I think that level of nuance is what separates this from a generic voice bot that just reads a script. Curious how much of the engagement lift you're seeing comes from those adaptive personality features vs. just the basics of timing and channel optimization.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-03T22:55:20.339Z"
     },
     {
       "slug": "domu",
@@ -3447,7 +3470,8 @@
       "body": "<div>Hey Bastien, circling back on this. I was looking at how you guys structured the platform around five distinct modules, ingredient validation, formula compliance, claims, labelling, and market entry. I think starting with the full workflow instead of just one piece makes it harder for customers to outgrow you. Curious whether most customers are adopting all five from day one or starting with one and expanding.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-03T22:55:21.159Z"
     },
     {
       "slug": "certo",
