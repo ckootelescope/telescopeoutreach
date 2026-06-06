@@ -2797,7 +2797,8 @@
       "body": "<div>Hey Peter, was thinking more about Edwin and the go-to-market here. One thing that stands out to me is the neutrality angle, the fact that you integrate across multiple banks and ERPs without favoring any vendor. I think that matters a lot in local government where the procurement process already has enough friction without worrying about lock-in. The part I keep coming back to is the sales cycle though. You're selling to finance directors and treasurers at municipalities, which can be a long process. I'd be curious how you're navigating that and whether you've found certain city sizes or regions where the pain is acute enough that they move faster.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:57:56.856Z"
     },
     {
       "slug": "edwin",
@@ -2840,7 +2841,8 @@
       "body": "<div>Hey Anton, been thinking more about Alpa and the go-to-market here. The stat you guys reference, that 79% of restaurant operators want real-time data but only 27% can track basic KPIs, really illustrates the gap. What I think is interesting about your approach is that you're not asking operators to change how they work. You plug into their existing POS and bank feeds and just surface the answers. Having Jerome Tafani on the board makes a lot of sense too given his time running Burger King France and the McDonald's Europe finance side. I'd be curious how you're thinking about the US market and whether the POS landscape here (Toast, Square, Clover) changes the product at all versus what you've built for the UK.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:57:57.941Z"
     },
     {
       "slug": "alpa",
@@ -2883,7 +2885,8 @@
       "body": "<div>Hey Aleks, been thinking more about Alguna and the positioning here. The quote-to-cash unification angle is interesting because I think most companies in this space pick a lane, either CPQ or billing, and then try to bolt on the other side later. The fact that you and Jamie both came from Primer and saw the payment orchestration side firsthand probably shaped that thinking. One thing I'd love to understand better is how the 30-day implementation works in practice. When a company like ComplyAdvantage launches a PLG engine through you guys without engineering resources, what does that migration actually look like from their existing billing setup? That seems like where most competitors get stuck.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:57:59.106Z"
     },
     {
       "slug": "alguna",
@@ -2926,7 +2929,8 @@
       "body": "<div>Hey Mai, been thinking more about Internet Backyard and the broader market timing here. The comparison to where oil was before NYMEX standardized pricing is interesting because it implies compute needs a similar moment where the industry agrees on a unit of measurement before any real financial market can form around it. The performance-based pricing angle over GPU-specific pricing feels right to me, because at the end of the day customers are buying throughput, not hardware. I'd be curious how you're thinking about the geographic expansion piece. You mentioned Africa and Southeast Asia alongside North America, and I imagine the standardization problem looks pretty different in markets where the infrastructure is still being built versus where it already exists.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:00.129Z"
     },
     {
       "slug": "internet_backyard",
@@ -2969,7 +2973,8 @@
       "body": "<div>Hey Shourya, been thinking more about the insurance and healthcare use cases on your site. Those carrier portals and payer systems are notoriously painful because every single one has a different UI, different login flow, different way of submitting the same form. Feels like the kind of problem where the real moat isn't the AI model itself but the library of portal-specific knowledge you build up over time as you onboard more customers.<br><br>I'd be curious whether you're seeing faster deployment times as you add more clients in the same vertical, or if each portal is still mostly a fresh setup.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:01.195Z"
     },
     {
       "slug": "ramain",
@@ -3012,7 +3017,8 @@
       "body": "<div>Hey Yoel, been thinking more about the US credit union push. The average credit union member is 51, and these institutions know they need to attract younger borrowers who expect the same experience they get from a Cash App or a SoFi. But most credit unions don't have the data science teams to build their own models, so they're stuck with the same bureau scores that reject the exact people they're trying to reach.<br><br>I think what's interesting about your approach is that you can drop in pre-trained models via API rather than asking a 50-person credit union to build an ML pipeline from scratch. I'd be curious how the sales cycle looks with credit unions vs. the Latin American banks you've been working with, since the decision-making process is so different.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:02.203Z"
     },
     {
       "slug": "quash",
@@ -3055,7 +3061,8 @@
       "body": "<div>Hey Oli, been thinking more about the merchant side of what you guys are doing. The plugin that shows carbon impact at checkout and lets customers add a small donation is interesting because it turns sustainability into a conversion tool for the merchant, not just a feel-good feature. I think the harder question is whether merchants actually see measurable lift in checkout completion or repeat purchases, because that's what gets them to keep it turned on.<br><br>I'd be curious if you're seeing data on that from the Worldpay merchants or the Shopify integration, and whether the value prop to merchants is more about brand differentiation or actual revenue impact.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:03.257Z"
     },
     {
       "slug": "ekko",
@@ -3098,7 +3105,8 @@
       "body": "<div>Hey Silvestre, been thinking more about the construction use case. In that world, a spec change on a project can cascade into dozens of supplier swaps, and procurement teams are usually managing that across spreadsheets and email threads while the project timeline keeps moving. The stat in your blog about procurement contracts losing 11% of their value after signing because of operational gaps feels right, especially when you see how much slippage happens between the PO and what actually gets delivered.<br><br>I'd be curious whether construction is becoming a bigger part of the pipeline vs. manufacturing, and whether the deployment process looks different across those two verticals.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:04.290Z"
     },
     {
       "slug": "traza",
@@ -3141,7 +3149,8 @@
       "body": "<div>Travis, been thinking more about BalancedTrust since my last note. One thing I find interesting is how you're positioning around the bank-fintech relationship specifically. Most compliance tools I've seen are built for one side or the other, but the messy part is usually the handoff between the two, especially when you get into fourth-party risk and neither side has full visibility. The fact that your team has Kimberly from OCC and David from Fiserv feels like it matters here since you're building for both sides of that equation. I'd be curious whether you're seeing more pull from the bank side or the fintech side, and whether the sales motion is different for each.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:05.279Z"
     },
     {
       "slug": "balancedtrust",
@@ -3184,7 +3193,8 @@
       "body": "<div>Kieran, been thinking more about Kotini. The Nested partnership caught my eye because it feels like a signal that even the more tech-forward agencies are realizing they can't build compliance infrastructure themselves. Going from 250 properties automated to 500 in three months is solid execution, and the OPDA founding membership tells me you're thinking about the data layer beyond just onboarding. I'd be curious how you're thinking about the material information piece long term, specifically whether there's an opportunity to own more of that data flow between agents, conveyancers, and lenders rather than just collecting it on the front end.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:06.333Z"
     },
     {
       "slug": "kotini",
@@ -3227,7 +3237,8 @@
       "body": "<div>Steve, been thinking more about PartsPulse. The piece that keeps standing out to me is how fragmented the data is across parts operations. Sales, pricing, and inventory all sitting in separate systems means nobody has a full picture, and the people making decisions are basically guessing. After 12 years at Documoto serving 160+ equipment brands, you've probably seen every version of that problem. I think the interesting question is whether this lands as a tool that individual teams use or whether it becomes the system of record that the whole parts org runs on. Curious how customers are adopting it, whether it starts in one function and spreads or whether they buy the full platform upfront.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:07.331Z"
     },
     {
       "slug": "partspulse",
@@ -3270,7 +3281,8 @@
       "body": "<div>Ted, been thinking more about JustWin. The government contracting process is one of those areas where the friction is so high that it effectively locks out smaller companies who don't have dedicated BD teams or proposal writers on staff. The mission of democratizing access feels right because the current system rewards the companies that are best at paperwork, not necessarily the best at the actual work. Having backers like Mike Rosengarten who built OpenGov is a good signal that people who understand government tech see this the same way. I'd be curious how you're thinking about the education contracts side vs. government, and whether one is pulling ahead as the primary wedge.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:08.391Z"
     },
     {
       "slug": "justwin",
@@ -3313,7 +3325,8 @@
       "body": "<div>Hey Matt, been thinking more about Rama and the Classic Components case study. Finding 21% of parts cheaper across a multi-hundred line opportunity list is a pretty concrete way to show ROI on day one, especially for a distributor that size. I think the interesting strategic question is whether you stay focused on independent distributors or eventually move upstream to the larger guys who have more volume but also more entrenched systems. The 13% revenue per employee lift is the kind of metric that should make this an easy conversation with ops leaders. Would love to dig into how the pipeline is looking and what the sales cycle looks like for a top-10 distributor vs. a mid-market one.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:09.409Z"
     },
     {
       "slug": "rama",
@@ -3356,7 +3369,8 @@
       "body": "<div>Hey Tadeo, been thinking more about Clave and the go-to-market here. The Churromania numbers are interesting, $64K extra monthly revenue across 45 stores, but what stands out to me is the 60+ hours of manual reporting you guys eliminated. I think in QSR, the people running these locations are not sitting at a desk all day, so anything that requires them to log into a dashboard or pull CSVs just doesn't get used. The fact that operators can just ask a question in chat and get an answer feels like the right interface for this customer. Curious how you're thinking about expanding beyond the brands you're live with today, whether it's going deeper within existing franchise systems or broadening to new ones.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:10.389Z"
     },
     {
       "slug": "clave",
@@ -3399,7 +3413,8 @@
       "body": "<div>Hey Cooper, been thinking more about Petra and the positioning here. I think the decision to go deep on M365 identity threats instead of trying to be a broader security platform is smart, especially selling through MSPs who already have EDR and other tools from different vendors. The 90 hours per month in billable hours reclaimed for AME Group is a really compelling way to frame the ROI, because MSPs are always trying to figure out how to do more with fewer senior engineers. The fact that help desk staff can now handle responses that used to require senior people changes the unit economics for the MSP. Curious whether you're seeing more traction with larger MSPs who have dedicated security teams or smaller ones where this effectively becomes their entire M365 security layer.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:11.350Z"
     },
     {
       "slug": "petra_security",
@@ -3442,7 +3457,8 @@
       "body": "<div>Hey Nico, been thinking more about Domu. 70M monthly connected calls is a pretty staggering number for a company your size. I think what's interesting about the compliance angle is that it's not just a checkbox, it's actually a moat. The banks and insurers you're working with can't afford a CFPB violation, so once you're validated and live, switching costs are real. The BNP Paribas result of 40% more right-party contacts is the kind of metric that should make this an easy expansion conversation within those accounts. Curious how much of your growth is coming from expanding within existing clients vs. landing new logos.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-06T18:58:12.340Z"
     },
     {
       "slug": "domu",
@@ -3485,7 +3501,8 @@
       "body": "<div>Hey Bastien, been thinking more about Certo. What I keep coming back to is the regulatory monitoring piece, the fact that your system automatically rechecks products when regulations change. I think that's the part that turns this from a one-time review tool into something teams rely on every day. The regulatory landscape for consumer products keeps getting more complex (microplastics, greenwashing rules, allergen classification), and most brands are still managing this with spreadsheets and consultants across 70+ markets. Jean mentioned you guys started by sitting with regulatory teams and watching how they actually work, and I think that kind of ground-up approach matters a lot in a space where the workflows are so specific. Curious how you're thinking about prioritizing which markets and product categories to go deeper on next.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-06T18:58:13.163Z"
     },
     {
       "slug": "certo",
