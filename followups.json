@@ -3545,7 +3545,8 @@
       "body": "<div>Hey Kumesh - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Persuit and Logikcull and the conversation made me think about what you're building at ZeroDrift. With all the AI tools hitting the enterprise, sounds like compliance teams are scrambling to keep up and real-time enforcement is going to be critical. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:23.749Z"
     },
     {
       "slug": "zerodrift",
@@ -3588,7 +3589,8 @@
       "body": "<div>Hey Zane - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Nox Metals. The model of combining software with direct manufacturing operations is one we keep seeing work across verticals. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:25.176Z"
     },
     {
       "slug": "nox_metals",
@@ -3631,7 +3633,8 @@
       "body": "<div>Hey Gregory - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Prox. The knowledge drain problem in industrial verticals keeps coming up in our conversations, especially as senior specialists retire. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:26.534Z"
     },
     {
       "slug": "prox",
@@ -3674,7 +3677,8 @@
       "body": "<div>Hey Arhon - Hope all is well! I know it's been a minute but wanted to check in. I've been reading more about CAD-native AI design tools and I think parametric geometry is where the market needs to go - curious how early customer conversations are going. Would love to hear more about the vision for Kinth and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:27.974Z"
     },
     {
       "slug": "kinth",
@@ -3717,7 +3721,8 @@
       "body": "<div>Hey Akshat - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the agent memory problem and I think it's going to be one of the key infrastructure layers as production AI deployments scale - curious what you're seeing from early adopters. Would love to hear more about the vision for Nebula and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:29.332Z"
     },
     {
       "slug": "nebula",
@@ -3760,7 +3765,8 @@
       "body": "<div>Hey Valerie - Hope all is well! Thought I'd shoot you a note as I was chatting with one of our portfolio company leaders at MedTrainer and Carefeed and the conversation made me think about what you're building. The cash-pay wellness market keeps coming up as an underserved segment and I think the EHR opportunity there is massive. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:30.678Z"
     },
     {
       "slug": "reviva",
@@ -3803,7 +3809,8 @@
       "body": "<div>Hey Nate - Hope all is well! I know it's been a minute but wanted to check in. I've been digging more into vertical AI for public safety and I think fire departments are one of those verticals that's finally ready for modern software - curious how adoption conversations are going on your end. Would love to hear more about the vision for Fireproof and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:31.952Z"
     },
     {
       "slug": "fireproof",
@@ -3846,7 +3853,8 @@
       "body": "<div>Hey Felix - Hope all is well! I know it's been a minute but wanted to check in. I saw the NVIDIA case study on your work with local governments and it reminded me of how much opportunity there is in this market, especially for AI that actually works within existing municipal workflows - curious how things are trending. Would love to hear more about the vision for Onetera and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:33.336Z"
     },
     {
       "slug": "onetera",
@@ -3889,7 +3897,8 @@
       "body": "<div>Hey Daniel - Hope all is well! Thought I'd shoot you a note as I was chatting with one of our portfolio company leaders at Fathom and the conversation made me think about what you're building. As an investor in Fathom, meeting intelligence is a space we follow closely and I think the on-device approach for financial advisors is a real differentiator. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:34.718Z"
     },
     {
       "slug": "continuum",
@@ -3932,7 +3941,8 @@
       "body": "<div>Hey Prasad - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Project44 and Parabola and the conversation made me think about what you're building at Qued. The freight appointment scheduling problem keeps coming up in our logistics conversations and I think the McLeod integration is a huge unlock for adoption. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:36.141Z"
     },
     {
       "slug": "qued",
@@ -3975,7 +3985,8 @@
       "body": "<div>Hey Rasmus - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the AR collections space and I think the shift from one-way reminders to actual two-way AI conversations is going to be a game changer - curious how customers are responding. Would love to hear more about the vision for Paraglide and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:37.493Z"
     },
     {
       "slug": "paraglide",
@@ -4018,7 +4029,8 @@
       "body": "<div>Hey Leopold - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Datadog and the conversation made me think about what you're building at Zeit. The enterprise BI space keeps coming up in our conversations and I think the self-serve approach is where the market is heading. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:38.741Z"
     },
     {
       "slug": "zeit",
@@ -4061,7 +4073,8 @@
       "body": "<div>Hey Brendan - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in ShopGenie and PartsTech and the conversation made me think about what you're building at Olympian. AI voice agents for the trades keeps coming up as a hot topic and I think the remodeling vertical is a great wedge. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:40.137Z"
     },
     {
       "slug": "olympian",
@@ -4104,7 +4117,8 @@
       "body": "<div>Hey Ben - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Datadog and the conversation made me think about what you're building at Tero. The observability cost problem keeps coming up in our conversations and I think attacking it at the application code level instead of the infrastructure level is the right approach. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:41.482Z"
     },
     {
       "slug": "tero",
@@ -4147,7 +4161,8 @@
       "body": "<div>Hey Ankit - Hope all is well! I know it's been a minute but wanted to check in. I've been reading more about synthetic consumer research and I think the accuracy benchmarks are getting to the point where it could genuinely replace traditional panels for a lot of use cases - curious how brand conversations are going. Would love to hear more about the vision for BluePill and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:42.834Z"
     },
     {
       "slug": "blue_pill",
@@ -4190,7 +4205,8 @@
       "body": "<div>Hey Ed - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Axonius and JumpCloud and the conversation made me think about what you're building at ThirdLaw. AI governance is becoming a bigger priority for every enterprise security team we talk to and I think the real-time enforcement approach is going to win out. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-07T19:57:44.048Z"
     },
     {
       "slug": "thirdlaw",
@@ -4233,7 +4249,8 @@
       "body": "<div>Hey Ethan - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Ferry. The forward-deployed AI model for manufacturing keeps coming up in our conversations and I think the MES layer is a huge opportunity. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:45.345Z"
     },
     {
       "slug": "ferry",
@@ -4276,7 +4293,8 @@
       "body": "<div>Hey Kyle - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Axonius and JumpCloud and the conversation made me think about what you're building at Pensar. Continuous adversarial testing keeps coming up as a need in our security conversations and I think the shift from point-in-time pentests is inevitable. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:46.703Z"
     },
     {
       "slug": "pensar",
@@ -4319,7 +4337,8 @@
       "body": "<div>Hey Mike - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the cloud cost engineering space and I think attacking waste at the application code level is going to prove to be a much bigger lever than infrastructure rightsizing - curious how customer conversations are trending. Would love to hear more about the vision for Frugal and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-07T19:57:47.670Z"
     },
     {
       "slug": "frugal",
@@ -4362,7 +4381,8 @@
       "body": "<div>Hey Joe - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the documentation automation space and I think screen-aware AI that learns the product directly is the right approach - curious what verticals are showing the most traction. Would love to hear more about the vision for SAMMY Labs and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:48.976Z"
     },
     {
       "slug": "sammy_labs",
@@ -4405,7 +4425,8 @@
       "body": "<div>Hey Tim - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about AI workflow orchestration and I think the human-in-the-loop handoff problem is going to be one of the defining challenges for ops teams this year - curious how adoption is trending. Would love to hear more about the vision for Trace and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:50.286Z"
     },
     {
       "slug": "trace",
@@ -4448,7 +4469,8 @@
       "body": "<div>Hey Stuart - Hope all is well! I know it's been a minute but wanted to check in. I've been digging more into AI for accounting firms and I think the shift from workflow tools to actual AI staff is going to be a massive category - curious how firm conversations are going. Would love to hear more about the vision for Archie and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:51.521Z"
     },
     {
       "slug": "archie",
@@ -4491,7 +4513,8 @@
       "body": "<div>Hey Tim - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Zalion. The procurement automation problem in manufacturing keeps coming up in our conversations and I think the enterprise traction you have in Europe is impressive. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:52.817Z"
     },
     {
       "slug": "zalion",
@@ -4534,7 +4557,8 @@
       "body": "<div>Hey Jason - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in JumpCloud and the conversation made me think about what you're building at Tofu. The candidate fraud problem keeps coming up in our conversations and I think it is only going to get worse as deepfake technology improves. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-07T19:57:54.146Z"
     },
     {
       "slug": "tofu",
