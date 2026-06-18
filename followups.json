@@ -102,8 +102,9 @@
       "body": "<div>Hey Felix, was chatting with a CTO recently who mentioned that AI tool proliferation is creating a new version of the shadow IT problem. Curious how you're thinking about the enterprise adoption motion.</div>",
       "emailNumber": 2,
       "sendDate": "2026-05-25",
-      "status": "replied",
-      "processedAt": "2026-05-25T17:58:51.071Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.356Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "corvus",
@@ -312,8 +313,9 @@
       "body": "<div>Hey Kyle, Chris was recently catching up with the iLife team and they mentioned carrier partners are actively looking for modern underwriting infrastructure. Happy to make intros if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-25",
-      "status": "replied",
-      "processedAt": "2026-05-25T17:58:40.192Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.361Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "modern_industrials",
@@ -327,8 +329,9 @@
       "body": "<div>Hey Austin, a few portfolio companies we work with that sell into traditional industries have found that the biggest unlock is getting the first workflow adopted, and then everything else follows. Happy to share more on what's worked.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-25",
-      "status": "replied",
-      "processedAt": "2026-05-25T17:58:41.242Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.361Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "specmade",
@@ -357,8 +360,9 @@
       "body": "<div>Nikhil - we work with a handful of construction and AEC companies and I think there could be some interesting overlap and intros we could make.<br><br>If now isn't the right time, totally understand - happy to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-25",
-      "status": "replied",
-      "processedAt": "2026-05-25T17:58:43.723Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.361Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "coolr",
@@ -672,8 +676,9 @@
       "body": "<div>Hey Nicolas, last thought on Fakto. The stat that enterprises lose 2-5% of supplier spend to billing errors and underutilized contract terms really resonated with me. I think the reason nobody catches it is that reconciling millions of invoice lines against thousands of contracts manually just doesn't happen at the frequency it needs to. Moving from periodic audits to continuous, line-by-line reconciliation feels like the only approach that actually captures the full value.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-26",
-      "status": "replied",
-      "processedAt": "2026-05-26T15:44:26.800Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.361Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "flowgen_labs",
@@ -747,8 +752,9 @@
       "body": "<div>Hey Barry, wanted to circle back one more time. The Bartlett Cocke case study caught my eye, 30+ hours saved per project per month just by automating data entry between systems. I think that stat alone tells you how much time GCs are wasting on work that has nothing to do with actually building anything. 40+ contractors managing $25B+ in projects is great traction. Harrison on our team is ex-Procore VP of Finance, so the construction data problem is something we talk about constantly.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-26",
-      "status": "replied",
-      "processedAt": "2026-05-26T15:44:32.086Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.361Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "laborup",
@@ -807,8 +813,9 @@
       "body": "<div>Hey Maor, wanted to follow up one more time. I keep thinking about the quote from your seed announcement, building the system you wish you had as an engineer. I think that founder-market fit really matters here because the coordination problem between architects, structural, and MEP is one of those things you only understand if you've lived it. 1,000+ projects across 43 states and 7-10 day turnaround for permit-ready packages is a really compelling proof point. Harrison on our team is a former Procore VP of Finance so construction workflows are something we talk about constantly.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-05-26",
-      "status": "replied",
-      "processedAt": "2026-05-26T15:44:35.911Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "structured",
@@ -2498,7 +2505,7 @@
       "emailNumber": 4,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:54:56.903Z"
+      "processedAt": "2026-06-18T22:17:05.842Z"
     },
     {
       "slug": "helmet_security",
@@ -2543,7 +2550,7 @@
       "emailNumber": 4,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:54:58.828Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "codecomply",
@@ -2588,7 +2595,7 @@
       "emailNumber": 4,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:54:59.895Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "userjourneys",
@@ -2633,7 +2640,7 @@
       "emailNumber": 4,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:00.902Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "simple",
@@ -2678,7 +2685,7 @@
       "emailNumber": 4,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:01.957Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "anchor_browser",
@@ -2723,7 +2730,7 @@
       "emailNumber": 4,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:03.031Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "arga_labs",
@@ -2768,7 +2775,7 @@
       "emailNumber": 4,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:04.058Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "edwin",
@@ -2783,7 +2790,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:05.117Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "edwin",
@@ -2796,9 +2803,8 @@
       "subject": "Telescope <> Edwin Intro",
       "body": "<div>Hey Peter, was thinking more about Edwin and the go-to-market here. One thing that stands out to me is the neutrality angle, the fact that you integrate across multiple banks and ERPs without favoring any vendor. I think that matters a lot in local government where the procurement process already has enough friction without worrying about lock-in. The part I keep coming back to is the sales cycle though. You're selling to finance directors and treasurers at municipalities, which can be a long process. I'd be curious how you're navigating that and whether you've found certain city sizes or regions where the pain is acute enough that they move faster.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:57:56.856Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "edwin",
@@ -2811,9 +2817,8 @@
       "subject": "Telescope <> Edwin Intro",
       "body": "<div>Hey Peter, one more note. I've been spending time in adjacent govtech and vertical fintech areas, and happy to connect you with folks in our network who've navigated the municipal sales cycle if that'd be useful. The setup time you guys advertise (days, not months) feels like it could be a real differentiator in a market where implementation risk is usually the biggest blocker. Would love to swap notes even if timing isn't right for fundraising. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:24.921Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "alpa",
@@ -2828,7 +2833,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:06.126Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "alpa",
@@ -2841,9 +2846,8 @@
       "subject": "Telescope <> Alpa Intro",
       "body": "<div>Hey Anton, been thinking more about Alpa and the go-to-market here. The stat you guys reference, that 79% of restaurant operators want real-time data but only 27% can track basic KPIs, really illustrates the gap. What I think is interesting about your approach is that you're not asking operators to change how they work. You plug into their existing POS and bank feeds and just surface the answers. Having Jerome Tafani on the board makes a lot of sense too given his time running Burger King France and the McDonald's Europe finance side. I'd be curious how you're thinking about the US market and whether the POS landscape here (Toast, Square, Clover) changes the product at all versus what you've built for the UK.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:57:57.941Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "alpa",
@@ -2856,9 +2860,8 @@
       "subject": "Telescope <> Alpa Intro",
       "body": "<div>Hey Anton, one more thought. Given your background building Taster, you've already lived through the pain of managing multi-location restaurant economics firsthand, which I think matters a lot in a product like this. We've spent time around vertical fintech plays in other industries and happy to connect you with founders who've tackled similar problems in different verticals if that'd be useful. Would love to chat even if fundraising isn't on the near-term roadmap. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:26.435Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "alguna",
@@ -2873,7 +2876,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:07.134Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "alguna",
@@ -2886,9 +2889,8 @@
       "subject": "Alguna + Telescope",
       "body": "<div>Hey Aleks, been thinking more about Alguna and the positioning here. The quote-to-cash unification angle is interesting because I think most companies in this space pick a lane, either CPQ or billing, and then try to bolt on the other side later. The fact that you and Jamie both came from Primer and saw the payment orchestration side firsthand probably shaped that thinking. One thing I'd love to understand better is how the 30-day implementation works in practice. When a company like ComplyAdvantage launches a PLG engine through you guys without engineering resources, what does that migration actually look like from their existing billing setup? That seems like where most competitors get stuck.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:57:59.106Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "alguna",
@@ -2901,9 +2903,8 @@
       "subject": "Alguna + Telescope",
       "body": "<div>Hey Aleks, one more note. We've worked with a few companies navigating the billing and monetization layer at scale, and I think the AI agent pricing question in particular is going to be a big deal over the next couple years as more companies try to figure out how to charge for non-deterministic workloads. Happy to connect you with relevant folks in our network if useful. Would love to find time for a call even if fundraising isn't top of mind right now. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:27.921Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "internet_backyard",
@@ -2918,7 +2919,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:08.113Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "internet_backyard",
@@ -2931,9 +2932,8 @@
       "subject": "Telescope <> Internet Backyard Intro",
       "body": "<div>Hey Mai, been thinking more about Internet Backyard and the broader market timing here. The comparison to where oil was before NYMEX standardized pricing is interesting because it implies compute needs a similar moment where the industry agrees on a unit of measurement before any real financial market can form around it. The performance-based pricing angle over GPU-specific pricing feels right to me, because at the end of the day customers are buying throughput, not hardware. I'd be curious how you're thinking about the geographic expansion piece. You mentioned Africa and Southeast Asia alongside North America, and I imagine the standardization problem looks pretty different in markets where the infrastructure is still being built versus where it already exists.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:00.129Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "internet_backyard",
@@ -2946,9 +2946,8 @@
       "subject": "Telescope <> Internet Backyard Intro",
       "body": "<div>Hey Mai, one more thought. We've spent time around infrastructure and fintech companies and I think the financial translation layer concept you're building is one of those things that feels obvious in hindsight but requires someone to actually go build it. The fact that over $11 billion has already been lent against GPU fleets suggests the capital side is ready but the tooling hasn't caught up. Happy to connect you with relevant folks in our network who are thinking about compute financing from the capital markets side if that'd be useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:29.341Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "ramain",
@@ -2963,7 +2962,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:09.063Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "ramain",
@@ -2976,9 +2975,8 @@
       "subject": "UI automation for legacy systems | Telescope intro",
       "body": "<div>Hey Shourya, been thinking more about the insurance and healthcare use cases on your site. Those carrier portals and payer systems are notoriously painful because every single one has a different UI, different login flow, different way of submitting the same form. Feels like the kind of problem where the real moat isn't the AI model itself but the library of portal-specific knowledge you build up over time as you onboard more customers.<br><br>I'd be curious whether you're seeing faster deployment times as you add more clients in the same vertical, or if each portal is still mostly a fresh setup.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:01.195Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "ramain",
@@ -2991,9 +2989,8 @@
       "subject": "UI automation for legacy systems | Telescope intro",
       "body": "<div>Hey Shourya, one more thought. We've spent time around a few companies in the procurement and supply chain space where teams are still manually entering data across vendor portals, ERPs, and legacy finance systems. Happy to make intros if any of those connections would be useful as you think about go-to-market.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:30.843Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "quash",
@@ -3008,7 +3005,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:10.017Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "quash",
@@ -3021,9 +3018,8 @@
       "subject": "alternative credit scoring | Telescope intro",
       "body": "<div>Hey Yoel, been thinking more about the US credit union push. The average credit union member is 51, and these institutions know they need to attract younger borrowers who expect the same experience they get from a Cash App or a SoFi. But most credit unions don't have the data science teams to build their own models, so they're stuck with the same bureau scores that reject the exact people they're trying to reach.<br><br>I think what's interesting about your approach is that you can drop in pre-trained models via API rather than asking a 50-person credit union to build an ML pipeline from scratch. I'd be curious how the sales cycle looks with credit unions vs. the Latin American banks you've been working with, since the decision-making process is so different.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:02.203Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "quash",
@@ -3036,9 +3032,8 @@
       "subject": "alternative credit scoring | Telescope intro",
       "body": "<div>Hey Yoel, last thought from me. We know the fintech lending space pretty well and have a few connections in the credit union world that might be useful as you build out the US side. Happy to make some intros if that would be helpful.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:32.324Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "ekko",
@@ -3052,8 +3047,9 @@
       "body": "<div>Hey Oli, circling back on this. I saw you guys just set up the Atlanta office for the US push, and the Worldpay partnership is a great distribution channel. Curious whether the US strategy is more about going through payment processors like Worldpay or signing banks directly.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "completed",
-      "processedAt": "2026-06-03T22:55:11.075Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "ekko",
@@ -3067,8 +3063,9 @@
       "body": "<div>Hey Oli, been thinking more about the merchant side of what you guys are doing. The plugin that shows carbon impact at checkout and lets customers add a small donation is interesting because it turns sustainability into a conversion tool for the merchant, not just a feel-good feature. I think the harder question is whether merchants actually see measurable lift in checkout completion or repeat purchases, because that's what gets them to keep it turned on.<br><br>I'd be curious if you're seeing data on that from the Worldpay merchants or the Shopify integration, and whether the value prop to merchants is more about brand differentiation or actual revenue impact.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:03.257Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "ekko",
@@ -3082,8 +3079,9 @@
       "body": "<div>Hey Oli, one more thought. We know a few folks in the US payments and fintech space who might be worth connecting with as you build out the Atlanta operation. Happy to make some intros if that would be useful.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:33.772Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "traza",
@@ -3097,8 +3095,9 @@
       "body": "<div>Hey Silvestre, circling back on this. I was looking at how your agents handle supplier substitutions on change orders, specifically the part where they verify certifications and re-run compliance before issuing a new RFQ. That feels like the step where most procurement teams lose days because it's all manual back-and-forth with the supplier. Curious how much of that you can actually automate end-to-end vs. where a human still needs to step in.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "completed",
-      "processedAt": "2026-06-03T22:55:12.095Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "traza",
@@ -3112,8 +3111,9 @@
       "body": "<div>Hey Silvestre, been thinking more about the construction use case. In that world, a spec change on a project can cascade into dozens of supplier swaps, and procurement teams are usually managing that across spreadsheets and email threads while the project timeline keeps moving. The stat in your blog about procurement contracts losing 11% of their value after signing because of operational gaps feels right, especially when you see how much slippage happens between the PO and what actually gets delivered.<br><br>I'd be curious whether construction is becoming a bigger part of the pipeline vs. manufacturing, and whether the deployment process looks different across those two verticals.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:04.290Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "traza",
@@ -3127,8 +3127,9 @@
       "body": "<div>Hey Silvestre, one more thought. I work closely with Chris Gaertner who has spent a lot of time in the supply chain and manufacturing space through companies like Parabola, Paperless Parts, and Project44. Happy to connect you two if it would be helpful to compare notes on selling into procurement teams at large industrials.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:35.273Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "balancedtrust",
@@ -3143,7 +3144,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:13.202Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "balancedtrust",
@@ -3156,9 +3157,8 @@
       "subject": "bank-fintech compliance | Telescope intro",
       "body": "<div>Travis, been thinking more about BalancedTrust since my last note. One thing I find interesting is how you're positioning around the bank-fintech relationship specifically. Most compliance tools I've seen are built for one side or the other, but the messy part is usually the handoff between the two, especially when you get into fourth-party risk and neither side has full visibility. The fact that your team has Kimberly from OCC and David from Fiserv feels like it matters here since you're building for both sides of that equation. I'd be curious whether you're seeing more pull from the bank side or the fintech side, and whether the sales motion is different for each.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:05.279Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "balancedtrust",
@@ -3171,9 +3171,8 @@
       "subject": "bank-fintech compliance | Telescope intro",
       "body": "<div>Travis, wanted to follow up one more time. I work closely with Chris Gaertner who has spent time around insurance compliance (iLife, etc.) and has seen firsthand how the regulatory automation space plays out across different financial verticals. Happy to connect you two if it would be useful to swap notes on GTM or just have another sounding board. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:36.736Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "kotini",
@@ -3188,7 +3187,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:14.388Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "kotini",
@@ -3201,9 +3200,8 @@
       "subject": "proptech compliance | Telescope intro",
       "body": "<div>Kieran, been thinking more about Kotini. The Nested partnership caught my eye because it feels like a signal that even the more tech-forward agencies are realizing they can't build compliance infrastructure themselves. Going from 250 properties automated to 500 in three months is solid execution, and the OPDA founding membership tells me you're thinking about the data layer beyond just onboarding. I'd be curious how you're thinking about the material information piece long term, specifically whether there's an opportunity to own more of that data flow between agents, conveyancers, and lenders rather than just collecting it on the front end.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:06.333Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "kotini",
@@ -3216,9 +3214,8 @@
       "subject": "proptech compliance | Telescope intro",
       "body": "<div>Kieran, one more note. We've seen a few companies in adjacent spaces where the initial wedge was compliance or onboarding and they expanded into owning more of the transaction workflow over time. Happy to share some of those learnings if helpful, especially around how the expansion playbook tends to work in regulated industries. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:38.070Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "partspulse",
@@ -3232,8 +3229,9 @@
       "body": "<div>Hey Steve, circling back on this. I was looking at how you guys co-developed the platform with Wabash through UP.Labs and I think that's a really interesting way to build, having a real manufacturer pressure-testing the product from day one. Curious how the transition works from that co-development relationship into selling to other OEMs and dealers who might be Wabash competitors.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "completed",
-      "processedAt": "2026-06-03T22:55:15.379Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "partspulse",
@@ -3247,8 +3245,9 @@
       "body": "<div>Steve, been thinking more about PartsPulse. The piece that keeps standing out to me is how fragmented the data is across parts operations. Sales, pricing, and inventory all sitting in separate systems means nobody has a full picture, and the people making decisions are basically guessing. After 12 years at Documoto serving 160+ equipment brands, you've probably seen every version of that problem. I think the interesting question is whether this lands as a tool that individual teams use or whether it becomes the system of record that the whole parts org runs on. Curious how customers are adopting it, whether it starts in one function and spreads or whether they buy the full platform upfront.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:07.331Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "partspulse",
@@ -3262,8 +3261,9 @@
       "body": "<div>Steve, wanted to follow up one more time. I work closely with Chris Gaertner who has spent a lot of time in the supply chain and manufacturing space, including companies like Parabola, Paperless Parts, and Project44. He'd have some useful perspective on how these platforms scale across fragmented industries. Happy to connect you two if it would be helpful to swap notes. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-08",
-      "status": "replied",
-      "processedAt": "2026-06-08T21:28:39.191Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "justwin",
@@ -3278,7 +3278,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:16.368Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "justwin",
@@ -3291,9 +3291,8 @@
       "subject": "Telescope <> JustWin Intro",
       "body": "<div>Ted, been thinking more about JustWin. The government contracting process is one of those areas where the friction is so high that it effectively locks out smaller companies who don't have dedicated BD teams or proposal writers on staff. The mission of democratizing access feels right because the current system rewards the companies that are best at paperwork, not necessarily the best at the actual work. Having backers like Mike Rosengarten who built OpenGov is a good signal that people who understand government tech see this the same way. I'd be curious how you're thinking about the education contracts side vs. government, and whether one is pulling ahead as the primary wedge.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:08.391Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "justwin",
@@ -3306,9 +3305,8 @@
       "subject": "Telescope <> JustWin Intro",
       "body": "<div>Ted, one more note from me. We've invested in a number of companies that started by making a broken workflow accessible to a broader market and then expanded from there. Happy to share some of those patterns if it would be useful as you think about what comes after opportunity discovery and proposal writing. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:40.505Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "rama",
@@ -3323,7 +3321,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:17.409Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "rama",
@@ -3336,9 +3334,8 @@
       "subject": "Telescope <> Rama Intro",
       "body": "<div>Hey Matt, been thinking more about Rama and the Classic Components case study. Finding 21% of parts cheaper across a multi-hundred line opportunity list is a pretty concrete way to show ROI on day one, especially for a distributor that size. I think the interesting strategic question is whether you stay focused on independent distributors or eventually move upstream to the larger guys who have more volume but also more entrenched systems. The 13% revenue per employee lift is the kind of metric that should make this an easy conversation with ops leaders. Would love to dig into how the pipeline is looking and what the sales cycle looks like for a top-10 distributor vs. a mid-market one.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:09.409Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "rama",
@@ -3351,9 +3348,8 @@
       "subject": "Telescope <> Rama Intro",
       "body": "<div>Hey Matt, one more thought here. I work closely with Chris Gaertner who has spent a lot of time in supply chain (Parabola, Paperless Parts, Project44) and I think he'd have some useful perspective on how vertical AI tools like yours tend to expand once the initial wedge is working. Happy to make that intro if it'd be helpful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:41.835Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "clave",
@@ -3367,8 +3363,9 @@
       "body": "<div>Hey Tadeo, circling back on this. I was looking at the Capriotti's case study, specifically the part where you guys replaced five separate spreadsheets with one unified view across 14 stores. I think that's the kind of thing that sounds simple but is actually what gets operators to adopt. Curious whether franchisors are starting to push Clave top-down or if it's still mostly franchisees pulling you in.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "completed",
-      "processedAt": "2026-06-03T22:55:18.394Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "clave",
@@ -3382,8 +3379,9 @@
       "body": "<div>Hey Tadeo, been thinking more about Clave and the go-to-market here. The Churromania numbers are interesting, $64K extra monthly revenue across 45 stores, but what stands out to me is the 60+ hours of manual reporting you guys eliminated. I think in QSR, the people running these locations are not sitting at a desk all day, so anything that requires them to log into a dashboard or pull CSVs just doesn't get used. The fact that operators can just ask a question in chat and get an answer feels like the right interface for this customer. Curious how you're thinking about expanding beyond the brands you're live with today, whether it's going deeper within existing franchise systems or broadening to new ones.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:10.389Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "clave",
@@ -3397,8 +3395,9 @@
       "body": "<div>Hey Tadeo, one last note here. We've spent a lot of time in vertical SaaS for operationally heavy industries, and one pattern we keep seeing is that the companies that win are the ones built by people who actually lived the problem. Growing up in Churromania with 140+ locations gives you and Mateo a level of intuition about franchise operations that's hard to replicate. Happy to connect you with anyone in our network who might be helpful, whether that's other vertical SaaS founders or folks in the franchise world. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:43.861Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "petra_security",
@@ -3413,7 +3412,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:19.375Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "petra_security",
@@ -3426,9 +3425,8 @@
       "subject": "Telescope <> Petra Intro",
       "body": "<div>Hey Cooper, been thinking more about Petra and the positioning here. I think the decision to go deep on M365 identity threats instead of trying to be a broader security platform is smart, especially selling through MSPs who already have EDR and other tools from different vendors. The 90 hours per month in billable hours reclaimed for AME Group is a really compelling way to frame the ROI, because MSPs are always trying to figure out how to do more with fewer senior engineers. The fact that help desk staff can now handle responses that used to require senior people changes the unit economics for the MSP. Curious whether you're seeing more traction with larger MSPs who have dedicated security teams or smaller ones where this effectively becomes their entire M365 security layer.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:11.350Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "petra_security",
@@ -3441,9 +3439,8 @@
       "subject": "Telescope <> Petra Intro",
       "body": "<div>Hey Cooper, one more thought here. I work closely with Chris Gaertner who invested in Rewst and Auvik and has spent a lot of time in the MSP channel. He also has deep security experience from Axonius and JumpCloud. I think he'd have some useful perspective on how security vendors scale through the MSP ecosystem, and happy to make that intro if it'd be helpful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:45.212Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "domu",
@@ -3458,7 +3455,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-03T22:55:20.339Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "domu",
@@ -3471,9 +3468,8 @@
       "subject": "Domu + Telescope",
       "body": "<div>Hey Nico, been thinking more about Domu. 70M monthly connected calls is a pretty staggering number for a company your size. I think what's interesting about the compliance angle is that it's not just a checkbox, it's actually a moat. The banks and insurers you're working with can't afford a CFPB violation, so once you're validated and live, switching costs are real. The BNP Paribas result of 40% more right-party contacts is the kind of metric that should make this an easy expansion conversation within those accounts. Curious how much of your growth is coming from expanding within existing clients vs. landing new logos.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "completed",
-      "processedAt": "2026-06-06T18:58:12.340Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "domu",
@@ -3486,9 +3482,8 @@
       "subject": "Domu + Telescope",
       "body": "<div>Hey Nico, one last thought here. I think you guys are at an interesting inflection point, 8 of the top 20 banks and insurers across the Americas is real market validation, and the question becomes how you scale from here without the team growing linearly with revenue. Happy to connect you with anyone in our network who's navigated that kind of scaling challenge in enterprise AI. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "completed",
-      "processedAt": "2026-06-08T21:28:46.618Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "certo",
@@ -3502,8 +3497,8 @@
       "body": "<div>Hey Bastien, circling back on this. I was looking at how you guys structured the platform around five distinct modules, ingredient validation, formula compliance, claims, labelling, and market entry. I think starting with the full workflow instead of just one piece makes it harder for customers to outgrow you. Curious whether most customers are adopting all five from day one or starting with one and expanding.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-03",
-      "status": "replied",
-      "processedAt": "2026-06-03T22:55:21.159Z"
+      "status": "completed",
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "certo",
@@ -3516,9 +3511,8 @@
       "subject": "Telescope <> Certo",
       "body": "<div>Hey Bastien, been thinking more about Certo. What I keep coming back to is the regulatory monitoring piece, the fact that your system automatically rechecks products when regulations change. I think that's the part that turns this from a one-time review tool into something teams rely on every day. The regulatory landscape for consumer products keeps getting more complex (microplastics, greenwashing rules, allergen classification), and most brands are still managing this with spreadsheets and consultants across 70+ markets. Jean mentioned you guys started by sitting with regulatory teams and watching how they actually work, and I think that kind of ground-up approach matters a lot in a space where the workflows are so specific. Curious how you're thinking about prioritizing which markets and product categories to go deeper on next.</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-06",
-      "status": "replied",
-      "processedAt": "2026-06-06T18:58:13.163Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "certo",
@@ -3531,9 +3525,8 @@
       "subject": "Telescope <> Certo",
       "body": "<div>Hey Bastien, one more thought here. As you guys scale into the US market, happy to connect you with folks in our network who have navigated the go-to-market for selling compliance and regulatory tools to enterprise CPG and beauty brands. It's a specific kind of sales motion and having people who've done it before can save a lot of time. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-08",
-      "status": "replied",
-      "processedAt": "2026-06-08T21:28:47.753Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "zerodrift",
@@ -3548,7 +3541,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:12.368Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "zerodrift",
@@ -3561,9 +3554,8 @@
       "subject": "congrats on the raise | Telescope intro",
       "body": "<div>Hey Kumesh - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Persuit and Logikcull and the conversation made me think about what you're building at ZeroDrift. With all the AI tools hitting the enterprise, sounds like compliance teams are scrambling to keep up and real-time enforcement is going to be critical. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:23.749Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "zerodrift",
@@ -3576,9 +3568,8 @@
       "subject": "congrats on the raise | Telescope intro",
       "body": "<div>Hey Kumesh, Following up - have you thought about another partner after your seed? I really like what you're building at ZeroDrift and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:23:58.389Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "nox_metals",
@@ -3593,7 +3584,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:13.812Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "nox_metals",
@@ -3606,9 +3597,8 @@
       "subject": "Nox Metals + Telescope",
       "body": "<div>Hey Zane - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Nox Metals. The model of combining software with direct manufacturing operations is one we keep seeing work across verticals. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:25.176Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "nox_metals",
@@ -3621,9 +3611,8 @@
       "subject": "Nox Metals + Telescope",
       "body": "<div>Hey Zane, Following up - have you thought about another partner after your YC seed? I really like what you're building at Nox Metals and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:00.004Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "prox",
@@ -3638,7 +3627,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:15.610Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "prox",
@@ -3651,9 +3640,8 @@
       "subject": "Prox + Telescope",
       "body": "<div>Hey Gregory - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Prox. The knowledge drain problem in industrial verticals keeps coming up in our conversations, especially as senior specialists retire. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:26.534Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "prox",
@@ -3666,9 +3654,8 @@
       "subject": "Prox + Telescope",
       "body": "<div>Hey Gregory, Following up - have you thought about another partner after your pre-seed? I really like what you're building at Prox and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:01.627Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "kinth",
@@ -3683,7 +3670,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:16.994Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "kinth",
@@ -3696,9 +3683,8 @@
       "subject": "Kinth + Telescope",
       "body": "<div>Hey Arhon - Hope all is well! I know it's been a minute but wanted to check in. I've been reading more about CAD-native AI design tools and I think parametric geometry is where the market needs to go - curious how early customer conversations are going. Would love to hear more about the vision for Kinth and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:27.974Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "kinth",
@@ -3711,9 +3697,8 @@
       "subject": "Kinth + Telescope",
       "body": "<div>Arhon - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:03.112Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "nebula",
@@ -3728,7 +3713,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:18.857Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "nebula",
@@ -3741,9 +3726,8 @@
       "subject": "Telescope <> Nebula Intro",
       "body": "<div>Hey Akshat - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the agent memory problem and I think it's going to be one of the key infrastructure layers as production AI deployments scale - curious what you're seeing from early adopters. Would love to hear more about the vision for Nebula and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:29.332Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "nebula",
@@ -3756,9 +3740,8 @@
       "subject": "Telescope <> Nebula Intro",
       "body": "<div>Akshat - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:05.031Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "reviva",
@@ -3773,7 +3756,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:20.250Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "reviva",
@@ -3786,9 +3769,8 @@
       "subject": "Reviva + Telescope",
       "body": "<div>Hey Valerie - Hope all is well! Thought I'd shoot you a note as I was chatting with one of our portfolio company leaders at MedTrainer and Carefeed and the conversation made me think about what you're building. The cash-pay wellness market keeps coming up as an underserved segment and I think the EHR opportunity there is massive. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:30.678Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "reviva",
@@ -3801,9 +3783,8 @@
       "subject": "Reviva + Telescope",
       "body": "<div>Hey Valerie, Following up - have you thought about another partner after your seed? I really like what you're building at Reviva and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:06.562Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "fireproof",
@@ -3818,7 +3799,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:21.577Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "fireproof",
@@ -3831,9 +3812,8 @@
       "subject": "Fireproof + Telescope",
       "body": "<div>Hey Nate - Hope all is well! I know it's been a minute but wanted to check in. I've been digging more into vertical AI for public safety and I think fire departments are one of those verticals that's finally ready for modern software - curious how adoption conversations are going on your end. Would love to hear more about the vision for Fireproof and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:31.952Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "fireproof",
@@ -3846,9 +3826,8 @@
       "subject": "Fireproof + Telescope",
       "body": "<div>Nate - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:08.032Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "onetera",
@@ -3862,8 +3841,9 @@
       "body": "<div>Hey Felix, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-04",
-      "status": "completed",
-      "processedAt": "2026-06-04T21:16:22.944Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "onetera",
@@ -3877,8 +3857,9 @@
       "body": "<div>Hey Felix - Hope all is well! I know it's been a minute but wanted to check in. I saw the NVIDIA case study on your work with local governments and it reminded me of how much opportunity there is in this market, especially for AI that actually works within existing municipal workflows - curious how things are trending. Would love to hear more about the vision for Onetera and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:33.336Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "onetera",
@@ -3892,8 +3873,9 @@
       "body": "<div>Felix - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:09.874Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "continuum",
@@ -3908,7 +3890,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:24.349Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "continuum",
@@ -3921,9 +3903,8 @@
       "subject": "Continuum + Telescope",
       "body": "<div>Hey Daniel - Hope all is well! Thought I'd shoot you a note as I was chatting with one of our portfolio company leaders at Fathom and the conversation made me think about what you're building. As an investor in Fathom, meeting intelligence is a space we follow closely and I think the on-device approach for financial advisors is a real differentiator. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:34.718Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "continuum",
@@ -3936,9 +3917,8 @@
       "subject": "Continuum + Telescope",
       "body": "<div>Hey Daniel, Following up - have you thought about another partner after your pre-seed? I really like what you're building at Continuum and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:11.476Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "qued",
@@ -3953,7 +3933,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:25.762Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "qued",
@@ -3966,9 +3946,8 @@
       "subject": "Telescope <> Qued Intro",
       "body": "<div>Hey Prasad - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Project44 and Parabola and the conversation made me think about what you're building at Qued. The freight appointment scheduling problem keeps coming up in our logistics conversations and I think the McLeod integration is a huge unlock for adoption. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:36.141Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "qued",
@@ -3981,9 +3960,8 @@
       "subject": "Telescope <> Qued Intro",
       "body": "<div>Hey Prasad, Following up - have you thought about another partner after your seed? I really like what you're building at Qued and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:13.001Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "paraglide",
@@ -3997,8 +3975,9 @@
       "body": "<div>Hey Rasmus, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-04",
-      "status": "completed",
-      "processedAt": "2026-06-04T21:16:27.088Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "paraglide",
@@ -4012,8 +3991,9 @@
       "body": "<div>Hey Rasmus - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the AR collections space and I think the shift from one-way reminders to actual two-way AI conversations is going to be a game changer - curious how customers are responding. Would love to hear more about the vision for Paraglide and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:37.493Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "paraglide",
@@ -4027,8 +4007,9 @@
       "body": "<div>Hey Rasmus, Following up - have you thought about another partner after your seed? I really like what you're building at Paraglide and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:14.532Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "zeit",
@@ -4043,7 +4024,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:28.408Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "zeit",
@@ -4056,9 +4037,8 @@
       "subject": "Zeit + Telescope",
       "body": "<div>Hey Leopold - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Datadog and the conversation made me think about what you're building at Zeit. The enterprise BI space keeps coming up in our conversations and I think the self-serve approach is where the market is heading. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:38.741Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "zeit",
@@ -4071,9 +4051,8 @@
       "subject": "Zeit + Telescope",
       "body": "<div>Hey Leopold, Following up - have you thought about another partner after your YC seed? I really like what you're building at Zeit and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:15.954Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "olympian",
@@ -4088,7 +4067,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:29.763Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "olympian",
@@ -4101,9 +4080,8 @@
       "subject": "Telescope <> Olympian",
       "body": "<div>Hey Brendan - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in ShopGenie and PartsTech and the conversation made me think about what you're building at Olympian. AI voice agents for the trades keeps coming up as a hot topic and I think the remodeling vertical is a great wedge. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:40.137Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "olympian",
@@ -4116,9 +4094,8 @@
       "subject": "Telescope <> Olympian",
       "body": "<div>Brendan - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:17.526Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "tero",
@@ -4133,7 +4110,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:31.164Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "tero",
@@ -4146,9 +4123,8 @@
       "subject": "Telescope <> Tero Intro",
       "body": "<div>Hey Ben - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Datadog and the conversation made me think about what you're building at Tero. The observability cost problem keeps coming up in our conversations and I think attacking it at the application code level instead of the infrastructure level is the right approach. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:41.482Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "tero",
@@ -4161,9 +4137,8 @@
       "subject": "Telescope <> Tero Intro",
       "body": "<div>Hey Ben, Following up - have you thought about another partner after your seed? I really like what you're building at Tero and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:19.168Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "blue_pill",
@@ -4177,8 +4152,9 @@
       "body": "<div>Hey Ankit, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-04",
-      "status": "completed",
-      "processedAt": "2026-06-04T21:16:32.446Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "blue_pill",
@@ -4192,8 +4168,9 @@
       "body": "<div>Hey Ankit - Hope all is well! I know it's been a minute but wanted to check in. I've been reading more about synthetic consumer research and I think the accuracy benchmarks are getting to the point where it could genuinely replace traditional panels for a lot of use cases - curious how brand conversations are going. Would love to hear more about the vision for BluePill and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:42.834Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "blue_pill",
@@ -4207,8 +4184,9 @@
       "body": "<div>Hey Ankit, Following up - have you thought about another partner after your seed? I really like what you're building at BluePill and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:20.671Z"
+      "status": "cancelled",
+      "processedAt": "2026-06-18T22:10:21.362Z",
+      "notes": " Cancelled: founder already replied"
     },
     {
       "slug": "thirdlaw",
@@ -4222,8 +4200,8 @@
       "body": "<div>Hey Ed, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-04",
-      "status": "replied",
-      "processedAt": "2026-06-04T21:16:33.567Z"
+      "status": "completed",
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "thirdlaw",
@@ -4236,9 +4214,8 @@
       "subject": "Telescope <> Thirdlaw",
       "body": "<div>Hey Ed - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Axonius and JumpCloud and the conversation made me think about what you're building at ThirdLaw. AI governance is becoming a bigger priority for every enterprise security team we talk to and I think the real-time enforcement approach is going to win out. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "replied",
-      "processedAt": "2026-06-07T19:57:44.048Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "thirdlaw",
@@ -4251,9 +4228,8 @@
       "subject": "Telescope <> Thirdlaw",
       "body": "<div>Hey Ed, Following up - have you thought about another partner after your seed? I really like what you're building at ThirdLaw and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "replied",
-      "processedAt": "2026-06-09T21:24:21.896Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "ferry",
@@ -4268,7 +4244,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:35.081Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "ferry",
@@ -4281,9 +4257,8 @@
       "subject": "Telescope <> Ferry Intro",
       "body": "<div>Hey Ethan - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Ferry. The forward-deployed AI model for manufacturing keeps coming up in our conversations and I think the MES layer is a huge opportunity. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:45.345Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "ferry",
@@ -4296,9 +4271,8 @@
       "subject": "Telescope <> Ferry Intro",
       "body": "<div>Hey Ethan, Following up - have you thought about another partner after your seed? I really like what you're building at Ferry and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:23.442Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "pensar",
@@ -4313,7 +4287,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:36.354Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "pensar",
@@ -4326,9 +4300,8 @@
       "subject": "Pensar + Telescope",
       "body": "<div>Hey Kyle - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Axonius and JumpCloud and the conversation made me think about what you're building at Pensar. Continuous adversarial testing keeps coming up as a need in our security conversations and I think the shift from point-in-time pentests is inevitable. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:46.703Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "pensar",
@@ -4341,9 +4314,8 @@
       "subject": "Pensar + Telescope",
       "body": "<div>Hey Kyle, Following up - have you thought about another partner after your pre-seed? I really like what you're building at Pensar and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:25.001Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "frugal",
@@ -4357,8 +4329,8 @@
       "body": "<div>Hey Mike, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
       "emailNumber": 2,
       "sendDate": "2026-06-04",
-      "status": "replied",
-      "processedAt": "2026-06-04T21:16:37.425Z"
+      "status": "completed",
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "frugal",
@@ -4371,9 +4343,8 @@
       "subject": "Telescope <> Frugal Connect",
       "body": "<div>Hey Mike - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the cloud cost engineering space and I think attacking waste at the application code level is going to prove to be a much bigger lever than infrastructure rightsizing - curious how customer conversations are trending. Would love to hear more about the vision for Frugal and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "replied",
-      "processedAt": "2026-06-07T19:57:47.670Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "frugal",
@@ -4386,9 +4357,8 @@
       "subject": "Telescope <> Frugal Connect",
       "body": "<div>Hey Mike, Following up - have you thought about another partner after your seed? I really like what you're building at Frugal and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "replied",
-      "processedAt": "2026-06-09T21:24:26.257Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "sammy_labs",
@@ -4403,7 +4373,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:38.788Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "sammy_labs",
@@ -4416,9 +4386,8 @@
       "subject": "SAMMY Labs + Telescope",
       "body": "<div>Hey Joe - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the documentation automation space and I think screen-aware AI that learns the product directly is the right approach - curious what verticals are showing the most traction. Would love to hear more about the vision for SAMMY Labs and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:48.976Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "sammy_labs",
@@ -4431,9 +4400,8 @@
       "subject": "SAMMY Labs + Telescope",
       "body": "<div>Hey Joe, Following up - have you thought about another partner after your pre-seed? I really like what you're building at SAMMY Labs and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:27.761Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "trace",
@@ -4448,7 +4416,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:40.136Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "trace",
@@ -4461,9 +4429,8 @@
       "subject": "Trace + Telescope",
       "body": "<div>Hey Tim - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about AI workflow orchestration and I think the human-in-the-loop handoff problem is going to be one of the defining challenges for ops teams this year - curious how adoption is trending. Would love to hear more about the vision for Trace and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:50.286Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "trace",
@@ -4476,9 +4443,8 @@
       "subject": "Trace + Telescope",
       "body": "<div>Hey Tim, Following up - have you thought about another partner after your seed? I really like what you're building at Trace and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:29.139Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "archie",
@@ -4493,7 +4459,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:41.420Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "archie",
@@ -4506,9 +4472,8 @@
       "subject": "AI accounting | Telescope intro",
       "body": "<div>Hey Stuart - Hope all is well! I know it's been a minute but wanted to check in. I've been digging more into AI for accounting firms and I think the shift from workflow tools to actual AI staff is going to be a massive category - curious how firm conversations are going. Would love to hear more about the vision for Archie and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:51.521Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "archie",
@@ -4521,9 +4486,8 @@
       "subject": "AI accounting | Telescope intro",
       "body": "<div>Stuart - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:30.463Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "zalion",
@@ -4538,7 +4502,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:42.610Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "zalion",
@@ -4551,9 +4515,8 @@
       "subject": "Telescope <> Zalion",
       "body": "<div>Hey Tim - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Zalion. The procurement automation problem in manufacturing keeps coming up in our conversations and I think the enterprise traction you have in Europe is impressive. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:52.817Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "zalion",
@@ -4566,9 +4529,8 @@
       "subject": "Telescope <> Zalion",
       "body": "<div>Tim - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:31.972Z"
+      "sendDate": "2026-06-30",
+      "status": "pending"
     },
     {
       "slug": "tofu",
@@ -4583,7 +4545,7 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-04T21:16:43.974Z"
+      "processedAt": "2026-06-18T22:17:05.852Z"
     },
     {
       "slug": "tofu",
@@ -4596,9 +4558,8 @@
       "subject": "Telescope <> Tofu Intro",
       "body": "<div>Hey Jason - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in JumpCloud and the conversation made me think about what you're building at Tofu. The candidate fraud problem keeps coming up in our conversations and I think it is only going to get worse as deepfake technology improves. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
       "emailNumber": 3,
-      "sendDate": "2026-06-07",
-      "status": "completed",
-      "processedAt": "2026-06-07T19:57:54.146Z"
+      "sendDate": "2026-06-23",
+      "status": "pending"
     },
     {
       "slug": "tofu",
@@ -4611,1716 +4572,8 @@
       "subject": "Telescope <> Tofu Intro",
       "body": "<div>Hey Jason, Following up - have you thought about another partner after your seed? I really like what you're building at Tofu and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-06-09",
-      "status": "completed",
-      "processedAt": "2026-06-09T21:24:33.348Z"
-    },
-    {
-      "slug": "buildcognition",
-      "company": "BuildCognition",
-      "founder": "Mark",
-      "email": "mark@buildcognition.com",
-      "domain": "buildcognition.com",
-      "threadId": "19ead8b62cb413fd",
-      "messageId": "19ead8b62cb413fd",
-      "subject": "Telescope <> BuildCognition Intro",
-      "body": "<div>Hey Mark, I was looking at how you guys approach the site-level quality inspection workflow. Curious whether GCs are typically discovering you through their subs or the other way around.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:47:53.814Z"
-    },
-    {
-      "slug": "buildcognition",
-      "company": "BuildCognition",
-      "founder": "Mark",
-      "email": "mark@buildcognition.com",
-      "domain": "buildcognition.com",
-      "threadId": "19ead8b62cb413fd",
-      "messageId": "19ead8b62cb413fd",
-      "subject": "Telescope <> BuildCognition Intro",
-      "body": "<div>Mark, our Head of Ops Harrison Doyle is a former VP of Finance at Procore, so construction quality and inspection workflows are something we know well. Happy to make any relevant intros if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
+      "sendDate": "2026-06-30",
       "status": "pending"
-    },
-    {
-      "slug": "buildcognition",
-      "company": "BuildCognition",
-      "founder": "Mark",
-      "email": "mark@buildcognition.com",
-      "domain": "buildcognition.com",
-      "threadId": "19ead8b62cb413fd",
-      "messageId": "19ead8b62cb413fd",
-      "subject": "Telescope <> BuildCognition Intro",
-      "body": "<div>Mark, been thinking more about how quality data from the field could feed into preconstruction estimates and risk scoring down the line. I think there's something interesting in using historical defect data to predict where problems will show up on future projects.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "grantd",
-      "company": "Grantd",
-      "founder": "Brian",
-      "email": "brian.mcdonald@grantdequity.com",
-      "domain": "grantdequity.com",
-      "threadId": "19ebd0aad1ffa480",
-      "messageId": "19ebd0aad1ffa480",
-      "subject": "Telescope <> Grantd Intro",
-      "body": "<div>Hey Brian, I was looking at how you guys handle the cross-platform equity data problem. Curious how companies are typically managing the transition from their existing cap table tools.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:47:54.878Z"
-    },
-    {
-      "slug": "grantd",
-      "company": "Grantd",
-      "founder": "Brian",
-      "email": "brian.mcdonald@grantdequity.com",
-      "domain": "grantdequity.com",
-      "threadId": "19ebd0aad1ffa480",
-      "messageId": "19ebd0aad1ffa480",
-      "subject": "Telescope <> Grantd Intro",
-      "body": "<div>Brian, we've worked with a few companies where equity comp becomes a retention bottleneck as they scale past 100 employees. Happy to share what we've heard about what's working and what's not.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "grantd",
-      "company": "Grantd",
-      "founder": "Brian",
-      "email": "brian.mcdonald@grantdequity.com",
-      "domain": "grantdequity.com",
-      "threadId": "19ebd0aad1ffa480",
-      "messageId": "19ebd0aad1ffa480",
-      "subject": "Telescope <> Grantd Intro",
-      "body": "<div>Brian, the complexity around international equity grants keeps coming up in conversations with portfolio companies that have distributed teams. I think there's a real gap in tooling for managing equity across jurisdictions.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "marble_ai",
-      "company": "Marble AI",
-      "founder": "Jason",
-      "email": "jason.kilgour@marble-ai.com",
-      "domain": "marble-ai.com",
-      "threadId": "19eb71f77ed5c235",
-      "messageId": "19eb71f77ed5c235",
-      "subject": "Telescope <> Marble AI",
-      "body": "<div>Hey Jason, I was looking at how Marble approaches the clinical data piece. Curious how health systems are responding to the AI approach given how sensitive they tend to be about patient data.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:47:55.875Z"
-    },
-    {
-      "slug": "marble_ai",
-      "company": "Marble AI",
-      "founder": "Jason",
-      "email": "jason.kilgour@marble-ai.com",
-      "domain": "marble-ai.com",
-      "threadId": "19eb71f77ed5c235",
-      "messageId": "19eb71f77ed5c235",
-      "subject": "Telescope <> Marble AI",
-      "body": "<div>Jason, we've made a few investments in healthcare including Passage Health and Canid, and the common thread is that domain expertise is the moat. Happy to share what we've seen work in terms of health system sales cycles.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "marble_ai",
-      "company": "Marble AI",
-      "founder": "Jason",
-      "email": "jason.kilgour@marble-ai.com",
-      "domain": "marble-ai.com",
-      "threadId": "19eb71f77ed5c235",
-      "messageId": "19eb71f77ed5c235",
-      "subject": "Telescope <> Marble AI",
-      "body": "<div>Jason, I keep coming back to the fact that healthcare AI products with real clinical expertise behind them convert at a totally different rate than generic AI tools trying to break into the space. That's a hard advantage to replicate.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "unkey",
-      "company": "Unkey",
-      "founder": "James",
-      "email": "james@unkey.dev",
-      "domain": "unkey.dev",
-      "threadId": "19eb71c88abe1483",
-      "messageId": "19eb71c88abe1483",
-      "subject": "Telescope <> Unkey",
-      "body": "<div>Hey James, I was looking at the rate limiting and key analytics features. Curious how developers are discovering Unkey and whether it's more organic or through specific integration channels.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:47:56.841Z"
-    },
-    {
-      "slug": "unkey",
-      "company": "Unkey",
-      "founder": "James",
-      "email": "james@unkey.dev",
-      "domain": "unkey.dev",
-      "threadId": "19eb71c88abe1483",
-      "messageId": "19eb71c88abe1483",
-      "subject": "Telescope <> Unkey",
-      "body": "<div>James, Chris on our team was relatively early at Datadog and has seen how developer tools tend to land and expand. Happy to share what's worked for other dev-tool companies we've backed.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "unkey",
-      "company": "Unkey",
-      "founder": "James",
-      "email": "james@unkey.dev",
-      "domain": "unkey.dev",
-      "threadId": "19eb71c88abe1483",
-      "messageId": "19eb71c88abe1483",
-      "subject": "Telescope <> Unkey",
-      "body": "<div>James, as more companies deploy AI agents that need API access management, I think the usage-based billing and permissions layer becomes critical infrastructure. Curious if you're seeing pull from that use case.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "woodrow",
-      "company": "Woodrow",
-      "founder": "Sidharth",
-      "email": "sidharth@woodrow.ai",
-      "domain": "woodrow.ai",
-      "threadId": "19eb71bd1dfba1c9",
-      "messageId": "19eb71bd1dfba1c9",
-      "subject": "Telescope <> Woodrow",
-      "body": "<div>Hey Sidharth, I was looking at how Woodrow handles the multi-source data matching problem. Curious whether you're seeing more pull from finance teams or ops teams as the initial buyer.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:47:57.756Z"
-    },
-    {
-      "slug": "woodrow",
-      "company": "Woodrow",
-      "founder": "Sidharth",
-      "email": "sidharth@woodrow.ai",
-      "domain": "woodrow.ai",
-      "threadId": "19eb71bd1dfba1c9",
-      "messageId": "19eb71bd1dfba1c9",
-      "subject": "Telescope <> Woodrow",
-      "body": "<div>Sidharth, a few portfolio companies we work with have gone through painful reconciliation processes when scaling past a certain transaction volume. Happy to share what we've seen work in terms of landing enterprise finance teams.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "woodrow",
-      "company": "Woodrow",
-      "founder": "Sidharth",
-      "email": "sidharth@woodrow.ai",
-      "domain": "woodrow.ai",
-      "threadId": "19eb71bd1dfba1c9",
-      "messageId": "19eb71bd1dfba1c9",
-      "subject": "Telescope <> Woodrow",
-      "body": "<div>Sidharth, I think the companies that win in reconciliation will be the ones that sit on enough transaction data to start predicting mismatches before they happen. That's a compounding advantage over time.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "meridian",
-      "company": "Meridian",
-      "founder": "Kashyap",
-      "email": "kn@trymeridian.dev",
-      "domain": "trymeridian.dev",
-      "threadId": "19eb71875803fc7a",
-      "messageId": "19eb71875803fc7a",
-      "subject": "Telescope <> Meridian",
-      "body": "<div>Hey Kashyap, I was looking at how Meridian approaches the scoping and deliverable generation piece. Curious whether your initial customers tend to be boutique firms or larger consultancies.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:47:58.691Z"
-    },
-    {
-      "slug": "meridian",
-      "company": "Meridian",
-      "founder": "Kashyap",
-      "email": "kn@trymeridian.dev",
-      "domain": "trymeridian.dev",
-      "threadId": "19eb71875803fc7a",
-      "messageId": "19eb71875803fc7a",
-      "subject": "Telescope <> Meridian",
-      "body": "<div>Kashyap, we've backed a few companies in the theme of AI replacing billable work rather than just augmenting it, and the ones that win tend to nail the output quality bar on day one. Happy to share what we've seen.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "meridian",
-      "company": "Meridian",
-      "founder": "Kashyap",
-      "email": "kn@trymeridian.dev",
-      "domain": "trymeridian.dev",
-      "threadId": "19eb71875803fc7a",
-      "messageId": "19eb71875803fc7a",
-      "subject": "Telescope <> Meridian",
-      "body": "<div>Kashyap, the more I think about it, the more I think consulting is one of those markets where the buyer is paying for the deliverable, not the hours. If the deliverable quality is the same, the pricing model can completely change.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "piper",
-      "company": "Piper",
-      "founder": "Ido",
-      "email": "ido@piper-ai.com",
-      "domain": "piper-ai.com",
-      "threadId": "19eb717f0154a17b",
-      "messageId": "19eb717f0154a17b",
-      "subject": "Telescope <> Piper Intro",
-      "body": "<div>Hey Ido, I was looking at how Piper handles the plan review and takeoff process. Curious how estimators are reacting to the AI approach versus the manual workflows they're used to.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:47:59.605Z"
-    },
-    {
-      "slug": "piper",
-      "company": "Piper",
-      "founder": "Ido",
-      "email": "ido@piper-ai.com",
-      "domain": "piper-ai.com",
-      "threadId": "19eb717f0154a17b",
-      "messageId": "19eb717f0154a17b",
-      "subject": "Telescope <> Piper Intro",
-      "body": "<div>Ido, our Head of Ops Harrison Doyle is a former VP of Finance at Procore, so preconstruction workflows are something we follow closely. Happy to make intros if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "piper",
-      "company": "Piper",
-      "founder": "Ido",
-      "email": "ido@piper-ai.com",
-      "domain": "piper-ai.com",
-      "threadId": "19eb717f0154a17b",
-      "messageId": "19eb717f0154a17b",
-      "subject": "Telescope <> Piper Intro",
-      "body": "<div>Ido, preconstruction is one of those areas where a single missed line item in a bid can cost a GC six figures. I think the AI accuracy bar needs to be incredibly high for estimators to trust it, and the companies that get there first will have a real advantage.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "signalcore",
-      "company": "Signalcore",
-      "founder": "Justin",
-      "email": "justin.behar@gmail.com",
-      "domain": "gmail.com",
-      "threadId": "19eb4efd80938506",
-      "messageId": "19eb4efd80938506",
-      "subject": "AI evaluation infrastructure | Telescope intro",
-      "body": "<div>Hey Justin, I was looking at the evaluation framework you guys are building. Curious how procurement teams are currently navigating AI vendor selection without standardized benchmarks.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:01.379Z"
-    },
-    {
-      "slug": "signalcore",
-      "company": "Signalcore",
-      "founder": "Justin",
-      "email": "justin.behar@gmail.com",
-      "domain": "gmail.com",
-      "threadId": "19eb4efd80938506",
-      "messageId": "19eb4efd80938506",
-      "subject": "AI evaluation infrastructure | Telescope intro",
-      "body": "<div>Justin, as more enterprises deploy multiple AI vendors, we keep hearing that evaluation and selection is becoming a bottleneck. Happy to share what we're hearing from the buyer side if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "signalcore",
-      "company": "Signalcore",
-      "founder": "Justin",
-      "email": "justin.behar@gmail.com",
-      "domain": "gmail.com",
-      "threadId": "19eb4efd80938506",
-      "messageId": "19eb4efd80938506",
-      "subject": "AI evaluation infrastructure | Telescope intro",
-      "body": "<div>Justin, I think the interesting thing about AI evaluation is that it's not a one-time procurement decision anymore. Models change, pricing changes, quality drifts. The company that owns continuous evaluation has a really sticky position.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "product_ai",
-      "company": "Product.ai",
-      "founder": "Michael",
-      "email": "michaelquoc@gmail.com",
-      "domain": "gmail.com",
-      "threadId": "19eb4ef8af6c164f",
-      "messageId": "19eb4ef8af6c164f",
-      "subject": "Telescope <> Product.ai",
-      "body": "<div>Hey Michael, been thinking more about the ground truth verification angle. Curious how you're approaching the data freshness challenge when deals and coupons change so frequently.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:03.177Z"
-    },
-    {
-      "slug": "product_ai",
-      "company": "Product.ai",
-      "founder": "Michael",
-      "email": "michaelquoc@gmail.com",
-      "domain": "gmail.com",
-      "threadId": "19eb4ef8af6c164f",
-      "messageId": "19eb4ef8af6c164f",
-      "subject": "Telescope <> Product.ai",
-      "body": "<div>Michael, as AI shopping agents scale up, I think the verification layer becomes more valuable, not less. Happy to share what we're seeing in the agentic commerce space from the investor side.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "product_ai",
-      "company": "Product.ai",
-      "founder": "Michael",
-      "email": "michaelquoc@gmail.com",
-      "domain": "gmail.com",
-      "threadId": "19eb4ef8af6c164f",
-      "messageId": "19eb4ef8af6c164f",
-      "subject": "Telescope <> Product.ai",
-      "body": "<div>Michael, the more I dig into this space, the more I think ground truth verification is a wedge into something bigger. If you own the real-time accuracy layer for commerce, that data becomes incredibly valuable to anyone building shopping agents.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "ntwist",
-      "company": "NTWIST",
-      "founder": "Chowdary",
-      "email": "cmeenavilli@ntwist.com",
-      "domain": "ntwist.com",
-      "threadId": "19eb4e86375c910a",
-      "messageId": "19eb4e86375c910a",
-      "subject": "Telescope <> NTWIST",
-      "body": "<div>Hey Chowdary, I was looking at how NTWIST handles the integration with existing SCADA and historian systems. Curious how long it typically takes to get a plant live on the platform.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:04.044Z"
-    },
-    {
-      "slug": "ntwist",
-      "company": "NTWIST",
-      "founder": "Chowdary",
-      "email": "cmeenavilli@ntwist.com",
-      "domain": "ntwist.com",
-      "threadId": "19eb4e86375c910a",
-      "messageId": "19eb4e86375c910a",
-      "subject": "Telescope <> NTWIST",
-      "body": "<div>Chowdary, Chris on our team worked with Parabola and Project44, so industrial data and supply chain optimization is a space we've spent real time in. Happy to share what we've seen work in terms of manufacturing sales cycles.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "ntwist",
-      "company": "NTWIST",
-      "founder": "Chowdary",
-      "email": "cmeenavilli@ntwist.com",
-      "domain": "ntwist.com",
-      "threadId": "19eb4e86375c910a",
-      "messageId": "19eb4e86375c910a",
-      "subject": "Telescope <> NTWIST",
-      "body": "<div>Chowdary, mining and manufacturing operators generate massive amounts of data but most of it just sits in historians unused. I think the companies that can turn that into real-time operational decisions without requiring a team of data scientists on-site will win big.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "promptarmor",
-      "company": "PromptArmor",
-      "founder": "Shankar",
-      "email": "shankar@promptarmor.com",
-      "domain": "promptarmor.com",
-      "threadId": "19eb4e7b65a10e37",
-      "messageId": "19eb4e7b65a10e37",
-      "subject": "Telescope <> PromptArmor",
-      "body": "<div>Hey Shankar, I was looking at how PromptArmor approaches the vendor risk scoring piece. Curious whether you're seeing more pull from security teams or from the procurement side.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:04.944Z"
-    },
-    {
-      "slug": "promptarmor",
-      "company": "PromptArmor",
-      "founder": "Shankar",
-      "email": "shankar@promptarmor.com",
-      "domain": "promptarmor.com",
-      "threadId": "19eb4e7b65a10e37",
-      "messageId": "19eb4e7b65a10e37",
-      "subject": "Telescope <> PromptArmor",
-      "body": "<div>Shankar, Chris on our team worked with Axonius and JumpCloud, so security tooling is a space we know well. As every vendor embeds AI, the third-party risk surface is expanding fast. Happy to share what we're hearing from CISOs.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "promptarmor",
-      "company": "PromptArmor",
-      "founder": "Shankar",
-      "email": "shankar@promptarmor.com",
-      "domain": "promptarmor.com",
-      "threadId": "19eb4e7b65a10e37",
-      "messageId": "19eb4e7b65a10e37",
-      "subject": "Telescope <> PromptArmor",
-      "body": "<div>Shankar, I think AI security risk is moving faster than most security teams can evaluate on their own. The company that can automate that evaluation and give CISOs confidence to approve new tools will be in a really strong position.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "lava",
-      "company": "Lava",
-      "founder": "Mitchell",
-      "email": "mitchell@lavapayments.com",
-      "domain": "lavapayments.com",
-      "threadId": "19eb4e78777b6b09",
-      "messageId": "19eb4e78777b6b09",
-      "subject": "Telescope <> Lava",
-      "body": "<div>Hey Mitchell, I was looking at the tool and API connectivity layer you guys are building for agents. Curious whether you're seeing more demand from companies building their own agents or teams deploying third-party ones.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:05.846Z"
-    },
-    {
-      "slug": "lava",
-      "company": "Lava",
-      "founder": "Mitchell",
-      "email": "mitchell@lavapayments.com",
-      "domain": "lavapayments.com",
-      "threadId": "19eb4e78777b6b09",
-      "messageId": "19eb4e78777b6b09",
-      "subject": "Telescope <> Lava",
-      "body": "<div>Mitchell, as AI agents proliferate, the infrastructure layer underneath them is becoming critical. Happy to share what we're seeing across our portfolio in terms of how companies are actually deploying agents in production.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "lava",
-      "company": "Lava",
-      "founder": "Mitchell",
-      "email": "mitchell@lavapayments.com",
-      "domain": "lavapayments.com",
-      "threadId": "19eb4e78777b6b09",
-      "messageId": "19eb4e78777b6b09",
-      "subject": "Telescope <> Lava",
-      "body": "<div>Mitchell, I think the connectivity and orchestration layer for AI agents is going to look a lot like what happened with APIs a decade ago. The companies that own the plumbing early tend to become very sticky.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "luzid",
-      "company": "Luzid",
-      "founder": "Andres",
-      "email": "andres@luzid.io",
-      "domain": "luzid.io",
-      "threadId": "19eb4e7544001d91",
-      "messageId": "19eb4e7544001d91",
-      "subject": "Telescope <> Luzid",
-      "body": "<div>Hey Andres, I was looking at how Luzid handles the documentation and mapping phase of ERP implementations. Curious whether you're seeing more traction with specific ERP platforms like SAP or NetSuite.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:06.756Z"
-    },
-    {
-      "slug": "luzid",
-      "company": "Luzid",
-      "founder": "Andres",
-      "email": "andres@luzid.io",
-      "domain": "luzid.io",
-      "threadId": "19eb4e7544001d91",
-      "messageId": "19eb4e7544001d91",
-      "subject": "Telescope <> Luzid",
-      "body": "<div>Andres, we've seen a pattern across our portfolio where AI that replaces professional services rather than just augmenting them tends to have much stronger unit economics. Happy to share what we've seen work in positioning against systems integrators.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "luzid",
-      "company": "Luzid",
-      "founder": "Andres",
-      "email": "andres@luzid.io",
-      "domain": "luzid.io",
-      "threadId": "19eb4e7544001d91",
-      "messageId": "19eb4e7544001d91",
-      "subject": "Telescope <> Luzid",
-      "body": "<div>Andres, ERP implementations are one of those areas where the documentation and process mapping alone can cost more than the software license. I think automating that piece is the right wedge because it's the most painful and most repeatable part of the project.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "sevii",
-      "company": "Sevii",
-      "founder": "Curt",
-      "email": "curt.aubley@sevii.ai",
-      "domain": "sevii.ai",
-      "threadId": "19eb4e70f8eeb2bb",
-      "messageId": "19eb4e70f8eeb2bb",
-      "subject": "Telescope <> Sevii",
-      "body": "<div>Hey Curt, I was looking at how Sevii bridges the gap between alert detection and actual response. Curious how SOC teams are reacting to the automated response approach versus their existing playbooks.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:07.636Z"
-    },
-    {
-      "slug": "sevii",
-      "company": "Sevii",
-      "founder": "Curt",
-      "email": "curt.aubley@sevii.ai",
-      "domain": "sevii.ai",
-      "threadId": "19eb4e70f8eeb2bb",
-      "messageId": "19eb4e70f8eeb2bb",
-      "subject": "Telescope <> Sevii",
-      "body": "<div>Curt, Chris on our team worked with Axonius and JumpCloud, and one thing we keep hearing is that SOC teams are drowning in alerts they can't act on fast enough. Happy to share what we're hearing about buying patterns in security.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "sevii",
-      "company": "Sevii",
-      "founder": "Curt",
-      "email": "curt.aubley@sevii.ai",
-      "domain": "sevii.ai",
-      "threadId": "19eb4e70f8eeb2bb",
-      "messageId": "19eb4e70f8eeb2bb",
-      "subject": "Telescope <> Sevii",
-      "body": "<div>Curt, I think the gap between detection and response is where most of the actual damage happens in a breach. The tools that can compress that window from hours to minutes are solving a problem every CISO loses sleep over.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "hilt",
-      "company": "Hilt",
-      "founder": "William",
-      "email": "william@hilt.ai",
-      "domain": "hilt.ai",
-      "threadId": "19eb4e6d95bcaaa3",
-      "messageId": "19eb4e6d95bcaaa3",
-      "subject": "Telescope <> Hilt",
-      "body": "<div>Hey William, I was looking at how Hilt approaches real-time data movement monitoring. Curious whether you're seeing more demand from compliance-driven buyers or security-driven ones.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:08.519Z"
-    },
-    {
-      "slug": "hilt",
-      "company": "Hilt",
-      "founder": "William",
-      "email": "william@hilt.ai",
-      "domain": "hilt.ai",
-      "threadId": "19eb4e6d95bcaaa3",
-      "messageId": "19eb4e6d95bcaaa3",
-      "subject": "Telescope <> Hilt",
-      "body": "<div>William, Chris on our team has worked with companies like Axonius in the security space, and one pattern we keep seeing is that the products that sit on the data path rather than just the log path end up being much stickier. Happy to share more on what we've seen.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "hilt",
-      "company": "Hilt",
-      "founder": "William",
-      "email": "william@hilt.ai",
-      "domain": "hilt.ai",
-      "threadId": "19eb4e6d95bcaaa3",
-      "messageId": "19eb4e6d95bcaaa3",
-      "subject": "Telescope <> Hilt",
-      "body": "<div>William, most data security tools are reactive by design. I think the shift to monitoring data movement in real time rather than analyzing logs after the fact is where the market needs to go.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "corbel",
-      "company": "Corbel",
-      "founder": "Le'Ora",
-      "email": "leora@corbelpay.com",
-      "domain": "corbelpay.com",
-      "threadId": "19eb4e6ac8ae21de",
-      "messageId": "19eb4e6ac8ae21de",
-      "subject": "Telescope <> Corbel",
-      "body": "<div>Hey Le'Ora, I was looking at how Corbel handles the quoting and configuration process for equipment sales. Curious whether your initial traction has been more with OEMs or with dealers and distributors.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:09.419Z"
-    },
-    {
-      "slug": "corbel",
-      "company": "Corbel",
-      "founder": "Le'Ora",
-      "email": "leora@corbelpay.com",
-      "domain": "corbelpay.com",
-      "threadId": "19eb4e6ac8ae21de",
-      "messageId": "19eb4e6ac8ae21de",
-      "subject": "Telescope <> Corbel",
-      "body": "<div>Le'Ora, we've seen a pattern where vertical commerce tools that own the quoting process tend to expand naturally into financing and payments. Happy to share what we've seen work in similar verticals.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "corbel",
-      "company": "Corbel",
-      "founder": "Le'Ora",
-      "email": "leora@corbelpay.com",
-      "domain": "corbelpay.com",
-      "threadId": "19eb4e6ac8ae21de",
-      "messageId": "19eb4e6ac8ae21de",
-      "subject": "Telescope <> Corbel",
-      "body": "<div>Le'Ora, capital equipment sales is one of those workflows where a rep might spend hours building a custom quote that could be generated in minutes with the right tooling. I think there's a real opportunity to own the commercial layer for this market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "cleavr",
-      "company": "Cleavr",
-      "founder": "Baptiste",
-      "email": "baptiste.nassoy@cleavr.fr",
-      "domain": "cleavr.fr",
-      "threadId": "19eb4e5fdd4a0530",
-      "messageId": "19eb4e5fdd4a0530",
-      "subject": "Telescope <> Cleavr",
-      "body": "<div>Hey Baptiste, I was looking at how Cleavr handles the escalation workflow from friendly reminder to formal collection. Curious whether you're seeing more traction in specific industries or if it's horizontal.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:10.338Z"
-    },
-    {
-      "slug": "cleavr",
-      "company": "Cleavr",
-      "founder": "Baptiste",
-      "email": "baptiste.nassoy@cleavr.fr",
-      "domain": "cleavr.fr",
-      "threadId": "19eb4e5fdd4a0530",
-      "messageId": "19eb4e5fdd4a0530",
-      "subject": "Telescope <> Cleavr",
-      "body": "<div>Baptiste, we've backed companies in the payments and fintech space and the common theme is that automating the last mile of cash collection tends to have incredibly clear ROI for buyers. Happy to share what we've seen work.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "cleavr",
-      "company": "Cleavr",
-      "founder": "Baptiste",
-      "email": "baptiste.nassoy@cleavr.fr",
-      "domain": "cleavr.fr",
-      "threadId": "19eb4e5fdd4a0530",
-      "messageId": "19eb4e5fdd4a0530",
-      "subject": "Telescope <> Cleavr",
-      "body": "<div>Baptiste, I think the interesting thing about collections automation is that it touches both the finance team and the customer relationship. Getting the tone right at scale is a hard problem, and the companies that crack it will own a critical piece of the AR workflow.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "loophole_labs",
-      "company": "Loophole Labs",
-      "founder": "Shiv",
-      "email": "shivansh@loopholelabs.io",
-      "domain": "loopholelabs.io",
-      "threadId": "19eb4e5791d9ab4b",
-      "messageId": "19eb4e5791d9ab4b",
-      "subject": "Telescope <> Loophole Intro",
-      "body": "<div>Hey Shiv, I was looking at the approach you guys are taking to Kubernetes optimization. Curious how you're differentiating against the existing tools that engineering teams have tried and abandoned.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:11.216Z"
-    },
-    {
-      "slug": "loophole_labs",
-      "company": "Loophole Labs",
-      "founder": "Shiv",
-      "email": "shivansh@loopholelabs.io",
-      "domain": "loopholelabs.io",
-      "threadId": "19eb4e5791d9ab4b",
-      "messageId": "19eb4e5791d9ab4b",
-      "subject": "Telescope <> Loophole Intro",
-      "body": "<div>Shiv, Chris on our team was involved with Datadog early on, so infrastructure tooling is a space we follow closely. The companies that make complex infrastructure decisions simpler tend to grow really fast once they hit PMF. Happy to share what we've seen.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "loophole_labs",
-      "company": "Loophole Labs",
-      "founder": "Shiv",
-      "email": "shivansh@loopholelabs.io",
-      "domain": "loopholelabs.io",
-      "threadId": "19eb4e5791d9ab4b",
-      "messageId": "19eb4e5791d9ab4b",
-      "subject": "Telescope <> Loophole Intro",
-      "body": "<div>Shiv, every engineering team I hear from mentions Kubernetes cost as a growing pain point, but most existing tools require too much configuration to deliver value. I think the companies that automate the optimization rather than just surfacing dashboards will win this market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "autyvia",
-      "company": "Autyvia",
-      "founder": "John",
-      "email": "john.amacker@autyvia.com",
-      "domain": "autyvia.com",
-      "threadId": "19eb4e52f1df588a",
-      "messageId": "19eb4e52f1df588a",
-      "subject": "Telescope <> Autyvia Intro",
-      "body": "<div>Hey John, I was looking at how Autyvia captures the relationship intelligence that typically walks out the door when a BD rep leaves. Curious whether you're landing more with ENR Top 400 firms or regional players.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:12.184Z"
-    },
-    {
-      "slug": "autyvia",
-      "company": "Autyvia",
-      "founder": "John",
-      "email": "john.amacker@autyvia.com",
-      "domain": "autyvia.com",
-      "threadId": "19eb4e52f1df588a",
-      "messageId": "19eb4e52f1df588a",
-      "subject": "Telescope <> Autyvia Intro",
-      "body": "<div>John, our Head of Ops Harrison Doyle is a former VP of Finance at Procore, so AEC is a space we know deeply. Happy to make intros to firms in our network if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "autyvia",
-      "company": "Autyvia",
-      "founder": "John",
-      "email": "john.amacker@autyvia.com",
-      "domain": "autyvia.com",
-      "threadId": "19eb4e52f1df588a",
-      "messageId": "19eb4e52f1df588a",
-      "subject": "Telescope <> Autyvia Intro",
-      "body": "<div>John, the institutional knowledge problem in AEC gets more expensive every time a senior BD person leaves and takes their relationships with them. I think the companies that can systematize that knowledge have a massive retention advantage.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "respan",
-      "company": "Respan",
-      "founder": "Raymond",
-      "email": "raymond@respan.ai",
-      "domain": "respan.ai",
-      "threadId": "19eb4e48e10dc3e8",
-      "messageId": "19eb4e48e10dc3e8",
-      "subject": "Telescope <> Respan",
-      "body": "<div>Hey Raymond, I was looking at how Respan approaches the observability and routing layer. Curious how you're thinking about differentiation as more companies enter this space.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:13.116Z"
-    },
-    {
-      "slug": "respan",
-      "company": "Respan",
-      "founder": "Raymond",
-      "email": "raymond@respan.ai",
-      "domain": "respan.ai",
-      "threadId": "19eb4e48e10dc3e8",
-      "messageId": "19eb4e48e10dc3e8",
-      "subject": "Telescope <> Respan",
-      "body": "<div>Raymond, Chris on our team worked with DataRobot, so ML infrastructure is a space we follow closely. The companies that own the data layer in AI infrastructure tend to build really strong moats. Happy to share what we've seen.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "respan",
-      "company": "Respan",
-      "founder": "Raymond",
-      "email": "raymond@respan.ai",
-      "domain": "respan.ai",
-      "threadId": "19eb4e48e10dc3e8",
-      "messageId": "19eb4e48e10dc3e8",
-      "subject": "Telescope <> Respan",
-      "body": "<div>Raymond, I think the companies that win in LLM observability will be the ones that move beyond monitoring into active optimization. Routing, cost management, and quality scoring are all wedges that get stickier over time.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "lemhi",
-      "company": "Lemhi",
-      "founder": "John",
-      "email": "john.harden@lemhi.com",
-      "domain": "lemhi.com",
-      "threadId": "19eb4e11f154618d",
-      "messageId": "19eb4e11f154618d",
-      "subject": "Telescope <> Lemhi",
-      "body": "<div>Hey John, I was looking at how Lemhi packages the AI offering for MSPs. Curious whether MSPs are typically white-labeling it or using it as their own managed service.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:14.134Z"
-    },
-    {
-      "slug": "lemhi",
-      "company": "Lemhi",
-      "founder": "John",
-      "email": "john.harden@lemhi.com",
-      "domain": "lemhi.com",
-      "threadId": "19eb4e11f154618d",
-      "messageId": "19eb4e11f154618d",
-      "subject": "Telescope <> Lemhi",
-      "body": "<div>John, Chris on our team invested in MSP companies like Rewst and Auvik, and one thing we keep hearing is that MSPs want to offer AI but don't have the engineering resources to build it themselves. Happy to share what we've learned about the channel.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "lemhi",
-      "company": "Lemhi",
-      "founder": "John",
-      "email": "john.harden@lemhi.com",
-      "domain": "lemhi.com",
-      "threadId": "19eb4e11f154618d",
-      "messageId": "19eb4e11f154618d",
-      "subject": "Telescope <> Lemhi",
-      "body": "<div>John, every MSP conference has AI as the top topic right now, but most MSPs are still figuring out what to actually offer clients. I think the company that gives MSPs a turnkey AI product they can sell immediately has a really clear distribution advantage.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "bilrost",
-      "company": "Bilrost",
-      "founder": "Silvia",
-      "email": "silvia@bilrost.ai",
-      "domain": "bilrost.ai",
-      "threadId": "19eb4def4d184581",
-      "messageId": "19eb4def4d184581",
-      "subject": "Telescope <> Bilrost",
-      "body": "<div>Hey Silvia, I was looking at how Bilrost handles the document extraction and underwriting workflow. Curious how lenders are responding to the AI approach versus their existing manual processes.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:14.992Z"
-    },
-    {
-      "slug": "bilrost",
-      "company": "Bilrost",
-      "founder": "Silvia",
-      "email": "silvia@bilrost.ai",
-      "domain": "bilrost.ai",
-      "threadId": "19eb4def4d184581",
-      "messageId": "19eb4def4d184581",
-      "subject": "Telescope <> Bilrost",
-      "body": "<div>Silvia, Chris on our team has worked with companies in financial services, and one pattern we keep seeing is that automating the document-heavy parts of underwriting has some of the clearest ROI in fintech. Happy to share what we've seen work.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "bilrost",
-      "company": "Bilrost",
-      "founder": "Silvia",
-      "email": "silvia@bilrost.ai",
-      "domain": "bilrost.ai",
-      "threadId": "19eb4def4d184581",
-      "messageId": "19eb4def4d184581",
-      "subject": "Telescope <> Bilrost",
-      "body": "<div>Silvia, commercial loan processing is one of those workflows where an underwriter might pull data from 15 different documents to make one decision. I think the companies that can collapse that into a single automated step will save lenders an enormous amount of time per deal.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "nexxa",
-      "company": "Nexxa",
-      "founder": "Philipp",
-      "email": "philipp@nexxa.ai",
-      "domain": "nexxa.ai",
-      "threadId": "19eb4dc4c7bca672",
-      "messageId": "19eb4dc4c7bca672",
-      "subject": "Telescope <> Nexxa Intro",
-      "body": "<div>Hey Philipp, I was looking at how Nexxa captures the tribal knowledge that lives in engineers' heads at aerospace and defense companies. Curious how you're approaching the initial data ingestion challenge.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:15.889Z"
-    },
-    {
-      "slug": "nexxa",
-      "company": "Nexxa",
-      "founder": "Philipp",
-      "email": "philipp@nexxa.ai",
-      "domain": "nexxa.ai",
-      "threadId": "19eb4dc4c7bca672",
-      "messageId": "19eb4dc4c7bca672",
-      "subject": "Telescope <> Nexxa Intro",
-      "body": "<div>Philipp, we've seen a pattern where companies that own the institutional knowledge layer in a vertical end up becoming the system of record for critical workflows. Happy to share what we've seen across manufacturing and industrial verticals.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "nexxa",
-      "company": "Nexxa",
-      "founder": "Philipp",
-      "email": "philipp@nexxa.ai",
-      "domain": "nexxa.ai",
-      "threadId": "19eb4dc4c7bca672",
-      "messageId": "19eb4dc4c7bca672",
-      "subject": "Telescope <> Nexxa Intro",
-      "body": "<div>Philipp, the knowledge management problem in aerospace and defense is especially acute because the workforce is aging and the domain expertise is incredibly hard to replace. I think the companies that can capture that knowledge before it walks out the door have a time-sensitive advantage.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "fearn",
-      "company": "Fearn",
-      "founder": "Han",
-      "email": "han@fearn.ai",
-      "domain": "fearn.ai",
-      "threadId": "19eb4db916491e7f",
-      "messageId": "19eb4db916491e7f",
-      "subject": "Telescope <> Fearn",
-      "body": "<div>Hey Han, congrats again on the raise. I was looking at how Fearn approaches the prior art search and claim drafting process. Curious how patent attorneys are reacting to the AI-generated output quality.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:16.779Z"
-    },
-    {
-      "slug": "fearn",
-      "company": "Fearn",
-      "founder": "Han",
-      "email": "han@fearn.ai",
-      "domain": "fearn.ai",
-      "threadId": "19eb4db916491e7f",
-      "messageId": "19eb4db916491e7f",
-      "subject": "Telescope <> Fearn",
-      "body": "<div>Han, we love the theme of AI replacing professional services that are currently billed by the hour. The companies that can deliver the same quality at a fraction of the cost tend to grow fast. Happy to share what we've seen work.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "fearn",
-      "company": "Fearn",
-      "founder": "Han",
-      "email": "han@fearn.ai",
-      "domain": "fearn.ai",
-      "threadId": "19eb4db916491e7f",
-      "messageId": "19eb4db916491e7f",
-      "subject": "Telescope <> Fearn",
-      "body": "<div>Han, patent drafting is one of those areas where a single mistake in claim language can cost a company millions in litigation. I think the AI quality bar is higher here than almost any other legal workflow, and the companies that meet it will own the market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "moritz",
-      "company": "Moritz",
-      "founder": "Pamir",
-      "email": "pamir@moritzlegal.com",
-      "domain": "moritzlegal.com",
-      "threadId": "19eb4d93f4b4c3b7",
-      "messageId": "19eb4d93f4b4c3b7",
-      "subject": "Telescope <> Moritz Intro",
-      "body": "<div>Hey Pamir, congrats again on the seed. I was looking at how Moritz handles the end-to-end legal workflow. Curious whether your initial traction has been more with startups or with SMBs that have existing outside counsel.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:17.663Z"
-    },
-    {
-      "slug": "moritz",
-      "company": "Moritz",
-      "founder": "Pamir",
-      "email": "pamir@moritzlegal.com",
-      "domain": "moritzlegal.com",
-      "threadId": "19eb4d93f4b4c3b7",
-      "messageId": "19eb4d93f4b4c3b7",
-      "subject": "Telescope <> Moritz Intro",
-      "body": "<div>Pamir, we love the theme of AI that replaces a full service rather than just making it faster. Legal is one of those markets where the hourly billing model creates a natural opening for a completely different pricing approach. Happy to share what we've seen work.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "moritz",
-      "company": "Moritz",
-      "founder": "Pamir",
-      "email": "pamir@moritzlegal.com",
-      "domain": "moritzlegal.com",
-      "threadId": "19eb4d93f4b4c3b7",
-      "messageId": "19eb4d93f4b4c3b7",
-      "subject": "Telescope <> Moritz Intro",
-      "body": "<div>Pamir, I think legal is going through the same transformation that tax prep went through a decade ago. The routine work gets automated, the pricing drops, and the firms that adapt become more advisory. The company that owns the automated layer wins big.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "artificial_societies",
-      "company": "Artificial Societies",
-      "founder": "James",
-      "email": "james@societies.io",
-      "domain": "societies.io",
-      "threadId": "19eb4d61b36a7c76",
-      "messageId": "19eb4d61b36a7c76",
-      "subject": "Artificial Societies + Telescope",
-      "body": "<div>Hey James, I was looking at how Artificial Societies generates synthetic perspectives at scale. Curious how research teams are validating the output quality against traditional survey methods.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:18.569Z"
-    },
-    {
-      "slug": "artificial_societies",
-      "company": "Artificial Societies",
-      "founder": "James",
-      "email": "james@societies.io",
-      "domain": "societies.io",
-      "threadId": "19eb4d61b36a7c76",
-      "messageId": "19eb4d61b36a7c76",
-      "subject": "Artificial Societies + Telescope",
-      "body": "<div>James, we've seen increasing demand from portfolio companies for faster ways to get market research and customer insights without waiting weeks for traditional methods. Happy to share what we're hearing on the buyer side.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "artificial_societies",
-      "company": "Artificial Societies",
-      "founder": "James",
-      "email": "james@societies.io",
-      "domain": "societies.io",
-      "threadId": "19eb4d61b36a7c76",
-      "messageId": "19eb4d61b36a7c76",
-      "subject": "Artificial Societies + Telescope",
-      "body": "<div>James, I think the shift from asking 100 people a question over 6 weeks to generating hundreds of synthetic perspectives in hours could fundamentally change how companies make product and strategy decisions. The accuracy question is the key unlock.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "acclaim",
-      "company": "Acclaim",
-      "founder": "Jared",
-      "email": "jared.king@withacclaim.com",
-      "domain": "withacclaim.com",
-      "threadId": "19eb4926e72680c0",
-      "messageId": "19eb4926e72680c0",
-      "subject": "Telescope <> Acclaim Intro",
-      "body": "<div>Hey Jared, I was looking at how Acclaim handles the payment processing workflow for insurance. Curious whether you're seeing more traction with carriers or with agencies and brokers.</div>",
-      "emailNumber": 2,
-      "sendDate": "2026-06-17",
-      "status": "completed",
-      "processedAt": "2026-06-17T17:48:19.514Z"
-    },
-    {
-      "slug": "acclaim",
-      "company": "Acclaim",
-      "founder": "Jared",
-      "email": "jared.king@withacclaim.com",
-      "domain": "withacclaim.com",
-      "threadId": "19eb4926e72680c0",
-      "messageId": "19eb4926e72680c0",
-      "subject": "Telescope <> Acclaim Intro",
-      "body": "<div>Jared, Chris on our team has connections to the insurance distribution side through his work with iLife, and one thing we keep hearing is that payment friction is still one of the biggest operational bottlenecks. Happy to make intros if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-06-20",
-      "status": "pending"
-    },
-    {
-      "slug": "acclaim",
-      "company": "Acclaim",
-      "founder": "Jared",
-      "email": "jared.king@withacclaim.com",
-      "domain": "withacclaim.com",
-      "threadId": "19eb4926e72680c0",
-      "messageId": "19eb4926e72680c0",
-      "subject": "Telescope <> Acclaim Intro",
-      "body": "<div>Jared, insurance payments are one of those workflows where everyone knows it's broken but the switching cost of fixing it has historically been too high. I think the companies that can plug into existing systems without requiring a rip-and-replace will win this market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-06-22",
-      "status": "pending"
-    },
-    {
-      "slug": "atomic-insights",
-      "company": "Atomic Insights",
-      "founder": "Lucas",
-      "email": "lucas.babbitt@atomicinsights.io",
-      "domain": "atomicinsights.io",
-      "threadId": "19ed2e8120e7f824",
-      "messageId": "<19ed2e8120e7f824@mail.gmail.com>",
-      "subject": "Telescope <> Atomic Insights Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Lucas,<br><br>One thing I keep thinking about in the wealth management space is how the custody transition wave has created a window where RIAs are more open to changing their back-office stack than they have been in years. I think that window doesn't stay open forever, and the companies that get in now will have a real advantage. Would love to hear if that's been a tailwind for you guys.<br><br>Happy to chat whenever makes sense.</div>"
-    },
-    {
-      "slug": "atomic-insights",
-      "company": "Atomic Insights",
-      "founder": "Lucas",
-      "email": "lucas.babbitt@atomicinsights.io",
-      "domain": "atomicinsights.io",
-      "threadId": "19ed2e8120e7f824",
-      "messageId": "<19ed2e8120e7f824@mail.gmail.com>",
-      "subject": "Telescope <> Atomic Insights Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Lucas,<br><br>For what it's worth, Chris on our team has spent a lot of time around fintech infrastructure and would love to compare notes on the space. Happy to set up a quick intro if you're open to it.</div>"
-    },
-    {
-      "slug": "atomic-insights",
-      "company": "Atomic Insights",
-      "founder": "Lucas",
-      "email": "lucas.babbitt@atomicinsights.io",
-      "domain": "atomicinsights.io",
-      "threadId": "19ed2e8120e7f824",
-      "messageId": "<19ed2e8120e7f824@mail.gmail.com>",
-      "subject": "Telescope <> Atomic Insights Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Lucas,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected for whenever it makes sense.</div>"
-    },
-    {
-      "slug": "sapien",
-      "company": "Sapien",
-      "founder": "Tony",
-      "email": "tony@sapien.ai",
-      "domain": "sapien.ai",
-      "threadId": "19ed2e7f27c1fe37",
-      "messageId": "<19ed2e7f27c1fe37@mail.gmail.com>",
-      "subject": "Telescope <> Sapien Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Tony,<br><br>Was thinking more about the finance automation space. One thing I keep coming back to is how much time gets wasted on data validation alone before anyone even starts the actual analysis. I think the companies that figure out how to make finance teams trust the AI output enough to skip the manual sanity checks will pull away from the pack. Would love to hear how you guys are approaching that trust layer.</div>"
-    },
-    {
-      "slug": "sapien",
-      "company": "Sapien",
-      "founder": "Tony",
-      "email": "tony@sapien.ai",
-      "domain": "sapien.ai",
-      "threadId": "19ed2e7f27c1fe37",
-      "messageId": "<19ed2e7f27c1fe37@mail.gmail.com>",
-      "subject": "Telescope <> Sapien Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Tony,<br><br>Chris on our team was early to Fathom and has seen firsthand how AI wedges tend to expand once the initial workflow is nailed. Happy to connect you two if useful.</div>"
-    },
-    {
-      "slug": "sapien",
-      "company": "Sapien",
-      "founder": "Tony",
-      "email": "tony@sapien.ai",
-      "domain": "sapien.ai",
-      "threadId": "19ed2e7f27c1fe37",
-      "messageId": "<19ed2e7f27c1fe37@mail.gmail.com>",
-      "subject": "Telescope <> Sapien Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Tony,<br><br>Just bumping this. If the timing isn't right, no worries at all. Would love to stay in touch for whenever it makes sense.</div>"
-    },
-    {
-      "slug": "haladir",
-      "company": "Haladir",
-      "founder": "Jibran",
-      "email": "jibran@haladir.com",
-      "domain": "haladir.com",
-      "threadId": "19ed2e7e3e88d401",
-      "messageId": "<19ed2e7e3e88d401@mail.gmail.com>",
-      "subject": "Telescope <> Haladir Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Jibran,<br><br>One thing I keep coming back to in supply chain is how much communication still relies on unstructured data. Quotes coming in as PDFs, confirmations over email, rate sheets in a different format from every carrier. I think the companies that can parse all of that and turn it into something actionable are going to be really well positioned. Would love to hear how you're approaching that data challenge.</div>"
-    },
-    {
-      "slug": "haladir",
-      "company": "Haladir",
-      "founder": "Jibran",
-      "email": "jibran@haladir.com",
-      "domain": "haladir.com",
-      "threadId": "19ed2e7e3e88d401",
-      "messageId": "<19ed2e7e3e88d401@mail.gmail.com>",
-      "subject": "Telescope <> Haladir Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Jibran,<br><br>Chris on our team worked closely with Project44 and Parabola as they scaled and would be happy to share what he's seen from the supply chain software side. Happy to set up a quick intro if useful.</div>"
-    },
-    {
-      "slug": "haladir",
-      "company": "Haladir",
-      "founder": "Jibran",
-      "email": "jibran@haladir.com",
-      "domain": "haladir.com",
-      "threadId": "19ed2e7e3e88d401",
-      "messageId": "<19ed2e7e3e88d401@mail.gmail.com>",
-      "subject": "Telescope <> Haladir Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Jibran,<br><br>Bumping this one more time. If now isn't the right time, totally understand. Would love to connect whenever makes sense.</div>"
-    },
-    {
-      "slug": "chrt",
-      "company": "chrt",
-      "founder": "Kyle",
-      "email": "kyle@chrt.com",
-      "domain": "chrt.com",
-      "threadId": "19ed2e7c0b6ebcb9",
-      "messageId": "<19ed2e7c0b6ebcb9@mail.gmail.com>",
-      "subject": "Telescope <> chrt Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Was thinking more about the time-sensitive freight space. One thing that stands out is how much worse the tracking and visibility tends to be on these loads compared to standard freight, mostly because the carrier networks are smaller and less digitized. I'd be curious whether the data and visibility angle is a core part of the value prop or if it's more about the matching and pricing side.</div>"
-    },
-    {
-      "slug": "chrt",
-      "company": "chrt",
-      "founder": "Kyle",
-      "email": "kyle@chrt.com",
-      "domain": "chrt.com",
-      "threadId": "19ed2e7c0b6ebcb9",
-      "messageId": "<19ed2e7c0b6ebcb9@mail.gmail.com>",
-      "subject": "Telescope <> chrt Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Chris on our team was early to Project44 and Parabola and has a good feel for what works in logistics software. Happy to connect you two if you're open to it.</div>"
-    },
-    {
-      "slug": "chrt",
-      "company": "chrt",
-      "founder": "Kyle",
-      "email": "kyle@chrt.com",
-      "domain": "chrt.com",
-      "threadId": "19ed2e7c0b6ebcb9",
-      "messageId": "<19ed2e7c0b6ebcb9@mail.gmail.com>",
-      "subject": "Telescope <> chrt Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Bumping this one last time. If the timing doesn't work, totally understand. Would love to stay connected.</div>"
-    },
-    {
-      "slug": "signal-lift",
-      "company": "Signal Lift",
-      "founder": "Jason",
-      "email": "jason@signallift.com",
-      "domain": "signallift.com",
-      "threadId": "19ed2e798e949a35",
-      "messageId": "<19ed2e798e949a35@mail.gmail.com>",
-      "subject": "Telescope <> Signal Lift Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "replied",
-      "body": "<div>Hey Jason,<br><br>One thing I keep thinking about with multi-unit retail is how much untapped data sits in POS systems that never gets used for actual decisions. Most chains pull basic sales reports, but I think the real unlock is connecting that to local market dynamics in a way that individual store managers can actually act on. Would love to hear how that feedback loop works in practice with your customers.</div>"
-    },
-    {
-      "slug": "signal-lift",
-      "company": "Signal Lift",
-      "founder": "Jason",
-      "email": "jason@signallift.com",
-      "domain": "signallift.com",
-      "threadId": "19ed2e798e949a35",
-      "messageId": "<19ed2e798e949a35@mail.gmail.com>",
-      "subject": "Telescope <> Signal Lift Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "replied",
-      "body": "<div>Hey Jason,<br><br>We've seen firsthand with portfolio companies like Postscript how powerful it is when brands can act on their own data in ways they couldn't before. I think you're solving the same problem for brick-and-mortar. Happy to make intros if useful.</div>"
-    },
-    {
-      "slug": "signal-lift",
-      "company": "Signal Lift",
-      "founder": "Jason",
-      "email": "jason@signallift.com",
-      "domain": "signallift.com",
-      "threadId": "19ed2e798e949a35",
-      "messageId": "<19ed2e798e949a35@mail.gmail.com>",
-      "subject": "Telescope <> Signal Lift Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "replied",
-      "body": "<div>Hey Jason,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Happy to reconnect whenever it makes sense.</div>"
-    },
-    {
-      "slug": "arkero",
-      "company": "Arkero",
-      "founder": "Daniel",
-      "email": "daniel@arkero.ai",
-      "domain": "arkero.ai",
-      "threadId": "19ed2e645a2786ff",
-      "messageId": "<19ed2e645a2786ff@mail.gmail.com>",
-      "subject": "fellow CMC grad | Telescope intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Daniel,<br><br>Been thinking more about the sports tech space and one thing that excites me is how much clubs are starting to treat their digital presence like a product rather than an afterthought. I think the teams that figure out how to monetize fan engagement beyond ticket sales and merch have a real edge, especially at the MLS and USL level where every dollar matters more. Would love to hear how you're seeing that play out.</div>"
-    },
-    {
-      "slug": "arkero",
-      "company": "Arkero",
-      "founder": "Daniel",
-      "email": "daniel@arkero.ai",
-      "domain": "arkero.ai",
-      "threadId": "19ed2e645a2786ff",
-      "messageId": "<19ed2e645a2786ff@mail.gmail.com>",
-      "subject": "fellow CMC grad | Telescope intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Daniel,<br><br>As mentioned, we're investors in Gipper and have seen firsthand how much traction there is in helping sports organizations level up their content and operations. Would be great to compare notes as a fellow Stag.</div>"
-    },
-    {
-      "slug": "arkero",
-      "company": "Arkero",
-      "founder": "Daniel",
-      "email": "daniel@arkero.ai",
-      "domain": "arkero.ai",
-      "threadId": "19ed2e645a2786ff",
-      "messageId": "<19ed2e645a2786ff@mail.gmail.com>",
-      "subject": "fellow CMC grad | Telescope intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Daniel,<br><br>Bumping this one more time. If the timing isn't right, totally understand. Would be great to grab coffee or jump on a call whenever works.</div>"
-    },
-    {
-      "slug": "brick-dynamics",
-      "company": "Brick Dynamics",
-      "founder": "Tom",
-      "email": "tom@brickdynamics.com",
-      "domain": "brickdynamics.com",
-      "threadId": "19ed2e068236e4d0",
-      "messageId": "<19ed2e068236e4d0@mail.gmail.com>",
-      "subject": "Telescope <> Brick Dynamics Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Tom,<br><br>One thing I keep coming back to with multi-location businesses is how much knowledge gets siloed at individual locations. The GM at one store figures out something that works, but that insight never makes it to the other 50. I think whoever solves that knowledge transfer problem at scale will own the category. Would love to hear how you're thinking about that.</div>"
-    },
-    {
-      "slug": "brick-dynamics",
-      "company": "Brick Dynamics",
-      "founder": "Tom",
-      "email": "tom@brickdynamics.com",
-      "domain": "brickdynamics.com",
-      "threadId": "19ed2e068236e4d0",
-      "messageId": "<19ed2e068236e4d0@mail.gmail.com>",
-      "subject": "Telescope <> Brick Dynamics Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Tom,<br><br>Chris on our team has spent a lot of time around vertical SaaS companies like ShopGenie and Mangomint that serve multi-location businesses. Happy to connect you two if useful.</div>"
-    },
-    {
-      "slug": "brick-dynamics",
-      "company": "Brick Dynamics",
-      "founder": "Tom",
-      "email": "tom@brickdynamics.com",
-      "domain": "brickdynamics.com",
-      "threadId": "19ed2e068236e4d0",
-      "messageId": "<19ed2e068236e4d0@mail.gmail.com>",
-      "subject": "Telescope <> Brick Dynamics Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Tom,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay in touch.</div>"
-    },
-    {
-      "slug": "ai-lean",
-      "company": "Ai Lean",
-      "founder": "Luke",
-      "email": "luke@ai-lean.com",
-      "domain": "ai-lean.com",
-      "threadId": "19ed2deba8aeecb0",
-      "messageId": "<19ed2deba8aeecb0@mail.gmail.com>",
-      "subject": "Telescope <> Ai Lean Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Luke,<br><br>One thing I keep thinking about in self-storage is how fragmented the compliance requirements are across states. Every state has different lien laws, different notice periods, different rules on auctions. I think that fragmentation is actually a competitive advantage for you since it makes it really hard for operators to handle in-house as they expand into new geographies. Would love to hear how much of the growth is coming from multi-state operators vs. single-market players.</div>"
-    },
-    {
-      "slug": "ai-lean",
-      "company": "Ai Lean",
-      "founder": "Luke",
-      "email": "luke@ai-lean.com",
-      "domain": "ai-lean.com",
-      "threadId": "19ed2deba8aeecb0",
-      "messageId": "<19ed2deba8aeecb0@mail.gmail.com>",
-      "subject": "Telescope <> Ai Lean Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Luke,<br><br>Chris on our team invested in companies like Logikcull and Persuit in the legal and compliance space and has a good perspective on how compliance automation scales. Happy to connect you two if helpful.</div>"
-    },
-    {
-      "slug": "ai-lean",
-      "company": "Ai Lean",
-      "founder": "Luke",
-      "email": "luke@ai-lean.com",
-      "domain": "ai-lean.com",
-      "threadId": "19ed2deba8aeecb0",
-      "messageId": "<19ed2deba8aeecb0@mail.gmail.com>",
-      "subject": "Telescope <> Ai Lean Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Luke,<br><br>Bumping this one last time. If the timing isn't right, totally understand. Would love to stay connected.</div>"
-    },
-    {
-      "slug": "rayvn",
-      "company": "RAYVN",
-      "founder": "Oyvind",
-      "email": "oyvind.reed@rayvn.global",
-      "domain": "rayvn.global",
-      "threadId": "19ed2de91cb96558",
-      "messageId": "<19ed2de91cb96558@mail.gmail.com>",
-      "subject": "Telescope <> RAYVN Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Oyvind,<br><br>Was thinking more about the emergency response space. One thing that stands out is how regulation is starting to push organizations toward more structured crisis management, both in Europe with the CER Directive and in the US with OSHA and FEMA requirements. I think that regulatory tailwind is going to accelerate adoption quickly for companies that already have the platform in place. Would love to hear if you're seeing that play out.</div>"
-    },
-    {
-      "slug": "rayvn",
-      "company": "RAYVN",
-      "founder": "Oyvind",
-      "email": "oyvind.reed@rayvn.global",
-      "domain": "rayvn.global",
-      "threadId": "19ed2de91cb96558",
-      "messageId": "<19ed2de91cb96558@mail.gmail.com>",
-      "subject": "Telescope <> RAYVN Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Oyvind,<br><br>For what it's worth, we've helped several European companies think through their US expansion strategy and would be happy to share what we've seen work. The buyer dynamics are different here but the opportunity is massive.</div>"
-    },
-    {
-      "slug": "rayvn",
-      "company": "RAYVN",
-      "founder": "Oyvind",
-      "email": "oyvind.reed@rayvn.global",
-      "domain": "rayvn.global",
-      "threadId": "19ed2de91cb96558",
-      "messageId": "<19ed2de91cb96558@mail.gmail.com>",
-      "subject": "Telescope <> RAYVN Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Oyvind,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected and learn more about the expansion plans.</div>"
-    },
-    {
-      "slug": "goodday",
-      "company": "GoodDay",
-      "founder": "Kyle",
-      "email": "kyle@gooddaysoftware.com",
-      "domain": "gooddaysoftware.com",
-      "threadId": "19ed2de6c6448fde",
-      "messageId": "<19ed2de6c6448fde@mail.gmail.com>",
-      "subject": "Telescope <> GoodDay Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>One thing I keep seeing in the Shopify ecosystem is brands hitting a wall around $5-10M in revenue where they've outgrown their Shopify app stack but aren't big enough for NetSuite. I think that gap is where the real opportunity is, since those brands need ERP-level functionality without the implementation headache. Would love to hear where the sweet spot is for GoodDay.</div>"
-    },
-    {
-      "slug": "goodday",
-      "company": "GoodDay",
-      "founder": "Kyle",
-      "email": "kyle@gooddaysoftware.com",
-      "domain": "gooddaysoftware.com",
-      "threadId": "19ed2de6c6448fde",
-      "messageId": "<19ed2de6c6448fde@mail.gmail.com>",
-      "subject": "Telescope <> GoodDay Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Chris on our team worked closely with Postscript and Chargeflow in the e-commerce space and has a good feel for what resonates with Shopify brands. Happy to connect you two if useful.</div>"
-    },
-    {
-      "slug": "goodday",
-      "company": "GoodDay",
-      "founder": "Kyle",
-      "email": "kyle@gooddaysoftware.com",
-      "domain": "gooddaysoftware.com",
-      "threadId": "19ed2de6c6448fde",
-      "messageId": "<19ed2de6c6448fde@mail.gmail.com>",
-      "subject": "Telescope <> GoodDay Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Happy to reconnect whenever makes sense.</div>"
-    },
-    {
-      "slug": "ecourtdate",
-      "company": "eCourtDate",
-      "founder": "Ibrahim",
-      "email": "ibrahim@ecourtdate.com",
-      "domain": "ecourtdate.com",
-      "threadId": "19ed2de2fedee4cc",
-      "messageId": "<19ed2de2fedee4cc@mail.gmail.com>",
-      "subject": "Telescope <> eCourtDate Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Ibrahim,<br><br>One thing I keep thinking about in the court tech space is how much money jurisdictions lose to failure-to-appear alone. I think the ROI case for what you're doing almost sells itself once a judge sees the actual numbers on no-shows and rebooking costs. Would love to hear what the data looks like from your side and whether courts are using that to pull you into adjacent workflows.</div>"
-    },
-    {
-      "slug": "ecourtdate",
-      "company": "eCourtDate",
-      "founder": "Ibrahim",
-      "email": "ibrahim@ecourtdate.com",
-      "domain": "ecourtdate.com",
-      "threadId": "19ed2de2fedee4cc",
-      "messageId": "<19ed2de2fedee4cc@mail.gmail.com>",
-      "subject": "Telescope <> eCourtDate Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Ibrahim,<br><br>Chris on our team has spent time around vertical SaaS companies that sell to government and understands the procurement challenges firsthand. Happy to compare notes or make intros if useful.</div>"
-    },
-    {
-      "slug": "ecourtdate",
-      "company": "eCourtDate",
-      "founder": "Ibrahim",
-      "email": "ibrahim@ecourtdate.com",
-      "domain": "ecourtdate.com",
-      "threadId": "19ed2de2fedee4cc",
-      "messageId": "<19ed2de2fedee4cc@mail.gmail.com>",
-      "subject": "Telescope <> eCourtDate Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Ibrahim,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected and follow the progress.</div>"
-    },
-    {
-      "slug": "scopito",
-      "company": "Scopito",
-      "founder": "Ken",
-      "email": "kif@scopito.com",
-      "domain": "scopito.com",
-      "threadId": "19ed2daf756c96f8",
-      "messageId": "<19ed2daf756c96f8@mail.gmail.com>",
-      "subject": "Telescope <> Scopito Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Ken,<br><br>Was thinking more about the inspection analytics space. One thing that keeps coming up is how the insurance side of utilities is starting to drive adoption. Insurers are increasingly requiring better documentation and predictive data on asset condition, and I think that's going to create a pull-through effect for platforms that already have the data. Would love to hear if that's resonating with your customers.</div>"
-    },
-    {
-      "slug": "scopito",
-      "company": "Scopito",
-      "founder": "Ken",
-      "email": "kif@scopito.com",
-      "domain": "scopito.com",
-      "threadId": "19ed2daf756c96f8",
-      "messageId": "<19ed2daf756c96f8@mail.gmail.com>",
-      "subject": "Telescope <> Scopito Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Ken,<br><br>We've helped a handful of European companies think through US market entry and would be happy to share what we've seen work. The US utility market is massive but the buyer dynamics are different from Europe.</div>"
-    },
-    {
-      "slug": "scopito",
-      "company": "Scopito",
-      "founder": "Ken",
-      "email": "kif@scopito.com",
-      "domain": "scopito.com",
-      "threadId": "19ed2daf756c96f8",
-      "messageId": "<19ed2daf756c96f8@mail.gmail.com>",
-      "subject": "Telescope <> Scopito Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Ken,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
-    },
-    {
-      "slug": "ehawk",
-      "company": "eHawk",
-      "founder": "Ted",
-      "email": "tedgreen@ehawksolutions.com",
-      "domain": "ehawksolutions.com",
-      "threadId": "19ed26e6b6139ab0",
-      "messageId": "<19ed26e6b6139ab0@mail.gmail.com>",
-      "subject": "Telescope <> eHawk Intro",
-      "emailNumber": 2,
-      "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Ted,<br><br>One thing I've been thinking about since reaching out is how the shift toward alternatives to incarceration is creating real demand for monitoring technology that actually works. Most counties are under pressure to reduce jail populations but still need accountability, and I think the smartphone approach makes so much more sense than the ankle monitor model. Would love to hear how the conversation with agencies has shifted over the past year.</div>"
-    },
-    {
-      "slug": "ehawk",
-      "company": "eHawk",
-      "founder": "Ted",
-      "email": "tedgreen@ehawksolutions.com",
-      "domain": "ehawksolutions.com",
-      "threadId": "19ed26e6b6139ab0",
-      "messageId": "<19ed26e6b6139ab0@mail.gmail.com>",
-      "subject": "Telescope <> eHawk Intro",
-      "emailNumber": 3,
-      "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Ted,<br><br>Chris on our team has done a lot of work in vertical SaaS and govtech and understands the government procurement cycle well. Happy to set up a quick intro if helpful.</div>"
-    },
-    {
-      "slug": "ehawk",
-      "company": "eHawk",
-      "founder": "Ted",
-      "email": "tedgreen@ehawksolutions.com",
-      "domain": "ehawksolutions.com",
-      "threadId": "19ed26e6b6139ab0",
-      "messageId": "<19ed26e6b6139ab0@mail.gmail.com>",
-      "subject": "Telescope <> eHawk Intro",
-      "emailNumber": 4,
-      "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Ted,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to reconnect with Martha included whenever it makes sense.</div>"
     }
   ]
 }
