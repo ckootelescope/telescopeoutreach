@@ -4587,7 +4587,8 @@
       "body": "<div>Mark, our Head of Ops Harrison Doyle is a former VP of Finance at Procore, so construction quality and inspection workflows are something we know well. Happy to make any relevant intros if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:06.934Z"
     },
     {
       "slug": "buildcognition",
@@ -4601,7 +4602,8 @@
       "body": "<div>Mark, been thinking more about how quality data from the field could feed into preconstruction estimates and risk scoring down the line. I think there's something interesting in using historical defect data to predict where problems will show up on future projects.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:07.762Z"
     },
     {
       "slug": "grantd",
@@ -4615,7 +4617,8 @@
       "body": "<div>Brian, we've worked with a few companies where equity comp becomes a retention bottleneck as they scale past 100 employees. Happy to share what we've heard about what's working and what's not.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:08.592Z"
     },
     {
       "slug": "grantd",
@@ -4629,7 +4632,8 @@
       "body": "<div>Brian, the complexity around international equity grants keeps coming up in conversations with portfolio companies that have distributed teams. I think there's a real gap in tooling for managing equity across jurisdictions.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:09.339Z"
     },
     {
       "slug": "marble_ai",
@@ -4643,7 +4647,8 @@
       "body": "<div>Jason, we've made a few investments in healthcare including Passage Health and Canid, and the common thread is that domain expertise is the moat. Happy to share what we've seen work in terms of health system sales cycles.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:10.088Z"
     },
     {
       "slug": "marble_ai",
@@ -4657,7 +4662,8 @@
       "body": "<div>Jason, I keep coming back to the fact that healthcare AI products with real clinical expertise behind them convert at a totally different rate than generic AI tools trying to break into the space. That's a hard advantage to replicate.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:10.833Z"
     },
     {
       "slug": "unkey",
@@ -4671,7 +4677,8 @@
       "body": "<div>James, Chris on our team was relatively early at Datadog and has seen how developer tools tend to land and expand. Happy to share what's worked for other dev-tool companies we've backed.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:11.632Z"
     },
     {
       "slug": "unkey",
@@ -4685,7 +4692,8 @@
       "body": "<div>James, as more companies deploy AI agents that need API access management, I think the usage-based billing and permissions layer becomes critical infrastructure. Curious if you're seeing pull from that use case.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:12.395Z"
     },
     {
       "slug": "woodrow",
@@ -4699,7 +4707,8 @@
       "body": "<div>Sidharth, a few portfolio companies we work with have gone through painful reconciliation processes when scaling past a certain transaction volume. Happy to share what we've seen work in terms of landing enterprise finance teams.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:13.208Z"
     },
     {
       "slug": "woodrow",
@@ -4713,7 +4722,8 @@
       "body": "<div>Sidharth, I think the companies that win in reconciliation will be the ones that sit on enough transaction data to start predicting mismatches before they happen. That's a compounding advantage over time.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:13.947Z"
     },
     {
       "slug": "meridian",
@@ -4727,7 +4737,8 @@
       "body": "<div>Kashyap, we've backed a few companies in the theme of AI replacing billable work rather than just augmenting it, and the ones that win tend to nail the output quality bar on day one. Happy to share what we've seen.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:15.399Z"
     },
     {
       "slug": "meridian",
@@ -4741,7 +4752,8 @@
       "body": "<div>Kashyap, the more I think about it, the more I think consulting is one of those markets where the buyer is paying for the deliverable, not the hours. If the deliverable quality is the same, the pricing model can completely change.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:16.123Z"
     },
     {
       "slug": "piper",
@@ -4755,7 +4767,8 @@
       "body": "<div>Ido, our Head of Ops Harrison Doyle is a former VP of Finance at Procore, so preconstruction workflows are something we follow closely. Happy to make intros if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:16.877Z"
     },
     {
       "slug": "piper",
@@ -4769,7 +4782,8 @@
       "body": "<div>Ido, preconstruction is one of those areas where a single missed line item in a bid can cost a GC six figures. I think the AI accuracy bar needs to be incredibly high for estimators to trust it, and the companies that get there first will have a real advantage.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:17.618Z"
     },
     {
       "slug": "signalcore",
@@ -4783,7 +4797,8 @@
       "body": "<div>Justin, as more enterprises deploy multiple AI vendors, we keep hearing that evaluation and selection is becoming a bottleneck. Happy to share what we're hearing from the buyer side if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:18.339Z"
     },
     {
       "slug": "signalcore",
@@ -4797,7 +4812,8 @@
       "body": "<div>Justin, I think the interesting thing about AI evaluation is that it's not a one-time procurement decision anymore. Models change, pricing changes, quality drifts. The company that owns continuous evaluation has a really sticky position.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:19.092Z"
     },
     {
       "slug": "product_ai",
@@ -4811,7 +4827,8 @@
       "body": "<div>Michael, as AI shopping agents scale up, I think the verification layer becomes more valuable, not less. Happy to share what we're seeing in the agentic commerce space from the investor side.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:19.790Z"
     },
     {
       "slug": "product_ai",
@@ -4825,7 +4842,8 @@
       "body": "<div>Michael, the more I dig into this space, the more I think ground truth verification is a wedge into something bigger. If you own the real-time accuracy layer for commerce, that data becomes incredibly valuable to anyone building shopping agents.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:20.515Z"
     },
     {
       "slug": "ntwist",
@@ -4839,7 +4857,8 @@
       "body": "<div>Chowdary, Chris on our team worked with Parabola and Project44, so industrial data and supply chain optimization is a space we've spent real time in. Happy to share what we've seen work in terms of manufacturing sales cycles.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:21.233Z"
     },
     {
       "slug": "ntwist",
@@ -4853,7 +4872,8 @@
       "body": "<div>Chowdary, mining and manufacturing operators generate massive amounts of data but most of it just sits in historians unused. I think the companies that can turn that into real-time operational decisions without requiring a team of data scientists on-site will win big.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:21.962Z"
     },
     {
       "slug": "promptarmor",
@@ -4867,7 +4887,8 @@
       "body": "<div>Shankar, Chris on our team worked with Axonius and JumpCloud, so security tooling is a space we know well. As every vendor embeds AI, the third-party risk surface is expanding fast. Happy to share what we're hearing from CISOs.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:22.653Z"
     },
     {
       "slug": "promptarmor",
@@ -4881,7 +4902,8 @@
       "body": "<div>Shankar, I think AI security risk is moving faster than most security teams can evaluate on their own. The company that can automate that evaluation and give CISOs confidence to approve new tools will be in a really strong position.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:23.454Z"
     },
     {
       "slug": "lava",
@@ -4895,7 +4917,8 @@
       "body": "<div>Mitchell, as AI agents proliferate, the infrastructure layer underneath them is becoming critical. Happy to share what we're seeing across our portfolio in terms of how companies are actually deploying agents in production.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:24.144Z"
     },
     {
       "slug": "lava",
@@ -4909,7 +4932,8 @@
       "body": "<div>Mitchell, I think the connectivity and orchestration layer for AI agents is going to look a lot like what happened with APIs a decade ago. The companies that own the plumbing early tend to become very sticky.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:25.045Z"
     },
     {
       "slug": "luzid",
@@ -4923,7 +4947,8 @@
       "body": "<div>Andres, we've seen a pattern across our portfolio where AI that replaces professional services rather than just augmenting them tends to have much stronger unit economics. Happy to share what we've seen work in positioning against systems integrators.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:25.764Z"
     },
     {
       "slug": "luzid",
@@ -4937,7 +4962,8 @@
       "body": "<div>Andres, ERP implementations are one of those areas where the documentation and process mapping alone can cost more than the software license. I think automating that piece is the right wedge because it's the most painful and most repeatable part of the project.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:26.513Z"
     },
     {
       "slug": "sevii",
@@ -4951,7 +4977,8 @@
       "body": "<div>Curt, Chris on our team worked with Axonius and JumpCloud, and one thing we keep hearing is that SOC teams are drowning in alerts they can't act on fast enough. Happy to share what we're hearing about buying patterns in security.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:27.459Z"
     },
     {
       "slug": "sevii",
@@ -4965,7 +4992,8 @@
       "body": "<div>Curt, I think the gap between detection and response is where most of the actual damage happens in a breach. The tools that can compress that window from hours to minutes are solving a problem every CISO loses sleep over.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:28.221Z"
     },
     {
       "slug": "hilt",
@@ -4979,7 +5007,8 @@
       "body": "<div>William, Chris on our team has worked with companies like Axonius in the security space, and one pattern we keep seeing is that the products that sit on the data path rather than just the log path end up being much stickier. Happy to share more on what we've seen.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:29.022Z"
     },
     {
       "slug": "hilt",
@@ -4993,7 +5022,8 @@
       "body": "<div>William, most data security tools are reactive by design. I think the shift to monitoring data movement in real time rather than analyzing logs after the fact is where the market needs to go.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:29.701Z"
     },
     {
       "slug": "corbel",
@@ -5007,7 +5037,8 @@
       "body": "<div>Le'Ora, we've seen a pattern where vertical commerce tools that own the quoting process tend to expand naturally into financing and payments. Happy to share what we've seen work in similar verticals.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:30.403Z"
     },
     {
       "slug": "corbel",
@@ -5021,7 +5052,8 @@
       "body": "<div>Le'Ora, capital equipment sales is one of those workflows where a rep might spend hours building a custom quote that could be generated in minutes with the right tooling. I think there's a real opportunity to own the commercial layer for this market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:31.222Z"
     },
     {
       "slug": "cleavr",
@@ -5035,7 +5067,8 @@
       "body": "<div>Baptiste, we've backed companies in the payments and fintech space and the common theme is that automating the last mile of cash collection tends to have incredibly clear ROI for buyers. Happy to share what we've seen work.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:31.997Z"
     },
     {
       "slug": "cleavr",
@@ -5049,7 +5082,8 @@
       "body": "<div>Baptiste, I think the interesting thing about collections automation is that it touches both the finance team and the customer relationship. Getting the tone right at scale is a hard problem, and the companies that crack it will own a critical piece of the AR workflow.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:32.761Z"
     },
     {
       "slug": "loophole_labs",
@@ -5063,7 +5097,8 @@
       "body": "<div>Shiv, Chris on our team was involved with Datadog early on, so infrastructure tooling is a space we follow closely. The companies that make complex infrastructure decisions simpler tend to grow really fast once they hit PMF. Happy to share what we've seen.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:33.475Z"
     },
     {
       "slug": "loophole_labs",
@@ -5077,7 +5112,8 @@
       "body": "<div>Shiv, every engineering team I hear from mentions Kubernetes cost as a growing pain point, but most existing tools require too much configuration to deliver value. I think the companies that automate the optimization rather than just surfacing dashboards will win this market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:34.224Z"
     },
     {
       "slug": "autyvia",
@@ -5091,7 +5127,8 @@
       "body": "<div>John, our Head of Ops Harrison Doyle is a former VP of Finance at Procore, so AEC is a space we know deeply. Happy to make intros to firms in our network if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:34.973Z"
     },
     {
       "slug": "autyvia",
@@ -5105,7 +5142,8 @@
       "body": "<div>John, the institutional knowledge problem in AEC gets more expensive every time a senior BD person leaves and takes their relationships with them. I think the companies that can systematize that knowledge have a massive retention advantage.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:35.644Z"
     },
     {
       "slug": "respan",
@@ -5119,7 +5157,8 @@
       "body": "<div>Raymond, Chris on our team worked with DataRobot, so ML infrastructure is a space we follow closely. The companies that own the data layer in AI infrastructure tend to build really strong moats. Happy to share what we've seen.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:36.312Z"
     },
     {
       "slug": "respan",
@@ -5133,7 +5172,8 @@
       "body": "<div>Raymond, I think the companies that win in LLM observability will be the ones that move beyond monitoring into active optimization. Routing, cost management, and quality scoring are all wedges that get stickier over time.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:36.990Z"
     },
     {
       "slug": "lemhi",
@@ -5147,7 +5187,8 @@
       "body": "<div>John, Chris on our team invested in MSP companies like Rewst and Auvik, and one thing we keep hearing is that MSPs want to offer AI but don't have the engineering resources to build it themselves. Happy to share what we've learned about the channel.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:37.747Z"
     },
     {
       "slug": "lemhi",
@@ -5161,7 +5202,8 @@
       "body": "<div>John, every MSP conference has AI as the top topic right now, but most MSPs are still figuring out what to actually offer clients. I think the company that gives MSPs a turnkey AI product they can sell immediately has a really clear distribution advantage.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:38.422Z"
     },
     {
       "slug": "bilrost",
@@ -5175,7 +5217,8 @@
       "body": "<div>Silvia, Chris on our team has worked with companies in financial services, and one pattern we keep seeing is that automating the document-heavy parts of underwriting has some of the clearest ROI in fintech. Happy to share what we've seen work.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:39.086Z"
     },
     {
       "slug": "bilrost",
@@ -5189,7 +5232,8 @@
       "body": "<div>Silvia, commercial loan processing is one of those workflows where an underwriter might pull data from 15 different documents to make one decision. I think the companies that can collapse that into a single automated step will save lenders an enormous amount of time per deal.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:39.864Z"
     },
     {
       "slug": "nexxa",
@@ -5203,7 +5247,8 @@
       "body": "<div>Philipp, we've seen a pattern where companies that own the institutional knowledge layer in a vertical end up becoming the system of record for critical workflows. Happy to share what we've seen across manufacturing and industrial verticals.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:40.602Z"
     },
     {
       "slug": "nexxa",
@@ -5217,7 +5262,8 @@
       "body": "<div>Philipp, the knowledge management problem in aerospace and defense is especially acute because the workforce is aging and the domain expertise is incredibly hard to replace. I think the companies that can capture that knowledge before it walks out the door have a time-sensitive advantage.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:41.306Z"
     },
     {
       "slug": "fearn",
@@ -5231,7 +5277,8 @@
       "body": "<div>Han, we love the theme of AI replacing professional services that are currently billed by the hour. The companies that can deliver the same quality at a fraction of the cost tend to grow fast. Happy to share what we've seen work.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:42.033Z"
     },
     {
       "slug": "fearn",
@@ -5245,7 +5292,8 @@
       "body": "<div>Han, patent drafting is one of those areas where a single mistake in claim language can cost a company millions in litigation. I think the AI quality bar is higher here than almost any other legal workflow, and the companies that meet it will own the market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:42.765Z"
     },
     {
       "slug": "moritz",
@@ -5259,7 +5307,8 @@
       "body": "<div>Pamir, we love the theme of AI that replaces a full service rather than just making it faster. Legal is one of those markets where the hourly billing model creates a natural opening for a completely different pricing approach. Happy to share what we've seen work.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:43.541Z"
     },
     {
       "slug": "moritz",
@@ -5273,7 +5322,8 @@
       "body": "<div>Pamir, I think legal is going through the same transformation that tax prep went through a decade ago. The routine work gets automated, the pricing drops, and the firms that adapt become more advisory. The company that owns the automated layer wins big.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:44.265Z"
     },
     {
       "slug": "artificial_societies",
@@ -5287,7 +5337,8 @@
       "body": "<div>James, we've seen increasing demand from portfolio companies for faster ways to get market research and customer insights without waiting weeks for traditional methods. Happy to share what we're hearing on the buyer side.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:45.021Z"
     },
     {
       "slug": "artificial_societies",
@@ -5301,7 +5352,8 @@
       "body": "<div>James, I think the shift from asking 100 people a question over 6 weeks to generating hundreds of synthetic perspectives in hours could fundamentally change how companies make product and strategy decisions. The accuracy question is the key unlock.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:45.703Z"
     },
     {
       "slug": "acclaim",
@@ -5315,7 +5367,8 @@
       "body": "<div>Jared, Chris on our team has connections to the insurance distribution side through his work with iLife, and one thing we keep hearing is that payment friction is still one of the biggest operational bottlenecks. Happy to make intros if useful.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 3,
       "sendDate": "2026-06-20",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:46.470Z"
     },
     {
       "slug": "acclaim",
@@ -5329,7 +5382,8 @@
       "body": "<div>Jared, insurance payments are one of those workflows where everyone knows it's broken but the switching cost of fixing it has historically been too high. I think the companies that can plug into existing systems without requiring a rip-and-replace will win this market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-22",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-22T21:33:47.184Z"
     },
     {
       "slug": "atomic-insights",
@@ -5342,8 +5396,9 @@
       "subject": "Telescope <> Atomic Insights Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Lucas,<br><br>One thing I keep thinking about in the wealth management space is how the custody transition wave has created a window where RIAs are more open to changing their back-office stack than they have been in years. I think that window doesn't stay open forever, and the companies that get in now will have a real advantage. Would love to hear if that's been a tailwind for you guys.<br><br>Happy to chat whenever makes sense.</div>"
+      "status": "completed",
+      "body": "<div>Hey Lucas,<br><br>One thing I keep thinking about in the wealth management space is how the custody transition wave has created a window where RIAs are more open to changing their back-office stack than they have been in years. I think that window doesn't stay open forever, and the companies that get in now will have a real advantage. Would love to hear if that's been a tailwind for you guys.<br><br>Happy to chat whenever makes sense.</div>",
+      "processedAt": "2026-06-22T21:33:48.064Z"
     },
     {
       "slug": "atomic-insights",
@@ -5384,8 +5439,9 @@
       "subject": "Telescope <> Sapien Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Tony,<br><br>Was thinking more about the finance automation space. One thing I keep coming back to is how much time gets wasted on data validation alone before anyone even starts the actual analysis. I think the companies that figure out how to make finance teams trust the AI output enough to skip the manual sanity checks will pull away from the pack. Would love to hear how you guys are approaching that trust layer.</div>"
+      "status": "completed",
+      "body": "<div>Hey Tony,<br><br>Was thinking more about the finance automation space. One thing I keep coming back to is how much time gets wasted on data validation alone before anyone even starts the actual analysis. I think the companies that figure out how to make finance teams trust the AI output enough to skip the manual sanity checks will pull away from the pack. Would love to hear how you guys are approaching that trust layer.</div>",
+      "processedAt": "2026-06-22T21:33:48.771Z"
     },
     {
       "slug": "sapien",
@@ -5426,8 +5482,9 @@
       "subject": "Telescope <> Haladir Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Jibran,<br><br>One thing I keep coming back to in supply chain is how much communication still relies on unstructured data. Quotes coming in as PDFs, confirmations over email, rate sheets in a different format from every carrier. I think the companies that can parse all of that and turn it into something actionable are going to be really well positioned. Would love to hear how you're approaching that data challenge.</div>"
+      "status": "completed",
+      "body": "<div>Hey Jibran,<br><br>One thing I keep coming back to in supply chain is how much communication still relies on unstructured data. Quotes coming in as PDFs, confirmations over email, rate sheets in a different format from every carrier. I think the companies that can parse all of that and turn it into something actionable are going to be really well positioned. Would love to hear how you're approaching that data challenge.</div>",
+      "processedAt": "2026-06-22T21:33:49.579Z"
     },
     {
       "slug": "haladir",
@@ -5468,8 +5525,9 @@
       "subject": "Telescope <> chrt Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Was thinking more about the time-sensitive freight space. One thing that stands out is how much worse the tracking and visibility tends to be on these loads compared to standard freight, mostly because the carrier networks are smaller and less digitized. I'd be curious whether the data and visibility angle is a core part of the value prop or if it's more about the matching and pricing side.</div>"
+      "status": "completed",
+      "body": "<div>Hey Kyle,<br><br>Was thinking more about the time-sensitive freight space. One thing that stands out is how much worse the tracking and visibility tends to be on these loads compared to standard freight, mostly because the carrier networks are smaller and less digitized. I'd be curious whether the data and visibility angle is a core part of the value prop or if it's more about the matching and pricing side.</div>",
+      "processedAt": "2026-06-22T21:33:50.347Z"
     },
     {
       "slug": "chrt",
@@ -5510,8 +5568,9 @@
       "subject": "fellow CMC grad | Telescope intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Daniel,<br><br>Been thinking more about the sports tech space and one thing that excites me is how much clubs are starting to treat their digital presence like a product rather than an afterthought. I think the teams that figure out how to monetize fan engagement beyond ticket sales and merch have a real edge, especially at the MLS and USL level where every dollar matters more. Would love to hear how you're seeing that play out.</div>"
+      "status": "completed",
+      "body": "<div>Hey Daniel,<br><br>Been thinking more about the sports tech space and one thing that excites me is how much clubs are starting to treat their digital presence like a product rather than an afterthought. I think the teams that figure out how to monetize fan engagement beyond ticket sales and merch have a real edge, especially at the MLS and USL level where every dollar matters more. Would love to hear how you're seeing that play out.</div>",
+      "processedAt": "2026-06-22T21:33:51.132Z"
     },
     {
       "slug": "arkero",
@@ -5552,8 +5611,9 @@
       "subject": "Telescope <> Brick Dynamics Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Tom,<br><br>One thing I keep coming back to with multi-location businesses is how much knowledge gets siloed at individual locations. The GM at one store figures out something that works, but that insight never makes it to the other 50. I think whoever solves that knowledge transfer problem at scale will own the category. Would love to hear how you're thinking about that.</div>"
+      "status": "completed",
+      "body": "<div>Hey Tom,<br><br>One thing I keep coming back to with multi-location businesses is how much knowledge gets siloed at individual locations. The GM at one store figures out something that works, but that insight never makes it to the other 50. I think whoever solves that knowledge transfer problem at scale will own the category. Would love to hear how you're thinking about that.</div>",
+      "processedAt": "2026-06-22T21:33:51.842Z"
     },
     {
       "slug": "brick-dynamics",
@@ -5594,8 +5654,9 @@
       "subject": "Telescope <> Ai Lean Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Luke,<br><br>One thing I keep thinking about in self-storage is how fragmented the compliance requirements are across states. Every state has different lien laws, different notice periods, different rules on auctions. I think that fragmentation is actually a competitive advantage for you since it makes it really hard for operators to handle in-house as they expand into new geographies. Would love to hear how much of the growth is coming from multi-state operators vs. single-market players.</div>"
+      "status": "completed",
+      "body": "<div>Hey Luke,<br><br>One thing I keep thinking about in self-storage is how fragmented the compliance requirements are across states. Every state has different lien laws, different notice periods, different rules on auctions. I think that fragmentation is actually a competitive advantage for you since it makes it really hard for operators to handle in-house as they expand into new geographies. Would love to hear how much of the growth is coming from multi-state operators vs. single-market players.</div>",
+      "processedAt": "2026-06-22T21:33:52.573Z"
     },
     {
       "slug": "ai-lean",
@@ -5636,8 +5697,9 @@
       "subject": "Telescope <> RAYVN Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Oyvind,<br><br>Was thinking more about the emergency response space. One thing that stands out is how regulation is starting to push organizations toward more structured crisis management, both in Europe with the CER Directive and in the US with OSHA and FEMA requirements. I think that regulatory tailwind is going to accelerate adoption quickly for companies that already have the platform in place. Would love to hear if you're seeing that play out.</div>"
+      "status": "completed",
+      "body": "<div>Hey Oyvind,<br><br>Was thinking more about the emergency response space. One thing that stands out is how regulation is starting to push organizations toward more structured crisis management, both in Europe with the CER Directive and in the US with OSHA and FEMA requirements. I think that regulatory tailwind is going to accelerate adoption quickly for companies that already have the platform in place. Would love to hear if you're seeing that play out.</div>",
+      "processedAt": "2026-06-22T21:33:53.256Z"
     },
     {
       "slug": "rayvn",
@@ -5678,8 +5740,9 @@
       "subject": "Telescope <> GoodDay Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>One thing I keep seeing in the Shopify ecosystem is brands hitting a wall around $5-10M in revenue where they've outgrown their Shopify app stack but aren't big enough for NetSuite. I think that gap is where the real opportunity is, since those brands need ERP-level functionality without the implementation headache. Would love to hear where the sweet spot is for GoodDay.</div>"
+      "status": "completed",
+      "body": "<div>Hey Kyle,<br><br>One thing I keep seeing in the Shopify ecosystem is brands hitting a wall around $5-10M in revenue where they've outgrown their Shopify app stack but aren't big enough for NetSuite. I think that gap is where the real opportunity is, since those brands need ERP-level functionality without the implementation headache. Would love to hear where the sweet spot is for GoodDay.</div>",
+      "processedAt": "2026-06-22T21:33:54.002Z"
     },
     {
       "slug": "goodday",
@@ -5720,8 +5783,9 @@
       "subject": "Telescope <> eCourtDate Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Ibrahim,<br><br>One thing I keep thinking about in the court tech space is how much money jurisdictions lose to failure-to-appear alone. I think the ROI case for what you're doing almost sells itself once a judge sees the actual numbers on no-shows and rebooking costs. Would love to hear what the data looks like from your side and whether courts are using that to pull you into adjacent workflows.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ibrahim,<br><br>One thing I keep thinking about in the court tech space is how much money jurisdictions lose to failure-to-appear alone. I think the ROI case for what you're doing almost sells itself once a judge sees the actual numbers on no-shows and rebooking costs. Would love to hear what the data looks like from your side and whether courts are using that to pull you into adjacent workflows.</div>",
+      "processedAt": "2026-06-22T21:33:54.744Z"
     },
     {
       "slug": "ecourtdate",
@@ -5762,8 +5826,9 @@
       "subject": "Telescope <> Scopito Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Ken,<br><br>Was thinking more about the inspection analytics space. One thing that keeps coming up is how the insurance side of utilities is starting to drive adoption. Insurers are increasingly requiring better documentation and predictive data on asset condition, and I think that's going to create a pull-through effect for platforms that already have the data. Would love to hear if that's resonating with your customers.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ken,<br><br>Was thinking more about the inspection analytics space. One thing that keeps coming up is how the insurance side of utilities is starting to drive adoption. Insurers are increasingly requiring better documentation and predictive data on asset condition, and I think that's going to create a pull-through effect for platforms that already have the data. Would love to hear if that's resonating with your customers.</div>",
+      "processedAt": "2026-06-22T21:33:55.407Z"
     },
     {
       "slug": "scopito",
@@ -5804,8 +5869,9 @@
       "subject": "Telescope <> eHawk Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-19",
-      "status": "pending",
-      "body": "<div>Hey Ted,<br><br>One thing I've been thinking about since reaching out is how the shift toward alternatives to incarceration is creating real demand for monitoring technology that actually works. Most counties are under pressure to reduce jail populations but still need accountability, and I think the smartphone approach makes so much more sense than the ankle monitor model. Would love to hear how the conversation with agencies has shifted over the past year.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ted,<br><br>One thing I've been thinking about since reaching out is how the shift toward alternatives to incarceration is creating real demand for monitoring technology that actually works. Most counties are under pressure to reduce jail populations but still need accountability, and I think the smartphone approach makes so much more sense than the ankle monitor model. Would love to hear how the conversation with agencies has shifted over the past year.</div>",
+      "processedAt": "2026-06-22T21:33:56.110Z"
     },
     {
       "slug": "ehawk",
