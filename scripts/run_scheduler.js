@@ -143,8 +143,38 @@ async function createDraft(accessToken, senderEmail, entry) {
   return JSON.parse(res.body);
 }
 
+async function hasExistingReply(accessToken, domain, company) {
+  try {
+    const range = encodeURIComponent(SHEET_TAB + '!A:I');
+    const res = await httpsRequest({
+      hostname: 'sheets.googleapis.com',
+      path: '/v4/spreadsheets/' + SHEET_ID + '/values/' + range,
+      method: 'GET',
+      headers: { 'Authorization': 'Bearer ' + accessToken }
+    });
+    if (res.statusCode !== 200) return false;
+    const rows = JSON.parse(res.body).values || [];
+    const d = (domain || '').toLowerCase();
+    const c = (company || '').toLowerCase();
+    for (let i = 1; i < rows.length; i++) {
+      if ((rows[i][5] || '').trim() === 'REPLIED') {
+        const rowDomain = (rows[i][2] || '').trim().toLowerCase();
+        const rowCompany = (rows[i][1] || '').trim().toLowerCase();
+        if ((d && rowDomain === d) || (c && rowCompany === c)) return true;
+      }
+    }
+  } catch (err) {
+    console.log('  Warning: Reply dedup check failed, proceeding: ' + err.message);
+  }
+  return false;
+}
+
 async function logToSheet(accessToken, entry, event, notes) {
   try {
+    if (event === 'REPLIED' && await hasExistingReply(accessToken, entry.domain, entry.company)) {
+      console.log('  Skipped logging: REPLIED already exists for ' + entry.company);
+      return;
+    }
     const row = [
       new Date().toISOString(),
       entry.company, entry.domain, entry.founder, entry.email,

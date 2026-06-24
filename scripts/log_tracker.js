@@ -45,6 +45,30 @@ async function getAccessToken() {
   return JSON.parse(res.body).access_token;
 }
 
+async function readExistingRows(accessToken) {
+  const range = encodeURIComponent(SHEET_TAB + '!A:I');
+  const res = await httpsRequest({
+    hostname: 'sheets.googleapis.com',
+    path: '/v4/spreadsheets/' + SHEET_ID + '/values/' + range,
+    method: 'GET',
+    headers: { 'Authorization': 'Bearer ' + accessToken }
+  });
+  if (res.statusCode !== 200) return [];
+  const data = JSON.parse(res.body).values || [];
+  return data.slice(1);
+}
+
+function getRepliedDomains(existingRows) {
+  const domains = new Set();
+  for (const row of existingRows) {
+    if ((row[5] || '').trim() === 'REPLIED') {
+      const key = (row[2] || row[1] || '').trim().toLowerCase();
+      if (key) domains.add(key);
+    }
+  }
+  return domains;
+}
+
 async function appendRows(accessToken, rows) {
   const body = JSON.stringify({ values: rows });
   const sheetPath = '/v4/spreadsheets/' + SHEET_ID + '/values/' +
@@ -80,19 +104,37 @@ async function main() {
   }
 
   const entries = JSON.parse(args[0]);
-  const rows = entries.map(e => [
-    e.timestamp || new Date().toISOString(),
-    e.company || '',
-    e.domain || '',
-    e.founder || '',
-    e.email || '',
-    e.event || '',
-    e.email_stage || '',
-    e.thread_id || '',
-    e.notes || ''
-  ]);
-
   const accessToken = await getAccessToken();
+
+  const existingRows = await readExistingRows(accessToken);
+  const repliedDomains = getRepliedDomains(existingRows);
+
+  const rows = [];
+  const skipped = [];
+  for (const e of entries) {
+    const key = (e.domain || e.company || '').toLowerCase();
+    if (e.event === 'REPLIED' && repliedDomains.has(key)) {
+      skipped.push(e);
+      continue;
+    }
+    if (e.event === 'REPLIED') repliedDomains.add(key);
+    rows.push([
+      e.timestamp || new Date().toISOString(),
+      e.company || '', e.domain || '', e.founder || '', e.email || '',
+      e.event || '', e.email_stage || '', e.thread_id || '', e.notes || ''
+    ]);
+  }
+
+  if (skipped.length > 0) {
+    console.log('Skipped ' + skipped.length + ' duplicate REPLIED:');
+    skipped.forEach(e => console.log('  SKIPPED: ' + e.company + ' (already has REPLIED)'));
+  }
+
+  if (rows.length === 0) {
+    console.log('No new rows to log (all duplicates).');
+    return;
+  }
+
   const result = await appendRows(accessToken, rows);
   console.log('Logged ' + rows.length + ' row(s) to tracker.');
   rows.forEach(r => console.log('  ' + r[5] + ': ' + r[1] + ' (' + r[3] + ')'));

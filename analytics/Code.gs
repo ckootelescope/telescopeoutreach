@@ -2,6 +2,7 @@ const SHEET_ID = '1Sk9HndYNzXj_tHg8-T4EGqSqkPk1QKXH2UOQt23s7CA';
 const API_KEY = 'tscope_og_2026_kx9m';
 const ACTIVITY_TAB = 'Activity Log';
 const WEEKLY_TAB = 'Weekly Summary';
+const TRENDS_TAB = 'Trends';
 
 function setupSheet() {
   const ss = SpreadsheetApp.openById(SHEET_ID);
@@ -23,7 +24,7 @@ function setupSheet() {
   if (!weekly) weekly = ss.insertSheet(WEEKLY_TAB);
   weekly.clear();
   weekly.getRange('A1:I1').setValues([[
-    'Week Starting', 'Companies Outreached', 'Conversations', 'Conversion Rate',
+    'Week Starting', 'Companies Outreached', 'Replies', 'Conversion Rate',
     'Emails Sent (E1)', 'Emails Sent (E2)', 'Emails Sent (E3)', 'Bounced', 'Guardrail Blocked'
   ]]);
   weekly.getRange('A1:I1').setFontWeight('bold').setBackground('#1a1a2e').setFontColor('#ffffff');
@@ -46,6 +47,9 @@ function doPost(e) {
     const sheet = ss.getSheetByName(ACTIVITY_TAB);
 
     if (data.action === 'log') {
+      if (data.event === 'REPLIED' && _hasReplied(sheet, data.domain || '', data.company || '')) {
+        return _json({ status: 'skipped', reason: 'REPLIED already exists for ' + (data.company || data.domain) });
+      }
       sheet.appendRow([
         data.timestamp || new Date().toISOString(),
         data.company || '',
@@ -61,11 +65,20 @@ function doPost(e) {
     }
 
     if (data.action === 'batch_log') {
-      const rows = data.entries.map(en => [
+      const repliedDomains = _getRepliedDomains(sheet);
+      const rows = data.entries.filter(en => {
+        if (en.event === 'REPLIED') {
+          const key = (en.domain || en.company || '').toLowerCase();
+          if (repliedDomains.has(key)) return false;
+          repliedDomains.add(key);
+        }
+        return true;
+      }).map(en => [
         en.timestamp || new Date().toISOString(),
         en.company || '', en.domain || '', en.founder || '', en.email || '',
         en.event || '', en.email_stage || '', en.thread_id || '', en.notes || ''
       ]);
+      if (rows.length === 0) return _json({ status: 'ok', count: 0, note: 'all entries skipped (duplicate REPLIED)' });
       const lastRow = sheet.getLastRow();
       sheet.getRange(lastRow + 1, 1, rows.length, 9).setValues(rows);
       return _json({ status: 'ok', count: rows.length });
@@ -88,10 +101,12 @@ function refreshDashboard() {
   const thisWeek = rows.filter(r => new Date(r.Timestamp) >= weekStart);
   const prevWeek = rows.filter(r => { const d = new Date(r.Timestamp); return d >= prevWeekStart && d < weekStart; });
 
-  const twOutreach = _uniqueCompanies(thisWeek, 'SENT');
-  const pwOutreach = _uniqueCompanies(prevWeek, 'SENT');
+  const twOutreach = _uniqueCompanies(thisWeek.filter(r => r['Email Stage'] === 'Email 1'), 'SENT');
+  const pwOutreach = _uniqueCompanies(prevWeek.filter(r => r['Email Stage'] === 'Email 1'), 'SENT');
   const twReplies = _uniqueCompanies(thisWeek, 'REPLIED');
   const pwReplies = _uniqueCompanies(prevWeek, 'REPLIED');
+  const twE2Sent = _uniqueCompanies(thisWeek.filter(r => r['Email Stage'] === 'Email 2'), 'SENT');
+  const twE3Sent = _uniqueCompanies(thisWeek.filter(r => r['Email Stage'] === 'Email 3'), 'SENT');
 
   const allCompanies = [...new Set(rows.map(r => r.Company))];
 
@@ -102,7 +117,9 @@ function refreshDashboard() {
     const actions = cd.map(r => ({ action: r.Action, stage: r['Email Stage'] }));
     const last = cd[cd.length - 1];
     let stage = 'E1 Drafted';
-    if (actions.some(a => a.action === 'FOLLOWUP_DRAFTED' && a.stage === 'Email 3')) stage = 'E3 Drafted';
+    if (actions.some(a => a.action === 'SENT' && a.stage === 'Email 3')) stage = 'Awaiting Reply';
+    else if (actions.some(a => a.action === 'FOLLOWUP_DRAFTED' && a.stage === 'Email 3')) stage = 'E3 Drafted';
+    else if (actions.some(a => a.action === 'SENT' && a.stage === 'Email 2')) stage = 'Awaiting E3';
     else if (actions.some(a => a.action === 'FOLLOWUP_DRAFTED' && a.stage === 'Email 2')) stage = 'E2 Drafted';
     else if (actions.some(a => a.action === 'SENT')) stage = 'Awaiting E2';
     else if (actions.some(a => a.action === 'DRAFT_CREATED')) stage = 'E1 Drafted';
@@ -113,15 +130,21 @@ function refreshDashboard() {
   });
 
   const replyRows = rows.filter(r => r.Action === 'REPLIED');
+  const seenReplyCompanies = new Set();
+  const uniqueReplyRows = replyRows.filter(r => {
+    if (seenReplyCompanies.has(r.Company)) return false;
+    seenReplyCompanies.add(r.Company);
+    return true;
+  });
 
-  const replies = replyRows.map(r => {
+  const replies = uniqueReplyRows.map(r => {
     const cd = rows.filter(s => s.Company === r.Company);
     const sentRow = cd.find(s => s.Action === 'SENT' && s['Email Stage'] === 'Email 1');
     if (!sentRow) return { company: r.Company, founder: r.Founder, repliedTo: r['Email Stage'] || 'Email 1', days: null, date: r.Timestamp };
     const days = (new Date(r.Timestamp) - new Date(sentRow.Timestamp)) / (1000 * 60 * 60);
     let repliedTo = 'Email 1';
-    if (cd.some(s => s.Action === 'FOLLOWUP_DRAFTED' && s['Email Stage'] === 'Email 3' && new Date(s.Timestamp) < new Date(r.Timestamp))) repliedTo = 'Email 3';
-    else if (cd.some(s => s.Action === 'FOLLOWUP_DRAFTED' && s['Email Stage'] === 'Email 2' && new Date(s.Timestamp) < new Date(r.Timestamp))) repliedTo = 'Email 2';
+    if (cd.some(s => (s.Action === 'SENT' || s.Action === 'FOLLOWUP_DRAFTED') && s['Email Stage'] === 'Email 3' && new Date(s.Timestamp) < new Date(r.Timestamp))) repliedTo = 'Email 3';
+    else if (cd.some(s => (s.Action === 'SENT' || s.Action === 'FOLLOWUP_DRAFTED') && s['Email Stage'] === 'Email 2' && new Date(s.Timestamp) < new Date(r.Timestamp))) repliedTo = 'Email 2';
     return { company: r.Company, founder: r.Founder, repliedTo, days, date: r.Timestamp };
   });
 
@@ -135,7 +158,9 @@ function refreshDashboard() {
   const fE1Drafted = _uniqueCompanies(rows, 'DRAFT_CREATED');
   const fE1Sent = _uniqueCompanies(rows.filter(r => r['Email Stage'] === 'Email 1'), 'SENT');
   const fE2 = _uniqueCompanies(rows.filter(r => r['Email Stage'] === 'Email 2'), 'FOLLOWUP_DRAFTED');
+  const fE2Sent = _uniqueCompanies(rows.filter(r => r['Email Stage'] === 'Email 2'), 'SENT');
   const fE3 = _uniqueCompanies(rows.filter(r => r['Email Stage'] === 'Email 3'), 'FOLLOWUP_DRAFTED');
+  const fE3Sent = _uniqueCompanies(rows.filter(r => r['Email Stage'] === 'Email 3'), 'SENT');
   const fReplied = _uniqueCompanies(rows, 'REPLIED');
   const rate = twOutreach > 0 ? (twReplies / twOutreach * 100).toFixed(1) + '%' : '0.0%';
 
@@ -150,6 +175,8 @@ function refreshDashboard() {
     ['', '', '', '', ''],
     ['THIS WEEK', '', 'vs Last Week', '', ''],
     ['Companies Outreached', twOutreach, pwOutreach, _delta(twOutreach, pwOutreach), ''],
+    ['E2 Sent', twE2Sent, '', '', ''],
+    ['E3 Sent', twE3Sent, '', '', ''],
     ['Replies', twReplies, pwReplies, _delta(twReplies, pwReplies), ''],
     ['Conversion Rate', rate, '', '', ''],
     ['', '', '', '', ''],
@@ -165,7 +192,9 @@ function refreshDashboard() {
     ['E1 Drafted', fE1Drafted, '', '', ''],
     ['E1 Sent', fE1Sent, '', '', ''],
     ['E2 Drafted', fE2, '', '', ''],
+    ['E2 Sent', fE2Sent, '', '', ''],
     ['E3 Drafted', fE3, '', '', ''],
+    ['E3 Sent', fE3Sent, '', '', ''],
     ['Replied', fReplied, '', '', ''],
     ['', '', '', '', ''],
     ['REPLIES', '', '', '', ''],
@@ -180,7 +209,6 @@ function refreshDashboard() {
 
   output.push(['', '', '', '', '']);
   output.push(['ACTIVE CADENCES', '', '', '', '']);
-  const cadenceHeaderRow = output.length + 1;
   output.push(['Company', 'Founder', 'Stage', 'Next Follow-up', '']);
 
   activeCadences.forEach(c => {
@@ -195,17 +223,21 @@ function refreshDashboard() {
   ws.setColumnWidth(4, 130);
   ws.setColumnWidth(5, 110);
 
-  const sectionHeaders = [1, 4, 9, 16, 24];
-  sectionHeaders.forEach(r => {
-    ws.getRange(r, 1, 1, 5).setFontWeight('bold').setFontSize(r === 1 ? 14 : 11);
+  const sectionNames = ['TELESCOPE OUTREACH DASHBOARD', 'THIS WEEK', 'OVERVIEW', 'CADENCE FUNNEL', 'REPLIES', 'ACTIVE CADENCES'];
+  sectionNames.forEach(name => {
+    const idx = output.findIndex(r => r[0] === name);
+    if (idx >= 0) {
+      ws.getRange(idx + 1, 1, 1, 5).setFontWeight('bold').setFontSize(name === 'TELESCOPE OUTREACH DASHBOARD' ? 14 : 11);
+    }
   });
-  ws.getRange(25, 1, 1, 5).setFontWeight('bold');
-  const acHeader = output.findIndex(r => r[0] === 'ACTIVE CADENCES') + 1;
-  if (acHeader > 0) {
-    ws.getRange(acHeader, 1, 1, 5).setFontWeight('bold').setFontSize(11);
-    ws.getRange(acHeader + 1, 1, 1, 5).setFontWeight('bold');
-  }
+  const colHeaders = output.reduce((acc, r, i) => {
+    if (r[0] === 'Company' && (r[1] === 'Founder')) acc.push(i + 1);
+    return acc;
+  }, []);
+  colHeaders.forEach(r => ws.getRange(r, 1, 1, 5).setFontWeight('bold'));
   ws.getRange(2, 1).setFontColor('#888888').setFontSize(9);
+
+  snapshotWeeklyTrends(rows);
 
   Logger.log('Dashboard refreshed: ' + replies.length + ' replies, ' + activeCadences.length + ' active cadences.');
 }
@@ -344,6 +376,111 @@ function backfillLatest() {
   Logger.log('Backfilled ' + rows.length + ' rows (7 sent + 1 reply).');
 }
 
+function snapshotWeeklyTrends(rows) {
+  if (!rows) rows = _getActivityRows();
+  const ss = SpreadsheetApp.openById(SHEET_ID);
+
+  let ts = ss.getSheetByName(TRENDS_TAB);
+  if (!ts) {
+    ts = ss.insertSheet(TRENDS_TAB);
+    ts.getRange('A1:L1').setValues([[
+      'Week Starting', 'Outreach', 'Replies', 'Conversion %',
+      'E1 Drafted', 'E1 Sent', 'E2 Drafted', 'E2 Sent', 'E3 Drafted', 'E3 Sent',
+      'Bounced', 'Blocked'
+    ]]);
+    ts.getRange('A1:L1').setFontWeight('bold').setBackground('#1a1a2e').setFontColor('#ffffff');
+    ts.setFrozenRows(1);
+  }
+
+  const allDates = rows.map(r => new Date(r.Timestamp));
+  if (allDates.length === 0) return;
+
+  const minDate = new Date(Math.min.apply(null, allDates));
+  const maxDate = new Date(Math.max.apply(null, allDates));
+  const firstMonday = _mondayOf(minDate);
+  const lastMonday = _mondayOf(maxDate);
+
+  const weeks = [];
+  var cur = new Date(firstMonday);
+  while (cur <= lastMonday) {
+    weeks.push(new Date(cur));
+    cur.setDate(cur.getDate() + 7);
+  }
+
+  var weeklyData = weeks.map(function(ws) {
+    var we = new Date(ws);
+    we.setDate(we.getDate() + 7);
+    var wr = rows.filter(function(r) { var d = new Date(r.Timestamp); return d >= ws && d < we; });
+    var outreach = _uniqueCompanies(wr.filter(function(r) { return r['Email Stage'] === 'Email 1'; }), 'SENT');
+    var convos = _uniqueCompanies(wr, 'REPLIED');
+    var conv = outreach > 0 ? (convos / outreach * 100).toFixed(1) + '%' : '0.0%';
+    return [
+      ws.toISOString().split('T')[0],
+      outreach, convos, conv,
+      _uniqueCompanies(wr, 'DRAFT_CREATED'),
+      _uniqueCompanies(wr.filter(function(r) { return r['Email Stage'] === 'Email 1'; }), 'SENT'),
+      _uniqueCompanies(wr.filter(function(r) { return r['Email Stage'] === 'Email 2'; }), 'FOLLOWUP_DRAFTED'),
+      _uniqueCompanies(wr.filter(function(r) { return r['Email Stage'] === 'Email 2'; }), 'SENT'),
+      _uniqueCompanies(wr.filter(function(r) { return r['Email Stage'] === 'Email 3'; }), 'FOLLOWUP_DRAFTED'),
+      _uniqueCompanies(wr.filter(function(r) { return r['Email Stage'] === 'Email 3'; }), 'SENT'),
+      wr.filter(function(r) { return r.Action === 'BOUNCED'; }).length,
+      wr.filter(function(r) { return r.Action === 'GUARDRAIL_BLOCKED'; }).length
+    ];
+  });
+
+  var lastRow = ts.getLastRow();
+  if (lastRow > 1) ts.getRange(2, 1, lastRow - 1, 12).clear();
+
+  if (weeklyData.length > 0) {
+    ts.getRange(2, 1, weeklyData.length, 12).setValues(weeklyData);
+  }
+
+  var monthStart = weeklyData.length + 3;
+  var months = {};
+  weeklyData.forEach(function(w) {
+    var d = new Date(w[0]);
+    var key = d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2);
+    if (!months[key]) months[key] = { outreach: 0, replies: 0, e1d: 0, e1s: 0, e2d: 0, e2s: 0, e3d: 0, e3s: 0, bounced: 0, blocked: 0 };
+    months[key].outreach += w[1];
+    months[key].replies += w[2];
+    months[key].e1d += w[4];
+    months[key].e1s += w[5];
+    months[key].e2d += w[6];
+    months[key].e2s += w[7];
+    months[key].e3d += w[8];
+    months[key].e3s += w[9];
+    months[key].bounced += w[10];
+    months[key].blocked += w[11];
+  });
+
+  ts.getRange(monthStart, 1, 1, 12).setValues([['MONTHLY ROLLUP', '', '', '', '', '', '', '', '', '', '', '']]);
+  ts.getRange(monthStart, 1, 1, 12).setFontWeight('bold').setFontSize(11);
+  monthStart++;
+  ts.getRange(monthStart, 1, 1, 12).setValues([[
+    'Month', 'Outreach', 'Replies', 'Conversion %',
+    'E1 Drafted', 'E1 Sent', 'E2 Drafted', 'E2 Sent', 'E3 Drafted', 'E3 Sent',
+    'Bounced', 'Blocked'
+  ]]);
+  ts.getRange(monthStart, 1, 1, 12).setFontWeight('bold');
+  monthStart++;
+
+  var monthKeys = Object.keys(months).sort();
+  var monthRows = monthKeys.map(function(k) {
+    var m = months[k];
+    var conv = m.outreach > 0 ? (m.replies / m.outreach * 100).toFixed(1) + '%' : '0.0%';
+    return [k, m.outreach, m.replies, conv, m.e1d, m.e1s, m.e2d, m.e2s, m.e3d, m.e3s, m.bounced, m.blocked];
+  });
+
+  if (monthRows.length > 0) {
+    ts.getRange(monthStart, 1, monthRows.length, 12).setValues(monthRows);
+  }
+
+  ts.setColumnWidth(1, 120);
+  for (var i = 2; i <= 12; i++) ts.setColumnWidth(i, 100);
+
+  Logger.log('Trends snapshot updated: ' + weeklyData.length + ' weeks, ' + monthKeys.length + ' months.');
+}
+
 function _getActivityRows() {
   const ss = SpreadsheetApp.openById(SHEET_ID);
   const sheet = ss.getSheetByName(ACTIVITY_TAB);
@@ -368,6 +505,75 @@ function _mondayOf(d) {
   m.setDate(m.getDate() + diff);
   m.setHours(0, 0, 0, 0);
   return m;
+}
+
+function _hasReplied(sheet, domain, company) {
+  const domains = _getRepliedDomains(sheet);
+  const key = (domain || company || '').toLowerCase();
+  return domains.has(key);
+}
+
+function _getRepliedDomains(sheet) {
+  const data = sheet.getDataRange().getValues();
+  const domains = new Set();
+  for (let i = 1; i < data.length; i++) {
+    if (data[i][5] === 'REPLIED') {
+      const key = (data[i][2] || data[i][1] || '').toLowerCase();
+      if (key) domains.add(key);
+    }
+  }
+  return domains;
+}
+
+function logJune2Batch() {
+  const ss = SpreadsheetApp.openById(SHEET_ID);
+  const sheet = ss.getSheetByName(ACTIVITY_TAB);
+  const rows = [];
+
+  const sent = [
+    ['ZeroDrift','zerodrift.ai','Kumesh','kumesh@zerodrift.ai','19e8984272069ae0','2026-06-02T18:06:40Z'],
+    ['DesignVerse','designverse.ai','Andrei','andrei@designverse.ai','19e898317e41f044','2026-06-02T18:05:30Z'],
+    ['Nox Metals','noxmetals.co','Zane','zane@noxmetals.co','19e89825e99d8247','2026-06-02T18:04:43Z'],
+    ['Prox','useprox.com','Gregory','greg@useprox.com','19e898211b634709','2026-06-02T18:04:23Z'],
+    ['Kinth','kinth.ai','Arhon','arhons@kinth.ai','19e898164025cefc','2026-06-02T18:03:39Z'],
+    ['Nebula','trynebula.ai','Akshat','akshat@trynebula.ai','19e8981127019684','2026-06-02T18:03:18Z'],
+    ['Reviva','joinreviva.com','Valerie','valerie@joinreviva.com','19e897eb1af20820','2026-06-02T18:00:42Z'],
+    ['Fireproof','fireprooftech.com','Nate','nate@fireprooftech.com','19e897bea3679bc2','2026-06-02T17:57:40Z'],
+    ['Onetera','onetera.com','Felix','felix@onetera.com','19e897aed29f06b7','2026-06-02T17:56:35Z'],
+    ['Continuum','oncontinuum.com','Daniel','daniel@oncontinuum.com','19e897a4dc9c48e4','2026-06-02T17:55:54Z'],
+    ['Qued','qued.com','Prasad','prasad@qued.com','19e897952f5d55b4','2026-06-02T17:54:50Z'],
+    ['Paraglide','paraglide.ai','Rasmus','rasmus@paraglide.ai','19e897863fd55f60','2026-06-02T17:53:49Z'],
+    ['Zeit','zeit-ai.com','Leopold','leopold@zeit-ai.com','19e8977b01447a2b','2026-06-02T17:53:03Z'],
+    ['Olympian','getolympian.co','Brendan','brendan@getolympian.co','19e89769ecc2d869','2026-06-02T17:51:53Z'],
+    ['Tero','usetero.com','Ben','ben@usetero.com','19e8976066e15661','2026-06-02T17:51:14Z'],
+    ['Blue Pill','blue-pill.ai','Ankit','ad@blue-pill.ai','19e89746592d8f8b','2026-06-02T17:49:27Z'],
+    ['ThirdLaw','thirdlaw.io','Ed','ed@thirdlaw.io','19e8973d6450046c','2026-06-02T17:48:51Z'],
+    ['Ferry','deployferry.io','Ethan','ethan@deployferry.io','19e8972cb791998c','2026-06-02T17:47:42Z'],
+    ['Pensar','pensarai.com','Kyle','kyle@pensarai.com','19e897259903516b','2026-06-02T17:47:13Z'],
+    ['Frugal','frugal.co','Mike','mike@frugal.co','19e8971b871d14d5','2026-06-02T17:46:32Z'],
+    ['SAMMY Labs','sammylabs.com','Joe','joe@sammylabs.com','19e8971243dda35b','2026-06-02T17:45:54Z'],
+    ['Trace','trace.so','Tim','tim@trace.so','19e897040221c5f2','2026-06-02T17:44:56Z'],
+    ['Archie','heyarchie.ai','Stuart','stuart@heyarchie.ai','19e896c54fdedeb4','2026-06-02T17:40:39Z'],
+    ['Zalion','zalion.ai','Tim','tim.geyer@zalion.ai','19e896bd9ecf78e0','2026-06-02T17:40:07Z'],
+    ['Tofu','hiretofu.com','Jason','jason@hiretofu.com','19e896b55ab3f8ba','2026-06-02T17:39:33Z']
+  ];
+
+  sent.forEach(([co,dom,fn,em,tid,ts]) => {
+    rows.push([ts,co,dom,fn,em,'SENT','Email 1',tid,'']);
+  });
+
+  sent.filter(([co]) => co !== 'DesignVerse').forEach(([co,dom,fn,em,tid,ts]) => {
+    rows.push([ts,co,dom,fn,em,'FOLLOWUP_SCHEDULED','Email 2',tid,'Jun 4']);
+    rows.push([ts,co,dom,fn,em,'FOLLOWUP_SCHEDULED','Email 3',tid,'Jun 7']);
+    rows.push([ts,co,dom,fn,em,'FOLLOWUP_SCHEDULED','Email 4',tid,'Jun 9']);
+    rows.push([ts,co,dom,fn,em,'LINKEDIN_REMINDER_SET','',tid,'Connect Jun 5, Message Jun 8']);
+  });
+
+  rows.push(['2026-06-02T18:09:16Z','DesignVerse','designverse.ai','Andrei','andrei@designverse.ai','REPLIED','Email 1','19e898317e41f044','Planning Series A $40-50M by Sept']);
+
+  const lastRow = sheet.getLastRow();
+  sheet.getRange(lastRow + 1, 1, rows.length, 9).setValues(rows);
+  Logger.log('June 2 batch: ' + rows.length + ' rows logged.');
 }
 
 function _json(obj) {

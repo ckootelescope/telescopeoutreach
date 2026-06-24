@@ -11,7 +11,7 @@ When Calvin says "outreach to [URL]" or "reach out to [company]", YOU handle eve
 - **Affinity** — CRM, check for prior Telescope interactions
 - **Superhuman Mail** — create email drafts (create_or_update_draft, type "new", body as HTML)
 - **Gmail** — search sent threads for thread IDs after Calvin sends
-- **Google Calendar** — create LinkedIn connection reminders
+- **Google Calendar** — create LinkedIn connect reminders (Day 3) and LinkedIn message reminders (Day 6)
 
 ## Step-by-Step Execution
 
@@ -49,15 +49,15 @@ e) Multiple founders → default to CEO. Ambiguous → ask Calvin.
 **Problem 1: Editorializing instead of describing.**
 I kept adding thesis statements telling the reader what to think: "I think there's a massive opportunity to...", "is a huge deal", "nobody has really gone after this properly yet." Calvin's real emails describe the world as it is and let the reader draw the conclusion.
 
-GOOD: "I think there's a big opportunity to just let software handle that."
-GOOD: "I think there's a massive opportunity to own the financial infrastructure layer for these agencies and nobody has really gone after it properly yet."
-GOOD: "Building AI that can read every contract and actually catch when something doesn't match feels like a no-brainer, and I'm surprised nobody has done it well until now."
+BAD: "I think there's a big opportunity to just let software handle that."
+BAD: "I think there's a massive opportunity to own the financial infrastructure layer for these agencies and nobody has really gone after it properly yet."
+BAD: "Building AI that can read every contract and actually catch when something doesn't match feels like a no-brainer, and I'm surprised nobody has done it well until now."
 
-BAD: "They end up with the same problems as everyone else but none of the tools to deal with it."
-BAD: "It's one of those problems where the solution needs to be so simple that a contractor can set it up between jobs."
-BAD: "It's one of those workflows where everyone knows it's broken but they've just accepted it as how things work."
+GOOD: "They end up with the same problems as everyone else but none of the tools to deal with it."
+GOOD: "It's one of those problems where the solution needs to be so simple that a contractor can set it up between jobs."
+GOOD: "It's one of those workflows where everyone knows it's broken but they've just accepted it as how things work."
 
-The difference: Good writing expresses a personal opinion vs. stating something as a fact like AI would.
+The difference: good endings describe a state of the world. Bad endings tell the reader what to think about it.
 
 **Problem 2: Using the same template structure every time.**
 Every email followed the exact same flow: opener → product description → Telescope context → close. Calvin's real emails vary. Some lead with a question. Some lead with the founder's background. Some acknowledge competition. Some don't describe the product at all. Each email should feel like it was written from scratch.
@@ -80,14 +80,9 @@ I kept defaulting to the same "safe" phrases: "I think there's a big/huge/massiv
 **Problem 8: Not varying tone and approach.**
 Every email sounded the same because I used the same opener, same structure, same close. Calvin's real emails have personality. Some are blunt. Some ask questions. Some acknowledge the elephant in the room. The approach should match the company and the situation.
 
-**Problem 9: Never reference the founder's background in a corny way**
-Don't ever make a sentence that says because of your XXX background you must know how this is done. It's an absolutely shit and corny line."
-
-**Problem 10: DO NOT EVER DEVIATE FROM THE INSTRUCTIONS**
-DO NOT EVER DEVIATE FROM THE INSTRUCTIONS IN THIS SHEET AND INJECT YOUR OWN THOUGHT ON WHAT MIGHT LOOK GOOD"
-
 #### KILL LIST — NEVER USE THESE PHRASES
 
+- "I think there's a big/huge/massive opportunity to..."
 - "nobody has really gone after this properly yet"
 - "kind of crazy that nobody has built this"
 - "is a massive/huge opportunity"
@@ -104,11 +99,12 @@ DO NOT EVER DEVIATE FROM THE INSTRUCTIONS IN THIS SHEET AND INJECT YOUR OWN THOU
 - "take that off their plate"
 - "long overdue"
 - "is a no-brainer"
+- "is a smart wedge"
+- "I'm surprised nobody has done it well until now"
 - "real-time threat detection and predictive maintenance" or any jargon string copied from a website
 - "triage" / "auto-tune" / "edge-native" or any technical term a normal person wouldn't use
 - Any sentence that starts with "The fact that you..."
 - Any sentence that ends with "...is a massive opportunity"
-- "you and XXX have experience at"
 
 #### WHAT GOOD EMAILS LOOK LIKE
 
@@ -176,7 +172,10 @@ Don't follow a template. Pick the moves that fit the company:
 
 - Lead with an opinion about the space ("I love verticals where people have been tech-laggards")
 - Lead with a question ("I'd be curious how you're thinking about X given Y")
+- Lead with what you've been hearing from the market ("Every company I talk to has the same complaint")
 - Acknowledge competition ("Obviously a crowded market, but...")
+- Reference a specific detail that shows you looked ("I saw you just partnered with X")
+- Lead with the founder's background instead of the product
 - Name-drop a relevant portfolio connection naturally
 - Reference a prior Telescope interaction (only if verified at person level)
 - Keep it to 2-3 sentences and just ask for the meeting
@@ -214,9 +213,10 @@ Not every email needs all three. But the PATTERN is always the most important pa
 #### OPENER OPTIONS (vary these, don't always use the same one)
 
 1. "I'm a big fan of what you're building at [X] so wanted to reach out."
-2. "I heard great things about [X] so wanted to reach out."
-3. "I've been spending a lot of time in [space] and [Company] keeps coming up so wanted to reach out."
-4. "[Name] - [personal reference to something real]. I wanted to reach out because..."
+2. "I saw [specific announcement/update] so wanted to reach out."
+3. "I heard great things about [X] so wanted to reach out."
+4. "I've been spending a lot of time in [space] and [Company] keeps coming up so wanted to reach out."
+5. "[Name] - [personal reference to something real]. I wanted to reach out because..."
 
 DO NOT use "Hope you're doing well" — generic.
 
@@ -232,9 +232,10 @@ Or as a refresher: "As a quick refresher on us, Telescope is an early growth VC 
 
 #### CLOSE OPTIONS (vary these too)
 
+1. "Would love to get introduced over a quick Zoom in the coming weeks. Happy to be helpful in any way even if you're not raising. LMK your thoughts."
 2. "Would love to chat and we're happy to be helpful in any way even if you're not raising. LMK your thoughts."
 3. "Even if you're not raising - we'd love to see if we can make any relevant intros or be a sounding board moving forward. LMK if you're open to a quick chat in the next couple of weeks."
-4. "LMK if you're open to a quick Zoom - look forward to hearing back."
+4. "LMK if you're open to a quick Zoom — look forward to hearing back."
 
 #### RULES
 
@@ -254,17 +255,18 @@ Or as a refresher: "As a quick refresher on us, Telescope is an early growth VC 
 #### SUBJECT LINE (preference order)
 
 1. Personal connection: "fellow CMC grad | Telescope intro"
-3. Fallback: "Telescope <> [COMPANY] Intro
+2. Short tagline: "building the data layer for GCs | Telescope intro"
+3. Fallback: "[Company] + Telescope"
 
 #### SCHOOL CONNECTIONS
 
 - Calvin: Claremont McKenna (CMC), Claremont Consortium (Pomona, Harvey Mudd, Scripps, Pitzer), Harvard-Westlake
+- Harrison Doyle: CMC
 - If founder attended any → lead with it
 
 #### PORTFOLIO REFERENCES (mention ONE when relevant)
 
 - Construction: Harrison Doyle (Head of Ops) is ex-Procore VP of Finance
-- General: Mickey (our founder) Partner at Sequoia for 8  years before founding Telescope
 - Security: Chris worked with Axonius, JumpCloud
 - Infrastructure: Chris worked with Datadog
 - PLG: Chris worked with Calendly, Expensify, Otter AI
@@ -295,60 +297,140 @@ Use Superhuman MCP create_or_update_draft:
 - subject: creative subject line
 - body: email as HTML (div tags, br for line breaks)
 
-Tell Calvin: "Draft created for [Founder] at [Company]. Review in Superhuman and send when ready. LinkedIn: [URL]"
+Tell Calvin: "Draft created for [Founder] at [Company]. Review in Superhuman and send when ready."
 
 ### Step 4: After Calvin Says He Sent It
 
 a) Search Gmail: "from:me to:{founder_email} newer_than:7d"
 b) Extract thread ID and message ID
-c) Draft Email 2 and Email 3 content yourself (same writing rules apply)
-d) Calculate dates: Email 2 = send date + 2 days, Email 3 = Email 2 date + 5 days
-e) Generate workflow YAML from templates/followup_template.yml
-f) Push to GitHub via Contents API using PAT from .env
-g) Create LinkedIn calendar reminder (Step 5)
+c) Draft Email 2, Email 3, and Email 4 content yourself (same writing rules apply)
+d) Calculate dates from send date (Day 0):
+   - Email 2 = Day 0 + 2 days
+   - LinkedIn connect reminder = Day 0 + 3 days
+   - Email 3 = Day 0 + 5 days
+   - LinkedIn message reminder = Day 0 + 6 days
+   - Email 4 = Day 0 + 7 days
+e) Add Email 2, Email 3, and Email 4 entries to followups.json (see Follow-up Scheduler section)
+f) Push updated followups.json to GitHub via Contents API using PAT from .env — THIS IS CRITICAL, the scheduler only reads the remote file
+g) Create LinkedIn calendar reminders (Step 5) — one for Day 3 connect, one for Day 6 message
 h) Log to Google Sheet (Analytics section)
-i) Tell Calvin: "Follow-ups scheduled. Email 2 on [date], Email 3 on [date]."
+i) Tell Calvin: "Follow-ups scheduled. Email 2 on [date], LinkedIn connect on [date], Email 3 on [date], LinkedIn message on [date], Email 4 on [date]."
 
 ### Step 5: LinkedIn Integration
 
-Calvin sends LinkedIn connections manually. Make it effortless:
+Calvin sends LinkedIn connections and messages manually. Make it effortless:
 
 1. Grab LinkedIn URL during research
-2. Create Google Calendar event:
+
+**Day 3 — LinkedIn Connect:**
+Create Google Calendar event:
    - Title: "LinkedIn Connect: [Founder] — [Company]"
-   - Date: same day or next day after Email 1
+   - Date: Day 0 + 3 days
    - Time: 9:00 AM PT
    - Description: LinkedIn URL + suggested connection note
 
-Suggested notes (under 300 chars, super casual):
-- "Hey [Name] — just sent you a note about [Company]. Would love to connect here too."
-- "Hey [Name] — following up on my email - would love to chat about [COMPANY] when you have some time
+Suggested connection notes (under 300 chars, super casual):
+- "Hey [Name] — sent you a note recently about [Company]. Would love to connect here too."
+- "Hey [Name] — dropped you an email about [Company]. Let's connect."
 
-Full cadence: Day 0 Email 1 + LinkedIn, Day 2 Email 2, Day 7 Email 3.
+**Day 6 — LinkedIn Message:**
+Create Google Calendar event:
+   - Title: "LinkedIn Message: [Founder] — [Company]"
+   - Date: Day 0 + 6 days
+   - Time: 9:00 AM PT
+   - Description: LinkedIn URL + suggested message
+
+Suggested LinkedIn messages (short, casual, adds something new):
+- "Hey [Name] — been thinking more about [specific thing about their product/approach]. Would love to chat if you have a few minutes."
+- "Hey [Name] — saw [recent news/update about company] and thought it was cool. Happy to chat whenever works."
+
+LinkedIn messages should reference something specific, not just repeat the email. Keep under 300 chars.
+
+Full cadence: Day 0 Email 1, Day 2 Email 2, Day 3 LinkedIn connect, Day 5 Email 3, Day 6 LinkedIn message, Day 7 Email 4.
 
 ## Follow-up Email Guidelines
 
 Same writing rules as Email 1. Same kill list. Same audit step.
 
-**Email 2 (+48 hours):** New value — market insight, data point, genuine question. Never "just following up." Shorter than Email 1. No sign-off.
+### CRITICAL: Research Before Writing ANY Follow-up
 
-**Email 3 (+5 days after Email 2):** Portfolio anecdote or buyer-side signal. Shortest of all. End with "If now isn't the right time, totally understand." Never "last note from me." No sign-off.
+**NEVER batch-generate follow-up content without researching each company first.** This was the single biggest quality issue — follow-ups were generic market observations that showed zero knowledge of the actual product. Calvin had to rewrite every single one.
 
-## Pushing to GitHub
+Before writing Email 2, Email 3, or Email 4 for any company:
+1. **Web search** the company for recent news, product updates, blog posts
+2. **Fetch their website** to understand the actual product, features, and GTM
+3. Reference something **specific** about the company's product, strategy, or approach — not a generic industry observation
 
-PAT from .env. PUT to:
+### NEVER Fabricate Conversations
+
+**ABSOLUTE RULE: Do NOT write "was talking to someone who mentioned..." or "was chatting with a [title] recently who said..." unless referencing a REAL conversation** (like Chris actually talking to a portfolio company, or Harrison sharing a real Procore experience).
+
+Calvin cannot back up fabricated anecdotes. If a founder asks "who were you talking to?", Calvin has nothing to say. This destroys credibility immediately.
+
+**BAD hooks (fabricated):**
+- "was talking to a manufacturing exec recently who mentioned that indirect labor is the fastest-growing line item nobody tracks properly"
+- "was chatting with a CTO recently who mentioned that AI tool proliferation is creating a new version of the shadow IT problem"
+- "was talking to someone in aviation training recently and they mentioned that most flight schools still track student progress on whiteboards"
+
+**GOOD hooks (product-specific, verifiable):**
+- "I was looking at how you guys deliver recommendations directly into Outlook and Teams instead of making people log into another dashboard"
+- "I was looking at how you guys are going vertical into insurance and financial services rather than trying to be a generic call coaching tool"
+- "circling back on this — been thinking more about the [specific feature/approach] and curious how [specific question about their strategy]"
+
+### Email 2 (Day 2 — +2 days after Email 1)
+
+Short bump. Show you actually looked at the product. Reference a specific feature, integration, GTM approach, or strategic decision. Ask a genuine question about their strategy. Shorter than Email 1. No sign-off (signature is appended by scheduler).
+
+### Email 3 (Day 5 — +2 days after LinkedIn connect)
+
+More thoughtful and in-depth than Email 2. This is where you go deeper on the company — reference a specific case study, a strategic decision they made, a market dynamic that affects them, or a product detail that shows real understanding. This shouldn't feel like a bump; it should feel like Calvin spent time thinking about their business. Ask a substantive question that invites a real conversation. No sign-off (signature is appended by scheduler).
+
+### Email 4 (Day 7 — +2 days after LinkedIn message)
+
+Offer up something valuable. This is the last email touchpoint, so lead with value: a relevant intro Calvin can make, a portfolio company that solved a similar problem, a market insight from a recent conversation (REAL, not fabricated), or a specific resource. The tone should be generous, not salesy. End with "If now isn't the right time, totally understand." Never "last note from me." No sign-off (signature is appended by scheduler).
+
+## Follow-up Scheduler (centralized system)
+
+Follow-ups are managed via `followups.json` + a daily GitHub Actions workflow (`followup_scheduler.yml`) + local fallback.
+
+**How it works:**
+- `followup_scheduler.yml` runs 3x daily at 15:00, 16:00, 17:00 UTC (8am, 9am, 10am PT) via cron as backup
+- Primary: `node scripts/run_scheduler.js` can be run locally (auto-loads .env, fetches remote, pushes results)
+- It reads `followups.json`, processes all entries where `sendDate <= today` and `status === "pending"`
+- For each entry: checks Gmail for bounces/replies, skips if found, otherwise creates a draft
+- Updates entry status to `completed`, `replied`, or `bounced`
+- Script is idempotent — safe to run multiple times per day
+
+**Adding follow-up entries (Step 4e-f):**
+Add entries to the local `followups.json` `pending` array with this shape:
+```json
+{
+  "slug": "company_name",
+  "company": "Company Name",
+  "founder": "Founder Name",
+  "email": "founder@company.com",
+  "domain": "company.com",
+  "threadId": "gmail_thread_id",
+  "messageId": "gmail_message_id",
+  "subject": "Original email subject",
+  "body": "<div>HTML email body</div>",
+  "emailNumber": 2,
+  "sendDate": "2026-05-27",
+  "status": "pending"
+}
 ```
-https://api.github.com/repos/ckootelescope/telescopeoutreach/contents/.github/workflows/{filename}
-```
+Then IMMEDIATELY push to GitHub via Contents API:
+1. GET `https://api.github.com/repos/ckootelescope/telescopeoutreach/contents/followups.json` to get current SHA
+2. Strip CRLF (replace \r\n with \n), base64 encode the updated file
+3. PUT with `{ message, content, sha }` to the same URL
+
 Headers: Authorization Bearer {GH_PAT}, Accept application/vnd.github+json, X-GitHub-Api-Version 2022-11-28
 
-Files: followup_{slug}_email2.yml and email3.yml
-Cron: {random 10-39} 15 {day} {month} * (8am PT)
-Use templates/followup_template.yml, replace all placeholders.
+**CRITICAL: If you add entries to followups.json but don't push to remote, the scheduler will never see them. This is the #1 failure mode of this system. Always push immediately after adding entries.**
 
 ## Cancel Outreach
 
-Delete all followup_{slug}_* files from .github/workflows/ via GitHub API.
+Set status to "cancelled" for all entries matching the company slug in followups.json, then push the updated file to remote.
 
 ## Batch Mode
 
@@ -389,3 +471,49 @@ List 350032: Email 1 Drafted → Email 1 Sent → Responded / Bounced / Cancelle
 - James Winter — Head of Marketing
 - Erin Cruz — Finance/Compliance
 - Emily Spradlin — Office Coordinator
+
+## Weekly Team Email Format (updated 5/23/2026)
+
+Calvin's weekly team update follows this exact structure. Do NOT deviate.
+
+### Structure
+```
+Weekly Metrics
+• Company outreach: [number]
+• Company conversations: [count]
+• Customer/network outreach: [Calvin fills in]
+• Customer/network conversations: [Calvin fills in]
+
+Active Market Dives
+• [Calvin fills in or N/A]
+
+Companies Actively Working
+• [Calvin fills in or N/A]
+
+Company First Call Summaries
+• [Company Name](link)
+   • Product: [text]
+   • Why Now: [text]
+   • Metrics: [text]
+   • Next Steps: [text]
+```
+
+### Content Rules
+
+**Product** (1-2 lines): Lead with competitor/category context if relevant (e.g., "Buildcheck competitor -"). Simple explanation + who the customer is. No jargon.
+
+**Why Now** (1-2 lines MAX): Market thesis only — why this opportunity exists now. NOT founder backstory. NOT paragraphs. Tight and investment-focused.
+
+**Metrics** (1 line): Lead with ARR estimate ("Likely ~$1M ARR -") if not explicitly stated. Pack in numbers: customers, growth, ACV, NRR, team size, funding.
+
+**Next Steps** (1 line): Must include investment decision — pass/continue/follow-up timing with specific reasoning and dates. Examples: "communicate pass - prioritizing Buildcheck", "CG set up in-person coffee in LA on 5/29", "likely too early - check in later this year".
+
+### Data Source Priority for Meeting Notes
+Granola → Affinity → Fathom. Granola has Calvin's private notes and is the richest source.
+
+### Formatting
+- Use `•` bullets only (no other characters — they break in Gmail)
+- Bold category labels: **Product**, **Why Now**, **Metrics**, **Next Steps**
+- No "Reply Highlights" section unless requested
+- No sign-off — ends after last company
+- Section title is "Company First Call Summaries" NOT "Company Conversations"

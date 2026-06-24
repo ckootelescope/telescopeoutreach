@@ -147,8 +147,38 @@ async function createFollowUpDraft(accessToken) {
   return JSON.parse(res.body);
 }
 
+async function hasExistingReply(accessToken) {
+  try {
+    const range = encodeURIComponent(SHEET_TAB + '!A:I');
+    const res = await httpsRequest({
+      hostname: 'sheets.googleapis.com',
+      path: '/v4/spreadsheets/' + SHEET_ID + '/values/' + range,
+      method: 'GET',
+      headers: { 'Authorization': 'Bearer ' + accessToken }
+    });
+    if (res.statusCode !== 200) return false;
+    const rows = JSON.parse(res.body).values || [];
+    const domain = (COMPANY_DOMAIN || '').toLowerCase();
+    const company = (COMPANY_NAME || '').toLowerCase();
+    for (let i = 1; i < rows.length; i++) {
+      if ((rows[i][5] || '').trim() === 'REPLIED') {
+        const rowDomain = (rows[i][2] || '').trim().toLowerCase();
+        const rowCompany = (rows[i][1] || '').trim().toLowerCase();
+        if ((domain && rowDomain === domain) || (company && rowCompany === company)) return true;
+      }
+    }
+  } catch (err) {
+    console.log('Warning: Reply check failed, proceeding: ' + err.message);
+  }
+  return false;
+}
+
 async function logToSheet(accessToken, event, emailStage, notes) {
   try {
+    if (event === 'REPLIED' && await hasExistingReply(accessToken)) {
+      console.log('Skipped logging: REPLIED already exists for ' + COMPANY_NAME);
+      return;
+    }
     const row = [
       new Date().toISOString(),
       COMPANY_NAME, COMPANY_DOMAIN, FOUNDER_NAME, FOUNDER_EMAIL,

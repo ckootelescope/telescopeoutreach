@@ -1,0 +1,412 @@
+[
+  {
+    "slug": "eddifi",
+    "company": "Eddifi",
+    "founder": "Jeremy",
+    "email": "jeremy@eddifi.ai",
+    "emailNumber": 4,
+    "threadId": "19e6a439ea1cdf87",
+    "subject": "Telescope <> Eddifi",
+    "body": "<div>Jeremy, one last thought. We invested in MedTrainer, which does compliance and training software for healthcare organizations, and there are real parallels between how they navigated selling into large institutional buyers with complex regulatory requirements. If it would be useful, happy to connect you with someone on that team who's been through a similar sales cycle.<br><br>If now isn't the right time, totally understand.</div>"
+  },
+  {
+    "slug": "helmet_security",
+    "company": "Helmet Security",
+    "founder": "Fred",
+    "email": "fred@helmetsecurity.com",
+    "emailNumber": 4,
+    "threadId": "19e6a41178229ba0",
+    "subject": "MCP security gap | Telescope intro",
+    "body": "<div>Fred, one last thought. Chris Gaertner on our team worked closely with Axonius during its growth phase, and there are real parallels between what they built for asset visibility and what Helmet is doing for MCP server visibility. If it would be useful to compare notes on category creation and early enterprise sales motion in security infrastructure, happy to connect you two directly.<br><br>If now isn't the right time, totally understand.</div>"
+  },
+  {
+    "slug": "codecomply",
+    "company": "CodeComply",
+    "founder": "Patrick",
+    "email": "phughes@codecomply.ai",
+    "emailNumber": 4,
+    "threadId": "19e6a3fecf94880b",
+    "subject": "Telescope <> CodeComply | Construction Discussion",
+    "body": "<div>Patrick, one more thought. Harrison Doyle on our team was VP of Finance at Procore, so he spent years watching how construction software gets adopted and where the resistance shows up. If it would be useful to get his perspective on selling into the AEC space, happy to make that connection.<br><br>If now isn't the right time, totally understand.</div>"
+  },
+  {
+    "slug": "userjourneys",
+    "company": "UserJourneys",
+    "founder": "Lauri",
+    "email": "lauri@userjourneys.ai",
+    "emailNumber": 4,
+    "threadId": "19e6a3b81b96de31",
+    "subject": "Telescope <> UserJourneys Intro",
+    "body": "<div>Lauri, last thought from me. We've worked closely with companies in the PLG space like Calendly and Expensify, and the analytics-to-action gap you're solving is something that comes up constantly. If it would be useful, happy to connect you with a couple of product leaders in our network who are actively trying to solve this problem.<br><br>If now isn't the right time, totally understand.</div>"
+  },
+  {
+    "slug": "simple",
+    "company": "Simple",
+    "founder": "Catheryn",
+    "email": "catheryn@usesimple.ai",
+    "emailNumber": 4,
+    "threadId": "19e6a3ae41373663",
+    "subject": "Telescope <> Simple",
+    "body": "<div>Catheryn, one more thought. We invested in Fathom (meeting recorder) and Chris worked with Otter AI, so we've seen the voice AI space evolve from different angles. If it would be useful to compare notes on how those companies navigated enterprise sales and the audio quality bar that buyers care about, happy to make an intro.<br><br>If now isn't the right time, totally understand.</div>"
+  },
+  {
+    "slug": "anchor_browser",
+    "company": "Anchor Browser",
+    "founder": "Idan",
+    "email": "idan@anchorbrowser.io",
+    "emailNumber": 4,
+    "threadId": "19e6a176f8456732",
+    "subject": "security-first browser infra | Telescope intro",
+    "body": "<div>Idan, one last thought. Chris Gaertner on our team has deep relationships in the security infrastructure space from his work with Axonius and JumpCloud. If it would be useful to get introductions to CISOs and security leaders who are evaluating how to manage AI agent access in their environments, happy to make those connections.<br><br>If now isn't the right time, totally understand.</div>"
+  },
+  {
+    "slug": "arga_labs",
+    "company": "Arga Labs",
+    "founder": "Phillip",
+    "email": "phillip@argalabs.com",
+    "emailNumber": 4,
+    "threadId": "19e6a14758ebf4f0",
+    "subject": "Telescope <> Arga Connect",
+    "body": "<div>Phillip, one more thought. We've worked with companies across the dev tools and infrastructure space, and Chris on our team has experience with Datadog and companies building developer-facing products. If it would be useful to compare notes on pricing models and enterprise sales motion for infrastructure tools, happy to make an intro.<br><br>If now isn't the right time, totally understand.</div>"
+  },
+  {
+    "slug": "edwin",
+    "company": "Edwin",
+    "founder": "Peter Rogers",
+    "email": "peter@edwingov.com",
+    "emailNumber": 2,
+    "threadId": "19e84ecff815ec50",
+    "subject": "Telescope <> Edwin Intro",
+    "body": "<div>Hey Peter, circling back on this. I was looking at the benchmarking tool you guys built, where treasurers can compare their portfolio against similar-sized agencies by region. I think that's a really smart wedge into the sale because it gives someone a reason to engage before they've even committed to switching anything. Curious how you're seeing adoption there and whether it's pulling in inbound interest or if it's more of a sales enablement tool once you're already in a conversation.</div>"
+  },
+  {
+    "slug": "alpa",
+    "company": "Alpa",
+    "founder": "Anton Soulier",
+    "email": "anton@alpacap.com",
+    "emailNumber": 2,
+    "threadId": "19e84ed79f6fe45c",
+    "subject": "Telescope <> Alpa Intro",
+    "body": "<div>Hey Anton, circling back on this. I was looking at how you guys deliver a weekly P&L to operators every Monday morning by pulling from POS, banking, and supplier invoices automatically. I think that's the right approach because most restaurant owners don't need a dashboard, they need someone to just tell them what happened last week. Curious whether you're seeing more traction with single-location operators or multi-site groups at this stage.</div>"
+  },
+  {
+    "slug": "alguna",
+    "company": "Alguna",
+    "founder": "Aleks Djekic",
+    "email": "aleks@alguna.io",
+    "emailNumber": 2,
+    "threadId": "19e84edcefd709dc",
+    "subject": "Alguna + Telescope",
+    "body": "<div>Hey Aleks, circling back on this. I was looking at the Haven AI case study where they cut billing prep time by 80% after switching to you guys. I think that speaks to a real pain point, especially for AI companies where usage-based billing adds a ton of complexity that most teams just hack together with scripts and spreadsheets. Curious how much of the initial pull is coming from AI-native companies versus more traditional SaaS at this point.</div>"
+  },
+  {
+    "slug": "internet_backyard",
+    "company": "Internet Backyard",
+    "founder": "Mai Trinh",
+    "email": "mai@internetbackyard.com",
+    "emailNumber": 2,
+    "threadId": "19e84ee5a220529f",
+    "subject": "Telescope <> Internet Backyard Intro",
+    "body": "<div>Hey Mai, circling back on this. I was reading your piece on why a token isn't actually a commodity, the argument that identical token counts reflect totally different economics depending on model size, hardware, and infrastructure choices. I think that framing is really clear and gets at why the financial layer needs to sit beneath the token, not on top of it. Curious whether data center operators or the AI companies buying compute are driving more of the initial pull for gnomos.</div>"
+  },
+  {
+    "slug": "ramain",
+    "company": "RamAIn",
+    "founder": "Shourya Vir Jain",
+    "email": "shourya@ramain.ai",
+    "emailNumber": 2,
+    "threadId": "19e84eeb8d785bdb",
+    "subject": "UI automation for legacy systems | Telescope intro",
+    "body": "<div>Hey Shourya, circling back on this. I was looking at how your agents learn UI policies and interface structures rather than deciding action-by-action, which I think is a smart distinction vs. the computer-use agents from OpenAI/Anthropic/Google. Curious how much of the self-healing actually works in practice when a portal completely redesigns its layout vs. just moving a button around.</div>"
+  },
+  {
+    "slug": "quash",
+    "company": "Quash",
+    "founder": "Yoel Gavlovski",
+    "email": "yoel@quash.ai",
+    "emailNumber": 2,
+    "threadId": "19e84eee089017d7",
+    "subject": "alternative credit scoring | Telescope intro",
+    "body": "<div>Hey Yoel, circling back on this. I was looking at the Credy tool and I think the idea of letting loan officers ask questions in plain English instead of needing a data team to run every analysis is really interesting. Curious how much of the adoption is loan officers actually using it day-to-day vs. it being more of a back-office tool right now.</div>"
+  },
+  {
+    "slug": "balancedtrust",
+    "company": "BalancedTrust",
+    "founder": "Travis Dulaney",
+    "email": "tdulaney@balanced-trust.com",
+    "emailNumber": 2,
+    "threadId": "19e84f1aa8a3cff4",
+    "subject": "bank-fintech compliance | Telescope intro",
+    "body": "<div>Hey Travis, circling back on this. I was looking at the Coinbax partnership and I think the approach of embedding compliance checks directly into the settlement layer is interesting rather than bolting it on after the fact. Curious how banks are reacting to that model vs. the traditional approach of running compliance as a separate workflow.</div>"
+  },
+  {
+    "slug": "kotini",
+    "company": "Kotini",
+    "founder": "Kieran Witt",
+    "email": "kieran@kotini.co.uk",
+    "emailNumber": 2,
+    "threadId": "19e84f1e1cc54b65",
+    "subject": "proptech compliance | Telescope intro",
+    "body": "<div>Hey Kieran, circling back on this. I was looking at how you guys handle pricing, letting agencies pass the admin fee to the client instead of paying out of pocket. I think that's a smart way to remove the cost objection entirely. Curious how the split looks between agencies using the free model vs. pay-as-you-go.</div>"
+  },
+  {
+    "slug": "justwin",
+    "company": "JustWin",
+    "founder": "Ted Baxa",
+    "email": "ted@justwin.ai",
+    "emailNumber": 2,
+    "threadId": "19e84f34c33c2dd9",
+    "subject": "Telescope <> JustWin Intro",
+    "body": "<div>Hey Ted, circling back on this. I was looking at the competitive intelligence feature where you pull competitor proposals through public records requests automatically. I think that's a clever angle since most companies bidding on government contracts are flying blind on what actually won last time. Curious how much of the value prop customers respond to first, the opportunity discovery side or the competitive intel side.</div>"
+  },
+  {
+    "slug": "rama",
+    "company": "Rama",
+    "founder": "Matt Francis",
+    "email": "matt@tryrama.com",
+    "emailNumber": 2,
+    "threadId": "19e84f731eb026df",
+    "subject": "Telescope <> Rama Intro",
+    "body": "<div>Hey Matt, circling back on this. I was looking at how you guys handle the supplier pricing side, pulling live data from 700+ brokers and distributors and surfacing cheaper alternatives automatically. I think that's the piece that makes this sticky beyond just speeding up quotes. Curious how distributors typically react when they see the pricing gaps for the first time.</div>"
+  },
+  {
+    "slug": "petra_security",
+    "company": "Petra Security",
+    "founder": "Cooper Edmunds",
+    "email": "cooper@petrasecurity.com",
+    "emailNumber": 2,
+    "threadId": "19e84f9535a0b024",
+    "subject": "Telescope <> Petra Intro",
+    "body": "<div>Hey Cooper, circling back on this. I was looking at the AME Group case study, 133 BEC attacks caught in 144 days with a 56-second mean time to containment. What stood out is that they deployed across 300+ tenants in a single day. Curious how much of the sales motion is driven by MSPs seeing gaps in what Huntress or Blackpoint are catching vs. you guys proactively showing them.</div>"
+  },
+  {
+    "slug": "domu",
+    "company": "Domu",
+    "founder": "Nico Diaz",
+    "email": "nico@domu.ai",
+    "emailNumber": 2,
+    "threadId": "19e84f9a5dd3dfe1",
+    "subject": "Domu + Telescope",
+    "body": "<div>Hey Nico, circling back on this. I was reading about how your agents adapt accent and dialect based on who they're calling, like varying the Spanish accent for Mexico vs. Colombia. I think that level of nuance is what separates this from a generic voice bot that just reads a script. Curious how much of the engagement lift you're seeing comes from those adaptive personality features vs. just the basics of timing and channel optimization.</div>"
+  },
+  {
+    "slug": "certo",
+    "company": "Certo",
+    "founder": "Bastien Deliege-Coste",
+    "email": "bastien@askcerto.com",
+    "emailNumber": 2,
+    "threadId": "19e84fa3be72ea7f",
+    "subject": "Telescope <> Certo",
+    "body": "<div>Hey Bastien, circling back on this. I was looking at how you guys structured the platform around five distinct modules, ingredient validation, formula compliance, claims, labelling, and market entry. I think starting with the full workflow instead of just one piece makes it harder for customers to outgrow you. Curious whether most customers are adopting all five from day one or starting with one and expanding.</div>"
+  },
+  {
+    "slug": "zerodrift",
+    "company": "ZeroDrift",
+    "founder": "Kumesh",
+    "email": "kumesh@zerodrift.ai",
+    "emailNumber": 2,
+    "threadId": "19e8984272069ae0",
+    "subject": "congrats on the raise | Telescope intro",
+    "body": "<div>Hey Kumesh, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "nox_metals",
+    "company": "Nox Metals",
+    "founder": "Zane",
+    "email": "zane@noxmetals.co",
+    "emailNumber": 2,
+    "threadId": "19e89825e99d8247",
+    "subject": "Nox Metals + Telescope",
+    "body": "<div>Hey Zane, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "prox",
+    "company": "Prox",
+    "founder": "Gregory",
+    "email": "greg@useprox.com",
+    "emailNumber": 2,
+    "threadId": "19e898211b634709",
+    "subject": "Prox + Telescope",
+    "body": "<div>Hey Gregory, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "kinth",
+    "company": "Kinth",
+    "founder": "Arhon",
+    "email": "arhons@kinth.ai",
+    "emailNumber": 2,
+    "threadId": "19e898164025cefc",
+    "subject": "Kinth + Telescope",
+    "body": "<div>Hey Arhon, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "nebula",
+    "company": "Nebula",
+    "founder": "Akshat",
+    "email": "akshat@trynebula.ai",
+    "emailNumber": 2,
+    "threadId": "19e8981127019684",
+    "subject": "Telescope <> Nebula Intro",
+    "body": "<div>Hey Akshat, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "reviva",
+    "company": "Reviva",
+    "founder": "Valerie",
+    "email": "valerie@joinreviva.com",
+    "emailNumber": 2,
+    "threadId": "19e897eb1af20820",
+    "subject": "Reviva + Telescope",
+    "body": "<div>Hey Valerie, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "fireproof",
+    "company": "Fireproof",
+    "founder": "Nate",
+    "email": "nate@fireprooftech.com",
+    "emailNumber": 2,
+    "threadId": "19e897bea3679bc2",
+    "subject": "Fireproof + Telescope",
+    "body": "<div>Hey Nate, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "continuum",
+    "company": "Continuum",
+    "founder": "Daniel",
+    "email": "daniel@oncontinuum.com",
+    "emailNumber": 2,
+    "threadId": "19e897a4dc9c48e4",
+    "subject": "Continuum + Telescope",
+    "body": "<div>Hey Daniel, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "qued",
+    "company": "Qued",
+    "founder": "Prasad",
+    "email": "prasad@qued.com",
+    "emailNumber": 2,
+    "threadId": "19e897952f5d55b4",
+    "subject": "Telescope <> Qued Intro",
+    "body": "<div>Hey Prasad, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "zeit",
+    "company": "Zeit",
+    "founder": "Leopold",
+    "email": "leopold@zeit-ai.com",
+    "emailNumber": 2,
+    "threadId": "19e8977b01447a2b",
+    "subject": "Zeit + Telescope",
+    "body": "<div>Hey Leopold, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "olympian",
+    "company": "Olympian",
+    "founder": "Brendan",
+    "email": "brendan@getolympian.co",
+    "emailNumber": 2,
+    "threadId": "19e89769ecc2d869",
+    "subject": "Telescope <> Olympian",
+    "body": "<div>Hey Brendan, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "tero",
+    "company": "Tero",
+    "founder": "Ben",
+    "email": "ben@usetero.com",
+    "emailNumber": 2,
+    "threadId": "19e8976066e15661",
+    "subject": "Telescope <> Tero Intro",
+    "body": "<div>Hey Ben, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "thirdlaw",
+    "company": "ThirdLaw",
+    "founder": "Ed",
+    "email": "ed@thirdlaw.io",
+    "emailNumber": 2,
+    "threadId": "19e8973d6450046c",
+    "subject": "Telescope <> Thirdlaw",
+    "body": "<div>Hey Ed, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "ferry",
+    "company": "Ferry",
+    "founder": "Ethan",
+    "email": "ethan@deployferry.io",
+    "emailNumber": 2,
+    "threadId": "19e8972cb791998c",
+    "subject": "Telescope <> Ferry Intro",
+    "body": "<div>Hey Ethan, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "pensar",
+    "company": "Pensar",
+    "founder": "Kyle",
+    "email": "kyle@pensarai.com",
+    "emailNumber": 2,
+    "threadId": "19e897259903516b",
+    "subject": "Pensar + Telescope",
+    "body": "<div>Hey Kyle, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "frugal",
+    "company": "Frugal",
+    "founder": "Mike",
+    "email": "mike@frugal.co",
+    "emailNumber": 2,
+    "threadId": "19e8971b871d14d5",
+    "subject": "Telescope <> Frugal Connect",
+    "body": "<div>Hey Mike, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "sammy_labs",
+    "company": "SAMMY Labs",
+    "founder": "Joe",
+    "email": "joe@sammylabs.com",
+    "emailNumber": 2,
+    "threadId": "19e8971243dda35b",
+    "subject": "SAMMY Labs + Telescope",
+    "body": "<div>Hey Joe, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "trace",
+    "company": "Trace",
+    "founder": "Tim",
+    "email": "tim@trace.so",
+    "emailNumber": 2,
+    "threadId": "19e897040221c5f2",
+    "subject": "Trace + Telescope",
+    "body": "<div>Hey Tim, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "archie",
+    "company": "Archie",
+    "founder": "Stuart",
+    "email": "stuart@heyarchie.ai",
+    "emailNumber": 2,
+    "threadId": "19e896c54fdedeb4",
+    "subject": "AI accounting | Telescope intro",
+    "body": "<div>Hey Stuart, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "zalion",
+    "company": "Zalion",
+    "founder": "Tim",
+    "email": "tim.geyer@zalion.ai",
+    "emailNumber": 2,
+    "threadId": "19e896bd9ecf78e0",
+    "subject": "Telescope <> Zalion",
+    "body": "<div>Hey Tim, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  },
+  {
+    "slug": "tofu",
+    "company": "Tofu",
+    "founder": "Jason",
+    "email": "jason@hiretofu.com",
+    "emailNumber": 2,
+    "threadId": "19e896b55ab3f8ba",
+    "subject": "Telescope <> Tofu Intro",
+    "body": "<div>Hey Jason, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>"
+  }
+]
