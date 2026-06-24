@@ -5445,8 +5445,9 @@
       "subject": "Telescope <> Atomic Insights Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Lucas,<br><br>For what it's worth, Chris on our team has spent a lot of time around fintech infrastructure and would love to compare notes on the space. Happy to set up a quick intro if you're open to it.</div>"
+      "status": "completed",
+      "body": "<div>Hey Lucas,<br><br>For what it's worth, Chris on our team has spent a lot of time around fintech infrastructure and would love to compare notes on the space. Happy to set up a quick intro if you're open to it.</div>",
+      "processedAt": "2026-06-24T17:02:34.251Z"
     },
     {
       "slug": "atomic-insights",
@@ -5488,8 +5489,9 @@
       "subject": "Telescope <> Sapien Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Tony,<br><br>Chris on our team was early to Fathom and has seen firsthand how AI wedges tend to expand once the initial workflow is nailed. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Tony,<br><br>Chris on our team was early to Fathom and has seen firsthand how AI wedges tend to expand once the initial workflow is nailed. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-06-24T17:02:36.889Z"
     },
     {
       "slug": "sapien",
@@ -5531,8 +5533,9 @@
       "subject": "Telescope <> Haladir Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Jibran,<br><br>Chris on our team worked closely with Project44 and Parabola as they scaled and would be happy to share what he's seen from the supply chain software side. Happy to set up a quick intro if useful.</div>"
+      "status": "replied",
+      "body": "<div>Hey Jibran,<br><br>Chris on our team worked closely with Project44 and Parabola as they scaled and would be happy to share what he's seen from the supply chain software side. Happy to set up a quick intro if useful.</div>",
+      "processedAt": "2026-06-24T17:02:38.772Z"
     },
     {
       "slug": "haladir",
@@ -5574,8 +5577,9 @@
       "subject": "Telescope <> chrt Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Chris on our team was early to Project44 and Parabola and has a good feel for what works in logistics software. Happy to connect you two if you're open to it.</div>"
+      "status": "completed",
+      "body": "<div>Hey Kyle,<br><br>Chris on our team was early to Project44 and Parabola and has a good feel for what works in logistics software. Happy to connect you two if you're open to it.</div>",
+      "processedAt": "2026-06-24T17:02:41.341Z"
     },
     {
       "slug": "chrt",
@@ -5617,8 +5621,9 @@
       "subject": "fellow CMC grad | Telescope intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Daniel,<br><br>As mentioned, we're investors in Gipper and have seen firsthand how much traction there is in helping sports organizations level up their content and operations. Would be great to compare notes as a fellow Stag.</div>"
+      "status": "replied",
+      "body": "<div>Hey Daniel,<br><br>As mentioned, we're investors in Gipper and have seen firsthand how much traction there is in helping sports organizations level up their content and operations. Would be great to compare notes as a fellow Stag.</div>",
+      "processedAt": "2026-06-24T17:02:43.147Z"
     },
     {
       "slug": "arkero",
@@ -5660,8 +5665,9 @@
       "subject": "Telescope <> Brick Dynamics Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Tom,<br><br>Chris on our team has spent a lot of time around vertical SaaS companies like ShopGenie and Mangomint that serve multi-location businesses. Happy to connect you two if useful.</div>"
+      "status": "replied",
+      "body": "<div>Hey Tom,<br><br>Chris on our team has spent a lot of time around vertical SaaS companies like ShopGenie and Mangomint that serve multi-location businesses. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-06-24T17:02:44.866Z"
     },
     {
       "slug": "brick-dynamics",
@@ -5703,8 +5709,9 @@
       "subject": "Telescope <> Ai Lean Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Luke,<br><br>Chris on our team invested in companies like Logikcull and Persuit in the legal and compliance space and has a good perspective on how compliance automation scales. Happy to connect you two if helpful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Luke,<br><br>Chris on our team invested in companies like Logikcull and Persuit in the legal and compliance space and has a good perspective on how compliance automation scales. Happy to connect you two if helpful.</div>",
+      "processedAt": "2026-06-24T17:02:47.429Z"
     },
     {
       "slug": "ai-lean",
@@ -5746,8 +5753,9 @@
       "subject": "Telescope <> RAYVN Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Oyvind,<br><br>For what it's worth, we've helped several European companies think through their US expansion strategy and would be happy to share what we've seen work. The buyer dynamics are different here but the opportunity is massive.</div>"
+      "status": "completed",
+      "body": "<div>Hey Oyvind,<br><br>For what it's worth, we've helped several European companies think through their US expansion strategy and would be happy to share what we've seen work. The buyer dynamics are different here but the opportunity is massive.</div>",
+      "processedAt": "2026-06-24T17:02:49.928Z"
     },
     {
       "slug": "rayvn",
@@ -5789,8 +5797,9 @@
       "subject": "Telescope <> GoodDay Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Chris on our team worked closely with Postscript and Chargeflow in the e-commerce space and has a good feel for what resonates with Shopify brands. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Kyle,<br><br>Chris on our team worked closely with Postscript and Chargeflow in the e-commerce space and has a good feel for what resonates with Shopify brands. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-06-24T17:02:52.636Z"
     },
     {
       "slug": "goodday",
@@ -5832,8 +5841,9 @@
       "subject": "Telescope <> eCourtDate Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Ibrahim,<br><br>Chris on our team has spent time around vertical SaaS companies that sell to government and understands the procurement challenges firsthand. Happy to compare notes or make intros if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ibrahim,<br><br>Chris on our team has spent time around vertical SaaS companies that sell to government and understands the procurement challenges firsthand. Happy to compare notes or make intros if useful.</div>",
+      "processedAt": "2026-06-24T17:02:55.752Z"
     },
     {
       "slug": "ecourtdate",
@@ -5875,8 +5885,9 @@
       "subject": "Telescope <> Scopito Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Ken,<br><br>We've helped a handful of European companies think through US market entry and would be happy to share what we've seen work. The US utility market is massive but the buyer dynamics are different from Europe.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ken,<br><br>We've helped a handful of European companies think through US market entry and would be happy to share what we've seen work. The US utility market is massive but the buyer dynamics are different from Europe.</div>",
+      "processedAt": "2026-06-24T17:02:58.220Z"
     },
     {
       "slug": "scopito",
@@ -5918,8 +5929,9 @@
       "subject": "Telescope <> eHawk Intro",
       "emailNumber": 3,
       "sendDate": "2026-06-24",
-      "status": "pending",
-      "body": "<div>Hey Ted,<br><br>Chris on our team has done a lot of work in vertical SaaS and govtech and understands the government procurement cycle well. Happy to set up a quick intro if helpful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ted,<br><br>Chris on our team has done a lot of work in vertical SaaS and govtech and understands the government procurement cycle well. Happy to set up a quick intro if helpful.</div>",
+      "processedAt": "2026-06-24T17:03:01.657Z"
     },
     {
       "slug": "ehawk",
