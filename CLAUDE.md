@@ -15,29 +15,57 @@ When Calvin says "outreach to [URL]" or "reach out to [company]", YOU handle eve
 
 ## Step-by-Step Execution
 
-### Step 1: Research
+### Step 1: Research (RUNS IN A SUBAGENT)
 
+**This step MUST run in a separate subagent (Agent tool).** The subagent does all MCP lookups and returns ONLY a structured Writing Brief. This is an architectural guardrail: founder career history, resume data, prior companies, and website marketing copy never enter the main writing context, so they cannot leak into the email.
+
+#### Subagent instructions
+
+The research subagent performs:
 a) **Web search** the company AND **fetch their website** to understand what they actually do
 b) **Harmonic get_companies** with website domain (field_groups: name_id_description_headcount_website, funding, founders_ceo, highlights, location, contact)
 c) **Affinity search_companies** with company name, with_interaction_dates: true
-   - Within 90 days → STOP and ask Calvin
+   - Within 90 days → return affinity_block: true with details so main context can ask Calvin
    - Prior history (>90 days) → check WHO was contacted at the person level. Never assume.
 d) **Apollo apollo_people_match** for founder email + LinkedIn if Harmonic doesn't have them
-e) Multiple founders → default to CEO. Ambiguous → ask Calvin.
+e) Multiple founders → default to CEO. Ambiguous → return all names so main context can ask Calvin.
 
-**CRITICAL: Always verify what the company actually does by reading their website. Do NOT rely on Harmonic descriptions alone. Multiple drafts have been wrong because the company was described incorrectly.**
+**CRITICAL: Always verify what the company actually does by reading their website. Do NOT rely on Harmonic descriptions alone.**
+
+#### Writing Brief (the ONLY output the subagent returns)
+
+The subagent returns EXACTLY these fields and NOTHING ELSE:
+
+```
+company_name: [name]
+domain: [domain]
+what_they_do: [1-2 sentences in plain language describing what the company does, written as Calvin would explain it to a friend. NO marketing copy, NO jargon, NO website language.]
+founder_first_name: [first name]
+founder_last_name: [last name]
+founder_email: [email]
+founder_linkedin: [URL]
+real_calvin_connections: [ONLY: shared school (CMC, Claremont, Harvard-Westlake), shared industry (Calvin's Sunstone tech-services background), someone Calvin actually knows. If none, leave blank.]
+portfolio_tie_in: [relevant Telescope portfolio company or team member connection, if any. If none, leave blank.]
+affinity_status: [no prior interaction / prior interaction >90 days with details / BLOCKED within 90 days]
+funding_stage: [last known round + amount, if public. If unknown, leave blank.]
+trigger: [specific recent event like partnership, funding announcement, expansion. If none, leave blank.]
+headcount: [approximate, if known]
+```
+
+**The subagent MUST NOT return:** founder's career history, prior companies, prior exits, education (unless shared school with Calvin), LinkedIn summary, job titles at previous companies, quotes from press, website copy, technical product descriptions, or any other data not listed above.
 
 ### Step 2: Draft Email 1
 
+The main context receives ONLY the Writing Brief above. The email is written from this brief + the templates below. Nothing else.
+
 #### HOW TO WRITE THE EMAIL
 
-**Step 1: Research.** Read the website, Harmonic data, any press.
+**Step 1: Read the Writing Brief.** That is your only input. You do not have access to the founder's background, career history, or website copy. This is intentional.
 
-**Step 2: Close the tab.** Do NOT pull language from their website, press releases, marketing copy, or investor announcements.
+**Step 2: Ask yourself:** "How would Calvin explain what this company does and why it matters to a friend over drinks?" Write THAT.
 
-**Step 3: Ask yourself:** "How would Calvin explain what this company does and why it matters to a friend over drinks?" Write THAT.
-
-**Step 4: Audit.** Before finalizing, re-read every sentence and check:
+**Step 3: Audit.** Before finalizing, re-read every sentence and check:
+- Does every piece of information in this email come from the Writing Brief fields? If I'm referencing something not in the brief (founder's past companies, career history, education), DELETE IT. That data was excluded for a reason.
 - Did I describe what the customer's day actually looks like, or did I just summarize the product?
 - Does any sentence sound like it could appear on a company's About page? If yes, rewrite.
 - Did I use any phrase from the kill list? If yes, rewrite.
