@@ -5460,8 +5460,9 @@
       "subject": "Telescope <> Atomic Insights Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Lucas,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected for whenever it makes sense.</div>"
+      "status": "completed",
+      "body": "<div>Hey Lucas,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected for whenever it makes sense.</div>",
+      "processedAt": "2026-06-26T16:58:08.553Z"
     },
     {
       "slug": "sapien",
@@ -5504,8 +5505,9 @@
       "subject": "Telescope <> Sapien Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Tony,<br><br>Just bumping this. If the timing isn't right, no worries at all. Would love to stay in touch for whenever it makes sense.</div>"
+      "status": "completed",
+      "body": "<div>Hey Tony,<br><br>Just bumping this. If the timing isn't right, no worries at all. Would love to stay in touch for whenever it makes sense.</div>",
+      "processedAt": "2026-06-26T16:58:10.220Z"
     },
     {
       "slug": "haladir",
@@ -5548,8 +5550,9 @@
       "subject": "Telescope <> Haladir Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Jibran,<br><br>Bumping this one more time. If now isn't the right time, totally understand. Would love to connect whenever makes sense.</div>"
+      "status": "replied",
+      "body": "<div>Hey Jibran,<br><br>Bumping this one more time. If now isn't the right time, totally understand. Would love to connect whenever makes sense.</div>",
+      "processedAt": "2026-06-26T16:58:11.712Z"
     },
     {
       "slug": "chrt",
@@ -5592,8 +5595,9 @@
       "subject": "Telescope <> chrt Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Bumping this one last time. If the timing doesn't work, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Kyle,<br><br>Bumping this one last time. If the timing doesn't work, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-06-26T16:58:13.216Z"
     },
     {
       "slug": "arkero",
@@ -5636,8 +5640,9 @@
       "subject": "fellow CMC grad | Telescope intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Daniel,<br><br>Bumping this one more time. If the timing isn't right, totally understand. Would be great to grab coffee or jump on a call whenever works.</div>"
+      "status": "replied",
+      "body": "<div>Hey Daniel,<br><br>Bumping this one more time. If the timing isn't right, totally understand. Would be great to grab coffee or jump on a call whenever works.</div>",
+      "processedAt": "2026-06-26T16:58:14.651Z"
     },
     {
       "slug": "brick-dynamics",
@@ -5680,8 +5685,9 @@
       "subject": "Telescope <> Brick Dynamics Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Tom,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay in touch.</div>"
+      "status": "replied",
+      "body": "<div>Hey Tom,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay in touch.</div>",
+      "processedAt": "2026-06-26T16:58:16.039Z"
     },
     {
       "slug": "ai-lean",
@@ -5724,8 +5730,9 @@
       "subject": "Telescope <> Ai Lean Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Luke,<br><br>Bumping this one last time. If the timing isn't right, totally understand. Would love to stay connected.</div>"
+      "status": "replied",
+      "body": "<div>Hey Luke,<br><br>Bumping this one last time. If the timing isn't right, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-06-26T16:58:17.754Z"
     },
     {
       "slug": "rayvn",
@@ -5768,8 +5775,9 @@
       "subject": "Telescope <> RAYVN Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Oyvind,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected and learn more about the expansion plans.</div>"
+      "status": "completed",
+      "body": "<div>Hey Oyvind,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected and learn more about the expansion plans.</div>",
+      "processedAt": "2026-06-26T16:58:19.354Z"
     },
     {
       "slug": "goodday",
@@ -5812,8 +5820,9 @@
       "subject": "Telescope <> GoodDay Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Kyle,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Happy to reconnect whenever makes sense.</div>"
+      "status": "completed",
+      "body": "<div>Hey Kyle,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Happy to reconnect whenever makes sense.</div>",
+      "processedAt": "2026-06-26T16:58:20.830Z"
     },
     {
       "slug": "ecourtdate",
@@ -5856,8 +5865,9 @@
       "subject": "Telescope <> eCourtDate Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Ibrahim,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected and follow the progress.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ibrahim,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected and follow the progress.</div>",
+      "processedAt": "2026-06-26T16:58:22.360Z"
     },
     {
       "slug": "scopito",
@@ -5900,8 +5910,9 @@
       "subject": "Telescope <> Scopito Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Ken,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ken,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-06-26T16:58:24.145Z"
     },
     {
       "slug": "ehawk",
@@ -5944,8 +5955,9 @@
       "subject": "Telescope <> eHawk Intro",
       "emailNumber": 4,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Ted,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to reconnect with Martha included whenever it makes sense.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ted,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to reconnect with Martha included whenever it makes sense.</div>",
+      "processedAt": "2026-06-26T16:58:25.853Z"
     },
     {
       "slug": "vallor",
@@ -5958,8 +5970,9 @@
       "subject": "Telescope <> Vallor Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Antonio,<br><br>One thing I keep thinking about in procurement is how much value leaks after the deal is signed. Everyone focuses on negotiation but the real gap is in tracking whether vendors actually deliver on the terms. I think the companies that close that loop will pull ahead fast. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Antonio,<br><br>One thing I keep thinking about in procurement is how much value leaks after the deal is signed. Everyone focuses on negotiation but the real gap is in tracking whether vendors actually deliver on the terms. I think the companies that close that loop will pull ahead fast. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:27.347Z"
     },
     {
       "slug": "vallor",
@@ -6000,8 +6013,9 @@
       "subject": "Telescope <> Intropy Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Franziska,<br><br>Was thinking more about the industrial distribution space. One thing that stands out is how much institutional knowledge lives in the heads of experienced reps and never makes it into any system. I think AI that can capture and operationalize that knowledge is going to be a big unlock. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Franziska,<br><br>Was thinking more about the industrial distribution space. One thing that stands out is how much institutional knowledge lives in the heads of experienced reps and never makes it into any system. I think AI that can capture and operationalize that knowledge is going to be a big unlock. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:28.772Z"
     },
     {
       "slug": "intropy",
@@ -6042,8 +6056,9 @@
       "subject": "Telescope <> Hyperscale Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Oliver,<br><br>Was thinking more about the trucking space. One thing I keep hearing is how much driver turnover costs fleets and how that compounds when the operational systems are all disconnected. I think whoever simplifies the back-office stack for mid-size carriers will do really well. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Oliver,<br><br>Was thinking more about the trucking space. One thing I keep hearing is how much driver turnover costs fleets and how that compounds when the operational systems are all disconnected. I think whoever simplifies the back-office stack for mid-size carriers will do really well. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:30.432Z"
     },
     {
       "slug": "hyperscale",
@@ -6084,8 +6099,9 @@
       "subject": "Telescope <> Harmony Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey George,<br><br>One thing I keep thinking about in manufacturing is how much downtime costs and how most of it comes from coordination failures, not equipment failures. I think there is a big opportunity to just let software handle that scheduling and planning layer. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey George,<br><br>One thing I keep thinking about in manufacturing is how much downtime costs and how most of it comes from coordination failures, not equipment failures. I think there is a big opportunity to just let software handle that scheduling and planning layer. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:31.890Z"
     },
     {
       "slug": "harmony",
@@ -6126,8 +6142,9 @@
       "subject": "Telescope <> Azimut Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Matan,<br><br>Was thinking more about the maritime intelligence space. One thing that stands out is how geopolitical tensions are making vessel tracking gaps a much bigger problem than they were even two years ago. I think the demand for satellite-based alternatives is only going to accelerate. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Matan,<br><br>Was thinking more about the maritime intelligence space. One thing that stands out is how geopolitical tensions are making vessel tracking gaps a much bigger problem than they were even two years ago. I think the demand for satellite-based alternatives is only going to accelerate. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:33.408Z"
     },
     {
       "slug": "azimut",
@@ -6168,8 +6185,9 @@
       "subject": "Telescope <> Purchaser Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Drura,<br><br>One thing I keep hearing about procurement in manufacturing is how much time gets wasted just reformatting supplier quotes into a common format before anyone can even compare them. I think automating that first step alone saves a massive amount of time. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Drura,<br><br>One thing I keep hearing about procurement in manufacturing is how much time gets wasted just reformatting supplier quotes into a common format before anyone can even compare them. I think automating that first step alone saves a massive amount of time. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:34.890Z"
     },
     {
       "slug": "purchaser",
@@ -6210,8 +6228,9 @@
       "subject": "Telescope <> Donna Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Nicolas,<br><br>Was thinking more about the field sales problem. One thing that stands out is how most CRM tools are built for managers looking at dashboards, not for reps who need to get things done between meetings in a car. I think mobile-first is the right starting point. Would love to connect if you have some time.</div>"
+      "status": "replied",
+      "body": "<div>Hey Nicolas,<br><br>Was thinking more about the field sales problem. One thing that stands out is how most CRM tools are built for managers looking at dashboards, not for reps who need to get things done between meetings in a car. I think mobile-first is the right starting point. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:36.348Z"
     },
     {
       "slug": "donna",
@@ -6252,8 +6271,9 @@
       "subject": "Telescope <> Coverflow Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Matthew,<br><br>One thing I keep thinking about in insurance is how much time agents spend on renewals alone, pulling up last year's policy, comparing it line by line to the new quote, flagging anything that changed. I think automating that comparison step is a big win. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Matthew,<br><br>One thing I keep thinking about in insurance is how much time agents spend on renewals alone, pulling up last year's policy, comparing it line by line to the new quote, flagging anything that changed. I think automating that comparison step is a big win. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:37.713Z"
     },
     {
       "slug": "coverflow",
@@ -6294,8 +6314,9 @@
       "subject": "Telescope <> Platformr Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Ryan,<br><br>Was thinking more about the cloud infrastructure space. One thing that keeps coming up is how multi-cloud has gone from a nice-to-have to a requirement for most enterprises, but the tooling to actually manage it hasn't kept up. I think there is a lot of room for a better approach. Would love to connect if you have some time.</div>"
+      "status": "replied",
+      "body": "<div>Hey Ryan,<br><br>Was thinking more about the cloud infrastructure space. One thing that keeps coming up is how multi-cloud has gone from a nice-to-have to a requirement for most enterprises, but the tooling to actually manage it hasn't kept up. I think there is a lot of room for a better approach. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:39.063Z"
     },
     {
       "slug": "platformr",
@@ -6336,8 +6357,9 @@
       "subject": "Telescope <> brand.ai Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Michael,<br><br>One thing I keep thinking about in the brand space is how distributed teams have made the consistency problem so much worse. Every designer, agency, and contractor ends up with their own interpretation of the guidelines. I think the companies that solve that at scale will save marketing teams a ton of time. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Michael,<br><br>One thing I keep thinking about in the brand space is how distributed teams have made the consistency problem so much worse. Every designer, agency, and contractor ends up with their own interpretation of the guidelines. I think the companies that solve that at scale will save marketing teams a ton of time. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:40.553Z"
     },
     {
       "slug": "brand-ai",
@@ -6378,8 +6400,9 @@
       "subject": "Telescope <> Spot Parking Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Ryan,<br><br>Was thinking more about parking enforcement. One thing that stands out is how the revenue recovery opportunity for municipalities is probably the strongest selling point, even before the efficiency gains. I think the ROI case practically sells itself once you can show the numbers. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ryan,<br><br>Was thinking more about parking enforcement. One thing that stands out is how the revenue recovery opportunity for municipalities is probably the strongest selling point, even before the efficiency gains. I think the ROI case practically sells itself once you can show the numbers. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:41.988Z"
     },
     {
       "slug": "spot-parking",
@@ -6420,8 +6443,9 @@
       "subject": "Telescope <> Cracken Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Artem,<br><br>One thing I keep thinking about in security is how the shift from annual pentests to continuous testing feels inevitable but most companies haven't made that move yet. I think the trigger will be when automated tools can actually replicate what a skilled red teamer would do. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Artem,<br><br>One thing I keep thinking about in security is how the shift from annual pentests to continuous testing feels inevitable but most companies haven't made that move yet. I think the trigger will be when automated tools can actually replicate what a skilled red teamer would do. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:43.563Z"
     },
     {
       "slug": "cracken",
@@ -6462,8 +6486,9 @@
       "subject": "Telescope <> Zauber Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Erik,<br><br>Was thinking more about freight forwarding. One thing that stands out is how much of the margin compression in the industry comes from manual processes that could be automated. I think the operators who adopt AI tooling early will have a real cost advantage over the next few years. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Erik,<br><br>Was thinking more about freight forwarding. One thing that stands out is how much of the margin compression in the industry comes from manual processes that could be automated. I think the operators who adopt AI tooling early will have a real cost advantage over the next few years. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:45.256Z"
     },
     {
       "slug": "zauber",
@@ -6504,8 +6529,9 @@
       "subject": "Telescope <> SplitSecure Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Tristan,<br><br>One thing I keep thinking about in access management is how most companies end up with way more permissions than they actually need, and cleaning that up manually is a nightmare. I think simplifying that process is a really underserved problem. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Tristan,<br><br>One thing I keep thinking about in access management is how most companies end up with way more permissions than they actually need, and cleaning that up manually is a nightmare. I think simplifying that process is a really underserved problem. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:46.594Z"
     },
     {
       "slug": "splitsecure",
@@ -6546,8 +6572,9 @@
       "subject": "Telescope <> Ten8 Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Ivan,<br><br>Was thinking more about the trucking space. One thing that keeps coming up is how brokers are still calling around to find available trucks, and the matching process is incredibly manual. I think AI can meaningfully speed that up. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ivan,<br><br>Was thinking more about the trucking space. One thing that keeps coming up is how brokers are still calling around to find available trucks, and the matching process is incredibly manual. I think AI can meaningfully speed that up. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:48.035Z"
     },
     {
       "slug": "ten8",
@@ -6588,8 +6615,9 @@
       "subject": "Telescope <> Flint Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Michelle,<br><br>One thing I keep thinking about in the growth marketing space is how much time gets wasted on the build side of landing pages when the real bottleneck should be on testing and iterating. I think removing the production step entirely changes the game for growth teams. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Michelle,<br><br>One thing I keep thinking about in the growth marketing space is how much time gets wasted on the build side of landing pages when the real bottleneck should be on testing and iterating. I think removing the production step entirely changes the game for growth teams. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:49.510Z"
     },
     {
       "slug": "flint",
@@ -6630,8 +6658,9 @@
       "subject": "Telescope <> Simuhealth Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Matthew,<br><br>Was thinking more about the healthcare simulation space. One thing that stands out is how hard it is for simulation centers to standardize their training programs when every scenario is still built from scratch. I think there is a real opportunity to bring more consistency to that process. Would love to connect if you have some time.</div>"
+      "status": "replied",
+      "body": "<div>Hey Matthew,<br><br>Was thinking more about the healthcare simulation space. One thing that stands out is how hard it is for simulation centers to standardize their training programs when every scenario is still built from scratch. I think there is a real opportunity to bring more consistency to that process. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:50.980Z"
     },
     {
       "slug": "simu-health",
@@ -6672,8 +6701,9 @@
       "subject": "Telescope <> Origami Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Finn,<br><br>One thing I keep thinking about in lead gen is how most tools still rely on static lists and firmographic filters when the actual buying signals are behavioral. I think the shift to intent-based prospecting is going to change how sales teams operate. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Finn,<br><br>One thing I keep thinking about in lead gen is how most tools still rely on static lists and firmographic filters when the actual buying signals are behavioral. I think the shift to intent-based prospecting is going to change how sales teams operate. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:52.428Z"
     },
     {
       "slug": "origami",
@@ -6714,8 +6744,9 @@
       "subject": "Telescope <> Dunedain Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Mack,<br><br>Was thinking more about admin automation. One thing that stands out is how much of the bottleneck in organizations isn't the hard problems but the repetitive tasks that nobody wants to do but everyone depends on. I think the ROI case for automating that layer is really straightforward. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Mack,<br><br>Was thinking more about admin automation. One thing that stands out is how much of the bottleneck in organizations isn't the hard problems but the repetitive tasks that nobody wants to do but everyone depends on. I think the ROI case for automating that layer is really straightforward. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:53.880Z"
     },
     {
       "slug": "dunedain",
@@ -6756,8 +6787,9 @@
       "subject": "Telescope <> Brackett Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Jaideep,<br><br>One thing I keep thinking about in the AI agent space is how the gap between a demo and a production deployment is still massive for most enterprises. I think the companies that bridge that gap will do really well. Would love to connect if you have some time.</div>"
+      "status": "replied",
+      "body": "<div>Hey Jaideep,<br><br>One thing I keep thinking about in the AI agent space is how the gap between a demo and a production deployment is still massive for most enterprises. I think the companies that bridge that gap will do really well. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:55.366Z"
     },
     {
       "slug": "brackett",
@@ -6798,8 +6830,9 @@
       "subject": "Telescope <> Conduit Intro",
       "emailNumber": 2,
       "sendDate": "2026-06-26",
-      "status": "pending",
-      "body": "<div>Hey Conrad,<br><br>Was thinking more about logistics execution. One thing that stands out is how the planning side has gotten a lot of investment but the actual day-of coordination is still phones and spreadsheets for most operators. I think that gap is where the real opportunity is. Would love to connect if you have some time.</div>"
+      "status": "completed",
+      "body": "<div>Hey Conrad,<br><br>Was thinking more about logistics execution. One thing that stands out is how the planning side has gotten a lot of investment but the actual day-of coordination is still phones and spreadsheets for most operators. I think that gap is where the real opportunity is. Would love to connect if you have some time.</div>",
+      "processedAt": "2026-06-26T16:58:56.887Z"
     },
     {
       "slug": "conduit",
