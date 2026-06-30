@@ -2819,7 +2819,8 @@
       "body": "<div>Hey Peter, one more note. I've been spending time in adjacent govtech and vertical fintech areas, and happy to connect you with folks in our network who've navigated the municipal sales cycle if that'd be useful. The setup time you guys advertise (days, not months) feels like it could be a real differentiator in a market where implementation risk is usually the biggest blocker. Would love to swap notes even if timing isn't right for fundraising. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:02:49.127Z"
     },
     {
       "slug": "alpa",
@@ -2863,7 +2864,8 @@
       "body": "<div>Hey Anton, one more thought. Given your background building Taster, you've already lived through the pain of managing multi-location restaurant economics firsthand, which I think matters a lot in a product like this. We've spent time around vertical fintech plays in other industries and happy to connect you with founders who've tackled similar problems in different verticals if that'd be useful. Would love to chat even if fundraising isn't on the near-term roadmap. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:02:50.652Z"
     },
     {
       "slug": "alguna",
@@ -2907,7 +2909,8 @@
       "body": "<div>Hey Aleks, one more note. We've worked with a few companies navigating the billing and monetization layer at scale, and I think the AI agent pricing question in particular is going to be a big deal over the next couple years as more companies try to figure out how to charge for non-deterministic workloads. Happy to connect you with relevant folks in our network if useful. Would love to find time for a call even if fundraising isn't top of mind right now. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:02:51.957Z"
     },
     {
       "slug": "internet_backyard",
@@ -2951,7 +2954,8 @@
       "body": "<div>Hey Mai, one more thought. We've spent time around infrastructure and fintech companies and I think the financial translation layer concept you're building is one of those things that feels obvious in hindsight but requires someone to actually go build it. The fact that over $11 billion has already been lent against GPU fleets suggests the capital side is ready but the tooling hasn't caught up. Happy to connect you with relevant folks in our network who are thinking about compute financing from the capital markets side if that'd be useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:02:53.316Z"
     },
     {
       "slug": "ramain",
@@ -2995,7 +2999,8 @@
       "body": "<div>Hey Shourya, one more thought. We've spent time around a few companies in the procurement and supply chain space where teams are still manually entering data across vendor portals, ERPs, and legacy finance systems. Happy to make intros if any of those connections would be useful as you think about go-to-market.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:02:54.528Z"
     },
     {
       "slug": "quash",
@@ -3039,7 +3044,8 @@
       "body": "<div>Hey Yoel, last thought from me. We know the fintech lending space pretty well and have a few connections in the credit union world that might be useful as you build out the US side. Happy to make some intros if that would be helpful.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:02:55.824Z"
     },
     {
       "slug": "ekko",
@@ -3179,7 +3185,8 @@
       "body": "<div>Travis, wanted to follow up one more time. I work closely with Chris Gaertner who has spent time around insurance compliance (iLife, etc.) and has seen firsthand how the regulatory automation space plays out across different financial verticals. Happy to connect you two if it would be useful to swap notes on GTM or just have another sounding board. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-30T17:02:57.662Z"
     },
     {
       "slug": "kotini",
@@ -3223,7 +3230,8 @@
       "body": "<div>Kieran, one more note. We've seen a few companies in adjacent spaces where the initial wedge was compliance or onboarding and they expanded into owning more of the transaction workflow over time. Happy to share some of those learnings if helpful, especially around how the expansion playbook tends to work in regulated industries. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:02:58.904Z"
     },
     {
       "slug": "partspulse",
@@ -3315,7 +3323,8 @@
       "body": "<div>Ted, one more note from me. We've invested in a number of companies that started by making a broken workflow accessible to a broader market and then expanded from there. Happy to share some of those patterns if it would be useful as you think about what comes after opportunity discovery and proposal writing. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:00.125Z"
     },
     {
       "slug": "rama",
@@ -3359,7 +3368,8 @@
       "body": "<div>Hey Matt, one more thought here. I work closely with Chris Gaertner who has spent a lot of time in supply chain (Parabola, Paperless Parts, Project44) and I think he'd have some useful perspective on how vertical AI tools like yours tend to expand once the initial wedge is working. Happy to make that intro if it'd be helpful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-30T17:03:01.092Z"
     },
     {
       "slug": "clave",
@@ -3451,7 +3461,8 @@
       "body": "<div>Hey Cooper, one more thought here. I work closely with Chris Gaertner who invested in Rewst and Auvik and has spent a lot of time in the MSP channel. He also has deep security experience from Axonius and JumpCloud. I think he'd have some useful perspective on how security vendors scale through the MSP ecosystem, and happy to make that intro if it'd be helpful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:02.289Z"
     },
     {
       "slug": "domu",
@@ -3495,7 +3506,8 @@
       "body": "<div>Hey Nico, one last thought here. I think you guys are at an interesting inflection point, 8 of the top 20 banks and insurers across the Americas is real market validation, and the question becomes how you scale from here without the team growing linearly with revenue. Happy to connect you with anyone in our network who's navigated that kind of scaling challenge in enterprise AI. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:03.527Z"
     },
     {
       "slug": "certo",
@@ -3539,7 +3551,8 @@
       "body": "<div>Hey Bastien, one more thought here. As you guys scale into the US market, happy to connect you with folks in our network who have navigated the go-to-market for selling compliance and regulatory tools to enterprise CPG and beauty brands. It's a specific kind of sales motion and having people who've done it before can save a lot of time. If now isn't the right time, totally understand.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-30T17:03:04.606Z"
     },
     {
       "slug": "zerodrift",
@@ -3583,7 +3596,8 @@
       "body": "<div>Hey Kumesh, Following up - have you thought about another partner after your seed? I really like what you're building at ZeroDrift and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:05.891Z"
     },
     {
       "slug": "nox_metals",
@@ -3627,7 +3641,8 @@
       "body": "<div>Hey Zane, Following up - have you thought about another partner after your YC seed? I really like what you're building at Nox Metals and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-30T17:03:06.948Z"
     },
     {
       "slug": "prox",
@@ -3671,7 +3686,8 @@
       "body": "<div>Hey Gregory, Following up - have you thought about another partner after your pre-seed? I really like what you're building at Prox and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:08.176Z"
     },
     {
       "slug": "kinth",
@@ -3715,7 +3731,8 @@
       "body": "<div>Arhon - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:09.418Z"
     },
     {
       "slug": "nebula",
@@ -3759,7 +3776,8 @@
       "body": "<div>Akshat - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:10.621Z"
     },
     {
       "slug": "reviva",
@@ -3803,7 +3821,8 @@
       "body": "<div>Hey Valerie, Following up - have you thought about another partner after your seed? I really like what you're building at Reviva and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:11.758Z"
     },
     {
       "slug": "fireproof",
@@ -3847,7 +3866,8 @@
       "body": "<div>Nate - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:13.129Z"
     },
     {
       "slug": "onetera",
@@ -3939,7 +3959,8 @@
       "body": "<div>Hey Daniel, Following up - have you thought about another partner after your pre-seed? I really like what you're building at Continuum and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:14.296Z"
     },
     {
       "slug": "qued",
@@ -3983,7 +4004,8 @@
       "body": "<div>Hey Prasad, Following up - have you thought about another partner after your seed? I really like what you're building at Qued and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:15.396Z"
     },
     {
       "slug": "paraglide",
@@ -4075,7 +4097,8 @@
       "body": "<div>Hey Leopold, Following up - have you thought about another partner after your YC seed? I really like what you're building at Zeit and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:16.582Z"
     },
     {
       "slug": "olympian",
@@ -4119,7 +4142,8 @@
       "body": "<div>Brendan - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:17.662Z"
     },
     {
       "slug": "tero",
@@ -4163,7 +4187,8 @@
       "body": "<div>Hey Ben, Following up - have you thought about another partner after your seed? I really like what you're building at Tero and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:18.816Z"
     },
     {
       "slug": "blue_pill",
@@ -4255,7 +4280,8 @@
       "body": "<div>Hey Ed, Following up - have you thought about another partner after your seed? I really like what you're building at ThirdLaw and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-30T17:03:19.817Z"
     },
     {
       "slug": "ferry",
@@ -4299,7 +4325,8 @@
       "body": "<div>Hey Ethan, Following up - have you thought about another partner after your seed? I really like what you're building at Ferry and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:21.056Z"
     },
     {
       "slug": "pensar",
@@ -4343,7 +4370,8 @@
       "body": "<div>Hey Kyle, Following up - have you thought about another partner after your pre-seed? I really like what you're building at Pensar and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:22.217Z"
     },
     {
       "slug": "frugal",
@@ -4387,7 +4415,8 @@
       "body": "<div>Hey Mike, Following up - have you thought about another partner after your seed? I really like what you're building at Frugal and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-06-30T17:03:23.186Z"
     },
     {
       "slug": "sammy_labs",
@@ -4431,7 +4460,8 @@
       "body": "<div>Hey Joe, Following up - have you thought about another partner after your pre-seed? I really like what you're building at SAMMY Labs and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:24.369Z"
     },
     {
       "slug": "trace",
@@ -4475,7 +4505,8 @@
       "body": "<div>Hey Tim, Following up - have you thought about another partner after your seed? I really like what you're building at Trace and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:25.579Z"
     },
     {
       "slug": "archie",
@@ -4519,7 +4550,8 @@
       "body": "<div>Stuart - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:26.880Z"
     },
     {
       "slug": "zalion",
@@ -4563,7 +4595,8 @@
       "body": "<div>Tim - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:28.026Z"
     },
     {
       "slug": "tofu",
@@ -4607,7 +4640,8 @@
       "body": "<div>Hey Jason, Following up - have you thought about another partner after your seed? I really like what you're building at Tofu and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 4,
       "sendDate": "2026-06-30",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-06-30T17:03:29.329Z"
     },
     {
       "slug": "buildcognition",
