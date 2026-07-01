@@ -6019,8 +6019,9 @@
       "subject": "Telescope <> Vallor Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Antonio,<br><br>Chris on our team has spent a lot of time around supply chain and procurement companies like Parabola and Project44 and has a good feel for how these buying cycles work. Happy to connect you two if useful.</div>"
+      "status": "replied",
+      "body": "<div>Hey Antonio,<br><br>Chris on our team has spent a lot of time around supply chain and procurement companies like Parabola and Project44 and has a good feel for how these buying cycles work. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:10:53.836Z"
     },
     {
       "slug": "vallor",
@@ -6062,8 +6063,9 @@
       "subject": "Telescope <> Intropy Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Franziska,<br><br>Chris on our team worked closely with Paperless Parts and Parabola in the manufacturing and distribution space and has a good perspective on how technology adoption works in these industries. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Franziska,<br><br>Chris on our team worked closely with Paperless Parts and Parabola in the manufacturing and distribution space and has a good perspective on how technology adoption works in these industries. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:10:55.237Z"
     },
     {
       "slug": "intropy",
@@ -6105,8 +6107,9 @@
       "subject": "Telescope <> Hyperscale Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Oliver,<br><br>Chris on our team worked closely with Project44 during its growth phase and has a good feel for how logistics technology gets adopted at scale. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Oliver,<br><br>Chris on our team worked closely with Project44 during its growth phase and has a good feel for how logistics technology gets adopted at scale. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:10:56.622Z"
     },
     {
       "slug": "hyperscale",
@@ -6148,8 +6151,9 @@
       "subject": "Telescope <> Harmony Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey George,<br><br>Chris on our team has spent time around manufacturing software companies like Parabola and Paperless Parts and has a good feel for what resonates with manufacturers. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey George,<br><br>Chris on our team has spent time around manufacturing software companies like Parabola and Paperless Parts and has a good feel for what resonates with manufacturers. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:10:57.790Z"
     },
     {
       "slug": "harmony",
@@ -6191,8 +6195,9 @@
       "subject": "Telescope <> Azimut Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Matan,<br><br>Chris on our team worked closely with Datadog and has seen how monitoring and observability platforms scale across industries. I think there are interesting parallels to what you are building. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Matan,<br><br>Chris on our team worked closely with Datadog and has seen how monitoring and observability platforms scale across industries. I think there are interesting parallels to what you are building. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:10:58.952Z"
     },
     {
       "slug": "azimut",
@@ -6234,8 +6239,9 @@
       "subject": "Telescope <> Purchaser Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Drura,<br><br>Chris on our team has spent a lot of time around procurement and supply chain companies like Parabola and Project44 and understands the buying dynamics in manufacturing well. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Drura,<br><br>Chris on our team has spent a lot of time around procurement and supply chain companies like Parabola and Project44 and understands the buying dynamics in manufacturing well. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:00.082Z"
     },
     {
       "slug": "purchaser",
@@ -6277,8 +6283,9 @@
       "subject": "Telescope <> Donna Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Nicolas,<br><br>Chris on our team worked closely with sales enablement companies like Lessonly and Highspot and has a good perspective on how field teams adopt new tools. Happy to connect you two if useful.</div>"
+      "status": "replied",
+      "body": "<div>Hey Nicolas,<br><br>Chris on our team worked closely with sales enablement companies like Lessonly and Highspot and has a good perspective on how field teams adopt new tools. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:01.005Z"
     },
     {
       "slug": "donna",
@@ -6320,8 +6327,9 @@
       "subject": "Telescope <> Coverflow Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Matthew,<br><br>Chris on our team worked closely with iLife in the insurance space and has a good feel for how independent agencies adopt new technology. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Matthew,<br><br>Chris on our team worked closely with iLife in the insurance space and has a good feel for how independent agencies adopt new technology. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:02.257Z"
     },
     {
       "slug": "coverflow",
@@ -6363,8 +6371,9 @@
       "subject": "Telescope <> Platformr Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Ryan,<br><br>Chris on our team worked closely with Datadog and has a good perspective on how infrastructure tooling scales and gets adopted. Happy to connect you two if useful.</div>"
+      "status": "replied",
+      "body": "<div>Hey Ryan,<br><br>Chris on our team worked closely with Datadog and has a good perspective on how infrastructure tooling scales and gets adopted. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:03.159Z"
     },
     {
       "slug": "platformr",
@@ -6406,8 +6415,9 @@
       "subject": "Telescope <> brand.ai Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Michael,<br><br>Chris on our team has spent time around PLG companies like Calendly and Expensify and understands how product-led tools get adopted inside marketing and design teams. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Michael,<br><br>Chris on our team has spent time around PLG companies like Calendly and Expensify and understands how product-led tools get adopted inside marketing and design teams. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:04.255Z"
     },
     {
       "slug": "brand-ai",
@@ -6449,8 +6459,9 @@
       "subject": "Telescope <> Spot Parking Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Ryan,<br><br>Chris on our team has spent a lot of time around vertical SaaS companies that sell to government and understands the procurement dynamics well. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ryan,<br><br>Chris on our team has spent a lot of time around vertical SaaS companies that sell to government and understands the procurement dynamics well. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:05.396Z"
     },
     {
       "slug": "spot-parking",
@@ -6492,8 +6503,9 @@
       "subject": "Telescope <> Cracken Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Artem,<br><br>Chris on our team worked closely with Axonius and JumpCloud and has a good feel for how security tools get adopted at scale. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Artem,<br><br>Chris on our team worked closely with Axonius and JumpCloud and has a good feel for how security tools get adopted at scale. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:06.578Z"
     },
     {
       "slug": "cracken",
@@ -6535,8 +6547,9 @@
       "subject": "Telescope <> Zauber Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Erik,<br><br>Chris on our team worked closely with Project44 and has a good perspective on how logistics technology gets adopted and scales. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Erik,<br><br>Chris on our team worked closely with Project44 and has a good perspective on how logistics technology gets adopted and scales. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:07.802Z"
     },
     {
       "slug": "zauber",
@@ -6578,8 +6591,9 @@
       "subject": "Telescope <> SplitSecure Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Tristan,<br><br>Chris on our team worked closely with Axonius and JumpCloud in the security and identity space and has a good feel for how these tools scale. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Tristan,<br><br>Chris on our team worked closely with Axonius and JumpCloud in the security and identity space and has a good feel for how these tools scale. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:08.897Z"
     },
     {
       "slug": "splitsecure",
@@ -6621,8 +6635,9 @@
       "subject": "Telescope <> Ten8 Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Ivan,<br><br>Chris on our team worked closely with Project44 and has a good perspective on how technology adoption works in logistics and trucking. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ivan,<br><br>Chris on our team worked closely with Project44 and has a good perspective on how technology adoption works in logistics and trucking. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:09.988Z"
     },
     {
       "slug": "ten8",
@@ -6664,8 +6679,9 @@
       "subject": "Telescope <> Flint Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Michelle,<br><br>Chris on our team worked closely with PLG companies like Calendly and Expensify and has a good feel for how growth-oriented products get traction. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Michelle,<br><br>Chris on our team worked closely with PLG companies like Calendly and Expensify and has a good feel for how growth-oriented products get traction. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:11.161Z"
     },
     {
       "slug": "flint",
@@ -6707,8 +6723,9 @@
       "subject": "Telescope <> Simuhealth Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Matthew,<br><br>We've been spending time around healthcare companies like Passage Health and Carefeed and understand the buyer dynamics in health systems well. Happy to compare notes if useful.</div>"
+      "status": "replied",
+      "body": "<div>Hey Matthew,<br><br>We've been spending time around healthcare companies like Passage Health and Carefeed and understand the buyer dynamics in health systems well. Happy to compare notes if useful.</div>",
+      "processedAt": "2026-07-01T17:11:12.267Z"
     },
     {
       "slug": "simu-health",
@@ -6750,8 +6767,9 @@
       "subject": "Telescope <> Origami Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Finn,<br><br>Chris on our team worked closely with sales enablement companies like Lessonly and Highspot and has a good feel for how sales tools get adopted. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Finn,<br><br>Chris on our team worked closely with sales enablement companies like Lessonly and Highspot and has a good feel for how sales tools get adopted. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:13.489Z"
     },
     {
       "slug": "origami",
@@ -6793,8 +6811,9 @@
       "subject": "Telescope <> Dunedain Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Mack,<br><br>Chris on our team has spent time around AI infrastructure companies like DataRobot and has a good perspective on how AI tools get deployed in enterprise settings. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Mack,<br><br>Chris on our team has spent time around AI infrastructure companies like DataRobot and has a good perspective on how AI tools get deployed in enterprise settings. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:14.603Z"
     },
     {
       "slug": "dunedain",
@@ -6836,8 +6855,9 @@
       "subject": "Telescope <> Brackett Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Jaideep,<br><br>Chris on our team has spent time around AI infrastructure and worked closely with DataRobot and understands how enterprises evaluate and deploy AI tooling. Happy to connect you two if useful.</div>"
+      "status": "replied",
+      "body": "<div>Hey Jaideep,<br><br>Chris on our team has spent time around AI infrastructure and worked closely with DataRobot and understands how enterprises evaluate and deploy AI tooling. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:15.567Z"
     },
     {
       "slug": "brackett",
@@ -6879,8 +6899,9 @@
       "subject": "Telescope <> Conduit Intro",
       "emailNumber": 3,
       "sendDate": "2026-07-01",
-      "status": "pending",
-      "body": "<div>Hey Conrad,<br><br>Chris on our team worked closely with Project44 and Parabola and has a good feel for how logistics technology gets adopted. Happy to connect you two if useful.</div>"
+      "status": "completed",
+      "body": "<div>Hey Conrad,<br><br>Chris on our team worked closely with Project44 and Parabola and has a good feel for how logistics technology gets adopted. Happy to connect you two if useful.</div>",
+      "processedAt": "2026-07-01T17:11:16.645Z"
     },
     {
       "slug": "conduit",
