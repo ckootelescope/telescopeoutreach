@@ -6034,8 +6034,9 @@
       "subject": "Telescope <> Vallor Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Antonio,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "replied",
+      "body": "<div>Hey Antonio,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:07.232Z"
     },
     {
       "slug": "intropy",
@@ -6078,8 +6079,9 @@
       "subject": "Telescope <> Intropy Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Franziska,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Franziska,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:08.499Z"
     },
     {
       "slug": "hyperscale",
@@ -6122,8 +6124,9 @@
       "subject": "Telescope <> Hyperscale Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Oliver,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Oliver,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:09.653Z"
     },
     {
       "slug": "harmony",
@@ -6166,8 +6169,9 @@
       "subject": "Telescope <> Harmony Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey George,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey George,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:10.758Z"
     },
     {
       "slug": "azimut",
@@ -6210,8 +6214,9 @@
       "subject": "Telescope <> Azimut Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Matan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Matan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:11.839Z"
     },
     {
       "slug": "purchaser",
@@ -6254,8 +6259,9 @@
       "subject": "Telescope <> Purchaser Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Drura,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Drura,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:13.307Z"
     },
     {
       "slug": "donna",
@@ -6298,8 +6304,9 @@
       "subject": "Telescope <> Donna Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Nicolas,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "replied",
+      "body": "<div>Hey Nicolas,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:14.153Z"
     },
     {
       "slug": "coverflow",
@@ -6342,8 +6349,9 @@
       "subject": "Telescope <> Coverflow Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Matthew,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Matthew,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:15.197Z"
     },
     {
       "slug": "platformr",
@@ -6386,8 +6394,9 @@
       "subject": "Telescope <> Platformr Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Ryan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "replied",
+      "body": "<div>Hey Ryan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:16.098Z"
     },
     {
       "slug": "brand-ai",
@@ -6430,8 +6439,9 @@
       "subject": "Telescope <> brand.ai Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Michael,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Michael,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:17.191Z"
     },
     {
       "slug": "spot-parking",
@@ -6474,8 +6484,9 @@
       "subject": "Telescope <> Spot Parking Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Ryan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ryan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:18.234Z"
     },
     {
       "slug": "cracken",
@@ -6518,8 +6529,9 @@
       "subject": "Telescope <> Cracken Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Artem,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Artem,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:19.320Z"
     },
     {
       "slug": "zauber",
@@ -6562,8 +6574,9 @@
       "subject": "Telescope <> Zauber Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Erik,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Erik,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:20.349Z"
     },
     {
       "slug": "splitsecure",
@@ -6606,8 +6619,9 @@
       "subject": "Telescope <> SplitSecure Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Tristan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Tristan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:21.425Z"
     },
     {
       "slug": "ten8",
@@ -6650,8 +6664,9 @@
       "subject": "Telescope <> Ten8 Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Ivan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Ivan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:22.447Z"
     },
     {
       "slug": "flint",
@@ -6694,8 +6709,9 @@
       "subject": "Telescope <> Flint Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Michelle,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Michelle,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:23.488Z"
     },
     {
       "slug": "simu-health",
@@ -6738,8 +6754,9 @@
       "subject": "Telescope <> Simuhealth Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Matthew,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "replied",
+      "body": "<div>Hey Matthew,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:24.592Z"
     },
     {
       "slug": "origami",
@@ -6782,8 +6799,9 @@
       "subject": "Telescope <> Origami Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Finn,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Finn,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:25.781Z"
     },
     {
       "slug": "dunedain",
@@ -6826,8 +6844,9 @@
       "subject": "Telescope <> Dunedain Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Mack,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Mack,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:26.831Z"
     },
     {
       "slug": "brackett",
@@ -6870,8 +6889,9 @@
       "subject": "Telescope <> Brackett Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Jaideep,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "replied",
+      "body": "<div>Hey Jaideep,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:27.675Z"
     },
     {
       "slug": "conduit",
@@ -6914,8 +6934,9 @@
       "subject": "Telescope <> Conduit Intro",
       "emailNumber": 4,
       "sendDate": "2026-07-03",
-      "status": "pending",
-      "body": "<div>Hey Conrad,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>"
+      "status": "completed",
+      "body": "<div>Hey Conrad,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
+      "processedAt": "2026-07-03T16:22:28.729Z"
     }
   ]
 }
