@@ -327,15 +327,15 @@ Tell Calvin: "Draft created for [Founder] at [Company]. Review in Superhuman and
 
 ### Step 4: After Calvin Says He Sent It
 
-a) Search Gmail: "from:me to:{founder_email} newer_than:7d"
-b) Extract thread ID and message ID
+a) Search Superhuman for the sent thread: `list_threads(from: ["calvin@telescopepartners.com"], to: [founder_email], subject_contains: subject_line)` — extract the Superhuman `thread_id`
+b) Also search Gmail if needed: "from:me to:{founder_email} newer_than:7d" — extract Gmail thread ID and message ID
 c) Draft Email 2 and Email 3 content yourself (same writing rules apply)
 d) Calculate dates: Email 2 = send date + 2 days, Email 3 = Email 2 date + 5 days
-e) Generate workflow YAML from templates/followup_template.yml
-f) Push to GitHub via Contents API using PAT from .env
+e) Add entries to `followups.json` with status "pending", including both `threadId` (Gmail) and `superhumanThreadId` (Superhuman) fields
+f) Git add, commit, and push `followups.json` to remote — this is critical, the scheduler reads from the remote copy
 g) Create LinkedIn calendar reminder (Step 5)
 h) Log to Google Sheet (Analytics section)
-i) Tell Calvin: "Follow-ups scheduled. Email 2 on [date], Email 3 on [date]."
+i) Tell Calvin: "Follow-ups scheduled. Email 2 on [date], Email 3 on [date]. Run /process-followups when they're due, or they'll be picked up by the scheduled routine."
 
 ### Step 5: LinkedIn Integration
 
@@ -362,25 +362,44 @@ Same writing rules as Email 1. Same kill list. Same audit step.
 
 **Email 3 (+5 days after Email 2):** Portfolio anecdote or buyer-side signal. Shortest of all. End with "If now isn't the right time, totally understand." Never "last note from me." No sign-off.
 
-## Pushing to GitHub
+## Follow-up Processing
 
-PAT from .env. PUT to:
-```
-https://api.github.com/repos/ckootelescope/telescopeoutreach/contents/.github/workflows/{filename}
-```
-Headers: Authorization Bearer {GH_PAT}, Accept application/vnd.github+json, X-GitHub-Api-Version 2022-11-28
+Follow-ups are now processed via Superhuman instead of Gmail. Two mechanisms:
 
-Files: followup_{slug}_email2.yml and email3.yml
-Cron: {random 10-39} 15 {day} {month} * (8am PT)
-Use templates/followup_template.yml, replace all placeholders.
+1. **Manual:** Calvin runs `/process-followups` in Claude Code — processes all due entries from `followups.json`, creates Superhuman drafts, detects replies/bounces, updates statuses, pushes to GitHub
+2. **Scheduled:** A Claude Code scheduled routine runs daily (~8am PT) with the same logic
+
+The old GitHub Actions workflow (`followup_scheduler.yml` + `run_scheduler.js`) has been retired. Do NOT create per-company workflow YAML files. All follow-ups go through `followups.json` entries processed by the skill.
+
+### followups.json entry format
+
+```json
+{
+  "slug": "company-slug",
+  "company": "Company Name",
+  "founder": "Founder Name",
+  "email": "founder@company.com",
+  "domain": "company.com",
+  "threadId": "gmail-thread-id",
+  "superhumanThreadId": "superhuman-thread-id",
+  "messageId": "gmail-message-id",
+  "subject": "Email Subject Line",
+  "body": "<div>HTML email body</div>",
+  "emailNumber": 2,
+  "sendDate": "2026-07-15",
+  "status": "pending"
+}
+```
+
+When adding new entries, ALWAYS push `followups.json` to remote immediately after. This is the #1 failure mode.
 
 ## Cancel Outreach
 
-Delete all followup_{slug}_* files from .github/workflows/ via GitHub API.
+To cancel a company's follow-up cadence, set all pending entries for that slug in `followups.json` to `status: "cancelled"`, then commit and push.
 
 ## Batch Mode
 
-Multiple URLs → process each. Show progress. Stagger cron times.
+Multiple URLs → process each. Show progress. All follow-ups go into `followups.json` with appropriate send dates.
 
 ## Guardrails
 
