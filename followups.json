@@ -6996,7 +6996,8 @@
       "body": "<div>Hey Roderick, one other thought on the cross-border legal research problem. I think the really interesting question is whether firms start using a tool like Moonlit to expand into jurisdictions they would have otherwise avoided. That feels like a bigger unlock than just saving time on research they're already doing. Would love to hear how your customers are thinking about it.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "moonlit",
@@ -7011,7 +7012,8 @@
       "body": "<div>Hey Roderick, I work closely with Chris Gaertner who invested in legal tech companies like Persuit and Logikcull. He has good perspective on how legal tools land in mid-market and enterprise firms. Happy to make an intro if it'd be useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "conflixis",
@@ -7026,7 +7028,8 @@
       "body": "<div>Hey Aaron, one thing I keep thinking about in the physician disclosure space is how much the regulatory landscape shifts year to year. I'd love to learn more about how Conflixis handles the constant changes in compliance rules and whether that's what drives most of the urgency you see from buyers.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "conflixis",
@@ -7056,7 +7059,8 @@
       "body": "<div>Hey Trent, one question I keep coming back to is how post-acute facilities evaluate new software when their staff barely has time for the work itself, let alone learning a new tool. Curious how you're thinking about adoption and whether the AI handles enough of the onboarding itself.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "flax",
@@ -7086,7 +7090,8 @@
       "body": "<div>Hey Kiara, I think one of the more interesting dynamics in manufacturing sales is how much tribal knowledge lives in the heads of senior sales engineers who are starting to retire. Curious whether that's something you're seeing drive urgency for Emanate.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "emanate",
@@ -7116,7 +7121,8 @@
       "body": "<div>Hey Danny, one thing I've been thinking about in the merchant risk space is how much fraud patterns shift when the macro environment changes. I think the companies that can adapt their detection in real time rather than relying on static rules are going to win. Curious how TrueBiz thinks about that.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "truebiz",
@@ -7146,7 +7152,8 @@
       "body": "<div>Hey Roopesh, one question I had is how the product usage signals actually translate into rep behavior. I think a lot of tools surface insights but the last mile of getting a rep to act on them is the hard part. Curious how you're solving that.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "intelo",
@@ -7176,7 +7183,8 @@
       "body": "<div>Hey Philip, one question I keep coming back to in the claims space is how carriers think about the tradeoff between speed and accuracy. Curious whether Inca sees those as competing priorities or if the AI actually improves both at the same time.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "inca",
@@ -7191,7 +7199,8 @@
       "body": "<div>Hey Philip, I work closely with Chris Gaertner who invested in iLife in the insurance space and his family has been in insurance for decades. He has good perspective on how carriers adopt new technology. Happy to connect you if useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "pentimenti",
@@ -7206,7 +7215,8 @@
       "body": "<div>Hey Niklas, one thing I keep hearing about RFPs is that the hardest part isn't the writing itself, it's pulling the right content from past proposals and knowing which sections to update vs. reuse. Curious if that matches what you're seeing from customers.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "pentimenti",
@@ -7236,7 +7246,8 @@
       "body": "<div>Hey David, one thing I think is overlooked in sales enablement is how different the workflow is for reps who spend most of their time in the field vs. on Zoom. The tools that work for inside sales teams just don't translate. Curious how that dynamic shapes your product roadmap.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "scribbl",
@@ -7266,7 +7277,8 @@
       "body": "<div>Hey Gautam, one question I've been thinking about in construction tech is how much of the value from jobsite AI comes from real-time alerts vs. historical trend analysis. Curious which use case is driving more urgency for your customers.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "transio",
@@ -7296,7 +7308,8 @@
       "body": "<div>Hey Reece, I think one of the scariest dynamics in manufacturing right now is how much institutional knowledge walks out the door every time an experienced technician retires. Curious how quickly Metis can capture that knowledge when onboarding a new plant.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "metis",
@@ -7326,7 +7339,8 @@
       "body": "<div>Hey Karan, one question I keep coming back to in warehouse operations is whether the bigger unlock is optimizing existing workflows or actually redesigning how shifts and resources get allocated. Curious how Inveno's customers think about that.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "inveno",
@@ -7341,7 +7355,8 @@
       "body": "<div>Hey Karan, I work closely with Chris Gaertner who invested in companies like Project44 and Parabola in the supply chain space. He has good perspective on how operations teams adopt new technology. Happy to make an intro if useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "prometheus",
@@ -7356,7 +7371,8 @@
       "body": "<div>Hey Jesh, one thing I think is interesting about lubrication management is that it's a leading indicator of equipment health that most plants don't track properly. Curious whether your customers are starting to use Prometheus data to predict failures before they happen or if the primary value is still on the compliance and cost side.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "prometheus",
@@ -7386,7 +7402,8 @@
       "body": "<div>Hey Kevin, I think one of the more interesting dynamics in trade compliance right now is how much the tariff landscape changes quarter to quarter. Curious how The Trade Lab handles the pace of regulatory change and whether that creates more urgency from buyers or more hesitation.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "the-trade-lab",
@@ -7401,7 +7418,8 @@
       "body": "<div>Hey Kevin, I work closely with Chris Gaertner who invested in companies like Project44 and Parabola in the supply chain and logistics space. He has good perspective on how trade and logistics tools land with enterprise buyers. Happy to make an intro if useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "aestus",
@@ -7416,7 +7434,8 @@
       "body": "<div>Hey Gavin, one question I've been thinking about in die casting is whether the quoting bottleneck is more about the engineering complexity or the back-and-forth with customers on specs. Curious which side Aestus is tackling first and where you see the most time saved.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "aestus",
@@ -7431,7 +7450,8 @@
       "body": "<div>Hey Gavin, I work closely with Chris Gaertner who invested in Paperless Parts which also tackles quoting in manufacturing. He has good perspective on how shops adopt new quoting tools. Happy to make an intro if useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "scalar",
@@ -7446,7 +7466,8 @@
       "body": "<div>Hey Marc, one thing I've been thinking about in the API documentation space is how much of the developer experience depends on docs being accurate and up to date, which is exactly the part that breaks first as APIs evolve. Curious how Scalar handles that sync problem.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "scalar",
@@ -7476,7 +7497,8 @@
       "body": "<div>Hey Jack, wanted to bump this to the top of your inbox. I think the property data aggregation problem is only going to get more relevant as more institutional capital flows into real estate and demands better data infrastructure. Would love to learn more about how you're thinking about the market. Happy to be helpful even if you're not raising.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "lexful",
@@ -7491,7 +7513,8 @@
       "body": "<div>Hey Pinar, wanted to follow up on my earlier note. I work closely with Chris Gaertner who invested in companies like Persuit and Logikcull in legal tech, and we're also investors in Orchestry in the MSP space. The intersection of legal workflows and MSPs is something we'd love to learn more about. Open to a quick chat?</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "flamingo",
@@ -7506,7 +7529,8 @@
       "body": "<div>Hey Michael, wanted to follow up on my note about Flamingo. The open-source approach in the MSP space is interesting to us because it changes the adoption motion entirely. I work closely with Chris Gaertner who invested in Rewst and Auvik so this is a space we know well. Would love to chat even if you're not raising.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "harmony-activate",
@@ -7521,7 +7545,8 @@
       "body": "<div>Hey George, wanted to bump my earlier note. We've been spending a lot of time in manufacturing tech and the theme of modernizing plant operations keeps coming up as one of the biggest opportunities. Would love to learn more about what you're seeing from customers. Happy to be helpful even if you're not raising.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "airrived",
@@ -7536,7 +7561,8 @@
       "body": "<div>Hey Anurag, wanted to follow up on my earlier note. AI security is a space we keep spending more time in as every company we talk to starts deploying AI agents. I work closely with Chris Gaertner who invested in Axonius and JumpCloud so security is a core focus for us. Would love to chat if you have some time.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "bearing",
@@ -7551,7 +7577,8 @@
       "body": "<div>Hey Jason, know I've reached out a couple times but wanted to try one more time. Physical security operations is a space we think is really underserved from a technology perspective and I'd love to learn more about how Bearing is approaching it. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "risely",
@@ -7566,7 +7593,8 @@
       "body": "<div>Hey Shahryar, one thing I keep thinking about in higher ed is how much the advising bottleneck impacts retention rates. A student who can't get timely guidance on course selection or career planning is way more likely to drop out. Curious how Risely is measuring that impact for schools.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "risely",
@@ -7596,7 +7624,8 @@
       "body": "<div>Hey Lucia, one thing I think is interesting about the hospitality space right now is the labor shortage. Hotels and restaurants can't staff up fast enough and the ones that figure out how to deliver the same experience with fewer people are going to win. Curious how Aiva fits into that dynamic.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "aiva-tech",
@@ -7626,7 +7655,8 @@
       "body": "<div>Hey Mohit, one question I keep coming back to in insurance finance ops is whether the bigger pain point is the reconciliation itself or the lack of visibility into cash positions across entities. Curious which problem Eventual customers are hiring you to solve first.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "eventual",
@@ -7656,7 +7686,8 @@
       "body": "<div>Hey Ivory, one thing I keep thinking about from my Sunstone days is how much time system integrators spend on the repetitive parts of implementations that look different for every client but follow the same patterns. Curious whether that's the core problem Contour is solving or if there's a different angle driving most of the pull.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "contour",
@@ -7686,7 +7717,8 @@
       "body": "<div>Hey Kenneth, one question I keep coming back to is how the combination of running real production and building the software changes how fast you can iterate on the product. I think most manufacturing software companies are guessing at what shops need, but you're living it. Curious how that shapes the roadmap.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "rmfg",
@@ -7716,7 +7748,8 @@
       "body": "<div>Hey Rayan, one thing I think is interesting about the enterprise AI agent space is the gap between what demos show and what actually works in production. Curious how Theta handles the edge cases that break most agent deployments and whether that's the main selling point for enterprise buyers.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "theta",
@@ -7746,7 +7779,8 @@
       "body": "<div>Hey Christian, one question I've been thinking about is whether the API management challenge for AI agents is fundamentally different from traditional API management or just a scaling problem. Curious how you think about that distinction and what it means for the product.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "orthogonal",
@@ -7776,7 +7810,8 @@
       "body": "<div>Hey Doug, one thing I keep thinking about in the mid-market payments space is how much companies struggle with the transition from basic invoicing to real financial operations as they scale. Curious whether that growth inflection point is what drives most of your customer conversations.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "anchorbase",
@@ -7806,7 +7841,8 @@
       "body": "<div>Hey Darko, one thing I keep hearing from engineering teams is that the deployment and infrastructure management problem is getting worse, not better, as companies add more services and environments. Curious how Superplane is differentiating in what's becoming a pretty active space.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "superplane",
@@ -7836,7 +7872,8 @@
       "body": "<div>Hey Rohan, one thing I think is interesting about the AI agent testing space is that as more companies deploy voice and chat agents, the consequences of a bad interaction get a lot more expensive. Curious how you're thinking about the market as deployment volume ramps up.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "bluejay",
@@ -7866,7 +7903,8 @@
       "body": "<div>Hey Michael, one question I've been thinking about in construction is whether the admin burden is worse for GCs or subs. I think the answer might be different depending on company size. Curious what you're seeing from Shackleton customers.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-16T15:12:24.589Z"
     },
     {
       "slug": "shackleton",
