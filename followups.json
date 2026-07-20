@@ -7231,7 +7231,8 @@
       "body": "<div>Hey Niklas, we've been seeing a lot of energy around AI-driven document workflows across our portfolio and the RFP use case consistently comes up as one of the clearest ROI stories. Happy to share some patterns we're seeing if useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-20T17:37:39.400Z"
     },
     {
       "slug": "scribbl",
@@ -7262,7 +7263,8 @@
       "body": "<div>Hey David, Chris on our team invested in companies like Lessonly, Highspot, and Voiceflow in the sales enablement space. He has good perspective on how field-facing tools get adopted. Happy to make an intro if that'd be useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-20T17:37:39.412Z"
     },
     {
       "slug": "transio",
@@ -7293,7 +7295,8 @@
       "body": "<div>Hey Gautam, our Head of Ops Harrison Doyle is a former Procore VP of Finance so construction is a space we know well. Happy to connect you if he'd be a useful sounding board. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-20T17:37:39.412Z"
     },
     {
       "slug": "metis",
@@ -7324,7 +7327,8 @@
       "body": "<div>Hey Reece, we've been spending a lot of time in industrial tech and the knowledge management problem keeps coming up as one of the most urgent challenges plant managers face. Happy to share what we're hearing from the market if useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-20T17:37:39.412Z"
     },
     {
       "slug": "inveno",
@@ -7609,7 +7613,8 @@
       "body": "<div>Hey Shahryar, we've been spending time around AI in education and the pattern we keep seeing is that tools that directly improve student outcomes get budget way faster than back-office efficiency plays. Happy to share what we're seeing if useful. If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-21",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-07-20T17:37:39.412Z"
     },
     {
       "slug": "aiva-tech",
