@@ -1,4 +1,4 @@
-﻿{
+{
     "pending":  [
                     {
                         "slug":  "kay",
@@ -7945,6 +7945,36 @@
                         "sendDate":  "2026-07-21",
                         "status":  "completed",
                         "processedAt":  "2026-07-22T08:00:00Z"
+                    },
+                    {
+                        "slug":  "coverwatch",
+                        "company":  "CoverWatch",
+                        "founder":  "Miquel Llobet",
+                        "email":  "mllobet@trycoverwatch.com",
+                        "domain":  "trycoverwatch.com",
+                        "threadId":  "19f9577ef2c379b8",
+                        "superhumanThreadId":  "19f9577ef2c379b8",
+                        "messageId":  "19f95781f45ba634",
+                        "subject":  "Congrats on the Raise! | Telescope Intro",
+                        "body":  "\u003cdiv\u003eHey Miquel, was thinking more about CoverWatch. I\u0027d be curious whether you\u0027re seeing more pull from businesses switching away from their existing broker or from companies buying commercial insurance for the first time. Feels like two very different sales motions.\u003cbr\u003e\u003cbr\u003eWould love to hear how it\u0027s playing out. Happy to jump on a quick call anytime.\u003c/div\u003e",
+                        "emailNumber":  2,
+                        "sendDate":  "2026-07-26",
+                        "status":  "pending"
+                    },
+                    {
+                        "slug":  "coverwatch",
+                        "company":  "CoverWatch",
+                        "founder":  "Miquel Llobet",
+                        "email":  "mllobet@trycoverwatch.com",
+                        "domain":  "trycoverwatch.com",
+                        "threadId":  "19f9577ef2c379b8",
+                        "superhumanThreadId":  "19f9577ef2c379b8",
+                        "messageId":  "19f95781f45ba634",
+                        "subject":  "Congrats on the Raise! | Telescope Intro",
+                        "body":  "\u003cdiv\u003eHey Miquel, just circling back. Chris Gaertner on our team has spent a lot of time in insurance distribution and would be a great person to bounce ideas off as you scale. Happy to connect you two regardless of whether a Telescope conversation makes sense right now.\u003cbr\u003e\u003cbr\u003eIf now isn\u0027t the right time, totally understand.\u003c/div\u003e",
+                        "emailNumber":  3,
+                        "sendDate":  "2026-07-31",
+                        "status":  "pending"
                     }
                 ]
 }
