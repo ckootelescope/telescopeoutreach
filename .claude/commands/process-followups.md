@@ -71,6 +71,7 @@ If Superhuman thread found:
 create_or_update_draft:
   type: "reply"
   thread_id: <superhuman_thread_id>
+  to: [entry.email]
   body: <entry.body>   (HTML, exact text - do NOT use instructions)
 ```
 
@@ -82,6 +83,8 @@ create_or_update_draft:
   subject: "Re: <entry.subject>"
   body: <entry.body>   (HTML, exact text - do NOT use instructions)
 ```
+
+**CRITICAL:** ALWAYS set `to: [entry.email]` with ONLY the founder's email on EVERY draft, including reply drafts. The Superhuman API defaults reply recipients to the thread's last sender, which is Calvin. Omitting `to` will address the draft to Calvin instead of the founder. Never include calvin@telescopepartners.com in the `to` field.
 
 **IMPORTANT:** Always use the `body` parameter, NOT `instructions`. The email content is pre-written in followups.json and must be sent exactly as-is. Do NOT let Superhuman's AI writer rewrite it.
 
@@ -113,7 +116,7 @@ For each processed entry, log to the Outreach Tracker sheet using the Apps Scrip
 
 Use WebFetch to POST to:
 ```
-https://script.google.com/a/macros/telescopepartners.com/s/AKfycbxDjUpxiCfDLXlvpqogZZGJqV_qSawC-Y8JLbFoKxh-guq4MmrGBUObo90EQ9kdFfqm/exec
+https://script.google.com/macros/s/AKfycbxtydJyjn-zoVghE1HHv-Lxgj71E2FQAxk2Va98Bn9RCp50_7Uiiy347djStEqztaKZ/exec
 ```
 
 POST body (JSON):

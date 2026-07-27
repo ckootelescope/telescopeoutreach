@@ -17,16 +17,14 @@ When Calvin says "outreach to [URL]" or "reach out to [company]", YOU handle eve
 
 ### Step 1: Research (RUNS IN A SUBAGENT)
 
-**This step MUST run in a separate subagent (Agent tool).** The subagent does all MCP lookups and returns ONLY a structured Writing Brief. This is an architectural guardrail: founder career history, resume data, prior companies, and website marketing copy never enter the main writing context, so they cannot leak into the email.
-
-#### Subagent instructions
+**This step MUST run in a separate subagent (Agent tool).** The subagent does all MCP lookups and returns ONLY a structured Writing Brief. Founder career history, resume data, prior companies, and website marketing copy never enter the main writing context.
 
 The research subagent performs:
 a) **Web search** the company AND **fetch their website** to understand what they actually do
 b) **Harmonic get_companies** with website domain (field_groups: name_id_description_headcount_website, funding, founders_ceo, highlights, location, contact)
 c) **Affinity search_companies** with company name, with_interaction_dates: true
    - Within 90 days → return affinity_block: true with details so main context can ask Calvin
-   - Prior history (>90 days) → check WHO was contacted at the person level. Never assume.
+   - Prior history (>90 days) → check WHO was contacted at the person level
 d) **Apollo apollo_people_match** for founder email + LinkedIn if Harmonic doesn't have them
 e) Multiple founders → default to CEO. Ambiguous → return all names so main context can ask Calvin.
 
@@ -34,12 +32,10 @@ e) Multiple founders → default to CEO. Ambiguous → return all names so main 
 
 #### Writing Brief (the ONLY output the subagent returns)
 
-The subagent returns EXACTLY these fields and NOTHING ELSE:
-
 ```
 company_name: [name]
 domain: [domain]
-what_they_do: [1-2 sentences in plain language describing what the company does, written as Calvin would explain it to a friend. NO marketing copy, NO jargon, NO website language.]
+what_they_do: [2-3 sentences in plain language. What the company does AND what problem/workflow they're replacing. Enough context to develop a thesis-level insight about where the company could go. NO marketing copy, NO jargon.]
 founder_first_name: [first name]
 founder_last_name: [last name]
 founder_email: [email]
@@ -47,329 +43,130 @@ founder_linkedin: [URL]
 real_calvin_connections: [ONLY: shared school (CMC, Claremont, Harvard-Westlake), shared industry (Calvin's Sunstone tech-services background), someone Calvin actually knows. If none, leave blank.]
 portfolio_tie_in: [relevant Telescope portfolio company or team member connection, if any. If none, leave blank.]
 affinity_status: [no prior interaction / prior interaction >90 days with details / BLOCKED within 90 days]
+affinity_spoken: [yes/no — has someone on the Telescope team actually HAD A CONVERSATION with this company (meeting/call), not just sent an outbound email]
 funding_stage: [last known round + amount, if public. If unknown, leave blank.]
 trigger: [specific recent event like partnership, funding announcement, expansion. If none, leave blank.]
 headcount: [approximate, if known]
 ```
 
-**The subagent MUST NOT return:** founder's career history, prior companies, prior exits, education (unless shared school with Calvin), LinkedIn summary, job titles at previous companies, quotes from press, website copy, technical product descriptions, or any other data not listed above.
+**The subagent MUST NOT return:** founder's career history, prior companies, prior exits, education (unless shared school with Calvin), LinkedIn summary, job titles at previous companies, quotes from press, website copy, technical product descriptions.
 
-### Step 2: Draft Email 1
+### Step 2: Draft Email
 
-The main context receives ONLY the Writing Brief above. The email is written from this brief + the templates below. Nothing else.
+The email has four blocks. Three are fixed templates. Only the Insight block varies per company.
 
-#### HOW TO WRITE THE EMAIL
+#### Block 1: Opener (FIXED)
 
-**Step 1: Read the Writing Brief.** That is your only input. You do not have access to the founder's background, career history, or website copy. This is intentional.
+> Love what you're building at [Company] and wanted to reach out.
 
-**Step 2: Ask yourself:** "How would Calvin explain what this company does and why it matters to a friend over drinks?" Write THAT.
+**Only exception:** If someone on the team has actually SPOKEN to the company (per affinity_spoken), reference that prior conversation instead.
 
-**Step 3: Audit.** Before finalizing, re-read every sentence and check:
-- Does every piece of information in this email come from the Writing Brief fields? If I'm referencing something not in the brief (founder's past companies, career history, education), DELETE IT. That data was excluded for a reason.
-- Did I describe what the customer's day actually looks like, or did I just summarize the product?
-- Does any sentence sound like it could appear on a company's About page? If yes, rewrite.
-- Did I use any phrase from the kill list? If yes, rewrite.
-- Does it sound like every other email I've written, or does it have flavor specific to this company?
-- Am I editorializing about how big the opportunity is instead of just describing the problem?
+#### Block 2: Insight (VARIABLE — the only creative part)
 
-#### EVERY EMAIL I WROTE HAD THESE PROBLEMS. DO NOT REPEAT THEM.
+2-3 sentences with a developed, thesis-level insight about the company's vision and the problem they're solving.
 
-**Problem 1: Editorializing instead of describing.**
-I kept adding thesis statements telling the reader what to think: "I think there's a massive opportunity to...", "is a huge deal", "nobody has really gone after this properly yet." Calvin's real emails describe the world as it is and let the reader draw the conclusion.
+**This is NOT:**
+- A description of what the company does
+- A restatement of their website
+- An observation about the market being big
+- A compliment about the team
 
-GOOD: "I think there's a big opportunity to just let software handle that."
-GOOD: "I think there's a massive opportunity to own the financial infrastructure layer for these agencies and nobody has really gone after it properly yet."
-GOOD: "Building AI that can read every contract and actually catch when something doesn't match feels like a no-brainer, and I'm surprised nobody has done it well until now."
+**This IS:**
+- A developed perspective on where the company's vision could go
+- A structural insight about the problem they're solving
+- A thesis about why this approach could become something bigger
 
-BAD: "They end up with the same problems as everyone else but none of the tools to deal with it."
-BAD: "It's one of those problems where the solution needs to be so simple that a contractor can set it up between jobs."
-BAD: "It's one of those workflows where everyone knows it's broken but they've just accepted it as how things work."
+**Example (Desteia):** "I think cross-border trade is a particularly compelling problem space, and Desteia has the potential to evolve from a system of record into a true system of action. I'm assuming the longer-term vision is to automate more of the coordination, document handling, and exception resolution that still sits across operators, brokers, and fragmented systems today which would be a meaningful shift in workflows."
 
-The difference: Good writing expresses a personal opinion vs. stating something as a fact like AI would.
+The insight should show you've thought deeply about the problem. Think: what's the natural evolution? What's structurally interesting? What's the unlock the founder is probably thinking about?
 
-**Problem 2: Using the same template structure every time.**
-Every email followed the exact same flow: opener → product description → Telescope context → close. Calvin's real emails vary. Some lead with a question. Some lead with the founder's background. Some acknowledge competition. Some don't describe the product at all. Each email should feel like it was written from scratch.
+#### Block 3: Telescope Intro (FIXED)
 
-**Problem 3: Copying language from the company's website.**
-I kept pulling phrases directly from marketing copy and trying to make them sound casual. "Real-time threat detection and predictive maintenance", "auto-tune detection rules", "triage", "edge-native observability." If a normal person wouldn't say it in conversation, don't write it.
+> On us, we're an early growth VC (seed - Series B) led by Mickey Arabelovic (former Sequoia partner) focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-30M rounds in a handful of founders each year.
 
-**Problem 4: Using AI-sounding phrases.**
-"The fact that...", "is especially compelling", "gives you a strong foundation", "is a fundamentally better approach", "you lived through the pain", "is the right architecture for", "is a strong signal", "says a lot about the team." These are crutches. Kill them.
+#### Block 4: Close (FIXED)
 
-**Problem 5: Not researching the company properly.**
-Multiple emails described the wrong product because I relied on Harmonic descriptions or assumptions instead of actually reading the website. Kaizntree was described as inventory management for manufacturers when it's actually AI workflow automation for CPG operators. Isoform was described as a coding copilot when it's an AI-powered integration services platform. Always verify.
+> Would love to chat and learn more about what you're building and how we can help out. Are you free next week?
 
-**Problem 6: Forced comparison lines trying to sound insightful.**
-"But one stockout still shuts down their whole production line the same way it would for a company 10x their size." These lines try to be clever and just sound forced. Cut them.
+#### Rules
 
-**Problem 7: Same crutch phrases in every email.**
-I kept defaulting to the same "safe" phrases: "I think there's a big/huge/massive opportunity to...", "nobody has really gone after this properly yet", "kind of crazy that nobody has built this", "leaving money on the table", "take that off their plate." If you find yourself reaching for any of these, stop and rewrite.
-
-**Problem 8: Not varying tone and approach.**
-Every email sounded the same because I used the same opener, same structure, same close. Calvin's real emails have personality. Some are blunt. Some ask questions. Some acknowledge the elephant in the room. The approach should match the company and the situation.
-
-**Problem 9: Never reference the founder's background in a corny way**
-Don't ever make a sentence that says because of your XXX background you must know how this is done. It's an absolutely shit and corny line."
-
-**Problem 10: DO NOT EVER DEVIATE FROM THE INSTRUCTIONS**
-DO NOT EVER DEVIATE FROM THE INSTRUCTIONS IN THIS SHEET AND INJECT YOUR OWN THOUGHT ON WHAT MIGHT LOOK GOOD"
-
-#### KILL LIST — NEVER USE THESE PHRASES
-
-- "nobody has really gone after this properly yet"
-- "kind of crazy that nobody has built this"
-- "is a massive/huge opportunity"
-- "is a huge deal"
-- "is a strong signal"
-- "says a lot about the team"
-- "is especially compelling"
-- "is a fundamentally better approach"
-- "gives you a strong foundation"
-- "the fact that..."
-- "you lived through the pain"
-- "is the right architecture for"
-- "leaving money/margin on the table"
-- "take that off their plate"
-- "long overdue"
-- "is a no-brainer"
-- "real-time threat detection and predictive maintenance" or any jargon string copied from a website
-- "triage" / "auto-tune" / "edge-native" or any technical term a normal person wouldn't use
-- Any sentence that starts with "The fact that you..."
-- Any sentence that ends with "...is a massive opportunity"
-- "you and XXX have experience at"
-
-#### WHAT GOOD EMAILS LOOK LIKE
-
-These are Calvin's REAL emails. Study them. Match this voice. Every email you write should feel like it belongs in this list.
-
-**Calvin to Nicolas at Fakto (congrats on funding, brief, offers to be a resource):**
-"Hey Nicolas, Congrats on the seed funding from Frst - excited to see where you guys go from here. I know you're likely not raising again anytime soon, but I'd love to make the connection and learn more about what you guys are building. We've spent time around supplier validation (Relish, etc.) and love what you've built so far. For context, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year. Not sure when you plan on expanding into the US, but we'd be happy to be a resource. LMK your thoughts on chatting."
-
-**Calvin to Dhruva at FlowGen (personal connection, drops a real question mid-email):**
-"Hey Dhruva, I'm a fan of what you're building at FlowGen Labs so wanted to reach out. I'm well aware of the problems with ERPs given my background in tech-services investing. Everyone talks about AI agents but nobody has really figured out how to deploy them inside an ERP where the stakes are real and the processes are embedded. The fact that you're already live with companies like Veritiv and Korn Ferry is great traction. For context on us, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year. Do you know Ariadna BTW? I lived with her and her now fiancé David when I first moved to NY - saw you guys may have went to HS together? Anyway - would love to chat over a quick Zoom in the coming weeks. Happy to be helpful in any way even if you're not raising. LMK your thoughts."
-
-**Calvin to Ankur at Turgon (references a specific trigger, connects to personal background):**
-"Hey Ankur, Saw the DynPro partnership so wanted to reach out. I've been following Turgon since my last job at Sunstone Partners given we focused on IT services. Every big company I talk to knows they need to modernize their IT stack, which becomes a cost center. Most of the pain comes from the fact that their data is scattered across dozens of systems that don't talk to each other, and cleaning that up manually is brutal. Using AI to actually do the heavy lifting on migration and integration feels like it should have been solved a long time ago. For some background, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year. Would love to get introduced over a quick Zoom in the coming weeks. Happy to be helpful in any way even if you're not raising. LMK your thoughts."
-
-**Calvin to Simba at LaborUp (references prior Telescope contact, leads with founder not product):**
-"Hey Simba, Know Chris and Drew have reached out in the past, but I've been spending a lot of time in the manufacturing space and LaborUp keeps coming up so wanted to reach out. A couple things that you do that stand out: 1. You're tackling a critical component of your end-market: staffing and labor 2. You a unique perspective of both being in Silicon Valley (Stanford) + manufacturing in your early career. As a quick refresher on us, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year. Would love to chat and we're happy to be helpful in any way even if you're not raising. LMK your thoughts."
-
-**Calvin to Isoform (acknowledges competition, asks a question):**
-"Obviously a crowded market, but I love the approach of the PE-portco GTM channel. I came from Sunstone Partners so am well aware AI-led dev is front-of-mind. I'd be curious to learn more about how you guys are differentiating against the variety of different options that are out there."
-
-**Calvin to CC (leads with vertical interest, asks about pivot):**
-"First, I love verticals where people have traditionally been tech-laggards like home services. In addition to that, I think the problem you're solving for has real ROI for customers. I'd be curious as to how you're pivoting given the new advancements with LLMs, etc."
-
-**Calvin to WorkHero follow-up (references prior meeting, natural, casual):**
-"Jason - hope the rest of the trip in Texas went well. I wanted to follow up on our last call - Chris (cc'd) and I would love to set up a quick call with the team sometime to see how we can help you guys out. Know you mentioned you're not raising yet, but Chris has spent quite a bit of time in the broader logistics space and has experience with companies like Project44 and Parabola from his time at OpenView. Even if you're not raising - we'd love to see if we can make any relevant intros or be a sounding board moving forward. LMK if the team is open to a quick chat in the next couple of weeks - look forward to catching up again soon."
-
-**Chris to Arbor (opinion on the space, not a product description):**
-"I think what you're building w/ Arbor is very interesting — as an investor in fathom and otter ai, I think there's a huge opportunity for vertical-specific tools to use voice AI as a wedge into downstream bespoke workflows. I like the frontline approach given their lack of engagement with historical tooling."
-
-#### WHAT MAKES THESE WORK — STUDY THIS
-
-1. **They don't all follow the same structure.** Some lead with congrats on funding. Some lead with a personal connection. Some lead with the founder's background. Some lead with a specific trigger (partnership announcement). Some ask questions. Some use numbered lists.
-
-2. **They reference real personal context.** "I lived with her and her now fiancé David", "my background in tech-services investing", "my last job at Sunstone Partners", "Know Chris and Drew have reached out in the past." This isn't faked — it's real shared context that makes the email feel human.
-
-3. **They don't explain the product back to the founder.** None of these emails say "your platform does X, Y, and Z." They either share an opinion about the space, reference what stood out about the founder, or describe a problem they've been hearing about from the market.
-
-4. **They ask genuine questions.** "I'd be curious how you're pivoting given LLMs", "how you guys are differentiating", "Do you know Ariadna BTW?", "Not sure when you plan on expanding into the US." These invite a real response.
-
-5. **They're not afraid to be short.** The LaborUp email hook is literally two bullet points. The CC hook is two sentences. Not everything needs a paragraph.
-
-6. **The Telescope context varies.** "For context", "For context on us", "For some background", "As a quick refresher on us." And it's not always in the same position in the email.
-
-7. **The closes vary.** "LMK your thoughts on chatting", "LMK your thoughts", "Would love to chat", "look forward to catching up again soon." Not the same line every time.
-
-8. **They include personal touches that have nothing to do with the deal.** The Ariadna question in the FlowGen email. The "compare respective college football careers" in Chris's email. These make it feel like a person, not a template.
-
-**Calvin to Maor at Spacial (ties to Telescope thesis, asks real question, doesn't explain the product):**
-"Hey Maor, Love what you're building with Spacial and wanted to reach out. A couple things that stand out to me: the combination of AI with actual licensed engineers is smart - we love the theme of human-in-the-loop AI firms right now. 140 active projects since launching last year is also great traction. I'd be curious how/if you're thinking about expanding beyond residential. For some background, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year. Our Head of Ops Harrison Doyle is a former Procore VP of Finance so construction is a space we know well. Would love to chat via Zoom even if you're not immediately raising again - are you free anytime in the next couple of weeks?"
-
-**Calvin to Georgios at ArchiBoost (leads with Telescope thesis, calls out team domain expertise, asks GTM question):**
-"Hey Georgios, I'm a big fan of what you're building at ArchiBoost so wanted to reach out. We love the theme of helping customers catch expensive mistakes early before they compound downstream - it's a pattern we've seen work across a bunch of industries. The fact that your team has real expertise is important in a space where the domain knowledge really matters. I'd be curious how firms are discovering you and whether it's more word of mouth or top-down. For background on us, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year. Our Head of Ops Harrison Doyle is a former Procore VP of Finance so construction is a space we know well. Even if you're not raising, we'd love to see if we can make any relevant intros or be a sounding board moving forward. LMK if you're open to a quick chat in the next couple of weeks."
-
-**What makes these work:**
-- They sound like a person wrote them, not a template with blanks filled in
-- They lead with different things depending on the company (space opinion, founder background, competition, personal connection)
-- They ask real questions that invite a response
-- They reference prior interactions and real context naturally
-- They don't all follow the same structure
-- The Telescope context is brief and woven in, not a separate pitch block
-
-#### MOVES YOU CAN MIX AND MATCH
-
-Don't follow a template. Pick the moves that fit the company:
-
-- Lead with an opinion about the space ("I love verticals where people have been tech-laggards")
-- Lead with a question ("I'd be curious how you're thinking about X given Y")
-- Acknowledge competition ("Obviously a crowded market, but...")
-- Name-drop a relevant portfolio connection naturally
-- Reference a prior Telescope interaction (only if verified at person level)
-- Keep it to 2-3 sentences and just ask for the meeting
-
-Some emails should be 3 sentences. Some should ask a question. Some should lead with Chris's experience. Some shouldn't mention Telescope until the second paragraph. Vary it.
-
-#### THE THOUGHT PROCESS THAT ACTUALLY WORKS — FOLLOW THIS EVERY TIME
-
-This is the exact thought process that produced the best email in this entire project (ArchiBoost). Follow these steps in order before writing ANYTHING:
-
-**Step 1: What pattern does this company fit that Telescope cares about?**
-Don't think about the product. Think about the investment thesis. "Catching expensive mistakes early before they compound downstream" is a pattern. "Human-in-the-loop AI" is a pattern. "Vertical where people have been tech-laggards" is a pattern. "Owning the data layer" is a pattern. Find the pattern and lead with it. This makes the hook about what CALVIN cares about as an investor, not what the company does.
-
-**Step 2: What about this specific team makes them the right people to build this?**
-Not a generic compliment ("strong team"). Something that actually matters for the business. "Built by AEC people, not generic AI developers, in a space where domain knowledge matters." "19 years running a construction company." "Previously built and exited in the same space." If there's nothing specific, skip this.
-
-**Step 3: What question would Calvin actually want answered?**
-Think like an investor doing diligence, not like someone making small talk. GTM questions are good: "how are firms discovering you", "more pull from channel or direct", "how you're thinking about expanding beyond residential." Product pivot questions are good: "how you're pivoting given LLMs." Competitive questions are good: "how you're differentiating." Pick ONE question that invites a real conversation.
-
-**Step 4: Write the email around those three things. Do NOT describe the product.**
-The founder knows what they built. The email is about why Calvin finds it interesting from his seat. The hook should be about Telescope's worldview and what they care about, not a summary of the company's website.
-
-**ArchiBoost example — what this process produced:**
-- Pattern: "We love the theme of helping customers catch expensive mistakes early before they compound downstream - it's a pattern we've seen work across a bunch of industries."
-- Team: "The fact that your team has real expertise is important in a space where the domain knowledge really matters."
-- Question: "I'd be curious how firms are discovering you and whether it's more word of mouth or top-down."
-
-**Spacial example — what this process produced:**
-- Pattern: "We love the theme of human-in-the-loop AI firms right now."
-- Traction: "140 active projects since launching last year is also great traction."
-- Question: "I'd be curious how/if you're thinking about expanding beyond residential."
-
-Not every email needs all three. But the PATTERN is always the most important part. It's what makes the email about Calvin's perspective, not a product recap.
-
-#### OPENER OPTIONS (vary these, don't always use the same one)
-
-1. "I'm a big fan of what you're building at [X] so wanted to reach out."
-2. "I heard great things about [X] so wanted to reach out."
-3. "I've been spending a lot of time in [space] and [Company] keeps coming up so wanted to reach out."
-4. "[Name] - [personal reference to something real]. I wanted to reach out because..."
-
-DO NOT use "Hope you're doing well" — generic.
-
-#### TELESCOPE CONTEXT
-
-Keep it brief. One block, not a separate pitch paragraph:
-
-"As quick background, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year."
-
-Or weave it in: "For background on us, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year."
-
-Or as a refresher: "As a quick refresher on us, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year."
-
-#### CLOSE OPTIONS (vary these too)
-
-2. "Would love to chat and we're happy to be helpful in any way even if you're not raising. LMK your thoughts."
-3. "Even if you're not raising - we'd love to see if we can make any relevant intros or be a sounding board moving forward. LMK if you're open to a quick chat in the next couple of weeks."
-4. "LMK if you're open to a quick Zoom - look forward to hearing back."
-
-#### RULES
-
-- NO sign-off. Superhuman signature handles it.
-- NO "My name is Calvin" — redundant with signature.
-- NO double dashes (em dashes). Use commas or periods.
-- NO jargon or technical terms a normal person wouldn't use in conversation.
-- NO copying language from the company's website or press. EVER.
-- NO editorializing about opportunity size. Describe the problem, let the reader draw the conclusion.
-- NO using the same structure for every email. Vary approach based on the company.
-- YES plain language. Like explaining to a friend at a bar.
-- YES casual tone. These founders are Calvin's peers.
-- YES asking real questions when it makes sense.
-- YES acknowledging competition or market dynamics when relevant.
-- YES varying the structure, length, and approach for each email.
-
-#### SUBJECT LINE (preference order)
-
-1. Personal connection: "fellow CMC grad | Telescope intro"
-3. Fallback: "Telescope <> [COMPANY] Intro
-
-#### SCHOOL CONNECTIONS
-
-- Calvin: Claremont McKenna (CMC), Claremont Consortium (Pomona, Harvey Mudd, Scripps, Pitzer), Harvard-Westlake
-- If founder attended any → lead with it
-
-#### PORTFOLIO REFERENCES (mention ONE when relevant)
-
-- Construction: Harrison Doyle (Head of Ops) is ex-Procore VP of Finance
-- General: Mickey (our founder) Partner at Sequoia for 8  years before founding Telescope
-- Security: Chris worked with Axonius, JumpCloud
-- Infrastructure: Chris worked with Datadog
-- PLG: Chris worked with Calendly, Expensify, Otter AI
-- Legal: Chris worked with Persuit, Logikcull
-- Mfg/Supply Chain: Chris worked with Parabola, Paperless Parts, Project44
-- Vertical SaaS: Chris worked with ShopGenie, PartsTech, Mangomint, VTS
-- GTM/Enablement: Chris worked with Lessonly, Highspot, Voiceflow
-- MSP: Chris worked with Rewst, Auvik
-- E-commerce: Chris worked with Postscript, Chargeflow
-- AI infra: Chris worked with DataRobot
-- SMB: Chris worked with ZenBusiness
-- Healthcare: Telescope includes Passage Health, Canid, Carefeed
-- Insurance: Chris worked with iLife, family at State Farm
-- Travel: Telescope includes Engine
-- Fundraising: Telescope includes FundraiseUp, Givzey
-- Compliance: Telescope includes MedTrainer
-- Say "we've worked with" or "I work closely with Chris Gaertner who invested in [X]". Never say "at OpenView."
-
-#### TELESCOPE FACTS
-
-Series A firm, $275M Fund III, $5-25M rounds, handful of founders each year. Founded by Mickey Arabelovic (7yrs at Sequoia). Chris Gaertner is Principal (NOT founder), Stanford, ex-OpenView VP.
+- Greeting: "Hey [First Name],"
+- Blank line between each block
+- NO sign-off (Superhuman signature handles it)
+- NO em dashes (-- or —). Use commas or periods.
+- NO jargon or website language
+- NO AI-sounding phrases ("the fact that...", "is especially compelling", "gives you a strong foundation", "says a lot about the team")
+- Subject line: "Telescope <> [Company] Intro" (or reference a trigger like "congrats on the raise | Telescope intro")
 
 ### Step 3: Send to Superhuman Drafts
 
 Use Superhuman MCP create_or_update_draft:
 - type: "new"
 - to: [founder's email]
-- subject: creative subject line
+- subject: subject line
 - body: email as HTML (div tags, br for line breaks)
+
+**CRITICAL: Every Superhuman draft MUST have `to` set to ONLY the founder's email. Never include calvin@telescopepartners.com in the `to` field.**
 
 Tell Calvin: "Draft created for [Founder] at [Company]. Review in Superhuman and send when ready. LinkedIn: [URL]"
 
 ### Step 4: After Calvin Says He Sent It
 
 a) Search Superhuman for the sent thread: `list_threads(from: ["calvin@telescopepartners.com"], to: [founder_email], subject_contains: subject_line)` — extract the Superhuman `thread_id`
-b) Also search Gmail if needed: "from:me to:{founder_email} newer_than:7d" — extract Gmail thread ID and message ID
-c) Draft Email 2 and Email 3 content yourself (same writing rules apply)
-d) Calculate dates: Email 2 = send date + 2 days, Email 3 = Email 2 date + 5 days
+b) Also search Gmail: "from:me to:{founder_email} newer_than:7d" — extract Gmail thread ID and message ID
+c) Draft Email 2, Email 3, and Email 4 content (follow-up templates below)
+d) Calculate dates: Email 2 = send date + 2 days, Email 3 = send date + 7 days, Email 4 = send date + 12 days
 e) Add entries to `followups.json` with status "pending", including both `threadId` (Gmail) and `superhumanThreadId` (Superhuman) fields
-f) Git add, commit, and push `followups.json` to remote — this is critical, the scheduler reads from the remote copy
+f) Git add, commit, and push `followups.json` to remote — the scheduler reads from the remote copy
 g) Create LinkedIn calendar reminder (Step 5)
-h) Log to Google Sheet (Analytics section)
-i) Tell Calvin: "Follow-ups scheduled. Email 2 on [date], Email 3 on [date]. Run /process-followups when they're due, or they'll be picked up by the scheduled routine."
+h) Tell Calvin: "Follow-ups scheduled. Email 2 on [date], Email 3 on [date], Email 4 on [date]."
 
 ### Step 5: LinkedIn Integration
 
-Calvin sends LinkedIn connections manually. Make it effortless:
+Create Google Calendar event:
+- Title: "LinkedIn Connect: [Founder] — [Company]"
+- Date: same day or next day after Email 1
+- Time: 9:00 AM PT
+- Description: LinkedIn URL + suggested connection note
 
-1. Grab LinkedIn URL during research
-2. Create Google Calendar event:
-   - Title: "LinkedIn Connect: [Founder] — [Company]"
-   - Date: same day or next day after Email 1
-   - Time: 9:00 AM PT
-   - Description: LinkedIn URL + suggested connection note
+Suggested note: "Hey [Name] — just sent you a note about [Company]. Would love to connect here too."
 
-Suggested notes (under 300 chars, super casual):
-- "Hey [Name] — just sent you a note about [Company]. Would love to connect here too."
-- "Hey [Name] — following up on my email - would love to chat about [COMPANY] when you have some time
+Full cadence: Day 0 Email 1 + LinkedIn, Day 2 Email 2, Day 7 Email 3, Day 12 Email 4.
 
-Full cadence: Day 0 Email 1 + LinkedIn, Day 2 Email 2, Day 7 Email 3.
+## Follow-up Emails
 
-## Follow-up Email Guidelines
+Follow-ups are reply-threaded. No sign-off on any (Superhuman handles it).
 
-Same writing rules as Email 1. Same kill list. Same audit step.
+### Email 2 (+2 days) — FIXED TEMPLATE
 
-**Email 2 (+48 hours):** New value — market insight, data point, genuine question. Never "just following up." Shorter than Email 1. No sign-off.
+> Hey [First Name] - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.
 
-**Email 3 (+5 days after Email 2):** Portfolio anecdote or buyer-side signal. Shortest of all. End with "If now isn't the right time, totally understand." Never "last note from me." No sign-off.
+### Email 3 (+7 days) — FIXED TEMPLATE
+
+> Hey [First Name] - following up - how have you been thinking about your next raise? I really like what you're building at [Company] and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.
+
+### Email 4 (+12 days) — SEMI-TEMPLATED
+
+Four paragraphs. Paragraphs 1, 3, and 4 are fixed. Paragraph 2 is a NEW insight (different from Email 1) about the company plus how Telescope can specifically help.
+
+**Paragraph 1 (fixed):**
+> Hey [First Name] - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.
+
+**Paragraph 2 (variable — new insight + Telescope value-add):**
+A separate insight about the company that was NOT in Email 1, plus how specifically Telescope can help. This should connect the company's opportunity to Telescope's pattern of helping companies scale.
+
+Example (Grantd): "I think Grantd is solving a clear pain point for RIAs by helping them deliver scalable equity compensation advice to clients with growing exposure to RSUs and equity grants. Over time, the data and workflow layer could also support a broader enterprise platform for helping employees manage their equity."
+
+**Paragraph 3 (fixed):**
+> This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.
+
+**Paragraph 4 (fixed):**
+> I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.
 
 ## Follow-up Processing
 
-Follow-ups are now processed via Superhuman instead of Gmail. Two mechanisms:
-
-1. **Manual:** Calvin runs `/process-followups` in Claude Code — processes all due entries from `followups.json`, creates Superhuman drafts, detects replies/bounces, updates statuses, pushes to GitHub
-2. **Scheduled:** A Claude Code scheduled routine runs daily (~8am PT) with the same logic
-
-The old GitHub Actions workflow (`followup_scheduler.yml` + `run_scheduler.js`) has been retired. Do NOT create per-company workflow YAML files. All follow-ups go through `followups.json` entries processed by the skill.
+1. **Manual:** Calvin runs `/process-followups` — processes due entries from `followups.json`, creates Superhuman reply drafts, detects replies/bounces, updates statuses, pushes to GitHub
+2. **Scheduled:** A Claude Code routine runs daily (~8am PT) with the same logic
 
 ### followups.json entry format
 
@@ -391,42 +188,49 @@ The old GitHub Actions workflow (`followup_scheduler.yml` + `run_scheduler.js`) 
 }
 ```
 
-When adding new entries, ALWAYS push `followups.json` to remote immediately after. This is the #1 failure mode.
+When adding new entries, ALWAYS push `followups.json` to remote immediately after.
 
 ## Cancel Outreach
 
-To cancel a company's follow-up cadence, set all pending entries for that slug in `followups.json` to `status: "cancelled"`, then commit and push.
-
-## Batch Mode
-
-Multiple URLs → process each. Show progress. All follow-ups go into `followups.json` with appropriate send dates.
+Set all pending entries for that slug in `followups.json` to `status: "cancelled"`, then commit and push.
 
 ## Guardrails
 
-- 90-day Affinity overlap: STOP and ask
+- 90-day Affinity overlap: STOP and ask Calvin
 - Person-level verification for prior contacts
-- Bounce/reply detection handled by GitHub Actions
-- Auto-reply filtering in GitHub Actions
+- Bounce/reply detection in follow-up processing
 
-## Analytics & Tracking
+## Portfolio References
 
-### Google Sheet ("Outreach Tracker")
+- Construction: Harrison Doyle (Head of Ops) is ex-Procore VP of Finance
+- General: Mickey (our founder) was a Partner at Sequoia for 8 years
+- Security: Chris worked with Axonius, JumpCloud
+- Infrastructure: Chris worked with Datadog
+- PLG: Chris worked with Calendly, Expensify, Otter AI
+- Legal: Chris worked with Persuit, Logikcull
+- Mfg/Supply Chain: Chris worked with Parabola, Paperless Parts, Project44
+- Vertical SaaS: Chris worked with ShopGenie, PartsTech, Mangomint, VTS
+- GTM/Enablement: Chris worked with Lessonly, Highspot, Voiceflow
+- MSP: Chris worked with Rewst, Auvik
+- E-commerce: Chris worked with Postscript, Chargeflow
+- AI infra: Chris worked with DataRobot
+- SMB: Chris worked with ZenBusiness
+- Healthcare: Telescope includes Passage Health, Canid, Carefeed
+- Insurance: Chris worked with iLife, family at State Farm
+- Travel: Telescope includes Engine
+- Fundraising: Telescope includes FundraiseUp, Givzey
+- Compliance: Telescope includes MedTrainer
 
-Log every action: DRAFT_CREATED, SENT, LINKEDIN_REMINDER_SET, FOLLOWUP_SCHEDULED, FOLLOWUP_DRAFTED, REPLIED, BOUNCED, GUARDRAIL_BLOCKED, FOUNDER_DEPARTED, CANCELLED
+Say "we've worked with" or "I work closely with Chris Gaertner who invested in [X]". Never say "at OpenView."
 
-Columns: Timestamp | Company | Domain | Founder | Email | Action | Email Stage | Thread ID | Notes
+## School Connections
 
-### Dashboard: Google Apps Script
-
-doGet() web app reading from the sheet. Tier 1: weekly outreach + conversations + conversion. Tier 2: reply rate by stage, by sector, cadence funnel, guardrail stats.
-
-### Affinity Updates
-
-List 350032: Email 1 Drafted → Email 1 Sent → Responded / Bounced / Cancelled
+- Calvin: Claremont McKenna (CMC), Claremont Consortium (Pomona, Harvey Mudd, Scripps, Pitzer), Harvard-Westlake
+- If founder attended any → mention in the opener
 
 ## Telescope Team
 
-- Mickey Arabelovic — Founder (ex-Sequoia, 7 years)
+- Mickey Arabelovic — Founder (ex-Sequoia, 8 years)
 - Nicole Naidoo — Partner
 - Chris Gaertner — Principal (NOT founder). Stanford, ex-OpenView VP.
 - Harrison Doyle — Head of Ops (ex-Engine VP Finance, ex-Procore, CMC grad)
