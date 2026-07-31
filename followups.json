@@ -7975,7 +7975,8 @@
       "body": "<div>Hey Miquel, just circling back. Chris Gaertner on our team has spent a lot of time in insurance distribution and would be a great person to bounce ideas off as you scale. Happy to connect you two regardless of whether a Telescope conversation makes sense right now.<br><br>If now isn't the right time, totally understand.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-31",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-07-31T15:13:58.000Z"
     },
     {
       "slug": "desteia",
