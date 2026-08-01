@@ -9392,7 +9392,8 @@
       "body": "<div>Hey Kash - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-01T15:11:22Z"
     },
     {
       "slug": "taxgpt",
@@ -9437,7 +9438,8 @@
       "body": "<div>Hey Oliver - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-01T15:11:22Z"
     },
     {
       "slug": "bustem",
@@ -9482,7 +9484,8 @@
       "body": "<div>Hey Kai - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-01",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-01T15:11:22Z"
     },
     {
       "slug": "enginy",
