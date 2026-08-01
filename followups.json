@@ -9527,7 +9527,8 @@
       "body": "<div>Hey Boris - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-31",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-01T00:40:30.643Z"
     },
     {
       "slug": "catio",
@@ -9572,7 +9573,8 @@
       "body": "<div>Hey Andre - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-31",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-01T00:40:30.643Z"
     },
     {
       "slug": "freighthero",
@@ -9617,7 +9619,8 @@
       "body": "<div>Hey Harris - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-31",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-01T00:40:30.643Z"
     },
     {
       "slug": "muir",
@@ -9662,7 +9665,8 @@
       "body": "<div>Hey Vivek - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-31",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-01T00:40:30.643Z"
     },
     {
       "slug": "thirdai",
@@ -9707,7 +9711,8 @@
       "body": "<div>Hey Apoorv - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-31",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-01T00:40:30.643Z"
     },
     {
       "slug": "obin",
