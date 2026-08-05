@@ -2925,7 +2925,9 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-18T22:17:05.852Z"
+      "processedAt": "2026-06-18T22:17:05.852Z",
+      "repliedAt": "2026-07-21T01:35:48.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "internet_backyard",
@@ -2940,7 +2942,9 @@
       "emailNumber": 3,
       "sendDate": "2026-06-23",
       "status": "completed",
-      "processedAt": "2026-06-23T17:14:00.538Z"
+      "processedAt": "2026-06-23T17:14:00.538Z",
+      "repliedAt": "2026-07-21T01:35:48.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "internet_backyard",
@@ -2955,7 +2959,9 @@
       "emailNumber": 4,
       "sendDate": "2026-06-30",
       "status": "completed",
-      "processedAt": "2026-06-30T17:02:53.316Z"
+      "processedAt": "2026-06-30T17:02:53.316Z",
+      "repliedAt": "2026-07-21T01:35:48.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "ramain",
@@ -2970,7 +2976,9 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-18T22:17:05.852Z"
+      "processedAt": "2026-06-18T22:17:05.852Z",
+      "repliedAt": "2026-08-04T00:00:00.000Z",
+      "replySource": "tracker-sheet"
     },
     {
       "slug": "ramain",
@@ -2985,7 +2993,9 @@
       "emailNumber": 3,
       "sendDate": "2026-06-23",
       "status": "completed",
-      "processedAt": "2026-06-23T17:14:01.651Z"
+      "processedAt": "2026-06-23T17:14:01.651Z",
+      "repliedAt": "2026-08-04T00:00:00.000Z",
+      "replySource": "tracker-sheet"
     },
     {
       "slug": "ramain",
@@ -3000,7 +3010,9 @@
       "emailNumber": 4,
       "sendDate": "2026-06-30",
       "status": "completed",
-      "processedAt": "2026-06-30T17:02:54.528Z"
+      "processedAt": "2026-06-30T17:02:54.528Z",
+      "repliedAt": "2026-08-04T00:00:00.000Z",
+      "replySource": "tracker-sheet"
     },
     {
       "slug": "quash",
@@ -3061,7 +3073,9 @@
       "sendDate": "2026-06-03",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-08-04T00:00:00.000Z",
+      "replySource": "tracker-sheet"
     },
     {
       "slug": "ekko",
@@ -3077,7 +3091,9 @@
       "sendDate": "2026-06-06",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-08-04T00:00:00.000Z",
+      "replySource": "tracker-sheet"
     },
     {
       "slug": "ekko",
@@ -3093,7 +3109,9 @@
       "sendDate": "2026-06-08",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-08-04T00:00:00.000Z",
+      "replySource": "tracker-sheet"
     },
     {
       "slug": "traza",
@@ -3109,7 +3127,9 @@
       "sendDate": "2026-06-03",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-16T18:48:15.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "traza",
@@ -3125,7 +3145,9 @@
       "sendDate": "2026-06-06",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-16T18:48:15.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "traza",
@@ -3141,7 +3163,9 @@
       "sendDate": "2026-06-08",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-16T18:48:15.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "balancedtrust",
@@ -3247,7 +3271,9 @@
       "sendDate": "2026-06-03",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T14:40:47.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "partspulse",
@@ -3263,7 +3289,9 @@
       "sendDate": "2026-06-06",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T14:40:47.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "partspulse",
@@ -3279,7 +3307,9 @@
       "sendDate": "2026-06-08",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T14:40:47.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "justwin",
@@ -3385,7 +3415,9 @@
       "sendDate": "2026-06-03",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T20:48:12.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "clave",
@@ -3401,7 +3433,9 @@
       "sendDate": "2026-06-06",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T20:48:12.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "clave",
@@ -3417,7 +3451,9 @@
       "sendDate": "2026-06-08",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T20:48:12.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "petra_security",
@@ -3477,7 +3513,9 @@
       "emailNumber": 2,
       "sendDate": "2026-06-03",
       "status": "completed",
-      "processedAt": "2026-06-18T22:17:05.852Z"
+      "processedAt": "2026-06-18T22:17:05.852Z",
+      "repliedAt": "2026-07-20T18:09:13.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "domu",
@@ -3492,7 +3530,9 @@
       "emailNumber": 3,
       "sendDate": "2026-06-23",
       "status": "completed",
-      "processedAt": "2026-06-23T17:14:09.393Z"
+      "processedAt": "2026-06-23T17:14:09.393Z",
+      "repliedAt": "2026-07-20T18:09:13.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "domu",
@@ -3507,7 +3547,9 @@
       "emailNumber": 4,
       "sendDate": "2026-06-30",
       "status": "completed",
-      "processedAt": "2026-06-30T17:03:03.527Z"
+      "processedAt": "2026-06-30T17:03:03.527Z",
+      "repliedAt": "2026-07-20T18:09:13.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "certo",
@@ -3883,7 +3925,9 @@
       "sendDate": "2026-06-04",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T20:05:36.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "onetera",
@@ -3899,7 +3943,9 @@
       "sendDate": "2026-06-07",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T20:05:36.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "onetera",
@@ -3915,7 +3961,9 @@
       "sendDate": "2026-06-09",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T20:05:36.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "continuum",
@@ -4021,7 +4069,9 @@
       "sendDate": "2026-06-04",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-13T10:04:39.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "paraglide",
@@ -4037,7 +4087,9 @@
       "sendDate": "2026-06-07",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-13T10:04:39.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "paraglide",
@@ -4053,7 +4105,9 @@
       "sendDate": "2026-06-09",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-13T10:04:39.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "zeit",
@@ -4204,7 +4258,9 @@
       "sendDate": "2026-06-04",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T19:58:56.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "blue_pill",
@@ -4220,7 +4276,9 @@
       "sendDate": "2026-06-07",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T19:58:56.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "blue_pill",
@@ -4236,7 +4294,9 @@
       "sendDate": "2026-06-09",
       "status": "cancelled",
       "processedAt": "2026-06-18T22:10:21.362Z",
-      "notes": " Cancelled: founder already replied"
+      "notes": " Cancelled: founder already replied",
+      "repliedAt": "2026-06-12T19:58:56.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "thirdlaw",
@@ -4521,7 +4581,9 @@
       "emailNumber": 2,
       "sendDate": "2026-06-04",
       "status": "completed",
-      "processedAt": "2026-06-18T22:17:05.852Z"
+      "processedAt": "2026-06-18T22:17:05.852Z",
+      "repliedAt": "2026-08-04T00:00:00.000Z",
+      "replySource": "tracker-sheet"
     },
     {
       "slug": "archie",
@@ -4536,7 +4598,9 @@
       "emailNumber": 3,
       "sendDate": "2026-06-23",
       "status": "completed",
-      "processedAt": "2026-06-23T17:14:31.571Z"
+      "processedAt": "2026-06-23T17:14:31.571Z",
+      "repliedAt": "2026-08-04T00:00:00.000Z",
+      "replySource": "tracker-sheet"
     },
     {
       "slug": "archie",
@@ -4551,7 +4615,9 @@
       "emailNumber": 4,
       "sendDate": "2026-06-30",
       "status": "completed",
-      "processedAt": "2026-06-30T17:03:26.880Z"
+      "processedAt": "2026-06-30T17:03:26.880Z",
+      "repliedAt": "2026-08-04T00:00:00.000Z",
+      "replySource": "tracker-sheet"
     },
     {
       "slug": "zalion",
@@ -4686,7 +4752,9 @@
       "emailNumber": 3,
       "sendDate": "2026-06-20",
       "status": "completed",
-      "processedAt": "2026-06-22T21:33:08.592Z"
+      "processedAt": "2026-06-22T21:33:08.592Z",
+      "repliedAt": "2026-07-29T12:35:00.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "grantd",
@@ -4701,7 +4769,9 @@
       "emailNumber": 4,
       "sendDate": "2026-06-22",
       "status": "completed",
-      "processedAt": "2026-06-22T21:33:09.339Z"
+      "processedAt": "2026-06-22T21:33:09.339Z",
+      "repliedAt": "2026-07-29T12:35:00.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "marble_ai",
@@ -5196,7 +5266,9 @@
       "emailNumber": 3,
       "sendDate": "2026-06-20",
       "status": "completed",
-      "processedAt": "2026-06-22T21:33:34.973Z"
+      "processedAt": "2026-06-22T21:33:34.973Z",
+      "repliedAt": "2026-06-23T19:15:36.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "autyvia",
@@ -5211,7 +5283,9 @@
       "emailNumber": 4,
       "sendDate": "2026-06-22",
       "status": "completed",
-      "processedAt": "2026-06-22T21:33:35.644Z"
+      "processedAt": "2026-06-22T21:33:35.644Z",
+      "repliedAt": "2026-06-23T19:15:36.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "respan",
@@ -5286,7 +5360,9 @@
       "emailNumber": 3,
       "sendDate": "2026-06-20",
       "status": "completed",
-      "processedAt": "2026-06-22T21:33:39.086Z"
+      "processedAt": "2026-06-22T21:33:39.086Z",
+      "repliedAt": "2026-06-25T17:37:40.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "bilrost",
@@ -5301,7 +5377,9 @@
       "emailNumber": 4,
       "sendDate": "2026-06-22",
       "status": "completed",
-      "processedAt": "2026-06-22T21:33:39.864Z"
+      "processedAt": "2026-06-22T21:33:39.864Z",
+      "repliedAt": "2026-06-25T17:37:40.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "nexxa",
@@ -6148,7 +6226,9 @@
       "status": "completed",
       "body": "<div>Hey George,<br><br>One thing I keep thinking about in manufacturing is how much downtime costs and how most of it comes from coordination failures, not equipment failures. I think there is a big opportunity to just let software handle that scheduling and planning layer. Would love to connect if you have some time.</div>",
       "processedAt": "2026-06-26T16:58:31.890Z",
-      "superhumanThreadId": "19efbe74e5045af5"
+      "superhumanThreadId": "19efbe74e5045af5",
+      "repliedAt": "2026-07-27T18:44:40.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "harmony",
@@ -6164,7 +6244,9 @@
       "status": "completed",
       "body": "<div>Hey George,<br><br>Chris on our team has spent time around manufacturing software companies like Parabola and Paperless Parts and has a good feel for what resonates with manufacturers. Happy to connect you two if useful.</div>",
       "processedAt": "2026-07-01T17:10:57.790Z",
-      "superhumanThreadId": "19efbe74e5045af5"
+      "superhumanThreadId": "19efbe74e5045af5",
+      "repliedAt": "2026-07-27T18:44:40.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "harmony",
@@ -6180,7 +6262,9 @@
       "status": "completed",
       "body": "<div>Hey George,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
       "processedAt": "2026-07-03T16:22:10.758Z",
-      "superhumanThreadId": "19efbe74e5045af5"
+      "superhumanThreadId": "19efbe74e5045af5",
+      "repliedAt": "2026-07-27T18:44:40.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "azimut",
@@ -6195,7 +6279,9 @@
       "sendDate": "2026-06-26",
       "status": "completed",
       "body": "<div>Hey Matan,<br><br>Was thinking more about the maritime intelligence space. One thing that stands out is how geopolitical tensions are making vessel tracking gaps a much bigger problem than they were even two years ago. I think the demand for satellite-based alternatives is only going to accelerate. Would love to connect if you have some time.</div>",
-      "processedAt": "2026-06-26T16:58:33.408Z"
+      "processedAt": "2026-06-26T16:58:33.408Z",
+      "repliedAt": "2026-07-13T21:02:57.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "azimut",
@@ -6210,7 +6296,9 @@
       "sendDate": "2026-07-01",
       "status": "completed",
       "body": "<div>Hey Matan,<br><br>Chris on our team worked closely with Datadog and has seen how monitoring and observability platforms scale across industries. I think there are interesting parallels to what you are building. Happy to connect you two if useful.</div>",
-      "processedAt": "2026-07-01T17:10:58.952Z"
+      "processedAt": "2026-07-01T17:10:58.952Z",
+      "repliedAt": "2026-07-13T21:02:57.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "azimut",
@@ -6225,7 +6313,9 @@
       "sendDate": "2026-07-03",
       "status": "completed",
       "body": "<div>Hey Matan,<br><br>Bumping this one last time. If now isn't the right time, totally understand. Would love to stay connected.</div>",
-      "processedAt": "2026-07-03T16:22:11.839Z"
+      "processedAt": "2026-07-03T16:22:11.839Z",
+      "repliedAt": "2026-07-13T21:02:57.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "purchaser",
@@ -7576,7 +7666,9 @@
       "emailNumber": 2,
       "sendDate": "2026-07-16",
       "status": "completed",
-      "processedAt": "2026-07-16T15:12:24.589Z"
+      "processedAt": "2026-07-16T15:12:24.589Z",
+      "repliedAt": "2026-08-04T06:31:09.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "bearing",
@@ -7592,7 +7684,9 @@
       "emailNumber": 3,
       "sendDate": "2026-07-16",
       "status": "completed",
-      "processedAt": "2026-07-16T15:12:24.589Z"
+      "processedAt": "2026-07-16T15:12:24.589Z",
+      "repliedAt": "2026-07-30T19:28:07.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "risely",
@@ -7956,7 +8050,7 @@
       "superhumanThreadId": "19f9577ef2c379b8",
       "messageId": "19f95781f45ba634",
       "subject": "Congrats on the Raise! | Telescope Intro",
-      "body": "<div>Hey Miquel, was thinking more about CoverWatch. I'd be curious whether you're seeing more pull from businesses switching away from their existing broker or from companies buying commercial insurance for the first time. Feels like two very different sales motions.<br><br>Would love to hear how it's playing out. Happy to jump on a quick call anytime.</div>",
+      "body": "<div>Hey Miquel - wanted to follow up to see if you are free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you are building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-07-26",
       "status": "completed",
@@ -7972,7 +8066,7 @@
       "superhumanThreadId": "19f9577ef2c379b8",
       "messageId": "19f95781f45ba634",
       "subject": "Congrats on the Raise! | Telescope Intro",
-      "body": "<div>Hey Miquel, just circling back. Chris Gaertner on our team has spent a lot of time in insurance distribution and would be a great person to bounce ideas off as you scale. Happy to connect you two regardless of whether a Telescope conversation makes sense right now.<br><br>If now isn't the right time, totally understand.</div>",
+      "body": "<div>Hey Miquel - following up - how have you been thinking about your next raise? I really like what you are building at CoverWatch and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it is a good fit for both parties. However, LMK if I am off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-07-31",
       "status": "completed",
@@ -8982,7 +9076,9 @@
       "emailNumber": 2,
       "sendDate": "2026-07-24",
       "status": "completed",
-      "processedAt": "2026-07-28T15:19:26.000Z"
+      "processedAt": "2026-07-28T15:19:26.000Z",
+      "repliedAt": "2026-07-30T01:21:14.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "cloneable",
@@ -8998,7 +9094,9 @@
       "emailNumber": 3,
       "sendDate": "2026-07-29",
       "status": "completed",
-      "processedAt": "2026-07-29T18:00:00.000Z"
+      "processedAt": "2026-07-29T18:00:00.000Z",
+      "repliedAt": "2026-07-30T01:21:14.000Z",
+      "replySource": "gmail-audit"
     },
     {
       "slug": "voicerun",

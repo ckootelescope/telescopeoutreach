@@ -1,5 +1,32 @@
 # Telescope Outreach System
 
+## Two Engines: Route First
+
+There are two separate sequences. **Never guess which one applies from the wording of the
+request.** Always check `followups.json` for the domain first, then route:
+
+| State of the company | Engine | Command |
+|---|---|---|
+| No prior outreach anywhere | Round 1, net new | `/outreach <url>` |
+| Prior cadence went cold (no reply, stale) | Round 2, restart | `/restart-outreach <domain>` |
+| Cadence live right now (`pending` entries) | Neither | Report next send date, stop |
+| Founder ever replied | Neither | Stop. Never re-cold-email a responder. |
+
+The two engines differ in cadence, subject line, and every line of copy:
+
+|  | Round 1 | Round 2 |
+|---|---|---|
+| Cadence | Day 0/+2/+7/+12 | Day 0/+2/+5/+10 |
+| Subject | `Telescope <> [Company] Intro` | `Telescope Intro (Sequoia Spinout) - Let's Chat?` |
+| Email 1 | 3 blocks, company-specific insight | Fixed paras 1 and 3, theme-matched para 2 |
+| Emails 2/3 | Fixed templates | Personalized, drafted at due time |
+| Email 4 | Semi-templated, new insight | Fully fixed template |
+| LinkedIn reminder | Yes | No, already connected |
+
+If Calvin's phrasing points one way but the data points the other, **say so and ask.** The worst
+failure in this system is sending a first-contact opener to a founder who has already had four
+emails.
+
 ## What You Do
 
 When Calvin says "outreach to [URL]" or "reach out to [company]", YOU handle everything end-to-end. Calvin provides ONLY a company URL. You do the rest. DO NOT ask Calvin to provide contact details, email bodies, JSON, thread IDs, or any other data. You find and generate ALL of that yourself.
@@ -53,44 +80,39 @@ headcount: [approximate, if known]
 
 ### Step 2: Draft Email
 
-The email has four blocks. Three are fixed templates. Only the Insight block varies per company.
+The email has three blocks. Lead with the CTA and who Telescope is in the first 3-4 lines. Then the insight. Then the close.
 
-#### Block 1: Opener (FIXED)
+#### Block 1: Opener + CTA + Telescope Intro (SEMI-FIXED)
 
-> Love what you're building at [Company] and wanted to reach out.
+Personalized greeting, CTA to chat, and Telescope intro all upfront in the first paragraph.
 
-**Only exception:** If someone on the team has actually SPOKEN to the company (per affinity_spoken), reference that prior conversation instead.
+> Hey [First Name] - I love what you're building at [Company] and wanted to see if you're free to chat next week? We're a Series A fund led by Mickey Arabelovic (former Sequoia partner) focused on B2B software and AI. We're on our third fund ($275M) and lead $5-30M rounds in a handful of founders each year.
 
-#### Block 2: Insight (VARIABLE — the only creative part)
+The greeting can be personalized. If someone on the team has SPOKEN to the company, reference that prior conversation. The Telescope intro is always included. The CTA ("free to chat next week?") should always be in the first sentence or two.
 
-2-3 sentences with a developed, thesis-level insight about the company's vision and the problem they're solving.
+#### Block 2: Insight (VARIABLE — the creative part)
 
-**This is NOT:**
-- A description of what the company does
-- A restatement of their website
-- An observation about the market being big
-- A compliment about the team
+A personalized thematic lead-in + 2-3 sentences with a thesis-level insight about the company.
 
-**This IS:**
-- A developed perspective on where the company's vision could go
-- A structural insight about the problem they're solving
-- A thesis about why this approach could become something bigger
+**Lead-in examples (vary per company, be creative):**
+- "We're thematic investors and [space] is one we've been spending a ton of time in."
+- "I've been spending a lot of time in [industry] and [Company] keeps coming up."
+- "I like your approach to [specific thing]."
 
-**Example (Desteia):** "I think cross-border trade is a particularly compelling problem space, and Desteia has the potential to evolve from a system of record into a true system of action. I'm assuming the longer-term vision is to automate more of the coordination, document handling, and exception resolution that still sits across operators, brokers, and fragmented systems today which would be a meaningful shift in workflows."
+**Then the insight itself.** This is NOT a description of what the company does or a restatement of their website. This IS a developed perspective on where the company's vision could go, a structural insight about the problem, or a thesis about why this approach could become something bigger.
+
+**Example (FlowGen):** "We're thematic investors and have been spending a ton of time finding companies who are building for the enterprise. I read your latest blog post on the website and was impressed with the idea of treating the model as untrusted and making incorrect actions structurally impossible. It feels like a critical architecture for moving agents from recommendations to safe execution and one that speaks to the quality of the team behind it."
 
 The insight should show you've thought deeply about the problem. Think: what's the natural evolution? What's structurally interesting? What's the unlock the founder is probably thinking about?
 
-#### Block 3: Telescope Intro (FIXED)
+#### Block 3: Close (SEMI-FIXED)
 
-> On us, we're an early growth VC (seed - Series B) led by Mickey Arabelovic (former Sequoia partner) focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-30M rounds in a handful of founders each year.
+> I'd love to chat even if you aren't raising immediately and see how we can help out. LMK your thoughts!
 
-#### Block 4: Close (FIXED)
-
-> Would love to chat and learn more about what you're building and how we can help out. Are you free next week?
+Can reference timing ("know you just raised, but would be good to see if there could be a fit ahead of the next round") or other context.
 
 #### Rules
 
-- Greeting: "Hey [First Name],"
 - Blank line between each block
 - NO sign-off (Superhuman signature handles it)
 - NO em dashes (-- or —). Use commas or periods.
@@ -162,6 +184,25 @@ Example (Grantd): "I think Grantd is solving a clear pain point for RIAs by help
 
 **Paragraph 4 (fixed):**
 > I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.
+
+## Restart Outreach (Round 2)
+
+Everything above describes Round 1 for a company never contacted before. Companies whose first
+cadence went cold get a **second cadence**, which Calvin curates manually from his Affinity
+Active Outreach view.
+
+Round 2 is a different sequence, not a repeat: **Day 0/+2/+5/+10**, its own subject line
+(`Telescope Intro (Sequoia Spinout) - Let's Chat?`), a fixed Email 4, and an Email 1 whose middle
+paragraph is a theme-matched thesis rather than a company-specific observation.
+
+- Run it with `/restart-outreach <domain>` — see `.claude/commands/restart-outreach.md`
+- Investment themes for the Email 1 insight live in `investment-themes.md`. Load only the one
+  matched theme, never all nine.
+- Research dossiers are cached at `research/<slug>.json` and reused across Emails 1, 2, and 3.
+  One research pass per company per round.
+- Never restart a company that ever replied, and never restart one on the Affinity
+  **Hard-To-Crack** view. That view overlaps Active Outreach, so it must be checked explicitly
+  rather than assumed disjoint.
 
 ## Follow-up Processing
 

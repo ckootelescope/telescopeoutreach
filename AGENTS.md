@@ -224,11 +224,11 @@ DO NOT use "Hope you're doing well" — generic.
 
 Keep it brief. One block, not a separate pitch paragraph:
 
-"As quick background, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year."
+"As quick background, Telescope is a Series A fund focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-30M rounds in a handful of founders each year."
 
-Or weave it in: "For background on us, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year."
+Or weave it in: "For background on us, Telescope is a Series A fund focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-30M rounds in a handful of founders each year."
 
-Or as a refresher: "As a quick refresher on us, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year."
+Or as a refresher: "As a quick refresher on us, Telescope is a Series A fund focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-30M rounds in a handful of founders each year."
 
 #### CLOSE OPTIONS (vary these too)
 
@@ -287,7 +287,7 @@ Or as a refresher: "As a quick refresher on us, Telescope is an early growth VC 
 
 #### TELESCOPE FACTS
 
-Series A firm, $275M Fund III, $5-25M rounds, handful of founders each year. Founded by Mickey Arabelovic (7yrs at Sequoia). Chris Gaertner is Principal (NOT founder), Stanford, ex-OpenView VP.
+Series A firm, $275M Fund III, $5-30M rounds, handful of founders each year. Founded by Mickey Arabelovic (7yrs at Sequoia). Chris Gaertner is Principal (NOT founder), Stanford, ex-OpenView VP.
 
 ### Step 3: Send to Superhuman Drafts
 

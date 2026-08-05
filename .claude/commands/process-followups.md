@@ -53,6 +53,24 @@ If a reply is found:
 - Also mark ALL other pending entries for the same `slug` as "replied" (cancels the whole cadence)
 - Skip to next entry
 
+### 2b-2: Generate the body for Round 2 entries
+
+Entries with `round: 2` and `needsDraft: true` have `body: null` — Emails 2 and 3 of a restart
+cadence are personalized and written at due time.
+
+For these entries only:
+
+1. Read `research/<slug>.json`. If it is missing, set `status: "error"`, note the missing
+   dossier, and skip the entry — do **not** research from scratch inside this run.
+2. Draft the body per the "Drafting Emails 2 and 3" section of
+   `.claude/commands/restart-outreach.md`. The dossier is at most 10 days old, so **do not
+   re-research**.
+3. Write the generated HTML onto `entry.body` and delete `entry.needsDraft`, so the body becomes
+   a permanent record of what went out.
+4. Continue to 2c as normal.
+
+All other entries (`round` absent or `1`) already have a pre-written body. Leave them untouched.
+
 ### 2c: Create Superhuman draft
 
 **Find the Superhuman thread for reply threading:**
@@ -131,7 +149,7 @@ POST body (JSON):
       "founder": "<entry.founder>",
       "email": "<entry.email>",
       "event": "FOLLOWUP_DRAFTED",
-      "email_stage": "Email <entry.emailNumber>",
+      "email_stage": "Email <entry.emailNumber>",   // for round 2, use "R2 Email <n>"
       "thread_id": "<entry.threadId>",
       "notes": "Via Superhuman"
     }
@@ -166,4 +184,7 @@ If there are more than 20 due entries, process them in batches of 20 to avoid MC
 - This skill replaces the old GitHub Actions workflow (followup_scheduler.yml + run_scheduler.js) which used Gmail API for draft creation
 - Superhuman thread IDs are different from Gmail thread IDs. The thread search step resolves this mapping.
 - If a `superhumanThreadId` field exists on an entry, use it directly instead of searching (skip the thread lookup)
-- Entry bodies in followups.json are pre-written HTML. Never modify them.
+- Entry bodies in followups.json are pre-written HTML. Never modify them. The one exception is a
+  `round: 2` entry with `needsDraft: true`, which starts empty and is filled in by step 2b-2.
+- Round 2 (restart) cadences run Day 0/+2/+5/+10 and are created by `/restart-outreach`. A reply
+  cancels every pending entry for the slug regardless of round, which is the intended behavior.
