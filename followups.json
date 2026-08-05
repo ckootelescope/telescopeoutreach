@@ -9651,7 +9651,8 @@
       "body": "<div>Hey Boris - following up - how have you been thinking about your next raise? I really like what you're building at Catio and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-05",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-05T15:15:51Z"
     },
     {
       "slug": "catio",
@@ -9697,7 +9698,8 @@
       "body": "<div>Hey Andre - following up - how have you been thinking about your next raise? I really like what you're building at FreightHero and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-05",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-05T15:15:51Z"
     },
     {
       "slug": "freighthero",
@@ -9743,7 +9745,8 @@
       "body": "<div>Hey Harris - following up - how have you been thinking about your next raise? I really like what you're building at Muir and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-05",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-05T15:15:51Z"
     },
     {
       "slug": "muir",
@@ -9789,7 +9792,8 @@
       "body": "<div>Hey Vivek - following up - how have you been thinking about your next raise? I really like what you're building at ThirdAI and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-05",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-05T15:15:51Z"
     },
     {
       "slug": "thirdai",
@@ -9835,7 +9839,8 @@
       "body": "<div>Hey Apoorv - following up - how have you been thinking about your next raise? I really like what you're building at Obin and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-05",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-05T15:15:51Z"
     },
     {
       "slug": "obin",
