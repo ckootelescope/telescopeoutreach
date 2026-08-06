@@ -94,7 +94,7 @@ Hope you don't mind the cold note! I was hoping to connect and briefly chat abou
 
 For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the [Industry] space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brands like [Company] scale their operations by automating [workflow]. We've seen that much of this work is done manually or across multiple point solutions. We understand that this is one part of the process (we've heard of tools focused on [adjacent tool categories]), and I'd love to learn more about how you view your tech stack as a whole.
 
-I recognize you're busy, but people we've spoken with have gained value from learning about new market solutions and introductions that led to meaningful workflow improvements. LMK if you're open to a quick chat and thanks in advance.
+I recognize you're busy, but people we've spoken with have gained value from learning about new market solutions and introductions that led to meaningful workflow improvements. If there's another person on your team that you think would be a better fit - happy to chat with them as well. LMK your thoughts and thanks in advance.
 ```
 
 **How much varies, paragraph by paragraph:**
