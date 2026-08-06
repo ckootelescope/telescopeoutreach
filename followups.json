@@ -9513,7 +9513,8 @@
       "body": "<div>Hey Kash - following up - how have you been thinking about your next raise? I really like what you're building at TaxGPT and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-06T15:30:00.000Z"
     },
     {
       "slug": "taxgpt",
@@ -9559,7 +9560,8 @@
       "body": "<div>Hey Oliver - following up - how have you been thinking about your next raise? I really like what you're building at Bustem and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-06T15:30:00.000Z"
     },
     {
       "slug": "bustem",
@@ -9605,7 +9607,8 @@
       "body": "<div>Hey Kai - following up - how have you been thinking about your next raise? I really like what you're building at Enginy and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-06",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-06T15:30:00.000Z"
     },
     {
       "slug": "enginy",
