@@ -1,0 +1,50 @@
+{
+  "slug": "trace",
+  "company": "Trace",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Trace is an AI orchestration platform that connects to a company's existing tools (Slack, Notion, Jira, Google Drive, HubSpot) and builds a persistent model of how work moves between departments. It deploys AI agents to handle parts of a task and routes the parts that need judgment to the right human, replacing the manual handoffs and status-chasing that normally happen across tools during things like client onboarding, contract review, and financial approvals.",
+  "vertical": "horizontal / enterprise ops (workflow orchestration)",
+  "primary_theme": 2,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Trace explicitly sits between departments and existing systems, coordinating AI agents and humans across a multi-step, multi-tool workflow (onboarding, contract review, financial approvals) rather than serving one narrow vertical. That is a direct match to Theme 2 (agents executing cross-functional, multi-system workflows), including the read/write-across-systems and human+agent coordination framing. No strong secondary theme fits; it is not vertical-specific enough for Theme 5 and is not agent-facing infrastructure (Theme 3), it IS the agent layer.",
+  "workflow_artifacts": [
+    "contracts",
+    "invoices",
+    "CRM contact records",
+    "financial approval records"
+  ],
+  "recent_signals": [],
+  "funding": {
+    "stage": "Seed",
+    "totalRaised": 3500000,
+    "numRounds": 2,
+    "lastFundingDate": "2026-02-26",
+    "investors": [
+      "Y Combinator",
+      "Zeno Ventures",
+      "Transpose Platform",
+      "Uncork Capital",
+      "Founders, Inc.",
+      "Goodwater Capital",
+      "Wefunder",
+      "Agile Angel",
+      "Formosa Capital"
+    ]
+  },
+  "headcount": "4 (per Harmonic, flat over trailing 90 days; up from 1 a year ago)",
+  "prior_insights": [
+    "<div>Hey Tim, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Tim - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about AI workflow orchestration and I think the human-in-the-loop handoff problem is going to be one of the defining challenges for ops teams this year - curious how adoption is trending. Would love to hear more about the vision for Trace and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
+    "<div>Hey Tim, Following up - have you thought about another partner after your seed? I really like what you're building at Trace and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Tim - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p style=\"margin:0px;\" class=\"\"><span><span>As</span> we&#39;ve continued to think about enterprise</span> AI, we&#39;ve continued to see that most workflow products start too small. They automate an individual task, but lose the context as soon as work crosses from one team or agent to another. Trace is building around that handoff itself, carrying the state of the business forward and deciding what can run autonomously, what needs human judgment, and what has to be checked before the process moves on. If that layer works, the individual agents become interchangeable and Trace becomes the system coordinating how the company actually operates.<br/></p><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd5147fe7bb7c1",
+    "messageId": "19fd5147fe7bb7c1"
+  },
+  "founder": "Tim",
+  "email": "tim@trace.so",
+  "domain": "trace.so"
+}

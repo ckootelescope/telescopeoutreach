@@ -1,0 +1,63 @@
+{
+  "slug": "flowgen_labs",
+  "company": "FlowGen Labs",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "FlowGen Labs builds AI agents that live inside a company's existing ERP (SAP, NetSuite, Dynamics 365, QuickBooks, Oracle) and execute finance and operations workflows directly, rather than replacing the ERP. The agents learn a company's actual processes and exception paths from historical transaction data, then run things like cash application (matching incoming payments to invoices), dispute resolution, invoice three-way matching, and month-end close reconciliation. This replaces the manual work finance and shared-services teams do to chase down exceptions, match transactions, and close the books by hand inside SAP/NetSuite screens.",
+  "vertical": "Enterprise finance ops / ERP automation (order-to-cash, procure-to-pay)",
+  "primary_theme": 2,
+  "secondary_theme": null,
+  "theme_fit_rationale": "FlowGen's agents read and write across ERP, banking, and adjacent systems (Salesforce, Workday, SAP Ariba, Coupa) to execute AR/AP, cash application, dispute resolution, and close reconciliation end to end, which is the cross-functional, multi-system workflow pattern Theme 2 describes almost verbatim.",
+  "workflow_artifacts": [
+    "SAP ECC / SAP S/4HANA records",
+    "NetSuite records",
+    "Microsoft Dynamics 365 records",
+    "QuickBooks records",
+    "Oracle ERP records",
+    "invoices",
+    "purchase orders",
+    "goods receipts",
+    "customer disputes",
+    "bank-to-ERP cash application postings",
+    "Salesforce records",
+    "Workday records",
+    "SAP Ariba / Coupa procurement records"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-07-15",
+      "type": "blog",
+      "summary": "Published \"Making wrong actions unrepresentable in a system that writes itself\" (author Hemang Rajvanshy), on designing verification mechanisms that constrain agent action spaces while letting agents build the platform itself.",
+      "url": "https://flowgenlabs.com/blog"
+    },
+    {
+      "date": "",
+      "type": "product",
+      "summary": "Now listed as an official SAP partner with two separate SAP.com partner pages (ERP modernization / \"System Intelligence\" and \"Autonomous Order-to-Cash\"), and is hiring a Forward Deployed Engineer, SAP Functional Consultant, and SAP Technical Lead, suggesting active enterprise deployment ramp. Exact announcement date not found.",
+      "url": "https://www.sap.com/products/artificial-intelligence/partners/flowgen-labs-inc-flowgen-labs-system-intelligence-for-erp-modernization.html"
+    }
+  ],
+  "funding": {
+    "stage": "Pre-seed",
+    "amount": "$500K",
+    "date": "2025-07-09",
+    "investors": [
+      "Pear VC"
+    ]
+  },
+  "headcount": "9 (up from 8 thirty days ago; ~5 engineering, ~5 operations)",
+  "prior_insights": [
+    "<div>Hey Dhruva, one last thought on FlowGen. The Veritiv case study where you guys drove $9M+ in annual process savings after a four-week deployment is the kind of result that makes ERP modernization tangible instead of theoretical. I think the reason most AI-in-ERP efforts stall is that they try to replace the system instead of making the existing one run autonomously. Being live across SAP, NetSuite, and Dynamics suggests the approach translates across environments, which is a hard thing to do.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
+    "<div>Hey Dhruva, been thinking more about the contextual process graph and I think that's the piece that separates FlowGen from the other \"AI for ERP\" pitches I've seen. Most of them try to automate a single workflow in isolation. Reconstructing the full decision tree from transaction history and data lineage so the agents actually understand how processes connect to each other feels like the right architecture for getting to 94% autonomous dispute resolution. The Shell and Aramco examples are interesting because those are environments where getting it wrong has real financial consequences, not a sandbox. Curious how the deployment path differs between SAP and NetSuite customers, and whether mid-market companies are adopting as fast as enterprise.</div>",
+    "<div>Hey Dhruva, one more thought here. Your path from founding ML engineer at Refuel to building autonomous ERP agents is interesting, and the Stanford plus Amazon Robotics background makes sense for this kind of systems-level problem. I think Chris would enjoy comparing notes with you on how enterprise AI adoption actually plays out. He's worked with companies like Datadog on the infrastructure side and has a good read on how large enterprises evaluate AI tools. Happy to set up a quick intro if that'd be useful. If now isn't the right time, totally get it.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Dhruva - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I like businesses that go into the system everyone else routes around. Finance operations is a good example, where the work is matching invoices to purchase orders and goods receipts, applying cash, and clearing the exceptions that fall out of close. I think the exceptions are the actual product, since the happy path was automated years ago and what is left is the judgment nobody wrote rules for.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Dhruva - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">We’re really excited about the opportunity to innovate the enterprise operations, and I think the hardest part of automating an ERP isn’t the individual task, it’s uncovering the years of <a href=\"https://www.a16z.news/p/why-the-world-still-runs-on-sap\" target=\"_blank\">operating logic buried inside the system</a>. Historically, every new workflow has required another long discovery and implementation process. I see how FlowGen’s approach can turn that existing logic into a reusable execution layer, creating a path from automating a handful of finance workflows to running operations across the ERP.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div><div class=\"\"><br/></div><div class=\"\">P.S If you ever need any good Korean food recs my Beli is @ckoo13 :)</div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4d86645abe93",
+    "messageId": "19fd4d86645abe93"
+  },
+  "founder": "Dhruva Bansal",
+  "email": "dhruva@flowgenlabs.com",
+  "domain": "flowgenlabs.com"
+}

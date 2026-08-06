@@ -103,7 +103,7 @@ async function main() {
     process.exit(1);
   }
 
-  const entries = JSON.parse(args[0]);
+  const entries = args[0].startsWith('@') ? JSON.parse(fs.readFileSync(args[0].slice(1),'utf-8')) : JSON.parse(args[0]);
   const accessToken = await getAccessToken();
 
   const existingRows = await readExistingRows(accessToken);

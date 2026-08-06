@@ -1,0 +1,56 @@
+{
+  "slug": "astrada",
+  "company": "Astrada",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Astrada runs an API that pulls real-time, structured transaction data straight from card networks and bank accounts, instead of the delayed, unstructured batch feeds finance platforms normally rely on. Expense management, travel, and ERP platforms plug into it to see spend on any card an employee uses, personal or corporate, not just cards the platform itself issued, and to auto-reconcile card transactions against bank settlements as they happen. It replaces the manual, days-later process of finance teams matching card statements to bank records line by line.",
+  "vertical": "Fintech data infrastructure (spend management / finance ops)",
+  "primary_theme": 2,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Astrada's transaction API and auto-reconciliation product are the connective data layer for cross-system finance workflows (card networks, banks, ERPs, expense platforms), the exact close-reconciliation and AR/AP use case called out in Theme 2, and the company explicitly frames itself as infrastructure for 'autonomous finance.'",
+  "workflow_artifacts": [
+    "card transaction records",
+    "bank settlement data",
+    "authorization-time transaction data"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-05-05",
+      "type": "funding",
+      "summary": "Closed a $3.8M seed round co-led by Bain Capital Ventures, QED Investors, and Nyca Partners, with strategic participation from Mastercard and follow-on from existing investor Visa.",
+      "url": "https://www.businesswire.com/news/home/20260505235880/en/Astrada-Raises-Seed-Round-to-Build-the-Data-Layer-for-Autonomous-Finance"
+    },
+    {
+      "date": "2026-05-05",
+      "type": "blog",
+      "summary": "Seed announcement blog post: $750M+ in card spend and 3M+ transactions processed across all three major card networks since the 2024 launch; proceeds go toward product development (Auto-Reconciliation, Enrichment) and partnership expansion.",
+      "url": "https://astrada.co/blog/astrada-seed-round-announcement"
+    }
+  ],
+  "funding": {
+    "stage": "Seed",
+    "amount": "$3.8M",
+    "date": "2026-05-05",
+    "investors": [
+      "Bain Capital Ventures",
+      "QED Investors",
+      "Nyca Partners",
+      "Mastercard",
+      "Visa"
+    ]
+  },
+  "headcount": "~14-16",
+  "prior_insights": [
+    "Last note on Astrada. I think the \"bring your own card\" approach is a really clean way to solve the visibility gap. Most expense platforms only see spend on cards they issue, which means almost half of what a company actually spends is invisible to them. Plugging directly into the card networks and delivering structured data at authorization gives platforms something they've never had before. $750M in card spend processed since launch is great early traction.",
+    "Wanted to share something potentially useful. Chris Gaertner on our team has invested in several companies in the spend management and supply chain data space (Parabola, Project44) and knows the fintech infrastructure landscape well. Given that you're working with platforms like Workday, Payhawk, and Zoho, I think there could be some good connections to make on the distribution side as you expand your platform partner network. Your Marqeta experience clearly shaped how you think about card infrastructure, and I think building the data layer that sits underneath these platforms is the right approach given how fragmented spend visibility still is. Happy to make relevant intros if helpful."
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Salman - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses that sit on the raw data everyone else gets a delayed copy of. Finance tooling is a good example, where expense platforms and ERPs are working off card statements and settlement files that arrive days after the spend happened. I think most tools in that stack are built around reconciling after the fact, but the ones closest to the transaction get to change what the workflow looks like in the first place.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Salman - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing efforts at Telescope, a $275M Series A fund started by a former Sequoia partner (Mickey Arabelovic). We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">As thematic investors, we&#39;ve been continuing to spend time in fintech and I like businesses that sit closest to the transaction, before the rest of the finance stack gets a delayed copy of the data. Most spend tools are built to reconcile what already happened, but Astrada has the opportunity to shape the workflow at the moment of purchase, ultimately turning real-time transaction data into the control layer for how companies manage spend.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem and your next partner - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd34e5140f951d",
+    "messageId": "19fd34e5140f951d"
+  },
+  "founder": "Salman Syed",
+  "email": "salman@astrada.co",
+  "domain": "astrada.co"
+}

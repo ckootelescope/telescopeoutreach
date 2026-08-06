@@ -1,0 +1,48 @@
+{
+  "slug": "olympian",
+  "company": "Olympian",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Olympian builds AI voice and text agents that answer phone calls, texts, and web inquiries for home remodeling contractors (roofing, siding, windows, doors, fencing, decking, flooring, landscaping, painting, exterior/interior remodeling). The agents qualify leads, book appointments onto the contractor's schedule, and follow up with leads who don't convert on the first contact. This replaces the job a human receptionist or office admin does today: picking up the phone, asking qualifying questions, and manually chasing leads who don't answer a call-back, which the company says causes remodelers to miss roughly 15% of inbound inquiries.",
+  "vertical": "Home services / remodeling contractors",
+  "primary_theme": 8,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Olympian's product lives inside the actual conversations (inbound/outbound calls, texts, web chats) between remodeling contractors and homeowners, which is exactly the high-frequency, high-stakes conversational surface Theme 8 describes, and 'home services and contractors' is one of Theme 8's named use cases verbatim. The expansion path matches the thesis too: starting as a receptionist/scheduler and expanding into sales coordination and marketing outreach means Olympian is positioned to become the system of record for the contractor's entire customer lifecycle, not just the call itself.",
+  "workflow_artifacts": [
+    "inbound phone calls",
+    "web form leads",
+    "text/SMS messages",
+    "appointment bookings",
+    "outbound nurture sequences (voice, text, email)"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-05",
+      "type": "product",
+      "summary": "Web traffic up ~162% over the trailing 90 days (484 -> 1,270 monthly visits per Harmonic), the sharpest growth window in the company's tracked history.",
+      "url": ""
+    },
+    {
+      "date": "2026-05",
+      "type": "hiring",
+      "summary": "Headcount grew from 4 to 5 over the past year and LinkedIn followers grew ~19% over the trailing 90 days (80 -> 93), consistent with early go-to-market ramp.",
+      "url": ""
+    }
+  ],
+  "funding": {
+    "stage": "Undisclosed / no institutional round confirmed",
+    "totalRaised": null,
+    "investors": ["Euclid"],
+    "note": "Harmonic lists fundingStage as VENTURE_UNKNOWN with $0 total funding and 0 rounds logged, but names Euclid as an investor; treat as unconfirmed/likely small check or accelerator, not a priced round."
+  },
+  "headcount": "5",
+  "prior_insights": [
+    "Hey Brendan, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.",
+    "Hey Brendan - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in ShopGenie and PartsTech and the conversation made me think about what you're building at Olympian. AI voice agents for the trades keeps coming up as a hot topic and I think the remodeling vertical is a great wedge. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?",
+    "Brendan - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions."
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

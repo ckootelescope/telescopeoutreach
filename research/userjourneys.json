@@ -1,0 +1,38 @@
+{
+  "slug": "userjourneys",
+  "company": "UserJourneys",
+  "fetchedAt": "2026-08-05T06:33:28Z",
+  "what_they_do": "UserJourneys is an experimentation and analytics tool for product engineers at consumer software companies. It connects to a company's existing analytics and warehouse tools (BigQuery, Snowflake, PostHog, Mixpanel, Amplitude), automatically builds a graph of user events showing where people drop off or convert, and triggers AI-run interviews with the specific users who hit a friction point, launched by email, push notification, or in-app prompt. It replaces the manual process of a product team digging through session replays by hand, guessing which users to interview about a given drop-off, and stitching together custom dashboards to track a journey across tools.",
+  "vertical": "Product analytics / experimentation software for consumer tech companies",
+  "primary_theme": 2,
+  "secondary_theme": null,
+  "theme_fit_rationale": "UserJourneys reads unstructured and structured signals across analytics warehouses, product event streams, and communication channels (email, push, in-app), then writes back a targeted user interview and feeds the result into the product graph, a cross-system feedback loop that fits Theme 2's pattern of agents consolidating fragmented tools and using proximity to the user to build a proprietary, compounding dataset.",
+  "workflow_artifacts": [
+    "user event / session data",
+    "session replays",
+    "product graph (event and conversion-path graph)",
+    "AI-triggered user interview transcripts",
+    "experiment results",
+    "analytics and data warehouse integrations (BigQuery, Snowflake, PostHog, Mixpanel, Amplitude)"
+  ],
+  "recent_signals": [],
+  "funding": {
+    "stage": "Pre-seed",
+    "amount_usd": 231796,
+    "date": "2025-09-24",
+    "investors": [
+      "Project Europe"
+    ]
+  },
+  "headcount": "3 (flat over trailing year)",
+  "prior_insights": [
+    "<div>Lauri, I was looking at how you guys trigger the AI interviews based on behavioral signals rather than random sampling. I think that's the right approach because the most useful feedback comes from users at the exact moment something breaks, not from a survey link they get two weeks later. Curious how many interviews it typically takes before the product graph starts surfacing actionable patterns.</div>",
+    "<div>Lauri, the Jungler case study caught my attention. Doubling their conversion rate by catching bugs that were silently killing conversions is a concrete result. Most tools would have shown the drop-off but not told them why.<br><br>I'd be curious whether you're seeing more pull from PLG companies optimizing onboarding or from teams trying to reduce churn.</div>",
+    "<div>Lauri, last thought from me. We've worked closely with companies in the PLG space like Calendly and Expensify, and the analytics-to-action gap you're solving is something that comes up constantly. If it would be useful, happy to connect you with a couple of product leaders in our network who are actively trying to solve this problem.<br><br>If now isn't the right time, totally understand.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Lauri - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I like businesses that close the loop between a number and the reason behind it. Product analytics is a good example, where the event data shows where people drop off and the explanation has to come from somewhere else entirely. I think joining the two is the harder and more useful product, since knowing which specific users hit a problem is what makes it worth asking them about it.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

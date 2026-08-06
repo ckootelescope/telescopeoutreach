@@ -1,0 +1,47 @@
+{
+  "slug": "advance",
+  "company": "Advance",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Advance is a banking and payments platform built for insurance agencies, MGAs, and wholesale brokers that hold client premium money in trust accounts. It automates matching carrier statements to invoices, splitting commissions between agencies and producers, and reconciling trust account balances, work that agencies currently do by hand across separate bank accounts, policy admin systems, and spreadsheets. It also lets agencies earn yield on the premium balances they are required to hold, turning idle compliance-mandated cash into revenue.",
+  "vertical": "insurance fintech / MGA and agency banking infrastructure",
+  "primary_theme": 2,
+  "secondary_theme": 5,
+  "theme_fit_rationale": "Advance reconciles premium money movement across banking, policy admin, and general ledger systems that don't talk to each other today, and the resulting trust account ledger becomes a system of record for insurance intermediaries over time. Secondarily, its Addie AI matches unstructured carrier statements against invoices, which is a document-processing wedge into that reconciliation workflow.",
+  "workflow_artifacts": [
+    "carrier statements",
+    "premium invoices",
+    "commission split records",
+    "trust account balances",
+    "bank transactions (ACH, wire, check)"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-06-22",
+      "type": "funding",
+      "summary": "Harmonic records a new $4.3M funding round closing 6/22/2026, on top of the earlier $8.55M seed, bringing total raised to $12.8M. No public press release found for this round yet.",
+      "url": ""
+    },
+    {
+      "date": "",
+      "type": "hiring",
+      "summary": "Headcount grew from 7 to 11 over the past 6 months (about 57% growth) per Harmonic, and LinkedIn followers roughly quadrupled over the past year.",
+      "url": ""
+    }
+  ],
+  "funding": "$8.55M seed announced 2/5/2026 (nvp Capital led; Vesey Ventures, Harel Insurance & Finance, Crystal Venture Partners, Mensch Capital, and angel Assaf Wand participated) plus a $4.3M follow-on closing 6/22/2026 per Harmonic. $12.8M total raised.",
+  "headcount": "11 (up from 7 six months ago)",
+  "prior_insights": [
+    "<div>Hey Omer,<br><br>One more thought on Advance. I think the insight of turning fiduciary premium accounts into a yield-generating product is really smart. Agencies are already required to hold those funds, so making that a financial advantage instead of just a compliance obligation feels like the right wedge into a broader financial stack for insurance.<br><br>Chris Gaertner on our team has spent time around insurance (iLife, and his family has been at State Farm for years), so this is a space we follow closely.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
+    "<div>Hey Omer,<br><br>Wanted to pass along something that might be useful. Chris Gaertner on our team invested in iLife (insurance distribution platform) and has a good network across insurtech founders, particularly on the MGA and agency side. If it would ever be helpful to connect you with folks who are navigating similar GTM challenges in insurance infrastructure, happy to make some intros.<br><br>Also, I noticed Pathpoint is an early customer. I think the combination of automating premium reconciliation and generating yield on trust accounts is a compelling value prop because it turns a cost center into a revenue line without the agency having to change how they operate day to day.<br><br>If now isn't the right time, totally understand. Either way, the offer to connect you with relevant folks in our network stands.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Omer - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I like businesses that pick a workflow where the money itself is the hard part, not just the software around it. Insurance distribution is a good example, where commission splits, carrier statements, and trust account balances all have to line up across separate banks and policy systems. I think owning the reconciliation is what makes the rest possible, since once you are the system the money moves through, adjacent products stop being a separate sale.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Omer - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing efforts at Telescope, a $275M Series A fund started by a former Sequoia partner (Mickey Arabelovic). We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">As thematic investors, we’ve been continuing to spend time in insurance and I think one of the more interesting opportunities is improving the economics of distribution without asking an MGA or broker to write more business. Premium balances already sit in trust as part of the normal course of business, but historically they’ve created work and compliance risk while generating little value for the firms holding them. I like that Advance can turn that existing obligation into a new source of revenue, and the accounts those funds sit in give the business a natural path to become the financial layer behind the rest of the policy lifecycle.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4a178c8b94eb",
+    "messageId": "19fd4a178c8b94eb"
+  },
+  "founder": "Omer Rimoch",
+  "email": "omer@advancehq.com",
+  "domain": "advancehq.com"
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "soff",
+  "company": "Soff",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Soff sells software to industrial distributors (fasteners, HVAC, aerospace parts, and similar categories) that automates the quoting process. It captures incoming quote requests directly from a distributor's email inbox, extracts the request details from unstructured emails and PDFs, and generates priced PDF quotes that sync back into the distributor's ERP or CRM. This replaces the manual process of a sales rep reading each RFQ email, pricing it by hand, drafting a quote document, and re-keying the result into the ERP.",
+  "vertical": "Industrial distribution - AI quoting and RFQ automation software",
+  "primary_theme": 5,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "Soff's wedge is ingesting unstructured RFQ emails and PDFs that legacy distributor ERPs can't read, then using that as the entry point into automating the downstream quoting workflow, a direct match for Theme 5. It's a secondary fit for Theme 2 because the quote-to-cash workflow spans two systems, the inbox and the ERP, with Soff reading and writing across both.",
+  "workflow_artifacts": [
+    "RFQ emails",
+    "PDF quote requests",
+    "generated PDF quotes",
+    "ERP and CRM sync records",
+    "won/lost quote and win-rate data"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-08-04",
+      "type": "hiring",
+      "summary": "Headcount per Harmonic is down to 6, a 25% decline from 8 three months ago and down from 7 six months ago, though up 20% from a year ago.",
+      "url": ""
+    }
+  ],
+  "funding": {
+    "stage": "Pre-seed",
+    "amount_usd": 500000,
+    "date": "2024-07-01",
+    "investors": [
+      "Y Combinator",
+      "General Catalyst"
+    ]
+  },
+  "headcount": "6 (down from 8 three months ago)",
+  "prior_insights": [
+    "<div>Hey Bernhard, one more thought. I think the quoting workflow is a smart wedge into the broader supply chain problem for distributors. Most of these companies are still managing RFQs through email and spreadsheets, and turning unstructured emails and PDFs into structured data that syncs back to their ERP is where the real value compounds over time. Chris has spent a lot of time in supply chain and manufacturing (Parabola, Paperless Parts, Project44) so this is a space we keep coming back to.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
+    "<div>Hey Bernhard, circling back on this. I was looking at how Soff captures RFQs directly from email and auto-generates pricing and PDF quotes that sync back to the distributor's ERP. I think the reason that workflow is so sticky is that it meets distributors exactly where they already work, their inbox, instead of asking them to adopt a new system. The one-day implementation claim is also worth noting. Most distributor ERP integrations take weeks or months, so if you're actually pulling that off, it removes the biggest objection a buyer would have.<br><br>Your Tesla Autopilot and Stanford AI background is an interesting combination for distribution software. Curious whether the initial pull has been stronger from fastener and industrial distributors or if you're seeing demand across verticals like HVAC and aerospace too.</div>",
+    "<div>Bernhard, wanted to flag something that might be relevant. Chris on our team has worked with Parabola, Paperless Parts, and Project44 in the supply chain and manufacturing space, and we've been seeing a pattern where the companies that win in distribution start with one specific workflow (quoting, ordering, inventory) and expand from there. The RFQ-to-quote flow seems like a natural starting point because it's where distributors lose deals, and your metrics around +20% revenue and +7% win rates back that up.<br><br>Happy to connect you with Chris if comparing notes on the distributor GTM would be useful. He's spent a lot of time thinking about how to sell into these businesses.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Bernhard - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I like businesses that start in the inbox, because that is usually where the real system of record has been hiding. Industrial distribution is a good example, where the RFQ arrives as an email with a PDF attached and the quote goes back out the same way. I think the durable asset ends up being the quote history rather than the automation, since knowing what you bid and what you won is what lets you price the next one better.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Bernhard - Know I&#39;ve reached out a couple times but wanted to see if now is a better time.  I help lead our enterprise AI investing efforts at Telescope, a $275M Series A fund started by a former Sequoia partner (Mickey Arabelovic). We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div class=\"\"><br/></div><div class=\"flex flex-col\"><div class=\"fKQ0lq_Layout\" data-item-anchor=\"start\" data-clip=\"true\" data-dimension=\"height\"><div class=\"fKQ0lq_TransitionItem WlXitW_TransitionGroupChild\"><div class=\"\"></div></div></div></div><div class=\"\">We’ve been spending a lot of time in industrial distribution, and I think quoting is a much more important workflow than most software companies give it credit for. The ERP manages the business once an order is won, but it does very little to help distributors decide which RFQs to prioritize, how quickly to respond, or where deals are being lost. Soff has the opportunity to become the operating layer for the commercial team, starting with quote automation but expanding into how distributors manage and grow the entire book of business.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div><div class=\"\"><br/></div><div class=\"\">P.S If you ever need good Korean food recs - my Beli is @ckoo13 :)</div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd46b747aa229b",
+    "messageId": "19fd46b747aa229b"
+  },
+  "founder": "Bernhard Hausleitner",
+  "email": "bernhard@soff.ai",
+  "domain": "soff.ai"
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "anchor_browser",
+  "company": "Anchor Browser",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Anchor Browser provides cloud-hosted, managed Chromium browser instances that let AI agents log into and navigate websites that don't have APIs. It handles the parts that normally break automation, like passing bot detection, managing authenticated sessions, and routing traffic through its own network, and caches successful navigation paths so repeat tasks run deterministically instead of re-reasoning through the page every time. This replaces the manual work of a person clicking through a vendor portal, or the brittle scripts and proxy setups teams previously stitched together to automate one.",
+  "vertical": "AI agent infrastructure / browser automation",
+  "primary_theme": 3,
+  "secondary_theme": 9,
+  "theme_fit_rationale": "Anchor is building sandboxed browser infrastructure and authentication/identity plumbing purpose-built for agents rather than humans, a direct match to Theme 3's sandbox-environment and identity/authorization use cases. Its OmniConnect auth layer, Cloudflare/Fingerprint agent-verification partnerships, and founder background in security (Unit 8200, SentinelOne, Noname) also touch Theme 9's agent identity and access-control themes.",
+  "workflow_artifacts": [],
+  "recent_signals": [
+    {
+      "date": "2026-08-01",
+      "type": "blog",
+      "summary": "Published guidance on automating real estate and property operations in regulated workflows.",
+      "url": "https://anchorbrowser.io/blog"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "blog",
+      "summary": "Published guidance on automating vendor portals for procurement and supply chain teams.",
+      "url": "https://anchorbrowser.io/blog"
+    },
+    {
+      "date": "2026-06-24",
+      "type": "blog",
+      "summary": "Case study: how Yutori used Anchor to stop building its own browser infra and ship models instead.",
+      "url": "https://anchorbrowser.io/blog"
+    }
+  ],
+  "funding": {
+    "stage": "Seed",
+    "amount_usd": 6000000,
+    "date": "2025-10-22",
+    "investors": [
+      "Blumberg Capital",
+      "Gradient",
+      "Maccabee Ventures"
+    ]
+  },
+  "headcount": "~21",
+  "prior_insights": [
+    "<div>Idan, I was reading about the Web Action Cache approach and I think the architecture is interesting. Moving AI to the planning stage only and then executing cached workflows deterministically is a different bet than most browser automation companies are making. Curious whether enterprise customers are primarily buying on the reliability advantage or the cost advantage from using fewer tokens.</div>",
+    "<div>Idan, I keep thinking about the Cloudflare partnership. Being officially verified by the company whose job is blocking bots isn't something a competitor can easily replicate, and having Groq running their agent platform through you is a good reference to have. I'd be curious how you're thinking about pricing as usage scales, whether credits-based holds up at enterprise volumes or if you end up needing something more predictable.</div>",
+    "<div>Idan, one last thought. Chris Gaertner on our team has deep relationships in the security infrastructure space from his work with Axonius and JumpCloud. If it would be useful to get introductions to CISOs and security leaders who are evaluating how to manage AI agent access in their environments, happy to make those connections.<br><br>If now isn't the right time, totally understand.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Idan - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I've been spending a lot of time on the infrastructure layer agents need, and browsers keep coming up as the honest bottleneck. Most of the systems companies actually depend on were built for people to click through and were never given an API. I think the long tail is the whole point, because the work worth automating is concentrated in exactly the systems nobody bothered to build an integration for.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Idan - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p class=\"isSelectedEnd\" style=\"margin:0px;\"><span class=\"\"><span><span><span><span>We&#39;ve</span> <span><span><span>been spending more time understanding </span></span></span></span></span></span>the infrastructure agents need, and I think the browser could become one of the most important control points in the stack. APIs cover the clean, modern portion of enterprise software, but a huge amount of valuable work still happens across authenticated interfaces, permissions, and multi-step workflows built for people. I think that th<span>e</span> company that makes those environments reliable enough for agents to operate in can sit underneath a much broader wave of enterprise automation.</span><br/></p><div><br/></div><p style=\"margin:0px;\" class=\"\"><span class=\"\">Your background in the Israeli <span><span>military</span> also</span> caught my eye. We’ve seen a number of great infrastructure and security founders come out of that environment, and I’d love to learn how it shaped your journey in started Anchor.</span><br/></p><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of your next partner - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd45f208911be1",
+    "messageId": "19fd45f208911be1"
+  },
+  "founder": "Idan",
+  "email": "idan@anchorbrowser.io",
+  "domain": "anchorbrowser.io"
+}

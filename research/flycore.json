@@ -1,0 +1,49 @@
+{
+  "slug": "flycore",
+  "company": "Flycore",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Flycore is a CRM platform built specifically for small aviation businesses, mainly flight schools, plus maintenance facilities, FBOs, and charter operators. It replaces the whiteboards, spreadsheets, and generic tools (or ill-fitting horizontal CRMs like Salesforce/HubSpot) that these operators use to track a student from first inquiry through enrollment, handling lead capture, intake forms, e-signatures, payments, and follow-up communication in one system. The product also includes a website builder and Kanban-style pipeline view so small operators without dedicated sales or marketing staff can run a structured enrollment process.",
+  "vertical": "aviation / flight school and general aviation SMB software",
+  "primary_theme": 8,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "Flycore embeds itself into the high-frequency inquiry-to-enrollment conversations flight schools have with prospective students, capturing that first-party data as a system of record where before it lived on whiteboards or in someone's inbox, then uses it to automate onboarding and is expanding into adjacent aviation workflows (FBOs, charter, maintenance). It secondarily fits the multi-system workflow consolidation theme via its integrations with Flight Circle, Flight Schedule Pro, and Stripe into a single enrollment pipeline.",
+  "workflow_artifacts": [
+    "student intake/enrollment forms",
+    "e-signature documents",
+    "Stripe payment records",
+    "CSV student data imports",
+    "Flight Circle scheduling records",
+    "Flight Schedule Pro scheduling records"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-05-21",
+      "type": "news",
+      "summary": "Flycore attended AeroSummit 2026 in Miami (May 20-22), with leadership meeting flight school operators and industry partners.",
+      "url": "https://afm.aero/flight-school-crm-platform-flycore-to-attend-aerosummit-2026-in-miami"
+    },
+    {
+      "date": "2026-05-06",
+      "type": "hiring",
+      "summary": "Flycore appointed Janelle Schultz as Account Manager to support client growth, signaling team expansion beyond the founding group.",
+      "url": "https://www.afm.aero/flight-school-crm-platform-flycore-appoints-janelle-schultz-as-account-manager-to-support-flight-school-client-growth"
+    }
+  ],
+  "funding": null,
+  "headcount": "~7 employees (Harmonic, as of Aug 2026)",
+  "prior_insights": [
+    "<div>Hey Doug, was talking to someone in aviation training recently and they mentioned that most flight schools still track student progress on whiteboards and spreadsheets. Curious how you're approaching the initial onboarding challenge with these operators.</div>",
+    "<div>Doug, circling back on this. I saw you guys just launched Stripe payments for discovery flights and the conditional logic forms for onboarding. The discovery flight piece is interesting to me because that's really the top of the funnel for every flight school, and most of them are still handling it over the phone or through a generic booking widget that doesn't capture anything useful about the student afterward.<br><br>The All In Aviation case study caught my eye too. A 36% bump in student conversion after switching off HubSpot makes sense when you think about how much of that platform is just irrelevant to a flight school's actual workflow. Curious whether you're seeing more pull from schools that have never used a CRM at all versus ones migrating off something like HubSpot or Salesforce, and which of those segments is easier to land.</div>",
+    "<div>Doug,<br><br>I think the integration with Flight Circle and Flight Schedule Pro is a smart call because it means flight schools don't have to rip out their existing ops stack to get the CRM benefits. Most school owners aren't software people and the last thing they want is to manage two systems that don't talk. If you're ever open to a quick chat, I'd love to hear how you're thinking about expanding beyond flight schools into the broader FBO and charter market.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Doug - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I like businesses that pick a market too small for the horizontal players to bother with. Flight training is a good example, where the operator is running enrollment forms, signatures, payments, and scheduling across tools that were never meant to talk to each other. I think the advantage compounds quietly, since a product shaped around one industry's actual sequence of steps is hard to displace with a generic CRM and a template.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Doug - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our vertical AI and software investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">As part of our thematic work, we&#39;ve continued to learn more about aviation and I think most products in the category start too far downstream. Scheduling tools help once a customer is already in the system, while Flycore owns the path from the first website visit through enrollment and ongoing engagement. That puts you in a position to become the system general aviation businesses use to grow, rather than another tool they use to manage the calendar.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4a178eb3d8c7",
+    "messageId": "19fd4a178eb3d8c7"
+  },
+  "founder": "Doug",
+  "email": "doug@getflycore.com",
+  "domain": "getflycore.com"
+}

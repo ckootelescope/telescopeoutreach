@@ -1,0 +1,39 @@
+{
+  "slug": "kinth",
+  "company": "Kinth",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Kinth turns constraint sheets, sketches, engineering drawings, and performance requirements into editable, CAD-native parametric models, rather than the mesh-based outputs most AI design tools produce. It replaces the manual, repetitive CAD work engineers do to translate a spec into a usable model: building geometry by hand, running it through simulation, checking it against manufacturability rules, and revising it over and over. Kinth generates multiple CAD-ready design concepts in parallel from the same requirements, runs simulation-informed iteration against those constraints, and flags design-for-manufacturing issues, so engineers can compare tradeoffs earlier and spend less time on early-stage prototyping and revision cycles.",
+  "vertical": "AI-native parametric CAD / engineering design software for hardware, construction, robotics, manufacturing, and aerospace teams",
+  "primary_theme": 5,
+  "secondary_theme": 7,
+  "theme_fit_rationale": "Kinth's wedge is ingesting unstructured inputs (constraint sheets, sketches, freehand drawings) that legacy CAD tools can't read, and using that to automatically produce structured, manufacturable parametric models, then compounding into downstream simulation and DFM automation as more designs pass through the system (Theme 5). Secondarily, by generating CAD-native, manufacturable geometry that plugs into existing workflows and runs DFM checks, it functions as a bridge connecting design tools to manufacturing, one of the explicit use cases under the hardware supply chain theme (Theme 7).",
+  "workflow_artifacts": [
+    "Constraint sheets",
+    "Sketches",
+    "Engineering drawings",
+    "Performance requirements documents",
+    "Parametric CAD models",
+    "Imported/existing CAD files",
+    "Design-for-manufacturing (DFM) review checks"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-05-07",
+      "type": "hiring",
+      "summary": "Headcount grew from 3 to 4 (33% increase) over the trailing 90 days per Harmonic traction data; no public hires or roles disclosed.",
+      "url": ""
+    }
+  ],
+  "funding": null,
+  "headcount": "4 (up from 3 roughly 90 days ago, per Harmonic; team founded January 2026)",
+  "prior_insights": [
+    "<div>Hey Arhon, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Arhon - Hope all is well! I know it's been a minute but wanted to check in. I've been reading more about CAD-native AI design tools and I think parametric geometry is where the market needs to go - curious how early customer conversations are going. Would love to hear more about the vision for Kinth and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
+    "<div>Arhon - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

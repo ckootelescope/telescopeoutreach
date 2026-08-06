@@ -1,0 +1,52 @@
+{
+  "slug": "turgon",
+  "company": "Turgon",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Turgon is an AI-native systems integrator that modernizes legacy enterprise IT infrastructure, migrating, cleaning, and unifying data from old systems like mainframes, ERPs, and siloed databases into modern platforms. It replaces the traditional consulting-heavy systems integration process, where teams of human consultants bill hours to manually map and migrate enterprise data, with a smaller 'Pod' of AI agents plus a few human engineers who handle judgment calls and client oversight. Customers are enterprises with legacy IT stacks across logistics, retail, hospitality, and computing infrastructure that need to migrate off old systems in weeks instead of months.",
+  "vertical": "Enterprise IT modernization / systems integration",
+  "primary_theme": 6,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "Turgon directly competes with traditional system integrator consulting firms (an explicit Theme 6 use case: IT services/modernization), replacing billable consulting labor with AI agents plus a thin layer of human experts (the Pod model), which is the labor-replacement, outcome-based model Theme 6 describes. Secondary fit with Theme 2 since the agents read and write across multiple legacy enterprise systems (SAP, Salesforce, NetSuite, Snowflake, mainframe/IBMi) to reconcile and unify data.",
+  "workflow_artifacts": [
+    "SAP integrations",
+    "Salesforce integrations",
+    "NetSuite integrations",
+    "Snowflake data pipelines",
+    "legacy mainframe / IBMi systems",
+    "data lineage records",
+    "API mappings",
+    "data ontology / data dictionary",
+    "data governance and compliance records"
+  ],
+  "recent_signals": [
+    {
+      "date": "",
+      "type": "product",
+      "summary": "Added a fourth public case study, Penguin Solutions (computing infrastructure), unifying data infrastructure across multiple acquisitions in three weeks. Not previously referenced in any prior Turgon email (those cited Pharma Logistics, McCarthy Tire Service, and the DynPro partnership).",
+      "url": "https://www.turgon.ai/case-studies"
+    },
+    {
+      "date": "2026-05 to 2026-08",
+      "type": "hiring",
+      "summary": "Headcount grew from 19 to 27 (about 42%) over the trailing 90 days per Harmonic, and 170% over the trailing year, suggesting the company is scaling delivery capacity past the founding team.",
+      "url": ""
+    }
+  ],
+  "funding": "Seed round (undisclosed amount), January 2025, from CIV, Founder Collective, and Slow Ventures. Harmonic funding fields are access-restricted for this record.",
+  "headcount": "27 (per Harmonic, up from 19 three months ago and 10 a year ago)",
+  "prior_insights": [
+    "<div>Hey Ankur, one more thing. I think the Pod model, where AI agents handle 80% of execution and forward deployed engineers handle the judgment calls, is a really practical way to approach modernization projects that have historically been all consulting hours. The DynPro partnership makes sense too given 30 years of enterprise IT relationships paired with your platform to actually compress timelines from quarters to weeks. Chris on our team has spent a lot of time in infrastructure (Datadog) so we keep hearing about how painful legacy migration projects are.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
+    "<div>Ankur, circling back on this. I was looking at the McCarthy Tire Service case study, going from zero to real-time analytics in 5 weeks at 70% cost savings is a good proof point. I think the Pod model makes sense for this category, the biggest complaint I hear about legacy migration projects is that they balloon in scope because they're 100% consulting hours with no leverage. Having AI agents handle 80% of the execution while FDEs handle the judgment calls compresses timelines without cutting corners on the stuff that actually requires domain expertise. Curious whether the DynPro partnership is opening up a different customer profile than you were reaching on your own, or if it's mostly accelerating deals you were already in.<br><br>Would love to chat if you have a few minutes.</div>",
+    "<div>Ankur, one more thought. Chris on our team has worked closely with companies like Datadog that sit in the infrastructure layer, and the pain around legacy data migration keeps coming up in those conversations. I think he could be a useful sounding board on how to position against the traditional SI firms that are going to start bolting AI onto their existing offerings. Happy to connect you two if that would be helpful.<br><br>If now isn't the right time, totally understand. But the offer stands whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Ankur - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses that go after the services budget rather than the software budget. Enterprise IT modernization is a good example, where the work is migrating mainframe and ERP data, rebuilding API mappings, and re-establishing lineage that nobody documented. I think the margin story is what makes this interesting, since the work starts out looking like consulting and converges toward software economics as more of it gets automated.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Ankur - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing efforts at Telescope, a $275M Series A fund started by a former Sequoia partner (Mickey Arabelovic). We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div class=\"\"><br/></div><div class=\"\">As I&#39;ve been continuing to spend time in enterprise AI, I&#39;ve leaned towards business that go after the services budget rather than the software budget. Enterprise IT modernization is a good example, where the work is migrating mainframe and ERP data, rebuilding API mappings, and re-establishing lineage that nobody documented. I think the margin story is what makes this interesting, since the work starts out looking like consulting and converges toward software economics as more of it gets automated.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4d866bf63b5a",
+    "messageId": "19fd4d866bf63b5a"
+  },
+  "founder": "Ankur Varma",
+  "email": "ankur@turgon.ai",
+  "domain": "turgon.ai"
+}

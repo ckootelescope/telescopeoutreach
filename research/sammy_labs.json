@@ -1,0 +1,33 @@
+{
+  "slug": "sammy_labs",
+  "company": "SAMMY Labs",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "SAMMY Labs originally built a screen-aware AI agent (voice interaction, screen capture, semantic memory) that auto-generates product walkthroughs, documentation, and onboarding flows as an app's UI changes, replacing manual doc-writing and support-ticket triage for SaaS onboarding and customer success teams. The public site and YC profile now lead with a repositioned pitch: \"computational law for AI agents,\" giving deterministic, audit-tracked answers to legal and compliance questions instead of an LLM's best guess, aimed at regulated industries and regulators directly. The underlying screen/voice/memory tech (confirmed on docs.sammylabs.com) appears unchanged; the go-to-market framing has shifted from documentation automation to agent governance/compliance.",
+  "vertical": "Legal & compliance AI for agents (pivoted from documentation/product-onboarding automation)",
+  "primary_theme": 3,
+  "secondary_theme": 9,
+  "theme_fit_rationale": "Primary fit is Theme 3 (Building software for agents): SAMMY now explicitly frames its product as infrastructure built for AI agents as the end user (\"computational law for AI agents\"), not a human-facing tool, matching the theme's governance use case. Secondary fit is Theme 9 (Agentic security infrastructure): the core new value prop is a deterministic, auditable layer that constrains/checks what an agent is allowed to conclude or do on legal/compliance questions, with a full audit trail, which maps directly to the theme's audit trails and governance use cases.",
+  "workflow_artifacts": ["audit trail logs for agent legal/compliance Q&A", "auto-generated product walkthroughs/onboarding documentation"],
+  "recent_signals": [
+    "Site and YC profile now lead with a repositioned \"computational law for AI agents\" / deterministic legal-compliance AI pitch, a shift from the original documentation-automation wedge referenced in prior outreach; company relaunched Feb 9, 2026 per press coverage",
+    "Headcount down to 7 from 9 over the last 90 days (-22%) per Harmonic, even as web traffic and LinkedIn followers ticked up over the same window"
+  ],
+  "funding": {
+    "stage": "PRE_SEED",
+    "totalRaised": 500000,
+    "numRounds": 2,
+    "lastFundingDate": "2025-02-01",
+    "investors": ["Y Combinator", "Antler"]
+  },
+  "headcount": "7 (4 eng, 1 product, 1 marketing, 1 customer success, 2 ops; down from 9 three months ago)",
+  "prior_insights": [
+    "<div>Hey Joe, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Joe - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the documentation automation space and I think screen-aware AI that learns the product directly is the right approach - curious what verticals are showing the most traction. Would love to hear more about the vision for SAMMY Labs and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
+    "<div>Hey Joe, Following up - have you thought about another partner after your pre-seed? I really like what you're building at SAMMY Labs and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

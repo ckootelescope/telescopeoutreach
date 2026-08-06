@@ -1,0 +1,62 @@
+{
+  "slug": "walkway",
+  "company": "Walkway",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Walkway sells dynamic pricing software to tour and activity operators (walking tours, museum entries, river cruises, cooking classes, and similar experiences). It pulls in competitor prices, booking pace, and demand signals, then recommends or automatically applies price changes across an operator's full catalog, replacing the manual process of operators setting prices once a year and rarely revisiting them. It connects directly into an operator's existing booking systems and distribution channels so price changes take effect without extra manual work.",
+  "vertical": "Travel - tours and activities revenue management software",
+  "primary_theme": 2,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Walkway continuously reads demand and competitor pricing signals across booking systems and distribution channels and writes price changes back automatically, an always-on cross-system workflow loop that mirrors Theme 2's revenue management use case, applied here to the tours and activities vertical rather than enterprise billing.",
+  "workflow_artifacts": [
+    "competitor pricing data",
+    "booking and demand data",
+    "price floor and ceiling rules",
+    "booking system and distribution channel integrations",
+    "price recommendation history"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-07-06",
+      "type": "blog",
+      "summary": "CTO Emmanuel Gautier and VP Terry Donovan published a technical deep dive on the pricing engine: each tour seat is re-evaluated 8 times daily across 7 signals, 2.3M+ price recommendations have been made since the engine launched in December 2025, about 95% of adjustments move prices down or hold steady, and premium price increases backtrack within 36 hours if demand doesn't validate them.",
+      "url": "https://www.walkway.ai/blog"
+    },
+    {
+      "date": "2026-08-16",
+      "type": "product",
+      "summary": "Walkway is hosting a public webinar, \"How Dynamic Pricing Works for Tours and Attractions,\" aimed at operators.",
+      "url": "https://www.walkway.ai"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "hiring",
+      "summary": "Headcount is up 33% over the trailing 90 days (18 to 24) and 118% over the trailing year, with 6 engineering and 6 data hires currently on the team.",
+      "url": ""
+    }
+  ],
+  "funding": {
+    "stage": "Pre-seed",
+    "amount_usd": 1650000,
+    "date": "2025-10-14",
+    "investors": [
+      "Reformation Partners",
+      "Side Door Ventures"
+    ]
+  },
+  "headcount": "24 (up from 18 three months ago)",
+  "prior_insights": [
+    "<div>Hey Brent, circling back on this. We're flexible on timing so LMK if a different week works better for coffee or a quick Zoom.</div>",
+    "<div>Brent,<br><br>Been thinking about this more. Hotels and airlines figured out dynamic pricing decades ago, but most tour operators still set prices once a year and leave them. Arival's data showing dynamic pricing adoption in tours and activities is about to more than double makes sense given the tooling is finally catching up. The fact that you and Drew saw this play out firsthand at Airbnb and Kayak respectively, where vacation rental pricing went from static to dynamic over a few years, gives you a pretty clear roadmap for what happens next in experiences.<br><br>Curious whether operators are coming to you proactively or if it's more of an education sell right now.</div>",
+    "<div>Brent,<br><br>I was reading about Walkway's positioning as the pricing intelligence layer for experience operators and I think the Airbnb angle is genuinely useful context here because dynamic pricing for vacation rentals went from exotic to expected, and I'd imagine you're betting the same thing happens in tours and activities over the next few years. The $1.65M pre-seed from Reformation Partners suggests travel-focused investors see the same timing.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Brent - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I've been spending a lot of time on pricing software and the interesting part is rarely the model itself. Tours and attractions are a good example, where the inputs are booking pace, competitor rates, and channel level price floors that all live in different systems. I think the hard problem is trust rather than accuracy, since an operator has to be willing to let something change prices without checking it first, and earning that is what makes the category defensible.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Brent - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing efforts at Telescope, a $275M Series A fund started by a former Sequoia partner (Mickey Arabelovic). We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div class=\"\"><br/></div><div class=\"\">We&#39;ve been looking further into Walkway and found that the interesting part is not the model itself. The inputs in tours and activities are booking pace, competitor rates, and channel level price floors that all live in different systems. I think the hard problem is trust rather than accuracy, since an operator has to be willing to let something change prices without checking it first, and earning that is what makes the category defensible.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd50f57b15e435",
+    "messageId": "19fd50f57b15e435"
+  },
+  "founder": "Brent",
+  "email": "brent@walkway.ai",
+  "domain": "walkway.ai"
+}

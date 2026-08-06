@@ -1,0 +1,42 @@
+{
+  "slug": "alpharun",
+  "company": "Alpharun",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Alpharun listens to and scores every sales call for teams in regulated industries like insurance, financial services, healthcare, and mortgage, then coaches reps automatically based on the patterns and talk tracks pulled from the team's own top performers. It replaces the manual process where a sales manager can only sit in on a handful of calls a week to spot-check quality, letting every call get scored against dozens of criteria and every rep get feedback within minutes instead of waiting for a coaching session. The company also builds AI voice agents that can run the calls themselves, for example handling after-hours or lead-qualification calls.",
+  "vertical": "AI sales coaching and call QA for regulated B2C call centers (insurance, financial services, healthcare, mortgage, wealth management)",
+  "primary_theme": 8,
+  "secondary_theme": 5,
+  "theme_fit_rationale": "Alpharun embeds directly in the sales call, a high-frequency, high-stakes conversation, and turns it into a system of record (scored calls, extracted playbooks) that gets more valuable as more calls run through it, then expands into voice agents that own more of the workflow, the core Theme 8 pattern. It also fits Theme 5 as a secondary: unstructured call audio/transcripts are the ingestion wedge into an automated coaching and QA workflow for regulated verticals.",
+  "workflow_artifacts": [
+    "call recordings and transcripts",
+    "call scorecards graded against QA criteria",
+    "sales playbooks and objection-handling talk tracks extracted from calls",
+    "AI voice agent call logs (lead qualification, after-hours calls)"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-06-08",
+      "type": "product",
+      "summary": "Launched autonomous AI coaching agents that monitor every call, score it against a model built from the customer's own winning calls, and deliver rep feedback within minutes; company claims customers see conversion rates climb 15-30% within a few weeks of deployment.",
+      "url": "https://salestechstar.com/sales-marketing/alpharun-launches-ai-agents-for-inside-sales-coaching-software-that-lift-conversion-rates-15-30/"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "hiring",
+      "summary": "Headcount grew from 6 to 8 over the trailing 6 months and from 5 to 8 over the trailing year (Harmonic), roughly 60% YoY growth off a small base.",
+      "url": ""
+    }
+  ],
+  "funding": "Undisclosed / early-stage. PitchBook lists Twilio Ventures and Mischief as investors, but no round size or date is public. Harmonic shows no recorded funding rounds (fundingStage VENTURE_UNKNOWN, fundingTotal 0), so treat any round details as unconfirmed.",
+  "headcount": "8 (Harmonic, as of Aug 2026), up from 5 a year ago",
+  "prior_insights": [
+    "<div>Hey Henry, been thinking about the Meetingbird to Front journey and how that informs what you're building now. Curious how enterprise buyers are responding to the AI interview approach.</div>",
+    "<div>Henry, following up here. I read the Chapter case study and the numbers are pretty striking. Going from managers reviewing a handful of calls a week to scoring 100% of them against 60+ criteria is a real shift in how coaching works. The fact that 93% of advisors improved within two months suggests the feedback loop is actually tight enough to change behavior.<br><br>I'd be curious how the AI voice agent side is developing relative to the coaching product, and whether customers are coming in for one and expanding to the other.</div>",
+    "<div>Henry,<br><br>I was looking at how Alpharun builds the coaching playbook from your own call data rather than a generic framework, which I think matters a lot in insurance and financial services where the compliance language and objection patterns are highly specific to each carrier and product. Chris has worked with iLife on the insurance side and invested in Fathom, so AI for sales conversations is something we've spent real time on.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Henry - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses that build the system of record out of conversations that were already happening. Regulated sales is a good example, where every call is recorded for compliance and then almost none of it gets used for anything else. I think the interesting turn is going from scoring to acting, because a system that has heard every call is better positioned to run one than a manager working from a sample.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

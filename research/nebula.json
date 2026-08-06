@@ -1,0 +1,33 @@
+{
+  "slug": "nebula",
+  "company": "Nebula",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Nebula builds a memory infrastructure layer that developers plug into AI agents so the agents can retain and recall context over time. It ingests documents, conversations, files, and connected sources (Slack, Gmail, Notion, Google Drive), then structures that raw content into entities, facts, and source utterances with contradiction detection and confidence scoring, replacing the manual work of stuffing flat conversation history or ad hoc context files into a model's prompt. Nebula is the first product from Zeroset, an applied AI research lab; the product is also distributed as a memory plugin for the OpenClaw agent framework.",
+  "vertical": "AI agent infrastructure / developer tools",
+  "primary_theme": 3,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Nebula is horizontal infrastructure built specifically for AI agents as the end user, not a human-facing app: API/SDK-first (Python, JS, REST, MCP), sold to developers deploying production agents, solving a machine-native problem (state retention across sessions) rather than a human workflow. This matches Theme 3's thesis that every software category gets rebuilt around machine-readable interfaces for non-human users, with memory/context being one of the underlying primitives agents need alongside identity, communication, and observability.",
+  "workflow_artifacts": [
+    "conversation transcripts",
+    "Slack messages",
+    "Gmail emails",
+    "Notion pages",
+    "Google Drive files",
+    "PDF documents",
+    "source code files",
+    "audio files"
+  ],
+  "recent_signals": [],
+  "funding": null,
+  "headcount": "~3 (per Harmonic, roughly flat over the past 6 months; founded August 2025)",
+  "prior_insights": [
+    "<div>Hey Akshat, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Akshat - Hope all is well! I know it's been a minute but wanted to check in. I've been thinking more about the agent memory problem and I think it's going to be one of the key infrastructure layers as production AI deployments scale - curious what you're seeing from early adopters. Would love to hear more about the vision for Nebula and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?</div>",
+    "<div>Akshat - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

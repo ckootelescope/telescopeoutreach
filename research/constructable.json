@@ -1,0 +1,63 @@
+{
+  "slug": "constructable",
+  "company": "Constructable",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Constructable is a project management platform for commercial general contractors and subcontractors that consolidates RFIs, submittals, plan markups, takeoffs, daily logs, punch lists, and budget/change-order tracking into one system. It replaces the mix of email threads, spreadsheets, and point tools (plus Procore-style per-seat software) that field and office teams currently juggle, using AI search across plans, photos, and documents to surface answers with cited sources instead of manual digging.",
+  "vertical": "Construction / AEC project management software (GCs and subcontractors)",
+  "primary_theme": 5,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "Constructable's wedge is AI-driven search and extraction over unstructured jobsite documents, photos, and drawings, which it then uses to automate downstream workflows like RFI routing and punch list resolution (Theme 5). It also increasingly functions as a single cross-functional workflow layer spanning field, project, and financial management that replaces manual handoffs between siloed tools (Theme 2).",
+  "workflow_artifacts": [
+    "RFIs (Requests for Information)",
+    "Submittals",
+    "Plan markups and drawing annotations",
+    "Takeoffs (linear feet, area, quantity measurements)",
+    "Bid management and tracking",
+    "Daily logs",
+    "Punch lists pinned to drawings",
+    "Photo and video jobsite documentation",
+    "Budgets and commitments",
+    "Owner contracts",
+    "Change orders",
+    "Invoices"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-08-01",
+      "type": "blog",
+      "summary": "Published post on RFI tracking, arguing requests get lost in email and spreadsheets without a system of record for ball-in-court accountability.",
+      "url": "https://constructable.ai/blog/rfi-tracking-ball-in-court-accountability"
+    },
+    {
+      "date": "2026-07-06",
+      "type": "blog",
+      "summary": "Published post explaining MCP server support for integrating Constructable's data into external AI tools, plus a companion post (2026-07-10) on running construction projects directly from ChatGPT.",
+      "url": "https://constructable.ai/blog/construction-mcp-server-integration"
+    },
+    {
+      "date": "2026-08-03",
+      "type": "product",
+      "summary": "Web traffic up ~12% over 90 days and ~255% over 180 days per Harmonic traction metrics, with LinkedIn followers up ~68% year over year, indicating accelerating top-of-funnel growth off a small base.",
+      "url": ""
+    }
+  ],
+  "funding": {
+    "stage": "Pre-seed",
+    "amount": "$500K",
+    "investors": [
+      "Y Combinator"
+    ],
+    "last_funding_date": "2023-08-22"
+  },
+  "headcount": "7 (up from 6 six months ago, per Harmonic)",
+  "prior_insights": [
+    "<div>Hey Emma, Harrison was telling me about a GC he spoke with recently who said the biggest technology challenge isn't adoption, it's that most software doesn't account for how chaotic a jobsite actually is. Curious how you're thinking about that.</div>",
+    "<div>Emma, wanted to follow up one more time. The flat pricing with unlimited users is a smart move for mid-market GCs where the alternative is paying per seat and then half the field team never gets a login. I think that's part of why Procore adoption stalls at a lot of companies in the $20M-$150M range.<br><br>Harrison on our team was VP of Finance at Procore for several years, so he's seen that dynamic firsthand. I'd be curious whether subs and consultants are actually engaging on the platform or if it's still mostly the GC's internal team using it.</div>",
+    "<div>Emma,<br><br>Our Head of Ops Harrison Doyle spent years as VP of Finance at Procore, so construction software is a space we've looked at closely. I think the offline-first approach combined with voice punch lists is the kind of thing that actually gets adopted in the field, where connectivity is spotty and people aren't going to log into a desktop portal between tasks. Curious how you're getting initial traction with GCs vs. subs.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Emma - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I've been spending a lot of time on what happens when the interface to software stops being the software. Construction is a good example, where the record of a project lives in RFIs, submittals, change orders, and markups that someone has to go find and read. I think exposing that to an assistant rather than a dashboard changes who the product is for, since the person who needs the answer is rarely the person who knows where it was filed.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

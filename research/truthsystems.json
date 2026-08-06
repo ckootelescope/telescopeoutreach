@@ -1,0 +1,22 @@
+{
+  "slug": "truthsystems",
+  "company": "Truth Systems",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Truth Systems builds AI governance software for law firms. Charter sits between employees and AI tools (browser extension plus platform) and blocks prompts that would violate firm or client policy in real time, such as pasting privileged material or using the wrong tool for a matter. Alexandria extends the same governance to autonomous agents, enforcing ethical walls and access rules as agents pull data from systems like iManage, Aderant, Intapp, and Outlook, replacing the manual, after-the-fact compliance review that firms currently rely on.",
+  "vertical": "Legal tech / AI governance and compliance",
+  "primary_theme": 9,
+  "secondary_theme": 8,
+  "theme_fit_rationale": "Theme 9 (agentic security infrastructure) is the direct fit: Charter and Alexandria are identity/policy enforcement and audit-trail infrastructure purpose-built for a world where agents (and AI-assisted humans) take real actions across firm systems and need governance humans-only security models don't cover. Theme 8 (vertical systems of record built on conversational data) fits secondarily: every blocked or allowed prompt/agent action becomes an immutable, timestamped audit record attributed to user/matter/tool, so the compliance system of record is built from actual AI usage rather than manually logged after the fact.",
+  "workflow_artifacts": ["prompts submitted to AI tools", "immutable audit logs/trails", "firm and client policy rules", "iManage records", "Aderant records", "Intapp records", "Microsoft 365/Outlook data"],
+  "recent_signals": [],
+  "funding": "Seed, $4.5M total across 2 rounds, last raise Oct 28 2025 (a16z, YC, F-Prime, Lightspeed, The LegalTech Fund, SilverCircle, Pear VC, WndrCo, Gradient)",
+  "headcount": "7 (Harmonic); Apollo estimates ~10",
+  "founder": "Anh (Alex) Mac",
+  "founder_email": "alex@truthsystems.ai",
+  "prior_insights": [],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

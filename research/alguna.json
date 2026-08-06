@@ -1,0 +1,57 @@
+{
+  "slug": "alguna",
+  "company": "Alguna",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Alguna is a pricing, quoting, and billing platform for AI, SaaS, and fintech companies. It replaces the spreadsheets and custom scripts teams normally cobble together to track usage, generate quotes, and invoice customers, letting non-engineers configure usage-based, hybrid, or subscription pricing and handle billing, payments, and revenue recognition in one system instead of stitching together separate tools for each step.",
+  "vertical": "revenue management / billing and quote-to-cash software",
+  "primary_theme": 2,
+  "secondary_theme": 3,
+  "theme_fit_rationale": "Alguna's core product is CPQ, usage metering, billing, invoicing, and revenue recognition unified into one quote-to-cash workflow, which is an explicit use case under Theme 2 (revenue management: billing, CPQ, quote-to-cash) and sits alongside pipeline comps like Salesbricks. It also has a secondary fit with Theme 3: through its TinyFish Accelerator partnership it is actively building consumption-based, agent-native pricing infrastructure for AI agent builders, aligning with Theme 3's focus on consumption-based pricing for the agent economy.",
+  "workflow_artifacts": [
+    "invoices",
+    "quotes (CPQ documents)",
+    "usage/metering events",
+    "contracts (e-signature)",
+    "revenue recognition schedules"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-05-17",
+      "type": "news",
+      "summary": "Alguna sponsored SubscriptionX 2026 in London; CEO Aleks Djekic spoke on a panel about involuntary churn from payment failures.",
+      "url": "https://blog.alguna.com/subscriptionx-2026/"
+    },
+    {
+      "date": "2026-02-18",
+      "type": "product",
+      "summary": "Alguna joined the TinyFish Accelerator as a billing partner, helping AI agent builders design usage-based, hybrid, and agent-native pricing models.",
+      "url": "https://blog.alguna.com/tinyfish-accelerator/"
+    }
+  ],
+  "funding": {
+    "stage": "SEED",
+    "totalRaised": 4500000,
+    "lastFundingDate": "2025-09-01",
+    "investors": [
+      "Mango Capital",
+      "Atlantic",
+      "Y Combinator"
+    ]
+  },
+  "headcount": "81 (54 engineering, 27 operations)",
+  "prior_insights": [
+    "Hey Aleks, circling back on this. I was looking at the Haven AI case study where they cut billing prep time by 80% after switching to you guys. I think that speaks to a real pain point, especially for AI companies where usage-based billing adds a ton of complexity that most teams just hack together with scripts and spreadsheets. Curious how much of the initial pull is coming from AI-native companies versus more traditional SaaS at this point.",
+    "Hey Aleks, been thinking more about Alguna and the positioning here. The quote-to-cash unification angle is interesting because I think most companies in this space pick a lane, either CPQ or billing, and then try to bolt on the other side later. The fact that you and Jamie both came from Primer and saw the payment orchestration side firsthand probably shaped that thinking. One thing I'd love to understand better is how the 30-day implementation works in practice. When a company like ComplyAdvantage launches a PLG engine through you guys without engineering resources, what does that migration actually look like from their existing billing setup? That seems like where most competitors get stuck.",
+    "Hey Aleks, one more note. We've worked with a few companies navigating the billing and monetization layer at scale, and I think the AI agent pricing question in particular is going to be a big deal over the next couple years as more companies try to figure out how to charge for non-deterministic workloads. Happy to connect you with relevant folks in our network if useful. Would love to find time for a call even if fundraising isn't top of mind right now. If now isn't the right time, totally understand."
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Aleks - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p style=\"margin:0px;\" class=\"\">We&#39;ve been spending more time within fintech <span>and as I think about what you&#39;re building,</span> I think AI is making pricing a much more dynamic part of the product itself. Companies are still figuring out whether to charge for seats, usage, outcomes, or some combination, but every experiment currently ripples through sales contracts, metering, invoicing, and revenue recognition. I like how <span>Alguna</span> can become the system that keeps those pieces in sync, making it possible for a company to change how it monetizes without rebuilding the revenue stack each time.<br/></p><div class=\"\"><br/></div><div class=\"\">I&#39;d love to chat about how you&#39;re thinking about GTM and happy to share what we&#39;ve learned through our work as well - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd524e99665583",
+    "messageId": "19fd524e99665583"
+  },
+  "founder": "Aleks Djekic",
+  "email": "aleks@alguna.io",
+  "domain": "alguna.io"
+}

@@ -1,0 +1,48 @@
+{
+  "slug": "fireproof",
+  "company": "Fireproof",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Fireproof is a records management and PPE/asset compliance platform built specifically for fire departments. It replaces manual, paper-and-spreadsheet record keeping for incident documentation, training logs, hydrant data, inspections, and investigations, and layers in AI agents for voice-to-text incident narratives, after-action review facilitation, dispatch audio transcription, and anomaly detection. A second core module tracks the full lifecycle of personal protective equipment (cleaning, repairs, inspections, work orders) to keep departments compliant with NFPA 1850.",
+  "vertical": "vertical SaaS / public safety records management",
+  "primary_theme": 1,
+  "secondary_theme": 5,
+  "theme_fit_rationale": "Fireproof embeds AI (voice-to-text, transcription of dispatch audio, anomaly detection) into a domain-specific workflow (fire department incident and PPE records) where switching costs are high once a department standardizes its RMS, matching Theme 1's focus on VLM/AI-embedded vertical software with labor displacement and error reduction, in an industry (public safety) explicitly named as a use case. Secondary fit with Theme 5: the product's wedge is ingesting unstructured inputs (voice narratives, dispatch audio) that legacy fire RMS tools can't read, then using that as the entry point into automating downstream compliance and reporting workflows (NERIS, accreditation, PPE lifecycle).",
+  "workflow_artifacts": [
+    "incident narratives/reports",
+    "NERIS reports",
+    "training logs",
+    "hydrant records",
+    "occupancy records",
+    "investigation and exposure records",
+    "accreditation reports",
+    "PPE/turnout gear inventory and inspection records",
+    "work orders (PPE cleaning/repair)",
+    "dispatch audio recordings",
+    "after-action review notes"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-09-09",
+      "type": "regulatory",
+      "summary": "NFPA 1850 (the consolidated PPE standard merging former NFPA 1851/1852) reaches its enforcement date, creating a hard compliance deadline for fire departments' turnout gear and SCBA lifecycle management, directly relevant to Fireproof's PPE compliance module.",
+      "url": "https://link.nfpa.org/all-publications/1850/2026"
+    }
+  ],
+  "funding": null,
+  "headcount": "unknown (Harmonic has no headcount or funding data on file; founded May 2024, Denver CO)",
+  "prior_insights": [
+    "Hey Nate, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.",
+    "Hey Nate - Hope all is well! I know it's been a minute but wanted to check in. I've been digging more into vertical AI for public safety and I think fire departments are one of those verticals that's finally ready for modern software - curious how adoption conversations are going on your end. Would love to hear more about the vision for Fireproof and find ways to help (whether or not we're on the cap table). How does your schedule look later this week or next?",
+    "Nate - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions."
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Nate - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">We’ve been spending more time in public safety software, and I think the shift to NERIS creates a rare opportunity to reset a category that departments have historically been reluctant to replace. The reporting requirement may force the initial decision, but once Fireproof becomes the system where incident, training, equipment, and inspection data live together, it can automate far more of how a department operates. That feels less like a compliance product and more like a chance to build the operating system for the fire service.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd46b75c27edce",
+    "messageId": "19fd46b75c27edce"
+  },
+  "founder": "Nate",
+  "email": "nate@fireprooftech.com",
+  "domain": "fireprooftech.com"
+}

@@ -1,0 +1,32 @@
+{
+  "slug": "tero",
+  "company": "Tero",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Tero connects read-only to a company's existing telemetry stores (Datadog, ClickHouse, S3, CloudWatch, Elastic, GCP Logging) and continuously models what's actually being logged, who owns it, and where it's wasteful, sensitive, or risky. Instead of engineers or agents manually digging through fragmented observability tools to figure out what data means and whether it's safe to act on, Tero pre-investigates the telemetry and exposes it as unified, agent-queryable context, plus policy-based remediation to cut logging volume without touching pipelines.",
+  "vertical": "Observability / DevOps infrastructure",
+  "primary_theme": 3,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Theme 3 explicitly names observability as a category needing agent-native rebuilding. Tero's 'Query' product exists specifically to give AI agents unified, pre-investigated query access across telemetry backends instead of forcing agents to make dozens of blind API calls, and 'Actions' lets agents trigger remediation directly. It's infrastructure built for agents-as-users of observability data, not a human dashboard.",
+  "workflow_artifacts": [
+    "logs, metrics, and traces (telemetry data)",
+    "OpenTelemetry Collector configs / policies",
+    "integrations with Datadog, ClickHouse, S3, CloudWatch, Elastic, GCP Logging",
+    "sensitive data exposure findings within logs"
+  ],
+  "recent_signals": [
+    "Jul 14, 2026: Tero's proposed OTel Policy OTEP was merged into the official OpenTelemetry spec, giving them a standards-track position on telemetry policy.",
+    "Jul 30, 2026: Blog post 'Stop Replaying Your Logs' argues archive-tier telemetry stores now support live querying, obsoleting log-replay pipelines."
+  ],
+  "funding": "Seed, $2.6M total (closed Jan 14, 2026) from NextView Ventures, Founder Collective, Ritual Capital",
+  "headcount": "4 (per Harmonic, as of mid-2026)",
+  "prior_insights": [
+    "<div>Hey Ben, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Ben - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Datadog and the conversation made me think about what you're building at Tero. The observability cost problem keeps coming up in our conversations and I think attacking it at the application code level instead of the infrastructure level is the right approach. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
+    "<div>Hey Ben, Following up - have you thought about another partner after your seed? I really like what you're building at Tero and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

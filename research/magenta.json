@@ -1,0 +1,59 @@
+{
+  "slug": "magenta",
+  "company": "Magenta",
+  "fetchedAt": "2026-08-05T06:34:00Z",
+  "what_they_do": "Magenta builds AI agents that read and validate the documents regulated manufacturers (mainly aerospace and defense) have to produce and check before parts can ship, things like certificates of conformance, material certs, packing slips, purchase orders, and inspection reports. Today a quality or compliance person manually cross-references these documents against the purchase order and spec requirements, which takes 15 to 30 minutes per package and requires someone who knows standards like AS9100 well enough to catch a missing cert or a spec mismatch. Magenta's agents do that cross-referencing automatically and also extend into related paperwork-heavy tasks like invoice-to-PO matching, non-conformance report review, and work instruction generation.",
+  "vertical": "Manufacturing compliance software (aerospace and defense document/quality workflows)",
+  "primary_theme": 5,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "Magenta's entire wedge is ingesting unstructured documents (certs, packing slips, drawings, inspection reports) that legacy manufacturing software can't read, then using that as the entry point to automate a specific high-stakes workflow (supplier data package review, CoC generation), which is Theme 5 almost verbatim. It also fits Theme 2 secondarily since the roadmap extends into cross-functional workflows spanning quality, procurement (AP), and engineering across existing ERP/MES/PLM systems.",
+  "workflow_artifacts": [
+    "material certificates",
+    "packing slips",
+    "certificates of conformance (CoC)",
+    "purchase orders",
+    "first article inspection reports",
+    "dimensional inspection reports",
+    "heat treat certifications",
+    "NDT (non-destructive testing) reports",
+    "drawing/technical specifications",
+    "invoices",
+    "non-conformance reports (NCRs)",
+    "FMEA documentation",
+    "CAPA documentation",
+    "work instructions",
+    "End Item Data Packages (EIDP)"
+  ],
+  "recent_signals": [
+    {
+      "date": "",
+      "type": "hiring",
+      "summary": "Harmonic headcount grew from 6 to 8 employees over the trailing 90 days (33% growth), continuing a longer-term ramp (5 people 180 days ago, 4 a year ago).",
+      "url": "https://withmagenta.com"
+    }
+  ],
+  "funding": {
+    "stage": "Pre-seed",
+    "amount_usd": 3500000,
+    "date": "2025-06-20",
+    "investors": [
+      "Marlinspike"
+    ]
+  },
+  "headcount": "8 employees per Harmonic (up from 6 ninety days ago)",
+  "prior_insights": [
+    "<div>Hey Dave, circling back on this. We're flexible on timing so LMK if a different week works better for a quick coffee or Zoom.</div>",
+    "<div>Dave, one more thought on Magenta. The supplier data package review workflow is what keeps coming back to me. A quality inspector spending 15 to 30 minutes per package manually cross-referencing material certs, packing slips, and CoCs against PO requirements is exactly the kind of work that should have been automated years ago, but nobody built it because you need people who actually understand AS9100 and NADCAP to get the validation logic right.<br><br>The demo on your site where the AI catches five issues in a single Triton Precision package, including a missing age hardening cert and a spec discrepancy, is a good example of what makes this hard to replicate without deep domain knowledge. Curious how you're thinking about expanding beyond the quality and compliance workflows into the broader manufacturing ops stack.</div>",
+    "<div>Dave,<br><br>I was looking at how Magenta is going after the supplier data package review and CoC generation workflows specifically, rather than trying to automate everything at once. I think that focus on the documents that actually touch aerospace and defense compliance requirements is what gets you in the door, because those are the ones where a missed spec costs real money. The ITAR-compliant, US-only data residency piece is also something that tends to matter a lot for the customers you're talking to.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Dave - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses where the paperwork is the product constraint rather than an afterthought. Regulated manufacturing is a good example, where a shipment cannot leave without certificates of conformance, material certs, and inspection reports that all have to agree with the purchase order. I think the checking is the wedge and not the endpoint, because once you can read those documents reliably you can start doing the work they gate.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Dave - I love what you&#39;re building at Magenta and wanted to reach out to learn more. Are you free for a chat next week? I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">We’ve been spending a lot of time in manufacturing software, and I think documentation is one of the few workflows where better software can directly increase factory throughput. A bad supplier package doesn’t just create administrative work, it stops material from being accepted and keeps a job from moving. Magenta starts by reviewing the evidence, but I believe the larger opportunity is to become the system that decides what can move forward across receiving, quality, and production.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4a2639584b8d",
+    "messageId": "19fd4a2639584b8d"
+  },
+  "founder": "Yaron Alfi",
+  "email": "yaron@withmagenta.com",
+  "domain": "withmagenta.com"
+}

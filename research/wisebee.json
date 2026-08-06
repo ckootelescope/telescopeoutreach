@@ -1,0 +1,57 @@
+{
+  "slug": "wisebee",
+  "company": "WiseBee",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "WiseBee is a cybersecurity platform that pulls findings from vulnerability scanners, cloud posture tools, external attack surface monitoring, and third-party vendor risk feeds into a single triage queue. It uses AI to score which findings are actually exploitable, prepares fixes for engineers, automatically rescans to confirm the fix worked, and produces audit-ready documentation. This replaces the manual process where security teams review thousands of disconnected alerts across separate tools each week and keep spreadsheets to prove compliance.",
+  "vertical": "cybersecurity / vulnerability management",
+  "primary_theme": 2,
+  "secondary_theme": null,
+  "theme_fit_rationale": "WiseBee consolidates several fragmented, siloed security tools (scanners, cloud posture, attack surface, vendor risk) into one automated triage-to-remediation workflow, directly matching Theme 2's compliance-and-verification use case and its thesis of agents displacing manual labor by reading/writing across systems.",
+  "workflow_artifacts": [
+    "vulnerability scanner findings",
+    "cloud security posture data",
+    "external attack surface data",
+    "third-party vendor risk data",
+    "audit-ready vulnerability register/documentation",
+    "DORA/NIS2/SEC 8-K compliance reporting"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-08-03",
+      "type": "product",
+      "summary": "WiseBee announced a partnership with Wiser Technology (AI-driven enterprise operations/workflow automation) to combine operational and cyber risk intelligence for compliance with DORA and NIS2.",
+      "url": "https://wisebee.ai/blog/news-media/wisebee-announces-partnership-with-wiser-technology/"
+    },
+    {
+      "date": "2026-07-24",
+      "type": "news",
+      "summary": "Founder/CEO Stoyan Stoyanov was featured on the Execweb Cybersecurity GTM Podcast discussing prioritization in security operations.",
+      "url": "https://wisebee.ai/blog/news-media/stoyan-stoyanov-featured-on-the-execweb-cybersecurity-gtm-podcast/"
+    }
+  ],
+  "funding": {
+    "stage": "Pre-Seed",
+    "amount_usd": 2500000,
+    "date": "2025-08-07",
+    "investors": [
+      "Frontline Ventures",
+      "BrightCap Ventures"
+    ]
+  },
+  "headcount": "12 (5 engineering, 2 sales, 3 operations, 1 people, 3 other)",
+  "prior_insights": [
+    "<div>Hey Stoyan, one more thought. I think the stack consolidation angle is smart, replacing multiple legacy tools with a single platform instead of adding another point solution. Chris has worked with companies like Axonius and JumpCloud and the mid-market security teams we talk to are drowning in tool sprawl more than they are in actual threats.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
+    "<div>Stoyan, circling back on this. I was reading about the DSK Bank deployment where you replaced three legacy platforms costing roughly 100K euros each and delivered board-ready risk reporting within 30 days. I think that's the right wedge for mid-market, showing a CISO they can cut tool spend while getting better coverage, not just adding another dashboard on top of the existing stack. Curious how the conversation differs between European banks that are dealing with DORA requirements versus the US government and fintech pilots you're running. Those seem like very different buyer motions.<br><br>Would love to hear how things are progressing since the pre-seed.</div>",
+    "<div>Stoyan, one more thought. Chris on our team has worked closely with companies like Axonius and JumpCloud, so the mid-market security buyer is a profile we know well. I think he'd be a good sounding board on the US go-to-market, especially as you expand from the European base into West Coast accounts. Happy to connect you two if that would be helpful.<br><br>If now isn't the right time, totally understand. But the offer stands whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Stoyan - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I like businesses that turn a pile of alerts into a decision rather than a longer list. Security operations is a good example, where findings arrive separately from vulnerability scanners, cloud posture tools, and vendor risk feeds, and the compliance evidence gets rebuilt by hand afterward. I think the scoring is table stakes and the durable part is proving the fix landed, since that is what an auditor and a board actually ask for.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Stoyan - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">We’ve been spending more time in cybersecurity, and I think most security stacks are still built around a perimeter companies no longer control. The harder problem isn’t finding another vulnerability, it’s getting the right fix made across external assets and vendors that the security team doesn’t directly own. WiseBee’s external-first approach has the opportunity to make it the system companies use to reduce risk across the entire ecosystem, rather than another tool that simply tells them where the risk sits.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4a263d7dbfd5",
+    "messageId": "19fd4a263d7dbfd5"
+  },
+  "founder": "Stoyan Stoyanov",
+  "email": "stoyan@wisebee.ai",
+  "domain": "wisebee.ai"
+}

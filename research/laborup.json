@@ -1,0 +1,55 @@
+{
+  "slug": "laborup",
+  "company": "LaborUp",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "LaborUp is an AI-powered recruiting platform for manufacturing companies. Instead of asking skilled tradespeople (machinists, welders, CNC programmers, maintenance techs) to build a resume, its voice AI agent calls candidates, interviews them, and assembles a detailed skills profile, reaching workers who aren't findable on LinkedIn or Indeed. Manufacturers submit hard-to-fill roles and get matched against this pre-vetted worker network, replacing the manual, resume-based sourcing and screening process traditional staffing agencies use.",
+  "vertical": "manufacturing / industrial recruiting",
+  "primary_theme": 8,
+  "secondary_theme": 5,
+  "theme_fit_rationale": "LaborUp embeds into the voice conversation where a skilled trades worker actually describes their experience, and uses that first-party conversational data to build a system-of-record profile (recruitment is an explicitly named use case under Theme 8). That same unstructured voice data is also the wedge that lets them process an unstructured, offline population traditional systems can't reach (Theme 5).",
+  "workflow_artifacts": [
+    "worker skills/credential profiles",
+    "searchable skills database",
+    "job requisitions (open roles submitted by manufacturers)",
+    "candidate placement/hire records"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-08-04",
+      "type": "hiring",
+      "summary": "Harmonic headcount data shows LaborUp at 17 employees, up from 16 over the trailing 90 days and up from 9 a year ago (+88.9% YoY). LinkedIn followers also up 7.45% over the trailing 90 days.",
+      "url": ""
+    }
+  ],
+  "funding": {
+    "stage": "Seed",
+    "totalRaised": 7735000,
+    "lastFundingDate": "2025-08-28",
+    "investors": [
+      "nvp capital",
+      "Torch Capital",
+      "Threshold Ventures",
+      "Heartland Ventures",
+      "Westbound Equity Partners",
+      "Daybreak Investments",
+      "Market Square Ventures",
+      "Marketplace Capital"
+    ]
+  },
+  "headcount": "17 (up from 9 one year ago)",
+  "prior_insights": [
+    "<div>Hey Simba, one more note. I saw you guys are expanding out of Tennessee into the broader South and Midwest, which makes a lot of sense given where the manufacturing density is. The thing that keeps sticking with me is that the workers you're going after, machinists, welders, maintenance techs, just aren't on LinkedIn or Indeed. Building a network of 25,000+ vetted workers in a market where the talent pool is basically invisible to traditional recruiting tools is a real moat. Chris has spent time in manufacturing and supply chain (Parabola, Paperless Parts, Project44) so this is a space we follow closely.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
+    "<div>Hey Simba, circling back on this. The AI voice agent piece really caught my attention. Instead of asking a machinist or welder to fill out a form, you're basically letting them walk through a conversation and the system builds their profile from that. I think that's the right call for a workforce that isn't sitting at a computer all day. The fact that you left Stanford to move to Tennessee and manually placed workers for months before building the technology shows you actually learned the hiring DNA firsthand, and I think that's why the numbers look the way they do, 10x faster hires, 70% lower cost, 3x retention.<br><br>Curious how the expansion into Alabama, Ohio, and Georgia is going. Are you replicating the same playbook of building the worker network first, or does it look different in markets with different manufacturing concentrations?</div>",
+    "<div>Simba, wanted to share something that might be relevant. Chris on our team has worked with companies like Parabola, Paperless Parts, and Project44 in the manufacturing and supply chain space. A few of them have mentioned workforce availability as a bottleneck their customers keep raising, and I think there could be some interesting partnership conversations there. Happy to make an intro if that would be useful.<br><br>Also, the investor lineup is impressive. Jeff Dean from Google DeepMind and Evan Moore from DoorDash backing a manufacturing recruiting company tells me they see this as more of an AI infrastructure play than a staffing company, which I think is the right framing.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Simba - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses that build a dataset nobody else can buy. Skilled trades hiring is a good example, where the candidate pool is largely absent from the places recruiters normally search and the useful detail is credentials and machine experience rather than a resume. I think the conversation is the product here, because a profile built from an actual interview is a different asset than one scraped from a job board.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Simba - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">As we&#39;ve continued to think about the themes that excite us, we&#39;re bullish on businesses that build a dataset nobody else can buy. Skilled trades hiring is a good example, where the candidate pool is largely absent from the places recruiters normally search and the useful detail is credentials and machine experience rather than a resume. I think the conversation is the product here, because a profile built from an actual interview is a different asset than one scraped from a job board.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd43487017a318",
+    "messageId": "19fd43487017a318"
+  },
+  "founder": "Simba",
+  "email": "simba@laborup.com",
+  "domain": "laborup.com"
+}

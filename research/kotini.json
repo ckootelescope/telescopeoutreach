@@ -1,0 +1,50 @@
+{
+  "slug": "kotini",
+  "company": "Kotini",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Kotini is a digital platform that UK estate agents use to onboard buyers and sellers, replacing paper forms and separate standalone tools for ID verification, anti-money-laundering checks, and property material information disclosures. It bundles those steps, plus e-signing and payment collection, into one branded flow agents send to clients, and shares the resulting data directly with conveyancers so it does not have to be re-entered. Kotini also takes part in a government-backed data-sharing sandbox with HM Land Registry so firms can reuse one verified data connection instead of building their own integration.",
+  "vertical": "proptech / estate agency compliance and onboarding",
+  "primary_theme": 5,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "Kotini's wedge is ingesting unstructured document and disclosure data (ID documents, AML checks, material information forms) at the point of onboarding, then using that as the entry point to automate downstream compliance and conveyancing workflows, matching Theme 5's pattern of a document-heavy vertical where every transaction processed deepens the data moat. Secondary fit with Theme 2 because the platform already reads and writes across CRMs (Alto, Reapit, Acquaint, Apex27, Gazeal, Loop, Rex, Smart Compliance, Street), Land Registry data, and conveyancer systems, i.e. cross-system workflow coordination with onboarding as an explicitly named use case.",
+  "workflow_artifacts": [
+    "ID and AML verification documents",
+    "Law Society Protocol conveyancing forms",
+    "material information property disclosures",
+    "electronic contracts (e-signing)",
+    "HM Land Registry property/title data",
+    "CRM records synced across Alto, Reapit, Acquaint, Apex27, Gazeal, Loop, Rex, Smart Compliance, Street"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-07-02",
+      "type": "blog",
+      "summary": "HM Land Registry's own blog featured Kotini, describing the platform as replacing 5-6 disconnected onboarding/compliance tools with one, and noting its continued participation in the Geovation Accelerator.",
+      "url": "https://hmlandregistry.blog.gov.uk/2026/07/02/helping-estate-agents-get-ahead/"
+    },
+    {
+      "date": "2026-05-26",
+      "type": "news",
+      "summary": "Kotini completed a government-backed open-data sandbox test showing firms can connect once to HM Land Registry data and reuse that verified connection rather than building repeat integrations.",
+      "url": "https://www.mortgagesolutions.co.uk/mortgage-news/2026/05/26/open-data-milestone-reached-for-home-buying-process-as-sandbox-test-pays-off/"
+    },
+    {
+      "date": "2026-03-27",
+      "type": "funding",
+      "summary": "Harmonic records Kotini's most recent funding close (Seed stage, $1.2M total raised across 4 rounds; investors include SFC Capital and Innovate UK).",
+      "url": "https://www.crunchbase.com/organization/kotini"
+    }
+  ],
+  "funding": "Seed stage, $1.2M total raised across 4 rounds, last close March 2026 (investors: SFC Capital, Innovate UK, Geovation, Founders + Lightning, SantanderX)",
+  "headcount": "12 employees (Harmonic, current), up from 10 a year ago; ~7 Operations, 3 Marketing, 2 Engineering, 2 Design",
+  "prior_insights": [
+    "<div>Hey Kieran, circling back on this. I was looking at how you guys handle pricing, letting agencies pass the admin fee to the client instead of paying out of pocket. I think that's a smart way to remove the cost objection entirely. Curious how the split looks between agencies using the free model vs. pay-as-you-go.</div>",
+    "<div>Kieran, been thinking more about Kotini. The Nested partnership caught my eye because it feels like a signal that even the more tech-forward agencies are realizing they can't build compliance infrastructure themselves. Going from 250 properties automated to 500 in three months is solid execution, and the OPDA founding membership tells me you're thinking about the data layer beyond just onboarding. I'd be curious how you're thinking about the material information piece long term, specifically whether there's an opportunity to own more of that data flow between agents, conveyancers, and lenders rather than just collecting it on the front end.</div>",
+    "<div>Kieran, one more note. We've seen a few companies in adjacent spaces where the initial wedge was compliance or onboarding and they expanded into owning more of the transaction workflow over time. Happy to share some of those learnings if helpful, especially around how the expansion playbook tends to work in regulated industries. If now isn't the right time, totally understand.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

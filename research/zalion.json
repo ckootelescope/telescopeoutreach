@@ -1,0 +1,45 @@
+{
+  "slug": "zalion",
+  "company": "Zalion",
+  "fetchedAt": "2026-08-05T00:00:00.000Z",
+  "what_they_do": "Zalion builds modular AI agents that automate industrial procurement, covering intake (clarifying purchasing needs via Teams chat and creating requisitions in SAP), sourcing (drafting RFQs, chasing suppliers, comparing offers), negotiation (benchmarking quotes against historical/market data), and order verification (matching POs against confirmations and syncing to ERP). It replaces the manual, email-and-spreadsheet-driven work of procurement teams at manufacturers who currently chase suppliers, reconcile quotes, and cross-check orders by hand.",
+  "vertical": "Manufacturing / industrial procurement (source-to-pay)",
+  "primary_theme": 2,
+  "secondary_theme": 5,
+  "theme_fit_rationale": "Theme 2 fits directly: procurement is listed as an explicit use case, and Zalion's agents read/write across chat, SAP, and supplier communications while holding state across a long-running intake-to-order workflow, consolidating a fragmented set of manual steps into one system. Theme 5 fits secondarily: the order verification agent's core wedge is matching unstructured documents (POs, order confirmations, invoices) against each other to flag discrepancies, a document-processing wedge into a broader procurement workflow.",
+  "workflow_artifacts": [
+    "purchase requisitions",
+    "RFQs",
+    "supplier quotes",
+    "purchase orders",
+    "order confirmations",
+    "invoices",
+    "SAP/ERP records"
+  ],
+  "recent_signals": [
+    "Hosted an invite-only roundtable at the BME European Procurement & Supply Chain Excellence Summit in Berlin (Apr 21) on 2026 target architecture for ERP vs. agents vs. suites in procurement",
+    "Actively hiring a Founding Growth Lead and a Head of US (New York) alongside five Munich engineering roles, signaling a push into US expansion"
+  ],
+  "funding": {
+    "stage": null,
+    "totalRaised": 0,
+    "note": "No institutional round disclosed. Harmonic shows one funding event (2025-06-26) from L-Bank (Baden-Wurttemberg state bank) and Start-up BW Young Talents, i.e. German public/accelerator funding rather than a priced VC round.",
+    "lastFundingDate": "2025-06-26"
+  },
+  "headcount": "~15 total (5 engineering, 10 operations), up from ~11 six months ago and ~7 a year ago per Harmonic",
+  "prior_insights": [
+    "<div>Hey Tim, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Tim - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Zalion. The procurement automation problem in manufacturing keeps coming up in our conversations and I think the enterprise traction you have in Europe is impressive. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
+    "<div>Tim - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Tim - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p style=\"margin:0px;\" class=\"\"><span><span><span><span><span>As part of our thematic work, we&#39;ve <span>been</span></span></span></span></span></span> spending more time understanding industrial procurement, and I think the best opportunity is in the work that existing source-to-pay systems record but never actually do. Quote negotiation and order confirmation are strong starting points because they touch real dollars, happen constantly, and still require buyers to move between emails, PDFs, and the ERP. Zalion can prove value with one agent, then add more across the same procurement organization until the incumbent suite is the system of record and Zalion is the layer doing the work.<br/></p><div><br/></div><div>Know you&#39;re based in Germany and we&#39;re open to investing cross-border into Europe. I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4f9aab0249f8",
+    "messageId": "19fd4f9aab0249f8"
+  },
+  "founder": "Tim",
+  "email": "tim.geyer@zalion.ai",
+  "domain": "zalion.ai"
+}

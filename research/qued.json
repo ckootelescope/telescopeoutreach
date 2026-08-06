@@ -1,0 +1,51 @@
+{
+  "slug": "qued",
+  "company": "Qued",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Qued is a cloud-based platform that automates freight appointment scheduling for trucking and logistics operations, using AI (including AI voice) to book and manage dock appointments for carriers, brokers, and shippers. It replaces the manual work of scheduling load appointments by phone, email, web portal, and EDI, and integrates directly with TMS systems like McLeod so appointment confirmations flow straight into existing dispatch workflows.",
+  "vertical": "logistics / trucking / freight scheduling",
+  "primary_theme": 8,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "Qued embeds directly into the high-frequency, high-stakes conversations (phone calls, emails, portal messages) where freight appointments are actually booked, matching Theme 8's use case of 'trucking and logistics dispatch' built on conversational data, and it is turning that into a system of record for appointment status. Secondary fit with Theme 2 because the value also comes from coordinating across systems (TMS/McLeod, carrier, broker, shipper dock) that previously required manual human handoffs.",
+  "workflow_artifacts": [
+    "dock/load appointments (including multi-stop loads)",
+    "TMS records via McLeod integration",
+    "EDI appointment messages",
+    "phone, email, and web-portal appointment bookings"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-07-21",
+      "type": "news",
+      "summary": "Qued partnered with Don Hummer Trucking, a 70-year family carrier; platform has confirmed 10,000+ appointments for them with a 98.8% success rate on email scheduling.",
+      "url": "https://www.prweb.com/releases/qued-partners-with-don-hummer-trucking-to-bring-ai-powered-smart-appointments-to-a-family-fleet-trusted-for-more-than-70-years-302830398.html"
+    },
+    {
+      "date": "2026-06-04",
+      "type": "news",
+      "summary": "Qued partnered with Prime Inc. (North America's largest refrigerated carrier); Prime's Refrigerated Division has booked 23,000+ appointments through Qued with booking time down as much as 90%.",
+      "url": "https://www.qued.com/qued-partners-with-prime-inc-to-bring-ai-powered-smart-appointments-to-north-americas-largest-refrigerated-fleet/"
+    }
+  ],
+  "funding": {
+    "stage": "Seed",
+    "amount_public": "$5.5M (per Venture53/press reports; Harmonic funding field shows $0 total logged)",
+    "last_round_date": "2024-10-16"
+  },
+  "headcount": "22 (Harmonic snapshot, up from 13 a year ago; ~5 engineering, 8 customer success, 6 ops, 3 sales)",
+  "prior_insights": [
+    "<div>Hey Prasad, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Prasad - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Project44 and Parabola and the conversation made me think about what you're building at Qued. The freight appointment scheduling problem keeps coming up in our logistics conversations and I think the McLeod integration is a huge unlock for adoption. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
+    "<div>Hey Prasad, Following up - have you thought about another partner after your seed? I really like what you're building at Qued and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Prasad - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise software investing at Telescope, a $275M early growth fund started by a former Sequoia partner. We lead $5-30M investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">As part of our thematic work, we&#39;ve been spending more time in freight software, and I like that Qued can solve a network problem without waiting for the network to standardize. Every facility still schedules differently, but Qued can sit inside the transportation team’s existing workflow and handle whatever is on the other side, whether that’s an email, portal, or phone call. The bigger opportunity is moving from executing appointments to deciding which appointment is best based on how each facility and load actually behaves.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4e9ac8bfb484",
+    "messageId": "19fd4e9ac8bfb484"
+  },
+  "founder": "Prasad",
+  "email": "prasad@qued.com",
+  "domain": "qued.com"
+}

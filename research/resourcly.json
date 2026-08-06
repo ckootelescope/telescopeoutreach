@@ -1,0 +1,51 @@
+{
+  "slug": "resourcly",
+  "company": "Resourcly",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Resourcly reads technical drawings, datasheets, and other parts records scattered across a manufacturer's PLM and ERP systems and automatically figures out which parts are actually duplicates or interchangeable, even when different plants or suppliers name and code them differently. It then recommends and helps execute the fix: reusing an existing part instead of ordering a new one, standardizing variants, consolidating suppliers, or pooling excess inventory across divisions. This replaces the manual process where engineers and procurement teams cross-reference specs by hand across fragmented systems to find redundant parts and free up working capital tied up in idle inventory.",
+  "vertical": "Industrial manufacturing (parts master data harmonization / inventory optimization)",
+  "primary_theme": 5,
+  "secondary_theme": 1,
+  "theme_fit_rationale": "Resourcly's core wedge is ingesting unstructured documents (technical drawings, datasheets) that legacy PLM/ERP systems can't read, then using that as the entry point to automate downstream procurement and inventory workflows, the exact pattern in Theme 5. The drawing-reading capability is also a vision-based model applied to a manufacturing workflow, fitting Theme 1 as a secondary lens.",
+  "workflow_artifacts": [
+    "technical drawings",
+    "parts datasheets",
+    "PLM records",
+    "ERP inventory records",
+    "supplier parts data",
+    "sustainability data (carbon footprint, recyclability, critical substances)"
+  ],
+  "recent_signals": [],
+  "funding": {
+    "stage": "Seed",
+    "amount": "€2.7M (~$3.0M USD)",
+    "date": "2025-10-07",
+    "investors": [
+      "Project A",
+      "Techstars",
+      "FIEGE Ventures",
+      "F-LOG Ventures",
+      "Campus Founders",
+      "D11Z. Ventures",
+      "Prequel Ventures",
+      "NEXT MANNHEIM",
+      "Gregor Stühler"
+    ]
+  },
+  "headcount": "~15 (8 engineering)",
+  "prior_insights": [
+    "Was talking to a procurement lead at a mid-sized manufacturer recently and they estimated 15-20% of their parts catalog is redundant. Curious how you're approaching the data normalization piece.",
+    "I was reading the CPO Strategy piece about Resourcly and the Sandvik example stood out. The idea that manufacturers are sitting on billions in idle parts not because the parts are broken, but because they're buried across fragmented PLM and ERP systems, is something I keep hearing from procurement teams. I think the similarity analysis approach, where you're actually comparing technical drawings and datasheets to find interchangeable parts, is what separates this from just another data cleanup project. Most spend analytics tools can tell you that you're buying too many variants, but they can't tell you which ones are actually interchangeable. Curious whether the sustainability angle, tracking carbon footprints and recyclability at the part level, is something customers are asking for or if it's more of a differentiator you're leading with proactively.",
+    "Saw you guys just closed a seed round last month, congrats. I was looking at the redundant parts detection angle and I think the consolidation story resonates most with procurement teams at mid-market manufacturers who are sitting on bloated supplier lists they inherited from acquisitions or organic growth. Chris has worked with Paperless Parts and Project44 on the manufacturing and supply chain side. Curious how the German market compares to what you're seeing in the US in terms of appetite for this."
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Ian - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses that use unstructured data as the wedge into a workflow that legacy software falls short on. Manufacturing procurement is a great example where teams are slowed down by duplicate part numbers, quotes buried in email threads, and drawings that only exist as PDFs. I think most tools in this space stop at making that data searchable, but the harder and more valuable step is acting on it, and that's where the workflow starts to consolidate.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Ian - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">As we&#39;ve continued to explore themes within AI, we&#39;ve become increasingly bullish on businesses that use unstructured data as the wedge into a workflow that legacy software falls short on. Manufacturing procurement is a great example where teams are slowed down by duplicate part numbers, quotes buried in email threads, and drawings that only exist as PDFs. I think most tools in this space stop at making that data searchable, but the harder and more valuable step is acting on it, and that&#39;s where the workflow starts to consolidate.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4a2620a471b7",
+    "messageId": "19fd4a2620a471b7"
+  },
+  "founder": "Ian",
+  "email": "ian@resourcly.com",
+  "domain": "resourcly.com"
+}

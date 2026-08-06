@@ -1,0 +1,32 @@
+{
+  "slug": "maestrotech",
+  "company": "MaestroTech",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "MaestroTech (product: MortgageMaestro) builds AI agents that run the mortgage origination process for lenders, taking a loan file from document intake through structuring, pricing, compliance checks, and submission, integrating with ICE Mortgage Technology's Encompass (the dominant U.S. loan origination system) and third-party origination portals. It replaces the manual coordination work mortgage processors and loan officers currently do by hand: reading borrower income and asset documents, keying data into the LOS, checking pricing and compliance, and pushing a file through submission and status tracking across internal teams and lender systems.",
+  "vertical": "mortgage origination / mortgage fintech",
+  "primary_theme": 2,
+  "secondary_theme": 5,
+  "theme_fit_rationale": "MaestroTech's own framing is an 'agentic operating system that orchestrates mortgage workflows across teams and systems,' running seven AI agents across intake, docs, income, pricing, QC, submission, and status while integrating with Encompass and third-party lender portals, which is Theme 2's cross-functional, multi-system agent pattern applied to loan origination. The entry wedge is reading unstructured borrower documents (income, asset, and closing docs) via OCR/LLMs to auto-populate the loan file, which is Theme 5's unstructured-data wedge (the theme's own use-case list names 'approving a loan' directly).",
+  "workflow_artifacts": [
+    "borrower income and asset documentation",
+    "loan files",
+    "Encompass loan origination system (ICE Mortgage Technology)",
+    "third-party lender submission portals"
+  ],
+  "recent_signals": [],
+  "funding": {
+    "stage": "PRE_SEED",
+    "amount": 1600000,
+    "date": "2026-03-20",
+    "investors": ["New Stack Ventures", "Roark's Drift", "Family VC", "ZFO"]
+  },
+  "headcount": "8 (4 engineering, 4 operations); founded 2025",
+  "founder": "David Rogove",
+  "founder_email": "david@maestrotech.ai",
+  "prior_insights": [],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

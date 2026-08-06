@@ -1,0 +1,37 @@
+{
+  "slug": "archouse",
+  "company": "ArcHouse",
+  "fetchedAt": "2026-08-05T06:32:00Z",
+  "what_they_do": "ArcHouse is software for hospice and home-health providers that automates the pre-admission process. It pulls together patient referrals arriving by fax, email, and portal, retrieves and summarizes medical records scattered across other providers' systems, verifies insurance eligibility, and collects the signatures needed to admit a patient. This replaces staff manually chasing faxes, calling other facilities for records, and re-keying insurance details, work that used to take days and now takes hours.",
+  "vertical": "healthcare / hospice and home-health operations software",
+  "primary_theme": 5,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "ArcHouse's core wedge is ingesting unstructured referral documents (faxes, emails, scattered medical records) and using AI to extract and act on them, a direct match for Theme 5's document-processing wedge into a vertical workflow (hospice admissions). Secondarily, completing a referral requires reading and writing across EMRs, insurance payers, and referral sources to push the admission forward, which echoes Theme 2's cross-system agent pattern.",
+  "workflow_artifacts": [
+    "patient referrals (fax, email, portal)",
+    "medical records and clinical documentation",
+    "lab results and medication records",
+    "insurance eligibility verification",
+    "signature collection / consent forms"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-08-05",
+      "type": "hiring",
+      "summary": "Harmonic shows headcount growing from 12 to 17 (about 42%) over the trailing 90 days, with additions across engineering, sales, product, operations, and customer success.",
+      "url": ""
+    }
+  ],
+  "funding": "$2.7M Seed closed 11/24/2025, co-led by Struck Capital with mu ventures and Digital Health Venture Partners participating.",
+  "headcount": "17 (up from 12 three months ago; roughly 9 engineering, 2 sales, 2 product, 2 operations, 2 customer success)",
+  "prior_insights": [
+    "<div>Hey Paul, was chatting with a healthcare operator recently who mentioned that intake teams spend half their day on phone calls that could be handled by software. Curious how providers have been reacting to the AI approach.</div>",
+    "<div>Paul,<br><br>I read the Metriport case study about ArcHouse and the part that stuck with me was the example where automated medical record retrieval uncovered a previously missed cardiac condition that changed the patient's care plan. That's a powerful proof point because it reframes the platform from an efficiency tool to something that actually improves clinical outcomes. The hospice market is projected to go from $8B to $33B in the next few years, and the providers scaling to meet that demand can't do it if every referral still requires an hour of manual record gathering and insurance verification. Curious how you're thinking about expanding from hospice into home health and palliative more broadly, or if you're staying focused for now.</div>",
+    "<div>Paul,<br><br>We've been spending time in healthcare services through a few portfolio companies, Passage Health, Canid, and Carefeed, so the care coordination space is one we follow closely. I was looking at how ArcHouse handles the referral-to-admission workflow, and I think the insurance eligibility verification piece is where a lot of the real delay sits today. Saving an hour per referral sounds modest until you run the math across a provider doing hundreds of admissions a month.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Paul - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I like businesses where the hardest part is assembling information that was never stored in one place. Post-acute care is a good example, where intake depends on referrals arriving by fax, records held at another facility, and eligibility checks that sit outside the EHR. I think the intake layer is more strategic than it looks, because whoever assembles the complete picture first tends to own the workflow that follows.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

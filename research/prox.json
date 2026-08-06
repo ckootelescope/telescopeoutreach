@@ -1,0 +1,57 @@
+{
+  "slug": "prox",
+  "company": "Prox",
+  "fetchedAt": "2026-08-05T07:09:28Z",
+  "what_they_do": "Prox builds an AI product specialist for manufacturers of complex physical equipment (AV/live production gear, powersports, construction and heavy equipment, HVAC, agricultural equipment, aerospace, medical devices, firearms). It reads a manufacturer's technical manuals, wiring schematics, and CAD files, then answers customer and technician questions with citations across the product page, dealer tablets, Slack/Teams, and support tools. It replaces the manual process of customers and field technicians digging through PDF manuals or waiting on senior staff, and doubles as a way to capture retiring specialists' knowledge and speed up new hire ramp-up.",
+  "vertical": "Manufacturing / industrial technical support and field service",
+  "primary_theme": 5,
+  "secondary_theme": 1,
+  "theme_fit_rationale": "Prox's wedge is ingesting unstructured manufacturer documentation (manuals, wiring schematics, CAD files) that legacy support tooling can't read, then using that as a foothold into downstream workflows (pre-sales quoting, support, field service, onboarding) -- the core mechanic of Theme 5. Secondary fit with Theme 1 because a meaningful share of the source material and inputs are visual (wiring diagrams, CAD, technician-submitted field videos) in industries (construction, manufacturing) that Theme 1 explicitly calls out.",
+  "workflow_artifacts": [
+    "manufacturer technical manuals (PDF)",
+    "wiring schematics",
+    "CAD files/models",
+    "product quotes and configurations",
+    "technician-submitted field videos"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-05-26",
+      "type": "funding",
+      "summary": "AIN.ua interview covering Prox's $500K Y Combinator funding (an experimental, out-of-cycle admission process) after earlier being funded by an Emergent Ventures grant.",
+      "url": "https://en.ain.ua/2026/05/26/ai-startup-with-ukrainian-roots-prox-got-funding-from-y-combinator/"
+    },
+    {
+      "date": "2026-08",
+      "type": "hiring",
+      "summary": "Actively hiring across Founding Engineer, Chief of Staff, Executive Assistant/Operations, and Videographer/Creative Producer roles; headcount up 60% over the last 90 days (5 to 8) per Harmonic.",
+      "url": "https://www.ycombinator.com/companies/prox/jobs"
+    }
+  ],
+  "funding": {
+    "stage": "Pre-seed",
+    "amount_usd": 500000,
+    "date": "2025-09-01",
+    "investors": [
+      "Y Combinator",
+      "Bloomberg Beta",
+      "Curata"
+    ]
+  },
+  "headcount": "8 (up from 5 ninety days ago, 3 six months ago)",
+  "prior_insights": [
+    "<div>Hey Gregory, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Gregory - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Prox. The knowledge drain problem in industrial verticals keeps coming up in our conversations, especially as senior specialists retire. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
+    "<div>Hey Gregory, Following up - have you thought about another partner after your pre-seed? I really like what you're building at Prox and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Greg - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p style=\"margin:0px;\" class=\"\">We&#39;ve been thinking more about where AI can make a big impact and are increasingly bullish on the impact where domain expertise is critical. <span><span><span>I</span></span></span> think product complexity is both a manufacturer’s moat and one of its biggest costs. The knowledge needed to choose, configure, install, and repair a product is usually concentrated in a handful of technical people, which limits how effectively the company can sell and support what it has built. <span>I like that <span>Prox</span></span> can turn that expertise into the interface customers, dealers, and technicians use across the product lifecycle, giving it a path to own how complex equipment gets bought and kept running.<br/></p><div class=\"\"><br/></div><div class=\"\">Know it&#39;s likely early, but I&#39;d love to chat or grab coffee to see how we can help out! Are you free to chat next week?</div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd52c5f6b290a9",
+    "messageId": "19fd52c5f6b290a9"
+  },
+  "founder": "Gregory",
+  "email": "greg@useprox.com",
+  "domain": "useprox.com"
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "ferry",
+  "company": "Ferry",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Ferry is an operations platform for discrete and process manufacturers (food & beverage, CPG, agriculture/feed, packaging, building materials, industrial products) that unifies plant-floor data (PLCs, sensors, historians via OPC-UA, EtherNet/IP, Profinet, Modbus TCP) with a workflow engine and an AI agent builder, then uses that data to automate production scheduling, troubleshooting, supply chain forecasting, and real-time process guidance. It replaces manual, paper-based production tracking and the human effort of manually reconciling OT (plant floor) and IT (ERP/business) data to make scheduling and troubleshooting decisions.",
+  "vertical": "manufacturing operations software / MES + agentic AI",
+  "primary_theme": 2,
+  "secondary_theme": 5,
+  "theme_fit_rationale": "Ferry's stated architecture (Data Foundation unifying OT+IT data silos, a Workflow Engine, and an AI Agent Builder) is a textbook cross-functional, multi-system agent: it reads/writes across previously siloed plant systems (historians, PLCs, ERP) and automates decisions spanning several manufacturing functions (scheduling, troubleshooting, supply chain, quality/yield), which is Theme 2's core pattern even though Theme 2's listed use cases skew back-office rather than shop-floor. Theme 5 is a plausible secondary because Ferry's own published case study frames its wedge as digitizing unstructured, paper-based production records (pen-and-paper logs with transcription errors) and using that as the entry point to automate downstream scheduling/troubleshooting workflows, matching Theme 5's 'unstructured data as a wedge' thesis. Theme 1 (VLM-driven) was considered given manufacturing is a listed use case there, but nothing in Ferry's public materials indicates a vision/image/video component, so it was not selected.",
+  "workflow_artifacts": [
+    "production schedules",
+    "downtime / stop-reason logs",
+    "batch assignment and production tracking records",
+    "yield monitoring records",
+    "machine performance and changeover data",
+    "paper-based production tracking sheets (pre-digitization, per Ferry's own case study)",
+    "PLC / historian data via OPC-UA, EtherNet/IP, Profinet, Modbus TCP connectors"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-08-05",
+      "type": "traction (Harmonic)",
+      "summary": "Headcount grew from 11 to 18 over the trailing year (+64%), including recent adds in Ops, Sales, and Customer Success; web traffic is up ~145% over the trailing 90 days (1,258 to 3,085).",
+      "url": null
+    }
+  ],
+  "funding": "SEED, $1.04M total, closed 2023-04-05, investors Target Global and Seedcamp (per Harmonic). No public news found of a new round, partnership, or funding announcement in the last 90 days; most recent blog post is Aug 24, 2025 (not within window).",
+  "headcount": "18 (Harmonic), up from 11 a year ago",
+  "prior_insights": [
+    "<div>Hey Ethan, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Ethan - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Parabola and Paperless Parts and the conversation made me think about what you're building at Ferry. The forward-deployed AI model for manufacturing keeps coming up in our conversations and I think the MES layer is a huge opportunity. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
+    "<div>Hey Ethan, Following up - have you thought about another partner after your seed? I really like what you're building at Ferry and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Ethan - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p style=\"margin:0px;\" class=\"\">I’ve been spending a lot of time in manufacturing AI, and I don’t think the category will be won by whoever has the best model. The hard part is getting close enough to the plant to understand how decisions are actually made across machines, systems, and people. <span><span><span>I really like that Ferry</span></span></span> can start by solving one operational problem with the team on the ground, but every deployment captures more of that decision logic and creates a natural path into scheduling, troubleshooting, supply chain, and the rest of the factory.<br/></p><div class=\"\"><br/></div><div class=\"\">I&#39;d love to chat about how you guys are thinking about the GTM approach and happy to share what we&#39;ve learned through our investments as well. Are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd51b83c9ae45d",
+    "messageId": "19fd51b83c9ae45d"
+  },
+  "founder": "Ethan",
+  "email": "ethan@deployferry.io",
+  "domain": "deployferry.io"
+}

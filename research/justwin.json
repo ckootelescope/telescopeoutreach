@@ -1,0 +1,52 @@
+{
+  "slug": "justwin",
+  "company": "JustWin",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "JustWin is a platform that helps companies find, qualify, and win government and education-sector contracts. It monitors procurement portals, capital plans, and budgets to surface upcoming bids before they are posted, then uses AI to screen RFPs/RFQs, generate compliance checklists, and draft proposal content. It replaces the manual process where business development staff read through RFPs line by line, track down bid opportunities across scattered portals, and reconstruct competitor win history by hand.",
+  "vertical": "govcon / public sector procurement software",
+  "primary_theme": 5,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "JustWin's wedge is ingesting unstructured public-sector documents (RFPs, budgets, capital plans, FOIA-obtained competitor proposals and evaluation notes) that legacy procurement software can't read, then using that to automate the downstream proposal and compliance workflow (Theme 5). Secondary fit to Theme 2 since the platform also spans the cross-functional pursuit workflow (opportunity discovery, qualification, proposal drafting, submission) that otherwise requires manual handoffs between BD and proposal teams.",
+  "workflow_artifacts": [
+    "RFPs",
+    "RFQs",
+    "capital plans",
+    "government/agency budgets",
+    "procurement portal listings",
+    "proposal submissions",
+    "public records / FOIA requests",
+    "competitor proposals",
+    "evaluation scorecards"
+  ],
+  "recent_signals": [
+    {
+      "date": "",
+      "type": "funding",
+      "summary": "Company site states JustWin raised $10M to accelerate its public-sector pursuit intelligence platform (no press-release date found); Harmonic records $6.925M total seed funding across 2 rounds with the latest dated 2026-03-31, so figures may reflect different points in the same raise.",
+      "url": "https://www.justwin.ai/mission"
+    }
+  ],
+  "funding": {
+    "stage": "SEED",
+    "total_usd": 6925000,
+    "num_rounds": 2,
+    "last_funding_at": "2026-03-31",
+    "note": "Company homepage separately references a $10M raise; exact date unconfirmed."
+  },
+  "headcount": "8 (3 engineering, 5 operations, per Harmonic)",
+  "prior_insights": [
+    "<div>Hey Ted, circling back on this. I was looking at the competitive intelligence feature where you pull competitor proposals through public records requests automatically. I think that's a clever angle since most companies bidding on government contracts are flying blind on what actually won last time. Curious how much of the value prop customers respond to first, the opportunity discovery side or the competitive intel side.</div>",
+    "<div>Ted, been thinking more about JustWin. The government contracting process is one of those areas where the friction is so high that it effectively locks out smaller companies who don't have dedicated BD teams or proposal writers on staff. The mission of democratizing access feels right because the current system rewards the companies that are best at paperwork, not necessarily the best at the actual work. Having backers like Mike Rosengarten who built OpenGov is a good signal that people who understand government tech see this the same way. I'd be curious how you're thinking about the education contracts side vs. government, and whether one is pulling ahead as the primary wedge.</div>",
+    "<div>Ted, one more note from me. We've invested in a number of companies that started by making a broken workflow accessible to a broader market and then expanded from there. Happy to share some of those patterns if it would be useful as you think about what comes after opportunity discovery and proposal writing. If now isn't the right time, totally understand.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Ted - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. Congrats on the recent raise! I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p style=\"margin:0px;\" class=\"\">We&#39;ve been spending more time within broader govtech and I think most software in the category starts after the outcome has already begun to take shape. However, JustWin can connect the full pursuit, from understanding funded projects and buyer priorities before an RFP, through deciding what to bid and building the response, to learning exactly why the team won or lost afterward. I think t<span>hat</span> creates a much larger opportunity than proposal automation, because the more pursuits that run through the system, the better it can tell a company where to spend its time and how to win the next one.<br/></p><div class=\"\"><br/></div><div class=\"\">Are you free to chat next week? Would love to get introduced as you get to building and think about your next partner.</div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd5285134954d6",
+    "messageId": "19fd5285134954d6"
+  },
+  "founder": "Ted Baxa",
+  "email": "ted@justwin.ai",
+  "domain": "justwin.ai"
+}

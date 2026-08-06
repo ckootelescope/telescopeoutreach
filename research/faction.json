@@ -1,0 +1,65 @@
+{
+  "slug": "faction",
+  "company": "Faction",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Faction sells AI agents to industrial distributors and manufacturers (PVF, electrical, HVAC, packaging, safety) that read incoming customer emails, PDFs, and phone calls and turn them directly into quotes, purchase orders, and invoices inside the company's existing ERP. It replaces the manual work of staff retyping scattered, messy quote requests into the ERP and manually chasing vendor confirmations, invoice matching, and collections calls. The product plugs into systems like SAP, Oracle NetSuite, Epicor Prophet 21/Eclipse, and Infor without requiring the distributor to switch ERPs.",
+  "vertical": "Industrial distribution and manufacturing software (PVF, electrical, HVAC, packaging, safety)",
+  "primary_theme": 2,
+  "secondary_theme": 5,
+  "theme_fit_rationale": "Faction's agents read and write across quoting, pricing, procurement, and AP/AR inside a distributor's ERP, matching the cross-functional multi-system workflow-agent pattern directly (quote-to-cash, procurement, AR/AP are named use cases). The entry wedge is parsing messy unstructured inputs (emails, PDFs, calls) into structured records, which also fits the unstructured-data-as-a-wedge theme.",
+  "workflow_artifacts": [
+    "quotes",
+    "purchase orders",
+    "vendor order confirmations",
+    "invoices",
+    "product descriptions/catalogs",
+    "customer phone calls",
+    "ERP records (SAP, Oracle NetSuite, Epicor Prophet 21/Eclipse, Infor)"
+  ],
+  "recent_signals": [
+    {
+      "date": "2025-11-17",
+      "type": "funding",
+      "summary": "Raised a $4M seed round led by Hidden Capital, with participation from 640 Oxford and Liquid2 Ventures, to accelerate product development including the AI voice agent line.",
+      "url": "https://www.mdm.com/news/technology/technology-provider-news/faction-raises-3-5m-to-accelerate-ai-agent-tech-for-distributors/"
+    },
+    {
+      "date": "",
+      "type": "hiring",
+      "summary": "Company site currently lists open roles for Member of Technical Staff (Applied AI) and Product & Deployments, indicating continued team growth beyond the 7-person Harmonic headcount.",
+      "url": "https://www.faction.ai/about"
+    },
+    {
+      "date": "",
+      "type": "product",
+      "summary": "Dedicated Voice AI product page now details three call workflows: inbound order-taking/inventory checks, outbound re-engagement/upsell calls, and AR collections conducted by voice, text, and email.",
+      "url": "https://www.faction.ai/voice"
+    }
+  ],
+  "funding": {
+    "stage": "Seed",
+    "amount_usd": 4000000,
+    "date": "2025-11-17",
+    "investors": [
+      "Hidden Capital",
+      "640 Oxford",
+      "Liquid2 Ventures"
+    ]
+  },
+  "headcount": "~7 employees per Harmonic (up from 4 six months ago, +75%)",
+  "prior_insights": [
+    "<div>Hey Kunal, one more note on Faction. I was looking at the case study where a $1B manufacturer eliminated their quote backlog and increased win rates after deploying in four weeks. I think the real unlock is that distributors lose deals not because of price but because they're too slow to get a quote back, and that's entirely a data entry and product matching problem. 95%+ accuracy on product matching from messy PDFs and emails is impressive. Chris has worked with companies like Parabola and Paperless Parts, so distribution and manufacturing is a space we've spent real time in.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
+    "<div>Hey Kunal, been thinking more about Faction's approach and the thing I keep coming back to is the modular adoption model. Starting with quoting or order entry and then expanding into pricing, procurement, and AP/AR means you're not asking a distributor to rip anything out on day one. That's important because the ERP is sacred in this world and most AI pitches die the moment someone says \"replace your system.\" The 75% reduction in manual data entry from early deployments is impressive, especially given how messy the inputs are. A quote request coming in as a half-complete email from a jobsite is a very different problem than parsing a clean spreadsheet. Curious whether the voice agent piece is seeing early traction or if most customers are starting with the document side.</div>",
+    "<div>Hey Kunal, one more thought. Your BlackRock and Evercore background is an unusual path into industrial distribution, and I think that financial markets lens probably shapes how you think about pricing optimization and margin capture in a useful way. Chris has worked with companies like Parabola and Paperless Parts, so manufacturing and distribution is a space we've spent real time in. Happy to connect you two if that'd be a valuable conversation, even if you're not raising. If the timing doesn't work, no worries.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Kunal - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I've been spending a lot of time on distribution and the interesting companies are the ones taking the whole order lifecycle rather than one step of it. The inputs there are messy by nature, since an order can arrive as an email, a PDF, or a phone call and still has to end up as a clean record in the ERP. I think handling the full path from request to invoice is what creates the lock in, because a tool that only drafts the quote leaves the rest of the work where it was.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Kunal - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">We&#39;ve been continuing to spend time within industrial distribution, and I think the hard part of automating these businesses is that every order depends on context buried across the ERP, product catalog, and customer relationships. Faction is starting with quoting and order entry, but I don’t think the long-term product is an inside sales assistant. The company that learns how each distributor maps products, prices customers, and resolves exceptions becomes the decision layer for every transaction, while the ERP is reduced to the system where the final record gets stored. That gives Faction a credible path to own the commercial workflow rather than simply automate pieces of it.</div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4a2629263f3e",
+    "messageId": "19fd4a2629263f3e"
+  },
+  "founder": "Kunal Barman",
+  "email": "kunal@faction.ai",
+  "domain": "faction.ai"
+}

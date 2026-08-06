@@ -1,0 +1,66 @@
+{
+  "slug": "continuum",
+  "company": "Continuum",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Continuum is an AI platform for financial advisors that captures and transcribes client meetings without needing a bot on the call, then combines that with email and CRM data to keep a running client profile with suggested follow-up tasks. It replaces the manual work of an advisor typing up meeting notes, updating the CRM by hand, and drafting client recap emails after every conversation.",
+  "vertical": "wealth management / financial advisory (Canada)",
+  "primary_theme": 8,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "Continuum embeds directly into advisor-client conversations (meetings, emails) to build a client intelligence system of record, which is the exact wedge Theme 8 describes under its wealth management use case. It also syncs across CRM and practice-management systems (EquiSoft, Mako, VieFUND, Learnedly, Egnite) to auto-generate follow-up tasks, which echoes Theme 2's cross-system workflow pattern as a secondary fit.",
+  "workflow_artifacts": [
+    "meeting transcripts",
+    "client profiles",
+    "CRM records",
+    "compliance-ready meeting summaries",
+    "follow-up tasks",
+    "branded client deliverable pages (Pages)",
+    "integrations: EquiSoft, Mako, VieFUND, Learnedly, Egnite"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-06-04",
+      "type": "news",
+      "summary": "Designed Wealth Management (150+ advisor Canadian independent platform) named Continuum its preferred AI client intelligence system; rollout began June 2026 across its advisor network.",
+      "url": "https://www.businesswire.com/news/home/20260604505170/en/Designed-Wealth-Management-and-Continuum-Announce-Strategic-Partnership-to-Bring-AI-Client-Intelligence-to-Canadian-Advisors"
+    },
+    {
+      "date": "2026-06-18",
+      "type": "news",
+      "summary": "Carte Financial Group named Continuum the exclusive AI client intelligence system for its national advisor network.",
+      "url": "https://www.businesswire.com/news/home/20260618782685/en/Carte-Financial-Group-Names-Continuum-the-Exclusive-AI-Client-Intelligence-System-for-Its-National-Advisor-Network"
+    },
+    {
+      "date": "2026-07-01",
+      "type": "news",
+      "summary": "Trade press roundup confirms Monarch Wealth also adopted Continuum's platform, alongside Designed Wealth Management.",
+      "url": "https://www.investmentexecutive.com/news/industry/tech-roundup-designed-wealth-monarch-adopt-ai-client-intelligence-tool/"
+    }
+  ],
+  "funding": {
+    "stage": "PRE_SEED",
+    "amount": 2600000,
+    "date": "2025-05-21",
+    "investors": [
+      "Pathlight Ventures",
+      "Daybreak",
+      "Rahul Vohra",
+      "Todd Goldberg"
+    ]
+  },
+  "headcount": "10 (up from 9 ninety days ago, 7 a year ago); ~3 engineering, 2 sales, 5 ops",
+  "prior_insights": [
+    "<div>Hey Daniel, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Daniel - Hope all is well! Thought I'd shoot you a note as I was chatting with one of our portfolio company leaders at Fathom and the conversation made me think about what you're building. As an investor in Fathom, meeting intelligence is a space we follow closely and I think the on-device approach for financial advisors is a real differentiator. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
+    "<div>Hey Daniel, Following up - have you thought about another partner after your pre-seed? I really like what you're building at Continuum and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Daniel - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p style=\"margin:0px;\" class=\"\"><span><span><span>As</span> part of our thematic <span><span><span><span>wor</span>k, we&#39;ve been spending more time within </span></span>wealth</span></span></span> management, and I think the CRM is structurally the wrong place to build the client relationship. It only captures the cleaned-up version an advisor enters after the fact, while the real context lives across meetings, calls, emails, and follow-up. Continuum can become the living memory of the relationship, then use that context to drive the next action and the client-facing experience, leaving the CRM as the place where the final record gets stored. We&#39;ve seen this pattern across other industries and my Principal, Chris was very close to the early investments in <span>Rilla</span> and Siro.<br/></p><div class=\"\"><br/></div><div class=\"\">I&#39;d love to chat about GTM and happy to share our learnings from our work - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd537e5d9f5aa3",
+    "messageId": "19fd537e5d9f5aa3"
+  },
+  "founder": "Daniel",
+  "email": "daniel@oncontinuum.com",
+  "domain": "oncontinuum.com"
+}

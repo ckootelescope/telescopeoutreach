@@ -1,0 +1,42 @@
+{
+  "slug": "edwin",
+  "company": "Edwin",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "Edwin is treasury and financial management software for local government agencies (cities, counties, municipalities). It connects to an agency's banks and ERP systems to automate reconciliation, cash flow forecasting, investment policy compliance checks, and month-end close/audit reporting, replacing the manual process of finance staff matching transactions across banking portals, ERPs, and spreadsheets by hand.",
+  "vertical": "govtech / public-sector fintech (municipal treasury software)",
+  "primary_theme": 2,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Edwin's core product reads and reconciles data across previously siloed systems (bank portals and ERPs) and automates a specific cross-functional back-office workflow (close reconciliation, cash forecasting, compliance/audit prep) that Theme 2 explicitly calls out as a use case (close reconciliation, AR/AP-style workflows). The value prop is consolidating fragmented tools into one system of record for finance teams rather than a single-document unstructured-data wedge, so Theme 5 was considered but not selected as primary.",
+  "workflow_artifacts": [
+    "bank accounts / banking portals",
+    "ERP systems",
+    "investment policy compliance records",
+    "ACFR (Annual Comprehensive Financial Report)",
+    "cash flow forecasts"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-07-20",
+      "type": "news",
+      "summary": "Govtech.com profiled Edwin's launch, reporting it has clients in California and on the East Coast, is currently focused on AI-driven reconciliation and cash flow forecasting, and plans to expand into treasury optimization for local governments.",
+      "url": "https://www.govtech.com/biz/new-startup-aims-to-modernize-local-government-budgeting"
+    }
+  ],
+  "funding": "Undisclosed early-stage; Harmonic shows fundingStage VENTURE_UNKNOWN with no disclosed round amount. Public sources note backing from Watertower Ventures, Wonder Ventures, Liquid 2, and angel investors (amount/stage not public).",
+  "headcount": "3 (per Harmonic; company reports multi-state client base already, so this may understate current team size)",
+  "prior_insights": [
+    "Hey Peter, circling back on this. I was looking at the benchmarking tool you guys built, where treasurers can compare their portfolio against similar-sized agencies by region. I think that's a really smart wedge into the sale because it gives someone a reason to engage before they've even committed to switching anything. Curious how you're seeing adoption there and whether it's pulling in inbound interest or if it's more of a sales enablement tool once you're already in a conversation.",
+    "Hey Peter, was thinking more about Edwin and the go-to-market here. One thing that stands out to me is the neutrality angle, the fact that you integrate across multiple banks and ERPs without favoring any vendor. I think that matters a lot in local government where the procurement process already has enough friction without worrying about lock-in. The part I keep coming back to is the sales cycle though. You're selling to finance directors and treasurers at municipalities, which can be a long process. I'd be curious how you're navigating that and whether you've found certain city sizes or regions where the pain is acute enough that they move faster.",
+    "Hey Peter, one more note. I've been spending time in adjacent govtech and vertical fintech areas, and happy to connect you with folks in our network who've navigated the municipal sales cycle if that'd be useful. The setup time you guys advertise (days, not months) feels like it could be a real differentiator in a market where implementation risk is usually the biggest blocker. Would love to swap notes even if timing isn't right for fundraising. If now isn't the right time, totally understand."
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Peter - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">As part of our thematic work, we&#39;ve been spending more time within govtech and I think the mistake is assuming the opportunity requires replacing the ERP. Agencies already have systems of record, but they still lack a live operating layer across their banks, investments, and ledger. Edwin can land by eliminating reconciliation and compliance work without forcing a migration which is a great wedge, then expand into the decisions that matter most, including where cash sits, how it is invested, and how performance compares with peer agencies.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of GTM and happy to share what we&#39;ve learned through our investments as well - are you free to chat next week? Would love to talk even if it&#39;s early - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd51ff8dc28226",
+    "messageId": "19fd51ff8dc28226"
+  },
+  "founder": "Peter Rogers",
+  "email": "peter@edwingov.com",
+  "domain": "edwingov.com"
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "pensar",
+  "company": "Pensar",
+  "fetchedAt": "2026-08-05T07:12:08Z",
+  "what_they_do": "Pensar builds AI agents that continuously pentest and patch software, replacing point-in-time manual penetration tests and static scanners. Their agent (Apex) runs black-box adversarial testing against a company's full attack surface plus runtime validation on every pull request, chains discoveries into exploitable attack paths with proof-of-concept scripts, and produces verified, auto-generated patches rather than just a findings list. The workflow it displaces is the traditional annual/quarterly pentest engagement staffed by human consultants (and static AppSec tooling that only flags issues without fixing them).",
+  "vertical": "Security / AppSec (continuous pentesting, vulnerability management)",
+  "primary_theme": 6,
+  "secondary_theme": 9,
+  "theme_fit_rationale": "Pensar directly displaces the labor of traditional pentesting firms and human security consultants with an AI-native, outcome-based service (verified fixed vulnerabilities, not just a report) — the core Theme 6 pattern (use case list explicitly names insurance/security-adjacent professional services). Secondary fit with Theme 9 because Pensar also ships an AI Agent Security Scanner aimed at vulnerabilities specific to AI agent applications, i.e. security infrastructure built for a world where agents are both the tester and part of the attack surface.",
+  "workflow_artifacts": [
+    "vulnerability findings / pentest reports",
+    "proof-of-concept exploit scripts",
+    "verified security patches (pull requests)",
+    "threat models",
+    "runtime validation results on pull requests (CI/CD gate)",
+    "dependency scan results"
+  ],
+  "recent_signals": [
+    "Closed a seed round led by Basis Set Ventures, with Everywhere Ventures participating (amount undisclosed, ~Q1 2026)",
+    "Landed first major enterprise customer, a broker-dealer managing $100B+ in assets, where Pensar's platform found three critical vulnerabilities that existing tools and traditional pentest firms had missed",
+    "Open-sourced their core pentesting agent Apex and an accompanying benchmark (argus-validation-benchmarks, 71 pentesting + 10 threat-model challenges on GitHub); Apex outperformed leading open-source offensive security agents across a 60-app benchmark",
+    "Hired the former head of AI from another New York cybersecurity company to lead autonomous offensive security development"
+  ],
+  "funding": {
+    "stage": "Seed (post pre-seed)",
+    "amount": "undisclosed",
+    "investors": [
+      "Basis Set Ventures (lead)",
+      "Everywhere Ventures"
+    ],
+    "note": "Harmonic record is stale (shows PRE_SEED, $0 total, investors Abstraction Capital/Antler/Curata); web sources confirm a newer seed round not yet reflected in Harmonic."
+  },
+  "headcount": "~8-10 (Harmonic: 8, engineering-heavy at 5; third-party estimate: 10)",
+  "prior_insights": [
+    "<div>Hey Kyle, Just wanted to check in here and see if you had time in the next week or two to connect. I'd love to learn more about what you're building and see how Telescope can be helpful.</div>",
+    "<div>Hey Kyle - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in Axonius and JumpCloud and the conversation made me think about what you're building at Pensar. Continuous adversarial testing keeps coming up as a need in our security conversations and I think the shift from point-in-time pentests is inevitable. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?</div>",
+    "<div>Hey Kyle, Following up - have you thought about another partner after your pre-seed? I really like what you're building at Pensar and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Kyle - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p style=\"margin:0px;\" class=\"\">We&#39;ve <span>continued to spend time in</span> application security, and I think the annual pentest is structurally mismatched with how quickly software now changes. The traditional firm starts from zero, tests a snapshot, and hands back a report that begins aging immediately. I like that <span>Pensar</span> can build a living understanding of the application and attack it on every release, which creates a path to becoming the security gate engineering teams rely on before code ships.<br/></p><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd5187ecfc95b1",
+    "messageId": "19fd5187ecfc95b1"
+  },
+  "founder": "Kyle",
+  "email": "kyle@pensarai.com",
+  "domain": "pensarai.com"
+}

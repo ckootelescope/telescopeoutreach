@@ -1,0 +1,33 @@
+{
+  "slug": "stitcher",
+  "company": "Stitcher",
+  "fetchedAt": "2026-08-05T00:00:00Z",
+  "what_they_do": "StitcherAI is an IT finance intelligence platform that normalizes cloud, SaaS, and AI vendor spend data (using the open FOCUS billing standard) into one unified cost model tied to teams, products, and business metrics. It then deploys always-on agents that push that cost context directly into the tools where engineers, finance, and AI agents are already making spending decisions (Slack, Jira, Claude), replacing static FinOps dashboards and manual spreadsheet-based cost reconciliation across fragmented billing sources.",
+  "vertical": "IT Finance / FinOps",
+  "primary_theme": 2,
+  "secondary_theme": null,
+  "theme_fit_rationale": "StitcherAI's agents read and reconcile spend data across many disconnected billing systems (cloud, SaaS, AI vendors) and push unified cost context into cross-functional workflows (Slack, Jira, engineering and finance tools), consolidating a fragmented, manual FinOps reconciliation process into one system that becomes the system of record for spend data over time, matching Theme 2's close-reconciliation/consolidation-of-fragmented-tools pattern.",
+  "workflow_artifacts": [
+    "cloud cost and usage reports (CUR)",
+    "SaaS and AI vendor billing data",
+    "FOCUS-standard cost datasets"
+  ],
+  "recent_signals": [
+    "Emerged from stealth May 19, 2026 with GA launch of its IT Investment ROI platform alongside a $3M pre-seed round (Founders Co-op, Sunshine Lake VC, Ascend, Plug & Play)",
+    "Featured in InfoWorld July 23, 2026 on why enterprises lack the data to prove AI ROI; active blog cadence through July 31, 2026 on AI-agent-speed spend governance"
+  ],
+  "funding": "$3M pre-seed, announced May 2026, led by Founders Co-op with Sunshine Lake VC, Ascend, and Plug & Play Ventures",
+  "headcount": "~8",
+  "founder": "Udam Dewaraja",
+  "founder_email": "udam@stitcher.ai",
+  "prior_insights": [],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Udam - Know I&#39;ve reached out before, but wanted to follow up and see if now is a better time. Are you free to chat next week? I help lead our enterprise AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><p style=\"margin:0px;\" class=\"\">As we’ve been observing the behavior of our portfolio and how businesses in general react to spend, I’ve been thinking a lot about what is resonating as teams try to manage agentic IT costs. The challenge seems less like monitoring another cloud bill and more like understanding the unit economics of every agent and workflow, where model choices, retries, and tool calls can all change the cost of completing the same job. I think Stitcher has the opportunity to make that activity legible in the language the business actually uses, so companies can decide which agents are creating enough value to scale rather than simply tracking what they cost.<br/></p><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd4f110b01b0ce",
+    "messageId": "19fd4f110b01b0ce"
+  },
+  "email": "udam@stitcher.ai",
+  "domain": "stitcher.ai"
+}

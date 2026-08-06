@@ -1,0 +1,58 @@
+{
+  "slug": "arga_labs",
+  "company": "Arga Labs",
+  "fetchedAt": "2026-08-04T00:00:00Z",
+  "what_they_do": "Arga Labs builds sandboxed 'digital twin' environments of common SaaS APIs (Stripe, Slack, GitHub, Salesforce, Gmail, Google Calendar, Linear, Notion, and others) so AI agents and their code can be tested against realistic, resettable copies of those services instead of live production systems. Twins are paired with seeded test scenarios and automated CI grading that scores agent runs against defined criteria. This replaces the manual, ad hoc process of testing agents against real accounts or building one-off internal mocks per integration, catching bad state handling, permission errors, or retry loops before they reach customers.",
+  "vertical": "AI developer tools / agent testing infrastructure",
+  "primary_theme": 3,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Arga builds the sandbox-environment layer for agentic software that Theme 3 explicitly calls out (agents as the dominant users of software need rebuilt, machine-readable, testable infrastructure); their SaaS twins let agents safely interact with third-party APIs pre-production.",
+  "workflow_artifacts": [
+    "GitHub",
+    "Slack",
+    "Gmail",
+    "Google Calendar",
+    "Salesforce",
+    "Stripe",
+    "Linear",
+    "Notion"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-06-18",
+      "type": "news",
+      "summary": "TechCrunch named Arga Labs one of 11 standout startups from YC's Spring 2026 Demo Day, citing investor interest in solving the agent-testing bottleneck.",
+      "url": "https://techcrunch.com/2026/06/18/the-11-standout-startups-from-ycs-demo-day-according-to-vcs/"
+    },
+    {
+      "date": "2026-06-23",
+      "type": "product",
+      "summary": "Reported growth from $0 to $40K MRR in 7 weeks following YC launch, per a pitch-deck teardown piece.",
+      "url": "https://www.productmarketfit.tech/p/arga-labs-yc-p26-pitch-deck-how-hit"
+    }
+  ],
+  "funding": {
+    "stage": "PRE_SEED",
+    "amount_usd": 500000,
+    "date": "2026-02-20",
+    "investors": [
+      "Y Combinator"
+    ]
+  },
+  "headcount": "~4 (Harmonic, Aug 2026)",
+  "prior_insights": [
+    "<div>Phillip, I was reading about the pivot mid-YC from testing AI-generated code to building full sandbox environments for AI agents, and I think it's the right move. The problem gets way harder when agents are making Stripe charges and sending Slack messages in production versus just writing code that a human reviews. Curious how the onboarding experience works for teams that want to add new SaaS twins beyond the ones you already support.</div>",
+    "<div>Phillip, circling back on this. I'm curious how the customer conversations are going now that you've broadened from code testing to full agent sandboxes. That's a bigger problem to solve but also harder to scope. Are teams coming to you with a specific agent they need to test, or are they looking for general infrastructure they can build on?</div>",
+    "<div>Phillip, one more thought. We've worked with companies across the dev tools and infrastructure space, and Chris on our team has experience with Datadog and companies building developer-facing products. If it would be useful to compare notes on pricing models and enterprise sales motion for infrastructure tools, happy to make an intro.<br><br>If now isn't the right time, totally understand.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Phillip - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses selling the boring layer that has to exist before anything else works. Agent development is a good example, where teams end up testing against live Stripe, Salesforce, and Gmail accounts because there is nothing else to test against. I think this becomes infrastructure rather than a tool, since the moment agents are taking real actions the ability to rehearse them stops being optional.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey Phillip - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our enterprise AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">As part of our thematic work, we&#39;ve been increasingly focused on agent infrastructure, and I think the missing layer is a realistic external world agents can break safely. Once software is taking actions across enterprise tools like Stripe, Salesforce, and Gmail, those systems effectively become part of the application, but teams still can’t control, reset, or reproduce them. I think Arga has the opportunity to become the environment where agent behavior is replayed and approved before production, putting it much closer to CI infrastructure than a testing tool.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div><div class=\"\"><br/></div><div class=\"\">P.S Always looking for new food recs - my Beli is @ckoo13 :)</div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd48603db13617",
+    "messageId": "19fd48603db13617"
+  },
+  "founder": "Phillip",
+  "email": "phillip@argalabs.com",
+  "domain": "argalabs.com"
+}

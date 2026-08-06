@@ -1,0 +1,45 @@
+{
+  "slug": "complement",
+  "company": "Complement",
+  "fetchedAt": "2026-08-05T06:33:54Z",
+  "what_they_do": "Complement builds software for manufacturers that pulls data from the separate systems a factory already runs on, things like MES, ERP, and job costing/quoting tools, and analyzes it in real time to catch inefficiencies as they happen. Today that kind of cross-system check is usually a manual process: someone has to log into multiple tools or reconcile spreadsheets to notice a problem on the floor. Complement automates that monitoring and pushes out alerts instead, and markets itself on being fast to integrate with minimal setup effort.",
+  "vertical": "manufacturing operations software / industrial AI",
+  "primary_theme": 2,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Complement's core value is reading across fragmented shop-floor systems (MES, ERP, quoting) that don't talk to each other and consolidating them into one automated monitoring and alerting layer, replacing manual cross-system checks, which is the central pattern of Theme 2.",
+  "workflow_artifacts": [
+    "Manufacturing Execution System (MES) records",
+    "job costing / estimating / quoting records"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-08-01",
+      "type": "product",
+      "summary": "Listed as an exhibitor at IMTS 2026 (Sept 14-19, Chicago) under Industrial AI (Autonomous AI, Generative AI, Predictive AI) and Software/Digital Solutions (AI, Automation, Database Management, Job Costing/Estimating/Quoting, MES, PLM) categories.",
+      "url": "https://directory.imts.com/8_0/exhibitor/1004645/Complement-AI"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "hiring",
+      "summary": "Headcount up to 8 from 6 ninety days ago (roughly doubled over the trailing year), per Harmonic traction data. Engineering is the largest function at 5.",
+      "url": "https://console.harmonic.ai/dashboard/company/59533766"
+    }
+  ],
+  "funding": null,
+  "headcount": "8 (up from 6 three months ago; roughly doubled over the past year)",
+  "prior_insights": [
+    "<div>Hey James, was chatting with a manufacturing exec recently who mentioned that indirect labor is the fastest-growing line item nobody tracks properly. Curious how you're getting initial buy-in from plant managers.</div>",
+    "<div>James, one more note. Your background is pretty unusual for manufacturing AI. Guidance and control software at Relativity Space, then Neuralink, now factory operations. I'd imagine that experience building systems that have to work in real-time with messy real-world data translates well to a manufacturing floor where nothing runs the way the ERP says it should.<br><br>Curious how you're thinking about the sales motion. Are plant managers finding you, or is it more top-down from operations leadership?</div>",
+    "<div>James,<br><br>I was looking at how Complement delivers recommendations directly into Outlook and Teams rather than making people log into another system. I think that's what actually changes behavior on the floor, since the people who need to act on those insights aren't sitting at a dashboard. Chris has worked closely with Parabola and Paperless Parts on the manufacturing side, so we've spent a lot of time in this space.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>"
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey James - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I like businesses that make the data a company already generates useful without asking anyone to change how they work. Manufacturing is a good example, where the numbers sit in the MES and the job costing system but mostly get looked at after a job closes. I think the shift is from reporting to noticing, since knowing a job is drifting while it is still running is a different product than explaining the variance later.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": "<html><head></head><body><div><div><div class=\"\">Hey James - Know I&#39;ve reached out a couple times but wanted to see if now is a better time. I help lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.<br/></div><div class=\"\"><br/></div><div class=\"\">We&#39;ve been continuing to spend more time in manufacturing software, and I don’t think the next big platform is another system of record. Factories already have the data they need, but it is fragmented across the ERP, MES, machines, inspection systems, and spreadsheets, so people still act as the coordination layer. I like that Complement has the opportunity to replace that work with a live model of the shop, starting with individual workflows but ultimately deciding what should happen next across the entire operation.<br/></div><div class=\"\"><br/></div><div class=\"\">I&#39;d love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you&#39;re not raising - LMK your thoughts.<br/></div></div><div></div><br/><div class=\"gmail_signature\"><div><div dir=\"ltr\">Best,<div>Calvin</div><div><br/></div><div><table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"font-size:medium;color:rgb(26,26,26);line-height:1.5\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tbody class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"padding-bottom:4px;line-height:0\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><img src=\"https://ci3.googleusercontent.com/meips/ADKq_NYawQe5QhwoCmP8VQKhFrvlS92KormhgKZOvm0eUH5SVSbTVCuIVVydUlKDQczoJ2g4jdLQ0QDp1oLnaFUk6GYBWJ6vhSqsjX_XJPHiud0lF1Z0-O8lwSMleEU0piuplQGLxIKqlaB8Bg=s0-d-e1-ft#https://cdn.brandfolder.io/G5P1QT08/as/q9zh9l-ghl0q0-f1td7h/telescope-email-sig.png\" alt=\"Telescope Partners\" width=\"96\" height=\"24\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"/></td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px;font-weight:bold;letter-spacing:0.5px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\">Calvin Koo | Investor</td></tr><tr class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><td style=\"font-size:12px\" class=\"sh-preserve-color sh-preserve-font-size sh-preserve-line-height\"><a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"mailto:calvin@telescopepartners.com\" rel=\"noopener noreferrer\" target=\"_blank\">calvin@telescopepartners.com</a> | <a class=\"sh-preserve-font-size sh-preserve-line-height\" href=\"http://213-503-9944\" rel=\"noopener noreferrer\" target=\"_blank\">(213) 503-9944</a></td></tr></tbody></table></div></div></div><br/><div style=\"clear:both\">Sent via <a href=\"https://superhuman.com/refer/tmj3e6oz?utm_medium=signature&amp;utm_source=product\" target=\"_blank\">Superhuman</a></div><br/></div></div></body></html>",
+    "sentDate": "2026-08-05",
+    "threadId": "19fd456a97c21390",
+    "messageId": "19fd456a97c21390"
+  },
+  "founder": "James",
+  "email": "james@complement.ai",
+  "domain": "complement.ai"
+}
