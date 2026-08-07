@@ -104,6 +104,22 @@ create_or_update_draft:
 
 **CRITICAL:** ALWAYS set `to: [entry.email]` with ONLY the founder's email on EVERY draft, including reply drafts. The Superhuman API defaults reply recipients to the thread's last sender, which is Calvin. Omitting `to` will address the draft to Calvin instead of the founder. Never include calvin@telescopepartners.com in the `to` field.
 
+**CRITICAL, and passing `to` on the create call is NOT enough.** On a `type: "reply"` into a thread whose last message was sent by Calvin (which is every follow-up thread, since Calvin sent Email 1/2/3), Superhuman **merges** the thread's participants into whatever `to` you pass. The create call comes back with
+`to: [calvin@telescopepartners.com, founder@company.com]` even though you passed only the founder.
+
+The fix is a second call. After creating the reply, immediately call `create_or_update_draft`
+again with the **same `draft_id` and `thread_id`**, the same body, and `to: [entry.email]`. The
+update path respects `to` exactly and the draft comes back addressed to the founder alone.
+
+```
+1. create_or_update_draft(type:"reply", thread_id, to:[founder], body)  -> returns draft_id, to may include Calvin
+2. create_or_update_draft(type:"reply", draft_id, thread_id, to:[founder], body)  -> to is now founder only
+```
+
+Verify the `to` array in the response of step 2 before marking the entry `completed`. If it still
+contains calvin@telescopepartners.com, set `status: "error"` rather than leaving a draft that
+would email Calvin a copy of his own follow-up.
+
 **IMPORTANT:** Always use the `body` parameter, NOT `instructions`. The email content is pre-written in followups.json and must be sent exactly as-is. Do NOT let Superhuman's AI writer rewrite it.
 
 **IMPORTANT:** Do NOT append any signature. Superhuman handles signatures automatically.
