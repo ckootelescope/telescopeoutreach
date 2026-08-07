@@ -9191,7 +9191,8 @@
       "body": "<div>Hey Jeff - following up - how have you been thinking about your next raise? I really like what you're building at Agentuity and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "agentuity",
@@ -9237,7 +9238,8 @@
       "body": "<div>Hey Florian - following up - how have you been thinking about your next raise? I really like what you're building at Atira and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "atira",
@@ -9283,7 +9285,8 @@
       "body": "<div>Hey Louis - following up - how have you been thinking about your next raise? I really like what you're building at Qorelo and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "qorelo",
@@ -9329,7 +9332,8 @@
       "body": "<div>Hey Aaron - following up - how have you been thinking about your next raise? I really like what you're building at Archimetis and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "archimetis",
@@ -9375,7 +9379,8 @@
       "body": "<div>Hey Bjol - following up - how have you been thinking about your next raise? I really like what you're building at Sybilion and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "sybilion",
@@ -9421,7 +9426,8 @@
       "body": "<div>Hey Klaudia - following up - how have you been thinking about your next raise? I really like what you're building at Vidoc and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "vidoc",
@@ -9467,7 +9473,8 @@
       "body": "<div>Hey Alexandre - following up - how have you been thinking about your next raise? I really like what you're building at Sphinx and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "sphinx",
@@ -9873,9 +9880,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Salman - following up here. One thing I keep thinking about: as agents start making more of the actual purchasing and payment decisions, they'll need transaction data that's true the moment it happens, not a batch file that lands three days later. Would love to grab 15 minutes next week if you're open.</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "astrada",
@@ -9923,9 +9930,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Simba - bumping this. As the worker network grows, I think the bigger opportunity is less about filling individual roles and more about becoming the system manufacturers use to see what skills exist across a region before they even open a req. Free to chat next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "laborup",
@@ -9973,9 +9980,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey James - following up. Saw you're exhibiting at IMTS under both the AI and MES categories, which tracks with how I think about Complement: once the alerting proves out, the natural next step is triggering the fix directly (a schedule change, a work order) rather than just surfacing it. Free next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "complement",
@@ -10023,9 +10030,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Idan - bumping this. Saw the recent posts on regulated workflows like real estate and procurement portals, and it made me think the audit trail of what an agent actually clicked and saw could end up being as valuable as the automation itself for compliance-heavy customers. Would love to find time next week.</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "anchor_browser",
@@ -10073,9 +10080,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Nate - following up. With NFPA 1850 enforcement landing this fall, I'd imagine a lot of departments are scrambling on the PPE side specifically, and that gear tracking data (inspections, repairs, work orders) seems like it could become its own valuable layer once departments are already in the system for incident reporting. Free to connect next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "fireproof",
@@ -10123,9 +10130,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Bernhard - bumping this. One thing I keep coming back to: once you're generating enough quotes, the win and loss data itself becomes a pricing intelligence asset, telling a distributor where they're over or underpriced before they lose the next RFQ. Would love to chat next week if you're open.</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "soff",
@@ -10173,9 +10180,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Leopold - following up. I think the more interesting shift happens once someone stops just asking Zeit questions and starts letting it act, since a tool that already sits across 600+ systems is well positioned to trigger the actual workflow, not just report on it. Free to grab time next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "zeit",
@@ -10223,9 +10230,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Phillip - bumping this. Saw the write-up on hitting $40K MRR in 7 weeks post-YC, that's a fast signal teams are hitting this pain now. I think the bigger prize is Arga becoming the default gate every agent has to pass before it touches production, the same way CI became mandatory for code. Free next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "arga_labs",
@@ -10273,9 +10280,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Doug - following up. Saw you brought on an Account Manager to support client growth, which reads like a shift toward more hands-on GTM. I think once Flycore has enrollment and conversion data across enough schools, that becomes useful as a benchmark for where an operator's funnel is actually underperforming. Free to chat next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "flycore",
@@ -10323,9 +10330,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Omer - bumping this given the new round. With headcount up sharply too, sounds like things are moving. I think once Advance has full visibility into commission splits and trust balances, the next unlock is producer-level profitability for the agency, not just faster reconciliation. Would love to grab time next week.</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "advance",
@@ -10373,9 +10380,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Stoyan - following up. Saw the Wiser Technology partnership pairing operational and cyber risk. I think that's an interesting expansion because it starts pulling the buyer beyond the security team into operations, which is a much bigger budget than most vuln management tools ever get access to. Free to connect next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "wisebee",
@@ -10423,9 +10430,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Yaron - bumping this. With headcount up a third in the last quarter, sounds like the traction is real. I think the bigger opportunity beyond catching a bad supplier package is catching a spec issue earlier, before a part is even built, using the same document review layer against drawings and POs upstream. Free to chat next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "magenta",
@@ -10473,9 +10480,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Kunal - following up. Saw you're building out the voice product further. I think that's actually the more interesting data source long term, since a phone order never generates a document anywhere else in the stack, so Faction ends up with visibility into demand the ERP simply never sees. Free next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "faction",
@@ -10523,9 +10530,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Ian - bumping this. With sustainability reporting requirements picking up across manufacturers, I think it's interesting that Resourcly already has the carbon and recyclability data attached to each part, so the same consolidation workflow could soon be answering a compliance question, not just a cost one. Free to chat next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "resourcly",
@@ -10573,9 +10580,10 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
+      "status": "replied",
       "body": null,
-      "needsDraft": true
+      "needsDraft": true,
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "turgon",
@@ -10590,9 +10598,10 @@
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
+      "status": "replied",
       "body": null,
-      "needsDraft": true
+      "needsDraft": true,
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "turgon",
@@ -10607,8 +10616,9 @@
       "emailNumber": 4,
       "round": 2,
       "sendDate": "2026-08-15",
-      "status": "pending",
-      "body": "<div>Hey Ankur - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in Turgon.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>"
+      "status": "replied",
+      "body": "<div>Hey Ankur - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in Turgon.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "flowgen_labs",
@@ -10623,9 +10633,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Dhruva - following up. Congrats on the SAP partner listing, that seems like a real distribution unlock since it puts FlowGen in front of modernization deals SAP is already running rather than ones you have to source cold. Curious how that channel is converting so far. Free next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "flowgen_labs",
@@ -10673,9 +10683,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Prasad - bumping this given the Prime and Don Hummer news, that's real scale. I think once Qued is booking across enough carriers and facilities, you end up seeing which facilities are chronically slow to work with, which no single carrier has visibility into today. Free to grab time next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "qued",
@@ -10723,9 +10733,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Udam - following up. I think pushing cost context directly into Claude is the right call, since the person choosing which model or retry strategy to use should see the tradeoff in the moment, not on a bill three weeks later. Curious how that integration is landing with engineering teams. Free next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "stitcher",
@@ -10773,9 +10783,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Tim - bumping this given the US hiring push. Curious how the procurement workflow translates outside of the SAP-heavy environment you've mostly sold into in Europe, since US manufacturers tend to run a much more fragmented ERP mix. Would love to hear how you're thinking about it, free next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "zalion",
@@ -10823,9 +10833,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Brent - following up. Saw that around 95% of adjustments move prices down or hold steady, which suggests most of the value today is protecting bookings rather than capturing upside. Curious if that's shifting as operators trust the system more. Free to chat next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "walkway",
@@ -10873,9 +10883,10 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
+      "status": "replied",
       "body": null,
-      "needsDraft": true
+      "needsDraft": true,
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "zerodrift",
@@ -10890,9 +10901,10 @@
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
+      "status": "replied",
       "body": null,
-      "needsDraft": true
+      "needsDraft": true,
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "zerodrift",
@@ -10907,8 +10919,9 @@
       "emailNumber": 4,
       "round": 2,
       "sendDate": "2026-08-15",
-      "status": "pending",
-      "body": "<div>Hey Kumesh - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in ZeroDrift.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>"
+      "status": "replied",
+      "body": "<div>Hey Kumesh - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in ZeroDrift.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "trace",
@@ -10923,9 +10936,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Tim - bumping this. Of the workflows you're targeting, I'd guess the handoffs around contract review and financial approvals are where companies lose the most time today, since those are the moments everyone is already waiting on someone else. Curious if that's where you're seeing the most early pull. Free next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "trace",
@@ -10973,9 +10986,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Kyle - following up. I think open-sourcing Apex alongside the benchmark is a smart distribution move, since every researcher who tests against it is effectively building trust in the same engine you're selling. Curious how much of your pipeline is coming from that versus direct enterprise sales. Free to chat next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "pensar",
@@ -11023,9 +11036,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Ethan - bumping this given the traffic and headcount growth, sounds like momentum is real. I think once a plant's downtime and changeover data is actually digitized, the bigger unlock is predicting a stop before it happens rather than just logging it faster after the fact. Free next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "ferry",
@@ -11073,9 +11086,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Peter - following up. Saw the GovTech piece on the treasury optimization roadmap. I think once Edwin owns the reconciliation data day to day, producing the annual audit report becomes a byproduct instead of the usual scramble finance teams go through every cycle. Free to chat next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "edwin",
@@ -11123,9 +11136,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Aleks - bumping this. Saw the TinyFish accelerator work on agent-native pricing, that seems like a genuinely new problem since usage is no longer tied to a person doing the work. Curious what metering unit customers are actually converging on for agents. Free to grab time next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "alguna",
@@ -11173,9 +11186,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Ted - following up. I think pulling competitor proposals through public records requests is a real moat precisely because access rules vary so much state to state, scaling that nationally is its own hard problem most competitors would have to solve from scratch. Free to chat next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "justwin",
@@ -11223,9 +11236,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Gregory - bumping this. Saw you're hiring for video specifically, which tracks with how I think about the model here: every field video a technician submits becomes training data that makes the next tech's answer better, so the dataset compounds with usage in a way a static manual never could. Free next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "prox",
@@ -11273,9 +11286,9 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-08-07",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Daniel - following up given the Carte and Monarch news. Landing whole advisor networks rather than one advisor at a time seems like a much stickier motion, since it becomes a platform decision for the RIA rather than a tool choice for an individual advisor. Free to chat next week?</div>",
+      "processedAt": "2026-08-07T15:18:35.000Z"
     },
     {
       "slug": "continuum",
