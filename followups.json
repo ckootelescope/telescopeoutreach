@@ -11639,6 +11639,51 @@
       "emailNumber": 4,
       "sendDate": "2026-08-07",
       "status": "pending"
+    },
+    {
+      "slug": "keythorn",
+      "company": "Keythorn",
+      "founder": "Casey Tewey",
+      "email": "casey@keythorn.com",
+      "domain": "keythorn.com",
+      "threadId": "19fd990e7b1ae7c2",
+      "superhumanThreadId": "19fd990e7b1ae7c2",
+      "messageId": null,
+      "subject": "Telescope <> Keythorn Intro",
+      "body": "<div>Hey Casey - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
+      "emailNumber": 2,
+      "sendDate": "2026-08-08",
+      "status": "pending"
+    },
+    {
+      "slug": "keythorn",
+      "company": "Keythorn",
+      "founder": "Casey Tewey",
+      "email": "casey@keythorn.com",
+      "domain": "keythorn.com",
+      "threadId": "19fd990e7b1ae7c2",
+      "superhumanThreadId": "19fd990e7b1ae7c2",
+      "messageId": null,
+      "subject": "Telescope <> Keythorn Intro",
+      "body": "<div>Hey Casey - following up - how have you been thinking about your next raise? I really like what you're building at Keythorn and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
+      "emailNumber": 3,
+      "sendDate": "2026-08-13",
+      "status": "pending"
+    },
+    {
+      "slug": "keythorn",
+      "company": "Keythorn",
+      "founder": "Casey Tewey",
+      "email": "casey@keythorn.com",
+      "domain": "keythorn.com",
+      "threadId": "19fd990e7b1ae7c2",
+      "superhumanThreadId": "19fd990e7b1ae7c2",
+      "messageId": null,
+      "subject": "Telescope <> Keythorn Intro",
+      "body": "<div>Hey Casey - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Keythorn is solving a clear pain point for AI vendors who are losing deals in risk review rather than on product. Over time, I think the certification becomes something a buyer asks for by name, and owning the standard that defines what an acceptable AI system looks like is a broader platform than placing the policy underneath it.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
+      "emailNumber": 4,
+      "sendDate": "2026-08-18",
+      "status": "pending"
     }
   ]
 }
