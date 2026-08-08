@@ -11368,7 +11368,8 @@
       "body": "<div>Hey Shahram - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Cleric is solving a clear pain point for infra teams who lose hours to triage before anyone even knows which service broke. Over time, every investigation writes down how a system actually fails, and I think that becomes the runbook most teams never had, which could support a broader platform for keeping on-call knowledge from leaving with the people who built it.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "covecta",
@@ -11383,7 +11384,8 @@
       "body": "<div>Hey Scott - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Covecta is solving a clear pain point for lenders who are paying skilled people to read documents rather than make decisions. Over time, the structured data coming out of those files could support a broader platform that touches underwriting itself, and I think that's a much bigger seat than document processing.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "fieldgoal",
@@ -11398,7 +11400,8 @@
       "body": "<div>Hey Vahag - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think FieldGoal is solving a clear pain point for CPG brands who find out a promotion never got set up weeks after the fact. Over time, the store level data your reps capture becomes the only ground truth a brand has on what actually happened on shelf, and I think that could support a broader platform for retail execution rather than field reporting alone.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "honeyhive",
@@ -11413,7 +11416,8 @@
       "body": "<div>Hey Mohak - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think HoneyHive is solving a clear pain point for teams shipping agents who can't tell a bad release from a bad prompt. Over time, I think the evals stop being a dashboard and start being the gate that decides whether a change ships at all, and owning that check is a much more durable position than reporting on it afterward.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "hoop",
@@ -11428,7 +11432,8 @@
       "body": "<div>Hey Andrios - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Hoop is solving a clear pain point for platform teams being asked to give agents production access without a way to scope it. Over time, every request through the gateway is a record of what an agent actually touched, and I think that turns into the identity and permission layer for agents rather than a proxy sitting in front of them.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "klaimee",
@@ -11443,7 +11448,8 @@
       "body": "<div>Hey Ines - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Klaimee is solving a clear pain point for companies who can't get a straight answer on what they are actually liable for. Over time, the incident and claims data you accumulate is something no carrier has on its own, and I think that could support a broader platform where you're pricing the risk rather than just placing it.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "maxhome",
@@ -11458,7 +11464,8 @@
       "body": "<div>Hey Divya - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think MaxHome is solving a clear pain point in a vertical where most of the work still moves through email and PDFs instead of software. Over time, the transaction data running through it could support a broader platform at the brokerage level, and I think that's a stickier seat than automating any single workflow.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "nao",
@@ -11473,7 +11480,8 @@
       "body": "<div>Hey Claire - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Nao is solving a clear pain point for data teams being asked to put an AI layer on a warehouse nobody fully trusts yet. Over time, the context you define is really a semantic layer, and I think owning that is a broader platform than answering questions, because everything downstream has to agree with it.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "neuron-factory",
@@ -11488,7 +11496,8 @@
       "body": "<div>Hey Zaid - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Neuron Factory is solving a clear pain point for GCs who are pricing work off documents that stopped agreeing with each other weeks ago. Over time, the history of what got estimated and what actually won could support a broader platform around bid strategy, which I think is where the real leverage sits for a contractor.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "nyne",
@@ -11503,7 +11512,8 @@
       "body": "<div>Hey Michael - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Nyne is solving a clear pain point for customers sitting on documents and records they have no practical way to query. Over time, I think the extraction layer becomes the place that data actually lives rather than a step in front of it, and that's a broader platform than the initial workflow you land with.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "regulis",
@@ -11518,7 +11528,8 @@
       "body": "<div>Hey Will - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Regulis is solving a clear pain point for small carriers who are one audit away from a real problem and have nobody internally who owns it. Over time, the safety and compliance record you maintain is the same data insurers and brokers use to price a carrier, and I think that opens up a broader platform than filing paperwork.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "resiquant",
@@ -11533,7 +11544,8 @@
       "body": "<div>Hey Omar - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think ResiQuant is solving a clear pain point for carriers who are declining business because the alternative is guessing. Over time, I think the same models that price a single property let a carrier see accumulation across a whole book, and that portfolio view is a broader platform than per-risk underwriting.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "revenue-vessel",
@@ -11548,7 +11560,8 @@
       "body": "<div>Hey Brian - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Revenue Vessel is solving a clear pain point for logistics sales teams working lists that have nothing to do with who is actually shipping. Over time, the same customs data that tells you who to call also tells you when an existing account starts moving freight somewhere else, and I think that turns a prospecting tool into the revenue system for a forwarder.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "seldon",
@@ -11563,7 +11576,8 @@
       "body": "<div>Hey Tom - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Seldon is solving a clear pain point for product teams who get research back after the decision has already been made. Over time, the simulated users stop being a testing artifact and become a standing model of who a company actually sells to, and I think that's a broader platform than a research workflow.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "tandem",
@@ -11578,7 +11592,8 @@
       "body": "<div>Hey Kunal - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Tandem is solving a clear pain point for engineering teams where the reasoning behind a design decision leaves with the person who made it. Over time, that captured intent could support a broader platform where a team can ask what breaks if a part changes, and I think that's a much larger problem than documentation.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "ubico",
@@ -11593,7 +11608,8 @@
       "body": "<div>Hey Philippe - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Ubico is solving a clear pain point for teams whose pipeline is built on the same intent data their competitors are buying. Over time, the shipment records add up to a picture of who trades with whom, and I think that graph supports a broader platform than sales prospecting, since sourcing and credit teams want the same view.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "verita",
@@ -11608,7 +11624,8 @@
       "body": "<div>Hey Rithika - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Verita is solving a clear pain point for teams who can get data but can't tell whether it's good enough to train on. Over time, I think the verification and quality layer ends up worth more than the collection itself, and that's a broader platform than a data pipeline.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "vision-lab",
@@ -11623,7 +11640,8 @@
       "body": "<div>Hey James - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think Vision Lab is solving a clear pain point for robotics teams who can't get real world footage at the scale training actually requires. Over time, I think the factory network is worth as much as a distribution channel as it is a data source, because those same relationships are where robots eventually get deployed.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "voicerun",
@@ -11638,7 +11656,8 @@
       "body": "<div>Hey Nick - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think VoiceRun is solving a clear pain point for teams whose voice agent works in a demo and breaks the moment it has to touch a real system. Over time, the integrations you build up are the hard part rather than the voice layer, and I think that library becomes a broader platform for any workflow a company wants to run over the phone.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-07",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "keythorn",
@@ -11653,7 +11672,8 @@
       "body": "<div>Hey Casey - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-08",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-08T00:00:00.000Z"
     },
     {
       "slug": "keythorn",
