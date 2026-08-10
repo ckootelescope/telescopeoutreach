@@ -9677,7 +9677,8 @@
       "body": "<div>Hey Boris - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think the timing is right for what Catio is building because as systems get more complex and teams more distributed, the gap between intended architecture and actual infrastructure keeps growing. The companies that help engineering leaders maintain clarity and control over their systems without slowing teams down are solving a problem that scales with every new service and every new engineer.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "freighthero",
@@ -9724,7 +9725,8 @@
       "body": "<div>Hey Andre - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think freight is one of those markets where AI can have a massive impact because the workflows are complex, fragmented, and still largely manual. The companies that can deliver measurable outcomes rather than just tooling tend to build much deeper relationships with their customers, and that is a strong foundation for expansion into adjacent workflows.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "muir",
@@ -9771,7 +9773,8 @@
       "body": "<div>Hey Harris - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think the supply chain space is at an inflection point where AI can finally deliver on promises that traditional software could not. The combination of better models, more available data, and increasing supply chain complexity means the companies building AI-native solutions now have a real window to capture market share before incumbents adapt.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "thirdai",
@@ -9818,7 +9821,8 @@
       "body": "<div>Hey Vivek - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think the manufacturing AI opportunity extends well beyond diagnostics. Once you have built a system that understands causal relationships in a production environment, there is a natural path into predictive maintenance, yield optimization, and process control. Each of those is a large standalone market, and the company with the deepest understanding of the manufacturing process has a real advantage in all of them.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "obin",
@@ -9865,7 +9869,8 @@
       "body": "<div>Hey Apoorv - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think private equity and alternative investment firms are uniquely well-suited for AI transformation because they deal with large volumes of unstructured information, from CIMs to portfolio reports, and the work of synthesizing that data is still largely manual. Building AI that understands the nuance of financial analysis, not just the formatting, is a hard problem, and having domain expertise is critical for solving it well.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "astrada",
@@ -9891,15 +9896,15 @@
       "email": "salman@astrada.co",
       "domain": "astrada.co",
       "threadId": "19fd34e5140f951d",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd34e5140f951d",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Salman - following up again. The Mastercard and Visa participation in your seed stood out, that's a strong signal from the networks themselves on where transaction data is heading. How are you thinking about your next raise? Would love to be in the mix and get to know you ahead of that.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "astrada",
@@ -9941,15 +9946,15 @@
       "email": "simba@laborup.com",
       "domain": "laborup.com",
       "threadId": "19fd43487017a318",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd43487017a318",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Simba - following up. Headcount up almost 90% year over year is a strong growth signal for a company still this early. How are you thinking about your next raise? Would love to start building a relationship ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "laborup",
@@ -9991,15 +9996,15 @@
       "email": "james@complement.ai",
       "domain": "complement.ai",
       "threadId": "19fd456a97c21390",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd456a97c21390",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey James - bumping this once more. Headcount roughly doubling over the past year is a good sign the product is landing on the floor, not just in demos. How are you thinking about your next raise? Would love to get to know you before that process starts.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "complement",
@@ -10041,15 +10046,15 @@
       "email": "idan@anchorbrowser.io",
       "domain": "anchorbrowser.io",
       "threadId": "19fd45f208911be1",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd45f208911be1",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Idan - following up. The Yutori case study, a team choosing to ship models instead of building their own browser infrastructure, feels like a clear proof point for the category. How are you thinking about your next raise? Would love to be part of that conversation.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "anchor_browser",
@@ -10091,15 +10096,15 @@
       "email": "nate@fireprooftech.com",
       "domain": "fireprooftech.com",
       "threadId": "19fd46b75c27edce",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd46b75c27edce",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Nate - following up one more time. With the NFPA 1850 deadline landing this fall, I'd imagine budget conversations at departments are already underway for next year. How are you thinking about your next raise? Would love to connect ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "fireproof",
@@ -10141,15 +10146,15 @@
       "email": "bernhard@soff.ai",
       "domain": "soff.ai",
       "threadId": "19fd46b747aa229b",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd46b747aa229b",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Bernhard - bumping this once more. I imagine running a lean team is forcing real discipline on what Soff automates first versus what waits. How are you thinking about your next raise? Would love to connect before that process kicks off.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "soff",
@@ -10191,15 +10196,15 @@
       "email": "leopold@zeit-ai.com",
       "domain": "zeit-ai.com",
       "threadId": "19fd46fc2e739694",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd46fc2e739694",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Leopold - following up. Web traffic up 32% over the last quarter is a good top of funnel signal heading into a raise conversation. How are you thinking about timing on your next round? Would love to connect ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "zeit",
@@ -10241,15 +10246,15 @@
       "email": "phillip@argalabs.com",
       "domain": "argalabs.com",
       "threadId": "19fd48603db13617",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd48603db13617",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Phillip - bumping this. Being named one of TechCrunch's standout startups from YC Demo Day is real validation of the agent testing thesis. How are you thinking about your next raise? Would love to be part of that process.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "arga_labs",
@@ -10291,15 +10296,15 @@
       "email": "doug@getflycore.com",
       "domain": "getflycore.com",
       "threadId": "19fd4a178eb3d8c7",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4a178eb3d8c7",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Doug - following up. Being on the ground at AeroSummit meeting operators directly is exactly the kind of GTM motion that compounds in a niche market like this. How are you thinking about your next raise? Would love to connect before that process starts.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "flycore",
@@ -10341,15 +10346,15 @@
       "email": "omer@advancehq.com",
       "domain": "advancehq.com",
       "threadId": "19fd4a178c8b94eb",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4a178c8b94eb",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Omer - following up. With the new round closed and LinkedIn following up roughly 4x this past year, seems like the market is starting to notice regardless of what stage you call this. How are you thinking about the next raise after this one? Would love to build the relationship ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "advance",
@@ -10391,15 +10396,15 @@
       "email": "stoyan@wisebee.ai",
       "domain": "wisebee.ai",
       "threadId": "19fd4a263d7dbfd5",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4a263d7dbfd5",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Stoyan - following up. Saw you on the Execweb podcast talking through prioritization in security ops, good way to get the thesis in front of buyers directly. How are you thinking about your next raise? Would love to connect ahead of that process.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "wisebee",
@@ -10441,15 +10446,15 @@
       "email": "yaron@withmagenta.com",
       "domain": "withmagenta.com",
       "threadId": "19fd4a2639584b8d",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4a2639584b8d",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Yaron - bumping this. Doubling headcount over the past year while still qualifying which cross-referencing tasks to automate first says the demand is real. How are you thinking about your next raise? Would love to connect before that starts.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "magenta",
@@ -10491,15 +10496,15 @@
       "email": "kunal@faction.ai",
       "domain": "faction.ai",
       "threadId": "19fd4a2629263f3e",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4a2629263f3e",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Kunal - following up. Hiring beyond your current headcount for both applied AI and deployments roles suggests you're scaling delivery ahead of the fundraise, not after it. How are you thinking about your next raise? Would love to build the relationship ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "faction",
@@ -10541,15 +10546,15 @@
       "email": "ian@resourcly.com",
       "domain": "resourcly.com",
       "threadId": "19fd4a2620a471b7",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4a2620a471b7",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Ian - bumping this once more. As inventory becomes a bigger working capital question across manufacturers, I'd guess procurement and finance are getting pulled into more of these conversations together. How are you thinking about your next raise? Would love to connect ahead of that process.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "resourcly",
@@ -10644,15 +10649,15 @@
       "email": "dhruva@flowgenlabs.com",
       "domain": "flowgenlabs.com",
       "threadId": "19fd4d86645abe93",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4d86645abe93",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Dhruva - following up. Hiring a Forward Deployed Engineer and SAP Technical Lead in the same stretch tells me you're staffing up for hands on enterprise deployments, not just selling the platform. How are you thinking about your next raise? Would love to connect ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "flowgen_labs",
@@ -10694,15 +10699,15 @@
       "email": "prasad@qued.com",
       "domain": "qued.com",
       "threadId": "19fd4e9ac8bfb484",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4e9ac8bfb484",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Prasad - bumping this. A 98.8% success rate automating appointments over email is a hard number to ignore for an industry that runs on exactly that channel. How are you thinking about your next raise? Would love to connect before that starts.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "qued",
@@ -10744,15 +10749,15 @@
       "email": "udam@stitcher.ai",
       "domain": "stitcher.ai",
       "threadId": "19fd4f110b01b0ce",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4f110b01b0ce",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Udam - following up. Getting into InfoWorld on why enterprises can't prove AI ROI is good timing, that's the exact budget conversation finance teams are having right now. How are you thinking about your next raise? Would love to connect ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "stitcher",
@@ -10794,15 +10799,15 @@
       "email": "tim.geyer@zalion.ai",
       "domain": "zalion.ai",
       "threadId": "19fd4f9aab0249f8",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd4f9aab0249f8",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Tim - following up. Hosting the roundtable at BME on agents versus suites in procurement architecture is a good way to shape how the market frames this before others do. How are you thinking about your next raise, especially as you look at the US? Would love to connect ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "zalion",
@@ -10844,15 +10849,15 @@
       "email": "brent@walkway.ai",
       "domain": "walkway.ai",
       "threadId": "19fd50f57b15e435",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd50f57b15e435",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Brent - bumping this. Headcount up over 100% in the past year, with half the team now in engineering and data, tells me you're still building for scale here. How are you thinking about your next raise? Would love to connect before that process starts.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "walkway",
@@ -10947,15 +10952,15 @@
       "email": "tim@trace.so",
       "domain": "trace.so",
       "threadId": "19fd5147fe7bb7c1",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd5147fe7bb7c1",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Tim - following up. As more of this work moves through agents, I'd guess the hardest part is convincing teams to trust the routing decision, not building the agents themselves. How are you thinking about your next raise? Would love to connect ahead of that process.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "trace",
@@ -10997,15 +11002,15 @@
       "email": "kyle@pensarai.com",
       "domain": "pensarai.com",
       "threadId": "19fd5187ecfc95b1",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd5187ecfc95b1",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Kyle - following up. Landing a broker-dealer managing over $100B in assets, and finding vulnerabilities existing tools and pentest firms missed, is a strong enterprise proof point this early. How are you thinking about your next raise? Would love to connect ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "pensar",
@@ -11047,15 +11052,15 @@
       "email": "ethan@deployferry.io",
       "domain": "deployferry.io",
       "threadId": "19fd51b83c9ae45d",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd51b83c9ae45d",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Ethan - bumping this. Adding heads specifically in ops, sales, and customer success rather than just engineering suggests you're already past the pure pilot stage with plant customers. How are you thinking about your next raise? Would love to connect before that starts.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "ferry",
@@ -11097,15 +11102,15 @@
       "email": "peter@edwingov.com",
       "domain": "edwingov.com",
       "threadId": "19fd51ff8dc28226",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd51ff8dc28226",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Peter - bumping this. Already having clients on both coasts this early suggests agencies are comfortable adopting new finance software once one peer proves it out. How are you thinking about your next raise? Would love to connect ahead of that process.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "edwin",
@@ -11147,15 +11152,15 @@
       "email": "aleks@alguna.io",
       "domain": "alguna.io",
       "threadId": "19fd524e99665583",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd524e99665583",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Aleks - bumping this. Speaking on involuntary churn from failed payments at SubscriptionX puts you right in front of the buyers thinking hardest about revenue leakage. How are you thinking about your next raise? Would love to connect ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "alguna",
@@ -11197,15 +11202,15 @@
       "email": "ted@justwin.ai",
       "domain": "justwin.ai",
       "threadId": "19fd5285134954d6",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd5285134954d6",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Ted - following up. Between the seed rounds already on the books, the bigger signal to me is you're treating pursuit intelligence as its own category rather than a point tool for one part of the process. How are you thinking about your next raise? Would love to connect ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "justwin",
@@ -11247,15 +11252,15 @@
       "email": "greg@useprox.com",
       "domain": "useprox.com",
       "threadId": "19fd52c5f6b290a9",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd52c5f6b290a9",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Gregory - bumping this. Hiring a founding engineer and a chief of staff in the same stretch tells me you're building out both product and operating structure early. How are you thinking about your next raise? Would love to connect before that starts.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "prox",
@@ -11297,15 +11302,15 @@
       "email": "daniel@oncontinuum.com",
       "domain": "oncontinuum.com",
       "threadId": "19fd537e5d9f5aa3",
-      "superhumanThreadId": null,
+      "superhumanThreadId": "19fd537e5d9f5aa3",
       "messageId": null,
       "subject": "Telescope Intro (Sequoia Spinout) - Let's Chat?",
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "completed",
+      "body": "<div>Hey Daniel - following up. Rolling out across Designed Wealth's full network of 150+ advisors, not just a handful of early users, is the kind of adoption that's hard to unwind once it's in place. How are you thinking about your next raise? Would love to connect ahead of it.</div>",
+      "processedAt": "2026-08-10T18:00:00Z"
     },
     {
       "slug": "continuum",
