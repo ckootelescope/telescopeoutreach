@@ -229,6 +229,76 @@ async function phase2() {
   await c.end();
 }
 
+// ------------------------------------------------- phase 2t (from tracker)
+// Gmail creds are dead, so observed state comes from the Activity Log instead.
+// Everything written here is tagged source='tracker' so a later Gmail sweep
+// can supersede it rather than silently agreeing with it.
+
+async function phase2t() {
+  const { trk } = loadSources();
+  const c = await connect();
+  await c.query(`alter table email_event add column if not exists source text not null default 'gmail'`);
+
+  const ct = await c.query(`select id, email, company_id from contact`);
+  const byEmail = new Map(ct.rows.map(r => [r.email.toLowerCase(), r]));
+
+  const OUT = new Set(['SENT', 'FOLLOWUP_SENT']);
+  const IN  = new Set(['REPLIED', 'REPLY_RECEIVED']);
+
+  let ins = 0, unmatched = 0, bounced = 0;
+  for (const r of trk) {
+    const [ts, , , , emailRaw, action, stage, thread] = r;
+    const em = String(emailRaw || '').toLowerCase().trim();
+    if (!em || !ts) continue;
+    const hit = byEmail.get(em);
+    if (!hit) { unmatched++; continue; }
+    const dir = OUT.has(action) ? 'out' : IN.has(action) ? 'in' : null;
+    if (!dir) {
+      if (action === 'BOUNCED') {
+        bounced++;
+        await c.query(`update sequence set status='bounced' where contact_id=$1 and status not in ('replied')`, [hit.id]);
+      }
+      continue;
+    }
+    const mid = 'trk:' + Date.parse(ts) + ':' + em + ':' + action + ':' + (stage || '');
+    const res = await c.query(
+      `insert into email_event (contact_id, company_id, direction, peer_email, thread_id, message_id, subject, sent_at, source)
+       values ($1,$2,$3,$4,$5,$6,$7,$8,'tracker') on conflict (message_id) do nothing returning id`,
+      [hit.id, hit.company_id, dir, em, thread || null, mid, stage || null, new Date(Date.parse(ts)).toISOString()]);
+    if (res.rows.length) ins++;
+  }
+
+  // sequences with any inbound event are 'replied'
+  const rep = await c.query(`
+    update sequence q set status='replied'
+      from email_event e
+     where e.company_id = q.company_id and e.direction='in'
+       and q.status in ('active','completed','needs_scheduling')
+    returning q.id`);
+
+  // step.sent_at from the matching outbound tracker event
+  const upd = await c.query(`
+    with m as (
+      select s.id step_id, min(e.sent_at) sent_at
+        from step s
+        join sequence q on q.id = s.sequence_id
+        join email_event e on e.company_id = q.company_id and e.direction='out'
+       where s.sent_at is null
+         and e.subject is not null
+         and (
+              (q.round = 1 and e.subject = 'Email ' || s.step_no)
+           or (q.round >= 2 and s.step_no = 1 and e.subject like 'Round 2%')
+         )
+       group by s.id)
+    update step set sent_at = m.sent_at,
+                    status = case when step.status in ('planned','drafted') then 'sent' else step.status end
+      from m where step.id = m.step_id returning step.id`);
+
+  console.log(JSON.stringify({ events_inserted: ins, unmatched_contacts: unmatched,
+    bounced_sequences: bounced, sequences_marked_replied: rep.rowCount, steps_dated: upd.rowCount }, null, 1));
+  await c.end();
+}
+
 // ---------------------------------------------------------------- report
 
 async function report() {
@@ -253,6 +323,10 @@ async function report() {
   await c.end();
 }
 
+const cmds = { phase1, phase2, phase2t, report };
 const cmd = process.argv[2];
-({ phase1, phase2, report })[cmd]?.().catch(e => { console.error('ERR ' + e.message); process.exit(1); })
-  || (cmd ? null : console.log('usage: migrate.js phase1|phase2|report'));
+if (!cmds[cmd]) {
+  console.error('usage: migrate.js ' + Object.keys(cmds).join('|'));
+  process.exit(1);
+}
+cmds[cmd]().catch(e => { console.error('ERR ' + e.message); process.exit(1); });
