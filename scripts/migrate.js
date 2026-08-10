@@ -194,6 +194,7 @@ async function phase1() {
 async function phase2() {
   const events = JSON.parse(fs.readFileSync(path.join(ROOT, '_mail_sweep.json'), 'utf8'));
   const c = await connect();
+  await c.query(`alter table email_event add column if not exists source text not null default 'gmail'`);
   const ct = await c.query(`select id, email, company_id from contact`);
   const byEmail = new Map(ct.rows.map(r => [r.email.toLowerCase(), r]));
 
@@ -204,28 +205,49 @@ async function phase2() {
     if (!hit) { unmatched++; continue; }
     const r = await c.query(
       `insert into email_event (contact_id, company_id, direction, sender_email, peer_email,
-                                thread_id, message_id, subject, sent_at)
-       values ($1,$2,$3,$4,$5,$6,$7,$8,$9) on conflict (message_id) do nothing returning id`,
+                                thread_id, message_id, subject, sent_at, source)
+       values ($1,$2,$3,$4,$5,$6,$7,$8,$9,'gmail') on conflict (message_id) do nothing returning id`,
       [hit.id, hit.company_id, e.direction, e.from || null, peer, e.threadId, e.id, e.subject || null,
        new Date(e.ts).toISOString()]);
     if (r.rows.length) ins++;
   }
 
-  // set sent_at on steps from observed outbound mail in the same thread
+  // Gmail is authoritative: overwrite any tracker-derived date, and clear
+  // dates the tracker asserted that the mailbox cannot corroborate.
+  const before = await c.query(`select count(*)::int n from step where sent_at is not null`);
+
+  const cleared = await c.query(`
+    update step s set sent_at = null,
+                      status = case when s.status = 'sent' then 'drafted' else s.status end
+      from sequence q
+     where q.id = s.sequence_id
+       and s.sent_at is not null
+       and not exists (
+         select 1 from email_event e
+          where e.company_id = q.company_id and e.direction = 'out' and e.source = 'gmail'
+            and e.sent_at::date between s.due_date - 1 and s.due_date + 6)
+    returning s.id`);
+
   const upd = await c.query(`
     with m as (
       select s.id step_id, min(e.sent_at) as sent_at
         from step s
         join sequence q on q.id = s.sequence_id
-        join email_event e on e.company_id = q.company_id and e.direction = 'out'
-       where s.sent_at is null
-         and e.sent_at::date between s.due_date - 1 and s.due_date + 6
+        join email_event e on e.company_id = q.company_id and e.direction = 'out' and e.source = 'gmail'
+       where e.sent_at::date between s.due_date - 1 and s.due_date + 6
        group by s.id)
     update step set sent_at = m.sent_at,
                     status = case when step.status in ('planned','drafted') then 'sent' else step.status end
       from m where step.id = m.step_id returning step.id`);
 
-  console.log(JSON.stringify({ events_inserted: ins, unmatched_peers: unmatched, steps_dated: upd.rowCount }, null, 1));
+  const after = await c.query(`select count(*)::int n from step where sent_at is not null`);
+
+  console.log(JSON.stringify({
+    events_inserted: ins, unmatched_peers: unmatched,
+    steps_dated_by_gmail: upd.rowCount,
+    steps_uncorroborated_cleared: cleared.rowCount,
+    steps_with_send_date_before: before.rows[0].n,
+    steps_with_send_date_after: after.rows[0].n }, null, 1));
   await c.end();
 }
 
