@@ -80,6 +80,40 @@ async function main() {
     out.set(th, mine);
   }
 
+  // The reverse direction. A backfill can mark a step sent that never left the
+  // mailbox, and that error is worse than the forward one: it silently skips an
+  // email and advances the cadence. Same rule, run backwards.
+  const claimed = await c.query(`
+    select q.id seq_id, co.name company, s.id step_id, s.step_no, s.sent_at::date::text sent_on,
+           coalesce(s.thread_id, (select s2.thread_id from step s2
+              where s2.sequence_id = q.id and s2.thread_id is not null
+              order by s2.step_no limit 1)) thread_id
+      from step s
+      join sequence q on q.id = s.sequence_id
+      join company co on co.id = q.company_id
+     where s.status = 'sent'
+       and q.status in ('active','needs_scheduling')
+     order by co.name, s.step_no`);
+
+  const cThreads = [...new Set(claimed.rows.map(r => r.thread_id).filter(Boolean))]
+    .filter(th => !out.has(th));
+  for (const th of cThreads) {
+    const r = await req({ hostname: 'gmail.googleapis.com',
+      path: `/gmail/v1/users/me/threads/${th}?format=metadata&metadataHeaders=From`,
+      method: 'GET', headers: { Authorization: 'Bearer ' + t } });
+    if (r.s !== 200) { out.set(th, null); continue; }
+    const j = JSON.parse(r.b);
+    out.set(th, (j.messages || []).filter(m => {
+      const h = {}; (m.payload?.headers || []).forEach(x => h[x.name.toLowerCase()] = x.value);
+      return (addrs(h.from)[0] || '') === ME;
+    }).map(m => ({ id: m.id, ts: Number(m.internalDate) })).sort((a, b) => a.ts - b.ts));
+  }
+
+  const phantom = claimed.rows.filter(r => {
+    const mine = r.thread_id ? out.get(r.thread_id) : null;
+    return mine && mine.length < r.step_no;   // null means the fetch failed, so leave it alone
+  });
+
   const hits = [], missing = [];
   for (const r of open.rows) {
     const mine = r.thread_id ? out.get(r.thread_id) : null;
@@ -94,8 +128,24 @@ async function main() {
   console.log('still genuinely unsent: ' + missing.length);
   missing.forEach(m => console.log('  UNSENT  due ' + m.due + ' | E' + m.step_no + ' ' + m.company +
     (m.status === 'drafted' ? ' (draft waiting)' : '')));
+  console.log('marked sent but never left the mailbox: ' + phantom.length);
+  phantom.forEach(p => console.log('  PHANTOM claimed ' + p.sent_on + ' | E' + p.step_no + ' ' + p.company));
 
   if (!APPLY) { console.log('\n(report only - pass --apply to write)'); await c.end(); return; }
+
+  // Reset the phantoms to planned and give them a due date from the real last
+  // send, so the cadence resumes where the mailbox actually left it.
+  for (const p of phantom) {
+    const mine = out.get(p.thread_id);
+    const last = mine[mine.length - 1];
+    const kind = (await c.query(`select kind from sequence where id=$1`, [p.seq_id])).rows[0].kind;
+    const GAPS = { first: { 2: 2, 3: 5, 4: 5 }, restart: { 2: 2, 3: 3, 4: 5 } };
+    const base = last ? new Date(last.ts).toISOString().slice(0, 10) : new Date().toISOString().slice(0, 10);
+    const due = new Date(Date.parse(base + 'T12:00:00Z') + (GAPS[kind][p.step_no] || 2) * 864e5)
+      .toISOString().slice(0, 10);
+    await c.query(`update step set status='planned', sent_at=null, due_date=$2 where id=$1`,
+      [p.step_id, due < new Date().toISOString().slice(0, 10) ? new Date().toISOString().slice(0, 10) : due]);
+  }
 
   let ev = 0;
   for (const h of hits) {
