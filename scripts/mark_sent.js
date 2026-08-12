@@ -15,6 +15,7 @@ const { connect } = require('./db');
 const ROOT = path.join(__dirname, '..');
 const ME = 'calvin@telescopepartners.com';
 const APPLY = process.argv.includes('--apply');
+const HISTORY = process.argv.includes('--history');
 
 function envv() {
   const e = {};
@@ -39,6 +40,21 @@ async function token() {
   return JSON.parse(r.b).access_token;
 }
 const addrs = s => (String(s || '').match(/[\w.+-]+@[\w.-]+/g) || []).map(x => x.toLowerCase());
+
+// Calvin's outbound on a thread, up to the point the founder first wrote back.
+// Everything after a reply is conversation, not cadence, and counting it marks
+// steps sent that were never written.
+function cadenceSends(thread) {
+  const msgs = (thread.messages || []).map(m => {
+    const h = {}; (m.payload?.headers || []).forEach(x => h[x.name.toLowerCase()] = x.value);
+    return { id: m.id, ts: Number(m.internalDate), subject: h.subject || null,
+             from: addrs(h.from)[0] || '' };
+  }).sort((a, b) => a.ts - b.ts);
+  const reply = msgs.find(m => m.from && !/@telescopepartners\.com$/i.test(m.from) &&
+    !/mailer-daemon|postmaster|reminder@superhuman|calendar-notification/i.test(m.from));
+  const cutoff = reply ? reply.ts : Infinity;
+  return msgs.filter(m => m.from === ME && m.ts < cutoff);
+}
 
 async function main() {
   const t = await token();
@@ -69,22 +85,15 @@ async function main() {
       path: `/gmail/v1/users/me/threads/${th}?format=metadata&metadataHeaders=From&metadataHeaders=Subject`,
       method: 'GET', headers: { Authorization: 'Bearer ' + t } });
     if (r.s !== 200) { out.set(th, null); continue; }
-    const j = JSON.parse(r.b);
-    const mine = (j.messages || []).filter(m => {
-      const h = {}; (m.payload?.headers || []).forEach(x => h[x.name.toLowerCase()] = x.value);
-      return (addrs(h.from)[0] || '') === ME;
-    }).map(m => {
-      const h = {}; (m.payload?.headers || []).forEach(x => h[x.name.toLowerCase()] = x.value);
-      return { id: m.id, ts: Number(m.internalDate), subject: h.subject || null };
-    }).sort((a, b) => a.ts - b.ts);
-    out.set(th, mine);
+    out.set(th, cadenceSends(JSON.parse(r.b)));
   }
 
   // The reverse direction. A backfill can mark a step sent that never left the
   // mailbox, and that error is worse than the forward one: it silently skips an
   // email and advances the cadence. Same rule, run backwards.
   const claimed = await c.query(`
-    select q.id seq_id, co.name company, s.id step_id, s.step_no, s.sent_at::date::text sent_on,
+    select q.id seq_id, co.name company, q.status seq_status, s.id step_id, s.step_no,
+           s.sent_at::date::text sent_on,
            coalesce(s.thread_id, (select s2.thread_id from step s2
               where s2.sequence_id = q.id and s2.thread_id is not null
               order by s2.step_no limit 1)) thread_id
@@ -92,21 +101,17 @@ async function main() {
       join sequence q on q.id = s.sequence_id
       join company co on co.id = q.company_id
      where s.status = 'sent'
-       and q.status in ('active','needs_scheduling')
+       and q.status in ('active','needs_scheduling','replied','completed')
      order by co.name, s.step_no`);
 
   const cThreads = [...new Set(claimed.rows.map(r => r.thread_id).filter(Boolean))]
     .filter(th => !out.has(th));
   for (const th of cThreads) {
     const r = await req({ hostname: 'gmail.googleapis.com',
-      path: `/gmail/v1/users/me/threads/${th}?format=metadata&metadataHeaders=From`,
+      path: `/gmail/v1/users/me/threads/${th}?format=metadata&metadataHeaders=From&metadataHeaders=Subject`,
       method: 'GET', headers: { Authorization: 'Bearer ' + t } });
     if (r.s !== 200) { out.set(th, null); continue; }
-    const j = JSON.parse(r.b);
-    out.set(th, (j.messages || []).filter(m => {
-      const h = {}; (m.payload?.headers || []).forEach(x => h[x.name.toLowerCase()] = x.value);
-      return (addrs(h.from)[0] || '') === ME;
-    }).map(m => ({ id: m.id, ts: Number(m.internalDate) })).sort((a, b) => a.ts - b.ts));
+    out.set(th, cadenceSends(JSON.parse(r.b)));
   }
 
   const phantom = claimed.rows.filter(r => {
@@ -128,14 +133,29 @@ async function main() {
   console.log('still genuinely unsent: ' + missing.length);
   missing.forEach(m => console.log('  UNSENT  due ' + m.due + ' | E' + m.step_no + ' ' + m.company +
     (m.status === 'drafted' ? ' (draft waiting)' : '')));
-  console.log('marked sent but never left the mailbox: ' + phantom.length);
-  phantom.forEach(p => console.log('  PHANTOM claimed ' + p.sent_on + ' | E' + p.step_no + ' ' + p.company));
+  // A phantom on a live cadence should resume. A phantom on a cadence that has
+  // already ended should NOT: resetting it to planned would resurrect a dead
+  // sequence into the due queue. Those are corrected to 'cancelled' instead, and
+  // only when explicitly asked for, since it rewrites history.
+  const live = phantom.filter(p => ['active', 'needs_scheduling'].includes(p.seq_status));
+  const ended = phantom.filter(p => !['active', 'needs_scheduling'].includes(p.seq_status));
+  console.log('marked sent but never left the mailbox, live cadence: ' + live.length);
+  live.forEach(p => console.log('  PHANTOM claimed ' + p.sent_on + ' | E' + p.step_no + ' ' + p.company));
+  console.log('same, on cadences that already ended: ' + ended.length +
+    (HISTORY ? ' (correcting to cancelled)' : ' (reported only, pass --history to correct)'));
+  ended.forEach(p => console.log('  HISTORY claimed ' + p.sent_on + ' | E' + p.step_no + ' ' + p.company));
 
   if (!APPLY) { console.log('\n(report only - pass --apply to write)'); await c.end(); return; }
 
+  if (HISTORY) {
+    for (const p of ended) {
+      await c.query(`update step set status='cancelled', sent_at=null where id=$1`, [p.step_id]);
+    }
+  }
+
   // Reset the phantoms to planned and give them a due date from the real last
   // send, so the cadence resumes where the mailbox actually left it.
-  for (const p of phantom) {
+  for (const p of live) {
     const mine = out.get(p.thread_id);
     const last = mine[mine.length - 1];
     const kind = (await c.query(`select kind from sequence where id=$1`, [p.seq_id])).rows[0].kind;
