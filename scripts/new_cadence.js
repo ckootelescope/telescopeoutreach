@@ -41,7 +41,8 @@ async function main() {
         left join company_domain d on d.company_id = co.id
         where co.primary_domain = $1 or d.domain = $1`, [r.domain]);
     if (dup.rows.length) { console.error('ALREADY EXISTS ' + r.domain + ' -> ' + dup.rows[0].name + ' - skipped'); continue; }
-    plan.push({ ...r, slug: slugify(r.company), subject: 'Telescope <> ' + r.company + ' Intro' });
+    plan.push({ ...r, slug: slugify(r.company),
+      subject: r.subject_override || 'Telescope <> ' + r.company + ' Intro' });
   }
 
   console.log('opening ' + plan.length + ' cadences from day 0');
