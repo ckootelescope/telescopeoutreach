@@ -36,11 +36,23 @@ async function main() {
 
   const plan = [];
   for (const r of rows) {
+    // A company already on record is not automatically a duplicate. It may have
+    // been created by the prior-contact guard before any email went out. Only a
+    // sequence that is still running means this send is already tracked.
     const dup = await c.query(
-      `select co.name from company co
-        left join company_domain d on d.company_id = co.id
-        where co.primary_domain = $1 or d.domain = $1`, [r.domain]);
-    if (dup.rows.length) { console.error('ALREADY EXISTS ' + r.domain + ' -> ' + dup.rows[0].name + ' - skipped'); continue; }
+      `select co.id, co.name,
+              (select count(*) from sequence q
+                where q.company_id = co.id
+                  and q.status in ('active','needs_scheduling')) live
+         from company co
+         left join company_domain d on d.company_id = co.id
+        where co.primary_domain = $1 or d.domain = $1
+        limit 1`, [r.domain]);
+    if (dup.rows.length && Number(dup.rows[0].live) > 0) {
+      console.error('LIVE CADENCE EXISTS ' + r.domain + ' -> ' + dup.rows[0].name + ' - skipped');
+      continue;
+    }
+    r.existing_company_id = dup.rows.length ? dup.rows[0].id : null;
     plan.push({ ...r, slug: slugify(r.company),
       subject: r.subject_override || 'Telescope <> ' + r.company + ' Intro' });
   }
@@ -55,9 +67,12 @@ async function main() {
 
   for (const p of plan) {
     await c.query('begin');
-    const co = await c.query(
-      `insert into company (name, primary_domain, status) values ($1,$2,'active') returning id`,
-      [p.company, p.domain]);
+    const co = p.existing_company_id
+      ? await c.query(`update company set status='active' where id=$1 returning id`,
+          [p.existing_company_id])
+      : await c.query(
+          `insert into company (name, primary_domain, status) values ($1,$2,'active') returning id`,
+          [p.company, p.domain]);
     const companyId = co.rows[0].id;
     await c.query(`insert into company_domain (domain, company_id) values ($1,$2)
                    on conflict (domain) do nothing`, [p.domain, companyId]);

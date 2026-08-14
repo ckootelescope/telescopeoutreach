@@ -8,7 +8,19 @@ function url(){
   return u;
 }
 async function connect(){
-  const c=new Client({connectionString:url(),ssl:{rejectUnauthorized:false}});
+  // Several scripts hold this open while sweeping Gmail, which can idle the
+  // socket long enough for the pooler to drop it. Keepalive stops that showing
+  // up as an unhandled ECONNRESET halfway through a run.
+  const c=new Client({
+    connectionString:url(),
+    ssl:{rejectUnauthorized:false},
+    keepAlive:true,
+    keepAliveInitialDelayMillis:10000,
+    statement_timeout:60000,
+  });
+  // pg emits 'error' on the client for connection-level failures; without a
+  // listener node treats it as fatal and kills the process mid-run.
+  c.on('error',e=>console.error('db connection error: '+e.message));
   await c.connect();
   return c;
 }

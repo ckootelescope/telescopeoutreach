@@ -77,16 +77,24 @@ async function main() {
        and s.due_date <= current_date
      order by co.name, s.step_no`);
 
-  // one Gmail fetch per thread, not per step
-  const threads = [...new Set(open.rows.map(r => r.thread_id).filter(Boolean))];
+  // One Gmail fetch per thread, not per step, and several at once. Serial
+  // fetches left the database connection idle for minutes, which the pooler
+  // eventually closed underneath the run.
   const out = new Map();
-  for (const th of threads) {
-    const r = await req({ hostname: 'gmail.googleapis.com',
-      path: `/gmail/v1/users/me/threads/${th}?format=metadata&metadataHeaders=From&metadataHeaders=Subject`,
-      method: 'GET', headers: { Authorization: 'Bearer ' + t } });
-    if (r.s !== 200) { out.set(th, null); continue; }
-    out.set(th, cadenceSends(JSON.parse(r.b)));
+  async function fetchThreads(ids) {
+    const todo = ids.filter(th => !out.has(th));
+    let i = 0;
+    await Promise.all(Array.from({ length: Math.min(8, todo.length) }, async () => {
+      while (i < todo.length) {
+        const th = todo[i++];
+        const r = await req({ hostname: 'gmail.googleapis.com',
+          path: `/gmail/v1/users/me/threads/${th}?format=metadata&metadataHeaders=From&metadataHeaders=Subject`,
+          method: 'GET', headers: { Authorization: 'Bearer ' + t } });
+        out.set(th, r.s === 200 ? cadenceSends(JSON.parse(r.b)) : null);
+      }
+    }));
   }
+  await fetchThreads([...new Set(open.rows.map(r => r.thread_id).filter(Boolean))]);
 
   // The reverse direction. A backfill can mark a step sent that never left the
   // mailbox, and that error is worse than the forward one: it silently skips an
@@ -104,15 +112,7 @@ async function main() {
        and q.status in ('active','needs_scheduling','replied','completed')
      order by co.name, s.step_no`);
 
-  const cThreads = [...new Set(claimed.rows.map(r => r.thread_id).filter(Boolean))]
-    .filter(th => !out.has(th));
-  for (const th of cThreads) {
-    const r = await req({ hostname: 'gmail.googleapis.com',
-      path: `/gmail/v1/users/me/threads/${th}?format=metadata&metadataHeaders=From&metadataHeaders=Subject`,
-      method: 'GET', headers: { Authorization: 'Bearer ' + t } });
-    if (r.s !== 200) { out.set(th, null); continue; }
-    out.set(th, cadenceSends(JSON.parse(r.b)));
-  }
+  await fetchThreads([...new Set(claimed.rows.map(r => r.thread_id).filter(Boolean))]);
 
   const phantom = claimed.rows.filter(r => {
     const mine = r.thread_id ? out.get(r.thread_id) : null;
