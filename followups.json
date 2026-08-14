@@ -12263,7 +12263,8 @@
       "body": "<div>Hey Kerim - following up - how have you been thinking about your next raise? I really like what you're building at qomplement and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-14",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-14T15:29:51.000Z"
     },
     {
       "slug": "qomplement",
@@ -12309,7 +12310,8 @@
       "body": "<div>Hey Rez - following up - how have you been thinking about your next raise? I really like what you're building at General Analysis and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-14",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-14T15:29:51.000Z"
     },
     {
       "slug": "general-analysis",
@@ -12851,7 +12853,8 @@
       "body": "<div>Hey Frederik - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-14",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-14T15:29:51.000Z"
     },
     {
       "slug": "diligencesquared",
@@ -12896,7 +12899,8 @@
       "body": "<div>Hey Kik - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-14",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-14T15:29:51.000Z"
     },
     {
       "slug": "solomon",
@@ -12941,7 +12945,8 @@
       "body": "<div>Hey Param - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-14",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-14T15:29:51.000Z"
     },
     {
       "slug": "agilerl",
