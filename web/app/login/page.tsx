@@ -1,4 +1,5 @@
 import { authClient, isAllowed } from '@/lib/supabase';
+import { siteOrigin } from '@/lib/origin';
 import { redirect } from 'next/navigation';
 
 export const dynamic = 'force-dynamic';
@@ -11,27 +12,30 @@ async function sendLink(formData: FormData) {
   if (!isAllowed(email)) redirect('/login?error=not_allowed');
 
   const supabase = await authClient();
+  const origin = await siteOrigin();
   const { error } = await supabase.auth.signInWithOtp({
     email,
-    options: {
-      emailRedirectTo: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'}/auth/callback`,
-    },
+    options: { emailRedirectTo: `${origin}/auth/callback` },
   });
-  redirect(error ? '/login?error=send_failed' : '/login?sent=1');
+  if (error) redirect(`/login?error=send_failed&why=${encodeURIComponent(error.message)}`);
+  redirect('/login?sent=1');
 }
 
 export default async function Login({
   searchParams,
 }: {
-  searchParams: Promise<{ error?: string; sent?: string; denied?: string }>;
+  searchParams: Promise<{ error?: string; sent?: string; denied?: string; why?: string }>;
 }) {
   const q = await searchParams;
+  const origin = await siteOrigin();
   const message =
     q.sent ? 'Check your email. The link signs you in on this device.'
     : q.denied ? `${q.denied} is signed in but not on the allowlist.`
     : q.error === 'not_allowed' ? 'That address is not on the allowlist.'
-    : q.error === 'send_failed' ? 'Could not send the link. Try again.'
-    : null;
+    : q.error === 'send_failed' ? `Could not send the link. ${q.why ?? ''}`
+    : q.error === 'bad_callback'
+      ? 'That link did not complete sign in. It may have already been used, or expired.'
+      : null;
 
   return (
     <div className="wrap" style={{ maxWidth: 460, paddingTop: 90 }}>
@@ -48,7 +52,13 @@ export default async function Login({
         </form>
       </div>
       {message && <p className="mono dim">{message}</p>}
-      <footer>This console holds founder contact details. Access is limited to the allowlist.</footer>
+      <footer>
+        This console holds founder contact details. Access is limited to the allowlist.
+        <br />
+        Sign-in links will return to <span className="dim">{origin}/auth/callback</span> — that
+        exact address must be listed in Supabase under Authentication, URL Configuration,
+        Redirect URLs.
+      </footer>
     </div>
   );
 }
