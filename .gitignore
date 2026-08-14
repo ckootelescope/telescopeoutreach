@@ -1,3 +1,5 @@
 .env
 
 dashboard.html
+node_modules/
+_*.json
