@@ -1,63 +1,54 @@
-import { authClient, isAllowed } from '@/lib/supabase';
-import { siteOrigin } from '@/lib/origin';
+import { cookies } from 'next/headers';
 import { redirect } from 'next/navigation';
+import { COOKIE, checkPassword, cookieOptions, issue } from '@/lib/session';
 
 export const dynamic = 'force-dynamic';
 
-async function sendLink(formData: FormData) {
+async function signIn(formData: FormData) {
   'use server';
-  const email = String(formData.get('email') ?? '').trim().toLowerCase();
-  // Refuse before contacting Supabase, so this cannot be used to probe which
-  // addresses exist or to mail anyone who is not the owner of this console.
-  if (!isAllowed(email)) redirect('/login?error=not_allowed');
+  const secret = process.env.CONSOLE_PASSWORD;
+  const next = String(formData.get('next') ?? '/analytics') || '/analytics';
 
-  const supabase = await authClient();
-  const origin = await siteOrigin();
-  const { error } = await supabase.auth.signInWithOtp({
-    email,
-    options: { emailRedirectTo: `${origin}/auth/callback` },
-  });
-  if (error) redirect(`/login?error=send_failed&why=${encodeURIComponent(error.message)}`);
-  redirect('/login?sent=1');
+  if (!secret) redirect('/login?error=unset');
+  if (!checkPassword(String(formData.get('password') ?? ''), secret)) {
+    redirect('/login?error=wrong');
+  }
+  (await cookies()).set(COOKIE, await issue(secret), cookieOptions);
+  redirect(next.startsWith('/') ? next : '/analytics');
 }
 
 export default async function Login({
   searchParams,
 }: {
-  searchParams: Promise<{ error?: string; sent?: string; denied?: string; why?: string }>;
+  searchParams: Promise<{ error?: string; next?: string }>;
 }) {
   const q = await searchParams;
-  const origin = await siteOrigin();
   const message =
-    q.sent ? 'Check your email. The link signs you in on this device.'
-    : q.denied ? `${q.denied} is signed in but not on the allowlist.`
-    : q.error === 'not_allowed' ? 'That address is not on the allowlist.'
-    : q.error === 'send_failed' ? `Could not send the link. ${q.why ?? ''}`
-    : q.error === 'bad_callback'
-      ? 'That link did not complete sign in. It may have already been used, or expired.'
+    q.error === 'wrong' ? 'That password is not right.'
+    : q.error === 'unset'
+      ? 'CONSOLE_PASSWORD is not set on the server. Add it in Vercel under Settings, Environment Variables, then redeploy.'
       : null;
 
   return (
-    <div className="wrap" style={{ maxWidth: 460, paddingTop: 90 }}>
+    <div className="wrap" style={{ maxWidth: 430, paddingTop: 90 }}>
       <div>
         <h1 style={{ margin: 0, fontSize: 22, letterSpacing: '-0.015em' }}>Outreach Console</h1>
         <div className="mono dim">Telescope Partners</div>
       </div>
       <div className="panel">
-        <form className="guard" action={sendLink}>
-          <label>Email
-            <input type="email" name="email" required placeholder="you@telescopepartners.com" />
+        <form className="guard" action={signIn}>
+          <input type="hidden" name="next" value={q.next ?? '/analytics'} />
+          <label>
+            Password
+            <input type="password" name="password" required autoFocus autoComplete="current-password" />
           </label>
-          <button type="submit">Send link</button>
+          <button type="submit">Sign in</button>
         </form>
       </div>
       {message && <p className="mono dim">{message}</p>}
       <footer>
-        This console holds founder contact details. Access is limited to the allowlist.
-        <br />
-        Sign-in links will return to <span className="dim">{origin}/auth/callback</span> — that
-        exact address must be listed in Supabase under Authentication, URL Configuration,
-        Redirect URLs.
+        This console holds founder contact details, so it is not public. One password, set as
+        CONSOLE_PASSWORD on the server. Changing it signs out every device.
       </footer>
     </div>
   );

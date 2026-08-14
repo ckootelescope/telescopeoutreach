@@ -1,10 +1,5 @@
 import 'server-only';
-import { createServerClient, type CookieOptions } from '@supabase/ssr';
 import { createClient } from '@supabase/supabase-js';
-import { cookies } from 'next/headers';
-
-const URL = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-const ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
 /**
  * Data client. Uses the service role key, so it bypasses row level security and
@@ -16,36 +11,6 @@ const ANON = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
  * discard connections constantly, which exhausts a pooler.
  */
 export const db = () =>
-  createClient(URL, process.env.SUPABASE_SERVICE_ROLE_KEY!, {
+  createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.SUPABASE_SERVICE_ROLE_KEY!, {
     auth: { persistSession: false, autoRefreshToken: false },
   });
-
-/** Auth client. Anon key, reads and writes the session cookie. */
-export async function authClient() {
-  const store = await cookies();
-  return createServerClient(URL, ANON, {
-    cookies: {
-      getAll: () => store.getAll(),
-      setAll: (list: { name: string; value: string; options: CookieOptions }[]) => {
-        try {
-          list.forEach(({ name, value, options }) => store.set(name, value, options));
-        } catch {
-          // called from a Server Component, where cookies are read-only.
-          // Middleware refreshes the session instead.
-        }
-      },
-    },
-  });
-}
-
-export async function currentUser() {
-  const { data } = await (await authClient()).auth.getUser();
-  return data.user ?? null;
-}
-
-export function isAllowed(email?: string | null) {
-  if (!email) return false;
-  const list = (process.env.ALLOWED_EMAILS ?? '')
-    .split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
-  return list.includes(email.toLowerCase());
-}

@@ -6,9 +6,8 @@
  */
 export const REQUIRED = [
   'NEXT_PUBLIC_SUPABASE_URL',
-  'NEXT_PUBLIC_SUPABASE_ANON_KEY',
   'SUPABASE_SERVICE_ROLE_KEY',
-  'ALLOWED_EMAILS',
+  'CONSOLE_PASSWORD',
 ] as const;
 
 /** Which variables are present. Never returns a value, only whether it is set. */
@@ -19,20 +18,7 @@ export function envReport() {
   };
   return {
     ok: REQUIRED.every(present),
-    vars: Object.fromEntries([...REQUIRED, 'NEXT_PUBLIC_SITE_URL'].map((k) => [k, present(k)])),
+    vars: Object.fromEntries(REQUIRED.map((k) => [k, present(k)])),
     missing: REQUIRED.filter((k) => !present(k)),
   };
-}
-
-export function requireEnv(name: (typeof REQUIRED)[number]): string {
-  const v = process.env[name];
-  if (!v || !v.trim()) {
-    throw new Error(
-      `Missing ${name}. Set it in Vercel under Settings -> Environment Variables ` +
-        `for the Production environment, then redeploy. Variables beginning ` +
-        `NEXT_PUBLIC_ are baked in at build time, so adding one without a ` +
-        `redeploy has no effect.`,
-    );
-  }
-  return v;
 }

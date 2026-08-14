@@ -5,27 +5,35 @@ drafts and reconciliation still run from the scripts in the repo root.
 
 ## Setup
 
-1. `cd web && npm install`
-2. Copy `.env.example` to `.env.local` and fill in:
-   - `NEXT_PUBLIC_SUPABASE_ANON_KEY` and `SUPABASE_SERVICE_ROLE_KEY`
-     from Supabase → Project Settings → API
-   - The service role key bypasses row level security. It is server-only and
-     must never be given a `NEXT_PUBLIC_` prefix.
-3. In Supabase → Authentication → Providers, enable **Email** with magic link.
-4. `npm run dev`
+1. Unknown command: "install"
 
+
+Did you mean one of these?
+  npm install # Install a package
+  npm uninstall # Remove a package
+To see a list of supported npm commands, run:
+  npm help
+2. Copy  to  and fill in:
+   -  from Supabase, Project Settings, API
+   - , any password you choose
+   The service role key bypasses row level security. It is server-only and must
+   never be given a  prefix.
+3. 
 ## Deploying to Vercel
 
 - Root directory: `web`
-- Add the same four env vars, plus `NEXT_PUBLIC_SITE_URL` set to the
-  deployed URL so magic links come back to the right host.
-- Add that URL to Supabase → Authentication → URL Configuration → Redirect URLs.
+- Add the three env vars from `.env.example`. Nothing else to configure:
+  no email provider, no redirect allowlist, no callback URL.
 
 ## Access
 
-Every route is behind `middleware.ts`, which requires a Supabase session whose
-email is in `ALLOWED_EMAILS`. The allowlist is checked three times: before a
-magic link is sent, at the auth callback, and on every request.
+One password, , checked in  against a signed
+cookie. No email is sent, so nothing can rate limit you out of your own
+dashboard. Changing the password invalidates every existing session.
+
+ is deliberately reachable without signing in: it reports which
+variables are set, never their values, and you cannot sign in until the
+configuration is right.
 
 ## Where the queries live
 

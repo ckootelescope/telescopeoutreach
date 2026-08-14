@@ -1,50 +1,32 @@
-import { createServerClient, type CookieOptions } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
+import { COOKIE, valid } from '@/lib/session';
 
-// Gate every page behind a session and an allowlist. This runs before any
-// route renders, so an unauthenticated request never reaches a query.
+// Gate every page on a signed session cookie. /login and /api/health stay open:
+// health has to be reachable before you can sign in, or diagnosing a bad
+// configuration would require the very session the configuration prevents.
+const OPEN = ['/login', '/api/health'];
+
 export async function middleware(request: NextRequest) {
-  let response = NextResponse.next({ request });
-
-  const supabase = createServerClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL!,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
-    {
-      cookies: {
-        getAll: () => request.cookies.getAll(),
-        setAll: (list: { name: string; value: string; options: CookieOptions }[]) => {
-          list.forEach(({ name, value }) => request.cookies.set(name, value));
-          response = NextResponse.next({ request });
-          list.forEach(({ name, value, options }) => response.cookies.set(name, value, options));
-        },
-      },
-    },
-  );
-
-  const { data: { user } } = await supabase.auth.getUser();
-  const allowed = (process.env.ALLOWED_EMAILS ?? '')
-    .split(',').map((s) => s.trim().toLowerCase()).filter(Boolean);
-  const ok = !!user?.email && allowed.includes(user.email.toLowerCase());
-
   const path = request.nextUrl.pathname;
-  const isAuthRoute = path.startsWith('/login') || path.startsWith('/auth');
+  const ok = await valid(request.cookies.get(COOKIE)?.value, process.env.CONSOLE_PASSWORD);
 
-  if (!ok && !isAuthRoute) {
+  if (OPEN.some((p) => path.startsWith(p))) {
+    if (ok && path.startsWith('/login')) {
+      const url = request.nextUrl.clone();
+      url.pathname = '/analytics';
+      url.search = '';
+      return NextResponse.redirect(url);
+    }
+    return NextResponse.next();
+  }
+
+  if (!ok) {
     const url = request.nextUrl.clone();
     url.pathname = '/login';
-    url.searchParams.set('next', path);
-    // A signed-in address that is not on the list is a different failure from
-    // being signed out, and the login page says so rather than looping.
-    if (user?.email) url.searchParams.set('denied', user.email);
+    url.search = path === '/' ? '' : `?next=${encodeURIComponent(path)}`;
     return NextResponse.redirect(url);
   }
-  if (ok && isAuthRoute && !path.startsWith('/auth')) {
-    const url = request.nextUrl.clone();
-    url.pathname = '/analytics';
-    url.search = '';
-    return NextResponse.redirect(url);
-  }
-  return response;
+  return NextResponse.next();
 }
 
 export const config = {
