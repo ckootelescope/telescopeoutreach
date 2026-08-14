@@ -5,39 +5,38 @@ drafts and reconciliation still run from the scripts in the repo root.
 
 ## Setup
 
-1. Unknown command: "install"
+1. `cd web && npm install`
+2. Copy `.env.example` to `.env.local` and fill in:
+   - `SUPABASE_SERVICE_ROLE_KEY` from Supabase, Project Settings, API
+   - `CONSOLE_PASSWORD`, any password you choose
 
-
-Did you mean one of these?
-  npm install # Install a package
-  npm uninstall # Remove a package
-To see a list of supported npm commands, run:
-  npm help
-2. Copy  to  and fill in:
-   -  from Supabase, Project Settings, API
-   - , any password you choose
    The service role key bypasses row level security. It is server-only and must
-   never be given a  prefix.
-3. 
+   never be given a `NEXT_PUBLIC_` prefix.
+3. `npm run dev`
+
 ## Deploying to Vercel
 
 - Root directory: `web`
-- Add the three env vars from `.env.example`. Nothing else to configure:
-  no email provider, no redirect allowlist, no callback URL.
+- Add the three variables from `.env.example`. Nothing else to configure: no
+  email provider, no redirect allowlist, no callback URL.
 
 ## Access
 
-One password, , checked in  against a signed
-cookie. No email is sent, so nothing can rate limit you out of your own
-dashboard. Changing the password invalidates every existing session.
+One password, `CONSOLE_PASSWORD`, checked in `middleware.ts` against an
+HMAC-signed cookie that carries its own expiry and is keyed by the password.
+A cookie cannot be forged or extended without it, and changing the password
+signs out every device.
 
- is deliberately reachable without signing in: it reports which
+No email is sent, so nothing can rate limit you out of your own dashboard.
+
+`/api/health` is deliberately reachable without signing in: it reports which
 variables are set, never their values, and you cannot sign in until the
 configuration is right.
 
 ## Where the queries live
 
-In the database, as views and functions, so the app stays a rendering layer:
+In the database, as views and functions, so the app stays a rendering layer
+and the scripts share the same definitions:
 
 | Object | Purpose |
 |---|---|
