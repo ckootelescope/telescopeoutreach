@@ -13002,7 +13002,8 @@
       "body": "<div>Hey Brendan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-16",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-08-16T15:20:00Z"
     },
     {
       "slug": "holly",
