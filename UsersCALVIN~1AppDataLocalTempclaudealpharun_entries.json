@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "alpharun",
+    "company": "Alpharun",
+    "founder": "Henry",
+    "email": "henry@alpharun.com",
+    "domain": "alpharun.com",
+    "threadId": "19e4cda3bc51cc6f",
+    "messageId": "19e4cda3bc51cc6f",
+    "subject": "Alpharun + Telescope",
+    "body": "<div>Hey Henry, been thinking about the Meetingbird to Front journey and how that informs what you're building now. Curious how enterprise buyers are responding to the AI interview approach.</div>",
+    "emailNumber": 2,
+    "sendDate": "2026-05-25",
+    "status": "completed",
+    "processedAt": "2026-05-25T17:58:49.337Z"
+  },
+  {
+    "slug": "alpharun",
+    "company": "Alpharun",
+    "founder": "Henry",
+    "email": "henry@alpharun.com",
+    "domain": "alpharun.com",
+    "threadId": "19e4cda3bc51cc6f",
+    "messageId": "19e4cda3bc51cc6f",
+    "subject": "Alpharun + Telescope",
+    "body": "<div>Henry, following up here. I read the Chapter case study and the numbers are pretty striking. Going from managers reviewing a handful of calls a week to scoring 100% of them against 60+ criteria is a real shift in how coaching works. The fact that 93% of advisors improved within two months suggests the feedback loop is actually tight enough to change behavior.<br><br>I'd be curious how the AI voice agent side is developing relative to the coaching product, and whether customers are coming in for one and expanding to the other.</div>",
+    "emailNumber": 3,
+    "sendDate": "2026-05-28",
+    "status": "completed",
+    "processedAt": "2026-05-31T18:55:58.532Z"
+  },
+  {
+    "slug": "alpharun",
+    "company": "Alpharun",
+    "founder": "Henry",
+    "email": "henry@alpharun.com",
+    "domain": "alpharun.com",
+    "threadId": "19e4cda3bc51cc6f",
+    "messageId": "19e4cda3bc51cc6f",
+    "subject": "Alpharun + Telescope",
+    "body": "<div>Henry,<br><br>I was looking at how Alpharun builds the coaching playbook from your own call data rather than a generic framework, which I think matters a lot in insurance and financial services where the compliance language and objection patterns are highly specific to each carrier and product. Chris has worked with iLife on the insurance side and invested in Fathom, so AI for sales conversations is something we've spent real time on.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
+    "emailNumber": 4,
+    "sendDate": "2026-05-30",
+    "status": "completed",
+    "processedAt": "2026-05-31T18:56:21.343Z"
+  }
+]
