@@ -13413,6 +13413,51 @@
       "sendDate": "2026-08-16",
       "status": "replied",
       "processedAt": "2026-08-17T02:03:16.000Z"
+    },
+    {
+      "slug": "vimes",
+      "company": "Vimes",
+      "founder": "Kevin Zhu",
+      "email": "kevin@vimes.io",
+      "domain": "vimes.io",
+      "threadId": "1a010f19835b58b6",
+      "superhumanThreadId": "1a010f19835b58b6",
+      "messageId": "1a010f19835b58b6",
+      "subject": "Telescope <> Vimes Intro",
+      "body": "<div>Hey Kevin - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
+      "emailNumber": 2,
+      "sendDate": "2026-08-19",
+      "status": "pending"
+    },
+    {
+      "slug": "vimes",
+      "company": "Vimes",
+      "founder": "Kevin Zhu",
+      "email": "kevin@vimes.io",
+      "domain": "vimes.io",
+      "threadId": "1a010f19835b58b6",
+      "superhumanThreadId": "1a010f19835b58b6",
+      "messageId": "1a010f19835b58b6",
+      "subject": "Telescope <> Vimes Intro",
+      "body": "<div>Hey Kevin - following up - how have you been thinking about your next raise? I really like what you're building at Vimes and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
+      "emailNumber": 3,
+      "sendDate": "2026-08-24",
+      "status": "pending"
+    },
+    {
+      "slug": "vimes",
+      "company": "Vimes",
+      "founder": "Kevin Zhu",
+      "email": "kevin@vimes.io",
+      "domain": "vimes.io",
+      "threadId": "1a010f19835b58b6",
+      "superhumanThreadId": "1a010f19835b58b6",
+      "messageId": "1a010f19835b58b6",
+      "subject": "Telescope <> Vimes Intro",
+      "body": "<div>Hey Kevin - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think the thing that compounds here is the case record itself. When police, CPS, a school, and an advocacy center all touch the same child, each one only ever sees its own file, so the full timeline doesn't exist anywhere today outside of Vimes. That is a hard thing for anyone else to go back and recreate. The other piece I keep coming back to is the endorsement from the Georgia Association of Chiefs of Police, because landing the first reference in a state is usually the hardest part of selling to public agencies, and that is exactly the kind of motion we can help you repeat in new states.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
+      "emailNumber": 4,
+      "sendDate": "2026-08-29",
+      "status": "pending"
     }
   ]
 }
