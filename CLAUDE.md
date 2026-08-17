@@ -98,6 +98,14 @@ c) **Affinity search_companies** with company name, with_interaction_dates: true
    - Prior history (>90 days) → check WHO was contacted at the person level
 d) **Apollo apollo_people_match** for founder email + LinkedIn if Harmonic doesn't have them
 e) Multiple founders → default to CEO. Ambiguous → return all names so main context can ask Calvin.
+f) **Granola sweep on the market** (see "Market Pattern Insights"). Query Expert Calls and
+   Company Calls by market, not company name. Return 2-3 patterns, already generalized: the
+   third party stripped, no numbers, no attribution. Return an empty array if the market is not
+   covered rather than reaching for a weak match.
+
+Founder LinkedIn post content is not fetchable. Do not spend calls on it. Company blogs,
+changelogs, engineering posts, docs and podcast pages are all fetchable and are the best public
+source; read the blog if one exists.
 
 **CRITICAL: Always verify what the company actually does by reading their website. Do NOT rely on Harmonic descriptions alone.**
 
@@ -118,7 +126,17 @@ affinity_spoken: [yes/no — has someone on the Telescope team actually HAD A CO
 funding_stage: [last known round + amount, if public. If unknown, leave blank.]
 trigger: [specific recent event like partnership, funding announcement, expansion. If none, leave blank.]
 headcount: [approximate, if known]
+market: [the market to sweep Granola on, e.g. "industrial distribution", "application security"]
+market_patterns:
+  - pattern: [how companies in this market get bought, adopted or expanded. Generalized.]
+    failure_mode: [the contrast. "The ones that stall..."]
+  - [2-3 total. Empty if the market is not covered in Calvin's calls.]
+research_grade: [A = a usable market pattern plus a primary source read. B = one of the two.
+                 C = neither, only Harmonic deltas. Do NOT draft on a C; surface it to Calvin.]
 ```
+
+`trigger` and `headcount` are context for Calvin, **not** material for the email. Never lead
+Block 2 with either.
 
 **The subagent MUST NOT return:** founder's career history, prior companies, prior exits, education (unless shared school with Calvin), LinkedIn summary, job titles at previous companies, quotes from press, website copy, technical product descriptions.
 
@@ -136,24 +154,56 @@ The greeting can be personalized. If someone on the team has SPOKEN to the compa
 
 #### Block 2: Insight (VARIABLE — the creative part)
 
-A personalized thematic lead-in + 2-3 sentences with a thesis-level insight about the company.
+This is the only variable block. Blocks 1 and 3 are fixed; all content goes here.
 
-**Lead-in examples (vary per company, be creative):**
-- "We're thematic investors and [space] is one we've been spending a ton of time in."
-- "I've been spending a lot of time in [industry] and [Company] keeps coming up."
-- "I like your approach to [specific thing]."
+**Build it in four moves.** This structure also drives Round 1 Email 4 paragraph 2 and Round 2
+Emails 2 and 3. See "Market Pattern Insights" below for the sourcing and the hard rules.
 
-**Then the insight itself.** This is NOT a description of what the company does or a restatement of their website. This IS a developed perspective on where the company's vision could go, a structural insight about the problem, or a thesis about why this approach could become something bigger.
+1. **Earned position.** "We've been spending a lot of time in [market]" — establishes you have
+   a view without proving anything.
+2. **The pattern.** What you have observed about how companies in this market actually get
+   bought, adopted, or expanded. A pattern, not a fact.
+3. **The failure mode.** The contrast. "The ones that stall..." This is the hook, because it
+   implies knowledge you have not fully shared.
+4. **The company tie-in.** "I think [Company] is interesting though because [the specific thing
+   they do], and [why that puts them on the right side of the pattern]."
 
-**Example (FlowGen):** "We're thematic investors and have been spending a ton of time finding companies who are building for the enterprise. I read your latest blog post on the website and was impressed with the idea of treating the model as untrusted and making incorrect actions structurally impossible. It feels like a critical architecture for moving agents from recommendations to safe execution and one that speaks to the quality of the team behind it."
+Move 4 is not optional. A pattern with no tie-in reads as a generic market take and is the most
+common failure of this block. Naming what the company **does** is correct and expected. What is
+banned is leading with their metrics, funding, headcount, traffic, or a press quote.
 
-The insight should show you've thought deeply about the problem. Think: what's the natural evolution? What's structurally interesting? What's the unlock the founder is probably thinking about?
+**Example (Pensar):** "We've been spending a lot of time in security testing and the pattern we
+keep seeing is that the products that land run alongside the incumbent scanners, while the ones
+that stall need a new budget line to exist before they can prove anything. I think Pensar is
+interesting though because selling a verified fix rather than another report means you can come
+out of the pentest budget that's already approved, which is usually the path of least resistance
+into a security team."
 
-#### Block 3: Close (SEMI-FIXED)
+**Example (Vimes):** "We've been spending a lot of time in public safety software and the pattern
+we keep seeing is that a compliance requirement gets you in the door, but the account only gets
+big when the same system starts carrying the operational work around it. The ones that stall treat
+the mandate as the whole product. I think Vimes is interesting though because routing a case
+between police, CPS, schools and an advocacy center means you end up holding the one timeline none
+of those agencies can see on their own, and that's the part that's hard to displace later."
 
-> I'd love to chat even if you aren't raising immediately and see how we can help out. LMK your thoughts!
+**If no market pattern is available** (see the coverage note below), fall back to a thesis-level
+structural insight about the company drawn from the matched investment theme. Do not invent a
+pattern, and do not fabricate having spent time in a market.
 
-Can reference timing ("know you just raised, but would be good to see if there could be a fit ahead of the next round") or other context.
+#### Block 3: Close (FIXED, updated 2026-08-17)
+
+> I'd love to chat to see where Telescope can be helpful even if you're not raising now. LMK if you're free in the next couple of weeks or if another time works better. Here's my Calendly link if helpful!
+
+The word **Calendly** is hyperlinked to `https://calendly.com/calvin-telescopepartners/30min`. In HTML:
+
+```html
+<div>I'd love to chat to see where Telescope can be helpful even if you're not raising now. LMK if you're free in the next couple of weeks or if another time works better. Here's my <a href="https://calendly.com/calvin-telescopepartners/30min">Calendly</a> link if helpful!</div>
+```
+
+Do not reword this block. The older close ("I'd love to chat even if you aren't raising immediately
+and see how we can help out. LMK your thoughts!") is retired. It may still reference timing
+("know you just raised, but would be good to see if there could be a fit ahead of the next round")
+as an added sentence, but the close itself stays as written.
 
 #### Rules
 
@@ -162,7 +212,66 @@ Can reference timing ("know you just raised, but would be good to see if there c
 - NO em dashes (-- or —). Use commas or periods.
 - NO jargon or website language
 - NO AI-sounding phrases ("the fact that...", "is especially compelling", "gives you a strong foundation", "says a lot about the team")
+- NO quoted facts or metrics as the hook. No "you grew from 7 to 11 people", no "2.3M price
+  recommendations", no "congrats on the $4M". Specificity of that kind is what makes an email
+  read as machine-written. The specificity should be in the *pattern* and in *what the company
+  does*, never in numbers scraped off a page.
 - Subject line: "Telescope <> [Company] Intro" (or reference a trigger like "congrats on the raise | Telescope intro")
+
+### Market Pattern Insights
+
+Where the middle-block content comes from. **This applies to exactly four slots:**
+
+| Engine | Slot |
+|---|---|
+| Round 1 | Email 1, Block 2 |
+| Round 1 | Email 4, paragraph 2 (weighted to the GTM pattern) |
+| Round 2 | Email 2 |
+| Round 2 | Email 3 |
+
+Round 1 Emails 2 and 3 stay fixed templates. Round 2 Email 1 keeps its theme-matched thesis and
+Round 2 Email 4 stays fixed. Do not apply this to those.
+
+#### Sourcing: sweep Granola, matched on market
+
+Calvin's own calls are the best source and are better than web research, because they contain
+customer behavior and GTM learnings that are not published anywhere. Two folders matter:
+**Expert Calls** and **Company Calls**.
+
+```
+mcp__claude_ai_Granola__list_meeting_folders          -- folder IDs
+mcp__claude_ai_Granola__query_granola_meetings        -- natural-language sweep
+```
+
+Query on the **market, not the company name.** The target has almost certainly never been
+discussed; the value is in what adjacent calls taught us. Ask for how companies in that market
+land deployments, what makes adoption stick or stall, how accounts expand, and what buyers do
+before they commit. `mcp__claude_ai_Fathom__search_meetings` and Affinity
+`get_notes_for_entity` → `get_transcript_fragments` are secondary sources for the same thing.
+
+#### Confidentiality: this is the part to get right
+
+These are private calls, often with companies that compete with the target. **Generalize to a
+pattern and strip the source at write time, not at draft time.**
+
+- NEVER name or characterize another company from the notes.
+- NEVER carry over another company's numbers: ACV, pricing, headcount, conversion rates,
+  customer names.
+- NEVER attribute ("a founder told us", "an expert we spoke with said"). State it as Calvin's
+  own market view, which it truthfully is.
+- The claim "we've been spending a lot of time in [market]" must be **true**. It is, when the
+  sweep returned real calls in that market. It is not, when the sweep came back empty.
+
+#### Coverage is uneven, and that is fine
+
+Deep today: manufacturing, industrial distribution, procurement, application security,
+enterprise workflow automation and AI agents. Thin or absent: aviation, govtech, wealth
+management, insurance, travel and tours.
+
+When the sweep returns nothing usable for a market, say so and fall back to the theme-based
+insight. Grade the dossier and **refuse to draft on a C**; surface it to Calvin instead of
+shipping something thin. Inventing a pattern, or claiming time in a market Calvin has not spent
+time in, is worse than a plain thematic email.
 
 ### Step 3: Send to Superhuman Drafts
 
@@ -247,10 +356,23 @@ Four paragraphs. Paragraphs 1, 3, and 4 are fixed. Paragraph 2 is a NEW insight 
 **Paragraph 1 (fixed):**
 > Hey [First Name] - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.
 
-**Paragraph 2 (variable — new insight + Telescope value-add):**
-A separate insight about the company that was NOT in Email 1, plus how specifically Telescope can help. This should connect the company's opportunity to Telescope's pattern of helping companies scale.
+**Paragraph 2 (variable — a GTM pattern + Telescope value-add):**
 
-Example (Grantd): "I think Grantd is solving a clear pain point for RIAs by helping them deliver scalable equity compensation advice to clients with growing exposure to RSUs and equity grants. Over time, the data and workflow layer could also support a broader enterprise platform for helping employees manage their equity."
+Use the four-move structure from Block 2, but **weighted to the GTM pattern** rather than to the
+product: how companies in this market land, convert pilots, expand accounts, or stall. It must be
+a different pattern from the one used in Email 1, since paragraph 3 already carries the
+Telescope-can-help line. Same sourcing and confidentiality rules as "Market Pattern Insights".
+
+Example (GTM-weighted): "We've been spending a lot of time in industrial distribution and the
+thing that decides these deals is almost never the demo, it's whether a buyer can watch it run on
+their own RFQs first. The teams that lead with a polished demo tend to stall in evaluation. I
+think you're set up well for that because the quoting workflow is easy to prove on a customer's
+own inbox before anyone has to commit to anything."
+
+Older example, kept for tone reference only (predates the pattern structure): "I think Grantd is
+solving a clear pain point for RIAs by helping them deliver scalable equity compensation advice to
+clients with growing exposure to RSUs and equity grants. Over time, the data and workflow layer
+could also support a broader enterprise platform for helping employees manage their equity."
 
 **Paragraph 3 (fixed):**
 > This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.

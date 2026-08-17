@@ -63,6 +63,13 @@ b) Web-searches the company for news in the last 90 days
 c) Harmonic `get_companies` by domain for funding, headcount trend, and highlights
 d) Reads `investment-themes.md` and matches the company to **one primary theme** (and at most
    one secondary). It returns the theme *number*, not the theme text.
+e) **Sweeps Granola on the market**, not the company name. `list_meeting_folders`, then
+   `query_granola_meetings` across **Expert Calls** and **Company Calls**: how companies in this
+   market land deployments, what makes adoption stick or stall, how accounts expand, what buyers
+   do before committing. Returns 2-3 patterns already generalized. See "Market Pattern Insights"
+   in `CLAUDE.md` for the confidentiality rules, which are not optional: no third-party names,
+   no third-party numbers, no attribution. Returns an empty array when the market is not covered
+   rather than reaching for a weak match.
 
 Note: founder LinkedIn post content is not reliably fetchable. Do not spend calls on it. If
 Calvin pasted notable posts when curating, use those.
@@ -79,6 +86,9 @@ Write the result to `research/<slug>.json`:
   "theme_fit_rationale": "1-2 sentences",
   "workflow_artifacts": ["documents, data types, systems or transaction categories this workflow runs on"],
   "recent_signals": [{"date": "", "type": "blog|news|funding|hiring|product", "summary": "one line", "url": ""}],
+  "market": "the market to sweep Granola on, e.g. industrial distribution",
+  "market_patterns": [{"pattern": "generalized, no names, no numbers", "failure_mode": "the contrast"}],
+  "research_grade": "A | B | C",
   "funding": "last round and amount if public, else null",
   "headcount": "current, and trend if known",
   "prior_insights": ["Round 1 bodies, verbatim, for the do-not-repeat check"],
@@ -209,16 +219,34 @@ An entry with `round: 2` and `needsDraft: true` has no body yet. Load
 `research/<slug>.json` and draft from the cache. **Do not re-research** — the dossier is at most
 10 days old by Email 3.
 
-Both emails are short. Round 1's follow-ups run 250-310 characters; stay in that range. These
-are bumps inside a live thread, not fresh pitches.
+Both carry a **market pattern insight** built on the four moves in `CLAUDE.md` Block 2: earned
+position, the pattern, the failure mode, then the company tie-in. Move 4 is not optional. A
+pattern with no tie-in reads as a generic market take.
 
-**Email 2 (+2), 2-3 sentences.** A brief bump, then one *new* angle on the matched theme that
-was not in Email 1 — a specific use case from the theme's use-case list, or a second-order
-implication. Close with a light CTA.
+**Length: 280-480 characters** (widened 2026-08-17 from 250-310, which could not fit the four
+moves alongside the CTA). Still short. These are bumps inside a live thread, not fresh pitches.
 
-**Email 3 (+5), 3-4 sentences.** Lead with a concrete item from `recent_signals` (a new blog
-post, launch, hire, or raise), connect it to the theme, then ask directly how they are thinking
+**Email 2 (+2).** Brief bump, then a pattern that was not in Email 1, tied into what the company
+does. Close with a light CTA.
+
+**Email 3 (+5).** A second, different pattern, tied in, then ask directly how they are thinking
 about their next raise.
+
+**Do NOT lead either one with a fact scraped off a page.** No headcount change, no traffic
+delta, no funding event, no "saw the TechCrunch writeup", no customer count. Those read as
+proof-of-homework and are the single biggest tell that an email was machine-written.
+`recent_signals` is context for choosing which pattern is relevant; it is not the hook.
+
+If `market_patterns` is empty (`research_grade: C`), do not invent one and do not claim time in
+a market Calvin has not spent time in. Fall back to a theme-based angle and tell Calvin the
+market was not covered.
+
+Example (Trace, Email 3): "Hey Tim - we've been spending a lot of time in workflow automation and
+keep seeing that adoption sticks when the product ends up owning the source of truth, while the
+ones that stall are the tools people like but still shadow with a spreadsheet. I think Trace is
+interesting though because holding the state across the agent-to-human handoff is what would make
+you the record of how the process actually ran, not a layer sitting on top of it. How are you
+thinking about your next raise?"
 
 **Do-not-repeat input for both:** `prior_insights`, plus `round2.email1_body_sent`, plus (for
 Email 3) the Email 2 body once written. Store each generated body back onto its
