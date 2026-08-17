@@ -1,6 +1,10 @@
 -- Analytics layer for the outreach console.
 -- Everything the Next.js app reads goes through a view, so query logic lives in
 -- the database and the app stays a rendering layer.
+--
+-- Dates and weeks are Pacific via pt() / pt_today() from db/timezone.sql, which
+-- must be applied first. The connection runs in UTC, so a bare current_date or
+-- date_trunc would mis-date every send Calvin makes after 5pm.
 
 begin;
 
@@ -98,7 +102,7 @@ create or replace view an_send_hour as
 -- Calvin's definition: a company is net new the week HIS first email to it went
 -- out. Restarts are not net new, so only round 1 counts.
 create or replace view an_net_new_weekly as
-  select date_trunc('week', first_sent)::date week,
+  select date_trunc('week', pt(first_sent))::date week,
          count(*) net_new,
          count(replied_at) replied,
          round(100.0 * count(replied_at) / nullif(count(*),0), 1) pct
@@ -123,7 +127,7 @@ create or replace view an_trust as
     (select count(*) from step s join sequence q on q.id = s.sequence_id
       where q.status = 'active' and s.status = 'drafted') drafted_never_sent,
     (select count(*) from step s join sequence q on q.id = s.sequence_id
-      where q.status = 'active' and s.status = 'planned' and s.due_date < current_date) overdue,
+      where q.status = 'active' and s.status = 'planned' and s.due_date < pt_today()) overdue,
     (select count(*) from sequence q where q.status = 'active'
        and (select count(*) from step s where s.sequence_id = q.id) <> 4) incomplete_cadence,
     (select count(*) from (

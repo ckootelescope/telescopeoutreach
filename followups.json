@@ -10014,9 +10014,9 @@
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-08-10",
-      "status": "completed",
+      "status": "cancelled",
       "body": "<div>Hey James - bumping this once more. Headcount roughly doubling over the past year is a good sign the product is landing on the floor, not just in demos. How are you thinking about your next raise? Would love to get to know you before that process starts.</div>",
-      "processedAt": "2026-08-10T18:00:00Z"
+      "processedAt": "2026-08-17T03:30:00Z"
     },
     {
       "slug": "complement",

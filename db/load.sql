@@ -9,7 +9,7 @@ language sql stable as $$
          count(*) filter (where q.kind = 'restart')::int
     from step s join sequence q on q.id = s.sequence_id
    where q.status = 'active' and s.status in ('planned','drafted')
-     and s.due_date > current_date and s.due_date <= current_date + p_days
+     and s.due_date > pt_today() and s.due_date <= pt_today() + p_days
    group by s.due_date order by s.due_date;
 $$;
 commit;

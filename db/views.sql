@@ -12,7 +12,7 @@ select s.id sequence_id, c.name company, ct.name founder, ct.email,
   join contact ct on ct.id = q.contact_id
  where s.status = 'planned'
    and q.status = 'active'
-   and s.due_date <= current_date
+   and s.due_date <= pt_today()
  order by s.due_date, c.name;
 
 -- which cadences wrap up when
@@ -30,7 +30,7 @@ having count(*) filter (where s.status = 'planned') > 0
 
 -- net new vs restart, by week, counted off what actually SENT
 create or replace view v_weekly as
-select date_trunc('week', s.sent_at)::date as week_of,
+select date_trunc('week', pt(s.sent_at))::date as week_of,
        count(*) filter (where q.kind = 'first')   as net_new,
        count(*) filter (where q.kind = 'restart') as restarts
   from step s
@@ -57,7 +57,7 @@ having max(e.sent_at) filter (where e.direction = 'in') is not null
 create or replace view v_broken_state as
   -- opener sent, no cadence attached
   select 'sent_no_cadence' as issue, c.name as company, s.due_date as ref_date,
-         'opener sent ' || s.sent_at::date || ', sequence still ' || q.status as detail
+         'opener sent ' || pt(s.sent_at)::date || ', sequence still ' || q.status as detail
     from sequence q
     join company c on c.id = q.company_id
     join step    s on s.sequence_id = q.id and s.step_no = 1
@@ -75,13 +75,13 @@ union all
 union all
   -- drafted but never actually sent, and the next step already passed
   select 'drafted_not_sent', c.name, s.due_date,
-         'step ' || s.step_no || ' drafted ' || s.drafted_at::date || ', never sent'
+         'step ' || s.step_no || ' drafted ' || pt(s.drafted_at)::date || ', never sent'
     from step s
     join sequence q on q.id = s.sequence_id
     join company  c on c.id = q.company_id
    where s.drafted_at is not null
      and s.sent_at is null
-     and s.due_date < current_date - 2
+     and s.due_date < pt_today() - 2
 union all
   -- company we emailed that has no company record cadence at all
   select 'no_prior_check', c.name, null::date,
