@@ -1,5 +1,49 @@
 # Telescope Outreach System
 
+## Where The Tracker Lives
+
+**"The tracker" means the Supabase Postgres database and the Vercel console built on it.**
+When Calvin says "update the tracker", that is what he means. It is the system of record.
+
+- Connection string: `SUPABASE_DB_URL` in `.env`. Check it with `node scripts/db.js`.
+- Schema: `db/schema.sql`. Tables are `company`, `company_domain`, `contact`, `sequence`,
+  `step`, `email_event`, `prior_check`. Reporting views are `dash_*`, `an_*`, and `v_*`
+  (defined in `db/views.sql`, `db/dashboard.sql`, `db/analytics.sql`).
+- Console: Next.js app in `web/`, deployed on Vercel with root directory `web`. Read-only.
+  Its queries live in the database as views, so the app stays a rendering layer.
+- Dates are stored at 07:00Z, which is midnight Pacific. Measure "today" in Pacific.
+
+`followups.json` is **not** the tracker. It is a secondary mirror that the scheduled
+routine reads from the remote copy. The scripts below write Supabase and `followups.json`
+together so the two cannot drift. Always push `followups.json` after a script changes it.
+
+The Google Apps Script sheet (`analytics/Code.gs`, the `script.google.com/macros/...` exec
+URL) is **dead** and superseded by Supabase. Its endpoint returns "Page Not Found". Do not
+try to log there.
+
+### Never hand-write SQL for routine work
+
+Use the repo's scripts. Every one is report-only by default and takes `--apply`. Run the
+report first, read it, then apply.
+
+| Task | Command |
+|---|---|
+| Connectivity + table list | `node scripts/db.js` |
+| Mark steps sent (reconciled from Gmail) | `node scripts/mark_sent.js [--apply]` |
+| Record replies, stop cadences for repliers | `node scripts/sync_replies.js [--apply]` |
+| Open a Round 1 cadence whose opener already went out | `node scripts/new_cadence.js <file.json> [--apply]` |
+| Kill every live cadence for a company | `node scripts/cancel_sequence.js <domain> "<reason>" [--apply]` |
+| Record a Round 2 restart | `node scripts/restart_cadence.js` |
+| Sweep observed mail into `email_event` | `node scripts/mail_sweep.js` |
+
+`mark_sent.js` decides "sent" from the mailbox, not from whether a draft was created, so a
+step Calvin sent by hand still reconciles. `sync_replies.js` correctly ignores
+out-of-office auto-replies; do not treat an OOO bounce as a reply.
+
+Scripts under `scripts/` that talk to the Google Sheet or the Gmail draft API
+(`log_sent_and_recreate_drafts.js`, `delete_drafts.js`, `log_tracker.js`, `sheet_io.js`,
+`read_tracker.js`) are legacy from the pre-Supabase system. Do not use them.
+
 ## Two Engines: Route First
 
 There are two separate sequences. **Never guess which one applies from the wording of the
@@ -134,14 +178,43 @@ Tell Calvin: "Draft created for [Founder] at [Company]. Review in Superhuman and
 
 ### Step 4: After Calvin Says He Sent It
 
-a) Search Superhuman for the sent thread: `list_threads(from: ["calvin@telescopepartners.com"], to: [founder_email], subject_contains: subject_line)` — extract the Superhuman `thread_id`
-b) Also search Gmail: "from:me to:{founder_email} newer_than:7d" — extract Gmail thread ID and message ID
-c) Draft Email 2, Email 3, and Email 4 content (follow-up templates below)
-d) Calculate dates: Email 2 = send date + 2 days, Email 3 = send date + 7 days, Email 4 = send date + 12 days
-e) Add entries to `followups.json` with status "pending", including both `threadId` (Gmail) and `superhumanThreadId` (Superhuman) fields
-f) Git add, commit, and push `followups.json` to remote — the scheduler reads from the remote copy
-g) Create LinkedIn calendar reminder (Step 5)
-h) Tell Calvin: "Follow-ups scheduled. Email 2 on [date], Email 3 on [date], Email 4 on [date]."
+Do NOT hand-write the cadence. `scripts/new_cadence.js` creates company, contact, sequence,
+all four steps, the `prior_check` row, and the outbound `email_event` in one transaction,
+and writes `followups.json` too.
+
+a) Find the sent thread. Gmail: `search_threads("from:me in:sent newer_than:2d to:{founder_email}")`
+   for the thread ID and message ID. Superhuman uses the same thread ID on these threads.
+b) Write an input file (e.g. `_new.json`) as an array of objects:
+
+```json
+[{
+  "company": "Acme",
+  "domain": "acme.com",
+  "alt_domain": "getacme.com",
+  "founder": "Jane Doe",
+  "email": "jane@acme.com",
+  "linkedin": "https://www.linkedin.com/in/janedoe",
+  "sent_on": "2026-08-17",
+  "sent_at": "2026-08-17T18:17:44Z",
+  "thread_id": "1a010f19835b58b6",
+  "message_id": "1a010f19835b58b6",
+  "prior_check": "no prior Telescope interaction on record",
+  "opener_html": "<div>the Email 1 that actually went out</div>",
+  "p2": "the Email 4 paragraph-2 insight (see Email 4 below)"
+}]
+```
+
+   `alt_domain` and `subject_override` are optional. Subject defaults to
+   `Telescope <> [Company] Intro`. Emails 2 and 3 are generated from the fixed templates;
+   only `p2` needs writing. Store the real opener in `opener_html` so "what did we actually
+   say" never requires a mailbox dig.
+c) `node scripts/new_cadence.js _new.json` to report, read it, then `--apply`.
+   Dates come out as Day 0/+2/+7/+12 automatically. The script refuses a company that
+   already has a live sequence, and a database trigger refuses to open a sequence against
+   anyone who has ever written back.
+d) Git add, commit, and push `followups.json` — the scheduler reads the remote copy.
+e) Create LinkedIn calendar reminder (Step 5)
+f) Tell Calvin: "Cadence opened. Email 2 on [date], Email 3 on [date], Email 4 on [date]."
 
 ### Step 5: LinkedIn Integration
 
@@ -206,10 +279,34 @@ paragraph is a theme-matched thesis rather than a company-specific observation.
 
 ## Follow-up Processing
 
-1. **Manual:** Calvin runs `/process-followups` — processes due entries from `followups.json`, creates Superhuman reply drafts, detects replies/bounces, updates statuses, pushes to GitHub
+1. **Manual:** Calvin runs `/process-followups`
 2. **Scheduled:** A Claude Code routine runs daily (~8am PT) with the same logic
 
+Both work off Supabase. What is due comes from the `v_due` view, not from scanning
+`followups.json`. See `.claude/commands/process-followups.md`.
+
+The scheduled run and a manual run can collide. If a `git push` is rejected, do not force.
+Fetch, diff your `followups.json` against `origin/main` semantically (compare entries by
+slug + email number + send date), keep the superset, then commit and push.
+
+### Reading state
+
+```sql
+select * from v_due;               -- steps due now
+select * from dash_work_queue;     -- what needs a human
+select * from v_awaiting_reply;    -- sent, no reply yet
+select * from dash_broken_state;   -- sequences in an impossible state
+select * from an_net_new_weekly;   -- the console's "Net new this week" tile
+```
+
+Weekly figures (`v_weekly`, `dash_weekly`, `an_net_new_weekly`) are **views computed from
+the data**. A new week needs no manual rollover. If the current week looks empty or stale on
+the console, the cause is that the week's sends and replies have not been recorded yet, so
+run `mark_sent.js` and `sync_replies.js` rather than editing anything.
+
 ### followups.json entry format
+
+The scripts maintain this; you should rarely write it by hand.
 
 ```json
 {
@@ -229,11 +326,17 @@ paragraph is a theme-matched thesis rather than a company-specific observation.
 }
 ```
 
-When adding new entries, ALWAYS push `followups.json` to remote immediately after.
+ALWAYS push `followups.json` to remote immediately after a script changes it.
 
 ## Cancel Outreach
 
-Set all pending entries for that slug in `followups.json` to `status: "cancelled"`, then commit and push.
+```
+node scripts/cancel_sequence.js <domain> "<reason>" [--status=passed] [--apply]
+```
+
+This cancels the open steps in Supabase and the matching `followups.json` entries together,
+so the scheduler cannot resurrect a sequence the database thinks is dead. Then push
+`followups.json`.
 
 ## Guardrails
 
