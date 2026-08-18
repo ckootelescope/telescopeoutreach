@@ -13,7 +13,7 @@ export async function middleware(request: NextRequest) {
   if (OPEN.some((p) => path.startsWith(p))) {
     if (ok && path.startsWith('/login')) {
       const url = request.nextUrl.clone();
-      url.pathname = '/analytics';
+      url.pathname = '/week';
       url.search = '';
       return NextResponse.redirect(url);
     }

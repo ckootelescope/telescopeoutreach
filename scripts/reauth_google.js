@@ -16,6 +16,10 @@ const REDIRECT = `http://localhost:${PORT}/oauth2callback`;
 const SCOPES = [
   'https://www.googleapis.com/auth/gmail.readonly',
   'https://www.googleapis.com/auth/spreadsheets',
+  // Weekly OS: read the calendar to plan around, write to-dos as Tasks so they
+  // stay filterable apart from real meetings in Google Calendar.
+  'https://www.googleapis.com/auth/calendar.readonly',
+  'https://www.googleapis.com/auth/tasks',
 ].join(' ');
 
 function readEnv() {

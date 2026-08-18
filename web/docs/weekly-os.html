@@ -1,0 +1,651 @@
+<title>Weekly Operating System</title>
+<style>
+  :root {
+    --paper:      #F5F7F8;
+    --surface:    #FFFFFF;
+    --surface-2:  #EDF1F3;
+    --ink:        #12171D;
+    --body:       #2C343D;
+    --dim:        #616C79;
+    --faint:      #8B95A0;
+    --rule:       #D7DEE3;
+    --rule-soft:  #E6EBEF;
+    --accent:     #1B6C68;
+    --accent-ink: #0E4B48;
+    --flag:       #9A5B14;
+    --s-dil:      #1B6C68;
+    --s-src:      #2A6094;
+    --s-inv:      #6A4A93;
+    --s-mkt:      #2E7350;
+    --s-lrn:      #A8791B;
+    --display: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    --serif: "Iowan Old Style", "Charter", Georgia, "Times New Roman", serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:      #0E1216;
+      --surface:    #161C22;
+      --surface-2:  #1D242B;
+      --ink:        #EDF1F4;
+      --body:       #C3CCD5;
+      --dim:        #8C97A3;
+      --faint:      #6B757F;
+      --rule:       #2A333C;
+      --rule-soft:  #212930;
+      --accent:     #52A9A3;
+      --accent-ink: #8FCDC8;
+      --flag:       #D49A4E;
+      --s-dil:      #52A9A3;
+      --s-src:      #6C9FD0;
+      --s-inv:      #A88BD0;
+      --s-mkt:      #63AF83;
+      --s-lrn:      #D7AC55;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:      #0E1216;
+    --surface:    #161C22;
+    --surface-2:  #1D242B;
+    --ink:        #EDF1F4;
+    --body:       #C3CCD5;
+    --dim:        #8C97A3;
+    --faint:      #6B757F;
+    --rule:       #2A333C;
+    --rule-soft:  #212930;
+    --accent:     #52A9A3;
+    --accent-ink: #8FCDC8;
+    --flag:       #D49A4E;
+    --s-dil:      #52A9A3;
+    --s-src:      #6C9FD0;
+    --s-inv:      #A88BD0;
+    --s-mkt:      #63AF83;
+    --s-lrn:      #D7AC55;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--body);
+    font-family: var(--serif);
+    font-size: 17px;
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 56px 28px 96px; }
+  .col { max-width: 66ch; }
+
+  h1, h2, h3, .eyebrow, .label, th, .ui { font-family: var(--display); }
+  h1 {
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.08;
+    letter-spacing: -0.022em;
+    font-weight: 640;
+    color: var(--ink);
+    margin: 0 0 14px;
+    text-wrap: balance;
+  }
+  h2 {
+    font-size: 22px;
+    letter-spacing: -0.012em;
+    font-weight: 620;
+    color: var(--ink);
+    margin: 0 0 4px;
+    text-wrap: balance;
+  }
+  h3 {
+    font-size: 15.5px;
+    letter-spacing: -0.004em;
+    font-weight: 620;
+    color: var(--ink);
+    margin: 0 0 6px;
+  }
+  p { margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+  a { color: var(--accent-ink); }
+  strong { color: var(--ink); font-weight: 600; }
+  code, .mono { font-family: var(--mono); font-size: 0.855em; }
+  code {
+    background: var(--surface-2);
+    border: 1px solid var(--rule-soft);
+    border-radius: 3px;
+    padding: 0.08em 0.34em;
+    color: var(--ink);
+  }
+
+  .eyebrow {
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.13em;
+    font-weight: 640;
+    color: var(--accent);
+    margin: 0 0 12px;
+  }
+  .lede { font-size: 19px; }
+  .lede em { color: var(--ink); }
+
+  section { margin-top: 54px; }
+  .shead {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    border-top: 1px solid var(--rule);
+    padding-top: 14px;
+    margin-bottom: 20px;
+  }
+  .shead .n {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--dim);
+    letter-spacing: 0.04em;
+    flex: none;
+    padding-top: 4px;
+  }
+  .shead .sub { font-size: 14.5px; color: var(--dim); margin: 2px 0 0; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 18px 20px;
+  }
+  .stack { display: flex; flex-direction: column; gap: 16px; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(268px, 1fr)); gap: 14px; }
+
+  .quote {
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: var(--dim);
+    border-left: 2.5px solid var(--rule);
+    padding-left: 18px;
+    font-style: italic;
+  }
+  .quote mark {
+    background: none;
+    color: var(--ink);
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  /* stream key */
+  .key { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 16px; font-family: var(--display); font-size: 12.5px; }
+  .key span { display: inline-flex; align-items: center; gap: 7px; color: var(--dim); }
+  .key i { width: 10px; height: 10px; border-radius: 2px; background: currentColor; flex: none; }
+  .k1 { color: var(--s-dil); } .k2 { color: var(--s-src); } .k3 { color: var(--s-inv); }
+  .k4 { color: var(--s-mkt); } .k5 { color: var(--s-lrn); } .k0 { color: var(--faint); }
+  .key span b { color: var(--body); font-weight: 500; }
+
+  .scroller { overflow-x: auto; border: 1px solid var(--rule); border-radius: 4px; background: var(--surface); }
+
+  /* week grid */
+  table.week { border-collapse: collapse; width: 100%; min-width: 1020px; font-family: var(--display); }
+  table.week th, table.week td {
+    border-bottom: 1px solid var(--rule-soft);
+    border-right: 1px solid var(--rule-soft);
+    padding: 11px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.week th {
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: var(--dim);
+    font-weight: 640;
+    background: var(--surface-2);
+    white-space: nowrap;
+  }
+  table.week th em { font-style: normal; color: var(--faint); font-weight: 500; letter-spacing: 0.04em; }
+  table.week td:last-child, table.week th:last-child { border-right: none; }
+  table.week tr:last-child td { border-bottom: none; }
+  table.week th.wk, table.week td.wk { background: var(--surface-2); }
+
+  .fixed {
+    display: block;
+    font-size: 11.5px;
+    line-height: 1.34;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 5px;
+  }
+  .fixed:last-of-type { margin-bottom: 13px; }
+  .fixed b { font-weight: 600; color: var(--dim); }
+
+  .todo {
+    display: block;
+    font-size: 13.5px;
+    line-height: 1.36;
+    color: var(--ink);
+    padding-left: 9px;
+    border-left: 2.5px solid currentColor;
+    margin-bottom: 11px;
+  }
+  .todo:last-child { margin-bottom: 0; }
+  .todo b { font-weight: 620; }
+  .todo span { color: var(--body); font-weight: 400; }
+  .todo s { color: var(--faint); font-weight: 400; text-decoration: none; }
+  .d1 { color: var(--s-dil); } .d2 { color: var(--s-src); } .d3 { color: var(--s-inv); }
+  .d4 { color: var(--s-mkt); } .d5 { color: var(--s-lrn); }
+
+  /* data table */
+  table.data { border-collapse: collapse; width: 100%; min-width: 700px; font-family: var(--display); font-size: 14px; }
+  table.data th, table.data td {
+    border-bottom: 1px solid var(--rule-soft);
+    padding: 10px 14px;
+    text-align: left;
+    vertical-align: top;
+  }
+  table.data th {
+    font-size: 11.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--dim);
+    font-weight: 640;
+    background: var(--surface-2);
+    white-space: nowrap;
+  }
+  table.data tr:last-child td { border-bottom: none; }
+  table.data td.k { font-family: var(--mono); font-size: 12.5px; color: var(--ink); white-space: nowrap; }
+  table.data td.st { font-weight: 620; white-space: nowrap; }
+
+  pre {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 12.5px;
+    line-height: 1.66;
+    color: var(--body);
+    overflow-x: auto;
+    padding: 16px 18px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  pre b { color: var(--ink); font-weight: 600; }
+  pre i { color: var(--dim); font-style: normal; }
+
+  ul { margin: 0 0 14px; padding-left: 20px; }
+  ul:last-child { margin-bottom: 0; }
+  li { margin-bottom: 7px; }
+  li:last-child { margin-bottom: 0; }
+  li::marker { color: var(--dim); }
+
+  .job { display: flex; gap: 15px; align-items: flex-start; }
+  .job .tick {
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--accent);
+    background: var(--surface-2);
+    border: 1px solid var(--rule-soft);
+    border-radius: 3px;
+    padding: 3px 8px;
+    flex: none;
+    margin-top: 3px;
+    white-space: nowrap;
+  }
+  .job p { margin: 0; font-size: 15.5px; }
+  .job .said { color: var(--dim); font-style: italic; }
+
+  .note {
+    border-left: 2.5px solid var(--flag);
+    padding: 2px 0 2px 16px;
+  }
+  .note .label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.11em;
+    font-weight: 640;
+    color: var(--flag);
+    margin-bottom: 3px;
+  }
+  .note p { margin: 0; font-size: 15.5px; }
+
+  .pill {
+    display: inline-block;
+    font-family: var(--display);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-weight: 640;
+    padding: 2.5px 8px;
+    border-radius: 100px;
+    border: 1px solid var(--rule);
+    color: var(--dim);
+    background: var(--surface-2);
+    white-space: nowrap;
+  }
+  .pill.on { color: var(--accent); border-color: var(--accent); }
+
+  footer {
+    margin-top: 60px;
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    font-family: var(--display);
+    font-size: 13px;
+    color: var(--dim);
+  }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+
+<div class="wrap">
+
+  <p class="eyebrow">Build spec &middot; Dashboard</p>
+  <h1>Weekly Operating System</h1>
+  <div class="col">
+    <p class="lede">You type the week. It structures what you said, places it around the calls you already have, and keeps it somewhere you can look at. <em>It does not decide what you work on.</em></p>
+  </div>
+
+  <section>
+    <div class="shead">
+      <span class="n">01</span>
+      <div>
+        <h2>What it does and does not do</h2>
+      </div>
+    </div>
+    <div class="grid2">
+      <div class="card">
+        <h3>Does</h3>
+        <ul>
+          <li>Turns a paragraph into discrete to-dos</li>
+          <li>Places them around your real calendar</li>
+          <li>Splits weekly commitments from dated work</li>
+          <li>Expands &ldquo;the relevant follow-ups&rdquo; into the actual list, because the outreach database knows</li>
+          <li>Carries what you did not finish into next week</li>
+          <li>Answers a question when you ask one</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Does not</h3>
+        <ul>
+          <li>Invent work you did not mention</li>
+          <li>Decide how to balance your week</li>
+          <li>Volunteer suggestions unprompted</li>
+          <li>Change your Affinity records</li>
+          <li>Send anything</li>
+        </ul>
+        <p style="margin-top:12px; font-size:14.5px; color:var(--dim)">Suggestions are <strong>pull, not push</strong>. When you ask for investors to connect with, it goes and builds that list. When you do not ask, it stays quiet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <span class="n">02</span>
+      <div>
+        <h2>Your Sunday paragraph, structured</h2>
+        <p class="sub">Fourteen items out of what you wrote. The highlighted phrases are the four things the parse has to get right.</p>
+      </div>
+    </div>
+    <div class="col" style="margin-bottom:22px">
+      <p class="quote">&ldquo;&hellip;my priority is around diligence for our priority companies. I need to get smarter on Pathwork so I need to build out a list of competitors, get the expert networks active and get calls scheduled <mark>although I think I have a lot for this week so mainly building out a list of which experts we need to speak with going forward</mark>&hellip; I need to connect with Bhargav on insurance experts he's spoken with&hellip; while also sending <mark>all the relevant follow up emails</mark>. <mark>I need you to feed me some investors</mark> that I should connect with&hellip; I'll also need to take a good action for each hard to crack company. I need to start sending outreach around <mark>the insuretech conference in september in vegas</mark>&rdquo;</p>
+    </div>
+    <div class="scroller">
+      <table class="data">
+        <thead>
+          <tr><th>Behavior</th><th>What you said</th><th>What it writes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="st">Honor the self-correction</td>
+            <td>Get expert networks active and calls scheduled &mdash; <em>although</em> mainly build the list this week</td>
+            <td><strong>One</strong> task: build the expert list. Scheduling calls becomes a next-week note, not a second to-do</td>
+          </tr>
+          <tr>
+            <td class="st">Fan out against data</td>
+            <td>&ldquo;All the relevant follow up emails&rdquo; &middot; &ldquo;a good action for each hard to crack company&rdquo;</td>
+            <td>The specific follow-ups from <code>v_due</code>, and one row per Hard-to-Crack company. You said what; it knows which</td>
+          </tr>
+          <tr>
+            <td class="st">Pull, not push</td>
+            <td>&ldquo;Feed me some investors&rdquo; &mdash; seed firms from the AS BD targets tab</td>
+            <td>A task, plus it actually reads that sheet and proposes the shortlist. Only because you asked</td>
+          </tr>
+          <tr>
+            <td class="st">Hold a future anchor</td>
+            <td>InsureTech, September, Vegas</td>
+            <td>A dated item beyond this week, surfaced when outreach should start &mdash; not on this week's list</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <span class="n">03</span>
+      <div>
+        <h2>Placed on the week you actually have</h2>
+        <p class="sub">August 24&ndash;28, from your calendar. Grey is fixed; colored is what you asked for.</p>
+      </div>
+    </div>
+    <div class="key">
+      <span class="k0"><i></i><b>On the calendar</b></span>
+      <span class="k1"><i></i><b>Priority diligence</b></span>
+      <span class="k2"><i></i><b>Sourcing</b></span>
+      <span class="k3"><i></i><b>Investor networking</b></span>
+      <span class="k4"><i></i><b>Market deep dive</b></span>
+    </div>
+    <div class="scroller">
+      <table class="week">
+        <thead>
+          <tr>
+            <th class="wk">This week &middot; no day</th>
+            <th>Mon <em>8/24</em></th>
+            <th>Tue <em>8/25</em></th>
+            <th>Wed <em>8/26</em></th>
+            <th>Thu <em>8/27</em></th>
+            <th>Fri <em>8/28</em></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="wk">
+              <span class="todo d1"><b>Pathwork</b> <span>connect with Bhargav on the insurance experts he has spoken with</span></span>
+              <span class="todo d2"><b>Hard-to-Crack</b> <span>one action each</span> <s>18 companies</s></span>
+              <span class="todo d2"><span>Reactivate sequences for old prospects</span></span>
+              <span class="todo d4"><span>InsureTech Connect, Vegas &mdash; start outreach</span> <s>Sept, ~3 weeks out</s></span>
+            </td>
+            <td>
+              <span class="fixed">9:30 <b>Team meeting</b></span>
+              <span class="fixed">10:00 <b>Duncan, Signal Lift</b></span>
+              <span class="fixed">15:30 <b>1:1 Mickey</b></span>
+              <span class="fixed">16:00 <b>Sync Chris</b></span>
+              <span class="todo d3"><span>Pull the investor shortlist from AS BD targets</span> <s>needed before tomorrow</s></span>
+              <span class="todo d2"><span>Send the follow-ups due today</span></span>
+              <span class="todo d1"><b>Pathwork</b> <span>bring open questions to the 4pm Chris sync</span></span>
+            </td>
+            <td>
+              <span class="fixed">8:30 <b>Pentimenti intro</b></span>
+              <span class="fixed">13:30 <b>Nick, Insight</b></span>
+              <span class="fixed">15:00 <b>Mitchell, CIV</b></span>
+              <span class="fixed">16:30 <b>VC Summer Happy Hour</b></span>
+              <span class="todo d1"><b>Pathwork</b> <span>build the competitor list</span> <s>9&ndash;1:30 is the only clear stretch</s></span>
+              <span class="todo d3"><span>Work the shortlist at the happy hour</span></span>
+            </td>
+            <td>
+              <span class="fixed">9:00 <b>Supersonik intro</b></span>
+              <span class="fixed">14:00 <b>1:1 Chris</b></span>
+              <span class="fixed">15:00 <b>Modo intro</b></span>
+              <span class="todo d1"><b>Pathwork</b> <span>read Chris's document</span> <s>9:30&ndash;2 is the week's longest block</s></span>
+              <span class="todo d1"><b>Pathwork</b> <span>list the experts to speak with going forward</span></span>
+            </td>
+            <td>
+              <span class="fixed">9:00 <b>Matt Weiss, CPG</b></span>
+              <span class="fixed">19:00 <b>Drive to Santa Barbara</b></span>
+              <span class="todo d1"><b>Jampack</b> <span>market outreach to larger CPG brands</span> <s>straight off the Matt call</s></span>
+              <span class="todo d1"><b>Jampack</b> <span>ping the expert networks on CPG</span></span>
+              <span class="todo d2"><span>Work the Harmonic agent feed into net new outreach</span></span>
+            </td>
+            <td>
+              <span class="fixed">15:30 <b>Pipeline, Chris</b></span>
+              <span class="fixed">&mdash; <b>in Santa Barbara</b></span>
+              <span class="todo d1"><b>Pathwork</b> <span>organize the customer call notes</span></span>
+              <span class="todo d2"><span>Net new outreach</span> <s>light day, travel</s></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col" style="margin-top:18px">
+      <p>Four placements came out of the calendar rather than out of your paragraph, and they are the argument for reading it:</p>
+      <ul>
+        <li><strong>Tuesday is already an investor day.</strong> Nick at Insight, Mitchell at CIV, then the HubSpot happy hour. So the shortlist has to exist Monday, and Tuesday evening is where you work it.</li>
+        <li><strong>Matt Weiss at Kir Foods, Thursday 9am, is CPG.</strong> Your Jampack market outreach belongs right after it, not on a random day.</li>
+        <li><strong>Wednesday 9:30 to 2 is the longest clear block of the week.</strong> That is where the long read goes.</li>
+        <li><strong>You drive to Santa Barbara Thursday night.</strong> Friday gets the light work, whether or not you thought about that on Sunday.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <span class="n">04</span>
+      <div>
+        <h2>The chat, all week</h2>
+      </div>
+    </div>
+    <div class="stack col">
+      <div class="job">
+        <span class="tick">SUN</span>
+        <p>The paragraph. It writes tasks and shows you the week. Wrong reading? Say so in the box.</p>
+      </div>
+      <div class="job">
+        <span class="tick">MID</span>
+        <p><span class="said">&ldquo;Read the Pathwork doc, competitor list is half done, punt the call notes to next week.&rdquo;</span> Status changes and reschedules on rows that already exist &mdash; never a regenerated week.</p>
+      </div>
+      <div class="job">
+        <span class="tick">ASK</span>
+        <p><span class="said">&ldquo;What is still open on Pathwork?&rdquo;</span> <span class="said">&ldquo;Which investors have I not talked to since spring?&rdquo;</span> <span class="said">&ldquo;What did I get done last week?&rdquo;</span></p>
+      </div>
+      <div class="job">
+        <span class="tick">FRI</span>
+        <p>The week closes. Unfinished tasks keep their company or market and lose their date, so they are waiting on Sunday rather than gone.</p>
+      </div>
+    </div>
+    <div class="note col" style="margin-top:22px">
+      <span class="label">Hard constraint</span>
+      <p>No model-authored SQL. A fixed read bundle in, and a closed set of writes out: <code>add_task</code>, <code>set_status</code>, <code>reschedule</code>, <code>drop_task</code>, <code>note</code>. The service-role key bypasses row-level security on every founder email in the database.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <span class="n">05</span>
+      <div>
+        <h2>Market deep dives</h2>
+        <p class="sub">The component you asked for, in v1 rather than later.</p>
+      </div>
+    </div>
+    <div class="col">
+      <p>A market is a container the same way a company is: it holds reading, Harmonic sourcing against the theme, expert and operator calls, market outreach, and what you learned. The overlap with sourcing is real and does not need resolving &mdash; the stream is just a label, and the <strong>subject is the structure</strong>. Harmonic sourcing against a theme is <code>stream: sourcing</code>, <code>subject: market</code>. It shows up in both places because it genuinely belongs to both.</p>
+      <p>Your own paragraph makes the case. Pathwork is life insurance. Bhargav has insurance experts. The September conference is InsureTech. Three separate sentences pointing at one market, and today nothing holds them together, so the third time you go looking for insurance experts you start over.</p>
+      <p>That is also where the knowledge compounds. The outreach engine already sweeps your Granola calls for market patterns every time it drafts an email, and it re-derives them from scratch each time. If the deep dive is a durable place, the drafting reads what the diligence learned, and the same expert call pays twice.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <span class="n">06</span>
+      <div>
+        <h2>Schema</h2>
+        <p class="sub">A task points at a company, a market, or a person. That is what lets one table serve every stream, and what lets the later views land on data already there.</p>
+      </div>
+    </div>
+<pre><b>task</b>
+  id, title, notes
+  stream       diligence | sourcing | investor | market | learning
+  subject_kind company | market | person | none
+  subject_id
+  week_id      &rarr; week      <i>null = backlog, survives the week</i>
+  day          date           <i>null = weekly item, no day yet</i>
+  due_on       date           <i>can sit beyond this week (the conference)</i>
+  calendar_ref                <i>the event it is anchored to, if any</i>
+  origin       calvin | expanded | asked_for
+  ref_kind, ref_id            <i>the step / sequence it came from</i>
+  status       open | done | moved | dropped
+  created_at, done_at
+
+<b>market</b>                      <i>a deep dive, first class</i>
+  id, name, status, opened_at, notes
+  <i>links: tasks, Granola calls, companies, experts</i>
+
+<b>person</b>                      <i>investors, operators, experts</i>
+  id, name, firm, kind, affinity_id
+  market_id                   <i>the deep dive they came from</i>
+  last_contact_at
+
+<b>company_list</b>                <i>read from Affinity saved views</i>
+  company_id, list      priority | hard_to_crack
+  tp_status, tp_owner, next_steps, synced_at
+
+<b>week</b>      id, week_of, status, generated_at, review
+<b>message</b>   id, week_id, role, content, actions_taken, created_at</pre>
+    <div class="col" style="margin-top:16px">
+      <p><code>origin</code> is worth a column: <code>calvin</code> is what you said, <code>expanded</code> is a fan-out from something you said, <code>asked_for</code> is a suggestion you requested. Nothing else can write a task.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <span class="n">07</span>
+      <div>
+        <h2>Build order</h2>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="card">
+        <h3>Now &mdash; the dashboard and the market container</h3>
+        <p>Chat, the week view, the five streams, carry-over. Calendar read. Company and market containers. Affinity read for the priority and Hard-to-Crack lists. Nothing writes outward.</p>
+        <p style="margin-top:12px"><span class="pill on">Needs ANTHROPIC_API_KEY</span> <span class="pill">Console becomes stateful</span></p>
+      </div>
+      <div class="grid2">
+        <div class="card">
+          <h3>Hard-to-Crack view</h3>
+          <p>The companies you are prioritizing and have not broken into. Currently in the Affinity view <em>and</em> a spreadsheet tab; the point of this view is to stop it being in two places.</p>
+        </div>
+        <div class="card">
+          <h3>Priority company view</h3>
+          <p>Per company: open tasks, competitor list, expert list, call notes, the documents. Replaces the single <code>Next Steps</code> cell in the sheet with the actual list.</p>
+        </div>
+        <div class="card">
+          <h3>Investor outreach view</h3>
+          <p>People and when you last spoke. Answers &ldquo;who is going cold&rdquo; without you keeping it in your head.</p>
+        </div>
+        <div class="card">
+          <h3>Market deep dive view</h3>
+          <p>A market, its experts, its companies, its calls, what you concluded. Shared with the outreach drafting engine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="shead">
+      <span class="n">08</span>
+      <div>
+        <h2>Open</h2>
+      </div>
+    </div>
+    <div class="stack col">
+      <div class="note">
+        <span class="label">Hard-to-Crack lives in two places already</span>
+        <p>Affinity view 2354626 and the sheet's Hard to Crack tab. A third copy is worse than two unless it replaces one. Affinity as the source and the sheet retired is the clean answer, but that is your call, not mine.</p>
+      </div>
+      <div class="note">
+        <span class="label">The sheet already has Next Steps per company</span>
+        <p>Your Priority tab reads <code>Company | Website | One-Liner | Next Steps | Owner</code>, and all four priority companies currently say &ldquo;Market / customer work&rdquo;. That is the thing this replaces &mdash; same field, but a list with dates instead of one cell.</p>
+      </div>
+      <div class="note">
+        <span class="label">Where Monday's list reaches you</span>
+        <p>If it only lives on a page you have to remember to open, the fragmentation is half solved. A short morning push is cheap and probably the difference between using this and not.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Telescope Partners &middot; revised 18 Aug 2026 &middot; week shown is 24&ndash;28 August, live calendar
+  </footer>
+
+</div>

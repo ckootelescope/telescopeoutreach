@@ -125,3 +125,112 @@ button:hover{opacity:.88}
 
 footer{font-family:var(--mono);font-size:11px;color:var(--ink-3);border-top:1px solid var(--line);padding-top:14px}
 .empty{padding:14px;color:var(--ink-2);font-style:italic}
+
+/* =========================================================================
+   Weekly OS
+   Same tokens as the outreach tabs. Streams get their own hue because the
+   mix of work in a week is the thing being read at a glance.
+   ========================================================================= */
+:root{
+  --st-dil:#1F6F6B; --st-src:#2E4B7B; --st-inv:#6A4A93; --st-mkt:#2E7350; --st-lrn:#A8791B;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --st-dil:#52A9A3; --st-src:#87A8DE; --st-inv:#A88BD0; --st-mkt:#63AF83; --st-lrn:#D9A441;
+}}
+:root[data-theme="dark"]{
+  --st-dil:#52A9A3; --st-src:#87A8DE; --st-inv:#A88BD0; --st-mkt:#63AF83; --st-lrn:#D9A441;
+}
+
+/* declared priority order */
+.prio{display:flex;flex-direction:column}
+.prio-row{display:grid;grid-template-columns:26px minmax(90px,auto) 62px 1fr;align-items:center;
+  gap:12px;padding:9px 14px;border-bottom:1px solid var(--line)}
+.prio-row:last-child{border-bottom:0}
+.prio-row .rank{font-family:var(--mono);font-size:11px;color:var(--ink-3);text-align:right}
+.prio-row .who{font-weight:600;font-size:13.5px}
+
+/* the week grid */
+.wkgrid{display:grid;grid-template-columns:1.15fr repeat(5,1fr);min-width:1100px}
+.wkcol{border-right:1px solid var(--line);display:flex;flex-direction:column}
+.wkcol:last-child{border-right:0}
+.wkcol.nodate{background:var(--sunk)}
+.wkcol.is-today .wkhead{color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent)}
+.wkhead{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-3);padding:10px 12px;border-bottom:1px solid var(--line);white-space:nowrap}
+.wkhead em{font-style:normal;color:var(--ink-3);opacity:.7;margin-left:5px}
+.wkbody{padding:10px;display:flex;flex-direction:column;gap:9px;flex:1}
+.wkempty{font-family:var(--mono);font-size:11px;color:var(--ink-3);font-style:italic}
+
+/* fixed calendar items: present, quiet, unmovable */
+.ev{font-family:var(--mono);font-size:11px;color:var(--ink-3);line-height:1.35;
+  display:flex;gap:6px;align-items:baseline}
+.ev .t{color:var(--ink-2);font-variant-numeric:tabular-nums;flex:none}
+.evrule{height:1px;background:var(--line);margin:2px 0}
+
+/* a to-do */
+.td{display:grid;grid-template-columns:16px 1fr 14px;gap:8px;align-items:start}
+.td .body{min-width:0}
+.td .line{font-size:13px;line-height:1.36;color:var(--ink);
+  padding-left:8px;border-left:2.5px solid var(--line-2)}
+.td .line b{font-weight:650;margin-right:5px}
+.td .line span{color:var(--ink-2)}
+.td.s-diligence .line{border-color:var(--st-dil)} .td.s-diligence .line b{color:var(--st-dil)}
+.td.s-sourcing  .line{border-color:var(--st-src)} .td.s-sourcing  .line b{color:var(--st-src)}
+.td.s-investor  .line{border-color:var(--st-inv)} .td.s-investor  .line b{color:var(--st-inv)}
+.td.s-market    .line{border-color:var(--st-mkt)} .td.s-market    .line b{color:var(--st-mkt)}
+.td.s-learning  .line{border-color:var(--st-lrn)} .td.s-learning  .line b{color:var(--st-lrn)}
+.td .why{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);line-height:1.4;
+  padding-left:10px;margin-top:3px}
+.td .tag{display:inline-block;font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-3);border:1px solid var(--line-2);border-radius:2px;
+  padding:1px 5px;margin:4px 0 0 10px}
+.td.is-done .line{opacity:.42;text-decoration:line-through;text-decoration-thickness:1px}
+.td.is-done .why,.td.is-done .tag{opacity:.42}
+
+.td form{display:contents}
+.td .box{width:16px;height:16px;padding:0;margin-top:1px;border:1px solid var(--line-2);
+  border-radius:2px;background:var(--surface);color:var(--ink);font-family:var(--mono);
+  font-size:11px;line-height:1;text-transform:none;letter-spacing:0;cursor:pointer;
+  display:flex;align-items:center;justify-content:center}
+.td .box:hover{border-color:var(--ink-2)}
+.td.is-done .box{background:var(--ok-soft);border-color:var(--ok);color:var(--ok)}
+.td .push{width:14px;height:16px;padding:0;border:0;background:none;color:var(--ink-3);
+  font-family:var(--mono);font-size:12px;line-height:1;letter-spacing:0;text-transform:none;
+  cursor:pointer;opacity:0;transition:opacity .12s}
+.td:hover .push{opacity:1}
+.td .push:hover{color:var(--ink)}
+
+/* chat */
+.chat{padding:14px;display:flex;flex-direction:column;gap:12px}
+.chat .intent{font-size:13px}
+.chat .intent summary{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-3);cursor:pointer}
+.chat .intent p{margin:8px 0 0;color:var(--ink-2);line-height:1.55;
+  border-left:2px solid var(--line);padding-left:12px}
+.chat .log{display:flex;flex-direction:column;gap:10px;max-height:320px;overflow-y:auto}
+.turn{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start}
+.turn .who{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-3);padding-top:3px}
+.turn .what{font-size:13.5px;line-height:1.5;white-space:pre-wrap}
+.turn.calvin .what{color:var(--ink-2)}
+.turn.system .what{color:var(--ink)}
+.turn.fresh .what{border-left:2px solid var(--accent);padding-left:11px}
+.turn .acts{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.turn .act{font-family:var(--mono);font-size:9.5px;letter-spacing:.05em;color:var(--ink-3);
+  border:1px solid var(--line-2);border-radius:2px;padding:1px 5px}
+.chat-err{font-family:var(--mono);font-size:11.5px;color:var(--stop);background:var(--stop-soft);
+  border-radius:2px;padding:9px 11px;line-height:1.45}
+.composer{display:flex;flex-direction:column;gap:8px}
+.composer textarea{width:100%;min-height:96px;resize:vertical;font-family:var(--sans);font-size:14px;
+  line-height:1.55;padding:11px 12px;border:1px solid var(--line-2);border-radius:2px;
+  background:var(--ground);color:var(--ink)}
+.composer textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.composer textarea:disabled{opacity:.6}
+.composer-foot{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.composer-foot button:disabled{opacity:.4;cursor:default}
+
+@media (max-width:1000px){
+  .panel .wkgrid{min-width:1100px}
+  .prio-row{grid-template-columns:24px 1fr 58px;row-gap:2px}
+  .prio-row .mono.dim{grid-column:1 / -1;padding-left:36px}
+}

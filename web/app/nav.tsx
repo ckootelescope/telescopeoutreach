@@ -1,7 +1,8 @@
 import Link from 'next/link';
 
 const TABS = [
-  { href: '/analytics', label: 'Analytics' },
+  { href: '/week', label: 'Week' },
+  { href: '/analytics', label: 'Outreach' },
   { href: '/guard', label: 'Before you send' },
 ];
 
@@ -9,8 +10,8 @@ export function Nav({ current }: { current: string }) {
   return (
     <nav className="top">
       <div>
-        <h1>Outreach Console</h1>
-        <div className="mono dim">Telescope Partners &middot; company outreach only</div>
+        <h1>Telescope OS</h1>
+        <div className="mono dim">Calvin Koo &middot; week, pipeline, outreach</div>
       </div>
       <div className="tabs">
         {TABS.map((t) => (
