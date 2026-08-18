@@ -1,55 +1,45 @@
 import { db } from '@/lib/supabase';
 import { Nav } from '../nav';
-import { Chat } from './chat';
-import { toggleTask, deferTask } from './actions';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
+// The grid runs 8am to midnight because the evenings are the point: deep work
+// gets scheduled at night, and a calendar that stops at 6 hides exactly the
+// blocks Calvin needs to keep clear.
+const FROM = 8 * 60;
+const TO = 24 * 60;
+const PX_PER_MIN = 0.78;          // 16 hours -> ~750px
 const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'] as const;
+const DEFAULT_MEETING_MIN = 45;   // most events here carry no end time
 
-/** Today in Pacific. Dates in this database are Pacific days, not UTC ones. */
 const todayPT = () => new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
 
-/** The five days of a week starting from its Monday. */
-function weekDays(weekOf: string) {
-  const base = Date.parse(weekOf + 'T12:00:00Z');
-  return DAYS.map((label, i) => {
-    const d = new Date(base + i * 864e5);
-    return { label, date: d.toISOString().slice(0, 10) };
+function ptMinutes(ts: string) {
+  const s = new Date(ts).toLocaleTimeString('en-GB', {
+    timeZone: 'America/Los_Angeles', hour: '2-digit', minute: '2-digit', hour12: false,
   });
+  const [h, m] = s.split(':').map(Number);
+  return h * 60 + m;
 }
 
-const hhmm = (ts: string) =>
-  new Date(ts).toLocaleTimeString('en-US', {
-    timeZone: 'America/Los_Angeles', hour: 'numeric', minute: '2-digit',
-  }).replace(' ', '').toLowerCase();
-
-type Task = {
-  id: number; title: string; notes: string | null; stream: string;
-  subject: string | null; day: string | null; due_on: string | null;
-  origin: string; status: string; gtask_id: string | null;
+const clock = (min: number) => {
+  const h = Math.floor(min / 60) % 24, m = min % 60;
+  const ap = Math.floor(min / 60) >= 12 ? 'pm' : 'am';
+  const h12 = h % 12 === 0 ? 12 : h % 12;
+  return m === 0 ? `${h12}${ap}` : `${h12}:${String(m).padStart(2, '0')}${ap}`;
 };
 
-type Event = { external_id: string; summary: string; starts_at: string; day: string };
+const top = (min: number) => (Math.max(FROM, min) - FROM) * PX_PER_MIN;
+const height = (a: number, b: number) =>
+  Math.max(18, (Math.min(TO, b) - Math.max(FROM, a)) * PX_PER_MIN - 2);
 
-const STREAMS: Record<string, string> = {
-  diligence: 'Diligence', sourcing: 'Sourcing', investor: 'Investor',
-  market: 'Market', learning: 'Learning',
-};
-
-export default async function Week() {
+export default async function WeekCalendar() {
   const s = db();
   const today = todayPT();
 
-  // The active week is the one being worked. Falls back to the newest, so the
-  // page is never blank just because Friday closed it.
-  const { data: weeks } = await s
-    .from('os_week')
-    .select('*')
-    .order('week_of', { ascending: false })
-    .limit(8);
-
+  const { data: weeks } = await s.from('os_week').select('*')
+    .order('week_of', { ascending: false }).limit(8);
   const week = (weeks ?? []).find((w: any) => w.status === 'active') ?? (weeks ?? [])[0] ?? null;
 
   if (!week) {
@@ -57,238 +47,138 @@ export default async function Week() {
       <div className="wrap">
         <Nav current="/week" />
         <section>
-          <h2>No week yet</h2>
+          <h2>No week planned</h2>
           <div className="panel">
             <div className="empty">
-              Nothing planned. Describe the week below and it will be built from what you say.
+              Run node scripts/os_plan.js with a week file to fill this in.
             </div>
           </div>
         </section>
-        <Chat weekOf={null} intent={null} />
       </div>
     );
   }
 
-  const days = weekDays(week.week_of);
+  const days = DAYS.map((label, i) => ({
+    label,
+    date: new Date(Date.parse(week.week_of + 'T12:00:00Z') + i * 864e5).toISOString().slice(0, 10),
+  }));
   const last = days[days.length - 1].date;
 
-  const [taskRes, evRes, prioRes, dueRes, unsentRes, waitingRes, msgRes] = await Promise.all([
-    s.from('v_os_task').select('*').eq('week_id', week.id).order('sort'),
-    s.from('os_calendar_event').select('external_id,summary,starts_at,day')
-      .gte('day', week.week_of).lte('day', last).order('starts_at'),
-    s.from('v_os_priority').select('*'),
-    s.from('dash_due').select('company,step_no,due_date,kind'),
-    s.from('dash_drafted_not_sent').select('*'),
-    s.from('v_awaiting_reply').select('*'),
-    s.from('os_message').select('*').eq('week_id', week.id)
-      .order('created_at', { ascending: false }).limit(8),
+  const [taskRes, meetRes] = await Promise.all([
+    s.from('v_os_task').select('*').gte('day', week.week_of).lte('day', last).order('start_min'),
+    s.from('v_os_meeting').select('*').gte('day', week.week_of).lte('day', last).order('starts_at'),
   ]);
 
-  const tasks = (taskRes.data ?? []) as Task[];
-  const events = (evRes.data ?? []) as Event[];
-  const prio = (prioRes.data ?? []) as any[];
-  const messages = ((msgRes.data ?? []) as any[]).slice().reverse();
+  const tasks = (taskRes.data ?? []) as any[];
+  const meets = (meetRes.data ?? []) as any[];
 
-  const dated = (d: string) => tasks.filter((t) => t.day === d);
-  const undated = tasks.filter((t) => !t.day);
+  const hours: number[] = [];
+  for (let m = FROM; m <= TO; m += 60) hours.push(m);
 
-  const open = tasks.filter((t) => t.status === 'open').length;
-  const done = tasks.filter((t) => t.status === 'done').length;
-  const byStream = Object.keys(STREAMS)
-    .map((k) => ({ k, n: tasks.filter((t) => t.stream === k && t.status === 'open').length }))
-    .filter((x) => x.n > 0);
-
-  const overdue = (dueRes.data ?? []).filter((d: any) => d.due_date < today).length;
-
-  const kpis = [
-    { k: 'Open this week', v: open, sub: `${done} done`, tone: '' },
-    { k: 'No day yet', v: undated.filter((t) => t.status === 'open').length, sub: 'weekly items', tone: '' },
-    { k: 'Follow-ups due', v: (dueRes.data ?? []).length,
-      sub: overdue ? `${overdue} overdue` : 'nothing late', tone: overdue ? 'stop' : '' },
-    { k: 'Drafted, unsent', v: (unsentRes.data ?? []).length, sub: 'waiting on you',
-      tone: (unsentRes.data ?? []).length ? 'warn' : 'ok' },
-    { k: 'Awaiting reply', v: (waitingRes.data ?? []).length, sub: 'sent, no answer', tone: '' },
-    { k: 'Pushed to Tasks', v: tasks.filter((t) => t.gtask_id).length,
-      sub: tasks.filter((t) => t.gtask_id).length ? 'in Google Tasks' : 'not synced yet',
-      tone: tasks.filter((t) => t.gtask_id).length ? 'ok' : 'warn' },
-  ];
+  const evening = tasks.filter((t) => t.start_min >= 1080 && t.status !== 'dropped');
+  const nights = [...new Set(evening.map((t) => t.day))].sort();
 
   return (
     <div className="wrap">
       <Nav current="/week" />
 
-      <div className="kpis">
-        {kpis.map((k) => (
-          <div className={`kpi ${k.tone}`} key={k.k}>
-            <div className="k">{k.k}</div>
-            <div className="v">{k.v}</div>
-            <div className="s">{k.sub}</div>
-          </div>
-        ))}
-      </div>
-
-      {/* Calvin's declared order. Nothing infers this. */}
-      <section>
-        <h2>Priority order <span className="count">you set this</span></h2>
-        <div className="panel">
-          <div className="prio">
-            {prio.length === 0 ? (
-              <div className="empty">No order declared. Tell the chat what ranks where.</div>
-            ) : (
-              prio.map((p) => (
-                <div className="prio-row" key={p.id}>
-                  <span className="rank">{p.rank}</span>
-                  <span className="who">{p.display}</span>
-                  <span className={`pill ${p.kind === 'stream' ? 'r2' : 'r1'}`}>{p.kind}</span>
-                  <span className="mono dim">{p.note ?? ''}</span>
-                </div>
-              ))
-            )}
-          </div>
-        </div>
-      </section>
-
       <section>
         <h2>
           Week of {week.week_of}
           <span className="count">
-            {byStream.map((x) => `${x.n} ${STREAMS[x.k].toLowerCase()}`).join(' · ')}
+            {tasks.length} blocks · {meets.length} meetings
           </span>
         </h2>
         <p className="note">
-          Grey is on your calendar and cannot move. Everything else came from what you said.
-          Check a box to close it; the arrow pushes it off the week and keeps it on its subject.
+          Sourcing runs in the working day, reading and deep work at night.{' '}
+          {nights.length > 0
+            ? `Evenings to keep clear: ${nights
+                .map((d) => new Date(d + 'T12:00:00Z')
+                  .toLocaleDateString('en-US', { weekday: 'short', timeZone: 'UTC' }))
+                .join(', ')}.`
+            : 'No evening blocks this week.'}
         </p>
 
         <div className="panel">
-          <div className="wkgrid">
-            {/* Weekly items: real commitments with no natural day. */}
-            <div className="wkcol nodate">
-              <div className="wkhead">
-                This week <em>no day</em>
-              </div>
-              <div className="wkbody">
-                {undated.length === 0 && <div className="wkempty">nothing</div>}
-                {undated.map((t) => <Row key={t.id} t={t} />)}
+          <div className="cal">
+            {/* hour rail */}
+            <div className="cal-rail">
+              <div className="cal-corner" />
+              <div className="cal-hours" style={{ height: (TO - FROM) * PX_PER_MIN }}>
+                {hours.map((m) => (
+                  <span className="cal-hr" key={m} style={{ top: top(m) }}>{clock(m)}</span>
+                ))}
               </div>
             </div>
 
             {days.map((d) => {
-              const evs = events.filter((e) => e.day === d.date);
-              const ts = dated(d.date);
+              const dayTasks = tasks.filter((t) => t.day === d.date);
+              const dayMeets = meets.filter((m) => m.day === d.date);
               return (
-                <div className={`wkcol${d.date === today ? ' is-today' : ''}`} key={d.date}>
-                  <div className="wkhead">
+                <div className={`cal-col${d.date === today ? ' is-today' : ''}`} key={d.date}>
+                  <div className="cal-head">
                     {d.label} <em>{d.date.slice(5)}</em>
                   </div>
-                  <div className="wkbody">
-                    {evs.map((e) => (
-                      <div className="ev" key={e.external_id}>
-                        <span className="t">{hhmm(e.starts_at)}</span> {e.summary}
-                      </div>
+                  <div className="cal-body" style={{ height: (TO - FROM) * PX_PER_MIN }}>
+                    {hours.map((m) => (
+                      <div className="cal-line" key={m} style={{ top: top(m) }} />
                     ))}
-                    {evs.length > 0 && ts.length > 0 && <div className="evrule" />}
-                    {evs.length === 0 && ts.length === 0 && <div className="wkempty">clear</div>}
-                    {ts.map((t) => <Row key={t.id} t={t} />)}
+
+                    {dayMeets.map((m) => {
+                      const a = ptMinutes(m.starts_at);
+                      const b = m.ends_at ? ptMinutes(m.ends_at) : a + DEFAULT_MEETING_MIN;
+                      return (
+                        <div
+                          className="blk is-meeting"
+                          key={m.external_id}
+                          style={{ top: top(a), height: height(a, b) }}
+                          title={`${clock(a)} ${m.summary}`}
+                        >
+                          <span className="bt">{clock(a)}</span>
+                          <span className="bn">{m.org ?? m.summary}</span>
+                        </div>
+                      );
+                    })}
+
+                    {dayTasks.map((t) => {
+                      if (t.start_min === null) return null;
+                      const b = t.end_min ?? t.start_min + 60;
+                      return (
+                        <div
+                          className={`blk s-${t.stream}${t.status === 'done' ? ' is-done' : ''}`}
+                          key={t.id}
+                          style={{ top: top(t.start_min), height: height(t.start_min, b) }}
+                          title={`${clock(t.start_min)}-${clock(b)} ${t.subject ? t.subject + ': ' : ''}${t.title}`}
+                        >
+                          <span className="bt">{clock(t.start_min)}</span>
+                          <span className="bn">
+                            {t.subject && <b>{t.subject}</b>}
+                            {t.title}
+                          </span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               );
             })}
           </div>
-        </div>
-      </section>
 
-      <Chat weekOf={week.week_of} intent={week.intent} messages={messages} />
-
-      {/* Pull, not push. Context sits here; it never becomes a task on its own. */}
-      <section>
-        <h2>Outreach state <span className="count">context, not tasks</span></h2>
-        <p className="note">
-          Nothing here is on your list unless you put it there. Ask the chat to pull any of it in.
-        </p>
-        <div className="two">
-          <div className="panel">
-            <table>
-              <thead><tr><th>Due now</th><th>Step</th><th>Date</th></tr></thead>
-              <tbody>
-                {(dueRes.data ?? []).length === 0 ? (
-                  <tr><td colSpan={3} className="empty">Nothing due.</td></tr>
-                ) : (
-                  (dueRes.data ?? []).slice(0, 10).map((d: any, i: number) => (
-                    <tr key={i} className={d.due_date < today ? 'warn' : ''}>
-                      <td className="co">{d.company}</td>
-                      <td className="mono dim">
-                        <span className={`pill ${d.kind === 'restart' ? 'r2' : 'r1'}`}>
-                          {d.kind === 'restart' ? 'R2' : 'R1'}
-                        </span>{' '}Email {d.step_no}
-                      </td>
-                      <td className="mono">{d.due_date}</td>
-                    </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
-          </div>
-          <div className="panel">
-            <table>
-              <thead><tr><th>Drafted, not sent</th><th>Step</th><th>Drafted</th></tr></thead>
-              <tbody>
-                {(unsentRes.data ?? []).length === 0 ? (
-                  <tr><td colSpan={3} className="empty">No drafts waiting.</td></tr>
-                ) : (
-                  (unsentRes.data ?? []).slice(0, 10).map((d: any, i: number) => (
-                    <tr key={i}>
-                      <td className="co">{d.company}</td>
-                      <td className="mono dim">Email {d.step_no}</td>
-                      <td className="mono">{String(d.drafted_on ?? '').slice(0, 10)}</td>
-                    </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
+          <div className="legend">
+            <span><i className="s-diligence" />Diligence</span>
+            <span><i className="s-sourcing" />Sourcing</span>
+            <span><i className="s-investor" />Investor</span>
+            <span><i className="s-market" />Market</span>
+            <span><i className="s-learning" />Learning</span>
+            <span><i className="is-meeting" />On the calendar</span>
           </div>
         </div>
       </section>
 
       <footer>
-        To-dos push to Google Tasks, never to your calendar, so tasks and real meetings stay
-        filterable apart. Run <span className="mono">node scripts/os_sync.js --tasks --apply</span> to push.
+        Blocks come from <span className="mono">os_plan.js</span>. Meetings are read from Google
+        Calendar; to-dos push out as Google Tasks so the two stay filterable apart.
       </footer>
-    </div>
-  );
-}
-
-/** One to-do. A form, so the checkbox works without client JavaScript. */
-function Row({ t }: { t: Task }) {
-  const doneNow = t.status === 'done';
-  return (
-    <div className={`td s-${t.stream}${doneNow ? ' is-done' : ''}`}>
-      <form action={toggleTask}>
-        <input type="hidden" name="id" value={t.id} />
-        <input type="hidden" name="to" value={doneNow ? 'open' : 'done'} />
-        <button className="box" type="submit" aria-label={doneNow ? 'Reopen' : 'Mark done'}>
-          {doneNow ? '✓' : ''}
-        </button>
-      </form>
-      <div className="body">
-        <div className="line">
-          {t.subject && <b>{t.subject}</b>}
-          <span>{t.title}</span>
-        </div>
-        {t.notes && <div className="why">{t.notes}</div>}
-        {t.due_on && !t.day && <div className="why">due {t.due_on}</div>}
-        {t.origin !== 'calvin' && (
-          <span className="tag">{t.origin === 'expanded' ? 'expanded' : 'you asked for this'}</span>
-        )}
-      </div>
-      {!doneNow && (
-        <form action={deferTask}>
-          <input type="hidden" name="id" value={t.id} />
-          <button className="push" type="submit" title="Push off the week, keep on its subject">
-            &rarr;
-          </button>
-        </form>
-      )}
     </div>
   );
 }

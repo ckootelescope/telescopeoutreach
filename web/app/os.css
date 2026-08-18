@@ -1,0 +1,139 @@
+/* =========================================================================
+   Telescope OS: dashboard and week calendar.
+   Kept apart from globals.css, which dresses the outreach tabs. Same tokens.
+   Streams carry their own hue because the mix of work in a day is the thing
+   being read at a glance.
+   ========================================================================= */
+:root{
+  --st-dil:#1F6F6B; --st-src:#2E4B7B; --st-inv:#6A4A93; --st-mkt:#2E7350; --st-lrn:#A8791B;
+}
+@media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+  --st-dil:#52A9A3; --st-src:#87A8DE; --st-inv:#A88BD0; --st-mkt:#63AF83; --st-lrn:#D9A441;
+}}
+:root[data-theme="dark"]{
+  --st-dil:#52A9A3; --st-src:#87A8DE; --st-inv:#A88BD0; --st-mkt:#63AF83; --st-lrn:#D9A441;
+}
+
+/* ---- three big things: the top of the OS, nothing competes ---- */
+.big3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;
+  background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.b3{background:var(--surface);padding:16px 18px;display:grid;
+  grid-template-columns:22px 1fr 18px;gap:12px;align-items:start;margin:0}
+.b3 .n{font-family:var(--mono);font-size:20px;line-height:1.1;color:var(--ink-3);
+  font-variant-numeric:tabular-nums}
+.b3 .t{font-size:16px;line-height:1.35;font-weight:600;letter-spacing:-.01em;
+  display:flex;flex-direction:column;gap:5px}
+.b3 .t em{font-style:normal;font-weight:400;font-size:12.5px;color:var(--ink-2);line-height:1.45}
+.b3.empty-slot .t{color:var(--ink-3);font-weight:400;font-style:italic;font-size:14px}
+.b3.is-done .t{opacity:.4;text-decoration:line-through;text-decoration-thickness:1px}
+
+/* ---- shared checkbox ---- */
+.box{width:18px;height:18px;padding:0;border:1px solid var(--line-2);border-radius:2px;
+  background:var(--ground);color:var(--ok);font-family:var(--mono);font-size:11px;line-height:1;
+  text-transform:none;letter-spacing:0;cursor:pointer;display:flex;align-items:center;
+  justify-content:center;flex:none}
+.box:hover{border-color:var(--ink-2)}
+.is-done .box{background:var(--ok-soft);border-color:var(--ok)}
+
+/* ---- daily timeline ---- */
+.tl{display:flex;flex-direction:column}
+.tlrow{display:grid;grid-template-columns:74px 1fr 18px;gap:14px;align-items:start;
+  padding:11px 16px;border-bottom:1px solid var(--line)}
+.tlrow:last-child{border-bottom:0}
+.tlrow .when{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);
+  font-variant-numeric:tabular-nums;display:flex;flex-direction:column;line-height:1.4;
+  padding-top:2px}
+.tlrow .when em{font-style:normal;color:var(--ink-3);font-size:10.5px}
+.tlrow .what{font-size:14px;line-height:1.42;display:flex;flex-direction:column;gap:3px;
+  padding-left:11px;border-left:2.5px solid var(--line-2)}
+.tlrow .what b{font-weight:650;margin-right:6px}
+.tlrow .what .why{font-style:normal;font-family:var(--mono);font-size:10.5px;color:var(--ink-3);
+  line-height:1.45}
+.tlrow .tag{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-3);align-self:start;padding-top:4px}
+.tlrow.is-fixed{background:var(--sunk)}
+.tlrow.is-fixed .what{color:var(--ink-2);font-size:13.5px}
+.tlrow.s-diligence .what{border-color:var(--st-dil)}
+.tlrow.s-diligence .what b{color:var(--st-dil)}
+.tlrow.s-sourcing .what{border-color:var(--st-src)}
+.tlrow.s-sourcing .what b{color:var(--st-src)}
+.tlrow.s-investor .what{border-color:var(--st-inv)}
+.tlrow.s-investor .what b{color:var(--st-inv)}
+.tlrow.s-market .what{border-color:var(--st-mkt)}
+.tlrow.s-market .what b{color:var(--st-mkt)}
+.tlrow.s-learning .what{border-color:var(--st-lrn)}
+.tlrow.s-learning .what b{color:var(--st-lrn)}
+.tlrow.is-done .what{opacity:.42;text-decoration:line-through;text-decoration-thickness:1px}
+.tl-break{display:flex;align-items:center;gap:12px;padding:8px 16px;background:var(--sunk);
+  border-bottom:1px solid var(--line);border-top:1px solid var(--line)}
+.tl-break span{font-family:var(--mono);font-size:10px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink-3)}
+.tl-break::after{content:"";flex:1;height:1px;background:var(--line-2)}
+
+/* ---- meeting cards ---- */
+.mcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:12px}
+.mcard{background:var(--surface);border:1px solid var(--line);border-radius:3px;
+  padding:14px 16px;display:flex;flex-direction:column;gap:7px}
+.mc-head{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.mc-head .org{font-size:15px;font-weight:650;letter-spacing:-.01em}
+.mcard p{margin:0}
+.mcard .one{font-size:13px;color:var(--ink-2);line-height:1.45}
+.mcard .one.gap{font-family:var(--mono);font-size:11px;color:var(--warn)}
+.mcard .focus{font-size:13.5px;line-height:1.5;padding-left:10px;
+  border-left:2px solid var(--accent)}
+.mcard .track{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:2px}
+.mcard .track .lbl{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--ink-3)}
+.mcard .track .lbl.gap{color:var(--warn)}
+.mcard .chip{font-family:var(--mono);font-size:11px;padding:2px 7px;border-radius:2px;
+  background:var(--accent-soft);color:var(--accent)}
+
+/* ---- week calendar ---- */
+.cal{display:grid;grid-template-columns:52px repeat(5,1fr);min-width:1000px}
+.cal-rail,.cal-col{border-right:1px solid var(--line)}
+.cal-col:last-child{border-right:0}
+.cal-corner,.cal-head{height:34px;display:flex;align-items:center;padding:0 10px;
+  border-bottom:1px solid var(--line);font-family:var(--mono);font-size:10.5px;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+.cal-head em{font-style:normal;opacity:.7;margin-left:5px}
+.cal-col.is-today .cal-head{color:var(--ink);box-shadow:inset 0 -2px 0 var(--accent)}
+.cal-hours,.cal-body{position:relative}
+.cal-hr{position:absolute;right:8px;transform:translateY(-50%);font-family:var(--mono);
+  font-size:10px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.cal-line{position:absolute;left:0;right:0;height:1px;background:var(--line)}
+.blk{position:absolute;left:3px;right:3px;border-radius:2px;padding:3px 6px;overflow:hidden;
+  display:flex;flex-direction:column;gap:1px;font-size:11px;line-height:1.28;
+  border-left:2.5px solid var(--line-2);background:var(--sunk);color:var(--ink)}
+.blk .bt{font-family:var(--mono);font-size:9.5px;color:var(--ink-3);
+  font-variant-numeric:tabular-nums}
+.blk .bn{overflow:hidden;text-overflow:ellipsis}
+.blk .bn b{display:block;font-weight:650;font-size:10.5px}
+.blk.is-meeting{background:var(--sunk);border-left-color:var(--ink-3);color:var(--ink-2)}
+.blk.s-diligence{border-left-color:var(--st-dil);
+  background:color-mix(in srgb,var(--st-dil) 12%,var(--surface))}
+.blk.s-sourcing{border-left-color:var(--st-src);
+  background:color-mix(in srgb,var(--st-src) 12%,var(--surface))}
+.blk.s-investor{border-left-color:var(--st-inv);
+  background:color-mix(in srgb,var(--st-inv) 12%,var(--surface))}
+.blk.s-market{border-left-color:var(--st-mkt);
+  background:color-mix(in srgb,var(--st-mkt) 12%,var(--surface))}
+.blk.s-learning{border-left-color:var(--st-lrn);
+  background:color-mix(in srgb,var(--st-lrn) 12%,var(--surface))}
+.blk.s-diligence .bn b{color:var(--st-dil)}
+.blk.s-sourcing .bn b{color:var(--st-src)}
+.blk.s-investor .bn b{color:var(--st-inv)}
+.blk.s-market .bn b{color:var(--st-mkt)}
+.blk.s-learning .bn b{color:var(--st-lrn)}
+.blk.is-done{opacity:.45}
+.legend{flex-wrap:wrap}
+.legend i.s-diligence{background:var(--st-dil)}
+.legend i.s-sourcing{background:var(--st-src)}
+.legend i.s-investor{background:var(--st-inv)}
+.legend i.s-market{background:var(--st-mkt)}
+.legend i.s-learning{background:var(--st-lrn)}
+.legend i.is-meeting{background:var(--ink-3)}
+
+@media (max-width:820px){
+  .tlrow{grid-template-columns:62px 1fr 18px;gap:10px}
+  .b3{grid-template-columns:20px 1fr 18px}
+}

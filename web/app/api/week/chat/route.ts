@@ -255,7 +255,7 @@ export async function POST(req: Request) {
     s.from('dash_due').select('company,step_no,due_date,kind'),
     s.from('dash_drafted_not_sent').select('company,step_no,drafted_on'),
     s.from('v_awaiting_reply').select('company').limit(50),
-    s.from('v_os_backlog').select('id,title,subject,stream'),
+    Promise.resolve({ data: [] as any[] }),
   ]);
 
   const context = {
@@ -273,7 +273,6 @@ export async function POST(req: Request) {
       }),
     })),
     tasks_already_on_this_week: tasks.data ?? [],
-    carry_over_backlog: htc.data ?? [],
     open_markets: markets.data ?? [],
     outreach: {
       follow_ups_due: due.data ?? [],

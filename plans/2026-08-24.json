@@ -1,0 +1,103 @@
+{
+  "week_of": "2026-08-24",
+  "replace_tasks": true,
+
+  "priority": [
+    { "rank": 1, "label": "Pathwork", "kind": "company", "note": "top priority" },
+    { "rank": 2, "label": "Sourcing", "kind": "stream", "stream": "sourcing", "note": "above everything except Pathwork" },
+    { "rank": 3, "label": "Rebar", "kind": "company" },
+    { "rank": 4, "label": "Jampack", "kind": "company" }
+  ],
+
+  "investors": [
+    { "firm": "Insight Partners", "domain": "insightpartners.com",
+      "invests_in": "software, growth through late stage, very broad B2B coverage",
+      "notes": "Nick Chan. Add what you want to track before the call." },
+    { "firm": "CIV", "domain": "civ.co",
+      "notes": "Mitchell. invests_in and track are blank, fill these in." }
+  ],
+
+  "briefs": {
+    "seed-team-mon":        { "category": "internal", "org": "Telescope", "focus": "Weekly team meeting." },
+    "seed-duncan-mon":      { "category": "company", "org": "Signal Lift", "counterpart": "Duncan",
+                              "focus": "Prospect, no cadence run yet. Needs a one-liner." },
+    "seed-mickey-mon":      { "category": "internal", "counterpart": "Mickey", "org": "Telescope",
+                              "focus": "Bring questions." },
+    "sync-chris-mon":       { "category": "internal", "counterpart": "Chris", "org": "Telescope",
+                              "focus": "Pathwork: bring the open questions from his document." },
+    "seed-pentimenti-tue":  { "category": "company", "org": "Pentimenti",
+                              "focus": "Replied to outbound. Needs a one-liner." },
+    "seed-insight-tue":     { "category": "investor", "org": "Insight Partners", "counterpart": "Nick Chan",
+                              "investor": "Insight Partners", "focus": "Relationship build. Nothing to track yet." },
+    "seed-civ-tue":         { "category": "investor", "org": "CIV", "counterpart": "Mitchell",
+                              "investor": "CIV", "focus": "Coffee at Reveille. Nothing to track yet." },
+    "seed-hh-tue":          { "category": "other", "org": "HubSpot Ventures",
+                              "focus": "Work the AS BD shortlist you pull Monday." },
+    "seed-supersonik-wed":  { "category": "company", "org": "Supersonik",
+                              "focus": "Prospect. Needs a one-liner." },
+    "seed-chris-wed":       { "category": "internal", "counterpart": "Chris", "org": "Telescope",
+                              "focus": "Weekly 1:1." },
+    "seed-modo-wed":        { "category": "company", "org": "Modo",
+                              "focus": "They replied to the Round 1 opener. Live cadence, so this is a warm first call." },
+    "matt-cpg-thu":         { "category": "other", "org": "Kir Foods", "counterpart": "Matt Weiss",
+                              "title": "operator, CPG",
+                              "focus": "Jampack customer discovery. Ask what they run wholesale ops on today and who else to talk to." },
+    "seed-drive-thu":       { "category": "other", "focus": "Travel. No evening work Thursday." },
+    "seed-pipeline-fri":    { "category": "internal", "counterpart": "Chris", "org": "Telescope",
+                              "focus": "Pipeline review." }
+  },
+
+  "tasks": [
+    { "day": "2026-08-24", "start": "10:45", "end": "12:30", "stream": "sourcing",
+      "title": "Send the follow-ups that are due", "origin": "expanded",
+      "notes": "The specific list comes from the outreach tab." },
+    { "day": "2026-08-24", "start": "13:00", "end": "14:30", "stream": "investor",
+      "title": "Pull the investor shortlist from AS BD targets", "origin": "asked_for",
+      "notes": "Seed firms and firms relevant to Telescope. Needed before Tuesday." },
+    { "day": "2026-08-24", "start": "16:00", "end": "16:45", "stream": "diligence", "subject": "Pathwork",
+      "title": "Bring the open questions to the Chris sync", "calendar_ref": "sync-chris-mon",
+      "notes": "Anchored to the 4pm sync." },
+    { "day": "2026-08-24", "start": "20:00", "end": "22:30", "stream": "diligence", "subject": "Pathwork",
+      "title": "Read Chris's document on the opportunity",
+      "notes": "Evening deep work. Longest single block of the week." },
+
+    { "day": "2026-08-25", "start": "09:15", "end": "11:00", "stream": "sourcing",
+      "title": "Work the Harmonic agent feed into net new outreach" },
+    { "day": "2026-08-25", "start": "11:00", "end": "13:00", "stream": "sourcing",
+      "title": "Send net new outreach", "notes": "Pipeline is dry, so this leads the day." },
+    { "day": "2026-08-25", "start": "16:30", "end": "18:30", "stream": "investor",
+      "title": "Work the shortlist at the VC Summer Happy Hour", "calendar_ref": "seed-hh-tue",
+      "notes": "Anchored to the event. Third investor touch of the day." },
+    { "day": "2026-08-25", "start": "20:00", "end": "22:00", "stream": "diligence", "subject": "Pathwork",
+      "title": "Build the competitor list", "notes": "Evening deep work." },
+
+    { "day": "2026-08-26", "start": "09:45", "end": "12:00", "stream": "sourcing",
+      "title": "Take one good action on each Hard-to-Crack company", "origin": "expanded",
+      "notes": "First pass. Runs over the Affinity Hard-to-Crack view." },
+    { "day": "2026-08-26", "start": "12:30", "end": "13:45", "stream": "sourcing",
+      "title": "Reactivate sequences for old prospects" },
+    { "day": "2026-08-26", "start": "20:00", "end": "21:30", "stream": "diligence", "subject": "Pathwork",
+      "title": "List the experts we need to speak with going forward",
+      "notes": "Evening deep work. Scheduling the calls was deferred, this is the list only." },
+
+    { "day": "2026-08-27", "start": "09:45", "end": "11:00", "stream": "diligence", "subject": "Jampack",
+      "title": "Market outreach to larger CPG brands", "calendar_ref": "matt-cpg-thu",
+      "notes": "Straight off the Matt Weiss call at 9." },
+    { "day": "2026-08-27", "start": "11:00", "end": "12:00", "stream": "diligence", "subject": "Jampack",
+      "title": "Ping the expert networks on CPG" },
+    { "day": "2026-08-27", "start": "13:00", "end": "15:00", "stream": "sourcing",
+      "title": "Send net new outreach" },
+    { "day": "2026-08-27", "start": "15:00", "end": "16:00", "stream": "diligence", "subject": "Pathwork",
+      "title": "Connect with Bhargav on the insurance experts he has spoken with",
+      "notes": "No evening block: driving to Santa Barbara at 7." },
+
+    { "day": "2026-08-28", "start": "09:30", "end": "11:30", "stream": "sourcing",
+      "title": "Hard-to-Crack, second pass on whatever is left", "origin": "expanded" },
+    { "day": "2026-08-28", "start": "20:00", "end": "21:30", "stream": "diligence", "subject": "Pathwork",
+      "title": "Organize the customer call notes", "notes": "Evening deep work." },
+
+    { "day": "2026-09-08", "start": "10:00", "end": "11:30", "stream": "market", "subject": "Life insurance",
+      "subject_kind": "market", "title": "Start outreach around InsureTech Connect, Vegas",
+      "due_on": "2026-09-08", "notes": "September conference. Sits on a real day so it cannot be forgotten." }
+  ]
+}
