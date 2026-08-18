@@ -13336,7 +13336,8 @@
       "body": "<div>Hey Johnny - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-18",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-08-18T15:53:35.028Z"
     },
     {
       "slug": "modo",
@@ -13351,7 +13352,8 @@
       "body": "<div>Hey Johnny - following up - how have you been thinking about your next raise? I really like what you're building at Modo and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-23",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-08-18T15:53:35.028Z"
     },
     {
       "slug": "modo",
@@ -13366,7 +13368,8 @@
       "body": "<div>Hey Johnny - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>I think the second product here is the procurement view. Once you can show which tools got used for which task across a company, the same data answers what to renew, what to cut, and where to buy next, and that is a finance and IT conversation rather than an enablement one. Our operations team is good at helping companies make that jump from a departmental wedge into a budget line someone senior owns.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-08-28",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-08-18T15:53:35.028Z"
     },
     {
       "slug": "nimble",
