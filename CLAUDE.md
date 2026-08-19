@@ -2,8 +2,12 @@
 
 ## Where The Tracker Lives
 
-**"The tracker" means the Supabase Postgres database and the Vercel console built on it.**
-When Calvin says "update the tracker", that is what he means. It is the system of record.
+**"The tracker" means the Supabase Postgres database and the Vercel app built on it.**
+When Calvin says **"update"**, **"refresh"**, or **"the tracker"**, that is what he means,
+in every session, with no exceptions. He never means the Google Sheets analytics tracker.
+Sheets are read as source data only; nothing is ever written back to them.
+
+The app is **Telescope OS**: Dashboard, Week, Hard to Crack, Investors, Outreach.
 
 - Connection string: `SUPABASE_DB_URL` in `.env`. Check it with `node scripts/db.js`.
 - Schema: `db/schema.sql`. Tables are `company`, `company_domain`, `contact`, `sequence`,
