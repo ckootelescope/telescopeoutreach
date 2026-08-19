@@ -75,6 +75,7 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
 
   const c = await connect();
   const log = [];
+  let investorSort = 0;
   const run = (sql, args) => apply ? c.query(sql, args) : Promise.resolve({ rows: [] });
 
   // ---- week -------------------------------------------------------------
@@ -85,6 +86,8 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
       weekId = r.rows[0].id;
       if (plan.intent) await run('update os_week set intent = $1, status = $2 where id = $3',
         [plan.intent, 'active', weekId]);
+      if (plan.calls_goal) await run('update os_week set calls_goal = $1 where id = $2',
+        [plan.calls_goal, weekId]);
       log.push(`week ${plan.week_of}: exists (#${weekId})${plan.intent ? ', intent updated' : ''}`);
     } else {
       const ins = await run(`insert into os_week (week_of, status, intent)
@@ -139,18 +142,19 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
       ? (await c.query('select id from company where lower(name) = lower($1) limit 1', [b.org])).rows[0]
       : null;
     await run(`insert into os_meeting_brief
-        (external_id, category, org, counterpart, title, one_liner, focus, company_id, investor_id, updated_at)
-       values ($1,$2,$3,$4,$5,$6,$7,$8,$9, now())
+        (external_id, category, org, counterpart, title, one_liner, focus, deal, company_id, investor_id, updated_at)
+       values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10, now())
        on conflict (external_id) do update set
          category = excluded.category, org = excluded.org,
          counterpart = excluded.counterpart, title = excluded.title,
          one_liner = coalesce(excluded.one_liner, os_meeting_brief.one_liner),
          focus = coalesce(excluded.focus, os_meeting_brief.focus),
+         deal = coalesce(excluded.deal, os_meeting_brief.deal),
          company_id = coalesce(excluded.company_id, os_meeting_brief.company_id),
          investor_id = coalesce(excluded.investor_id, os_meeting_brief.investor_id),
          updated_at = now()`,
       [extId, b.category || 'other', b.org || null, b.counterpart || null, b.title || null,
-       b.one_liner || null, b.focus || null, co?.id ?? null,
+       b.one_liner || null, b.focus || null, b.deal || null, co?.id ?? null,
        b.investor ? (investorId[b.investor] ?? null) : null]);
     log.push(`brief [${b.category || 'other'}] ${extId}: ${b.org || b.counterpart || ''}`);
   }
@@ -166,6 +170,31 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
       log.push(`big three ${day} #${rank}: ${it.title}`);
       rank++;
     }
+  }
+
+  // ---- investor targets (the investor tab) -----------------------------
+  for (const t of plan.investor_targets || []) {
+    await run(`insert into os_investor_target
+        (name, firm, title, linkedin, email, bucket, invests_in, why, message,
+         source, tp_poc, verified, note, sort, updated_at)
+       values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14, now())
+       on conflict (name, firm) do update set
+         title = excluded.title,
+         linkedin = coalesce(excluded.linkedin, os_investor_target.linkedin),
+         email = coalesce(excluded.email, os_investor_target.email),
+         bucket = excluded.bucket, invests_in = excluded.invests_in,
+         why = excluded.why, message = excluded.message,
+         verified = excluded.verified, note = excluded.note,
+         sort = excluded.sort, updated_at = now()`,
+      [t.name, t.firm, t.title || null, t.linkedin || null, t.email || null,
+       t.bucket || 'coinvest', t.invests_in || null, t.why || null, t.message || null,
+       t.source || 'AS BD targets', t.tp_poc || 'Calvin',
+       t.verified === false ? false : true, t.note || null, investorSort++]);
+  }
+  if (plan.investor_targets?.length) {
+    const unver = plan.investor_targets.filter(t => t.verified === false).length;
+    log.push(`investor targets: ${plan.investor_targets.length}` +
+      (unver ? ` (${unver} need verifying before sending)` : ''));
   }
 
   // ---- tasks -----------------------------------------------------------
