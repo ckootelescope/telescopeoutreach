@@ -196,10 +196,18 @@ export default async function Dashboard() {
         ) : (
           <div className="mcards">
             {cat('investor').map((m) => (
-              <div className="mcard" key={m.external_id}>
+              <div className={`mcard${m.status === 'done' ? ' is-held' : ''}`} key={m.external_id}>
                 <div className="mc-head">
                   <span className="org">{m.counterpart ?? m.org}</span>
                   <span className="mono dim">{m.day.slice(5)} {m.time_label}</span>
+                  <form action={toggleMeeting}>
+                    <input type="hidden" name="id" value={m.external_id} />
+                    <input type="hidden" name="to" value={m.status === 'done' ? 'scheduled' : 'done'} />
+                    <button className="mbox" type="submit"
+                            aria-label={m.status === 'done' ? 'Mark not held' : 'Mark held'}>
+                      {m.status === 'done' ? '✓' : ''}
+                    </button>
+                  </form>
                 </div>
                 <p className="one">{[m.title, m.firm ?? m.org].filter(Boolean).join(' · ')}</p>
                 {m.invests_in
