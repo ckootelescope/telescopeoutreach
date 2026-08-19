@@ -1,6 +1,6 @@
 import { db } from '@/lib/supabase';
 import { Nav } from '../nav';
-import { toggleBigThing } from '../actions';
+import { toggleBigThing, toggleMeeting } from '../actions';
 import { TaskRow, MeetingRow, LABEL, ptMinutes, type Task, type Meeting } from '../lib-os';
 
 export const dynamic = 'force-dynamic';
@@ -53,6 +53,7 @@ export default async function Dashboard() {
   const goal = Number(prog?.calls_goal ?? 10);
   const booked = Number(prog?.booked ?? 0);
   const held = Number(prog?.held ?? 0);
+  const catchUps = Number(prog?.catch_ups ?? 0);
 
   const days = DOW.map((label, i) => ({
     label,
@@ -144,29 +145,45 @@ export default async function Dashboard() {
             ))}
           </div>
           <div className="goal-read">
-            <b>{held}</b> held, <b>{booked - held}</b> still to come,{' '}
+            <b>{held}</b> held, <b>{booked - held}</b> still booked,{' '}
             {booked >= goal
               ? <span className="ok-txt">target met</span>
               : <span className="gap-txt">{goal - booked} short of {goal}</span>}
+            {catchUps > 0 && ` · ${catchUps} catch-up${catchUps === 1 ? '' : 's'} not counted`}
           </div>
         </div>
         {cat('company').length === 0 ? (
           <div className="panel"><div className="empty">None booked.</div></div>
         ) : (
           <div className="mcards">
-            {cat('company').map((m) => (
-              <div className="mcard" key={m.external_id}>
-                <div className="mc-head">
-                  <span className="org">{m.org ?? m.summary}</span>
-                  <span className="mono dim">{m.day.slice(5)} {m.time_label}</span>
+            {cat('company').map((m) => {
+              const heldNow = m.status === 'done';
+              return (
+                <div className={`mcard${heldNow ? ' is-held' : ''}`} key={m.external_id}>
+                  <div className="mc-head">
+                    <span className="org">{m.org ?? m.summary}</span>
+                    <span className="mono dim">{m.day.slice(5)} {m.time_label}</span>
+                    <form action={toggleMeeting}>
+                      <input type="hidden" name="id" value={m.external_id} />
+                      <input type="hidden" name="to" value={heldNow ? 'scheduled' : 'done'} />
+                      <button className="mbox" type="submit"
+                              aria-label={heldNow ? 'Mark not held' : 'Mark held'}>
+                        {heldNow ? '✓' : ''}
+                      </button>
+                    </form>
+                  </div>
+                  <span className={m.conversation_type === 'catch_up' ? 'lab' : 'held-tag'}>
+                    {m.conversation_type === 'catch_up' ? 'catch-up, not counted'
+                      : heldNow ? 'held' : 'net new'}
+                  </span>
+                  {m.counterpart && <p className="one">{[m.counterpart, m.title].filter(Boolean).join(' · ')}</p>}
+                  {m.one_liner
+                    ? <p className="one">{m.one_liner}</p>
+                    : <p className="one gap">No one-liner yet</p>}
+                  {m.focus && <p className="focus">{m.focus}</p>}
                 </div>
-                {m.counterpart && <p className="one">{[m.counterpart, m.title].filter(Boolean).join(' · ')}</p>}
-                {m.one_liner
-                  ? <p className="one">{m.one_liner}</p>
-                  : <p className="one gap">No one-liner yet</p>}
-                {m.focus && <p className="focus">{m.focus}</p>}
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </section>

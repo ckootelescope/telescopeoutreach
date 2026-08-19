@@ -20,7 +20,7 @@ export type Meeting = {
   external_id: string; summary: string; starts_at: string; ends_at: string | null; day: string;
   status: string; time_label: string | null; category: string; deal: string | null;
   org: string | null; counterpart: string | null; title: string | null;
-  one_liner: string | null; focus: string | null;
+  one_liner: string | null; focus: string | null; conversation_type: string;
   firm: string | null; invests_in: string | null; track: string[] | null;
 };
 

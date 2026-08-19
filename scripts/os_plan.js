@@ -142,19 +142,20 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
       ? (await c.query('select id from company where lower(name) = lower($1) limit 1', [b.org])).rows[0]
       : null;
     await run(`insert into os_meeting_brief
-        (external_id, category, org, counterpart, title, one_liner, focus, deal, company_id, investor_id, updated_at)
-       values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10, now())
+        (external_id, category, org, counterpart, title, one_liner, focus, deal, conversation_type, company_id, investor_id, updated_at)
+       values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11, now())
        on conflict (external_id) do update set
          category = excluded.category, org = excluded.org,
          counterpart = excluded.counterpart, title = excluded.title,
          one_liner = coalesce(excluded.one_liner, os_meeting_brief.one_liner),
          focus = coalesce(excluded.focus, os_meeting_brief.focus),
          deal = coalesce(excluded.deal, os_meeting_brief.deal),
+         conversation_type = coalesce(excluded.conversation_type, os_meeting_brief.conversation_type),
          company_id = coalesce(excluded.company_id, os_meeting_brief.company_id),
          investor_id = coalesce(excluded.investor_id, os_meeting_brief.investor_id),
          updated_at = now()`,
       [extId, b.category || 'other', b.org || null, b.counterpart || null, b.title || null,
-       b.one_liner || null, b.focus || null, b.deal || null, co?.id ?? null,
+       b.one_liner || null, b.focus || null, b.deal || null, b.conversation_type || null, co?.id ?? null,
        b.investor ? (investorId[b.investor] ?? null) : null]);
     log.push(`brief [${b.category || 'other'}] ${extId}: ${b.org || b.counterpart || ''}`);
   }
@@ -176,8 +177,11 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
   for (const t of plan.investor_targets || []) {
     await run(`insert into os_investor_target
         (name, firm, title, linkedin, email, bucket, invests_in, why, message,
-         source, tp_poc, verified, note, sort, updated_at)
-       values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14, now())
+         source, tp_poc, verified, note, sort,
+         relationship, last_outreach, last_response, next_action, relevant_cos,
+         tier, firm_type, owner, cadence_days, updated_at)
+       values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,
+               $15,$16,$17,$18,$19,$20,$21,$22,$23, now())
        on conflict (name, firm) do update set
          title = excluded.title,
          linkedin = coalesce(excluded.linkedin, os_investor_target.linkedin),
@@ -185,11 +189,23 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
          bucket = excluded.bucket, invests_in = excluded.invests_in,
          why = excluded.why, message = excluded.message,
          verified = excluded.verified, note = excluded.note,
-         sort = excluded.sort, updated_at = now()`,
+         sort = excluded.sort,
+         relationship = excluded.relationship,
+         last_outreach = excluded.last_outreach,
+         last_response = excluded.last_response,
+         next_action = excluded.next_action,
+         relevant_cos = excluded.relevant_cos,
+         tier = excluded.tier, firm_type = excluded.firm_type,
+         owner = coalesce(excluded.owner, os_investor_target.owner),
+         cadence_days = excluded.cadence_days,
+         updated_at = now()`,
       [t.name, t.firm, t.title || null, t.linkedin || null, t.email || null,
        t.bucket || 'coinvest', t.invests_in || null, t.why || null, t.message || null,
        t.source || 'AS BD targets', t.tp_poc || 'Calvin',
-       t.verified === false ? false : true, t.note || null, investorSort++]);
+       t.verified === false ? false : true, t.note || null, investorSort++,
+       t.relationship || null, t.last_outreach || null, t.last_response || null,
+       t.next_action || null, t.relevant_cos || null, t.tier || null,
+       t.firm_type || null, t.owner || 'Calvin', t.cadence_days || 60]);
   }
   if (plan.investor_targets?.length) {
     const unver = plan.investor_targets.filter(t => t.verified === false).length;

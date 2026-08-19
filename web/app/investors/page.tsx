@@ -6,117 +6,184 @@ export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 /**
- * People at peer firms worth Calvin's time, with the opener already written.
+ * Two queues out of one table.
  *
- * The buckets are the only judgement here, and they are about Telescope's
- * position rather than the firm's prestige: who co-invests at our stage, who
- * sees companies before we do, who takes them on afterwards, and who brings
- * strategic money.
+ *   net new   people with no relationship yet. This is the point of the tab.
+ *   catch up   an active relationship whose last touch has gone past its cadence.
+ *
+ * Anyone spoken to recently appears in neither, which is the correct answer for
+ * a relationship that is already healthy. The count is shown so it is obvious
+ * they were considered and excluded rather than missing.
  */
-const BUCKETS = [
-  { k: 'coinvest', h: 'Co-invest at Series A',
-    d: 'Same stage as us. Shared dealflow is the point of the relationship.' },
-  { k: 'upstream', h: 'Upstream, seed and pre-seed',
-    d: 'They see companies a round before we can. Be who they call at the A.' },
-  { k: 'downstream', h: 'Downstream, Series B and later',
-    d: 'Where our portfolio raises next. Worth knowing before we need them.' },
-  { k: 'corporate', h: 'Corporate and strategic',
-    d: 'Strategic money and customer introductions rather than shared dealflow.' },
-] as const;
+const BUCKET: Record<string, string> = {
+  coinvest: 'Co-invest at A',
+  upstream: 'Upstream, seed',
+  downstream: 'Downstream, B+',
+  corporate: 'Corporate',
+};
 
-type Target = {
+type Row = {
   id: number; name: string; firm: string; title: string | null; linkedin: string | null;
   email: string | null; bucket: string; invests_in: string | null; why: string | null;
   message: string | null; status: string; verified: boolean; note: string | null;
+  relationship: string | null; last_outreach: string | null; next_action: string | null;
+  relevant_cos: string | null; tier: string | null; firm_type: string | null;
+  queue: string; days_since: number | null; due_in: number | null; cadence_days: number;
 };
 
 export default async function Investors() {
   const s = db();
-  const { data } = await s.from('os_investor_target').select('*').order('sort');
-  const rows = (data ?? []) as Target[];
+  const { data } = await s.from('v_os_investor_queue').select('*').order('sort');
+  const rows = (data ?? []) as Row[];
 
-  const todo = rows.filter((r) => r.status === 'todo').length;
+  const netNew = rows.filter((r) => r.queue === 'net_new');
+  const catchUp = rows.filter((r) => r.queue === 'catch_up')
+    .sort((a, b) => (b.days_since ?? 0) - (a.days_since ?? 0));
+  const current = rows.filter((r) => r.queue === 'current')
+    .sort((a, b) => (a.due_in ?? 0) - (b.due_in ?? 0));
+
   const unver = rows.filter((r) => !r.verified).length;
+  const sent = rows.filter((r) => r.status !== 'todo').length;
 
   return (
     <div className="wrap">
       <Nav current="/investors" />
 
       <div className="kpis">
-        <div className="kpi"><div className="k">On the list</div><div className="v">{rows.length}</div>
-          <div className="s">from AS BD targets</div></div>
-        <div className="kpi"><div className="k">Not contacted</div><div className="v">{todo}</div>
-          <div className="s">openers written</div></div>
-        <div className="kpi"><div className="k">Sent</div><div className="v">
-          {rows.filter((r) => r.status !== 'todo' && r.status !== 'skip').length}</div>
-          <div className="s">reached out</div></div>
-        <div className={`kpi ${unver ? 'warn' : 'ok'}`}><div className="k">Need verifying</div>
+        <div className="kpi"><div className="k">Net new</div><div className="v">{netNew.length}</div>
+          <div className="s">never spoken to</div></div>
+        <div className={`kpi ${catchUp.length ? 'warn' : 'ok'}`}><div className="k">Due a catch-up</div>
+          <div className="v">{catchUp.length}</div>
+          <div className="s">past their cadence</div></div>
+        <div className="kpi ok"><div className="k">Current</div><div className="v">{current.length}</div>
+          <div className="s">recently spoken, held back</div></div>
+        <div className={`kpi ${unver ? 'warn' : ''}`}><div className="k">Need verifying</div>
           <div className="v">{unver}</div>
-          <div className="s">{unver ? 'stale or unmatched' : 'all confirmed'}</div></div>
+          <div className="s">{unver ? 'stale or truncated' : 'all confirmed'}</div></div>
       </div>
 
-      {unver > 0 && (
-        <p className="note">
-          Rows flagged amber did not verify cleanly against Apollo. Two people have changed firm
-          since the sheet was written and one match was the wrong person. Confirm the seat before
-          sending those.
-        </p>
+      <p className="note">
+        Seeded from the Notion Investor Pipeline, so nobody you have already spoken to can appear
+        under net new. {current.length} live relationships are deliberately held back because their
+        last touch is still inside cadence.
+        {sent > 0 && ` ${sent} marked done.`}
+      </p>
+
+      {/* Catch-up first: an existing relationship going cold costs more than a
+          cold name you never had. */}
+      {catchUp.length > 0 && (
+        <section>
+          <h2>Due a catch-up <span className="count">{catchUp.length}</span></h2>
+          <p className="note">
+            Already spoken to, and past cadence. Ordered by how long it has been.
+          </p>
+          <div className="tcards">
+            {catchUp.map((t) => <Card key={t.id} t={t} mode="catch" />)}
+          </div>
+        </section>
       )}
 
-      {BUCKETS.map((b) => {
-        const list = rows.filter((r) => r.bucket === b.k);
-        if (list.length === 0) return null;
-        return (
-          <section key={b.k}>
-            <h2>{b.h} <span className="count">{list.length}</span></h2>
-            <p className="note">{b.d}</p>
-            <div className="tcards">
-              {list.map((t) => (
-                <div className={`tcard st-${t.status}${t.verified ? '' : ' unver'}`} key={t.id}>
-                  <div className="tc-head">
-                    <div>
-                      <span className="who">{t.name}</span>
-                      <span className="role">{[t.title, t.firm].filter(Boolean).join(' · ')}</span>
-                    </div>
-                    <span className={`pill ${t.status === 'todo' ? '' : 'ok'}`}>{t.status}</span>
-                  </div>
-
-                  {t.invests_in && <p className="invests">{t.invests_in}</p>}
-                  {t.why && <p className="why">{t.why}</p>}
-                  {!t.verified && t.note && <p className="unvernote">{t.note}</p>}
-
-                  {t.message && (
-                    <div className="msg">
-                      <div className="msg-l">Opener</div>
-                      <p>{t.message}</p>
-                    </div>
-                  )}
-
-                  <div className="tc-foot">
-                    {t.linkedin
-                      ? <a href={t.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                      : <span className="mono dim">no LinkedIn found</span>}
-                    {t.email && <a href={`mailto:${t.email}`}>{t.email}</a>}
-                    <span className="grow" />
-                    <form action={setTargetStatus}>
-                      <input type="hidden" name="id" value={t.id} />
-                      <input type="hidden" name="to" value={t.status === 'todo' ? 'sent' : 'todo'} />
-                      <button type="submit">
-                        {t.status === 'todo' ? 'Mark sent' : 'Undo'}
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              ))}
+      <section>
+        <h2>Net new <span className="count">{netNew.length}</span></h2>
+        <p className="note">
+          No relationship on record. Junior investors first, but title does not matter at a Tier 1.
+        </p>
+        {(['coinvest', 'upstream', 'downstream', 'corporate'] as const).map((b) => {
+          const list = netNew.filter((r) => r.bucket === b);
+          if (list.length === 0) return null;
+          return (
+            <div className="bgroup" key={b}>
+              <div className="bgroup-h">{BUCKET[b]} <span>{list.length}</span></div>
+              <div className="tcards">
+                {list.map((t) => <Card key={t.id} t={t} mode="new" />)}
+              </div>
             </div>
-          </section>
-        );
-      })}
+          );
+        })}
+      </section>
+
+      {current.length > 0 && (
+        <section>
+          <h2>Current, nothing needed <span className="count">{current.length}</span></h2>
+          <p className="note">Inside cadence. Shown so you know they were considered.</p>
+          <div className="panel">
+            <table>
+              <thead><tr><th>Who</th><th>Firm</th><th>Last touch</th><th>Due in</th>
+                <th>Open action</th></tr></thead>
+              <tbody>
+                {current.map((t) => (
+                  <tr key={t.id}>
+                    <td className="co">{t.name}</td>
+                    <td className="mono dim">{t.firm}</td>
+                    <td className="mono">{t.days_since}d ago</td>
+                    <td className="mono dim">{t.due_in}d</td>
+                    <td className="mono dim">{t.next_action ?? '—'}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      )}
 
       <footer>
-        Names from the AS BD targets tab, roles and profiles from Apollo, openers drafted here.
-        Not a task list: the research is done, these are ready to send.
+        Relationship state from the Notion Investor Pipeline. Profiles from Apollo. Openers
+        drafted here. Cadence defaults to 60 days per person.
       </footer>
+    </div>
+  );
+}
+
+function Card({ t, mode }: { t: Row; mode: 'new' | 'catch' }) {
+  const done = t.status !== 'todo';
+  return (
+    <div className={`tcard st-${t.status}${t.verified ? '' : ' unver'}`}>
+      <div className="tc-head">
+        <div>
+          <span className="who">{t.name}</span>
+          <span className="role">{[t.title, t.firm].filter(Boolean).join(' · ')}</span>
+        </div>
+        <div className="tc-badges">
+          {t.tier && <span className="pill">{t.tier}</span>}
+          {mode === 'catch' && <span className="pill r2">{t.days_since}d</span>}
+          {done && <span className="pill ok">{t.status}</span>}
+        </div>
+      </div>
+
+      {t.invests_in && <p className="invests">{t.invests_in}</p>}
+      {t.relevant_cos && (
+        <div className="track">
+          <span className="lbl">Shared</span>
+          {t.relevant_cos.split(',').map((x) => (
+            <span className="chip" key={x}>{x.trim()}</span>
+          ))}
+        </div>
+      )}
+      {t.next_action && (
+        <p className="nextact"><b>Open:</b> {t.next_action}</p>
+      )}
+      {t.why && <p className="why">{t.why}</p>}
+      {!t.verified && t.note && <p className="unvernote">{t.note}</p>}
+
+      {t.message && (
+        <div className="msg">
+          <div className="msg-l">{mode === 'catch' ? 'Catch-up note' : 'Opener'}</div>
+          <p>{t.message}</p>
+        </div>
+      )}
+
+      <div className="tc-foot">
+        {t.linkedin
+          ? <a href={t.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          : <span className="mono dim">no LinkedIn</span>}
+        {t.email && <a href={`mailto:${t.email}`}>{t.email}</a>}
+        <span className="grow" />
+        <form action={setTargetStatus}>
+          <input type="hidden" name="id" value={t.id} />
+          <input type="hidden" name="to" value={done ? 'todo' : 'sent'} />
+          <button type="submit">{done ? 'Undo' : 'Mark sent'}</button>
+        </form>
+      </div>
     </div>
   );
 }
