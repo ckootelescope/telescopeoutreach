@@ -1,6 +1,7 @@
 import { db } from '@/lib/supabase';
 import { Nav } from '../nav';
-import { updateHtc, setHtcMode } from '../actions';
+import { updateHtc } from '../actions';
+import { ModeToggle } from './mode';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -25,8 +26,6 @@ type Row = {
   days_since_email: number | null; sequence_status: string | null;
   sequence_round: number | null; last_reply_at: string | null; needs_action: boolean;
 };
-
-const MODE: Record<string, string> = { auto: 'cadence', manual: 'manual', hold: 'holding' };
 
 export default async function HardToCrack() {
   const s = db();
@@ -137,15 +136,7 @@ function Block({
                     {r.last_reply_at && <span className="pill ok">replied</span>}
                   </td>
                   <td className="mono dim">
-                    <form action={setHtcMode} className="modes">
-                      <input type="hidden" name="id" value={r.id} />
-                      {(['auto', 'manual', 'hold'] as const).map((m) => (
-                        <button key={m} name="mode" value={m}
-                                className={`modebtn${r.cadence_mode === m ? ' on' : ''}`}>
-                          {MODE[m]}
-                        </button>
-                      ))}
-                    </form>
+                    <ModeToggle id={r.id} mode={r.cadence_mode} />
                     {r.cadence_mode === 'auto' && r.sequence_status === 'active' && (
                       <span className="sub">R{r.sequence_round} live</span>
                     )}

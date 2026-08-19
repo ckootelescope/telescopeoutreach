@@ -354,3 +354,6 @@ td.edit.wide input[name="value"]{min-width:210px}
 .modebtn.on{background:var(--accent-hi);color:#0A2A16}
 .modebtn:hover{color:var(--ink)}
 .modebtn.on:hover{color:#0A2A16}
+.modes.busy{opacity:.55}
+.modebtn:disabled{cursor:default}
+.modebtn.on:disabled{opacity:1}
