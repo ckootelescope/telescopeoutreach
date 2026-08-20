@@ -12941,7 +12941,8 @@
       "body": "<div>Hey Kik - following up - how have you been thinking about your next raise? I really like what you're building at Solomon and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-19",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-20T02:07:49.175Z"
     },
     {
       "slug": "solomon",
@@ -12987,7 +12988,8 @@
       "body": "<div>Hey Param - following up - how have you been thinking about your next raise? I really like what you're building at AgileRL and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-19",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-20T02:07:49.175Z"
     },
     {
       "slug": "agilerl",
@@ -13439,7 +13441,8 @@
       "body": "<div>Hey Kevin - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-19",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-20T02:07:49.175Z"
     },
     {
       "slug": "vimes",
@@ -13484,7 +13487,8 @@
       "body": "<div>Hey Keegan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-19",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-20T02:07:49.175Z"
     },
     {
       "slug": "urun",
@@ -13529,7 +13533,8 @@
       "body": "<div>Hey Aaron - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-19",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-20T02:07:49.175Z"
     },
     {
       "slug": "lumbra",
@@ -13574,7 +13579,8 @@
       "body": "<div>Hey Esan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-19",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-20T02:07:49.175Z"
     },
     {
       "slug": "honen",
@@ -13619,7 +13625,8 @@
       "body": "<div>Hey Sankalp - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-19",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-20T02:07:49.175Z"
     },
     {
       "slug": "optexity",
@@ -13664,7 +13671,8 @@
       "body": "<div>Hey Josh - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-19",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-20T02:07:49.175Z"
     },
     {
       "slug": "phase",
@@ -13709,7 +13717,8 @@
       "body": "<div>Hey Will - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-19",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-20T02:07:49.175Z"
     },
     {
       "slug": "shiplight",
