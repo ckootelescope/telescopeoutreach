@@ -74,7 +74,9 @@ async function main() {
       join contact ct on ct.id = q.contact_id
      where s.status in ('planned','drafted')
        and q.status in ('active','needs_scheduling','completed')
-       and s.due_date <= current_date
+       -- pt_today(), not current_date: the server runs UTC, so after 5pm Pacific
+       -- current_date is tomorrow and this pulls in steps that are not due yet.
+       and s.due_date <= pt_today()
      order by co.name, s.step_no`);
 
   // One Gmail fetch per thread, not per step, and several at once. Serial

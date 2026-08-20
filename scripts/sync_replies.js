@@ -47,42 +47,129 @@ async function main() {
   const live = await c.query(`
     select q.id seq_id, co.name company, ct.id contact_id, ct.email, co.id company_id, q.status,
            (select string_agg(distinct s.thread_id, ',') from step s
-             where s.sequence_id = q.id and s.thread_id is not null) threads
+             where s.sequence_id = q.id and s.thread_id is not null) threads,
+           (select string_agg(distinct lower(d.domain), ',') from company_domain d
+             where d.company_id = co.id) domains
       from sequence q join company co on co.id = q.company_id join contact ct on ct.id = q.contact_id
      where q.status in ('active','needs_scheduling','completed')
        and coalesce((select max(s.sent_at)::date from step s where s.sequence_id = q.id),
-                    current_date) > current_date - 45`);
+                    pt_today()) > pt_today() - 45`);
+
+  const HEADERS = ['From', 'Subject', 'Date', 'Auto-Submitted', 'X-Autoreply', 'Precedence']
+    .map(h => 'metadataHeaders=' + h).join('&');
+
+  /** Not a founder: us, a bounce daemon, or a notification robot. */
+  const notAPerson = from =>
+    /@telescopepartners\.com$/i.test(from) ||
+    /mailer-daemon|postmaster|reminder@superhuman|calendar-notification|no-?reply/i.test(from);
+
+  /**
+   * An out-of-office is not a reply. This used to be true only by accident:
+   * auto-replies usually land on their own thread, and the sweep only walked
+   * the cadence thread, so it never saw them. Now that senders are matched by
+   * domain across the mailbox they do show up, and they have to be excluded on
+   * purpose. Checked against the headers a real autoresponder sets, with a
+   * subject-line fallback for the ones that set nothing.
+   */
+  const isAutoReply = h => {
+    const auto = String(h['auto-submitted'] || '').toLowerCase();
+    if (auto && auto !== 'no') return true;
+    if (h['x-autoreply']) return true;
+    if (/auto[_-]?reply/i.test(String(h.precedence || ''))) return true;
+    return /^\s*(re:\s*)?(automatic(al)?\s+reply|auto(matic)?[-\s]?reply|autoreply|out\s+of\s+(the\s+)?office|away\s+from\s+(my\s+)?(desk|email)|vacation\s+reply)\b/i
+      .test(String(h.subject || '')) || /\bout of office\b/i.test(String(h.subject || ''));
+  };
+
+  // Free-mail and link-shortener domains would match half the mailbox if one
+  // ever landed in company_domain, so they are never used for sender matching.
+  const SHARED = new Set(['gmail.com', 'googlemail.com', 'yahoo.com', 'hotmail.com', 'outlook.com',
+    'icloud.com', 'me.com', 'aol.com', 'msn.com', 'live.com', 'proton.me', 'protonmail.com',
+    'hubs.ly', 'bit.ly', 'substack.com']);
+
+  const seqsByDomain = new Map();
+  for (const row of live.rows) {
+    for (const d of String(row.domains || '').split(',').filter(Boolean)) {
+      if (SHARED.has(d)) continue;
+      if (!seqsByDomain.has(d)) seqsByDomain.set(d, []);
+      seqsByDomain.get(d).push(row);
+    }
+  }
 
   const found = [];
+  const autos = [];
+  const seenMsg = new Set();
+  const hdrs = m => { const h = {}; (m.payload?.headers || []).forEach(x => h[x.name.toLowerCase()] = x.value); return h; };
+  const push = (row, m, h, threadId) => {
+    const from = addrs(h.from)[0] || '';
+    if (!from || notAPerson(from)) return;
+    if (isAutoReply(h)) { autos.push({ company: row.company, from, subject: h.subject }); return; }
+    const key = row.seq_id + ':' + m.id;
+    if (seenMsg.has(key)) return;
+    seenMsg.add(key);
+    found.push({ ...row, message_id: m.id, thread_id: threadId, from,
+      subject: h.subject || null, ts: Number(m.internalDate) });
+  };
+
+  // Pass 1: the cadence threads. Cheap, exact, and catches the common case.
   for (const row of live.rows) {
     for (const th of String(row.threads || '').split(',').filter(Boolean)) {
       const r = await req({ hostname: 'gmail.googleapis.com',
-        path: `/gmail/v1/users/me/threads/${th}?format=metadata&metadataHeaders=From&metadataHeaders=Subject&metadataHeaders=Date`,
+        path: `/gmail/v1/users/me/threads/${th}?format=metadata&${HEADERS}`,
         method: 'GET', headers: { Authorization: 'Bearer ' + t } });
       if (r.s !== 200) continue;
       const j = JSON.parse(r.b);
-      for (const m of (j.messages || [])) {
-        const h = {}; (m.payload?.headers || []).forEach(x => h[x.name.toLowerCase()] = x.value);
-        const from = addrs(h.from)[0] || '';
-        if (!from) continue;
-        // Anyone @telescopepartners is us. Chris and Claire are cc'd on plenty
-        // of these threads and their replies are not founder replies.
-        if (/@telescopepartners\.com$/i.test(from)) continue;
-        if (/mailer-daemon|postmaster|reminder@superhuman|calendar-notification/i.test(from)) continue;
-        found.push({ ...row, message_id: m.id, thread_id: j.id, from,
-          subject: h.subject || null, ts: Number(m.internalDate) });
-      }
+      for (const m of (j.messages || [])) push(row, m, hdrs(m), j.id);
+    }
+  }
+
+  // Pass 2: sender domain across the whole mailbox. A founder who replies from
+  // a second address, or on a thread that started somewhere else such as
+  // LinkedIn, is invisible to pass 1 no matter how many threads it walks.
+  const domains = [...seqsByDomain.keys()];
+  const CHUNK = 25;
+  for (let i = 0; i < domains.length; i += CHUNK) {
+    const group = domains.slice(i, i + CHUNK);
+    const q = encodeURIComponent(`from:{${group.join(' ')}} newer_than:45d`);
+    const r = await req({ hostname: 'gmail.googleapis.com',
+      path: `/gmail/v1/users/me/messages?q=${q}&maxResults=200`,
+      method: 'GET', headers: { Authorization: 'Bearer ' + t } });
+    if (r.s !== 200) continue;
+    for (const stub of (JSON.parse(r.b).messages || [])) {
+      const mr = await req({ hostname: 'gmail.googleapis.com',
+        path: `/gmail/v1/users/me/messages/${stub.id}?format=metadata&${HEADERS}`,
+        method: 'GET', headers: { Authorization: 'Bearer ' + t } });
+      if (mr.s !== 200) continue;
+      const m = JSON.parse(mr.b);
+      const h = hdrs(m);
+      const from = addrs(h.from)[0] || '';
+      const dom = from.split('@')[1];
+      for (const row of (seqsByDomain.get(dom) || [])) push(row, m, h, m.threadId);
     }
   }
 
   const bySeq = new Map();
   found.forEach(f => { if (!bySeq.has(f.seq_id) || bySeq.get(f.seq_id).ts < f.ts) bySeq.set(f.seq_id, f); });
 
-  console.log('live sequences checked: ' + live.rows.length);
+  console.log('live sequences checked: ' + live.rows.length +
+              '  (domains matched on: ' + seqsByDomain.size + ')');
   console.log('sequences with an inbound reply: ' + bySeq.size);
   for (const f of bySeq.values()) {
+    const offThread = !String(f.threads || '').split(',').includes(f.thread_id);
+    const offAddr = f.from.toLowerCase() !== String(f.email).toLowerCase();
+    const how = [offThread ? 'other thread' : null, offAddr ? 'other address' : null]
+      .filter(Boolean).join(', ');
     console.log('  ' + new Date(f.ts - 7 * 3600e3).toISOString().slice(0, 16).replace('T', ' ') +
-                ' | ' + f.company.padEnd(18) + ' | ' + f.from);
+                ' | ' + f.company.padEnd(18) + ' | ' + f.from + (how ? '   <- ' + how : ''));
+  }
+  // Held, not counted. An out-of-office leaves the cadence live, so say so.
+  if (autos.length) {
+    console.log('\nauto-replies held (cadence left live): ' + autos.length);
+    const seenAuto = new Set();
+    for (const a of autos) {
+      if (seenAuto.has(a.company)) continue;
+      seenAuto.add(a.company);
+      console.log('  ' + a.company.padEnd(18) + ' | ' + a.from + ' | ' + String(a.subject || '').slice(0, 50));
+    }
   }
   if (!APPLY) { console.log('\n(report only - pass --apply to write)'); await c.end(); return; }
 
@@ -98,7 +185,10 @@ async function main() {
   }
   for (const seqId of bySeq.keys()) {
     await c.query(`update step set status='cancelled' where sequence_id=$1 and status='planned'`, [seqId]);
-    await c.query(`update sequence set status='replied', ended_on=current_date where id=$1`, [seqId]);
+    // pt_today(), not current_date: the server runs UTC, so after 5pm Pacific
+    // current_date is already tomorrow and stamps a sequence as ending on a day
+    // that has not happened yet.
+    await c.query(`update sequence set status='replied', ended_on=pt_today() where id=$1`, [seqId]);
   }
 
   // stop the same cadences in the file the scheduler actually reads
