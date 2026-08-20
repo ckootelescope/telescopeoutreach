@@ -2,9 +2,14 @@
 
 begin;
 
--- what needs drafting today
-create or replace view v_due as
-select s.id sequence_id, c.name company, ct.name founder, ct.email,
+-- what needs drafting today.
+-- Careful with the aliases here: s is step, q is sequence. This view used to
+-- expose s.id under the name "sequence_id", which is the step id wearing the
+-- wrong label, so joining it back to sequence.id silently matched nothing.
+-- Both ids are now published under their real names.
+drop view if exists v_due;
+create view v_due as
+select s.id step_id, q.id sequence_id, c.name company, ct.name founder, ct.email,
        q.round, q.kind, s.step_no, s.due_date, s.status
   from step s
   join sequence q on q.id = s.sequence_id

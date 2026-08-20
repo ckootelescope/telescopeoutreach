@@ -16,6 +16,8 @@
 //   "week_of": "2026-08-24",
 //   "intent": "the Sunday paragraph, verbatim",
 //   "replace_tasks": true,                 // wipe this week's tasks first
+//   "replace_from": "2026-08-19",          // wipe only OPEN tasks from this day on
+//   "set_status": { "done": [88,90], "moved": [87] },   // by os_task.id
 //   "priority": [ { "rank":1, "label":"Pathwork", "kind":"company",
 //                   "stream":null, "note":"top priority" } ],
 //   "big_three": { "2026-08-24": [ {"title":"...", "note":"..."} ] },
@@ -97,6 +99,47 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
     }
     if (apply) await c.query(`update os_week set status = 'closed'
                               where status = 'active' and week_of <> $1`, [plan.week_of]);
+  }
+
+  // ---- status changes on tasks that already exist ------------------------
+  // A mid-week correction is mostly bookkeeping on tasks that are already in
+  // the table: this one got done, that one slipped to Thursday. Without this
+  // the only lever is replace_tasks, which wipes the whole week including the
+  // days already behind us and everything marked done on them.
+  // Ids leaving 'open' in this run. Tracked so the replace_from preview below
+  // does not list a task as doomed that this same run is about to mark done.
+  const leavingOpen = new Set();
+  if (plan.set_status) {
+    for (const [status, ids] of Object.entries(plan.set_status)) {
+      if (!Array.isArray(ids) || !ids.length) continue;
+      const found = await c.query(
+        'select id, title, status from os_task where id = any($1) and week_id = $2', [ids, weekId]);
+      const missing = ids.filter(i => !found.rows.some(r => Number(r.id) === Number(i)));
+      if (missing.length) throw new Error(
+        `set_status.${status}: no task in week ${plan.week_of} with id ${missing.join(', ')}`);
+      await run(`update os_task
+                    set status = $1, done_at = case when $1 = 'done' then now() else done_at end
+                  where id = any($2)`, [status, ids]);
+      for (const r of found.rows) log.push(`  ${r.status} -> ${status}  #${r.id} ${r.title}`);
+      if (status !== 'open') ids.forEach(i => leavingOpen.add(Number(i)));
+    }
+  }
+
+  // ---- scoped clear ------------------------------------------------------
+  // replace_from wipes only the still-open tasks from a date onward, so a
+  // Wednesday re-plan leaves Monday and Tuesday, and anything already marked
+  // done, exactly where they are.
+  if (plan.replace_from) {
+    const doomed = await c.query(
+      `select id, title, to_char(day,'YYYY-MM-DD') as dt from os_task
+        where week_id = $1 and day >= $2 and status = 'open'
+          and not (id = any($3)) order by day, sort`,
+      [weekId, plan.replace_from, [...leavingOpen]]);
+    log.push(`\nclearing ${doomed.rows.length} open task(s) from ${plan.replace_from} onward:`);
+    for (const r of doomed.rows) log.push(`  - ${r.dt}  #${r.id} ${r.title}`);
+    await run(`delete from os_task
+                where week_id = $1 and day >= $2 and status = 'open' and not (id = any($3))`,
+      [weekId, plan.replace_from, [...leavingOpen]]);
   }
 
   // ---- priority order ---------------------------------------------------

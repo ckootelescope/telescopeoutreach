@@ -39,9 +39,10 @@ Report: "Reconciled: N sent, N replied, N bounced."
 select * from v_due;
 ```
 
-Columns: `sequence_id`, `company`, `founder`, `email`, `round`, `kind`, `step_no`,
-`due_date`, `status`. Measure today in **Pacific**; the database stores dates at 07:00Z,
-which is midnight Pacific.
+Columns: `step_id`, `sequence_id`, `company`, `founder`, `email`, `round`, `kind`,
+`step_no`, `due_date`, `status`. Feed `step_id` to the query below; `sequence_id` is the
+real sequence. Measure today in **Pacific**; the database stores dates at 07:00Z, which is
+midnight Pacific.
 
 If `v_due` is empty, say so and stop. Otherwise report "Found N follow-ups due."
 
@@ -54,7 +55,7 @@ select co.name, ct.name founder, ct.email, s.round, s.kind, s.subject,
   join sequence s on s.id = st.sequence_id
   join company co on co.id = s.company_id
   join contact ct on ct.id = s.contact_id
- where st.id = any($1::bigint[]);
+ where st.id = any($1::bigint[]);   -- pass v_due.step_id here
 ```
 
 ## Step 3: Get the body

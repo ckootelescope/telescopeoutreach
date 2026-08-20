@@ -30,5 +30,8 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
+  // icon.svg is the app/ file-convention favicon. It has to sit alongside
+  // favicon.ico here or the gate redirects it to /login, which is exactly the
+  // page where a missing tab icon shows.
+  matcher: ['/((?!_next/static|_next/image|favicon.ico|icon.svg).*)'],
 };

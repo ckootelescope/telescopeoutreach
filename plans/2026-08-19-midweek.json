@@ -1,0 +1,121 @@
+{
+  "week_of": "2026-08-17",
+  "_note": "Mid-week restructure, Wednesday afternoon. Calvin closed out three items, added two, and the calendar moved: the Wednesday VC event became a real happy hour running to 20:00, Thursday afternoon filled up with Olive (Citi) plus travel either side, and Friday's two coffee holds firmed up and slid to 15:45-17:15, freeing 13:30-15:15. Rebar customer call notes to Chris is priority #1 and takes the one clean hour left today. replace_from clears only the still-open tasks from today onward, so Monday and Tuesday stay intact.",
+
+  "replace_from": "2026-08-19",
+  "set_status": {
+    "done": [88, 90, 75],
+    "moved": [87, 89]
+  },
+
+  "big_three": {
+    "2026-08-19": [
+      { "title": "Rebar customer call notes, compiled and sent to Chris", "note": "Priority #1." },
+      { "title": "Rebar market map", "note": "ASAP." },
+      { "title": "Expert networks pinged for more Rebar customers", "note": "ASAP." }
+    ],
+    "2026-08-20": [
+      { "title": "Harmonic pulls worked into the pipeline", "note": "Carried from Tuesday." },
+      { "title": "Pathwork expert call questions written", "note": "Carried from Tuesday. Needed before Friday's 10am Tegus call with Jon Jacobs." },
+      { "title": "Bhargav's insurance list sifted and the relevant names contacted", "note": "" }
+    ],
+    "2026-08-21": [
+      { "title": "Revisit-later pipeline Harrison assigned", "note": "The 13:30-15:15 gap the coffee moves opened up." },
+      { "title": "Rebar market state deep research", "note": "" },
+      { "title": "Investor coffee follow-ups", "note": "Olive is booked for Thursday, so this is Mandy and David Kim only." }
+    ]
+  },
+
+  "tasks": [
+    {
+      "day": "2026-08-19", "start": "14:30", "end": "15:00", "stream": "sourcing",
+      "title": "Send today's follow-up emails",
+      "notes": "Eleven drafts are already sitting in Superhuman from this morning's run: seven Email 2s, two Email 3s, two Email 4s. Recipients were verified founder-only. This is a review-and-send, not a write."
+    },
+    {
+      "day": "2026-08-19", "start": "16:00", "end": "17:00", "stream": "diligence",
+      "subject": "Rebar", "subject_kind": "company",
+      "title": "Compile the customer call notes and circulate to Chris",
+      "notes": "Priority #1. Placed after the 15:00 Highland Capital and 15:30 Medco calls so both land in the summary, and before the 17:00 happy hour. This is the only clean hour left today."
+    },
+    {
+      "day": "2026-08-19", "start": "20:30", "end": "22:00", "stream": "diligence",
+      "subject": "Rebar", "subject_kind": "company",
+      "title": "Build the market map",
+      "notes": "ASAP. The happy hour now runs to 20:00 rather than 19:00, so this starts after it rather than at 20:00."
+    },
+    {
+      "day": "2026-08-19", "start": "22:00", "end": "22:45", "stream": "diligence",
+      "subject": "Rebar", "subject_kind": "company",
+      "title": "Ping the expert networks for more Rebar customers",
+      "notes": "ASAP. Async requests to AlphaSights and Tegus, so a late send costs nothing and buys a day on their side."
+    },
+
+    {
+      "day": "2026-08-20", "start": "09:20", "end": "10:00", "stream": "diligence",
+      "subject": "Pathwork", "subject_kind": "company",
+      "title": "Map the customer segments we want to speak with",
+      "notes": "Slipped from Wednesday morning. Do it before writing the question list, since the segments decide the questions."
+    },
+    {
+      "day": "2026-08-20", "start": "12:30", "end": "14:00", "stream": "sourcing",
+      "title": "Work the Harmonic pulls and add to the pipeline",
+      "notes": "Carried from Tuesday. Ninety minutes in the gap before the afternoon travel block."
+    },
+    {
+      "day": "2026-08-20", "start": "16:00", "end": "17:00", "stream": "sourcing",
+      "title": "Sift Bhargav's insurance list and reach out to the relevant names",
+      "notes": "The catch-up with Bhargav is done, so this is the follow-through: work the list down to the names worth contacting, then send."
+    },
+    {
+      "day": "2026-08-20", "start": "17:00", "end": "18:00", "stream": "sourcing",
+      "title": "Fill in contact information for companies newly emailed",
+      "notes": "Before the 18:00 associate dinner."
+    },
+    {
+      "day": "2026-08-20", "start": "19:30", "end": "21:00", "stream": "diligence",
+      "subject": "Pathwork", "subject_kind": "company",
+      "title": "Write the expert call question list",
+      "notes": "Carried from Tuesday. Has to be done tonight: the Tegus call with Jon Jacobs is Friday at 10:00."
+    },
+    {
+      "day": "2026-08-20", "start": "21:00", "end": "23:00", "stream": "diligence",
+      "subject": "Pathwork", "subject_kind": "company",
+      "title": "Build the competitor market map",
+      "notes": "Separate piece of work from the question list, per your note. Bumped off Wednesday night by the Rebar work."
+    },
+
+    {
+      "day": "2026-08-21", "start": "08:00", "end": "09:00", "stream": "diligence",
+      "subject": "Pathwork", "subject_kind": "company",
+      "title": "Reach out to the competitors on the market map",
+      "notes": "Depends on Thursday night's map being finished."
+    },
+    {
+      "day": "2026-08-21", "start": "09:30", "end": "10:00", "stream": "sourcing",
+      "title": "Send restart sequences to active pipeline nobody has pinged",
+      "notes": "Thirty minutes between Jacob and the Tegus call."
+    },
+    {
+      "day": "2026-08-21", "start": "13:30", "end": "15:15", "stream": "sourcing",
+      "title": "Work the revisit-later pipeline Harrison assigned",
+      "notes": "Moved off Thursday, where travel took the afternoon. The coffees sliding to 15:45 opened this up."
+    },
+    {
+      "day": "2026-08-21", "start": "17:15", "end": "18:00", "stream": "investor",
+      "title": "Follow up with Mandy and David Kim at Blackstone on coffee chats",
+      "notes": "Olive at Citi drops off this list, that coffee is booked for Thursday at 15:00. Straight after the Cuadrilla coffee ends."
+    },
+    {
+      "day": "2026-08-21", "start": "19:30", "end": "20:00", "stream": "sourcing",
+      "title": "Send the note to Olive Tree on Arva.ai",
+      "notes": "After the two self-booked blocks at 18:30 and 19:00."
+    },
+    {
+      "day": "2026-08-21", "start": "20:00", "end": "21:30", "stream": "diligence",
+      "subject": "Rebar", "subject_kind": "company",
+      "title": "Market state deep research report",
+      "notes": "Moved off Thursday night to make room for the two Pathwork blocks."
+    }
+  ]
+}

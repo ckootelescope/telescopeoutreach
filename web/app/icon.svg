@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Telescope OS">
+  <!-- Dark plate so the mark holds on a light or a dark browser tab strip. -->
+  <rect width="32" height="32" rx="7" fill="#121416"/>
+  <!-- The whole mark is inset so the plate's corners stay visible and the
+       glyph does not crowd the edges when the browser draws it at 16px. -->
+  <g fill="#2BE884" transform="translate(16 16) scale(0.94) translate(-15.27 -16.5)">
+    <!-- The thing being found: a four-point star at the end of the sightline. -->
+    <path d="M6.6 4.2 7.4 6.5 9.7 7.3 7.4 8.1 6.6 10.4 5.8 8.1 3.5 7.3 5.8 6.5Z"/>
+    <!-- Mount: post and base, drawn before the tube so the tube sits on top. -->
+    <rect x="15.1" y="17.4" width="2.6" height="9.1"/>
+    <rect x="10.9" y="26.2" width="11.0" height="2.6" rx="1.3"/>
+    <!-- Eyepiece, then the tapered tube widening toward the objective lens. -->
+    <path d="M6.38 23.50 8.64 21.52 10.36 23.48 8.10 25.46Z"/>
+    <path d="M8.05 20.84 20.97 6.04 27.03 12.96 10.95 24.16Z"/>
+  </g>
+</svg>
