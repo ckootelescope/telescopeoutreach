@@ -6,6 +6,7 @@ const TABS = [
   { href: '/hard-to-crack', label: 'Hard to Crack' },
   { href: '/investors', label: 'Investors' },
   { href: '/analytics', label: 'Outreach' },
+  { href: '/market-map', label: 'Market Map' },
 ];
 
 export function Nav({ current }: { current: string }) {

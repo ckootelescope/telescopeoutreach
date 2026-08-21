@@ -357,3 +357,114 @@ td.edit.wide input[name="value"]{min-width:210px}
 .modes.busy{opacity:.55}
 .modebtn:disabled{cursor:default}
 .modebtn.on:disabled{opacity:1}
+
+/* ================================================================
+   Market Map
+   ================================================================ */
+.mm-tree{display:flex;flex-direction:column;gap:0}
+.mm-toolbar{display:flex;gap:8px;margin-bottom:12px}
+.mm-btn{font-family:var(--mono);font-size:11px;letter-spacing:.04em;padding:5px 12px;
+  border-radius:var(--r-sm);background:var(--sunk);color:var(--ink-2);cursor:pointer;
+  border:1px solid var(--line)}
+.mm-btn:hover{color:var(--ink);border-color:var(--ink-3)}
+.mm-btn.dim{background:none;border-color:transparent}
+.mm-btn.dim:hover{background:var(--sunk);border-color:var(--line)}
+.mm-empty{padding:32px;text-align:center;color:var(--ink-3);font-size:14px}
+
+/* sector nodes */
+.mm-sector{border-left:1px solid var(--line)}
+.mm-sector.depth-0{border-left:none;border-bottom:1px solid var(--line)}
+.mm-sector.depth-0:last-child{border-bottom:none}
+.mm-sector-head{display:flex;align-items:center;gap:6px;padding:7px 8px;
+  cursor:default;border-radius:var(--r-sm)}
+.mm-sector-head:hover{background:var(--sunk)}
+.mm-expand{width:18px;height:18px;display:flex;align-items:center;justify-content:center;
+  font-size:12px;color:var(--ink-3);background:none;border:none;cursor:pointer;flex:none;
+  padding:0;font-family:var(--sans)}
+.mm-expand:hover{color:var(--ink)}
+.mm-sector-name{font-size:14px;font-weight:600;letter-spacing:-.01em}
+.depth-0 > .mm-sector-head .mm-sector-name{font-size:15px;font-weight:700}
+.depth-1 > .mm-sector-head .mm-sector-name{font-weight:600}
+.depth-2 > .mm-sector-head .mm-sector-name{font-weight:500}
+.depth-3 > .mm-sector-head .mm-sector-name{font-weight:500;color:var(--ink-2)}
+.depth-4 > .mm-sector-head .mm-sector-name{font-weight:400;color:var(--ink-2)}
+.mm-count{font-family:var(--mono);font-size:10px;color:var(--ink-3);
+  background:var(--sunk);padding:1px 5px;border-radius:var(--r-sm);min-width:18px;
+  text-align:center}
+.mm-actions{display:flex;gap:2px;margin-left:auto}
+.mm-actions button{font-family:var(--mono);font-size:9.5px;letter-spacing:.04em;
+  padding:2px 6px;border-radius:var(--r-sm);background:none;color:var(--ink-3);
+  border:1px solid transparent;cursor:pointer}
+.mm-actions button:hover{background:var(--sunk);border-color:var(--line);color:var(--ink)}
+.mm-del{color:var(--stop) !important}
+.mm-del:hover{background:var(--stop-soft) !important;border-color:var(--stop) !important}
+
+/* sector body (children + companies) */
+.mm-sector-body{padding-left:20px}
+.depth-0 > .mm-sector-body{padding-left:12px}
+
+/* add / rename forms */
+.mm-inline-form{display:contents}
+.mm-inline-form input{font-size:14px;font-weight:600;padding:2px 6px;border:1px solid var(--accent);
+  border-radius:var(--r-sm);background:var(--surface);color:var(--ink);outline:none;
+  font-family:inherit;width:200px}
+.mm-add-form{display:flex;gap:6px;padding:6px 8px;align-items:center}
+.mm-add-form input{font-size:13px;padding:4px 8px;border:1px solid var(--line-2);
+  border-radius:var(--r-sm);background:var(--surface);color:var(--ink);outline:none;
+  font-family:inherit;width:200px}
+.mm-add-form input:focus{border-color:var(--accent)}
+.mm-add-form button{font-family:var(--mono);font-size:11px;padding:4px 10px;
+  border-radius:var(--r-sm);background:var(--accent);color:#fff;cursor:pointer;
+  border:none;letter-spacing:.03em}
+.mm-add-form button.dim{background:none;color:var(--ink-3);border:1px solid var(--line)}
+
+/* add company form */
+.mm-add-co-form{padding:8px;margin:4px 0;background:var(--sunk);border-radius:var(--r);
+  display:flex;flex-direction:column;gap:6px}
+.mm-add-co-row{display:flex;gap:6px;flex-wrap:wrap}
+.mm-add-co-row input{font-size:12px;padding:4px 8px;border:1px solid var(--line-2);
+  border-radius:var(--r-sm);background:var(--surface);color:var(--ink);outline:none;
+  font-family:inherit;flex:1;min-width:80px}
+.mm-add-co-row input.wide{flex:2;min-width:160px}
+.mm-add-co-row input:focus{border-color:var(--accent)}
+.mm-add-co-btns{display:flex;gap:6px}
+.mm-add-co-btns button{font-family:var(--mono);font-size:11px;padding:4px 10px;
+  border-radius:var(--r-sm);background:var(--accent);color:#fff;cursor:pointer;
+  border:none;letter-spacing:.03em}
+.mm-add-co-btns button.dim{background:none;color:var(--ink-3);border:1px solid var(--line)}
+
+/* company cards */
+.mm-co{padding:6px 8px;margin:2px 0;border-radius:var(--r-sm);
+  border:1px solid var(--line);background:var(--surface)}
+.mm-co:hover{border-color:var(--line-2)}
+.mm-co-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.mm-co-name{font-size:13.5px;font-weight:600}
+.mm-co-domain{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.mm-co-round{font-family:var(--mono);font-size:10px;letter-spacing:.04em;
+  padding:1px 6px;border-radius:var(--r-sm);
+  background:var(--accent-soft);color:var(--accent);font-weight:600}
+.mm-co-tools{margin-left:auto;display:flex;gap:4px}
+.mm-edit-btn{font-family:var(--mono);font-size:9.5px;padding:1px 5px;
+  border-radius:var(--r-sm);background:none;color:var(--ink-3);border:1px solid transparent;
+  cursor:pointer;letter-spacing:.04em}
+.mm-edit-btn:hover{background:var(--sunk);border-color:var(--line)}
+
+/* company meta row */
+.mm-co-meta{display:flex;flex-wrap:wrap;gap:6px 12px;margin-top:4px;
+  font-size:12px;color:var(--ink-2);line-height:1.5}
+.mm-co-desc{flex-basis:100%}
+.mm-co-inv{font-family:var(--mono);font-size:10.5px;color:var(--ink-3)}
+.mm-co-metrics{display:flex;gap:8px;font-family:var(--mono);font-size:10.5px}
+.mm-co-metrics span{white-space:nowrap}
+.mm-co-note{font-style:italic;color:var(--ink-3);font-size:11.5px}
+
+/* edit panel */
+.mm-edit-panel{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+  gap:6px;padding:8px 0 4px;border-top:1px solid var(--line);margin-top:6px}
+.mm-ef{display:flex;flex-direction:column;gap:2px}
+.mm-ef label{font-family:var(--mono);font-size:9.5px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink-3)}
+.mm-ef input{font-size:12px;padding:3px 6px;border:1px solid var(--line);
+  border-radius:var(--r-sm);background:var(--ground);color:var(--ink);
+  font-family:inherit;outline:none}
+.mm-ef input:focus{border-color:var(--accent)}
