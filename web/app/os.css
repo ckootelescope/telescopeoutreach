@@ -468,3 +468,37 @@ td.edit.wide input[name="value"]{min-width:210px}
   border-radius:var(--r-sm);background:var(--ground);color:var(--ink);
   font-family:inherit;outline:none}
 .mm-ef input:focus{border-color:var(--accent)}
+
+/* ---- view toggle ---- */
+.mm-view-toggle{display:flex;gap:2px;background:var(--sunk);border-radius:var(--r-sm);
+  padding:2px;align-self:flex-start}
+.mm-view-toggle button{font-family:var(--mono);font-size:11px;letter-spacing:.04em;
+  padding:4px 14px;border-radius:var(--r-sm);background:none;color:var(--ink-3);
+  cursor:pointer;border:none}
+.mm-view-toggle button:hover{color:var(--ink)}
+.mm-view-toggle button.on{background:var(--surface);color:var(--ink);
+  box-shadow:0 1px 2px rgba(0,0,0,.08)}
+
+/* ---- SVG tree view ---- */
+.mm-viz{overflow-x:auto;border:1px solid var(--line);border-radius:var(--r);
+  background:var(--ground);padding:0}
+.mm-svg{display:block}
+
+/* ---- detail panel ---- */
+.mm-detail{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);
+  padding:16px;margin-top:12px}
+.mm-detail-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.mm-detail-head h3{margin:0;font-size:16px;font-weight:700}
+.mm-detail-count{font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+.mm-detail-close{margin-left:auto;font-size:20px;line-height:1;background:none;
+  border:none;color:var(--ink-3);cursor:pointer;padding:0 4px}
+.mm-detail-close:hover{color:var(--ink)}
+.mm-detail-cos{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
+.mm-detail-co{padding:10px 12px;border:1px solid var(--line);border-radius:var(--r-sm);
+  background:var(--ground)}
+.mm-detail-co-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.mm-detail-co-desc{font-size:12.5px;color:var(--ink-2);margin-top:4px;line-height:1.45}
+.mm-detail-co-inv{font-family:var(--mono);font-size:10.5px;color:var(--ink-3);margin-top:3px}
+.mm-detail-co-metrics{display:flex;gap:8px;font-family:var(--mono);font-size:10.5px;
+  color:var(--ink-2);margin-top:3px}
+.mm-detail-co-note{font-size:11.5px;font-style:italic;color:var(--ink-3);margin-top:3px}

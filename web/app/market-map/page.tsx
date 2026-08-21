@@ -1,6 +1,6 @@
 import { db } from '@/lib/supabase';
 import { Nav } from '../nav';
-import { MarketTree } from './tree';
+import { ViewWrapper } from './view-wrapper';
 import type { Sector, Company } from './tree';
 
 export const dynamic = 'force-dynamic';
@@ -55,10 +55,10 @@ export default async function MarketMap() {
         </div>
       </div>
 
-      <MarketTree sectors={sectors} companies={companies} />
+      <ViewWrapper sectors={sectors} companies={companies} />
 
       <footer>
-        Market map of Enterprise AI. Double-click a sector name to rename. Hover for controls.
+        Map view for browsing, List view for editing. Click a sector in Map to see its companies.
       </footer>
     </div>
   );
