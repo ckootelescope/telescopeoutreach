@@ -13035,7 +13035,8 @@
       "body": "<div>Hey Brendan - following up - how have you been thinking about your next raise? I really like what you're building at Holly and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-21",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-22T17:29:32.228Z"
     },
     {
       "slug": "holly",
