@@ -485,36 +485,6 @@
       "processedAt": "2026-05-26T15:44:14.020Z"
     },
     {
-      "slug": "bixby",
-      "company": "Bixby",
-      "founder": "Shaw",
-      "email": "sm@getbixby.com",
-      "domain": "getbixby.com",
-      "threadId": "19e42d932f492836",
-      "messageId": "19e42d932f492836",
-      "subject": "saw Bixby keeps coming up | quick intro Telescope",
-      "body": "<div>Hey Shaw,<br><br>One more thought on Bixby. I think the copilot approach to submittal review makes a lot of sense for construction. Having AI cross-reference hundreds of pages and flag non-compliant products while keeping humans in the decision seat feels like the right balance for an industry where mistakes are expensive and trust in new tools is earned slowly.<br><br>Our Head of Ops Harrison Doyle is a former Procore VP of Finance, so construction workflows are something we spend a lot of time on.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-05-26",
-      "status": "completed",
-      "processedAt": "2026-05-26T15:44:15.039Z"
-    },
-    {
-      "slug": "boon",
-      "company": "Boon",
-      "founder": "Deepti",
-      "email": "deepti@getboon.ai",
-      "domain": "getboon.ai",
-      "threadId": "19e4297ea4296edc",
-      "messageId": "19e4297ea4296edc",
-      "subject": "Telescope Partners <> Boon Intro",
-      "body": "<div>Hey Deepti,<br><br>Last thought on Boon. Seeing customers like Rosendin and E.J. Electric on the platform is solid validation. I think the estimating and takeoff workflow is one of those areas where the pain is so routine that people have just accepted it, so having AI that actually understands construction documents the way an experienced estimator does could change how preconstruction teams operate day to day.<br><br>Our Head of Ops Harrison Doyle is ex-Procore VP of Finance, so construction tech is a space we know well.<br><br>If now isn't the right time, totally understand. But would love to connect whenever there's a window.</div>",
-      "emailNumber": 3,
-      "sendDate": "2026-05-26",
-      "status": "completed",
-      "processedAt": "2026-05-26T15:44:16.153Z"
-    },
-    {
       "slug": "cedar",
       "company": "Cedar",
       "founder": "Kyle",
@@ -2401,36 +2371,6 @@
       "sendDate": "2026-05-28",
       "status": "completed",
       "processedAt": "2026-05-31T18:57:22.325Z"
-    },
-    {
-      "slug": "bixby",
-      "company": "Bixby",
-      "founder": "Shaw",
-      "email": "sm@getbixby.com",
-      "domain": "getbixby.com",
-      "threadId": "19e42d932f492836",
-      "messageId": "19e42d932f492836",
-      "subject": "saw Bixby keeps coming up | quick intro Telescope",
-      "body": "<div>Hey Shaw,<br><br>Wanted to offer something concrete. Harrison Doyle on our team (ex-Procore VP of Finance) still talks regularly with GCs and subs who deal with the submittal review bottleneck firsthand. If it would be helpful to get in front of some of those folks for feedback or early design partners, happy to make those connections.<br><br>I also think the fact that you're going after SOC 2 Type II early signals you're thinking about enterprise readiness from day one, which matters in construction where trust and data security are table stakes for larger firms.<br><br>If now isn't the right time, totally understand. The offer to connect you with Harrison and his network stands regardless.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-05-28",
-      "status": "completed",
-      "processedAt": "2026-05-31T18:57:23.344Z"
-    },
-    {
-      "slug": "boon",
-      "company": "Boon",
-      "founder": "Deepti",
-      "email": "deepti@getboon.ai",
-      "domain": "getboon.ai",
-      "threadId": "19e4297ea4296edc",
-      "messageId": "19e4297ea4296edc",
-      "subject": "Telescope Partners <> Boon Intro",
-      "body": "<div>Hey Deepti,<br><br>One more thing I wanted to pass along. Harrison on our team spent years at Procore and still keeps in touch with a lot of preconstruction and ops leaders at GCs and electrical contractors. If it would ever be useful to get introductions to potential customers or design partners, especially as you expand beyond the electrical sub vertical, happy to facilitate that.<br><br>I also noticed you're pricing Boon Agent on a token basis starting at $375, which I think is a smart way to lower the barrier for teams that want to test it on a single project before committing to a subscription. Curious how that's been resonating versus the monthly model.<br><br>If now isn't the right time, totally understand.</div>",
-      "emailNumber": 4,
-      "sendDate": "2026-05-28",
-      "status": "completed",
-      "processedAt": "2026-05-31T18:57:24.318Z"
     },
     {
       "slug": "cedar",
