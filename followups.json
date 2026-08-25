@@ -14205,7 +14205,7 @@
       "body": "<div>Hey Joshua - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-25",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "slug": "veritus",
@@ -14250,7 +14250,7 @@
       "body": "<div>Hey Luke - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-25",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "slug": "interfere",
@@ -14295,7 +14295,7 @@
       "body": "<div>Hey Jerry - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-25",
-      "status": "pending"
+      "status": "drafted"
     },
     {
       "slug": "halluminate",
@@ -14326,6 +14326,21 @@
       "emailNumber": 4,
       "sendDate": "2026-09-04",
       "status": "pending"
+    },
+    {
+      "slug": "cosine",
+      "company": "Cosine",
+      "founder": "Alistair",
+      "email": "ali@cosine.sh",
+      "domain": "cosine.sh",
+      "threadId": "1a017cc72b144a21",
+      "superhumanThreadId": "1a017cc72b144a21",
+      "messageId": "1a017cc72b144a21",
+      "subject": "Telescope <> Cosine Intro",
+      "body": "<div>Hey Alistair - following up - how have you been thinking about your next raise? I really like what you're building at Cosine and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
+      "emailNumber": 3,
+      "sendDate": "2026-08-25",
+      "status": "drafted"
     }
   ]
 }
