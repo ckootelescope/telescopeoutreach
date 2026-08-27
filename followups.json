@@ -14875,7 +14875,8 @@
       "body": "<div>Hey Talha - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T18:41:19.151Z"
     },
     {
       "slug": "vega",
@@ -15010,7 +15011,8 @@
       "body": "<div>Hey Roxane - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T18:41:19.151Z"
     },
     {
       "slug": "lemrock",
@@ -15055,7 +15057,8 @@
       "body": "<div>Hey Mohammad - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T18:41:19.151Z"
     },
     {
       "slug": "open",
@@ -15445,6 +15448,141 @@
       "body": "<div>Hey Jonathan - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>A pattern I think holds pretty broadly for facility-based software is that the deal almost never closes at the multi-location level first, it closes at one site and then gets replicated once someone can point to a working example. The vendors who stall are usually the ones asking an ownership or management group to commit across every property before a single GM has run the thing through a real season. I think TenFore is set up well for that because the product lives inside a specific course's day-to-day operations rather than sitting above it, so the second and third site conversations start from a working reference instead of a cold pitch, which is usually the harder problem to solve in a multi-property business.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-04",
+      "status": "pending"
+    },
+    {
+      "slug": "waniwani",
+      "company": "Waniwani",
+      "founder": "Robin",
+      "email": "robin@waniwani.ai",
+      "domain": "waniwani.ai",
+      "threadId": "1a0401912ba1ac96",
+      "superhumanThreadId": "1a0401912ba1ac96",
+      "messageId": "1a0401912ba1ac96",
+      "subject": "Telescope <> Waniwani Intro",
+      "body": "<div>Hey Robin - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
+      "emailNumber": 2,
+      "sendDate": "2026-08-28",
+      "status": "pending"
+    },
+    {
+      "slug": "waniwani",
+      "company": "Waniwani",
+      "founder": "Robin",
+      "email": "robin@waniwani.ai",
+      "domain": "waniwani.ai",
+      "threadId": "1a0401912ba1ac96",
+      "superhumanThreadId": "1a0401912ba1ac96",
+      "messageId": "1a0401912ba1ac96",
+      "subject": "Telescope <> Waniwani Intro",
+      "body": "<div>Hey Robin - following up - how have you been thinking about your next raise? I really like what you're building at Waniwani and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
+      "emailNumber": 3,
+      "sendDate": "2026-09-02",
+      "status": "pending"
+    },
+    {
+      "slug": "waniwani",
+      "company": "Waniwani",
+      "founder": "Robin",
+      "email": "robin@waniwani.ai",
+      "domain": "waniwani.ai",
+      "threadId": "1a0401912ba1ac96",
+      "superhumanThreadId": "1a0401912ba1ac96",
+      "messageId": "1a0401912ba1ac96",
+      "subject": "Telescope <> Waniwani Intro",
+      "body": "<div>Hey Robin - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending time with software companies that sell compliance and distribution tooling into insurance carriers, and the pattern that keeps showing up is that carriers almost never move first on anything at the enterprise level, their legal and compliance teams are too risk averse and the sales cycles are too long for that to be the entry point. What actually gets a foot in the door is a narrow, acute compliance exposure that one team owns and can approve without a platform level commitment, and that first approval is what becomes the reference for the next line of business or the next channel. The ones that stall try to sell the full platform to legal and compliance up front instead of finding the one team with a real, felt problem and the authority to say yes. I think Waniwani is set up well for that because a carrier can approve managing just one AI channel's compliance exposure as a contained, specific risk rather than a broader platform decision, and that first approved channel is what gives you the reference to expand into the rest of the AI surface and additional lines.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
+      "emailNumber": 4,
+      "sendDate": "2026-09-07",
+      "status": "pending"
+    },
+    {
+      "slug": "waystation",
+      "company": "Waystation",
+      "founder": "Ryan Caldbeck",
+      "email": "rcaldbeck@waystationai.com",
+      "domain": "waystationai.com",
+      "threadId": "1a0401ae7af02d94",
+      "superhumanThreadId": "1a0401ae7af02d94",
+      "messageId": "1a0401ae7af02d94",
+      "subject": "Telescope <> Waystation Intro",
+      "body": "<div>Hey Ryan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
+      "emailNumber": 2,
+      "sendDate": "2026-08-28",
+      "status": "pending"
+    },
+    {
+      "slug": "waystation",
+      "company": "Waystation",
+      "founder": "Ryan Caldbeck",
+      "email": "rcaldbeck@waystationai.com",
+      "domain": "waystationai.com",
+      "threadId": "1a0401ae7af02d94",
+      "superhumanThreadId": "1a0401ae7af02d94",
+      "messageId": "1a0401ae7af02d94",
+      "subject": "Telescope <> Waystation Intro",
+      "body": "<div>Hey Ryan - following up - how have you been thinking about your next raise? I really like what you're building at Waystation and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
+      "emailNumber": 3,
+      "sendDate": "2026-09-02",
+      "status": "pending"
+    },
+    {
+      "slug": "waystation",
+      "company": "Waystation",
+      "founder": "Ryan Caldbeck",
+      "email": "rcaldbeck@waystationai.com",
+      "domain": "waystationai.com",
+      "threadId": "1a0401ae7af02d94",
+      "superhumanThreadId": "1a0401ae7af02d94",
+      "messageId": "1a0401ae7af02d94",
+      "subject": "Telescope <> Waystation Intro",
+      "body": "<div>Hey Ryan - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in procurement and supply chain tooling, and the pattern we keep seeing is that these tools land through one team with an acute, specific problem, but adoption beyond that team only happens if the tool earns a distinct reason to exist for each new group instead of just extending the same pitch. The ones that stall are the ones that win procurement and then get quietly routed around by QA or R&D, because neither team was ever given a reason to give up its own version of the record. I think Waystation is positioned well for that because a request, a spec, and a certification can live on the same thread, so procurement, QA, and R&D each have a reason to work directly off it rather than keeping a parallel copy, which is usually what carries a tool past the team that first bought it.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
+      "emailNumber": 4,
+      "sendDate": "2026-09-07",
+      "status": "pending"
+    },
+    {
+      "slug": "hamlet",
+      "company": "Hamlet",
+      "founder": "Sunil",
+      "email": "sunil@myhamlet.com",
+      "domain": "myhamlet.com",
+      "threadId": "1a0402324c3cdb48",
+      "superhumanThreadId": "1a0402324c3cdb48",
+      "messageId": "1a0402324c3cdb48",
+      "subject": "Telescope <> Hamlet Intro",
+      "body": "<div>Hey Sunil - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
+      "emailNumber": 2,
+      "sendDate": "2026-08-28",
+      "status": "pending"
+    },
+    {
+      "slug": "hamlet",
+      "company": "Hamlet",
+      "founder": "Sunil",
+      "email": "sunil@myhamlet.com",
+      "domain": "myhamlet.com",
+      "threadId": "1a0402324c3cdb48",
+      "superhumanThreadId": "1a0402324c3cdb48",
+      "messageId": "1a0402324c3cdb48",
+      "subject": "Telescope <> Hamlet Intro",
+      "body": "<div>Hey Sunil - following up - how have you been thinking about your next raise? I really like what you're building at Hamlet and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
+      "emailNumber": 3,
+      "sendDate": "2026-09-02",
+      "status": "pending"
+    },
+    {
+      "slug": "hamlet",
+      "company": "Hamlet",
+      "founder": "Sunil",
+      "email": "sunil@myhamlet.com",
+      "domain": "myhamlet.com",
+      "threadId": "1a0402324c3cdb48",
+      "superhumanThreadId": "1a0402324c3cdb48",
+      "messageId": "1a0402324c3cdb48",
+      "subject": "Telescope <> Hamlet Intro",
+      "body": "<div>Hey Sunil - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in govtech and public sector software, and the pattern we keep seeing is that the first agency almost never comes in through a formal RFP, it comes through a records officer or clerk who can get a small purchase approved without a competitive bid, and what happens after that depends on whether IT signs off on real data access rather than a sandboxed demo. The ones that stall usually got stuck at that IT approval step, or leaned on a single champion who moved on before the tool spread past their desk. I think Hamlet is set up well for that because once one clerk's office is comfortable having a meeting captured directly, extending to other meeting types in the same jurisdiction is a much smaller ask than the first sale, and that gap between staying in one office and actually spreading across jurisdictions is usually where these tools win or lose.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
+      "emailNumber": 4,
+      "sendDate": "2026-09-07",
       "status": "pending"
     }
   ]
