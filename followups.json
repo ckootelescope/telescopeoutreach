@@ -13764,7 +13764,8 @@
       "body": "<div>Hey Ariel - following up - how have you been thinking about your next raise? I really like what you're building at TrialKit and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-31",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-08-27T22:35:53.335Z"
     },
     {
       "slug": "trialkit",
@@ -13779,7 +13780,8 @@
       "body": "<div>Hey Ariel - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been looking at how legal tech products land inside public defender offices and DA teams, and the pattern we keep seeing is that the tools that stick are the ones prosecutors and defenders can use without changing how they prep a case. The ones that stall tend to require a team to adopt a new workflow before the product proves anything. I think TrialKit is set up well for that because building the evidentiary record from source material is already something every attorney has to do, so the product slots into existing case prep rather than asking anyone to change how they work.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-08-27T22:35:53.335Z"
     },
     {
       "slug": "bluenote",
@@ -14830,7 +14832,8 @@
       "body": "<div>Hey Philip - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T22:35:35.415Z"
     },
     {
       "slug": "crunched",
@@ -14921,7 +14924,8 @@
       "body": "<div>Hey Arbaaz - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T22:35:35.415Z"
     },
     {
       "slug": "graphon",
@@ -14966,7 +14970,8 @@
       "body": "<div>Hey Quinn - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T22:35:35.415Z"
     },
     {
       "slug": "ferris-ai",
@@ -15103,7 +15108,8 @@
       "body": "<div>Hey Anthony - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T22:35:35.415Z"
     },
     {
       "slug": "cavela",
@@ -15148,7 +15154,8 @@
       "body": "<div>Hey Alan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T22:35:35.415Z"
     },
     {
       "slug": "callback",
@@ -15193,7 +15200,8 @@
       "body": "<div>Hey Michael - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T22:35:35.415Z"
     },
     {
       "slug": "embedd",
@@ -15208,7 +15216,8 @@
       "body": "<div>Hey Michael - following up - how have you been thinking about your next raise? I really like what you're building at Embedd and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-01",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-08-27T22:35:53.335Z"
     },
     {
       "slug": "embedd",
@@ -15223,7 +15232,8 @@
       "body": "<div>Hey Michael - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time with developer tooling for embedded and firmware teams, and one pattern that keeps coming up is that a design win rarely stays contained to a single team or project on its own, it usually needs a partner upstream, like a chip or board vendor with its own reason to keep recommending the tool, to carry it into the next engagement. The ones that stall are the tools that only ever prove themselves inside one pilot with no one owning the budget to push it further, so the same success never gets a reason to repeat itself on the next product line. I think Embedd is set up well for that because the hardware model is reusable rather than one-off, so once a board or chip partner has a design win running on it, extending to the next product line is a regeneration rather than a rebuild, which is the kind of low-friction repeat that actually carries a tool from one team to the next.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-06",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-08-27T22:35:53.335Z"
     },
     {
       "slug": "deduction",
@@ -15238,7 +15248,8 @@
       "body": "<div>Hey Sai - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-27",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T22:35:35.415Z"
     },
     {
       "slug": "deduction",
@@ -15373,7 +15384,8 @@
       "body": "<div>Hey Amir - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-23",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T22:35:35.415Z"
     },
     {
       "slug": "strada",
@@ -15418,7 +15430,8 @@
       "body": "<div>Hey Jonathan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-25",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-08-27T22:35:35.415Z"
     },
     {
       "slug": "tenfore",
@@ -15433,7 +15446,8 @@
       "body": "<div>Hey Jonathan - following up - how have you been thinking about your next raise? I really like what you're building at TenFore and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-08-30",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-08-27T22:35:53.335Z"
     },
     {
       "slug": "tenfore",
@@ -15448,7 +15462,8 @@
       "body": "<div>Hey Jonathan - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>A pattern I think holds pretty broadly for facility-based software is that the deal almost never closes at the multi-location level first, it closes at one site and then gets replicated once someone can point to a working example. The vendors who stall are usually the ones asking an ownership or management group to commit across every property before a single GM has run the thing through a real season. I think TenFore is set up well for that because the product lives inside a specific course's day-to-day operations rather than sitting above it, so the second and third site conversations start from a working reference instead of a cold pitch, which is usually the harder problem to solve in a multi-property business.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-04",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-08-27T22:35:53.335Z"
     },
     {
       "slug": "waniwani",
