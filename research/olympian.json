@@ -40,8 +40,15 @@
     "Hey Brendan - Hope all is well! Thought I'd shoot you a note as I was chatting with Chris Gaertner on our team who has invested in ShopGenie and PartsTech and the conversation made me think about what you're building at Olympian. AI voice agents for the trades keeps coming up as a hot topic and I think the remodeling vertical is a great wedge. Even if we aren't on the cap table, we're always chatting with folks in the market (including potential customers) and I'm happy to try to make intros/swap notes on what we've heard. Is there a good time next week?",
     "Brendan - hope you're doing well. Last note from me - totally understand if now is not the right time. As you think about a partner though - we'd love to be a part of that discussion and get to know you ahead of time. LMK if there's a good time to reach back out to start these discussions."
   ],
+  "market": "AI voice agents for home services",
+  "market_patterns": [
+    {"pattern": "Products that land go deep on one specific workflow for one specific trade rather than selling horizontal AI. Referral and word-of-mouth dominate early distribution.", "failure_mode": "The ones that stall are built for an adjacent trade and stretched to fit, or stay generic."},
+    {"pattern": "For AI voice/SDR products selling to SMBs in legacy sectors, the fastest deployments require no behavioral change from end users. Stickiness comes from data accumulation, not feature lock-in.", "failure_mode": "Products caught between SMB price sensitivity and enterprise-length sales cycles."},
+    {"pattern": "Field sales and in-person trust-building compress sales cycles to 10-14 days. PE-backed operators are the fastest ICP.", "failure_mode": "Teams that rely only on digital outbound stall at the trust gap."}
+  ],
+  "research_grade": "A",
   "round2": {
-    "email1_body_drafted": null,
+    "email1_body_drafted": "<div>Hey Brendan - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses that embed into the conversations where work actually happens and use that to build a system of record that legacy software can't replicate. Home services is a great example where the most valuable customer data lives in phone calls and inquiry forms that never make it into a CRM. I think the companies that capture those conversations natively end up holding something much more defensible than a feature set, because once a contractor's entire customer history lives in the platform, walking away means losing institutional memory.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
     "email1_body_sent": null,
     "sentDate": null
   }

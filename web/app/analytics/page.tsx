@@ -17,7 +17,8 @@ export default async function Analytics() {
   const s = db();
   const today = TODAY();
 
-  const [trust, steps, latency, hours, weekly, outcomes, due, upcoming, restart, roster] =
+  const [trust, steps, latency, hours, weekly, outcomes, due, upcoming, restart, roster,
+         trigger, cumulative, speed, e1trend] =
     await Promise.all([
       s.from('an_trust').select('*').single(),
       s.from('an_step_performance').select('*').order('step_no'),
@@ -29,11 +30,36 @@ export default async function Analytics() {
       s.rpc('upcoming_load'),
       s.from('dash_ended_early').select('*'),
       s.from('an_sequence_reply').select('*').eq('status', 'active'),
+      s.from('an_reply_trigger').select('*').order('kind').order('step_no'),
+      s.from('an_cumulative_capture').select('*').order('kind').order('step_no'),
+      s.from('an_reply_speed').select('*').order('kind').order('step_no'),
+      s.from('an_e1_weekly_trend').select('*').order('week'),
     ]);
 
   const t = trust.data as Record<string, number | string> | null;
   const r1 = (steps.data ?? []).filter((x: any) => x.kind === 'first');
   const r2 = (steps.data ?? []).filter((x: any) => x.kind === 'restart');
+
+  const trigR1 = (trigger.data ?? []).filter((x: any) => x.kind === 'first');
+  const trigR2 = (trigger.data ?? []).filter((x: any) => x.kind === 'restart');
+  const cumR1 = (cumulative.data ?? []).filter((x: any) => x.kind === 'first');
+  const cumR2 = (cumulative.data ?? []).filter((x: any) => x.kind === 'restart');
+  const spdR1 = (speed.data ?? []).filter((x: any) => x.kind === 'first');
+  const trendRows = e1trend.data ?? [];
+  const maxTrigRate = Math.max(1, ...trigR1.map((x: any) => Number(x.trigger_rate)));
+  const peakTrendRate = Math.max(1, ...trendRows.map((x: any) => Number(x.rate)));
+  const totalR1Replies = cumR1.length ? Number(cumR1[cumR1.length - 1]?.cumulative ?? 0) : 0;
+
+  const EFFORT: Record<string, { label: string; tone: string }> = {
+    'first-1': { label: 'Custom', tone: 'warn' },
+    'first-2': { label: 'Template', tone: 'ok' },
+    'first-3': { label: 'Template', tone: 'ok' },
+    'first-4': { label: 'Semi-custom', tone: 'warn' },
+    'restart-1': { label: 'Custom', tone: 'warn' },
+    'restart-2': { label: 'Custom', tone: 'warn' },
+    'restart-3': { label: 'Custom', tone: 'warn' },
+    'restart-4': { label: 'Template', tone: 'ok' },
+  };
   const dueRows = (due.data ?? []) as Due[];
   const overdue = dueRows.filter((d) => d.due_date < today);
   const load = (upcoming.data ?? []) as { d: string; first: number; restart: number }[];
@@ -187,6 +213,183 @@ export default async function Analytics() {
                       <span className="fill ok" style={{ width: `${(Number(x.n) / max) * 100}%` }} />
                     </span>
                     <span className="val"><b>{x.n}</b></span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* ---- Reply trigger attribution ---- */}
+      <section>
+        <h2>Reply trigger rate <span className="count">Round 1</span></h2>
+        <p className="note">
+          Which email was the last one sent before the founder replied. Answers
+          &ldquo;did sending this email cause the reply?&rdquo;
+        </p>
+        <div className="panel">
+          <table>
+            <thead>
+              <tr><th>Email</th><th>Effort</th><th style={{ textAlign: 'right' }}>Sent</th>
+                <th style={{ textAlign: 'right' }}>Triggered</th><th>Trigger rate</th></tr>
+            </thead>
+            <tbody>
+              {trigR1.map((x: any) => {
+                const eff = EFFORT[`first-${x.step_no}`];
+                return (
+                  <tr key={x.step_no}>
+                    <td className="co">Email {x.step_no}</td>
+                    <td><span className={`pill ${eff?.tone ?? ''}`}>{eff?.label}</span></td>
+                    <td className="mono" style={{ textAlign: 'right' }}>{x.sent}</td>
+                    <td className="mono" style={{ textAlign: 'right' }}>{x.triggered_reply}</td>
+                    <td>
+                      <div className="meter" style={{ margin: 0, padding: 0 }}>
+                        <span className="track">
+                          <span className="fill" style={{
+                            width: `${(Number(x.trigger_rate) / maxTrigRate) * 100}%`,
+                          }} />
+                        </span>
+                        <span className="val"><b>{x.trigger_rate}%</b></span>
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+          {trigR2.length > 0 && (
+            <>
+              <div style={{ padding: '10px 14px 2px', borderTop: '1px solid var(--line)' }}>
+                <span className="mono dim" style={{ fontSize: 10.5, letterSpacing: '0.08em', textTransform: 'uppercase' as const }}>Round 2 restart</span>
+              </div>
+              <table>
+                <tbody>
+                  {trigR2.map((x: any) => {
+                    const eff = EFFORT[`restart-${x.step_no}`];
+                    const maxR2 = Math.max(1, ...trigR2.map((y: any) => Number(y.trigger_rate)));
+                    return (
+                      <tr key={x.step_no} className={Number(x.trigger_rate) === 0 ? 'stop' : ''}>
+                        <td className="co">Email {x.step_no}</td>
+                        <td><span className={`pill ${eff?.tone ?? ''}`}>{eff?.label}</span></td>
+                        <td className="mono" style={{ textAlign: 'right' }}>{x.sent}</td>
+                        <td className="mono" style={{ textAlign: 'right' }}>{x.triggered_reply}</td>
+                        <td>
+                          <div className="meter" style={{ margin: 0, padding: 0 }}>
+                            <span className="track">
+                              <span className="fill warn" style={{
+                                width: `${(Number(x.trigger_rate) / maxR2) * 100}%`,
+                              }} />
+                            </span>
+                            <span className="val"><b>{x.trigger_rate}%</b></span>
+                          </div>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </>
+          )}
+        </div>
+      </section>
+
+      {/* ---- Cumulative capture ---- */}
+      <section>
+        <h2>Cumulative reply capture</h2>
+        <p className="note">
+          If you stopped the cadence after Email N, what percentage of all replies
+          would you have captured?
+        </p>
+        <div className="panel">
+          <table>
+            <thead>
+              <tr><th>Stop after</th><th style={{ textAlign: 'right' }}>Marginal</th>
+                <th>Cumulative</th><th style={{ textAlign: 'right' }}>% captured</th></tr>
+            </thead>
+            <tbody>
+              {cumR1.map((x: any) => (
+                <tr key={x.step_no}>
+                  <td className="co">Email {x.step_no}</td>
+                  <td className="mono" style={{ textAlign: 'right' }}>+{x.marginal}</td>
+                  <td>
+                    <div className="meter" style={{ margin: 0, padding: 0 }}>
+                      <span className="track">
+                        <span className="fill" style={{ width: `${x.cumulative_pct}%` }} />
+                      </span>
+                    </div>
+                  </td>
+                  <td className="mono" style={{ textAlign: 'right' }}>
+                    <b>{x.cumulative_pct}%</b>
+                    <span className="dim"> ({x.cumulative}/{x.total_replies})</span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {/* ---- Reply speed by step ---- */}
+      <div className="two">
+        <section>
+          <h2>Reply speed by email</h2>
+          <p className="note">
+            Median hours between the last outbound and the founder&apos;s reply.
+          </p>
+          <div className="panel">
+            <table>
+              <thead>
+                <tr><th>After</th><th style={{ textAlign: 'right' }}>n</th>
+                  <th style={{ textAlign: 'right' }}>Median</th>
+                  <th style={{ textAlign: 'right' }}>Avg</th></tr>
+              </thead>
+              <tbody>
+                {spdR1.map((x: any) => (
+                  <tr key={x.step_no}>
+                    <td className="co">Email {x.step_no}</td>
+                    <td className="mono" style={{ textAlign: 'right' }}>{x.n}</td>
+                    <td className="mono" style={{ textAlign: 'right' }}>
+                      <b>{x.median_hours}h</b>
+                    </td>
+                    <td className="mono dim" style={{ textAlign: 'right' }}>{x.avg_hours}h</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>E1 reply rate trend</h2>
+          <p className="note">Round 1 opener performance by week, last 12 weeks.</p>
+          <div className="panel">
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 0, padding: '10px 14px' }}>
+              {trendRows.map((w: any) => {
+                const wk = String(w.week).slice(5, 10);
+                return (
+                  <div key={w.week} style={{
+                    display: 'flex', alignItems: 'center', gap: 10,
+                    padding: '5px 0', borderBottom: '1px solid var(--line)',
+                  }}>
+                    <span className="mono dim" style={{ minWidth: 38 }}>{wk}</span>
+                    <span style={{
+                      flex: 1, height: 14, background: 'var(--sunk)',
+                      borderRadius: 'var(--r-sm)', overflow: 'hidden',
+                    }}>
+                      <span style={{
+                        display: 'block', height: '100%',
+                        width: `${(Number(w.rate) / peakTrendRate) * 100}%`,
+                        background: Number(w.rate) >= 45 ? 'var(--ok)' : 'var(--accent-hi)',
+                        borderRadius: 'var(--r-sm)',
+                      }} />
+                    </span>
+                    <span className="mono" style={{ minWidth: 30, textAlign: 'right', fontWeight: 600 }}>
+                      {w.rate}%
+                    </span>
+                    <span className="mono dim" style={{ minWidth: 48, textAlign: 'right', fontSize: 11 }}>
+                      {w.sent} sent
+                    </span>
                   </div>
                 );
               })}

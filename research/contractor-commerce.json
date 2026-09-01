@@ -1,0 +1,31 @@
+{
+  "slug": "contractor-commerce",
+  "company": "Contractor Commerce",
+  "fetchedAt": "2026-09-01T08:00:00Z",
+  "what_they_do": "AI-powered ecommerce platform that installs directly on residential service contractors' (HVAC, plumbing, electrical) existing websites, letting them sell products, maintenance agreements, and fully-installed systems online. Replaces what was previously a phone-call-only sales process.",
+  "vertical": "home services ecommerce / contractor technology",
+  "primary_theme": 8,
+  "secondary_theme": null,
+  "theme_fit_rationale": "Contractor Commerce captures transactional and customer data through the buying journey that becomes the system of record for the contractor's online sales.",
+  "workflow_artifacts": ["online product catalogs", "maintenance agreement renewals", "installation estimates", "scheduling deposits", "membership signups"],
+  "recent_signals": [
+    {"date": "2026-08", "type": "news", "summary": "EDEN (competing contractor ecommerce platform) winding down and migrating all customers to Contractor Commerce", "url": ""},
+    {"date": "2026-04", "type": "product", "summary": "Launched AI-powered conversational buying experience with photo upload, real-time recommendations, rebate integration", "url": ""},
+    {"date": "2026-03", "type": "product", "summary": "Earned ServiceTitan App Marketplace certification", "url": ""},
+    {"date": "2026-Q2", "type": "hiring", "summary": "Headcount grew 44% YoY (25 to 43), significant hiring across sales and customer success", "url": ""}
+  ],
+  "market": "home services ecommerce / vertical SaaS for trades",
+  "market_patterns": [
+    {"pattern": "Products that land spread word-of-mouth through tight contractor networks. The demo is the close because it has to be viscerally better than the status quo. Expansion path: own one workflow, then use data to expand into adjacent layers.", "failure_mode": "The ones that stall stop at the initial wedge without expanding into the data layer, or try to be the whole stack too fast."},
+    {"pattern": "PE-backed home services operators are a high-velocity buyer segment. Landing one PE-backed group can unlock referrals to 5-10 sister companies.", "failure_mode": "The ones that stall sell to independent owner-operators one at a time through traditional outbound."}
+  ],
+  "research_grade": "A",
+  "funding": "No public funding recorded, appears bootstrapped",
+  "headcount": "~36-43, up from 25 twelve months ago",
+  "prior_insights": [],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Will - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I've been spending a lot of time on vertical software for the trades and I'm a big fan of businesses that own the transactional layer rather than just the lead-gen layer. HVAC and plumbing is a great example where the website is still basically a brochure and the actual sale happens over the phone. I think the companies that turn that into an ecommerce experience expand naturally into memberships and maintenance agreements, because once you own the initial transaction you're in the best position to own the ongoing relationship.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

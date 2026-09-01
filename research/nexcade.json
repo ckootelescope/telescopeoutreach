@@ -1,0 +1,31 @@
+{
+  "slug": "nexcade",
+  "company": "Nexcade",
+  "fetchedAt": "2026-09-01T08:00:00Z",
+  "what_they_do": "Nexcade builds AI agents that automate freight forwarding workflows, starting with quoting, tenders, rate procurement, and bookings. Forwarding teams currently assemble quotes by manually stitching together information from seven separate sources, and Nexcade's agents handle that assembly problem so expert staff can focus on customer relationships.",
+  "vertical": "freight forwarding / logistics",
+  "primary_theme": 5,
+  "secondary_theme": 2,
+  "theme_fit_rationale": "Nexcade uses unstructured data (emails, rate portals, tariff sheets) as a wedge into automating critical downstream freight workflows. Also fits Theme 2 as agents executing cross-functional, multi-system workflows.",
+  "workflow_artifacts": ["rate portals", "email threads", "tariff sheets", "TMS data", "quoting spreadsheets", "booking confirmations"],
+  "recent_signals": [
+    {"date": "2026-07-08", "type": "funding", "summary": "$6M seed led by Project A Ventures, with MMC Ventures, Connect Ventures, Entropy Industrial Capital", "url": ""},
+    {"date": "2026-07", "type": "product", "summary": "Expanding from quoting/booking into customer service, pricing, and tendering agents. Launched Atlas analytics tool.", "url": ""},
+    {"date": "2026-Q2", "type": "hiring", "summary": "3 new hires in last 3 months, headcount up from 5 to 13 (140% YoY growth)", "url": ""}
+  ],
+  "market": "freight forwarding automation",
+  "market_patterns": [
+    {"pattern": "Products that land start with a narrow, high-frequency workflow wedge that bypasses IT and procurement review. A single quoting lane or transport mode, proven on the customer's own data, is the entry point.", "failure_mode": "The ones that stall try to sell a platform overhaul before proving a single workflow. Once an incumbent TMS is embedded, switching cost plus deal terms make it hard to justify."},
+    {"pattern": "Adoption sticks when the tool becomes operationally embedded before the customer fully realizes it. The person closest to the workflow is the real retention anchor.", "failure_mode": "The ones that stay as a layer on top face a low willingness-to-pay ceiling and build-vs-buy pressure."},
+    {"pattern": "Conversion from pilot happens when response time drops dramatically and measurably (e.g., from 3-5 days to same-day).", "failure_mode": "Low urgency kills deals even when value is clear. Sales cycles are long because the pain threshold for switching is very high."}
+  ],
+  "research_grade": "A",
+  "funding": "Seed, $8.5M total ($6M July 2026 + $2.5M Oct 2025)",
+  "headcount": "~13, up from 5 a year ago",
+  "prior_insights": [],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Dan - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I've been spending a lot of time on verticalized agents that use unstructured data as a wedge into automating critical downstream workflows. Freight forwarding is a great example where quoting still requires stitching together information from rate portals, email threads, tariff sheets, and institutional knowledge that lives in people's heads. I think the companies that automate that assembly problem rather than trying to replace the whole TMS tend to get adopted faster, because they can prove value on a single lane without asking anyone to change their core systems.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}
