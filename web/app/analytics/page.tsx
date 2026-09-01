@@ -4,9 +4,17 @@ import { Nav } from '../nav';
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-const TODAY = () => new Date().toISOString().slice(0, 10);
+const TODAY = () => new Date().toLocaleDateString('en-CA', { timeZone: 'America/Los_Angeles' });
 const daysBetween = (a: string, b: string) =>
   Math.round((Date.parse(b + 'T00:00:00Z') - Date.parse(a + 'T00:00:00Z')) / 864e5);
+const mondayPT = () => {
+  const parts = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Los_Angeles' }).format(new Date());
+  const d = new Date(parts + 'T12:00:00Z');
+  const day = d.getUTCDay();
+  const diff = day === 0 ? 6 : day - 1;
+  d.setUTCDate(d.getUTCDate() - diff);
+  return d.toISOString().slice(0, 10);
+};
 
 type Due = {
   company: string; founder: string | null; email: string;
@@ -79,7 +87,13 @@ export default async function Analytics() {
     { k: 'Active sequences', v: roster.data?.length ?? 0, sub: 'in cadence' },
     { k: 'Reply rate', v: totalSeq ? `${Math.round((Number(replied) / totalSeq) * 100)}%` : '—',
       sub: `${replied} of ${totalSeq}`, tone: 'ok' },
-    { k: 'Net new this week', v: weekly.data?.[0]?.net_new ?? 0, sub: 'first contact from you' },
+    { k: 'Net new this week', v: (() => {
+      const mon = mondayPT();
+      const latest = weekly.data?.[0];
+      if (!latest) return 0;
+      const wk = String(latest.week).slice(0, 10);
+      return wk === mon ? latest.net_new : 0;
+    })(), sub: `week of ${mondayPT()}` },
     { k: 'Restart candidates', v: restart.data?.length ?? 0, sub: 'cold, never restarted' },
     { k: 'Data issues', v: trouble, sub: trouble ? 'see trust panel' : 'database matches mailbox',
       tone: trouble ? 'warn' : 'ok' },
