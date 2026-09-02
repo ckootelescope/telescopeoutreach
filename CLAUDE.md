@@ -21,10 +21,6 @@ The app is **Telescope OS**: Dashboard, Week, Hard to Crack, Investors, Outreach
 routine reads from the remote copy. The scripts below write Supabase and `followups.json`
 together so the two cannot drift. Always push `followups.json` after a script changes it.
 
-The Google Apps Script sheet (`analytics/Code.gs`, the `script.google.com/macros/...` exec
-URL) is **dead** and superseded by Supabase. Its endpoint returns "Page Not Found". Do not
-try to log there.
-
 ### Never hand-write SQL for routine work
 
 Use the repo's scripts. Every one is report-only by default and takes `--apply`. Run the
@@ -43,10 +39,6 @@ report first, read it, then apply.
 `mark_sent.js` decides "sent" from the mailbox, not from whether a draft was created, so a
 step Calvin sent by hand still reconciles. `sync_replies.js` correctly ignores
 out-of-office auto-replies; do not treat an OOO bounce as a reply.
-
-Scripts under `scripts/` that talk to the Google Sheet or the Gmail draft API
-(`log_sent_and_recreate_drafts.js`, `delete_drafts.js`, `log_tracker.js`, `sheet_io.js`,
-`read_tracker.js`) are legacy from the pre-Supabase system. Do not use them.
 
 ## Two Engines: Route First
 
