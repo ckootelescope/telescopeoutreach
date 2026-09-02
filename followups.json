@@ -14456,7 +14456,8 @@
       "body": "<div>Hey Zack - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>[PLACEHOLDER - needs company-specific research before Email 4 is drafted]</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-02T17:56:05.700Z"
     },
     {
       "slug": "cloudforge",
@@ -14914,7 +14915,8 @@
       "body": "<div>Hey Talha - following up - how have you been thinking about your next raise? I really like what you're building at Vega and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-01",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-02T17:55:26.922Z"
     },
     {
       "slug": "vega",
@@ -14960,7 +14962,8 @@
       "body": "<div>Hey Arbaaz - following up - how have you been thinking about your next raise? I really like what you're building at Graphon and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-01",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-02T17:55:26.922Z"
     },
     {
       "slug": "graphon",
@@ -15006,7 +15009,8 @@
       "body": "<div>Hey Quinn - following up - how have you been thinking about your next raise? I really like what you're building at Ferris AI and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-01",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-02T17:55:26.922Z"
     },
     {
       "slug": "ferris-ai",
@@ -15052,7 +15056,8 @@
       "body": "<div>Hey Roxane - following up - how have you been thinking about your next raise? I really like what you're building at Lemrock and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-01",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-02T17:55:26.922Z"
     },
     {
       "slug": "lemrock",
@@ -15098,7 +15103,8 @@
       "body": "<div>Hey Mohammad - following up - how have you been thinking about your next raise? I really like what you're building at Open and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-01",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-02T17:55:26.922Z"
     },
     {
       "slug": "open",
@@ -15144,7 +15150,8 @@
       "body": "<div>Hey Anthony - following up - how have you been thinking about your next raise? I really like what you're building at Cavela and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-01",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-02T17:55:26.922Z"
     },
     {
       "slug": "cavela",
@@ -15190,7 +15197,8 @@
       "body": "<div>Hey Alan - following up - how have you been thinking about your next raise? I really like what you're building at Callback and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-01",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-02T17:55:26.922Z"
     },
     {
       "slug": "callback",
@@ -15284,7 +15292,8 @@
       "body": "<div>Hey Sai - following up - how have you been thinking about your next raise? I really like what you're building at Deduction and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-01",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-02T17:55:26.922Z"
     },
     {
       "slug": "deduction",
