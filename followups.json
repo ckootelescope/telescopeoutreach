@@ -17101,7 +17101,8 @@
       "body": "<div>Hey Marlow - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-06",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-09T17:50:13.612Z"
     },
     {
       "slug": "reflex-security",
@@ -17116,7 +17117,8 @@
       "body": "<div>Hey Marlow - following up - how have you been thinking about your next raise? I really like what you're building at Reflex Security and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-11",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-09T17:50:13.612Z"
     },
     {
       "slug": "reflex-security",
@@ -17131,7 +17133,8 @@
       "body": "<div>Hey Marlow - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in security tooling and one pattern that keeps showing up is that these deals get stuck less on product fit and more on procurement, since security buyers hold new security vendors to the same bar they'd apply to themselves. The teams that get through tend to have already proven out a narrow, well-scoped use case before the enterprise conversation even starts. I think that plays well for Reflex because pressure-testing incident response is something a team can run and show results from before anyone has to sign off on a broader rollout.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-16",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-09T17:50:13.612Z"
     }
   ]
 }
