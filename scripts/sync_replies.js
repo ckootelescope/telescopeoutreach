@@ -19,10 +19,29 @@ function envv() {
     .forEach(l => { const i = l.indexOf('='); if (i > 0) e[l.slice(0, i).trim()] = l.slice(i + 1).trim(); });
   return e;
 }
-function req(o, body, tries = 4) {
+// Gmail throttles bursts with 429 and the odd 5xx. This used to retry only on
+// socket errors, so a throttled request came back non-200 and every caller read
+// that as "nothing there" - a silent under-report that hid real replies and made
+// a partial sweep look like a clean one. Retry those statuses with backoff and
+// count what never resolves, so a caller can refuse to trust the result.
+let HTTP_FAILS = 0;
+const httpFails = () => HTTP_FAILS;
+function req(o, body, tries = 6) {
+  const RETRYABLE = new Set([429, 500, 502, 503, 504]);
   return new Promise((res, rej) => {
-    const a = n => { const r = https.request(o, x => { let d = ''; x.on('data', c => d += c); x.on('end', () => res({ s: x.statusCode, b: d })); });
-      r.on('error', e => n > 0 ? setTimeout(() => a(n - 1), 700) : rej(e)); if (body) r.write(body); r.end(); };
+    const a = n => {
+      const r = https.request(o, x => {
+        let d = ''; x.on('data', c => d += c);
+        x.on('end', () => {
+          if (RETRYABLE.has(x.statusCode) && n > 0)
+            return setTimeout(() => a(n - 1), (tries - n + 1) * 1500 + Math.random() * 600);
+          if (x.statusCode !== 200 && x.statusCode !== 204) HTTP_FAILS++;
+          res({ s: x.statusCode, b: d });
+        });
+      });
+      r.on('error', e => n > 0 ? setTimeout(() => a(n - 1), 700) : rej(e));
+      if (body) r.write(body); r.end();
+    };
     a(tries);
   });
 }
@@ -147,6 +166,13 @@ async function main() {
     }
   }
 
+  // A throttled sweep that found nothing looks exactly like a clean one, so say
+  // out loud when requests were dropped and refuse to write on a partial sweep.
+  if (httpFails()) {
+    console.log("WARNING: " + httpFails() + " gmail requests failed after retries.");
+    console.log("This sweep is INCOMPLETE - replies may be missing. Not writing.");
+    if (APPLY) { await c.end(); process.exit(2); }
+  }
   const bySeq = new Map();
   found.forEach(f => { if (!bySeq.has(f.seq_id) || bySeq.get(f.seq_id).ts < f.ts) bySeq.set(f.seq_id, f); });
 

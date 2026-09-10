@@ -23,10 +23,29 @@ function envv() {
     .forEach(l => { const i = l.indexOf('='); if (i > 0) e[l.slice(0, i).trim()] = l.slice(i + 1).trim(); });
   return e;
 }
-function req(o, body, tries = 4) {
+// Gmail throttles bursts with 429 and the odd 5xx. This used to retry only on
+// socket errors, so a throttled request came back non-200 and every caller read
+// that as "nothing there" - a silent under-report that hid real replies and made
+// a partial sweep look like a clean one. Retry those statuses with backoff and
+// count what never resolves, so a caller can refuse to trust the result.
+let HTTP_FAILS = 0;
+const httpFails = () => HTTP_FAILS;
+function req(o, body, tries = 6) {
+  const RETRYABLE = new Set([429, 500, 502, 503, 504]);
   return new Promise((res, rej) => {
-    const a = n => { const r = https.request(o, x => { let d = ''; x.on('data', c => d += c); x.on('end', () => res({ s: x.statusCode, b: d })); });
-      r.on('error', e => n > 0 ? setTimeout(() => a(n - 1), 700) : rej(e)); if (body) r.write(body); r.end(); };
+    const a = n => {
+      const r = https.request(o, x => {
+        let d = ''; x.on('data', c => d += c);
+        x.on('end', () => {
+          if (RETRYABLE.has(x.statusCode) && n > 0)
+            return setTimeout(() => a(n - 1), (tries - n + 1) * 1500 + Math.random() * 600);
+          if (x.statusCode !== 200 && x.statusCode !== 204) HTTP_FAILS++;
+          res({ s: x.statusCode, b: d });
+        });
+      });
+      r.on('error', e => n > 0 ? setTimeout(() => a(n - 1), 700) : rej(e));
+      if (body) r.write(body); r.end();
+    };
     a(tries);
   });
 }
@@ -128,6 +147,11 @@ async function main() {
     hits.push({ ...r, msg: mine[r.step_no - 1] });
   }
 
+  if (httpFails()) {
+    console.log("WARNING: " + httpFails() + " gmail requests failed after retries.");
+    console.log("This sweep is INCOMPLETE - sends may be missing. Not writing.");
+    if (APPLY) { await c.end(); process.exit(2); }
+  }
   console.log('open steps due on or before today: ' + open.rows.length);
   console.log('confirmed sent in gmail: ' + hits.length);
   hits.forEach(h => console.log('  SENT    ' + new Date(h.msg.ts - 7 * 3600e3).toISOString().slice(0, 10) +
