@@ -73,8 +73,15 @@ export default async function Analytics() {
   const load = (upcoming.data ?? []) as { d: string; first: number; restart: number }[];
   const peak = Math.max(1, ...load.map((l) => l.first + l.restart));
 
-  const replied = (outcomes.data ?? []).find((o: any) => o.outcome === 'untagged')?.n ?? 0;
-  const noReply = (outcomes.data ?? []).find((o: any) => o.outcome === 'no_reply')?.n ?? 0;
+  // Every outcome except 'no_reply' IS a reply. This used to count only
+  // 'untagged', so the moment Calvin tagged a reply as 'meeting' or 'not_now'
+  // it left both the numerator and the denominator: tagging a reply removed it
+  // from the reply rate, and the number drifted down as he did more triage.
+  const outcomeRows = (outcomes.data ?? []) as { outcome: string; n: number | string }[];
+  const noReply = outcomeRows.find((o) => o.outcome === 'no_reply')?.n ?? 0;
+  const replied = outcomeRows
+    .filter((o) => o.outcome !== 'no_reply')
+    .reduce((a, o) => a + Number(o.n), 0);
   const totalSeq = Number(replied) + Number(noReply);
 
   const trouble =

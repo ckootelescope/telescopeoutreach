@@ -171,19 +171,26 @@ async function main() {
   // next email carries a due date that is already in the past and fires the
   // same day, which collapses the cadence.
   const GAP = { first: { 2: 2, 3: 5, 4: 5 }, restart: { 2: 2, 3: 3, 4: 5 } };
+  // ...and it drags EVERY successor, not just the next one. Moving only E3 left
+  // E4 sitting on its original date, so a cadence whose E2 went out late ended
+  // up with E3 and E4 due the same day and two follow-ups landing on one thread.
+  // Walk the rest of the cadence, accumulating gaps off the real send date.
   const moved = [];
   for (const h of hits) {
     const kind = (await c.query(`select kind from sequence where id=$1`, [h.seq_id])).rows[0].kind;
-    const sentOn = new Date(h.msg.ts).toISOString().slice(0, 10);
-    const nxt = h.step_no + 1;
-    if (nxt > 4) continue;
-    const gap = GAP[kind][nxt];
-    const due = new Date(Date.parse(sentOn + 'T12:00:00Z') + gap * 864e5).toISOString().slice(0, 10);
-    const r = await c.query(
-      `update step set due_date=$3 where sequence_id=$1 and step_no=$2
-         and status='planned' and due_date <= $4 returning id`,
-      [h.seq_id, nxt, due, sentOn]);
-    if (r.rows.length) moved.push(`${h.company} E${nxt} -> ${due}`);
+    let anchor = new Date(h.msg.ts).toISOString().slice(0, 10);
+    for (let n = h.step_no + 1; n <= 4; n++) {
+      const gap = GAP[kind][n];
+      if (!gap) break;
+      anchor = new Date(Date.parse(anchor + 'T12:00:00Z') + gap * 864e5).toISOString().slice(0, 10);
+      // Only ever push a step later. Pulling one earlier would fire it ahead of
+      // schedule, and a step already correctly spaced needs no help.
+      const r = await c.query(
+        `update step set due_date=$3 where sequence_id=$1 and step_no=$2
+           and status='planned' and due_date < $3 returning id`,
+        [h.seq_id, n, anchor]);
+      if (r.rows.length) moved.push(`${h.company} E${n} -> ${anchor}`);
+    }
   }
   if (moved.length) { console.log('re-anchored:'); moved.forEach(m => console.log('  ' + m)); }
 
