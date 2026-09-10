@@ -131,6 +131,46 @@ When an anchor appears here, use this text verbatim, changing only `[Company]`.
 
 Paragraph 1 for Jampack AI: `scaling [Company]'s operations and the software you utilize for that`.
 
+**Pathwork** (industry: `insurance distribution`, workflow: `moving policies from initial inquiry through underwriting decisions`)
+
+> For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the insurance distribution space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brokers, BGAs and carriers like [Company] speed up how policies move from initial inquiry through underwriting decisions. We've seen that much of this work is done manually or across multiple point solutions. We understand that this is one part of the process (we've heard of tools focused on carrier guide lookups and document review, etc.), and I'd love to learn more about how you view your tech stack as a whole.
+
+Paragraph 1 for Pathwork: varies by recipient's actual relevant experience rather than a single
+fixed line, since the channel (BGAs/brokers/carriers) means a given contact's most relevant
+company is often a past role, not their current one. Confirm with Calvin when the current
+company doesn't fit the insurance-distribution frame (e.g. contact 2026-08-26, Jon Jacobs: current
+company is a wealth-management consulting shop, so paragraph 1 referenced his prior BGA role at
+LIBRA Insurance Partners instead, and paragraph 2's `[Company]` used LIBRA rather than his current
+employer).
+
+**Pathwork, analyst/advisor variant** (industry: `life insurance`, workflow: `moving policies from
+initial inquiry through underwriting decisions`). Use when the recipient is a research, advisory or
+consulting-side life insurance expert rather than an operator at a broker, BGA or carrier. There is
+no `[Company]` slot: the "like [Company]" phrasing is dropped, because a research firm is not the
+buyer being described.
+
+> For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the life insurance space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brokers, BGAs and carriers speed up how policies move from initial inquiry through underwriting decisions. We've seen that much of this work is done manually or across multiple point solutions. We understand that this is one part of the process (we've heard of tools focused on carrier guide lookups and document review, etc.), and I'd love to learn more about how you view your tech stack as a whole.
+
+Paragraph 1 for the analyst variant is fixed: `your view of the life insurance tech stack and the
+tools carriers and distributors are actually adopting`. Subject line industry string is
+`Life Insurance`. Frozen 2026-09-10 across Samantha Chow (Capgemini), Paul Mattern (Datos Insights)
+and Bryan Hodgens (LIMRA).
+
+**Pathwork, carrier-side routing.** Carriers are named in the standard Pathwork block, so a contact
+at Northwestern Mutual, Nationwide, New York Life or MassMutual takes that block verbatim with
+`[Company]` set to the **parent carrier**, not the venture arm ("MassMutual", not "MassMutual
+Ventures"). Paragraph 1 then routes on what the person actually does:
+
+- **Operators** (data, technology, finance, product roles): locked default, `your experience scaling
+  [Company]'s operations and the software you utilize for that`.
+- **Corporate development and venture arms** (they invest, they do not run operations): reuse the
+  analyst-variant line, `your view of the life insurance tech stack and the tools carriers and
+  distributors are actually adopting`. Paragraph 2 keeps `[Company]`, unlike the pure analyst
+  variant, because a carrier ventures contact really does sit inside a carrier.
+
+Subject line stays `Insurance Distribution`. Frozen 2026-09-10 across the Northwestern Mutual,
+Nationwide, New York Life and MassMutual Ventures batch.
+
 ### Step 4: Create Superhuman draft
 
 Use Superhuman `create_or_update_draft`:
