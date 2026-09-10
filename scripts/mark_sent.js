@@ -11,53 +11,14 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const { connect } = require('./db');
+const { req, token, httpFails, quotaHits } = require('./gmail_req');
 
 const ROOT = path.join(__dirname, '..');
 const ME = 'calvin@telescopepartners.com';
 const APPLY = process.argv.includes('--apply');
 const HISTORY = process.argv.includes('--history');
 
-function envv() {
-  const e = {};
-  fs.readFileSync(path.join(ROOT, '.env'), 'utf8').split(/\r?\n/)
-    .forEach(l => { const i = l.indexOf('='); if (i > 0) e[l.slice(0, i).trim()] = l.slice(i + 1).trim(); });
-  return e;
-}
-// Gmail throttles bursts with 429 and the odd 5xx. This used to retry only on
-// socket errors, so a throttled request came back non-200 and every caller read
-// that as "nothing there" - a silent under-report that hid real replies and made
-// a partial sweep look like a clean one. Retry those statuses with backoff and
-// count what never resolves, so a caller can refuse to trust the result.
-let HTTP_FAILS = 0;
-const httpFails = () => HTTP_FAILS;
-function req(o, body, tries = 6) {
-  const RETRYABLE = new Set([429, 500, 502, 503, 504]);
-  return new Promise((res, rej) => {
-    const a = n => {
-      const r = https.request(o, x => {
-        let d = ''; x.on('data', c => d += c);
-        x.on('end', () => {
-          if (RETRYABLE.has(x.statusCode) && n > 0)
-            return setTimeout(() => a(n - 1), (tries - n + 1) * 1500 + Math.random() * 600);
-          if (x.statusCode !== 200 && x.statusCode !== 204) HTTP_FAILS++;
-          res({ s: x.statusCode, b: d });
-        });
-      });
-      r.on('error', e => n > 0 ? setTimeout(() => a(n - 1), 700) : rej(e));
-      if (body) r.write(body); r.end();
-    };
-    a(tries);
-  });
-}
-async function token() {
-  const e = envv();
-  const b = new URLSearchParams({ client_id: e.GMAIL_CLIENT_ID, client_secret: e.GMAIL_CLIENT_SECRET,
-    refresh_token: e.GMAIL_REFRESH_TOKEN, grant_type: 'refresh_token' }).toString();
-  const r = await req({ hostname: 'oauth2.googleapis.com', path: '/token', method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }, b);
-  if (r.s !== 200) throw new Error('token refresh failed');
-  return JSON.parse(r.b).access_token;
-}
+// Gmail HTTP lives in gmail_req: 403-quota retry with a global gate.
 const addrs = s => (String(s || '').match(/[\w.+-]+@[\w.-]+/g) || []).map(x => x.toLowerCase());
 
 // Calvin's outbound on a thread, up to the point the founder first wrote back.
@@ -105,7 +66,7 @@ async function main() {
   async function fetchThreads(ids) {
     const todo = ids.filter(th => !out.has(th));
     let i = 0;
-    await Promise.all(Array.from({ length: Math.min(8, todo.length) }, async () => {
+    await Promise.all(Array.from({ length: Math.min(3, todo.length) }, async () => {
       while (i < todo.length) {
         const th = todo[i++];
         const r = await req({ hostname: 'gmail.googleapis.com',

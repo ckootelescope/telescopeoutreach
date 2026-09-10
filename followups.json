@@ -15767,7 +15767,8 @@
       "body": "<div>Hey Matt - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "congrue",
@@ -15956,7 +15957,8 @@
       "body": "<div>Hey Zayne - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "feldy",
@@ -16001,7 +16003,8 @@
       "body": "<div>Hey Andrei - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "humanity-labs",
@@ -16094,7 +16097,8 @@
       "body": "<div>Hey Jai - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "general-magic",
@@ -16139,7 +16143,8 @@
       "body": "<div>Hey Shapor - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "querystory",
@@ -16184,7 +16189,8 @@
       "body": "<div>Hey Lucia - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "youshift",
@@ -16277,7 +16283,8 @@
       "body": "<div>Hey Tiphaine - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "covera",
@@ -16292,7 +16299,8 @@
       "body": "<div>Hey Tiphaine - following up - how have you been thinking about your next raise? I really like what you're building at Covera and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-10",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-10T17:22:41.620Z"
     },
     {
       "slug": "covera",
@@ -16307,7 +16315,8 @@
       "body": "<div>Hey Tiphaine - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div></div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-15",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-10T17:22:41.620Z"
     },
     {
       "slug": "trainloop",
@@ -16322,7 +16331,8 @@
       "body": "<div>Hey Jackson - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "trainloop",
@@ -16367,7 +16377,8 @@
       "body": "<div>Hey Kevin - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "salmon",
@@ -16460,7 +16471,8 @@
       "body": "<div>Hey John - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "highground",
@@ -16475,7 +16487,8 @@
       "body": "<div>Hey John - following up - how have you been thinking about your next raise? I really like what you're building at HighGround and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-10",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-10T17:22:41.620Z"
     },
     {
       "slug": "highground",
@@ -16490,7 +16503,8 @@
       "body": "<div>Hey John - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div></div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-15",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-10T17:22:41.620Z"
     },
     {
       "slug": "voicepanel",
@@ -16505,7 +16519,8 @@
       "body": "<div>Hey John - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "voicepanel",
@@ -16550,7 +16565,8 @@
       "body": "<div>Hey Raj - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "unbound",
@@ -16595,7 +16611,8 @@
       "body": "<div>Hey Andy - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "dreambase",
@@ -16640,7 +16657,8 @@
       "body": "<div>Hey Sid - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "pulse",
@@ -16733,7 +16751,8 @@
       "body": "<div>Hey Henry - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "platformed",
@@ -16778,7 +16797,8 @@
       "body": "<div>Hey Dan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "g2mint",
@@ -16871,7 +16891,8 @@
       "body": "<div>Hey Michael - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "kaizen",
@@ -17012,7 +17033,8 @@
       "body": "<div>Hey Sherwood - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "sent",
+      "processedAt": "2026-09-10T17:21:22.029Z"
     },
     {
       "slug": "sazabi",

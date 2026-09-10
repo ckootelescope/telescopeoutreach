@@ -20,6 +20,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 const { connect } = require('./db');
+const { req, token, httpFails, quotaHits } = require('./gmail_req');
 
 const ROOT = path.join(__dirname, '..');
 const ME = 'calvin@telescopepartners.com';
@@ -29,46 +30,7 @@ const SINCE = (process.argv.find(a => a.startsWith('--since=')) || '--since=2026
 // founder, an expert or a robot, so it is held back until asked for.
 const KNOWN_ONLY = process.argv.includes('--known-only');
 
-function envv() {
-  const e = {};
-  fs.readFileSync(path.join(ROOT, '.env'), 'utf8').split(/\r?\n/)
-    .forEach(l => { const i = l.indexOf('='); if (i > 0) e[l.slice(0, i).trim()] = l.slice(i + 1).trim(); });
-  return e;
-}
-
-// Same retry contract as the other reconcile scripts: Gmail throttles bursts
-// with 429, and a throttled request read as "nothing there" is how a partial
-// sweep gets mistaken for a clean one.
-let HTTP_FAILS = 0;
-const httpFails = () => HTTP_FAILS;
-function req(o, body, tries = 6) {
-  const RETRYABLE = new Set([429, 500, 502, 503, 504]);
-  return new Promise((res, rej) => {
-    const a = n => {
-      const r = https.request(o, x => {
-        let d = ''; x.on('data', c => d += c);
-        x.on('end', () => {
-          if (RETRYABLE.has(x.statusCode) && n > 0)
-            return setTimeout(() => a(n - 1), (tries - n + 1) * 1500 + Math.random() * 600);
-          if (x.statusCode !== 200 && x.statusCode !== 204) HTTP_FAILS++;
-          res({ s: x.statusCode, b: d });
-        });
-      });
-      r.on('error', e => n > 0 ? setTimeout(() => a(n - 1), 700) : rej(e));
-      if (body) r.write(body); r.end();
-    };
-    a(tries);
-  });
-}
-async function token() {
-  const e = envv();
-  const b = new URLSearchParams({ client_id: e.GMAIL_CLIENT_ID, client_secret: e.GMAIL_CLIENT_SECRET,
-    refresh_token: e.GMAIL_REFRESH_TOKEN, grant_type: 'refresh_token' }).toString();
-  const r = await req({ hostname: 'oauth2.googleapis.com', path: '/token', method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }, b);
-  if (r.s !== 200) throw new Error('token refresh failed');
-  return JSON.parse(r.b).access_token;
-}
+// Gmail HTTP lives in gmail_req: 403-quota retry with a global gate.
 const addrs = s => (String(s || '').match(/[\w.+-]+@[\w.-]+/g) || []).map(x => x.toLowerCase());
 
 // Not a founder we are prospecting. Telescope's own people, robots, and the
