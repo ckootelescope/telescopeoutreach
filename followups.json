@@ -14126,7 +14126,8 @@
       "body": "<div>Hey Taylor - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been looking at how vertical AI products land inside financial services firms, and the pattern we keep seeing is that the ones that expand are the ones where the context layer becomes proprietary to each client rather than a shared model everyone queries the same way. The ones that stall tend to offer a better search interface over public data that any general-purpose tool can eventually replicate. I think Metal is well positioned for that because a context graph built on a firm's own relationships, transactions, and internal knowledge gets more valuable as more of the team uses it, which makes it increasingly hard to replace over time.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.302Z"
     },
     {
       "slug": "throxy",
@@ -14804,7 +14805,8 @@
       "body": "<div>Hey Panos - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>[PLACEHOLDER - needs company-specific research before Email 4 is drafted]</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-05",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "entegrata",
@@ -17179,7 +17181,8 @@
       "body": "<div>Hey Ryan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "drafted",
+      "draftId": "draft003754b01cdebf41"
     },
     {
       "slug": "lifewize",
@@ -17224,7 +17227,8 @@
       "body": "<div>Hey David - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "drafted",
+      "draftId": "draft0016abddf380794d"
     },
     {
       "slug": "optifino",
@@ -17266,10 +17270,11 @@
       "superhumanThreadId": "1a08c38967d1cc4c",
       "messageId": "1a08c38967d1cc4c",
       "subject": "Telescope <> Xcela Intro",
-      "body": "<div>Hey Nicholas - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
+      "body": "<div>Hey Nick - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "drafted",
+      "draftId": "draft00f7f48cc557c746"
     },
     {
       "slug": "xcela",
@@ -17314,7 +17319,8 @@
       "body": "<div>Hey Alex - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "drafted",
+      "draftId": "draft00889a00e0e61a41"
     },
     {
       "slug": "sixfold",
@@ -17359,7 +17365,8 @@
       "body": "<div>Hey Michael - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "drafted",
+      "draftId": "draft00c45bcf28cb3f44"
     },
     {
       "slug": "modern-life",
@@ -17404,7 +17411,8 @@
       "body": "<div>Hey Alfonso - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "handle",
@@ -17419,7 +17427,8 @@
       "body": "<div>Hey Alfonso - following up - how have you been thinking about your next raise? I really like what you're building at Handle and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-17",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "handle",
@@ -17434,7 +17443,8 @@
       "body": "<div>Hey Alfonso - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>[PLACEHOLDER - needs company-specific research before Email 4 is drafted]</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-22",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "atidot",
@@ -17449,7 +17459,8 @@
       "body": "<div>Hey Dror - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "atidot",
@@ -17464,7 +17475,8 @@
       "body": "<div>Hey Dror - following up - how have you been thinking about your next raise? I really like what you're building at Atidot and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-17",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "atidot",
@@ -17479,7 +17491,8 @@
       "body": "<div>Hey Dror - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>[PLACEHOLDER - needs company-specific research before Email 4 is drafted]</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-22",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "channel3",
@@ -17494,7 +17507,8 @@
       "body": "<div>Hey George - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "drafted",
+      "draftId": "draft00daeca12be21e4f"
     },
     {
       "slug": "channel3",
@@ -17539,7 +17553,8 @@
       "body": "<div>Hey Jerry - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "drafted",
+      "draftId": "draft00be1ddda27e5341"
     },
     {
       "slug": "electrify",
@@ -17584,7 +17599,8 @@
       "body": "<div>Hey Neal - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "manifold",
@@ -17599,7 +17615,8 @@
       "body": "<div>Hey Neal - following up - how have you been thinking about your next raise? I really like what you're building at Manifold and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-17",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "manifold",
@@ -17614,7 +17631,8 @@
       "body": "<div>Hey Neal - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in security and the pattern that decides these accounts is expansion by scope rather than by seat, one agent population or one business unit at a time, with an internal champion who proves the first one out. The vendors that stall try to sell the whole platform before that first wedge is proven and end up parked in security review indefinitely. I think you're set up well for that because an agentless deployment means the first team can be live without a procurement cycle, and turning a proven wedge into the next three is where our operations team tends to help most.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-22",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "cerulean",
@@ -17629,7 +17647,8 @@
       "body": "<div>Hey Kieran - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-12",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "cerulean",
@@ -17644,7 +17663,8 @@
       "body": "<div>Hey Kieran - following up - how have you been thinking about your next raise? I really like what you're building at Cerulean and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-17",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "cerulean",
@@ -17659,7 +17679,8 @@
       "body": "<div>Hey Kieran - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in industrial distribution and the thing that decides these deals is almost never the demo, it's whether a buyer can watch it run on their own documents first. The teams that lead with a generic industry walkthrough tend to stall in evaluation, because the risk a buyer is actually underwriting is whether it breaks their order flow. I think you're set up well for that since quote and PO intake is easy to prove on a customer's own inbox before anyone has to commit, and turning those proofs into a repeatable motion across a dealer network is where we'd focus.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-22",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-14T20:59:45.303Z"
     },
     {
       "slug": "nexcade",
