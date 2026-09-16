@@ -86,6 +86,18 @@ async function main() {
 
   // Free-mail and link-shortener domains would match half the mailbox if one
   // ever landed in company_domain, so they are never used for sender matching.
+  // The one place company outreach reads market outreach, and it reads one
+  // column. Pass 2 below matches inbound mail by SENDER DOMAIN across the whole
+  // mailbox. Market outreach emails industry experts, and the "competitor"
+  // angle deliberately targets startups in the same markets we invest in, so an
+  // expert and a cold-outreach founder can share a domain. Without this, that
+  // expert's reply reads as the founder writing back and silently kills a live
+  // cadence. Exact addresses only, and nothing flows the other way.
+  const marketAddrs = new Set(
+    (await c.query(`select lower(email) e from market.contact where email is not null`)
+      .catch(() => ({ rows: [] }))).rows.map(r => r.e));
+  if (marketAddrs.size) console.log('excluding ' + marketAddrs.size + ' market-outreach addresses');
+
   const SHARED = new Set(['gmail.com', 'googlemail.com', 'yahoo.com', 'hotmail.com', 'outlook.com',
     'icloud.com', 'me.com', 'aol.com', 'msn.com', 'live.com', 'proton.me', 'protonmail.com',
     'hubs.ly', 'bit.ly', 'substack.com']);
@@ -107,6 +119,7 @@ async function main() {
   const push = (row, m, h, threadId) => {
     const from = addrs(h.from)[0] || '';
     if (!from || notAPerson(from)) return;
+    if (marketAddrs.has(from)) return;   // market-outreach expert, not a founder
     if (isAutoReply(h)) { autos.push({ company: row.company, from, subject: h.subject }); return; }
     if (isBulk(h)) { bulk.push({ company: row.company, from, subject: h.subject }); return; }
     const key = row.seq_id + ':' + m.id;

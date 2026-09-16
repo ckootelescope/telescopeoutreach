@@ -1,0 +1,16 @@
+{
+  "anchor_company": "Jampack AI",
+  "slug": "jampack-ai",
+  "industry": "CPG",
+  "workflow": "their O2C workflow",
+  "fu3_insight_html": "As we've spent more time in the space, we've come across a number of tools that have automated the full order-to-cash process as well as some downstream trade spend management workflows that we think could be helpful to your guys' operations.",
+  "blocks": [
+    {
+      "angle": "customer",
+      "uses_company_slot": true,
+      "para1_s2": "I was hoping to connect and briefly chat about your experience scaling [Company]'s operations and the software you utilize for that.",
+      "para2_html": "For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the CPG space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brands like [Company] scale their operations by automating their O2C workflow. We've seen that much of this work is done manually or across multiple point solutions. We understand that this is one part of the process (we've heard of tools focused on revenue forecasting, order planning, etc.), and I'd love to learn more about how you view your tech stack as a whole."
+    }
+  ],
+  "industry_label": "CPG"
+}

@@ -1,215 +1,175 @@
 ---
-description: Cold outreach engine for market diligence work. Trigger when the user pastes a LinkedIn URL alongside an anchor company name and value chain context, or says "outreach", "market outreach", "send outreach to", "draft outreach for", "reach out to", or any variation of wanting to contact an industry expert for a diligence conversation. Also trigger when the user says "outreach engine" or "run outreach". The user provides a LinkedIn profile URL, anchor company, value chain role, and optionally a tracker sheet URL. The skill enriches the person via Apollo, drafts a templated cold email as a Superhuman draft, and updates the Google Sheet tracker. Even if the user just pastes a LinkedIn URL with a company name and some context about what market they're researching, use this skill.
+description: Diligence market outreach engine. Trigger when Calvin pastes LinkedIn or Sales Nav URLs alongside a target company and an expert angle, or says "market outreach", "outreach to this expert", "run outreach for <company> diligence", or pastes a batch of expert profiles for a live deal. Enriches each person via Apollo, applies the email quality gate, writes a batch CSV, and stages an auto-sending 4-step sequence. Separate from company/founder outreach, which is /outreach and /restart-outreach.
 ---
 
-# Market Outreach Engine
+# Diligence Market Outreach
 
-Draft cold outreach emails to industry experts as part of deal diligence market work.
+Cold outreach to industry experts during a live diligence process, to replace
+paid expert-network calls. Customers, competitors, former operators, advisors.
 
-**This email is a fixed template, not a creative writing exercise.** Almost every word is locked.
-The only things that change per person are the recipient's company name and, across different
-anchor companies, the industry and the workflow being researched. Resist the urge to improve the
-copy. If a sentence reads awkwardly, that is Calvin's phrasing and it stays.
+**This is not company outreach.** Company outreach lives in `public.*` and is run
+by `/outreach`, `/restart-outreach` and `/process-followups`. This system lives in
+the `market.*` schema and shares nothing with it except one read-only guard.
+Never mix them.
 
-**CRITICAL: The anchor company name must NEVER appear in the outreach email.** It is used only as
-internal context to pick the industry and workflow language. The email frames the outreach as
-general market research, not "we're looking at investing in X."
+Full design: `market-outreach/SPEC.md`. Read it before changing anything here.
 
-## Input Format
+## The one rule that matters most
 
-The user will paste something in one of these formats:
+**The anchor company is never named in any email.** It selects the industry and
+workflow language and nothing else. The email is framed as general market
+research, not "we are looking at investing in X." Three separate guards enforce
+this (`mo_project.js` on authoring, `mo_render.guard` before every send), and
+they are not decoration.
 
-**Structured:**
+## Inputs
+
+Per expert: a **LinkedIn or Sales Nav URL**, the **target company**, and the
+**expert angle** (`customer`, `competitor`, `former`, `advisor`, `other`).
+
+Batch form is normal:
+
 ```
-linkedin.com/in/janedoe, Jampack AI, CPG brand operator, https://docs.google.com/spreadsheets/d/abc123/edit
-```
-
-**Natural language:**
-```
-Outreach to linkedin.com/in/janedoe — she runs ops at a CPG brand, relevant to Jampack's O2C workflow. Tracker: [sheet URL]
-```
-
-**Batch (multiple people):**
-```
-Outreach for Jampack diligence, tracker: [sheet URL]
-1. linkedin.com/in/janedoe — CPG brand operator
-2. linkedin.com/in/johnsmith — distributor
-3. linkedin.com/in/sarahj — competitor
+Pathwork diligence
+1. linkedin.com/in/joanne — customer, John Hancock
+2. linkedin.com/sales/lead/abc — customer, Guardian Life
 ```
 
-Parse the following from the user's input:
-1. **LinkedIn URL** — the person's LinkedIn profile
-2. **Anchor Company** — the company being diligenced. **Never mention this in the email.**
-3. **Value Chain Context** — what part of the value chain this person represents
-4. **Tracker Sheet URL** (optional) — if not provided, skip the tracker update step
-
-If the anchor company or value chain context is unclear, ask the user to clarify before
-proceeding. Do not guess on these. If a locked block for that anchor already exists in the
-registry below, the anchor name alone is enough.
+If the angle or target is unclear, ask. Do not guess: the angle picks the copy.
 
 ## Workflow
 
-### Step 1: Enrich via Apollo
-
-Use `apollo_people_match` with the LinkedIn URL to get first name, last name, work email
-(`reveal_personal_emails: false`), current title, and current company.
-
-Apollo charges 1 credit per match. Invoking this command authorizes the enrichment it requires,
-so do not stop to ask for a single lookup. For a batch of more than 10, say the credit count and
-confirm before running.
-
-If Apollo returns no email, tell the user and ask if they have the email or want to try
-`reveal_personal_emails: true`.
-
-If Apollo shows the person has moved companies since their LinkedIn profile was updated, note the
-discrepancy to the user and use the current company in the email.
-
-### Step 2: Confirm the industry and workflow
-
-You need two strings before you can write:
-
-- **Industry** — the market being researched, e.g. `CPG`. Goes in the subject line and paragraph 2.
-- **Workflow** — what the anchor company automates, e.g. `their O2C workflow`. Goes in paragraphs 1 and 2.
-
-If the anchor already has a locked block in the registry, both strings come from there and no
-research is needed. Otherwise fetch the anchor company's website once to establish what workflow
-it automates, then write a new locked block and add it to the registry.
-
-Do not research the recipient's company. The template does not use it beyond the name.
-
-### Step 3: Draft the email
-
-**Subject (templated, only the industry changes):**
+### Step 1: make sure the project exists
 
 ```
-Telescope Partners | Chat on [Industry] Software and AI Tools
+node scripts/mo_project.js --list
+node scripts/mo_project.js --show pathwork
 ```
 
-**Body:**
+If the project is new, or the angle has no copy block yet, **Calvin supplies the
+copy**. Do not author it yourself. Ask him for paragraph 1 sentence 2 and
+paragraph 2 for that angle, put them in `market-outreach/<slug>/project.json`,
+and run:
 
 ```
-Hi [First Name],
-
-Hope you don't mind the cold note! I was hoping to connect and briefly chat about your experience scaling [Company]'s operations and the software you utilize for that. Are you free for a quick call in the next couple of weeks?
-
-For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the [Industry] space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brands like [Company] scale their operations by automating [workflow]. We've seen that much of this work is done manually or across multiple point solutions. We understand that this is one part of the process (we've heard of tools focused on [adjacent tool categories]), and I'd love to learn more about how you view your tech stack as a whole.
-
-I recognize you're busy, but people we've spoken with have gained value from learning about new market solutions and introductions that led to meaningful workflow improvements. If there's another person on your team that you think would be a better fit - happy to chat with them as well. LMK your thoughts and thanks in advance.
+node scripts/mo_project.js market-outreach/<slug>/project.json          # report
+node scripts/mo_project.js market-outreach/<slug>/project.json --apply
 ```
 
-**How much varies, paragraph by paragraph:**
+Angle matters structurally, not cosmetically. For a competitor, paragraph 2's
+"tools that help brands like [Company]" is wrong, because the competitor **is**
+the tool. A missing block blocks staging rather than silently falling back.
 
-| Paragraph | What changes | What is locked |
-|---|---|---|
-| 1 | `[Company]`, and `scaling [Company]'s operations` if the anchor automates something other than operations | Everything else, including the CTA sentence |
-| 2 | `[Industry]` in sentence 1. Sentences 3 to 5 are locked **per anchor**: within one anchor's outreach only `[Company]` changes | Sentence 2 is locked across all anchors |
-| 3 | Nothing | The entire paragraph, across every anchor, every recipient |
+`fu3_insight_html` is the step-4 insight, authored once per project. Without it
+step 4 stages with a null body and `mo_send` refuses to send it.
 
-Paragraph 2 is where a new anchor company gets its one-time authoring pass. Once written, that
-text is frozen for every email in that anchor's batch. Do not re-word it per recipient, and do
-not personalize it to the recipient's specific situation. Consistency across the batch is the
-point: it is how the responses stay comparable.
+### Step 2: enrich via Apollo (this is your job, not the script's)
 
-**Key rules:**
-- NEVER mention the anchor company name. The email is framed as general market research.
-- Never use double dashes (`--`) or em dashes anywhere. Use commas, periods, or parentheses.
-- Do not add a sign-off. Superhuman appends Calvin's signature on send, so a sign-off in the body
-  produces two signatures.
-- Do not add personalized flattery, traction callouts, or a sentence about the recipient's
-  background. The template has no slot for it.
-- Use the recipient's company name exactly as Calvin writes it if he has written it, otherwise as
-  the company writes it.
-- There is no word limit. The template runs roughly 230 words and that is correct.
+There is no Apollo API key in `.env`, so the scripts cannot call it. Run
+`apollo_people_match` per LinkedIn URL yourself, `reveal_personal_emails: false`.
+Credits are authorized by invoking this command: do not stop to ask.
 
-### Locked paragraph 2 blocks by anchor
+Write the raw results to `market-outreach/<slug>/<date>-input.json`:
 
-When an anchor appears here, use this text verbatim, changing only `[Company]`.
-
-**Jampack AI** (industry: `CPG`, workflow: `their O2C workflow`)
-
-> For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the CPG space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brands like [Company] scale their operations by automating their O2C workflow. We've seen that much of this work is done manually or across multiple point solutions. We understand that this is one part of the process (we've heard of tools focused on revenue forecasting, order planning, etc.), and I'd love to learn more about how you view your tech stack as a whole.
-
-Paragraph 1 for Jampack AI: `scaling [Company]'s operations and the software you utilize for that`.
-
-**Pathwork** (industry: `insurance distribution`, workflow: `moving policies from initial inquiry through underwriting decisions`)
-
-> For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the insurance distribution space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brokers, BGAs and carriers like [Company] speed up how policies move from initial inquiry through underwriting decisions. We've seen that much of this work is done manually or across multiple point solutions. We understand that this is one part of the process (we've heard of tools focused on carrier guide lookups and document review, etc.), and I'd love to learn more about how you view your tech stack as a whole.
-
-Paragraph 1 for Pathwork: varies by recipient's actual relevant experience rather than a single
-fixed line, since the channel (BGAs/brokers/carriers) means a given contact's most relevant
-company is often a past role, not their current one. Confirm with Calvin when the current
-company doesn't fit the insurance-distribution frame (e.g. contact 2026-08-26, Jon Jacobs: current
-company is a wealth-management consulting shop, so paragraph 1 referenced his prior BGA role at
-LIBRA Insurance Partners instead, and paragraph 2's `[Company]` used LIBRA rather than his current
-employer).
-
-**Pathwork, analyst/advisor variant** (industry: `life insurance`, workflow: `moving policies from
-initial inquiry through underwriting decisions`). Use when the recipient is a research, advisory or
-consulting-side life insurance expert rather than an operator at a broker, BGA or carrier. There is
-no `[Company]` slot: the "like [Company]" phrasing is dropped, because a research firm is not the
-buyer being described.
-
-> For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the life insurance space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brokers, BGAs and carriers speed up how policies move from initial inquiry through underwriting decisions. We've seen that much of this work is done manually or across multiple point solutions. We understand that this is one part of the process (we've heard of tools focused on carrier guide lookups and document review, etc.), and I'd love to learn more about how you view your tech stack as a whole.
-
-Paragraph 1 for the analyst variant is fixed: `your view of the life insurance tech stack and the
-tools carriers and distributors are actually adopting`. Subject line industry string is
-`Life Insurance`. Frozen 2026-09-10 across Samantha Chow (Capgemini), Paul Mattern (Datos Insights)
-and Bryan Hodgens (LIMRA).
-
-**Pathwork, carrier-side routing.** Carriers are named in the standard Pathwork block, so a contact
-at Northwestern Mutual, Nationwide, New York Life or MassMutual takes that block verbatim with
-`[Company]` set to the **parent carrier**, not the venture arm ("MassMutual", not "MassMutual
-Ventures"). Paragraph 1 then routes on what the person actually does:
-
-- **Operators** (data, technology, finance, product roles): locked default, `your experience scaling
-  [Company]'s operations and the software you utilize for that`.
-- **Corporate development and venture arms** (they invest, they do not run operations): reuse the
-  analyst-variant line, `your view of the life insurance tech stack and the tools carriers and
-  distributors are actually adopting`. Paragraph 2 keeps `[Company]`, unlike the pure analyst
-  variant, because a carrier ventures contact really does sit inside a carrier.
-
-Subject line stays `Insurance Distribution`. Frozen 2026-09-10 across the Northwestern Mutual,
-Nationwide, New York Life and MassMutual Ventures batch.
-
-### Step 4: Create Superhuman draft
-
-Use Superhuman `create_or_update_draft`:
-- `type: "new"`
-- `to`: **only** the recipient's email from Apollo. Never `calvin@telescopepartners.com`.
-- `subject`: the templated subject line
-- `body`: the email as HTML, `<div>` per line and `<div><br></div>` between paragraphs
-
-Then tell the user: "Draft created in Superhuman for [Name] ([email]). Review and send when ready."
-
-### Step 5: Update tracker sheet (if provided)
-
-1. Extract the Google Sheet file ID from the URL (between `/d/` and `/edit`)
-2. Find the Market Outreach table (columns: Company | Person | Role | Status | LinkedIn)
-3. Add a row: person's current company, full name, title, "Drafted", LinkedIn URL
-
-If the sheet update fails, print the row data for manual entry and move on. Do not block the
-draft on the tracker.
-
-## Output Summary
-
-**Single person:**
-```
-Outreach drafted for [Name] ([Title] at [Company])
-Email: [email] — draft in Superhuman, ready to review
-Tracker: Updated / Skipped
-Value chain: [their role relative to anchor company]
+```json
+{ "project": "pathwork",
+  "contacts": [
+    { "linkedin_url": "...", "angle": "customer", "company_name": "John Hancock",
+      "apollo": { "first_name": "...", "last_name": "...", "title": "...",
+                  "email": "...", "email_status": "verified",
+                  "organization_name": "...", "organization_domain": "...", "id": "..." } }
+  ] }
 ```
 
-**Batch:**
+`company_name` is the optional `[Company]` override. Use it for the styling
+rules: carriers take the parent, not the venture arm ("MassMutual", not
+"MassMutual Ventures"); distributors take the distributor ("Integrity", not
+"Integrity Marketing Group"). If the current employer sits outside the frame (a
+consulting shop, a PE firm), ask Calvin which company to use rather than
+defaulting to the current one.
 
-| # | Name | Company | Role | Email | Draft | Tracker |
-|---|------|---------|------|-------|-------|---------|
-| 1 | Jane Doe | Acme Corp | VP Ops | jane@acme.com | Created | Updated |
+If Apollo shows the person changed jobs since their profile was updated, say so
+and use the current company.
 
-## Important Notes
+### Step 3: gate, CSV, stage
 
-- **NEVER reveal the anchor company in the email.**
-- If the person works at the anchor company itself, flag it and do NOT draft. They are a
+```
+node scripts/mo_enrich.js market-outreach/<slug>/<date>-input.json            # report
+node scripts/mo_enrich.js market-outreach/<slug>/<date>-input.json --apply
+```
+
+The gate auto-emails only when **all three** hold: Apollo says `verified`, the
+email domain matches the current employer, and it is not a role address.
+Everything else is routed to SalesNav, **never dropped**. The report prints who
+will be emailed, who is manual, and a full preview of step 1.
+
+Writes `market-outreach/<slug>/<date>-batch.csv` with
+`Name, Title, Company, Angle, LinkedIn URL, Method of Contact, Previously Contacted`.
+
+Nothing sends at this stage.
+
+### Step 4: show Calvin the batch, then send
+
+Show him the table. **One confirmation for the batch**, then:
+
+```
+node scripts/mo_send.js --project=<slug>            # report, previews the copy
+node scripts/mo_send.js --project=<slug> --apply    # sends
+```
+
+Sends go through the Gmail API, not Superhuman, because the daily job runs
+unattended. Consequences worth remembering: the signature is appended by
+`mo_send` rather than by Superhuman, and follow-ups thread on step 1 using an
+RFC Message-ID the script generates and stores.
+
+Throttle: 25/day globally across all projects, 8 to 12 minutes apart. Overflow
+rolls to the next day. `--cap=N` to override.
+
+**A step-1 send also creates the LinkedIn nudge draft** in Calvin's own inbox:
+subject is the profile URL, body is the exact email that just went out. He clicks
+through and pastes the InMail.
+
+### Step 5: the daily job
+
+```
+node scripts/mo_sync.js --apply     # replies, bookings, bounces, out-of-office
+node scripts/mo_send.js --apply     # whatever is due
+```
+
+Reply, booking or bounce stops the contact and a database trigger cancels every
+remaining step. Out-of-office **holds** rather than stops, pushing remaining
+steps out five days once.
+
+Matching is by thread or **exact** sender address, never by domain. A dozen
+experts at one carrier share a domain, and domain matching would stop all of them
+when one replied.
+
+### Status
+
+```
+node scripts/mo_status.js             # all projects
+node scripts/mo_status.js pathwork    # contact by contact
+```
+
+## Copy rules
+
+Locked and not up for improvement:
+
+- Paragraph 3 of step 1, and step 3, are identical for every project and angle.
+- No em dashes or `--` anywhere. The guard blocks a send over this.
+- No sign-off in the body. `mo_send` appends the signature.
+- No flattery, traction callouts, or personalization beyond the defined slots.
+- `to` is the recipient only, never `calvin@telescopepartners.com`.
+- If the person works **at the anchor company**, do not draft. That is a
   reference call, not market outreach.
-- The value chain context decides whether to contact someone at all and which anchor's block
-  applies. It no longer changes the copy.
+
+## Guardrails
+
+- A frozen copy block is never silently rewritten. `--refreeze` replaces one, and
+  it affects future sends only.
+- `mo_sync` refuses to write on an incomplete Gmail sweep. A throttled sweep that
+  found nothing looks exactly like a clean one.
+- Market outreach never writes to `public.email_event`. That would corrupt the
+  company reply-rate and dashboard numbers.
+- The same expert may be contacted again on a later project. Prior contact is
+  surfaced on the CSV, not blocked.
