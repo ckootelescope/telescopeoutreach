@@ -14,6 +14,17 @@ const ROOT = path.join(__dirname, '..');
 const ME = 'calvin@telescopepartners.com';
 const APPLY = process.argv.includes('--apply');
 
+// How far back to sweep. The default keeps the scheduled run cheap, but a
+// founder who replies to a cadence that finished months ago falls outside it
+// and stays invisible, so a manual sweep can widen the window:
+//   node scripts/sync_replies.js --days=120
+const DAYS = (() => {
+  const a = process.argv.find(x => x.startsWith('--days='));
+  const n = a ? Number(a.slice(7)) : 45;
+  if (!Number.isInteger(n) || n < 1 || n > 365) throw new Error('--days must be 1-365');
+  return n;
+})();
+
 // Gmail HTTP lives in gmail_req: 403-quota retry with a global gate.
 const addrs = s => (String(s || '').match(/[\w.+-]+@[\w.-]+/g) || []).map(x => x.toLowerCase());
 
@@ -33,9 +44,10 @@ async function main() {
       from sequence q join company co on co.id = q.company_id join contact ct on ct.id = q.contact_id
      where q.status in ('active','needs_scheduling','completed')
        and coalesce((select max(s.sent_at)::date from step s where s.sequence_id = q.id),
-                    pt_today()) > pt_today() - 45`);
+                    pt_today()) > pt_today() - ($1::int)`, [DAYS]);
 
-  const HEADERS = ['From', 'Subject', 'Date', 'Auto-Submitted', 'X-Autoreply', 'Precedence']
+  const HEADERS = ['From', 'Subject', 'Date', 'Auto-Submitted', 'X-Autoreply', 'Precedence',
+                   'List-Unsubscribe', 'List-Id']
     .map(h => 'metadataHeaders=' + h).join('&');
 
   /** Not a founder: us, a bounce daemon, or a notification robot. */
@@ -51,6 +63,18 @@ async function main() {
    * purpose. Checked against the headers a real autoresponder sets, with a
    * subject-line fallback for the ones that set nothing.
    */
+  /**
+   * A company newsletter is not a reply either. Once a founder adds Calvin to
+   * an investor-update or product-launch list, that list mails him from the
+   * same domain forever, and domain matching reads every blast as the founder
+   * writing back. "Come see what we're building, Oct 7 in SF" would mark a
+   * cold company as having replied and quietly inflate the response rate.
+   *
+   * List-Unsubscribe/List-Id are the honest signal: bulk senders set them,
+   * a person hitting reply in their mail client never does.
+   */
+  const isBulk = h => Boolean(h['list-unsubscribe'] || h['list-id']);
+
   const isAutoReply = h => {
     const auto = String(h['auto-submitted'] || '').toLowerCase();
     if (auto && auto !== 'no') return true;
@@ -77,12 +101,14 @@ async function main() {
 
   const found = [];
   const autos = [];
+  const bulk = [];
   const seenMsg = new Set();
   const hdrs = m => { const h = {}; (m.payload?.headers || []).forEach(x => h[x.name.toLowerCase()] = x.value); return h; };
   const push = (row, m, h, threadId) => {
     const from = addrs(h.from)[0] || '';
     if (!from || notAPerson(from)) return;
     if (isAutoReply(h)) { autos.push({ company: row.company, from, subject: h.subject }); return; }
+    if (isBulk(h)) { bulk.push({ company: row.company, from, subject: h.subject }); return; }
     const key = row.seq_id + ':' + m.id;
     if (seenMsg.has(key)) return;
     seenMsg.add(key);
@@ -109,7 +135,7 @@ async function main() {
   const CHUNK = 25;
   for (let i = 0; i < domains.length; i += CHUNK) {
     const group = domains.slice(i, i + CHUNK);
-    const q = encodeURIComponent(`from:{${group.join(' ')}} newer_than:45d`);
+    const q = encodeURIComponent(`from:{${group.join(' ')}} newer_than:${DAYS}d`);
     const r = await req({ hostname: 'gmail.googleapis.com',
       path: `/gmail/v1/users/me/messages?q=${q}&maxResults=200`,
       method: 'GET', headers: { Authorization: 'Bearer ' + t } });
@@ -158,6 +184,17 @@ async function main() {
       console.log('  ' + a.company.padEnd(18) + ' | ' + a.from + ' | ' + String(a.subject || '').slice(0, 50));
     }
   }
+  // Also held. Say it out loud rather than dropping it silently, so a real
+  // reply that happens to carry a list header can still be spotted by eye.
+  if (bulk.length) {
+    console.log('\nbulk/newsletter mail ignored (cadence left live): ' + bulk.length);
+    const seenBulk = new Set();
+    for (const b of bulk) {
+      if (seenBulk.has(b.company)) continue;
+      seenBulk.add(b.company);
+      console.log('  ' + b.company.padEnd(18) + ' | ' + b.from + ' | ' + String(b.subject || '').slice(0, 50));
+    }
+  }
   if (!APPLY) { console.log('\n(report only - pass --apply to write)'); await c.end(); return; }
 
   let ev = 0;
@@ -171,7 +208,13 @@ async function main() {
     if (r.rows.length) ev++;
   }
   for (const seqId of bySeq.keys()) {
-    await c.query(`update step set status='cancelled' where sequence_id=$1 and status='planned'`, [seqId]);
+    // 'drafted' has to be in scope, not just 'planned'. A step whose draft is
+    // already sitting in Superhuman is the most dangerous one to leave live:
+    // it is one keystroke from mailing a follow-up to a founder who has
+    // already written back. Discard the draft in Superhuman separately.
+    await c.query(
+      `update step set status='cancelled' where sequence_id=$1 and status in ('planned','drafted')`,
+      [seqId]);
     // pt_today(), not current_date: the server runs UTC, so after 5pm Pacific
     // current_date is already tomorrow and stamps a sequence as ending on a day
     // that has not happened yet.
