@@ -104,6 +104,11 @@ function guard(html, project) {
   }
   if (/--|—|–/.test(text)) problems.push('contains an em dash or --');
   if (/\[Company\]|\[First\]|\[industry\]/.test(text)) problems.push('unfilled template slot');
+  // A slot filled with an empty string is worse than one left unfilled: it
+  // reads as a typo rather than a bug. "carriers like  speed up how policies
+  // move" is what an empty [Company] produces, and it looks careless to the
+  // recipient. The leftover double space is the tell.
+  if (/ {2,}/.test(text)) problems.push('double space, likely an empty [Company] or [First] substitution');
   if (/\bBest,\s*$|\bCalvin\s*$/.test(text)) problems.push('looks like it has a sign-off');
   return problems;
 }

@@ -56,7 +56,13 @@ const csvCell = v => {
  * SalesNav rather than dropped, because a bad guess sent automatically is much
  * worse than a manual InMail.
  */
-function gate(a) {
+function gate(a, raw) {
+  // An explicit human decision outranks the automated checks. Recorded with the
+  // real reason rather than by deleting the email, so the record does not later
+  // read as "Apollo had nothing" and invite someone to re-enrich and send.
+  if (raw && raw.force_salesnav) {
+    return { method: 'salesnav', reason: String(raw.force_salesnav) };
+  }
   const email = String(a.email || '').trim().toLowerCase();
   if (!email) return { method: 'salesnav', reason: 'no email from Apollo' };
   if (ROLE.test(email)) return { method: 'salesnav', reason: 'role address' };
@@ -96,7 +102,7 @@ async function main() {
     const first = String(a.first_name || full.split(/\s+/)[0] || '').trim();
     const angle = raw.angle || 'customer';
     const block = blocks[angle];
-    const g = gate(a);
+    const g = gate(a, raw);
 
     // Prior contact on ANY project. Allowed (Calvin's call), surfaced anyway.
     let prior = '';
