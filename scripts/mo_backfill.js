@@ -241,7 +241,11 @@ async function main() {
   for (const p of plan) {
 
     const r = p.roster;
-    const first = (p.rec.name || '').split(/\s+/)[0] || '';
+    // From the body of the mail that actually went out. The To header carries
+    // no display name, so falling back to it silently yields '' and every
+    // follow-up opens "Hey  - wanted to follow up".
+    const first = p.rec.first || String((p.roster && p.roster.name) || '').split(/\s+/)[0] || '';
+    if (!first) throw new Error('no first name for ' + p.rec.email + ' - refusing to stage a nameless follow-up');
     const ct = (await c.query(
       `insert into market.contact (project_id, full_name, first_name, title, company_name,
           company_domain, linkedin_url, angle, email, email_status, gate_reason, method, status, ended_on)

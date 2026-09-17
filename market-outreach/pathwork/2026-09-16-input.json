@@ -1,0 +1,15 @@
+{
+  "project": "pathwork",
+  "contacts": [
+    {"linkedin_url":"https://www.linkedin.com/in/laura-gutierrez-clcs-mba-b40153110","angle":"customer","company_name":"Nationwide",
+     "apollo":{"first_name":"Laura","last_name":"Gutierrez","name":"Laura Gutierrez","title":"Business Development Director - Small Commercial","email":"gutierl4@nationwide.com","email_status":"verified","organization_name":"Nationwide","organization_domain":"nationwide.com","id":"laura-g"}},
+    {"linkedin_url":"https://www.linkedin.com/in/jesse-knudson-cfp%C2%AE-clu%C2%AE-99092536","angle":"customer","company_name":"Nationwide",
+     "apollo":{"first_name":"Jesse","last_name":"Knudson","name":"Jesse Knudson","title":"AVP - Life Brokerage Sales Leader","email_status":"unavailable","organization_name":"Nationwide","organization_domain":"nationwide.com","id":"62d548d16724010001171d6a"}},
+    {"linkedin_url":"https://www.linkedin.com/in/daniel-p-gangemi-87392632","angle":"customer","company_name":"Lincoln Financial",
+     "apollo":{"first_name":"Daniel","last_name":"Gangemi","name":"Daniel Gangemi","title":"Head of Research, Insight and Market Intelligence","email_status":"unavailable","organization_name":"Lincoln Financial Group","organization_domain":"lfg.com","id":"57d9d7f8a6da981538c741d7"}},
+    {"linkedin_url":"https://www.linkedin.com/in/bonnie-lewis-falu-flmi-acs-185886430","angle":"customer","company_name":"",
+     "apollo":{"first_name":"Bonnie","last_name":"Lewis","name":"Bonnie Lewis","title":"","email_status":"unavailable","organization_name":"","organization_domain":"","id":"6aab7b681f7cff0010876909"}},
+    {"linkedin_url":"https://www.linkedin.com/in/kara-burns-93b47aab","angle":"market_expert","company_name":"MassMutual Ventures",
+     "apollo":{"first_name":"Kara","last_name":"Burns","name":"Kara Burns","title":"Senior Associate","email":"kara.burns@cultivo.land","email_status":"extrapolated","organization_name":"MassMutual Ventures","organization_domain":"massmutualventures.com","id":"57db8095a6da9868d31764bf"}}
+  ]
+}
