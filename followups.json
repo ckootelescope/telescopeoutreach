@@ -17584,7 +17584,8 @@
       "body": "<div>Hey Jerry - following up - how have you been thinking about your next raise? I really like what you're building at Electrify and would love to develop a relationship ahead of any future fundraise. We like getting to know founders and developing the relationship to make sure it's a good fit for both parties. However, LMK if I'm off the mark here - would love to get your thoughts regardless.</div>",
       "emailNumber": 3,
       "sendDate": "2026-09-17",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-17T16:38:39.166Z"
     },
     {
       "slug": "electrify",
@@ -17599,7 +17600,8 @@
       "body": "<div>Hey Jerry - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in manufacturing software and the pattern that decides these accounts is expansion rather than the initial sale. It starts with one estimator or one sales desk, and it only gets big once the tool plugs into the manufacturer's own pricing and ordering systems and the rep network starts living in it. The ones that stall stay an add-on step sitting next to whatever bid system is already the system of record. I think you're set up well for that because owning the configuration rules is what earns the ERP connection, and expanding that kind of wedge into a platform is the part our operations team works on most.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-09-22",
-      "status": "pending"
+      "status": "replied",
+      "processedAt": "2026-09-17T16:38:39.166Z"
     },
     {
       "slug": "manifold",
