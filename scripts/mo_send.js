@@ -30,7 +30,10 @@ const FORCE = process.argv.includes('--force');
 const ME = 'calvin@telescopepartners.com';
 const ME_NAME = 'Calvin Koo';
 const MIN_GAP_MS = 8 * 60e3, MAX_GAP_MS = 12 * 60e3;
-const WINDOW_START = 8, WINDOW_END = 16;   // Pacific, inclusive start / exclusive end
+// Pacific, inclusive start / exclusive end. The point is to stop a batch going
+// out at 2am, not to enforce an opinion about the best hour to send. The first
+// version used 8 to 16 and blocked a perfectly ordinary 4:50pm send.
+const WINDOW_START = 7, WINDOW_END = 19;
 
 /** Current hour in Pacific. Node may be running on a UTC box, so do not use getHours(). */
 const ptHour = () => Number(new Intl.DateTimeFormat('en-US',
