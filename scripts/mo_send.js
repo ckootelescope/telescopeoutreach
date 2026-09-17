@@ -26,9 +26,15 @@ const APPLY = process.argv.includes('--apply');
 const capArg = process.argv.find(a => a.startsWith('--cap='));
 const projArg = process.argv.find(a => a.startsWith('--project='));
 const CAP = capArg ? Number(capArg.slice(6)) : 25;      // global sends per day
+const FORCE = process.argv.includes('--force');
 const ME = 'calvin@telescopepartners.com';
 const ME_NAME = 'Calvin Koo';
 const MIN_GAP_MS = 8 * 60e3, MAX_GAP_MS = 12 * 60e3;
+const WINDOW_START = 8, WINDOW_END = 16;   // Pacific, inclusive start / exclusive end
+
+/** Current hour in Pacific. Node may be running on a UTC box, so do not use getHours(). */
+const ptHour = () => Number(new Intl.DateTimeFormat('en-US',
+  { timeZone: 'America/Los_Angeles', hour: 'numeric', hour12: false }).format(new Date()));
 
 const SIGNATURE =
   '<div class="gmail_signature"><div dir="ltr">Best,<div>Calvin</div><div><br></div><div>' +
@@ -144,6 +150,17 @@ async function main() {
       console.log(toText(s.body_html));
     }
     console.log('\n(report only - pass --apply to send)');
+    await c.end();
+    return;
+  }
+
+  // Cold outreach that lands at 10pm reads as a blast. The daily job runs in the
+  // morning so this never fires for it, but a manual --apply easily can.
+  const hr = ptHour();
+  if ((hr < WINDOW_START || hr >= WINDOW_END) && !FORCE) {
+    console.log('\nREFUSING: it is ' + hr + ':00 Pacific, outside the ' +
+      WINDOW_START + ':00-' + WINDOW_END + ':00 send window.');
+    console.log('Nothing sent. Re-run in the morning, or pass --force if you mean it.');
     await c.end();
     return;
   }

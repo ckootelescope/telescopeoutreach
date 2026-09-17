@@ -72,7 +72,28 @@ async function meta(t, id) {
   return r.s === 200 ? JSON.parse(r.b) : null;
 }
 
-/** Roster CSV: Name,Title,Company,LinkedIn URL[,Angle] - names only, no emails. */
+const dec = s => Buffer.from(String(s || '').replace(/-/g, '+').replace(/_/g, '/'), 'base64').toString('utf8');
+function walkParts(p, out) {
+  if (!p) return;
+  if (p.body?.data && /^text\/(plain|html)$/.test(p.mimeType || '')) out.push([p.mimeType, dec(p.body.data)]);
+  (p.parts || []).forEach(x => walkParts(x, out));
+}
+/**
+ * The first name comes out of the body of the email that actually went out, not
+ * the To header. Superhuman sends these with a bare address and no display
+ * name, so header-derived names are empty and every follow-up would open
+ * "Hey  - wanted to follow up".
+ */
+function firstNameFromBody(m) {
+  const out = [];
+  walkParts(m.payload, out);
+  const txt = ((out.find(x => x[0] === 'text/plain') || [])[1] ||
+               (out.find(x => x[0] === 'text/html') || [])[1] || '').replace(/<[^>]+>/g, ' ');
+  const m2 = txt.match(/\b(?:Hi|Hey|Hello)\s+([A-Z][A-Za-z'’.-]{1,25})\s*[,\-]/);
+  return m2 ? m2[1] : '';
+}
+
+/** Roster CSV: Email,Name,Title,Company,LinkedIn URL,Angle - keyed on Email. */
 function readRoster(p) {
   if (!p || !fs.existsSync(p)) return [];
   const lines = fs.readFileSync(p, 'utf8').split(/\r?\n/).filter(Boolean);
@@ -82,11 +103,11 @@ function readRoster(p) {
   const head = split(lines[0]).map(h => h.toLowerCase());
   const ix = n => head.indexOf(n);
   return lines.slice(1).map(split).map(c => ({
+    email: (ix('email') >= 0 ? String(c[ix('email')] || '').toLowerCase() : ''),
     name: c[ix('name')] || '', title: c[ix('title')] || '', company: c[ix('company')] || '',
     linkedin: c[ix('linkedin url')] || '', angle: (ix('angle') >= 0 ? c[ix('angle')] : '') || 'customer',
-  })).filter(r => r.name);
+  })).filter(r => r.name || r.email);
 }
-const normName = s => String(s || '').toLowerCase().replace(/[^a-z ]/g, '').replace(/\s+/g, ' ').trim();
 
 async function main() {
   const slug = process.argv.slice(2).find(a => !a.startsWith('--'));
@@ -101,20 +122,30 @@ async function main() {
 
   const t = await token();
   const subj = subjectOf(project);
-  // Match on the distinctive tail of the subject so a reworded prefix still hits.
-  const needle = subj.replace(/^Telescope Partners \| /, '');
-
-  const stubs = await listAll(t, `from:me subject:"${needle}" newer_than:${DAYS}d`);
+  // A campaign's subject can change mid-flight, and the earlier wording still
+  // reached real people whose follow-ups we now owe. alt_subjects carries the
+  // retired lines.
+  const subjects = [subj, ...(project.alt_subjects || [])];
   const sent = new Map();                       // email -> earliest send
-  for (const s of stubs) {
-    const m = await meta(t, s.id);
-    if (!m || !(m.labelIds || []).includes('SENT')) continue;
-    const h = hdrs(m);
-    const to = addrs(h.to)[0];
-    if (!to || /@telescopepartners\.com$/i.test(to)) continue;
-    const rec = { email: to, name: nameOf(h.to), thread: m.threadId, gmail_id: m.id,
-      rfc: h['message-id'] || null, ts: Number(m.internalDate), date: iso(new Date(Number(m.internalDate) - 7 * 3600e3)) };
-    if (!sent.has(to) || sent.get(to).ts > rec.ts) sent.set(to, rec);
+  for (const sj of subjects) {
+    const needle = sj.replace(/^Telescope Partners \| /, '');
+    for (const s of await listAll(t, `from:me subject:"${needle}" newer_than:${DAYS}d`)) {
+      // format=full, not metadata: the first name is only in the body.
+      const r = await req({ hostname: 'gmail.googleapis.com',
+        path: `/gmail/v1/users/me/messages/${s.id}?format=full`,
+        method: 'GET', headers: { Authorization: 'Bearer ' + t } });
+      if (r.s !== 200) continue;
+      const m = JSON.parse(r.b);
+      if (!(m.labelIds || []).includes('SENT')) continue;
+      const h = hdrs(m);
+      const to = addrs(h.to)[0];
+      if (!to || /@telescopepartners\.com$/i.test(to)) continue;
+      const rec = { email: to, name: nameOf(h.to), first: firstNameFromBody(m),
+        subject: h.subject || sj, thread: m.threadId, gmail_id: m.id,
+        rfc: h['message-id'] || null, ts: Number(m.internalDate),
+        date: iso(new Date(Number(m.internalDate) - 7 * 3600e3)) };
+      if (!sent.has(to) || sent.get(to).ts > rec.ts) sent.set(to, rec);
+    }
   }
 
   // Replies, so nobody who already answered gets a follow-up.
@@ -140,7 +171,9 @@ async function main() {
   }
 
   const roster = readRoster(rosterArg ? path.join(ROOT, rosterArg.slice(9)) : null);
-  const byName = new Map(roster.map(r => [normName(r.name), r]));
+  // Keyed on email, which is exact. Name matching was tried first and failed
+  // outright: these were sent to a bare address with no display name.
+  const byEmail = new Map(roster.filter(r => r.email).map(r => [r.email, r]));
 
   const existing = new Set((await c.query(
     `select lower(email) e from market.contact where project_id=$1 and email is not null`, [project.id]))
@@ -151,7 +184,7 @@ async function main() {
   const plan = [];
   for (const rec of sent.values()) {
     if (existing.has(rec.email)) continue;
-    const r = byName.get(normName(rec.name)) || {};
+    const r = byEmail.get(rec.email) || {};
     const angle = r.angle || 'customer';
 
     // Schedule remaining steps. Natural dates come off the real send date, but
@@ -172,7 +205,11 @@ async function main() {
       ooo: held.has(rec.email), block: blocks[angle] });
   }
 
-  const adopt = plan.filter(p => p.status === 'active' && p.block);
+  // A copy block is NOT required to adopt. It renders step 1, and step 1 has
+  // already gone out; steps 2, 3 and 4 carry no company slot and no angle-
+  // specific framing, so a market_expert with no authored block still gets the
+  // right follow-ups. The block only becomes necessary to send a NEW opener.
+  const adopt = plan.filter(p => p.status === 'active');
   const done  = plan.filter(p => p.status === 'replied');
   const noBlk = plan.filter(p => p.status === 'active' && !p.block);
 
@@ -180,21 +217,21 @@ async function main() {
   console.log('openers found in sent mail: ' + sent.size + '   already in the tracker: ' + existing.size);
   console.log('');
   console.log('ADOPT, follow-ups will resume (' + adopt.length + ')');
-  adopt.forEach(p => console.log('  ' + (p.rec.name || '?').padEnd(24) + p.rec.email.padEnd(36) +
+  adopt.forEach(p => console.log('  ' + ((p.roster && p.roster.name) || p.rec.first || '?').padEnd(24) + p.rec.email.padEnd(36) +
     'E1 ' + p.rec.date + '  ->  E2 ' + p.steps[0].due + '  E3 ' + p.steps[1].due + '  E4 ' + p.steps[2].due +
     (p.ooo ? '   [had an OOO]' : '')));
   console.log('\nALREADY REPLIED, no follow-up (' + done.length + ')');
-  done.forEach(p => console.log('  ' + (p.rec.name || '?').padEnd(24) + p.rec.email));
+  done.forEach(p => console.log('  ' + ((p.roster && p.roster.name) || p.rec.first || '?').padEnd(24) + p.rec.email));
   if (noBlk.length) {
     console.log('\nNO COPY BLOCK for their angle (' + noBlk.length + ')');
     noBlk.forEach(p => console.log('  ' + (p.rec.name || '?').padEnd(24) + 'angle=' + p.angle));
   }
   if (!project.fu3_insight_html) console.log('\nNOTE: no step-4 insight on this project; E4 stages with no body and will not send.');
 
-  const unmatched = [...sent.values()].filter(r => !byName.has(normName(r.name)));
+  const unmatched = [...sent.values()].filter(r => !byEmail.has(r.email));
   if (roster.length && unmatched.length) {
     console.log('\nnot found in the roster CSV, company/title left blank (' + unmatched.length + ')');
-    unmatched.forEach(r => console.log('  ' + (r.name || '?').padEnd(24) + r.email));
+    unmatched.forEach(r => console.log('  ' + (r.first || '?').padEnd(24) + r.email));
   }
 
   if (!APPLY) { console.log('\n(report only - pass --apply to adopt)'); await c.end(); return; }
@@ -202,14 +239,14 @@ async function main() {
   let n = 0;
   await c.query('begin');
   for (const p of plan) {
-    if (p.status === 'active' && !p.block) continue;
+
     const r = p.roster;
     const first = (p.rec.name || '').split(/\s+/)[0] || '';
     const ct = (await c.query(
       `insert into market.contact (project_id, full_name, first_name, title, company_name,
           company_domain, linkedin_url, angle, email, email_status, gate_reason, method, status, ended_on)
        values ($1,$2,$3,$4,$5,$6,$7,$8,$9,'verified','adopted from sent mail','email',$10,$11) returning id`,
-      [project.id, p.rec.name || p.rec.email, first, r.title || null, r.company || null,
+      [project.id, (p.roster && p.roster.name) || p.rec.name || p.rec.email, first, r.title || null, r.company || null,
        (p.rec.email.split('@')[1] || null), r.linkedin || 'unknown', p.angle, p.rec.email,
        p.status, p.status === 'replied' ? today : null])).rows[0].id;
 
@@ -217,12 +254,12 @@ async function main() {
     await c.query(
       `insert into market.step (contact_id, step_no, due_date, subject, status, sent_at, thread_id, message_id, rfc_message_id)
        values ($1,1,$2,$3,'sent',$4,$5,$6,$7)`,
-      [ct, p.rec.date, subj, new Date(p.rec.ts).toISOString(), p.rec.thread, p.rec.gmail_id, p.rec.rfc]);
+      [ct, p.rec.date, p.rec.subject || subj, new Date(p.rec.ts).toISOString(), p.rec.thread, p.rec.gmail_id, p.rec.rfc]);
     await c.query(
       `insert into market.event (contact_id, project_id, direction, kind, sender_email, peer_email,
           thread_id, message_id, subject, sent_at)
        values ($1,$2,'out','outbound',$3,$4,$5,$6,$7,$8) on conflict (message_id) do nothing`,
-      [ct, project.id, ME, p.rec.email, p.rec.thread, p.rec.gmail_id, subj, new Date(p.rec.ts).toISOString()]);
+      [ct, project.id, ME, p.rec.email, p.rec.thread, p.rec.gmail_id, p.rec.subject || subj, new Date(p.rec.ts).toISOString()]);
 
     if (p.status === 'active') {
       for (const s of p.steps) {
