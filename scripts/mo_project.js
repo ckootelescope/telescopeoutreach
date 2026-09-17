@@ -36,7 +36,7 @@ const { connect } = require('./db');
 const ROOT = path.join(__dirname, '..');
 const APPLY = process.argv.includes('--apply');
 const REFREEZE = process.argv.includes('--refreeze');
-const ANGLES = ['customer', 'competitor', 'former', 'advisor', 'other'];
+const ANGLES = ['customer', 'competitor', 'former', 'advisor', 'market_expert', 'other'];
 
 // The anchor company must never reach a recipient. Copy is authored by Calvin,
 // but a paste slip is cheap to catch here and expensive to catch in the mailbox.
