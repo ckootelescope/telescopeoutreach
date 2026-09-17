@@ -6,8 +6,11 @@
 
 const CALENDLY = 'https://calendly.com/calvin-telescopepartners/30min';
 
-// Paragraph 3 of step 1. Locked across every project, every angle, every
-// recipient. Do not parameterise this.
+// Default paragraph 3 of step 1. It was originally locked across every project
+// and angle, and for the buyer-facing angles it still is. The 'former' angle
+// broke that: once the recipient is no longer a buyer, "you'll hear about new
+// market solutions" is the wrong offer, so a block may override it via
+// copy_block.para3_html. Null there means use this.
 const P3 = "I recognize you're busy, but people we've spoken with have gained value from " +
   "learning about new market solutions and introductions that led to meaningful workflow " +
   "improvements. If there's another person on your team that you think would be a better fit - " +
@@ -52,7 +55,7 @@ function step1(project, block, contact) {
   const p1 = 'Hi ' + esc(contact.first_name) + ',';
   const ask = "Hope you don't mind the cold note! " + sub(block.para1_s2, ctx) +
     ' Are you free for a quick call in the next couple of weeks?';
-  return P([p1, ask, sub(block.para2_html, ctx), P3]);
+  return P([p1, ask, sub(block.para2_html, ctx), sub(block.para3_html || P3, ctx)]);
 }
 
 function step2(contact) {

@@ -1,0 +1,13 @@
+{
+  "project": "pathwork",
+  "contacts": [
+    {"linkedin_url":"https://www.linkedin.com/in/moiralowe","angle":"customer","company_name":"Saybrus Partners",
+     "apollo":{"first_name":"Moira","last_name":"Lowe","name":"Moira Lowe","title":"Principal and Chief Administrative Officer","email":"mlowe@saybruspartners.com","email_status":"verified","organization_name":"Saybrus Partners","organization_domain":"saybruspartners.com","id":"66fd714e991e8f0001f8b35c"}},
+    {"linkedin_url":"https://www.linkedin.com/in/eric-brennan-3ab0b225","angle":"customer","company_name":"AmeriLife",
+     "apollo":{"first_name":"Eric","last_name":"Brennan","name":"Eric Brennan","title":"SVP of Health Distribution","email":"ebrennan@amerilife.com","email_status":"verified","organization_name":"AmeriLife","organization_domain":"amerilife.com","id":"60e256cd11550a00018950b1"}},
+    {"linkedin_url":"https://www.linkedin.com/in/patrick-nichols-9a19079","angle":"customer","company_name":"AmeriLife",
+     "apollo":{"first_name":"Patrick","last_name":"Nichols","name":"Patrick Nichols","title":"Senior Vice President, Life BGA Sales for AmeriLife Wealth","email":"pnichols@amerilife.com","email_status":"verified","organization_name":"AmeriLife","organization_domain":"amerilife.com","id":"54a90a2b74686930ad9b860a"}},
+    {"linkedin_url":"https://www.linkedin.com/in/chad-ourso-9a35606","angle":"customer","company_name":"Denali Wealth Group",
+     "apollo":{"first_name":"Chad","last_name":"Ourso","name":"Chad Ourso","title":"President and Agency Owner","email_status":"unavailable","organization_name":"Denali Wealth Group","organization_domain":"denaliwealthgroup.com","id":"60be03b450444c000111caca"}}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "project": "pathwork",
+  "contacts": [
+    {"linkedin_url":"https://www.linkedin.com/in/adam-stolz-0a649241","angle":"former","company_name":"Advintro",
+     "force_salesnav":"routed to SalesNav by Calvin 2026-09-17: ex-Modern Life, competitor alum",
+     "apollo":{"first_name":"Adam","last_name":"Stolz","name":"Adam Stolz","title":"President, Advintro Insurance","email":"adam@advintro.com","email_status":"verified","organization_name":"Advintro","organization_domain":"advintro.com","id":"60a3c61209e6c50001ba9d44"}},
+    {"linkedin_url":"https://www.linkedin.com/in/dspierson","angle":"former","company_name":"First Financial Resources",
+     "force_salesnav":"routed to SalesNav by Calvin 2026-09-17: ex-Modern Life, competitor alum",
+     "apollo":{"first_name":"Dan","last_name":"Pierson","name":"Dan Pierson","title":"Chief Operating Officer","email":"dpierson@ffrllc.com","email_status":"verified","organization_name":"First Financial Resources","organization_domain":"ffrmembers.com","id":"60f92d1a4523d70001bf7191"}},
+    {"linkedin_url":"https://www.linkedin.com/in/billy-ventura-cfp%c2%ae-aep%c2%ae-43887a5","angle":"former","company_name":"Winged Keel Group",
+     "apollo":{"first_name":"Billy","last_name":"Ventura","name":"Billy Ventura","title":"Senior Director, Client Relationship Management","email_status":"unavailable","organization_name":"Winged Keel Group","organization_domain":"wingedkeel.com","id":"636eaac8dff72900018aaae7"}},
+    {"linkedin_url":"https://www.linkedin.com/in/timothyefoley","angle":"former","company_name":"True Legacy Wealth",
+     "apollo":{"first_name":"Timothy","last_name":"Foley","name":"Timothy Foley","title":"CEO | Founding Managing Partner","email_status":"unavailable","organization_name":"True Legacy Wealth Inc.","organization_domain":"truelegacyinc.com","id":"5aa984b1a6da987e4eb67e5c"}}
+  ]
+}

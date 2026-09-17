@@ -165,7 +165,15 @@ async function main() {
 
   // ------------------------------------------------------------------- csv
   const dir = path.join(ROOT, 'market-outreach', project.slug);
-  const csvPath = path.join(dir, start + '-batch.csv');
+  // Two batches for one project on one day is normal (different angles, or a
+  // second list arriving later). Deriving the filename from the date alone made
+  // the second run silently overwrite the first one's CSV.
+  const nextCsvPath = () => {
+    let p = path.join(dir, start + '-batch.csv');
+    for (let n = 2; fs.existsSync(p); n++) p = path.join(dir, start + '-batch-' + n + '.csv');
+    return p;
+  };
+  const csvPath = nextCsvPath();
   const header = 'Name,Title,Company,Angle,LinkedIn URL,Method of Contact,Previously Contacted';
   const body = rows.filter(r => !r.dup).map(r => [r.full_name, r.title, r.company_name, r.angle,
     r.linkedin_url, r.method === 'email' ? 'Email' : 'SalesNav', r.prior].map(csvCell).join(','));

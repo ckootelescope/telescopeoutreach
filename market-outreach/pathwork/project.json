@@ -15,6 +15,13 @@
       "uses_company_slot": false,
       "para1_s2": "I was hoping to connect and briefly chat about your experience as it relates to the life insurance space and specifically distribution technology platforms that are used across carriers and brokers in the industry.",
       "para2_html": "For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the life insurance space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brokers, BGAs and carriers speed up how policies move from initial inquiry through underwriting decisions. We've seen that much of this work is done manually or across multiple point solutions. We understand that this is one part of the process (we've heard of tools focused on carrier guide lookups and document review, etc.), and I'd love to learn more about how you view the tech stack and how it's enabled operational improvements across the industry."
+    },
+    {
+      "angle": "former",
+      "uses_company_slot": false,
+      "para1_s2": "I was hoping to connect and briefly chat about your experience as it relates to the life insurance space.",
+      "para2_html": "For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the life insurance space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brokers, BGAs and carriers speed up how policies move from initial inquiry through underwriting decisions. We've seen that much of this work is done manually or across multiple point solutions. We're also interested in how the emergence of new tech-enabled BGAs will end up impacting the broader landscape and how both distributors and carriers think of their operations moving forward.",
+      "para3_html": "I recognize you're busy, but this also results in us building a network of smart people who we can be helpful to down the road (through hiring, board/advisor opportunities, etc). If there's another person on your team that you think would be a better fit - happy to chat with them as well. LMK your thoughts and thanks in advance."
     }
   ],
   "industry_label": "Life Insurance"

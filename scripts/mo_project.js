@@ -43,7 +43,7 @@ const ANGLES = ['customer', 'competitor', 'former', 'advisor', 'market_expert', 
 function anchorLeak(p, block) {
   const needle = String(p.anchor_company || '').trim();
   if (needle.length < 3) return null;
-  const hay = [block.para1_s2, block.para2_html, p.fu3_insight_html].join(' ');
+  const hay = [block.para1_s2, block.para2_html, block.para3_html, p.fu3_insight_html].join(' ');
   return new RegExp('\\b' + needle.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i').test(hay)
     ? needle : null;
 }
@@ -64,7 +64,7 @@ function validate(p) {
     if (!String(b.para2_html || '').trim()) errs.push(b.angle + ': missing para2_html');
     const leak = anchorLeak(p, b);
     if (leak) errs.push(b.angle + ': ANCHOR COMPANY "' + leak + '" appears in the copy');
-    if (DASH.test(b.para1_s2) || DASH.test(b.para2_html)) errs.push(b.angle + ': contains an em dash or --');
+    if ([b.para1_s2, b.para2_html, b.para3_html].some(x => x && DASH.test(x))) errs.push(b.angle + ': contains an em dash or --');
     if (b.uses_company_slot !== false && !/\[Company\]/.test(b.para2_html) && !/\[Company\]/.test(b.para1_s2)) {
       errs.push(b.angle + ': uses_company_slot is true but no [Company] slot found');
     }
@@ -91,13 +91,15 @@ async function show(c, slug) {
   console.log('workflow : ' + row.workflow);
   console.log('status   : ' + row.status);
   console.log('subject  : Telescope Partners | Chat on ' + (row.industry_label || row.industry) + ' Software and AI Tools');
-  const b = await c.query(`select angle, para1_s2, para2_html, uses_company_slot, frozen_on
+  const b = await c.query(`select angle, para1_s2, para2_html, para3_html, uses_company_slot, frozen_on
      from market.copy_block where project_id = $1 order by angle`, [row.id]);
   for (const x of b.rows) {
     console.log('\n--- ' + x.angle + (x.frozen_on ? '  (frozen ' + String(x.frozen_on).slice(0, 10) + ')' : '') +
                 (x.uses_company_slot ? '' : '  [no company slot]'));
     console.log('  p1s2: ' + x.para1_s2);
-    console.log('  p2  : ' + x.para2_html.slice(0, 240) + (x.para2_html.length > 240 ? ' ...' : ''));
+    console.log('  p2  : ' + x.para2_html.slice(0, 200) + (x.para2_html.length > 200 ? ' ...' : ''));
+    console.log('  p3  : ' + (x.para3_html ? x.para3_html.slice(0, 200) + (x.para3_html.length > 200 ? ' ...' : '')
+                                           : '(default close)'));
   }
   console.log('\nstep 4 insight: ' + (row.fu3_insight_html || '(not set - mo_send will refuse step 4)'));
 }
@@ -141,7 +143,13 @@ async function main() {
     const verb = isNew ? 'add' : (REFREEZE ? 'REPLACE (--refreeze)' : 'skip, already frozen');
     console.log('  block ' + b.angle.padEnd(11) + ' -> ' + verb);
   }
-  if (!p.fu3_insight_html) console.log('  NOTE: no fu3_insight_html; step 4 cannot be sent until it is set');
+  // Check the database, not the input file. The insight is often set on an
+  // earlier run and omitted from the JSON afterwards, and warning about it then
+  // is just noise that trains you to ignore the warning that matters.
+  const haveInsight = p.fu3_insight_html ||
+    (existing && (await c.query(`select 1 from market.project
+        where id = $1 and coalesce(fu3_insight_html,'') <> ''`, [existing.id])).rowCount > 0);
+  if (!haveInsight) console.log('  NOTE: no step-4 insight on this project; E4 cannot be sent until it is set');
 
   if (!APPLY) { console.log('\n(report only - pass --apply to write)'); await c.end(); return; }
 
@@ -162,12 +170,13 @@ async function main() {
   for (const b of p.blocks) {
     const isNew = !frozen.includes(b.angle);
     if (!isNew && !REFREEZE) continue;
-    await c.query(`insert into market.copy_block (project_id, angle, para1_s2, para2_html, uses_company_slot, frozen_on)
-        values ($1,$2,$3,$4,$5, current_date)
+    await c.query(`insert into market.copy_block (project_id, angle, para1_s2, para2_html, para3_html, uses_company_slot, frozen_on)
+        values ($1,$2,$3,$4,$5,$6, current_date)
       on conflict (project_id, angle) do update
         set para1_s2 = excluded.para1_s2, para2_html = excluded.para2_html,
+            para3_html = excluded.para3_html,
             uses_company_slot = excluded.uses_company_slot, frozen_on = current_date`,
-      [pid, b.angle, b.para1_s2, b.para2_html, b.uses_company_slot !== false]);
+      [pid, b.angle, b.para1_s2, b.para2_html, b.para3_html || null, b.uses_company_slot !== false]);
     isNew ? added++ : replaced++;
   }
   await c.query('commit');
