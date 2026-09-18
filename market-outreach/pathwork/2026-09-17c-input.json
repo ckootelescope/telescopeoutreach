@@ -1,0 +1,352 @@
+{
+ "project": "pathwork",
+ "contacts": [
+  {
+   "linkedin_url": "http://www.linkedin.com/in/travisphillips1",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Travis",
+    "last_name": "Phillips",
+    "name": "Travis Phillips",
+    "title": "VP, Digital Solutions",
+    "email": "travis.phillips@crump.com",
+    "email_status": "verified",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "60c046173611c00001bd396a"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/michael-pinkans",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Michael",
+    "last_name": "Pinkans",
+    "name": "Michael Pinkans",
+    "title": "Regional Director",
+    "email": "mike.pinkans@crump.com",
+    "email_status": "verified",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "683fd167d1bdf30001354f7c"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/jim-carenzo-596289",
+   "angle": "customer",
+   "company_name": "",
+   "apollo": {
+    "first_name": "Jim",
+    "last_name": "Carenzo",
+    "name": "Jim Carenzo",
+    "title": "",
+    "email_status": "unavailable",
+    "organization_name": null,
+    "organization_domain": null,
+    "id": "57d65d4aa6da98546a4f85a7"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/lizthorne",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Liz",
+    "last_name": "Thorne",
+    "name": "Liz Thorne",
+    "title": "Senior Vice President, Operations",
+    "email": "liz.thorne@crump.com",
+    "email_status": "verified",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "54abe495746869332d519214"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/chris-cook-b759a224",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Chris",
+    "last_name": "Cook",
+    "name": "Chris Cook",
+    "title": "Senior Vice President - Head of Underwriting",
+    "email": "christopher.cook@crump.com",
+    "email_status": "verified",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "6104bcd33c972500017d83d2"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/j-zachary-zerbe-0809043a",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Zachary",
+    "last_name": "Zerbe",
+    "name": "Zachary Zerbe",
+    "title": "Director, Digital Solutions",
+    "email_status": "unavailable",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "54a8aa09746869334a139103"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/melissa-heighway-35045b21b",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Melissa",
+    "last_name": "Heighway",
+    "name": "Melissa Heighway",
+    "title": "Vice President of Underwriting",
+    "email": "melissa.heighway@crump.com",
+    "email_status": "verified",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "6167e3bdb917480001c7908d"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/jdgraham",
+   "angle": "customer",
+   "company_name": "LACP",
+   "apollo": {
+    "first_name": "Jason",
+    "last_name": "Graham",
+    "name": "Jason Graham",
+    "title": "CLU®",
+    "email_status": "unavailable",
+    "organization_name": "LACP",
+    "organization_domain": "lacp.com",
+    "id": "66fe572bd2d9d70001ee05bf"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/rhonda-o-shields-aalu-almi-acs-alu-certified-falu-00534121",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Rhonda",
+    "last_name": "Aalu",
+    "name": "Rhonda Aalu",
+    "title": "Senior Underwriter",
+    "email": "rhonda.oshields@crump.com",
+    "email_status": "verified",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "54a262807468693cdd08d91e"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/liz-kaplan-769656a5",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Liz",
+    "last_name": "Kaplan",
+    "name": "Liz Kaplan",
+    "title": "Senior Vice President and General Manager, Independent Distribution",
+    "email_status": "unavailable",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "609c86c953356b0001cf436f"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/shelley-johns-almi-airc-alu-cert-prof-uw-63398ab2",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Shelley",
+    "last_name": "Almi",
+    "name": "Shelley Almi",
+    "title": "Vice President of Underwriting",
+    "email": "shelley.johns@crump.com",
+    "email_status": "verified",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "687bc1287a12140001ee3e1c"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/donna-marder-clu-92961213",
+   "angle": "customer",
+   "company_name": "Crump Life Insurance Services",
+   "apollo": {
+    "first_name": "Donna",
+    "last_name": "Marder",
+    "name": "Donna Marder",
+    "title": "Vice President - Carrier Relations",
+    "email_status": "unavailable",
+    "organization_name": "Crump Life Insurance Services",
+    "organization_domain": "crump.com",
+    "id": "54abec6f7468692ca10c7e16"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/ken-turscak-falu-flmi-acs-73634789",
+   "angle": "customer",
+   "company_name": "Advantage Insurance Network",
+   "apollo": {
+    "first_name": "Ken",
+    "last_name": "Turscak",
+    "name": "Ken Turscak",
+    "title": "Chief Underwriting Officer",
+    "email": "ken.turscak@advantageinsurance.com",
+    "email_status": "verified",
+    "organization_name": "Advantage Insurance Network",
+    "organization_domain": "advantageinsurance.com",
+    "id": "5f6d8374b25d870001a890d1"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/tiffany-hyde",
+   "angle": "customer",
+   "company_name": "Lion Street",
+   "apollo": {
+    "first_name": "Tiffany",
+    "last_name": "Hyde",
+    "name": "Tiffany Hyde",
+    "title": "Senior Vice President, Head of Underwriting",
+    "email": "thyde@lionstreet.com",
+    "email_status": "verified",
+    "organization_name": "Lion Street",
+    "organization_domain": "lionstreet.com",
+    "id": "66f254381db04e0001d03438"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/todd-ruplinger-693bbab7",
+   "angle": "customer",
+   "company_name": "Techficient",
+   "apollo": {
+    "first_name": "Todd",
+    "last_name": "Ruplinger",
+    "name": "Todd Ruplinger",
+    "title": "Chief Executive Officer",
+    "email": "truplinger@techf.com",
+    "email_status": "verified",
+    "organization_name": "Techficient",
+    "organization_domain": "techf.com",
+    "id": "66f96f871c88bb0001a6d83d"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/snyderkristin",
+   "angle": "customer",
+   "company_name": "Ash Brokerage",
+   "apollo": {
+    "first_name": "Kristin",
+    "last_name": "Snyder",
+    "name": "Kristin Snyder",
+    "title": "Senior Vice President New Business & Underwriting",
+    "email": "kristin.snyder@ashbrokerage.com",
+    "email_status": "verified",
+    "organization_name": "Ash Brokerage",
+    "organization_domain": "ashbrokerage.com",
+    "id": "57e11f86a6da987db4845301"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/luke-jajliardo-5939933b",
+   "angle": "customer",
+   "company_name": "LIBRA Insurance Partners",
+   "apollo": {
+    "first_name": "Luke",
+    "last_name": "Jajliardo",
+    "name": "Luke Jajliardo",
+    "title": "Director of Technology Strategies and Data Solutions",
+    "email": "ljajliardo@librainsurancepartners.com",
+    "email_status": "verified",
+    "organization_name": "LIBRA Insurance Partners",
+    "organization_domain": "libraip.com",
+    "id": "54abdb3b7468692a6b5fcd11"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/kuhncharlie",
+   "angle": "customer",
+   "company_name": "Ash Brokerage",
+   "apollo": {
+    "first_name": "Carolanne",
+    "last_name": "Kuhn",
+    "name": "Carolanne Kuhn",
+    "title": "Senior Brokerage Underwriting Director",
+    "email": "ckuhn@ashbrokerage.com",
+    "email_status": "verified",
+    "organization_name": "Ash Brokerage",
+    "organization_domain": "ashbrokerage.com",
+    "id": "54a9a3987468693399e70416"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/dave-janecek-b7a69326",
+   "angle": "customer",
+   "company_name": "Lion Street",
+   "apollo": {
+    "first_name": "Dave",
+    "last_name": "Janecek",
+    "name": "Dave Janecek",
+    "title": "V.P., Carrier Management",
+    "email": "djanecek@lionstreet.com",
+    "email_status": "verified",
+    "organization_name": "Lion Street",
+    "organization_domain": "lionstreet.com",
+    "id": "54ab54fe7468690ae6e7ff02"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/mickdooley",
+   "angle": "customer",
+   "company_name": "Ash Brokerage",
+   "apollo": {
+    "first_name": "Mick",
+    "last_name": "Dooley",
+    "name": "Mick Dooley",
+    "title": "VP of Operations",
+    "email": "mick.dooley@ashbrokerage.com",
+    "email_status": "verified",
+    "organization_name": "Ash Brokerage",
+    "organization_domain": "ashbrokerage.com",
+    "id": "54aaf68274686923660c921d"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/sternmaya",
+   "angle": "customer",
+   "company_name": "Ash Brokerage",
+   "apollo": {
+    "first_name": "Maya",
+    "last_name": "Stern",
+    "name": "Maya Stern",
+    "title": "Senior Underwriting Case Manager",
+    "email": "maya.stern@ashbrokerage.com",
+    "email_status": "verified",
+    "organization_name": "Ash Brokerage",
+    "organization_domain": "ashbrokerage.com",
+    "id": "54a76d81746869730a2cf233"
+   }
+  },
+  {
+   "linkedin_url": "http://www.linkedin.com/in/rosenhagen",
+   "angle": "customer",
+   "company_name": "Ash Brokerage",
+   "apollo": {
+    "first_name": "Julie",
+    "last_name": "Rosenhagen",
+    "name": "Julie Rosenhagen",
+    "title": "Senior Brokerage Underwriting Director",
+    "email": "julie.rosenhagen@ashbrokerage.com",
+    "email_status": "verified",
+    "organization_name": "Ash Brokerage",
+    "organization_domain": "ashbrokerage.com",
+    "id": "54aa9fdb7468692366ae410f"
+   }
+  }
+ ]
+}

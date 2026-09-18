@@ -220,7 +220,7 @@ async function main() {
   await c.query('commit');
 
   console.log('\nstaged ' + staged + ' contacts with 4 steps each, ' + manual + ' routed to SalesNav');
-  console.log('CSV: market-outreach/' + project.slug + '/' + start + '-batch.csv');
+  console.log('CSV: ' + path.relative(ROOT, csvPath).replace(/\\/g, '/'));
   console.log('Nothing has been sent. Run mo_send.js to send what is due.');
   await c.end();
 }

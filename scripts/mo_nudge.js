@@ -19,9 +19,18 @@ const { connect } = require('./db');
 const { req, token } = require('./gmail_req');
 const { render, subject: subjectOf, guard, toText } = require('./mo_render');
 const crypto = require('crypto');
+const lock = require('./mo_lock');
 
 const APPLY = process.argv.includes('--apply');
+// By default only SalesNav contacts get a nudge, because an emailed contact is
+// already in a thread. --all covers everyone on the project: Calvin wants the
+// LinkedIn touch alongside the email, not instead of it.
+const ALL = process.argv.includes('--all');
 const ME = 'calvin@telescopepartners.com';
+// Drafts are cheap but not free. Gmail's per-user rate limit is what bit us
+// earlier today, and this can run while mo_send is mid-batch, so pace it.
+const GAP_MS = 2000;
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 const b64url = b => Buffer.from(b).toString('base64').replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 const encHeader = s =>
   /^[\x20-\x7E]*$/.test(s) ? s : '=?UTF-8?B?' + Buffer.from(s, 'utf8').toString('base64') + '?=';
@@ -60,11 +69,11 @@ async function main() {
 
   const rows = (await c.query(`
     select ct.* from market.contact ct
-     where ct.project_id = $1 and ct.method = 'salesnav'
+     where ct.project_id = $1 ${ALL ? '' : "and ct.method = 'salesnav'"}
        and not exists (select 1 from market.nudge n where n.contact_id = ct.id)
      order by ct.full_name`, [project.id])).rows;
 
-  if (!rows.length) { console.log('no SalesNav contacts without a nudge draft'); await c.end(); return; }
+  if (!rows.length) { console.log('every contact already has a nudge draft'); await c.end(); return; }
 
   const ready = [], blocked = [];
   for (const ct of rows) {
@@ -76,7 +85,7 @@ async function main() {
     ready.push({ ct, html });
   }
 
-  console.log('SalesNav contacts needing a draft: ' + rows.length);
+  console.log((ALL ? 'contacts' : 'SalesNav contacts') + ' needing a draft: ' + rows.length);
   ready.forEach(r => console.log('  ' + r.ct.full_name.padEnd(22) + (r.ct.company_name || '-').padEnd(22) + r.ct.angle));
   if (blocked.length) {
     console.log('\nBLOCKED (' + blocked.length + ')');
@@ -94,6 +103,14 @@ async function main() {
     return;
   }
 
+  const lockedBy = lock.acquire('mo_nudge');
+  if (lockedBy) {
+    console.log('\nREFUSING: another market-outreach Gmail job holds the lock: ' + lockedBy);
+    console.log('Wait for it to finish. Running both trips the rate limit and breaks real sends.');
+    await c.end();
+    return;
+  }
+
   const t = await token();
   let n = 0;
   for (const r of ready) {
@@ -104,6 +121,7 @@ async function main() {
        on conflict (contact_id) do update set draft_id = excluded.draft_id`, [r.ct.id, d.id]);
     n++;
     console.log('  drafted ' + r.ct.full_name);
+    if (n < ready.length) await sleep(GAP_MS);
   }
   console.log('\n' + n + ' InMail draft(s) in your inbox. Subject line is the profile URL.');
   await c.end();

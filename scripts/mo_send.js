@@ -21,15 +21,16 @@ const crypto = require('crypto');
 const { connect } = require('./db');
 const { req, token } = require('./gmail_req');
 const { guard, toText } = require('./mo_render');
+const lock = require('./mo_lock');
 
 const APPLY = process.argv.includes('--apply');
 const capArg = process.argv.find(a => a.startsWith('--cap='));
 const projArg = process.argv.find(a => a.startsWith('--project='));
-const CAP = capArg ? Number(capArg.slice(6)) : 25;      // global sends per day
+const CAP = capArg ? Number(capArg.slice(6)) : 60;      // global sends per day
 const FORCE = process.argv.includes('--force');
 const ME = 'calvin@telescopepartners.com';
 const ME_NAME = 'Calvin Koo';
-const MIN_GAP_MS = 8 * 60e3, MAX_GAP_MS = 12 * 60e3;
+const MIN_GAP_MS = 4 * 60e3, MAX_GAP_MS = 7 * 60e3;
 // Pacific, inclusive start / exclusive end. The point is to stop a batch going
 // out at 2am, not to enforce an opinion about the best hour to send. The first
 // version used 8 to 16 and blocked a perfectly ordinary 4:50pm send.
@@ -164,6 +165,14 @@ async function main() {
     console.log('\nREFUSING: it is ' + hr + ':00 Pacific, outside the ' +
       WINDOW_START + ':00-' + WINDOW_END + ':00 send window.');
     console.log('Nothing sent. Re-run in the morning, or pass --force if you mean it.');
+    await c.end();
+    return;
+  }
+
+  const lockedBy = lock.acquire('mo_send');
+  if (lockedBy) {
+    console.log('\nREFUSING: another market-outreach Gmail job holds the lock: ' + lockedBy);
+    console.log('Running two at once trips the per-user rate limit and real sends come back 429.');
     await c.end();
     return;
   }
