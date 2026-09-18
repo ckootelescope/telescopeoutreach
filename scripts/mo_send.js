@@ -177,11 +177,29 @@ async function main() {
     return;
   }
 
-  const t = await token();
+  // A Google access token lives about an hour. This batch is deliberately slow
+  // (60 sends at 4 to 7 minutes is roughly five hours), so fetching one token up
+  // front guarantees every send after the first hour dies with a 401. Three real
+  // sends were lost to exactly that. Refresh on age instead.
+  let t = await token();
+  let tokenAt = Date.now();
+  const TOKEN_TTL_MS = 40 * 60e3;
+  const freshToken = async () => {
+    if (Date.now() - tokenAt > TOKEN_TTL_MS) { t = await token(); tokenAt = Date.now(); }
+    return t;
+  };
   let ok = 0, fail = 0, nudges = 0;
 
   for (let i = 0; i < toSend.length; i++) {
     const r = toSend[i];
+    // The window was checked before the first send, but a full batch runs for
+    // hours and would otherwise walk straight out the far side of it. Stop at
+    // the edge and leave the remainder for tomorrow.
+    if (!FORCE && ptHour() >= WINDOW_END) {
+      console.log('\nreached ' + WINDOW_END + ':00 Pacific, stopping. ' +
+        (toSend.length - i) + ' still queued, they go tomorrow.');
+      break;
+    }
     try {
       // Follow-ups reply on step 1's thread.
       let threadId = null, inReplyTo = null, references = null;
@@ -199,7 +217,7 @@ async function main() {
       const html = r.body_html + '<div><br></div>' + SIGNATURE;
       const raw = mime({ to: r.email, toName: r.full_name, subject: r.subject, html,
                          rfcId, inReplyTo, references });
-      const res = await gmailSend(t, raw, threadId);
+      const res = await gmailSend(await freshToken(), raw, threadId);
 
       await c.query('begin');
       await c.query(
@@ -221,7 +239,7 @@ async function main() {
       // Step 1 only: queue the LinkedIn nudge to Calvin.
       if (r.step_no === 1) {
         try {
-          const d = await gmailDraft(t, {
+          const d = await gmailDraft(await freshToken(), {
             subject: r.linkedin_url || ('LinkedIn: ' + r.full_name),
             html: '<div><b>' + r.subject + '</b></div><div><br></div>' + r.body_html,
           });
