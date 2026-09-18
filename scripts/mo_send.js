@@ -113,6 +113,20 @@ async function main() {
       where true${where}
       order by d.step_no desc, d.due_date, d.contact_id`, params);
 
+  // A row left in 'sending' means a process died between claiming it and
+  // recording the result, so nobody knows whether the mail actually went out.
+  // Never auto-retry that: re-sending is how people get the same note twice.
+  // Surface it and let a human check the mailbox.
+  const stuck = await c.query(
+    `select ct.full_name, s.step_no, s.id from market.step s
+       join market.contact ct on ct.id = s.contact_id
+      where s.status = 'sending'`);
+  if (stuck.rows.length) {
+    console.log('WARNING: ' + stuck.rows.length + ' step(s) stuck mid-send. Check the mailbox before deciding:');
+    stuck.rows.forEach(x => console.log('  step ' + x.id + '  E' + x.step_no + '  ' + x.full_name));
+    console.log('  sent already -> mark it sent; never went out -> set it back to planned.\n');
+  }
+
   if (!due.rows.length) { console.log('nothing due'); await c.end(); return; }
 
   // Already sent today, so a re-run inside one day cannot blow past the cap.
@@ -201,6 +215,20 @@ async function main() {
       break;
     }
     try {
+      // Claim the row BEFORE touching Gmail. Reading a step as 'planned' and
+      // only marking it sent afterwards leaves a window in which a second
+      // process reads the same row and sends the same mail: Anna Patrick and
+      // Jake Christensen each got the identical follow-up twice, eight minutes
+      // apart, from concurrent senders. This UPDATE is atomic, so exactly one
+      // process can win the row and the loser skips it.
+      const claim = await c.query(
+        `update market.step set status='sending'
+          where id = $1 and status = 'planned' returning id`, [r.step_id]);
+      if (!claim.rowCount) {
+        console.log('  skip  E' + r.step_no + '  ' + r.full_name + ' (claimed by another run)');
+        continue;
+      }
+
       // Follow-ups reply on step 1's thread.
       let threadId = null, inReplyTo = null, references = null;
       if (r.step_no > 1) {
