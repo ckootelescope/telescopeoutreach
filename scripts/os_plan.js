@@ -266,7 +266,23 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
       log.push(`tasks: would clear ${n.rows[0].n} existing`);
     }
 
-    let sort = 0;
+    // Sort is per day and seeded from what that day already holds, so a
+    // mid-week append lands after the existing items instead of colliding at 0
+    // and letting the dashboard order the tie arbitrarily. replace_tasks clears
+    // the week, so it seeds from 0 regardless: in report mode the rows it is
+    // about to delete are still in the table and would seed too high.
+    const seeded = {};
+    const takeSort = async (day) => {
+      const key = day ?? '';
+      if (seeded[key] === undefined) {
+        seeded[key] = plan.replace_tasks ? 0 : Number((await c.query(
+          day ? 'select coalesce(max(sort) + 1, 0) n from os_task where day = $1'
+              : 'select coalesce(max(sort) + 1, 0) n from os_task where week_id = $1 and day is null',
+          [day || weekId])).rows[0].n);
+      }
+      return seeded[key]++;
+    };
+
     for (const t of tasks) {
       let companyId = null, marketId = null;
       const kind = t.subject_kind || (t.subject ? 'company' : 'none');
@@ -285,7 +301,7 @@ const pad = (s, n) => String(s ?? '').padEnd(n);
          values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15)`,
         [t.title, t.notes || null, t.stream, kind, t.subject || null, companyId, marketId,
          weekId, t.day, t.start_min, t.end_min, t.due_on || null,
-         t.calendar_ref || null, t.origin || 'calvin', sort++]);
+         t.calendar_ref || null, t.origin || 'calvin', await takeSort(t.day)]);
     }
 
     // Print the week as it will read, grouped by day, so the shape of each day

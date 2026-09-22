@@ -5,6 +5,12 @@
  *
  *   node scripts/mo_rerender.js pathwork
  *   node scripts/mo_rerender.js pathwork --start=2026-09-22 --days=0,2,3,6 --apply
+ *   node scripts/mo_rerender.js pathwork --batch=market-outreach/pathwork/2026-09-21-input.json
+ *
+ * --batch scopes the change to the LinkedIn URLs in one staging file, and
+ * --invert scopes it to everyone else. Without them it hits every contact on
+ * the project who has not been emailed, which is almost never what is meant
+ * when the copy change came from one batch.
  *
  * Bodies and subjects are frozen onto market.step at staging time, so editing a
  * copy block or a project CTA afterwards changes nothing that is already
@@ -19,6 +25,7 @@ const { connect } = require('./db');
 const { render, subject: subjectOf, guard, toText } = require('./mo_render');
 
 const APPLY = process.argv.includes('--apply');
+const INVERT = process.argv.includes('--invert');
 const arg = k => {
   const a = process.argv.find(x => x.startsWith('--' + k + '='));
   return a ? a.slice(k.length + 3) : null;
@@ -39,6 +46,17 @@ async function main() {
   }
   if (days && !start) { console.error('--days requires --start'); process.exit(1); }
 
+  const batchFile = arg('batch');
+  if (INVERT && !batchFile) { console.error('--invert requires --batch'); process.exit(1); }
+  const normUrl = u => String(u || '')
+    .replace(/^https?:\/\/(www\.)?/, '').replace(/\/+$/, '').toLowerCase();
+  let batchUrls = null;
+  if (batchFile) {
+    const j = JSON.parse(require('fs').readFileSync(batchFile, 'utf8'));
+    batchUrls = new Set((j.contacts || []).map(x => normUrl(x.linkedin_url)));
+    if (!batchUrls.size) { console.error('no linkedin_url entries in ' + batchFile); process.exit(1); }
+  }
+
   const c = await connect();
   const pr = await c.query(`select * from market.project where slug = $1`, [slug]);
   if (!pr.rows.length) { console.error('no project ' + slug); await c.end(); process.exit(1); }
@@ -49,9 +67,10 @@ async function main() {
     blocks[b.angle] = b;
   }
 
-  const subject = subjectOf(project);
+  // per contact: a batch override beats the project one
+  const subjectFor = ct => subjectOf(project, ct);
   console.log('project  : ' + project.anchor_company + '  (' + slug + ')');
-  console.log('subject  : ' + subject);
+  console.log('subject  : ' + subjectOf(project) + '   (per-contact overrides win)');
   console.log('cta      : ' + (project.cta_html || '(renderer default)'));
   if (start) console.log('re-dating: ' + days.map((d, i) => 'E' + (i + 1) + ' ' + addDays(start, d)).join('   '));
 
@@ -67,8 +86,10 @@ async function main() {
      where ct.project_id = $1
        and not exists (select 1 from market.step s where s.contact_id = ct.id and s.status = 'sent')
        and ct.status not in ('replied','booked','bounced','stopped')
-     order by ct.method, ct.full_name`, [project.id])).rows;
+     order by ct.method, ct.full_name`, [project.id])).rows
+    .filter(ct => !batchUrls || (batchUrls.has(normUrl(ct.linkedin_url)) !== INVERT));
 
+  if (batchFile) console.log('scope    : ' + (INVERT ? 'everyone NOT in ' : 'only ') + batchFile);
   console.log('\nin a live thread already, left alone: ' + live.length);
   console.log('not yet emailed, will be re-rendered : ' + rows.length);
 
@@ -98,7 +119,7 @@ async function main() {
   if (!APPLY) {
     if (plan.length) {
       console.log('\n--- preview: E1 to ' + plan[0].ct.full_name + ' ---');
-      console.log('Subject: ' + subject);
+      console.log('Subject: ' + subjectFor(plan[0].ct));
       console.log(toText(plan[0].bodies[1]));
     }
     console.log('\n(report only - pass --apply to write)');
@@ -111,7 +132,7 @@ async function main() {
   for (const p of plan) {
     for (const step of [1, 2, 3, 4]) {
       const sets = ['subject = $3', 'body_html = $4'];
-      const params = [p.ct.id, step, subject, p.bodies[step]];
+      const params = [p.ct.id, step, subjectFor(p.ct), p.bodies[step]];
       if (start) { sets.push('due_date = $5'); params.push(addDays(start, days[step - 1])); }
       const r = await c.query(
         `update market.step set ${sets.join(', ')}

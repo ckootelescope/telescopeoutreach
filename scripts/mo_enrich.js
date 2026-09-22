@@ -213,7 +213,7 @@ async function main() {
       await c.query(
         `insert into market.step (contact_id, step_no, due_date, subject, body_html)
          values ($1,$2,$3,$4,$5)`,
-        [ct, n, addDays(start, OFFSETS[i]), n === 1 ? subject(project) : 'Re: ' + subject(project), html]);
+        [ct, n, addDays(start, OFFSETS[i]), n === 1 ? subject(project, r) : 'Re: ' + subject(project, r), html]);
     }
     staged++;
   }

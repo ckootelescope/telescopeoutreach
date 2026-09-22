@@ -45,7 +45,10 @@ const sub = (text, ctx) => String(text || '')
 // the ask specific and dated, which is why cta_html exists.
 const CTA = 'Are you free for a quick call in the next couple of weeks?';
 
-function subject(project) {
+// Contact beats project beats default. A batch can carry its own framing (a
+// conference, a city visit) without retitling everyone else on the project.
+function subject(project, contact) {
+  if (contact && contact.subject_override) return contact.subject_override;
   if (project.subject_override) return project.subject_override;
   return 'Telescope Partners | Chat on ' +
     (project.industry_label || project.industry) + ' Software and AI Tools';
@@ -59,7 +62,7 @@ function step1(project, block, contact) {
   const ctx = { ...contact, industry: project.industry };
   const p1 = 'Hi ' + esc(contact.first_name) + ',';
   const ask = "Hope you don't mind the cold note! " + sub(block.para1_s2, ctx) +
-    ' ' + sub(project.cta_html || CTA, ctx);
+    ' ' + sub(contact.cta_html || project.cta_html || CTA, ctx);
   return P([p1, ask, sub(block.para2_html, ctx), sub(block.para3_html || P3, ctx)]);
 }
 
