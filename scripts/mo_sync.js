@@ -131,6 +131,21 @@ async function main() {
     }
   }
 
+  // Every Gmail call is done by this point, so the completeness guard belongs
+  // here rather than after the calendar read below. That read goes through the
+  // same helper and lands a non-200 in the same hardFails counter. The Calendar
+  // API is currently disabled at the Cloud project level, so it returns 403 on
+  // every run, and counting that as a failed mail sweep blocked replies from
+  // ever being written: 80 sends sat at zero replies while Bryan Hodgens had
+  // already written back. A calendar that will not read costs us bookings for
+  // one run, which is warned about on its own; it says nothing about whether
+  // the mail sweep was complete.
+  if (httpFails()) {
+    console.log('WARNING: ' + httpFails() + ' gmail requests failed after retries.');
+    console.log('This sweep is INCOMPLETE. Not writing.');
+    if (APPLY) { await c.end(); process.exit(2); }
+  }
+
   // Bookings - a Calendly invite is a win and often arrives with no reply email.
   const bookings = new Map();
   const tMin = new Date(Date.now() - 7 * 864e5).toISOString();
@@ -151,12 +166,6 @@ async function main() {
     }
   } else {
     console.log('WARNING: calendar read failed (' + cal.s + '); bookings not checked this run');
-  }
-
-  if (httpFails()) {
-    console.log('WARNING: ' + httpFails() + ' gmail requests failed after retries.');
-    console.log('This sweep is INCOMPLETE. Not writing.');
-    if (APPLY) { await c.end(); process.exit(2); }
   }
 
   // A bounce or a booking outranks a plain reply for the same contact.
@@ -207,7 +216,11 @@ async function main() {
   for (const o of oooes.values()) {
     if (replies.has(o.row.id) || bookings.has(o.row.id) || bounces.has(o.row.id)) continue;
     const r = await c.query(
-      `update market.step set due_date = due_date + $2
+      // $2 is cast explicitly: an untyped parameter leaves Postgres choosing
+      // between date + integer and date + interval, and it refuses with
+      // "operator is not unique: date + unknown", which aborts the whole
+      // transaction and silently rolls back the replies recorded above.
+      `update market.step set due_date = due_date + $2::int
          where contact_id = $1 and status = 'planned'
            and not exists (select 1 from market.event e
                             where e.contact_id = $1 and e.kind = 'ooo' and e.id <> 0
