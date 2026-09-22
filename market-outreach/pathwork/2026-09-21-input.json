@@ -1,0 +1,87 @@
+{ "project": "pathwork",
+  "contacts": [
+    { "linkedin_url": "https://www.linkedin.com/in/bpoppe", "angle": "customer", "company_name": "Mutual of Omaha",
+      "apollo": { "first_name": "Brian", "last_name": "Poppe", "title": "Executive Leader",
+                  "email": "brian.poppe@mutualofomaha.com", "email_status": "verified",
+                  "organization_name": "Mutual of Omaha", "organization_domain": "mutualofomaha.com", "id": "66f3124bce1ef100018dcdb8" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/nate-colon-mba-79690b39", "angle": "customer", "company_name": "American Life",
+      "apollo": { "first_name": "Nate", "last_name": "Colon", "title": "Chief Operations Officer",
+                  "email": "ncolon@american-life.com", "email_status": "verified",
+                  "organization_name": "American Life", "organization_domain": "american-life.com", "id": "66fbafe66e3cb10001c7efdc" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/kalin-kelly", "angle": "customer", "company_name": "Continental General",
+      "apollo": { "first_name": "Kalin", "last_name": "Kelly", "title": "SVP & CIO",
+                  "email": "kalin.kelly@cgic.com", "email_status": "verified",
+                  "organization_name": "Continental General", "organization_domain": "cgic.com", "id": "66f2da63d87870000165ed5d" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/robertpavleszek", "angle": "customer", "company_name": "USAA",
+      "apollo": { "first_name": "Robert", "last_name": "Pavleszek", "title": "Chief Strategy Officer, USAA Life Company",
+                  "email": "robert.pavleszek@usaa.com", "email_status": "verified",
+                  "organization_name": "USAA", "organization_domain": "usaa.com", "id": "6ab200ef5876fa000c4d680d" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/ashlyn-lackey", "angle": "customer", "company_name": "Prudential Financial",
+      "apollo": { "first_name": "Ashlyn", "last_name": "Lackey", "title": "Director, Innovation Strategy",
+                  "email": "ashlyn.lackey@prudential.com", "email_status": "verified",
+                  "organization_name": "Prudential Financial", "organization_domain": "prudential.com", "id": "6ab200ef5876fa000c4d680e" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/mmarino1", "angle": "customer", "company_name": "Prudential Financial",
+      "apollo": { "first_name": "Matthew", "last_name": "Marino", "title": "Vice President, Product Owner, Customer and Digital Team",
+                  "email": "matthew.marino@prudential.com", "email_status": "verified",
+                  "organization_name": "Prudential Financial", "organization_domain": "prudential.com", "id": "6ab200f25876fa000c4d6828" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/sarah-mueller-162512b9", "angle": "customer", "company_name": "Forward Mutual",
+      "apollo": { "first_name": "Sarah", "last_name": "Mueller", "title": "President & CEO",
+                  "email": "sarah@forwardmutual.com", "email_status": "verified",
+                  "organization_name": "Forward Mutual Insurance Company", "organization_domain": "forwardmutual.com", "id": "5ad94e9aa6da9862a3ad3bf7" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/valinotti", "angle": "customer", "company_name": "Spinnaker Insurance",
+      "apollo": { "first_name": "Charles", "last_name": "Valinotti", "title": "Chief Operating Officer / Chief Underwriting Officer",
+                  "email": "cvalinotti@spinnakerins.com", "email_status": "verified",
+                  "organization_name": "Spinnaker Insurance Company", "organization_domain": "spinnakerins.com", "id": "69df1f111ab58e0001528649" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/elena-herrick-11533316a", "angle": "customer", "company_name": "Munich Re",
+      "apollo": { "first_name": "Elena", "last_name": "Herrick", "title": "VP - Product & Underwriting",
+                  "email": "eherrick@munichre.com", "email_status": "verified",
+                  "organization_name": "Munich Re Specialty - North America", "organization_domain": "munichre.com", "id": "66f1028d7c17f1000145b9b9" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/laurel-jordan", "angle": "market_expert", "company_name": "Datos Insights",
+      "apollo": { "first_name": "Laurel", "last_name": "Jordan", "title": "Senior Principal",
+                  "email": "ljordan@datos-insights.com", "email_status": "verified",
+                  "organization_name": "Datos Insights", "organization_domain": "datos-insights.com", "id": "5ef23948251d940001e23897" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/collin-bhojwani", "angle": "market_expert", "company_name": "Allianz Life",
+      "apollo": { "first_name": "Collin", "last_name": "Bhojwani", "title": "Managing Director, Head of Allianz Life Ventures",
+                  "email": "collin.bhojwani@allianzlife.com", "email_status": "verified",
+                  "organization_name": "Allianz Life", "organization_domain": "allianzlife.com", "id": "5fc8e6181545aa000192e521" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/mcrazaire", "angle": "market_expert", "company_name": "Northwestern Mutual",
+      "apollo": { "first_name": "Marie-Christine", "last_name": "Razaire", "title": "Principal",
+                  "email": "mcrazaire@northwesternmutual.com", "email_status": "verified",
+                  "organization_name": "Northwestern Mutual", "organization_domain": "northwesternmutual.com", "id": "6ab200f25876fa000c4d6827" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/cindy-de-armond-8b56353", "angle": "competitor", "company_name": "Bestow",
+      "apollo": { "first_name": "Cindy", "last_name": "de Armond", "title": "Chief Revenue Officer",
+                  "email": "cindy.dearmond@bestow.com", "email_status": "verified",
+                  "organization_name": "Bestow", "organization_domain": "bestow.com", "id": "5ffedc996390580001f7fbaf" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/bobbieshrivastav", "angle": "competitor", "company_name": "Solvrays",
+      "apollo": { "first_name": "Bobbie", "last_name": "Shrivastav", "title": "Co-Founder and CEO",
+                  "email": "bobbie@solvrays.com", "email_status": "verified",
+                  "organization_name": "Solvrays", "organization_domain": "solvrays.com", "id": "66f3c071950cfc0001445b11" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/armoss", "angle": "competitor", "company_name": "Send",
+      "apollo": { "first_name": "Andy", "last_name": "Moss", "title": "CEO and Co-founder",
+                  "email": "andy.moss@send.technology", "email_status": "verified",
+                  "organization_name": "Send", "organization_domain": "send.technology", "id": "66f66836d5194800013b1471" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/glen-ceniza-17241b1", "angle": "competitor", "company_name": "Operative",
+      "apollo": { "first_name": "Glen", "last_name": "Ceniza", "title": "Chief Technology Officer",
+                  "email": "gceniza@sintecmedia.com", "email_status": "verified",
+                  "organization_name": "Operative", "organization_domain": "operative.com", "id": "66ee186e506ec00001e27536" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/farron", "angle": "competitor", "company_name": "Legal and General America",
+      "apollo": { "first_name": "Farron", "last_name": "Blanc", "title": "VP, Head of Brokerage and Financial Institutions Distribution",
+                  "email": "blancfarron@wpenn.com", "email_status": "verified",
+                  "organization_name": "Legal and General America", "organization_domain": "lgamerica.com", "id": "66fa775306b333000186a829" } }
+  ] }
