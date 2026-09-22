@@ -124,6 +124,12 @@ async function main() {
       linkedin_url: raw.linkedin_url, angle,
       email: a.email || null, email_status: a.email_status || null,
       method: g.method, gate_reason: g.reason, apollo_id: a.id || null,
+      // Per-contact framing. The columns have existed since the ITC batch but
+      // nothing carried them from the input file, so a cohort inside a project
+      // could only be retitled by hand in SQL after staging.
+      subject_override: raw.subject_override || null,
+      cta_html: raw.cta_html || null,
+      step2_html: raw.step2_html || null,
       prior, dup, block, missingBlock: !block,
     });
   }
@@ -197,11 +203,13 @@ async function main() {
     const isMail = r.method === 'email';
     const ct = (await c.query(
       `insert into market.contact (project_id, full_name, first_name, title, company_name,
-          company_domain, linkedin_url, angle, email, email_status, gate_reason, method, status, apollo_id)
-       values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14) returning id`,
+          company_domain, linkedin_url, angle, email, email_status, gate_reason, method, status, apollo_id,
+          subject_override, cta_html, step2_html)
+       values ($1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17) returning id`,
       [project.id, r.full_name, r.first_name, r.title, r.company_name, r.company_domain,
        r.linkedin_url, r.angle, r.email, r.email_status, r.gate_reason,
-       r.method, isMail ? 'queued' : 'manual', r.apollo_id])).rows[0].id;
+       r.method, isMail ? 'queued' : 'manual', r.apollo_id,
+       r.subject_override, r.cta_html, r.step2_html])).rows[0].id;
 
     if (!isMail) { manual++; continue; }
 

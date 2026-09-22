@@ -1,0 +1,28 @@
+{
+  "anchor_company": "InStockRx",
+  "slug": "instockrx",
+  "industry": "pharmacy supply chain",
+  "industry_label": "Pharmacy Supply Chain",
+  "workflow": "how they source, redistribute and purchase inventory",
+  "fu3_insight_html": "As we've spent more time in the pharmacy supply chain space, we've come across a number of platforms that are digitizing how pharmacies source and redistribute inventory, including marketplace models for buying and selling excess stock and tools that streamline compliance with the new DSCSA serialization requirements. We think there's a meaningful shift happening in how pharmacies manage their purchasing workflows, and I'd love to get your take on whether that matches what you're seeing.",
+  "blocks": [
+    {
+      "angle": "customer",
+      "uses_company_slot": true,
+      "para1_s2": "I was hoping to connect and briefly chat about your experience managing pharmacy operations and the technology you use to source and manage inventory.",
+      "para2_html": "For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the pharmacy supply chain. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help pharmacies like [Company] better manage inventory sourcing, redistribution, and purchasing workflows. We've seen that much of this work is done manually or through legacy wholesaler relationships. We understand that this is one part of the process (we've heard of tools focused on drug shortage management, DSCSA compliance, etc.), and I'd love to learn more about how you view your tech stack as a whole."
+    },
+    {
+      "angle": "advisor",
+      "uses_company_slot": false,
+      "para1_s2": "I was hoping to connect and briefly chat about your experience in the pharmacy supply chain space and the technology landscape around it.",
+      "para2_html": "For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the pharmacy supply chain. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help pharmacies better manage inventory sourcing, redistribution, and purchasing workflows. We've seen that much of this work is done manually or through legacy wholesaler relationships. We understand that this is one part of the process (we've heard of tools focused on drug shortage management, DSCSA compliance, etc.), and I'd love to learn more about how you view this market as a whole."
+    },
+    {
+      "angle": "competitor",
+      "uses_company_slot": false,
+      "para1_s2": "I was hoping to connect and briefly chat about your experience in the pharmacy marketplace space and working with startups within this sector.",
+      "para2_html": "For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching the pharmacy supply chain and how technology is reshaping inventory workflows for pharmacies. A big part of our approach is getting to know folks like yourself who are building in this sector and understand the dynamics firsthand. We've been looking into how pharmacies manage inventory sourcing and redistribution, and we've seen a number of interesting marketplace and software approaches emerge over the past few years. I'd love to learn more about how you see the market evolving and where the biggest opportunities and challenges lie."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "project": "instockrx",
+  "contacts": [
+    { "linkedin_url": "https://www.linkedin.com/in/george-zhushma-2a79947a", "angle": "customer", "company_name": "KPH Healthcare Services",
+      "apollo": { "first_name": "George", "last_name": "Zhushma", "title": "Vice President of Business Development", "email": "georgezhushma@kphhealthcareservices.com", "email_status": "verified", "organization_name": "KPH Healthcare Services", "organization_domain": "kphhealthcareservices.com", "id": "57d6194fa6da9805d7c1276e" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/charles-goodall", "angle": "advisor",
+      "apollo": { "first_name": "Charles", "last_name": "Goodall", "title": "Senior VP, Pharmacy Technology Services", "email_status": "unavailable", "organization_name": "Optum", "organization_domain": "optum.com", "id": "54a401f67468692cf0e1ad24" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/vanantwerp", "angle": "advisor",
+      "apollo": { "first_name": "George", "last_name": "Van Antwerp", "title": "SVP, Product Innovation and Strategic Planning", "email": "george.vanantwerp@primetherapeutics.com", "email_status": "verified", "organization_name": "Prime Therapeutics", "organization_domain": "primetherapeutics.com", "id": "602103da817d020001f06603" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/john-phillips-60266315", "angle": "advisor",
+      "apollo": { "first_name": "John", "last_name": "Phillips", "title": "Market Vice President, Key Account Sales", "email": "john.phillips@navitus.com", "email_status": "verified", "organization_name": "Navitus Health Solutions", "organization_domain": "navitus.com", "id": "66f67a2513423d0001a4c5fd" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/dominic-vu-6b2225a", "angle": "advisor",
+      "apollo": { "first_name": "Dominic", "last_name": "Vu", "title": "Senior Vice President, Pharmaceutical Strategies", "email": "dominic.vu@usi.com", "email_status": "verified", "organization_name": "USI Insurance Services", "organization_domain": "usi.com", "id": "66faba3746e4c50001b8351b" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/joe-montler-88343415", "angle": "advisor",
+      "apollo": { "first_name": "Joe", "last_name": "Montler", "title": "Chief Customer Officer", "email_status": "unavailable", "organization_name": "Surescripts", "organization_domain": "surescripts.com", "id": "6114e12f49169b00016b222d" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/chiragpatelpharmdmba", "angle": "advisor",
+      "apollo": { "first_name": "Chirag", "last_name": "Patel", "title": "Director, Product Management", "email": "chirag.patel@fdbhealth.com", "email_status": "verified", "organization_name": "FDB (First Databank)", "organization_domain": "fdbhealth.com", "id": "610bcad9f935ae0001d3a9b2" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/tom-pettyes", "angle": "advisor",
+      "apollo": { "first_name": "Tom", "last_name": "Pettyes", "title": "SVP, Strategic Accounts", "email_status": "unavailable", "organization_name": "McKesson", "organization_domain": "mckesson.com", "id": "655312ba516cd40001940a33" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/jasonahanks", "angle": "advisor",
+      "apollo": { "first_name": "Jason", "last_name": "Hanks", "title": "Healthcare Executive", "email": "jhanks@morrisdickson.com", "email_status": "verified", "organization_name": "Morris and Dickson", "organization_domain": "morrisdickson.com", "id": "643ea51b89fd550001b67580" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/sarah-suffel-pharmd-mba-bcps-cacp-656a7120a", "angle": "customer", "company_name": "Bon Secours Mercy Health",
+      "apollo": { "first_name": "Sarah", "last_name": "Suffel", "title": "Director of Pharmacy, Integrated Pharmacy Services", "email_status": "unavailable", "organization_name": "Bon Secours Mercy Health", "organization_domain": "bsmhealth.org", "id": "64932e6941974d0001e6cadc" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/david-coury", "angle": "advisor",
+      "apollo": { "first_name": "David", "last_name": "Coury", "title": "Clinical Pharmacist", "email": "david.coury@rxhealing.com", "email_status": "extrapolated", "organization_name": "Albert Einstein Medical Center", "id": "5fda9e65d0b81b000165131a" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/westin-winn-a807b647", "angle": "customer", "company_name": "Boyd's Family Pharmacy",
+      "apollo": { "first_name": "Westin", "last_name": "Winn", "title": "Pharmacy Manager", "email_status": "unavailable", "organization_name": "Boyd's Family Pharmacy", "id": "55713a17736964788c100600" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/josh-weber-pharmd-mba-hcm-csp-ace-163b09113", "angle": "customer", "company_name": "St. Luke's Health System",
+      "apollo": { "first_name": "Josh", "last_name": "Weber", "title": "Senior Director, Ambulatory, Retail and Specialty Pharmacy Services", "email": "weberjo@slhs.org", "email_status": "verified", "organization_name": "St. Luke's Health System", "organization_domain": "stlukesonline.org", "id": "67252931b21b090001e2a690" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/chris-antypas-6a331213", "angle": "customer", "company_name": "Asti's South Hills Pharmacy",
+      "apollo": { "first_name": "Chris", "last_name": "Antypas", "title": "President", "email": "crantypas@astisrx.com", "email_status": "verified", "organization_name": "Asti's South Hills Pharmacy", "organization_domain": "astisrx.com", "id": "60407cf9929572000188b1ab" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/steve-cobb-007b405", "angle": "advisor",
+      "apollo": { "first_name": "Steve", "last_name": "Cobb", "title": "Senior Vice President and General Manager", "email": "steve.cobb@crxspecialty.com", "email_status": "verified", "organization_name": "Liviniti", "organization_domain": "liviniti.com", "id": "54a732a37468696220325b1e" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/maresa-glass", "angle": "customer", "company_name": "Tampa General Hospital",
+      "force_salesnav": "Apollo parsed the surname as Pharmd and the address mpharmd@tgh.org looks derived from that error, not from a real mailbox",
+      "apollo": { "first_name": "Maresa", "last_name": "Glass", "title": "Director, Pharmacy Patient Care Services", "email": "mpharmd@tgh.org", "email_status": "verified", "organization_name": "Tampa General Hospital", "organization_domain": "tgh.org", "id": "63690b77515c87000195651b" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/haley-cammarata", "angle": "customer", "company_name": "Shields Health",
+      "force_salesnav": "current title is PET and CT imaging operations, not pharmacy. Confirm she is the right contact before emailing",
+      "apollo": { "first_name": "Haley", "last_name": "Cammarata", "title": "Senior Director, PET CT Operations and Scheduling", "email": "haleyma@shields.com", "email_status": "verified", "organization_name": "Shields Health", "organization_domain": "shields.com", "id": "60914648e5910b0001ba867c" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/lance-wilkes-a6a6312", "angle": "advisor", "subject_override": "Chat on Pharmacy Technology? | Telescope Partners",
+      "apollo": { "first_name": "Lance", "last_name": "Wilkes", "title": "Managing Director", "email": "lance.wilkes@bernsteinsg.com", "email_status": "verified", "organization_name": "Bernstein", "organization_domain": "bernsteinsg.com", "id": "55c983c4f3e5bb0c9d000a3a" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/lisa-gill-9742971b", "angle": "advisor", "subject_override": "Chat on Pharmacy Technology? | Telescope Partners",
+      "apollo": { "first_name": "Lisa", "last_name": "Gill", "title": "Managing Director", "email": "lisa.gill@jpmorgan.com", "email_status": "verified", "organization_name": "J.P. Morgan", "organization_domain": "jpmorgan.com", "id": "54a5af3d7468692cf0b64ca0" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/andrew-mok-cfa-46a98a34", "angle": "advisor", "subject_override": "Chat on Pharmacy Technology? | Telescope Partners",
+      "apollo": { "first_name": "Andrew", "last_name": "Mok", "title": "Director", "email": "andrew.mok@barclays.com", "email_status": "verified", "organization_name": "Barclays", "organization_domain": "barclays.com", "id": "611e52277c5919000194f184" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/ryan-halsted-2217a71", "angle": "advisor", "subject_override": "Chat on Pharmacy Technology? | Telescope Partners",
+      "apollo": { "first_name": "Ryan", "last_name": "Halsted", "title": "Managing Director", "email_status": "unavailable", "organization_name": "Gilmartin Group", "organization_domain": "gilmartinir.com", "id": "57dd39aea6da987aec1fdd73" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/brianpinto", "angle": "customer", "company_name": "Tiffany Natural Pharmacy",
+      "apollo": { "first_name": "Brian", "last_name": "Pinto", "title": "Owner and Pharmacist in Charge", "email_status": "unavailable", "organization_name": "Tiffany Natural Pharmacy", "id": "54a7aadc74686975f830f44a" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/barryhartrph", "angle": "advisor",
+      "apollo": { "first_name": "Barry", "last_name": "Hart", "title": "President and Founder", "email_status": "unavailable", "organization_name": "Young at Heart Pharmacy", "organization_domain": "yahrx.com", "id": "6862a4bafda41800015ff554" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/stan-quintana", "angle": "advisor",
+      "apollo": { "first_name": "Stan", "last_name": "Quintana", "title": "Director, Health System Sales", "email": "squintana@rxsense.com", "email_status": "verified", "organization_name": "RxSense", "organization_domain": "rxsense.com", "id": "5f87aa01444cbd0001f2766e" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/ryan-derengowski-607a8731b", "angle": "competitor",
+      "apollo": { "first_name": "Ryan", "last_name": "Derengowski", "title": "Strategic Sourcing, Sales and Business Development Leader", "email_status": "unavailable", "organization_name": "MatchRX", "organization_domain": "matchrx.com", "id": "608bf0ad1044020001f65010" } }
+  ]
+}

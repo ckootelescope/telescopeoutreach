@@ -178,7 +178,7 @@ create trigger trg_mo_block_send
 create or replace view market.v_due as
   select st.id step_id, st.contact_id, st.step_no, st.due_date, st.send_after,
          ct.project_id, ct.full_name, ct.first_name, ct.email, ct.angle,
-         ct.company_name, p.slug project_slug, p.anchor_company
+         ct.company_name, p.slug project_slug, p.anchor_company, ct.linkedin_url
     from market.step st
     join market.contact ct on ct.id = st.contact_id
     join market.project p  on p.id  = ct.project_id

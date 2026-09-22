@@ -1,0 +1,11 @@
+{
+  "project": "instockrx",
+  "_note": "Calvin overrode the domain-match gate for these two on 2026-09-22. Both addresses sit on a real sibling domain of the employer: St. Luke's Health System uses slhs.org alongside stlukesonline.org, and CRx Specialty Solution Pharmacy is the Liviniti entity Cobb runs. organization_domain is set to the domain the mailbox actually lives on so the gate passes for the right reason rather than being bypassed.",
+  "contacts": [
+    { "linkedin_url": "https://www.linkedin.com/in/josh-weber-pharmd-mba-hcm-csp-ace-163b09113", "angle": "customer", "company_name": "St. Luke's Health System",
+      "apollo": { "first_name": "Josh", "last_name": "Weber", "title": "Senior Director, Ambulatory, Retail and Specialty Pharmacy Services", "email": "weberjo@slhs.org", "email_status": "verified", "organization_name": "St. Luke's Health System", "organization_domain": "slhs.org", "id": "67252931b21b090001e2a690" } },
+
+    { "linkedin_url": "https://www.linkedin.com/in/steve-cobb-007b405", "angle": "advisor",
+      "apollo": { "first_name": "Steve", "last_name": "Cobb", "title": "Senior Vice President and General Manager", "email": "steve.cobb@crxspecialty.com", "email_status": "verified", "organization_name": "Liviniti / CRx Specialty", "organization_domain": "crxspecialty.com", "id": "54a732a37468696220325b1e" } }
+  ]
+}
