@@ -41,7 +41,12 @@ const sub = (text, ctx) => String(text || '')
   .replace(/\[First\]/g, esc(ctx.first_name || ''))
   .replace(/\[industry\]/g, esc(ctx.industry || ''));
 
+// The step-1 ask, when the project has not overridden it. A conference makes
+// the ask specific and dated, which is why cta_html exists.
+const CTA = 'Are you free for a quick call in the next couple of weeks?';
+
 function subject(project) {
+  if (project.subject_override) return project.subject_override;
   return 'Telescope Partners | Chat on ' +
     (project.industry_label || project.industry) + ' Software and AI Tools';
 }
@@ -54,7 +59,7 @@ function step1(project, block, contact) {
   const ctx = { ...contact, industry: project.industry };
   const p1 = 'Hi ' + esc(contact.first_name) + ',';
   const ask = "Hope you don't mind the cold note! " + sub(block.para1_s2, ctx) +
-    ' Are you free for a quick call in the next couple of weeks?';
+    ' ' + sub(project.cta_html || CTA, ctx);
   return P([p1, ask, sub(block.para2_html, ctx), sub(block.para3_html || P3, ctx)]);
 }
 
@@ -116,4 +121,4 @@ function guard(html, project) {
   return problems;
 }
 
-module.exports = { render, subject, guard, toText, CALENDLY, P3 };
+module.exports = { render, subject, guard, toText, CALENDLY, P3, CTA };

@@ -27,6 +27,11 @@ const APPLY = process.argv.includes('--apply');
 const capArg = process.argv.find(a => a.startsWith('--cap='));
 const projArg = process.argv.find(a => a.startsWith('--project='));
 const CAP = capArg ? Number(capArg.slice(6)) : 60;      // global sends per day
+// Normally later steps go first: someone already in a thread is mid-conversation
+// and their cadence is the thing with a clock on it. A conference inverts that,
+// because a first touch is worthless the day after the event while a follow-up
+// can slip a day at no cost. Off by default; the daily runner passes it.
+const FIRST_FIRST = process.argv.includes('--first-first');
 const FORCE = process.argv.includes('--force');
 const ME = 'calvin@telescopepartners.com';
 const ME_NAME = 'Calvin Koo';
@@ -111,7 +116,7 @@ async function main() {
        join market.step s on s.id = d.step_id
        join market.project p on p.id = d.project_id
       where true${where}
-      order by d.step_no desc, d.due_date, d.contact_id`, params);
+      order by ${FIRST_FIRST ? '(d.step_no = 1) desc, ' : ''}d.step_no desc, d.due_date, d.contact_id`, params);
 
   // A row left in 'sending' means a process died between claiming it and
   // recording the result, so nobody knows whether the mail actually went out.

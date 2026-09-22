@@ -22,7 +22,16 @@
       "para1_s2": "I was hoping to connect and briefly chat about your experience as it relates to the life insurance space.",
       "para2_html": "For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and I've been researching tech stacks across the life insurance space. A big part of our approach is getting to know folks like yourself who understand what's important and what pain points still exist in certain markets. For context on what we're researching, we've been looking into tools that help brokers, BGAs and carriers speed up how policies move from initial inquiry through underwriting decisions. We've seen that much of this work is done manually or across multiple point solutions. We're also interested in how the emergence of new tech-enabled BGAs will end up impacting the broader landscape and how both distributors and carriers think of their operations moving forward.",
       "para3_html": "I recognize you're busy, but this also results in us building a network of smart people who we can be helpful to down the road (through hiring, board/advisor opportunities, etc). If there's another person on your team that you think would be a better fit - happy to chat with them as well. LMK your thoughts and thanks in advance."
+    },
+    {
+      "angle": "competitor",
+      "uses_company_slot": false,
+      "para1_s2": "I was hoping to connect and get your perspective on where the technology in the life insurance space is heading.",
+      "para2_html": "For context, I'm an investor at Telescope Partners (led by ex-Sequoia partner), a VC firm, and we've been spending time exploring technology across the insurance landscape. I wanted to get your read on what the recent trends have been in the space and where you think things go from here. We're also looking for potential advisors and board members as we continue to spend time in the space, with the hope of making an investment in it.",
+      "para3_html": "I recognize you're busy, but we've found these conversations tend to be useful in both directions, and it helps us build a network of people we can be helpful to down the road. If there's another person on your team that you think would be a better fit, happy to chat with them as well. LMK your thoughts and thanks in advance."
     }
   ],
-  "industry_label": "Life Insurance"
+  "industry_label": "Life Insurance",
+  "subject_override": "Telescope Partners | Meet up at ITC",
+  "cta_html": "I'll be at ITC in Vegas next week. Are you going to be there? Would love to grab a coffee or find time to chat in person if so."
 }

@@ -26,8 +26,10 @@ node scripts\mo_sync.js --apply >> "%LOG%" 2>&1
 echo --- mo_nudge --- >> "%LOG%"
 node scripts\mo_nudge.js pathwork --all --apply >> "%LOG%" 2>&1
 
+REM --first-first: ITC Vegas week. A first touch is worthless after the event,
+REM a follow-up is not, so openers jump the queue. Drop the flag after ITC.
 echo --- mo_send --- >> "%LOG%"
-node scripts\mo_send.js --apply >> "%LOG%" 2>&1
+node scripts\mo_send.js --apply --first-first >> "%LOG%" 2>&1
 
 echo ==== finished %DATE% %TIME% ==== >> "%LOG%"
 endlocal

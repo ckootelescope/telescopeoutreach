@@ -48,6 +48,8 @@ function anchorLeak(p, block) {
     ? needle : null;
 }
 
+const { subject: subjectOf } = require('./mo_render');
+
 const DASH = /--|—|–/;
 
 function validate(p) {
@@ -70,6 +72,8 @@ function validate(p) {
     }
   }
   if (p.fu3_insight_html && DASH.test(p.fu3_insight_html)) errs.push('fu3_insight_html contains an em dash or --');
+  if (p.cta_html && DASH.test(p.cta_html)) errs.push('cta_html contains an em dash or --');
+  if (p.subject_override && DASH.test(p.subject_override)) errs.push('subject_override contains an em dash or --');
   return errs;
 }
 
@@ -90,7 +94,8 @@ async function show(c, slug) {
   console.log('industry : ' + row.industry);
   console.log('workflow : ' + row.workflow);
   console.log('status   : ' + row.status);
-  console.log('subject  : Telescope Partners | Chat on ' + (row.industry_label || row.industry) + ' Software and AI Tools');
+  console.log('subject  : ' + subjectOf(row));
+  console.log('cta      : ' + (row.cta_html || '(default) ' + require('./mo_render').CTA));
   const b = await c.query(`select angle, para1_s2, para2_html, para3_html, uses_company_slot, frozen_on
      from market.copy_block where project_id = $1 order by angle`, [row.id]);
   for (const x of b.rows) {
@@ -131,7 +136,8 @@ async function main() {
   console.log('  anchor   : ' + p.anchor_company + '   (internal only)');
   console.log('  industry : ' + p.industry);
   console.log('  workflow : ' + p.workflow);
-  console.log('  subject  : Telescope Partners | Chat on ' + (p.industry_label || p.industry) + ' Software and AI Tools');
+  console.log('  subject  : ' + subjectOf(p));
+  if (p.cta_html) console.log('  cta      : ' + p.cta_html);
 
   let frozen = [];
   if (existing) {
@@ -159,12 +165,16 @@ async function main() {
     pid = existing.id;
     await c.query(`update market.project set industry=$2, workflow=$3,
         industry_label = coalesce($5, industry_label),
+        subject_override = coalesce($6, subject_override),
+        cta_html = coalesce($7, cta_html),
         fu3_insight_html = coalesce($4, fu3_insight_html) where id=$1`,
-      [pid, p.industry, p.workflow, p.fu3_insight_html || null, p.industry_label || null]);
+      [pid, p.industry, p.workflow, p.fu3_insight_html || null, p.industry_label || null,
+       p.subject_override || null, p.cta_html || null]);
   } else {
-    pid = (await c.query(`insert into market.project (anchor_company, slug, industry, workflow, fu3_insight_html, industry_label)
-      values ($1,$2,$3,$4,$5, coalesce($6, initcap($3))) returning id`,
-      [p.anchor_company, p.slug, p.industry, p.workflow, p.fu3_insight_html || null, p.industry_label || null])).rows[0].id;
+    pid = (await c.query(`insert into market.project (anchor_company, slug, industry, workflow, fu3_insight_html, industry_label, subject_override, cta_html)
+      values ($1,$2,$3,$4,$5, coalesce($6, initcap($3)), $7, $8) returning id`,
+      [p.anchor_company, p.slug, p.industry, p.workflow, p.fu3_insight_html || null, p.industry_label || null,
+       p.subject_override || null, p.cta_html || null])).rows[0].id;
   }
   let added = 0, replaced = 0;
   for (const b of p.blocks) {
