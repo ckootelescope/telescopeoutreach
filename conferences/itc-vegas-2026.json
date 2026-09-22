@@ -1,11 +1,21 @@
 {
   "conference": "ITC Vegas 2026",
   "venue": "Mandalay Bay, Las Vegas",
-  "runs": ["2026-09-29", "2026-10-01"],
-  "attending": ["Calvin Koo", "Chris Gaertner"],
+  "runs": [
+    "2026-09-29",
+    "2026-10-01"
+  ],
+  "attending": [
+    "Calvin Koo",
+    "Chris Gaertner"
+  ],
   "source": "Affinity list 367472 / view 2451313, TPStatus = Pipeline: SQL (27 names)",
   "subject": "Meet up at ITC? | Telescope Partners",
-  "cadence": { "e1": "2026-09-22", "e2": "2026-09-25", "e3": "2026-09-29" },
+  "cadence": {
+    "e1": "2026-09-20",
+    "e2": "2026-09-22",
+    "e3": "2026-09-29"
+  },
   "excluded": [
     {
       "company": "Avallon",
@@ -21,10 +31,37 @@
     }
   ],
   "pending_contact": [
-    { "company": "ARKK Labs", "domain": "arkklabs.com", "names_on_site": ["Raymond Graceffo", "Glenn Kanarick", "Garrett Mitchell", "Chris Rocha"], "note": "Apollo match_confidence none, no email anywhere. Copy is written and waiting on an address." },
-    { "company": "Imaginist", "domain": "imaginist.ai", "names_on_site": [], "note": "No named person on site, in Harmonic or in Apollo. Only sales@ / info@." },
-    { "company": "Nativeorange", "domain": "nativeorange.ai", "names_on_site": [], "note": "No named person anywhere. Only sales@." },
-    { "company": "Magier AI", "domain": "magier.ai", "names_on_site": ["Ranice Brown"], "note": "Only email on record is @mastersequitypartners.com. Also GenAI compliance rather than insurance, so worth a second look on fit." }
+    {
+      "company": "ARKK Labs",
+      "domain": "arkklabs.com",
+      "names_on_site": [
+        "Raymond Graceffo",
+        "Glenn Kanarick",
+        "Garrett Mitchell",
+        "Chris Rocha"
+      ],
+      "note": "Apollo match_confidence none, no email anywhere. Copy is written and waiting on an address."
+    },
+    {
+      "company": "Imaginist",
+      "domain": "imaginist.ai",
+      "names_on_site": [],
+      "note": "No named person on site, in Harmonic or in Apollo. Only sales@ / info@."
+    },
+    {
+      "company": "Nativeorange",
+      "domain": "nativeorange.ai",
+      "names_on_site": [],
+      "note": "No named person anywhere. Only sales@."
+    },
+    {
+      "company": "Magier AI",
+      "domain": "magier.ai",
+      "names_on_site": [
+        "Ranice Brown"
+      ],
+      "note": "Only email on record is @mastersequitypartners.com. Also GenAI compliance rather than insurance, so worth a second look on fit."
+    }
   ],
   "contacts": [
     {
@@ -321,5 +358,44 @@
     "thread_id": "1a035956a5b04f98",
     "why": "Replied Sep 1 saying he is thinking about raising soon and asked to chat, then went quiet after the Sep 3 nudge. Reply on the live thread, not a cold sequence.",
     "body": "Hey Murtaza - circling back on this. Chris and I will both be at ITC next week, are you going to be out there? Would be great to finally meet in person and pick up the raise conversation properly.\n\nIf you are not going, happy to just grab time on the calendar instead. LMK what is easier."
+  },
+  "progress": {
+    "e1": {
+      "sent_on": "2026-09-20",
+      "count": 21,
+      "note": "Calvin sent all 21 himself, two days ahead of plan. He rewrote most Block 2 insights at send time, so the insight text in contacts[] is the drafted version, not the sent version."
+    },
+    "e2": {
+      "drafted_on": "2026-09-21",
+      "count": 18,
+      "note": "Reply drafts in Superhuman, to be sent the morning of 2026-09-22."
+    },
+    "e3": {
+      "drafted": false,
+      "due": "2026-09-29"
+    }
+  },
+  "replied": [
+    {
+      "company": "Prediction Lab",
+      "contact": "Ryan Steil",
+      "outcome": "Meeting confirmed Tue 2026-09-29 10:00 PT, booth K-25."
+    },
+    {
+      "company": "Braven",
+      "contact": "Carlos Chavez",
+      "outcome": "Happy to meet, knows Claire and Nicole. Calvin offered Tue 9/29, awaiting his time."
+    },
+    {
+      "company": "Onyx Platform",
+      "contact": "Allison Arzeno",
+      "outcome": "Not at ITC, not raising. At Protectors in November. Has agency customers who are raising."
+    }
+  ],
+  "contact_overrides_at_send": {
+    "Growth Protocol": "miro@growthprotocol.ai (Miroslav Dimitrov), not jeff.schumacher@parthenon.ey.com",
+    "Clasp": "amar@clasp.ai, not amar@withclasp.com",
+    "Alpharun": "paul@alpharun.com, not henry@alpharun.com",
+    "Symphony": "new thread 1a0c023cd2290f9d rather than a reply on the old Aug thread"
   }
 }
