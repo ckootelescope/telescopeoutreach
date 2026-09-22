@@ -67,6 +67,10 @@ function step1(project, block, contact) {
 }
 
 function step2(contact) {
+  // A cohort can override this. The fixed template offers a calendar link for
+  // "next week", which is the wrong ask when the whole cadence runs inside a
+  // conference and the meeting is meant to happen in person.
+  if (contact.step2_html) return P([sub(contact.step2_html, contact)]);
   return P(['Hey ' + esc(contact.first_name) + ' - wanted to follow up - are you free for a chat ' +
     'next week? Here is my <a href="' + CALENDLY + '">calendar link</a> if helpful - would love to chat!']);
 }

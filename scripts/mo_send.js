@@ -33,6 +33,10 @@ const CAP = capArg ? Number(capArg.slice(6)) : 60;      // global sends per day
 // can slip a day at no cost. Off by default; the daily runner passes it.
 const FIRST_FIRST = process.argv.includes('--first-first');
 const FORCE = process.argv.includes('--force');
+// Scope a run to the LinkedIn URLs in one staging file. Without it a manual run
+// sends everything that is due on the project, which is rarely what is meant
+// when the reason for running by hand is one batch.
+const batchArg = process.argv.find(a => a.startsWith('--batch='));
 const ME = 'calvin@telescopepartners.com';
 const ME_NAME = 'Calvin Koo';
 const MIN_GAP_MS = 4 * 60e3, MAX_GAP_MS = 7 * 60e3;
@@ -109,6 +113,19 @@ async function main() {
   const params = [];
   let where = '';
   if (projArg) { params.push(projArg.slice(10)); where = ' and d.project_slug = $1'; }
+  let batchUrls = null;
+  if (batchArg) {
+    const normUrl = u => String(u || '')
+      .replace(/^https?:\/\/(www\.)?/, '').replace(/\/+$/, '').toLowerCase();
+    const j = JSON.parse(require('fs').readFileSync(batchArg.slice(8), 'utf8'));
+    batchUrls = new Set((j.contacts || []).map(x => normUrl(x.linkedin_url)));
+    if (!batchUrls.size) { console.error('no linkedin_url entries in ' + batchArg.slice(8)); process.exit(1); }
+    params.push([...batchUrls]);
+    where += ` and lower(regexp_replace(regexp_replace(
+      (select ct.linkedin_url from market.contact ct where ct.id = d.contact_id),
+      '^https?://(www\\.)?',''),'/+$','')) = any($${params.length}::text[])`;
+  }
+
   const due = await c.query(
     `select d.*, p.anchor_company, p.industry, p.industry_label, p.fu3_insight_html,
             s.body_html, s.subject, s.status step_status

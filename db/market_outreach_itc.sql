@@ -27,3 +27,9 @@ comment on column market.contact.subject_override is
   'Per-contact subject, beats project.subject_override. Use for a batch with its own framing.';
 comment on column market.contact.cta_html is
   'Per-contact step-1 ask, beats project.cta_html.';
+
+-- A cohort can also carry its own Email 2. The fixed template asks for a call
+-- "next week", which is wrong once the whole cadence sits inside a conference.
+alter table market.contact add column if not exists step2_html text;
+comment on column market.contact.step2_html is
+  'Per-contact Email 2 body, beats the fixed template in mo_render. [First] is substituted.';
