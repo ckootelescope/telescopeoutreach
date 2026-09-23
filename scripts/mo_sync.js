@@ -26,7 +26,13 @@ const HEADERS = ['From', 'To', 'Subject', 'Date', 'Auto-Submitted', 'X-Autoreply
 const addrs = s => (String(s || '').match(/[\w.+-]+@[\w.-]+/g) || []).map(x => x.toLowerCase());
 const hdrs = m => { const h = {}; (m.payload?.headers || []).forEach(x => h[x.name.toLowerCase()] = x.value); return h; };
 
-const isBounce = from => /mailer-daemon|postmaster/i.test(from);
+const isBounce = from => /mailer-?daemon|postmaster|mails*deliverys*(subsystem|system)/i.test(from);
+/** RFC 3834: a delivery failure reports itself in Auto-Submitted, and many
+ *  MTAs also name the dead address in X-Failed-Recipients. Either is decisive,
+ *  and both arrive looking like an auto-reply, which is how a hard bounce used
+ *  to be filed as an out-of-office and pushed +5 days instead of stopped. */
+const isDsnFailure = h => /failure|failed/i.test(String(h['auto-submitted'] || '')) ||
+  Boolean(h['x-failed-recipients']);
 const isUs = from => /@telescopepartners\.com$/i.test(from);
 const isRobot = from => /calendar-notification|no-?reply|noreply|notifications?@/i.test(from);
 
@@ -84,11 +90,12 @@ async function main() {
 
   const classify = (row, m, h) => {
     const from = addrs(h.from)[0] || '';
-    if (!from || isUs(from) || isRobot(from)) return;
+    if (!from || isUs(from) || (isRobot(from) && !isBounce(from) && !isDsnFailure(h))) return;
     const key = row.id + ':' + m.id;
     if (seen.has(key)) return;
     seen.add(key);
     const rec = { row, from, subject: h.subject || '', ts: Number(m.internalDate), id: m.id, thread: m.threadId };
+    if (isBounce(from) || isDsnFailure(h)) { if (!bounces.has(row.id)) bounces.set(row.id, rec); return; }
     if (isAutoReply(h)) { if (!oooes.has(row.id)) oooes.set(row.id, rec); return; }
     if (isBulk(h)) { bulks.push(rec); return; }
     if (isInviteNoise(h)) return;
@@ -120,7 +127,7 @@ async function main() {
   }
 
   // Bounces - one sweep, matched by the address named inside the DSN.
-  for (const stub of await gmailList(t, `from:(mailer-daemon OR postmaster) newer_than:${LOOKBACK}d`)) {
+  for (const stub of await gmailList(t, `from:(mailer-daemon OR mailerdaemon OR postmaster OR "mail delivery subsystem") newer_than:${LOOKBACK}d`)) {
     const m = await gmailMeta(t, stub.id);
     if (!m) continue;
     const hay = ((m.snippet || '') + ' ' + (hdrs(m).subject || '')).toLowerCase();
@@ -204,8 +211,10 @@ async function main() {
     await c.query(`update market.contact set status='replied', ended_on=pt_today() where id=$1`, [rec.row.id]); }
   for (const rec of oooes.values()) { await record(rec, 'ooo'); }
   for (const rec of bulks) { await record(rec, 'bulk'); }
-  for (const b of bounces.values())
+  for (const b of bounces.values()) {
+    if (b.id) await record(b, 'bounce');
     await c.query(`update market.contact set status='bounced', ended_on=pt_today() where id=$1`, [b.row.id]);
+  }
   for (const b of bookings.values())
     await c.query(`update market.contact set status='booked', ended_on=pt_today() where id=$1`, [b.row.id]);
 
