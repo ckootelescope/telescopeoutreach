@@ -171,7 +171,15 @@ async function main() {
   const room = Math.max(0, CAP - sentToday);
 
   const ready = [], blocked = [];
+  // One step per contact per run, always. A contact whose cadence fell behind
+  // can have two or three steps past due at once, and the ordering below puts
+  // them adjacent, so without this the same person gets Email 2 and Email 3
+  // minutes apart. The cadence is the point; catching it up in one burst
+  // destroys it.
+  const seenContact = new Set();
   for (const r of due.rows) {
+    if (seenContact.has(r.contact_id)) continue;
+    seenContact.add(r.contact_id);
     if (!r.body_html) {
       blocked.push({ r, why: r.step_no === 4 ? 'step 4 has no body: project insight not authored' : 'no body' });
       continue;

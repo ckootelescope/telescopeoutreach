@@ -1,0 +1,65 @@
+name: outreach
+
+# The heartbeat. See OS-ARCHITECTURE.md section 3.3.
+#
+# This runs here rather than on Calvin's laptop because the laptop version did
+# not work. Two Windows scheduled tasks fired every morning for months and
+# failed every time: one pointed at a script deleted in July, the other had an
+# unquoted path that Windows split at the space in "Calvin Koo". Both reported
+# "Ready". Nothing read the exit codes.
+#
+# Actions runs whether or not the laptop is open, keeps a log of every run, and
+# cannot silently skip a day.
+
+on:
+  schedule:
+    # Every 15 minutes, 14:00-02:00 UTC, which is 07:00-19:00 Pacific: the send
+    # window mo_send enforces anyway. No point waking up to be refused.
+    - cron: '*/15 14-23 * * 1-5'
+    - cron: '*/15 0-2  * * 2-6'
+    # The daily pulse, 07:30 Pacific.
+    - cron: '30 14 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'Single job to run (ear, send, health). Blank runs the normal tick.'
+        required: false
+        type: string
+
+concurrency:
+  # Two senders at once is how the same person gets the same follow-up twice.
+  # mo_lock guards the local case; this guards the CI case. Never cancel a run
+  # in flight: it may be between a Gmail send and the row that records it.
+  group: outreach-heartbeat
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - run: npm ci --omit=dev
+
+      - name: Run
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          set -euo pipefail
+          if [ -n "${{ inputs.job }}" ]; then
+            node scripts/tick.js --job=${{ inputs.job }}
+          elif [ "${{ github.event.schedule }}" = "30 14 * * 1-5" ]; then
+            node scripts/tick.js --job=health
+          else
+            node scripts/tick.js
+          fi

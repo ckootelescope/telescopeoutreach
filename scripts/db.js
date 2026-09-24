@@ -1,10 +1,14 @@
 const fs=require('fs'),path=require('path');
 const {Client}=require('pg');
 function url(){
+  // Real environment wins, so CI can pass secrets without writing them to disk.
+  // The .env file stays the local path and is optional rather than required.
   const env={};
-  fs.readFileSync(path.join(__dirname,'..','.env'),'utf-8').split(/\r?\n/).forEach(l=>{const i=l.indexOf('=');if(i>0)env[l.slice(0,i).trim()]=l.slice(i+1).trim();});
-  const u=env.SUPABASE_DB_URL||env.DATABASE_URL;
-  if(!u)throw new Error('SUPABASE_DB_URL not set in .env');
+  try{
+    fs.readFileSync(path.join(__dirname,'..','.env'),'utf-8').split(/\r?\n/).forEach(l=>{const i=l.indexOf('=');if(i>0)env[l.slice(0,i).trim()]=l.slice(i+1).trim();});
+  }catch(e){ if(e.code!=='ENOENT') throw e; }
+  const u=process.env.SUPABASE_DB_URL||process.env.DATABASE_URL||env.SUPABASE_DB_URL||env.DATABASE_URL;
+  if(!u)throw new Error('SUPABASE_DB_URL not set in the environment or .env');
   return u;
 }
 async function raw(){

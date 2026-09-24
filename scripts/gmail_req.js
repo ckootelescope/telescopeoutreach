@@ -73,10 +73,20 @@ async function gate() {
   }
 }
 
+/**
+ * Config, real environment first so CI can pass secrets without writing a .env
+ * to the runner's disk. The file remains the local path and is optional.
+ */
 function envv() {
   const e = {};
-  fs.readFileSync(path.join(ROOT, '.env'), 'utf8').split(/\r?\n/)
-    .forEach(l => { const i = l.indexOf('='); if (i > 0) e[l.slice(0, i).trim()] = l.slice(i + 1).trim(); });
+  try {
+    fs.readFileSync(path.join(ROOT, '.env'), 'utf8').split(/\r?\n/)
+      .forEach(l => { const i = l.indexOf('='); if (i > 0) e[l.slice(0, i).trim()] = l.slice(i + 1).trim(); });
+  } catch (err) { if (err.code !== 'ENOENT') throw err; }
+  for (const k of ['GMAIL_CLIENT_ID', 'GMAIL_CLIENT_SECRET', 'GMAIL_REFRESH_TOKEN',
+                   'SLACK_WEBHOOK_URL', 'SUPABASE_DB_URL']) {
+    if (process.env[k]) e[k] = process.env[k];
+  }
   return e;
 }
 

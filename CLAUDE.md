@@ -13,7 +13,9 @@ The app is **Telescope OS**: Dashboard, Week, Hard to Crack, Investors, Outreach
 - Schema: `db/schema.sql`. Tables are `company`, `company_domain`, `contact`, `sequence`,
   `step`, `email_event`, `prior_check`. Reporting views are `dash_*`, `an_*`, and `v_*`
   (defined in `db/views.sql`, `db/dashboard.sql`, `db/analytics.sql`).
-- Console: Next.js app in `web/`, deployed on Vercel with root directory `web`. Read-only.
+- Console: Next.js app in `web/`, deployed on Vercel with root directory `web`. It reads
+  through views and writes through server actions in `web/app/actions.ts`; `api/week/chat`
+  is an LLM planner with a deliberately bounded tool surface. It is not read-only.
   Its queries live in the database as views, so the app stays a rendering layer.
 - Dates are stored at 07:00Z, which is midnight Pacific. Measure "today" in Pacific.
 
@@ -398,7 +400,9 @@ paragraph is a theme-matched thesis rather than a company-specific observation.
 ## Follow-up Processing
 
 1. **Manual:** Calvin runs `/process-followups`
-2. **Scheduled:** A Claude Code routine runs daily (~8am PT) with the same logic
+2. **Scheduled:** The robot reconciles automatically. `scripts/tick.js` runs the ear and
+   the sender; see `OS-ARCHITECTURE.md`. Drafting still needs a human because creating a
+   Superhuman draft needs an MCP tool, which no cron can call.
 
 Both work off Supabase. What is due comes from the `v_due` view, not from scanning
 `followups.json`. See `.claude/commands/process-followups.md`.
