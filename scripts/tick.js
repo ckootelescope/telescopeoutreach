@@ -38,10 +38,49 @@ const JOBS = {
   // Dashboard intents. Cheap, and the only place the web tier reaches Gmail.
   queue:  ['scripts/queue.js', '--apply'],
   health: ['scripts/health.js', '--apply'],
+  // One Gmail call. Runs before anything else once a throttle backoff expires.
+  probe:  ['scripts/gmail_probe.js'],
 };
 
 const DEFAULT = ['ear', 'queue', 'send'];
 const EX_TEMPFAIL = 75;
+
+// Jobs that call the Gmail API. All of them share one per-user rate limit.
+const GMAIL = new Set(['ear', 'send', 'queue', 'health', 'probe']);
+
+// Minutes of total Gmail silence after the Nth throttle in a row. Once Google
+// throttles this mailbox, every call made while throttled restarts a 15-minute
+// penalty, and waiting until the "Retry after" time and trying again failed
+// three times running on 2026-09-24. A 15-minute tick that made even one call
+// would keep the mailbox locked forever. So the robot goes quiet for longer
+// than the penalty, longer again on each repeat, and then sends one probe.
+const BACKOFF_MIN = [30, 60, 120, 240];
+
+/**
+ * The Gmail gate, persisted in job_run so it survives between runs. The last
+ * process's in-memory gate (gmail_req's quotaUntil) dies with the process, which
+ * is why every tick used to start blind.
+ *
+ * The streak counts consecutive throttled Gmail jobs, newest first. Only an 'ok'
+ * from ear or probe ends it, because those always call Gmail; an 'ok' from send
+ * or queue can mean there was nothing to do and Gmail was never asked.
+ */
+async function gmailGate(c) {
+  const rows = (await c.query(
+    `select job, status, coalesce(finished_at, started_at) as ts
+       from job_run
+      where job = any($1) and status in ('ok', 'throttled')
+      order by id desc limit 50`, [[...GMAIL]])).rows;
+  let strikes = 0, last = null;
+  for (const r of rows) {
+    if (r.status === 'throttled') { strikes++; last = last || r.ts; continue; }
+    if (r.job === 'ear' || r.job === 'probe') break;
+  }
+  if (!strikes) return { open: true, strikes: 0 };
+  const wait = BACKOFF_MIN[Math.min(strikes, BACKOFF_MIN.length) - 1];
+  const until = new Date(last).getTime() + wait * 60e3;
+  return { open: Date.now() >= until, strikes, until, probe: true };
+}
 
 async function main() {
   const wanted = jobArg ? [jobArg.slice(6)] : DEFAULT;
@@ -52,13 +91,41 @@ async function main() {
   if (DRY) {
     console.log('would run: ' + wanted.join(', '));
     wanted.forEach(j => console.log('  ' + j.padEnd(8) + 'node ' + JOBS[j].join(' ')));
+    const c = await connect();
+    const g = await gmailGate(c);
+    await c.end();
+    console.log('gmail gate: ' + (g.open ? 'open' : 'closed') + (g.strikes
+      ? `, ${g.strikes} throttle(s) in a row, ${g.open ? 'probe first' : 'silent until ' + new Date(g.until).toISOString()}`
+      : ''));
     return;
   }
 
   const c = await connect();
   let worst = 0;
+  let gmailShut = false;
+
+  // Consult the gate before any Gmail job. Closed: record the skip and touch
+  // nothing. Just reopened: probe first, and only a clear probe lets jobs run.
+  if (wanted.some(j => GMAIL.has(j)) && !wanted.includes('probe')) {
+    const g = await gmailGate(c);
+    if (!g.open) {
+      gmailShut = true;
+      const until = new Date(g.until).toISOString();
+      await c.query(
+        `insert into job_run (job, runner, status, finished_at, counts)
+         values ('gate', 'robot', 'skipped', now(), $1)`,
+        [JSON.stringify({ strikes: g.strikes, until })]);
+      console.log(`[gate] Gmail throttled ${g.strikes}x in a row, silent until ${until}`);
+    } else if (g.probe) {
+      wanted.unshift('probe');
+    }
+  }
 
   for (const job of wanted) {
+    if (gmailShut && GMAIL.has(job)) {
+      console.log(`[${job}] skipped, Gmail gate closed`);
+      continue;
+    }
     const run = (await c.query(
       `insert into job_run (job, runner, status) values ($1, 'robot', 'running') returning id`,
       [job])).rows[0].id;
@@ -97,6 +164,12 @@ async function main() {
     // A throttle is not worth failing the whole tick over, and the next tick is
     // fifteen minutes away. A real failure should be visible to the scheduler.
     if (status === 'failed') worst = 1;
+
+    // One throttle closes Gmail for the rest of this tick. Carrying on to the
+    // next job is one more call into a live penalty, which restarts it.
+    if (status === 'throttled' && GMAIL.has(job)) gmailShut = true;
+    // A probe that is not clear, for any reason, is not permission to send.
+    if (job === 'probe' && status !== 'ok') gmailShut = true;
   }
 
   await c.end();
