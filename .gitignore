@@ -3,3 +3,9 @@
 dashboard.html
 node_modules/
 _*.json
+
+# One-off exports shared by hand. Never committed.
+exports/
+# Session scratch written to the repo root.
+/_*.json
+.mo-gmail.lock

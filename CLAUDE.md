@@ -397,12 +397,31 @@ paragraph is a theme-matched thesis rather than a company-specific observation.
   **Hard-To-Crack** view. That view overlaps Active Outreach, so it must be checked explicitly
   rather than assumed disjoint.
 
+## What Runs Where
+
+This is the complete list. If something is not here, it is not scheduled.
+
+| Runner | Where | When | Does |
+|---|---|---|---|
+| The robot | GitHub Actions, `.github/workflows/outreach.yml` → `scripts/tick.js` | Every 15 min, weekdays | Ear (reconcile sends and replies), market sends, `action_queue`, daily health pulse. Every run writes a `job_run` row |
+| Daily Follow-up Processor | claude.ai cloud routine | 8am PT daily | Drafts due company follow-ups in Superhuman. Reads `followups.json` from the remote |
+| Weekly team email | claude.ai cloud routine | Sundays 8am PT | Drafts Calvin's weekly update |
+| Briefs | `/briefs` in a session | On demand | Pre-call briefs, written via `scripts/brief_write.js` |
+
+**There are no Windows scheduled tasks.** `TelescopeFollowupScheduler` and
+`TelescopeMarketOutreachDaily` were retired on 2026-09-24. Their full mailbox sweeps
+exhausted the Gmail per-user rate limit that the robot shares. Do not recreate them, and do
+not run full sweeps (`mo_sync.js`, `sync_replies.js`) by hand while the robot is running
+unless the ear is broken.
+
+Gmail's rate limit is per user and shared by everything using these OAuth credentials. When
+`job_run` shows `throttled`, look for another caller before touching code.
+
 ## Follow-up Processing
 
 1. **Manual:** Calvin runs `/process-followups`
-2. **Scheduled:** The robot reconciles automatically. `scripts/tick.js` runs the ear and
-   the sender; see `OS-ARCHITECTURE.md`. Drafting still needs a human because creating a
-   Superhuman draft needs an MCP tool, which no cron can call.
+2. **Scheduled:** see "What Runs Where". Drafting still needs a human, or a Claude session,
+   because creating a Superhuman draft needs an MCP tool, which no cron can call.
 
 Both work off Supabase. What is due comes from the `v_due` view, not from scanning
 `followups.json`. See `.claude/commands/process-followups.md`.
