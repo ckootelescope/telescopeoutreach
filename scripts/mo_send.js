@@ -19,7 +19,11 @@
  */
 const crypto = require('crypto');
 const { connect } = require('./db');
-const { req, token } = require('./gmail_req');
+const { req, token, isParked, throttledUntil } = require('./gmail_req');
+
+// Errors that mean "try again later", never "this step is dead". Anything not
+// matching here is treated as permanent and does mark the step failed.
+const TRANSIENT = /\b(429|503|502|504|500)\b|rate ?limit|quota|timeout|ETIMEDOUT|ECONNRESET|EAI_AGAIN|socket hang up|throttled/i;
 const { guard, toText } = require('./mo_render');
 const lock = require('./mo_lock');
 
@@ -33,6 +37,16 @@ const CAP = capArg ? Number(capArg.slice(6)) : 60;      // global sends per day
 // can slip a day at no cost. Off by default; the daily runner passes it.
 const FIRST_FIRST = process.argv.includes('--first-first');
 const FORCE = process.argv.includes('--force');
+// Stateless by default. A tick sends at most TICK_MAX, writes send_after onto
+// the next step so the pacing survives the process, and exits in seconds.
+//
+// The old behaviour was one process that slept 4 to 7 minutes between sends for
+// up to five hours. It could not survive a laptop closing, a memory reap or a
+// deploy, and on 2026-09-23 a reap killed a 60-step batch after zero sends.
+// --drain keeps that behaviour for a deliberate manual push.
+const DRAIN = process.argv.includes('--drain');
+const maxArg = process.argv.find(a => a.startsWith('--max='));
+const TICK_MAX = maxArg ? Number(maxArg.slice(6)) : 3;
 // Scope a run to the LinkedIn URLs in one staging file. Without it a manual run
 // sends everything that is due on the project, which is rarely what is meant
 // when the reason for running by hand is one batch.
@@ -167,12 +181,17 @@ async function main() {
     ready.push(r);
   }
 
-  const toSend = ready.slice(0, room);
-  const held = ready.slice(room);
+  // A tick takes a small bite; a drain takes the whole day's room.
+  const budget = DRAIN ? room : Math.min(room, TICK_MAX);
+  const toSend = ready.slice(0, budget);
+  const held = ready.slice(budget);
 
   console.log('due: ' + due.rows.length + '   sent today: ' + sentToday + '/' + CAP +
-              '   will send: ' + toSend.length + (held.length ? '   deferred to tomorrow: ' + held.length : ''));
-  console.log('spacing: ' + (MIN_GAP_MS / 60e3) + '-' + (MAX_GAP_MS / 60e3) + ' min between sends\n');
+              '   will send: ' + toSend.length + (held.length ? '   still queued: ' + held.length : '') +
+              (DRAIN ? '   [drain]' : '   [tick, max ' + TICK_MAX + ']'));
+  console.log(DRAIN
+    ? 'spacing: ' + (MIN_GAP_MS / 60e3) + '-' + (MAX_GAP_MS / 60e3) + ' min between sends, in-process\n'
+    : 'spacing: ' + (MIN_GAP_MS / 60e3) + '-' + (MAX_GAP_MS / 60e3) + ' min, carried on step.send_after\n');
   for (const r of toSend) {
     console.log('  E' + r.step_no + '  ' + String(r.full_name).padEnd(22) + String(r.email).padEnd(32) +
                 r.project_slug + '  due ' + String(r.due_date).slice(0, 10));
@@ -224,7 +243,7 @@ async function main() {
     if (Date.now() - tokenAt > TOKEN_TTL_MS) { t = await token(); tokenAt = Date.now(); }
     return t;
   };
-  let ok = 0, fail = 0, nudges = 0;
+  let ok = 0, fail = 0, nudges = 0, throttled = false;
 
   for (let i = 0; i < toSend.length; i++) {
     const r = toSend[i];
@@ -303,22 +322,55 @@ async function main() {
         }
       }
     } catch (e) {
+      const msg = String(e.message);
+      // A throttle is not a failure of this step. Put the row back exactly as it
+      // was and stop the run: the queue is intact and the next tick retries it.
+      // Writing 'failed' here is what killed six real steps on 2026-09-23 over a
+      // rate limit that cleared on its own.
+      if (TRANSIENT.test(msg) || isParked()) {
+        await c.query(`update market.step set status='planned' where id=$1 and status='sending'`,
+          [r.step_id]).catch(() => {});
+        const until = throttledUntil();
+        throttled = true;
+        console.log('  THROTTLED at E' + r.step_no + ' ' + r.full_name + '; step left planned.');
+        if (until) console.log('  Gmail asked us back at ' + new Date(until).toISOString() + '. Stopping.');
+        break;
+      }
       fail++;
       await c.query(`update market.step set status='failed', fail_reason=$2 where id=$1`,
-        [r.step_id, String(e.message).slice(0, 300)]).catch(() => {});
-      console.log('  FAIL  E' + r.step_no + '  ' + r.full_name + ': ' + e.message);
+        [r.step_id, msg.slice(0, 300)]).catch(() => {});
+      console.log('  FAIL  E' + r.step_no + '  ' + r.full_name + ': ' + msg);
     }
 
     if (i < toSend.length - 1) {
       const gap = jitter();
-      console.log('    ... waiting ' + Math.round(gap / 60e3) + ' min');
-      await sleep(gap);
+      if (DRAIN) {
+        console.log('    ... waiting ' + Math.round(gap / 60e3) + ' min');
+        await sleep(gap);
+      } else {
+        // Hand the pacing to the database and let the next tick pick it up.
+        await c.query(`update market.step set send_after = now() + ($2 || ' milliseconds')::interval
+                        where id = $1`, [toSend[i + 1].step_id, gap]);
+      }
     }
   }
 
-  console.log('\nsent ' + ok + ', failed ' + fail + ', nudge drafts ' + nudges);
-  if (held.length) console.log(held.length + ' held by the daily cap, will go tomorrow');
+  // Whatever this tick did not reach still needs pacing, or the next tick would
+  // fire the whole remainder at once.
+  if (!DRAIN && !throttled) {
+    let offset = jitter();
+    for (const r of held) {
+      await c.query(`update market.step set send_after = now() + ($2 || ' milliseconds')::interval
+                      where id = $1 and send_after is null`, [r.step_id, offset]);
+      offset += jitter();
+    }
+  }
+
+  console.log('\nsent ' + ok + ', failed ' + fail + ', nudge drafts ' + nudges +
+              (throttled ? ', STOPPED ON THROTTLE' : ''));
+  if (held.length) console.log(held.length + ' still queued; the next tick takes them.');
   await c.end();
+  if (throttled) process.exitCode = 75;   // EX_TEMPFAIL: try again, do not alert
 }
 
 main().catch(e => { console.error('ERR ' + e.message); process.exit(1); });
