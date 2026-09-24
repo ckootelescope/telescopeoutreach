@@ -49,6 +49,14 @@ create or replace view v_job_health as
 --
 -- Null send_after means "no pacing constraint", so every step staged before
 -- this migration stays sendable and nothing needs backfilling.
+--
+-- The sending rules live here, not in mo_send, so every sender that reads this
+-- view obeys them, including a CI shift still running older code:
+--   * only a contact's next step, and never one below a step already sent, so a
+--     backlog cannot send Email 4 and then Email 3
+--   * at least two days since that contact's last send, so a backlog resumes at
+--     the normal cadence instead of one email a tick
+--   * one row at a time, so a tick sends one email and spacing is the tick gap
 create or replace view market.v_due as
   select st.id step_id, st.contact_id, st.step_no, st.due_date, st.send_after,
          ct.project_id, ct.full_name, ct.first_name, ct.email, ct.angle,
@@ -60,7 +68,17 @@ create or replace view market.v_due as
      and ct.status in ('active','queued')
      and ct.method = 'email'
      and st.due_date <= pt_today()
-     and (st.send_after is null or st.send_after <= now());
+     and (st.send_after is null or st.send_after <= now())
+     and st.step_no = (select min(x.step_no) from market.step x
+                        where x.contact_id = st.contact_id and x.status = 'planned')
+     and not exists (select 1 from market.step x
+                      where x.contact_id = st.contact_id
+                        and x.status in ('sent','sending')
+                        and (x.step_no >= st.step_no
+                             or x.status = 'sending'
+                             or x.sent_at > now() - interval '2 days'))
+   order by p.send_priority, st.step_no desc, st.due_date, st.contact_id
+   limit 1;
 
 comment on view market.v_due is
-  'Steps a send tick may claim right now. send_after is the pacing gate; due_date is the cadence.';
+  'The one step a send tick may claim right now: next step only, 2+ days since the contact''s last send, project priority first.';
