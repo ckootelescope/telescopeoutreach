@@ -58,6 +58,13 @@ function output(next) {
 }
 
 function tick(args = []) {
+  // A shift lasts hours. Take the latest pushed code before every run so a fix
+  // is live within 15 minutes instead of at the next shift. CI only: locally
+  // this would discard uncommitted work.
+  if (process.env.GITHUB_ACTIONS === 'true') {
+    const f = spawnSync('git', ['fetch', '--depth=1', '-q', 'origin', 'main'], { cwd: ROOT, stdio: 'inherit' });
+    if (f.status === 0) spawnSync('git', ['reset', '--hard', '-q', 'FETCH_HEAD'], { cwd: ROOT, stdio: 'inherit' });
+  }
   const r = spawnSync(process.execPath, ['scripts/tick.js', ...args], { cwd: ROOT, stdio: 'inherit', timeout: 13 * 60e3 });
   return r.status;
 }

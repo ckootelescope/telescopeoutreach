@@ -74,6 +74,11 @@ async function main() {
      union select thread_id from market.step where thread_id is not null`)).rows) {
     threads.add(r.id);
   }
+  // mo_send records its own sends as it makes them, so our outbound on a market
+  // thread is never news. Counting it as news ran the full sweeps after every
+  // send and kept the mailbox rate-limited.
+  const marketThreads = new Set((await c.query(
+    `select distinct thread_id id from market.step where thread_id is not null`)).rows.map(r => r.id));
 
   const cur = (await c.query(`select history_id from mail_cursor where id = 1`)).rows[0];
 
@@ -115,7 +120,11 @@ async function main() {
     }
     const j = JSON.parse(r.b);
     for (const h of (j.history || [])) {
-      for (const a of (h.messagesAdded || [])) ids.push(a.message);
+      for (const a of (h.messagesAdded || [])) {
+        const m = a.message;
+        if ((m.labelIds || []).includes('SENT') && marketThreads.has(m.threadId)) continue;
+        ids.push(m);
+      }
     }
     pageToken = j.nextPageToken;
     if (j.historyId) cur.next = j.historyId;
@@ -164,6 +173,20 @@ async function main() {
     return;
   }
 
+  // The full sweeps cost hundreds of calls, so they run at most once an hour.
+  // Nothing sends to a contact within two days of the last send, so an hour's
+  // delay in seeing a reply can never let a follow-up through. A skipped run
+  // leaves the cursor where it is, so the same mail is seen again next time.
+  const lastFull = (await c.query(
+    `select max(started_at) at from job_run
+      where job = 'ear' and status = 'ok' and counts->>'reconciled' = 'true'`)).rows[0].at;
+  const recent = lastFull && Date.now() - lastFull.getTime() < 60 * 60e3;
+
+  if (relevant.length && recent) {
+    console.log('relevant mail waiting, reconcilers skipped until the hourly sweep');
+    await c.end();
+    return;
+  }
   if (relevant.length) reconcile(known.size, threads.size);
   else console.log('nothing relevant, reconcilers skipped');
 
