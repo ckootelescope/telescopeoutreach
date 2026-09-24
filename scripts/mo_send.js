@@ -147,7 +147,7 @@ async function main() {
        join market.step s on s.id = d.step_id
        join market.project p on p.id = d.project_id
       where true${where}
-      order by ${FIRST_FIRST ? '(d.step_no = 1) desc, ' : ''}d.step_no desc, d.due_date, d.contact_id`, params);
+      order by p.send_priority, ${FIRST_FIRST ? '(d.step_no = 1) desc, ' : ''}d.step_no desc, d.due_date, d.contact_id`, params);
 
   // A row left in 'sending' means a process died between claiming it and
   // recording the result, so nobody knows whether the mail actually went out.
