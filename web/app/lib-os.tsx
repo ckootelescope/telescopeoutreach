@@ -22,6 +22,9 @@ export type Meeting = {
   org: string | null; counterpart: string | null; title: string | null;
   one_liner: string | null; focus: string | null; conversation_type: string;
   firm: string | null; invests_in: string | null; track: string[] | null;
+  questions: string[] | null; sources: string[] | null; prep_note: string | null;
+  generated_at: string | null; generated_by: string | null;
+  brief_ready: boolean; needs_brief: boolean;
 };
 
 export const clock = (min: number) => {
@@ -118,10 +121,35 @@ export function MeetingRow({ m }: { m: Meeting }) {
           {m.org ?? m.summary}
           {m.counterpart && m.counterpart !== m.org && <em> · {m.counterpart}</em>}
         </span>
+        {m.one_liner && <span className="why">{m.one_liner}</span>}
         <span className="labels">
           <span className={`lab c-${m.category}`}>{LABEL[m.category] ?? m.category}</span>
           {m.deal && <span className="lab deal">{m.deal}</span>}
+          {m.needs_brief && !m.brief_ready && <span className="lab noprep">no prep yet</span>}
         </span>
+        {/*
+          The questions are the point of the page, but three of them under every
+          call turns the day into a wall. A native details element keeps the day
+          scannable and the prep one click away, and needs no client JS, which
+          matters because this is a server component.
+        */}
+        {m.brief_ready && m.questions && (
+          <details className="brief">
+            <summary>Prep</summary>
+            <ol>
+              {m.questions.map((q, i) => <li key={i}>{q}</li>)}
+            </ol>
+            {m.focus && <p className="focus">{m.focus}</p>}
+            {m.prep_note && <p className="note">{m.prep_note}</p>}
+            {/*
+              Shown deliberately. A brief whose provenance is invisible does not
+              get trusted, and an untrusted brief gets ignored.
+            */}
+            {m.sources && m.sources.length > 0 && (
+              <p className="src">from {m.sources.join(', ')}</p>
+            )}
+          </details>
+        )}
       </span>
       <form action={toggleMeeting}>
         <input type="hidden" name="id" value={m.external_id} />
