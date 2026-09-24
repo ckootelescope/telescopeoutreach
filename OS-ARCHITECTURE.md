@@ -136,6 +136,15 @@ fixed they skip silently on a closed laptop.
 
 Actions runs regardless of the laptop, records every run, and retries.
 
+**But not on GitHub's cron.** Added 2026-09-24, after the first morning live: GitHub's
+scheduler is best-effort. It started every July run in this repo 51 minutes to 2h39m
+late and delivered none of the morning's 15-minute slots. So the cron only restarts a
+dead chain. One run holds a shift (`scripts/shift.js`): it ticks on the wall clock for
+about 5h40m, then dispatches its successor through `workflow_dispatch`, which GitHub
+explicitly lets the built-in token trigger. The concurrency group allows one running
+shift and one pending run, so restart crons can't multiply chains. Weekdays 6am-8pm
+Pacific; overnight the chain rests. It costs nothing because the repo is public.
+
 ---
 
 ## 4. The Ear — incremental reconcile

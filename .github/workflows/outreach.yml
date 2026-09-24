@@ -2,41 +2,46 @@ name: outreach
 
 # The heartbeat. See OS-ARCHITECTURE.md section 3.3.
 #
-# This runs here rather than on Calvin's laptop because the laptop version did
-# not work. Two Windows scheduled tasks fired every morning for months and
-# failed every time: one pointed at a script deleted in July, the other had an
-# unquoted path that Windows split at the space in "Calvin Koo". Both reported
-# "Ready". Nothing read the exit codes.
+# GitHub's scheduler cannot keep a 15-minute cadence. It is best-effort: in this
+# repo every July run started 51 minutes to 2h39m late, and on 2026-09-24 it
+# skipped every 15-minute slot all morning. So the cron does not keep time
+# any more. One run holds a shift (scripts/shift.js), ticks on the wall clock,
+# and dispatches its own successor before GitHub's 6-hour job limit. The cron
+# below only restarts a chain that died.
 #
-# Actions runs whether or not the laptop is open, keeps a log of every run, and
-# cannot silently skip a day.
+# Public repo, so Actions minutes are free. The shift only runs weekdays
+# 6am-8pm Pacific; overnight the chain rests and a morning cron restarts it.
 
 on:
   schedule:
-    # Every 15 minutes, 14:00-02:00 UTC, which is 07:00-19:00 Pacific: the send
-    # window mo_send enforces anyway. No point waking up to be refused.
-    - cron: '*/15 14-23 * * 1-5'
-    - cron: '*/15 0-2  * * 2-6'
-    # The daily pulse, 07:30 Pacific.
-    - cron: '30 14 * * 1-5'
+    # Restart net only. Hourly across the window, starting early because GitHub
+    # delivers late; a run that arrives before 6am Pacific waits for the window.
+    # UTC hours cover 6am-8pm Pacific in both PDT and PST.
+    - cron: '7 11-23 * * 1-5'
+    - cron: '7 0-3 * * 2-6'
   workflow_dispatch:
     inputs:
       job:
-        description: 'Single job to run (ear, send, health). Blank runs the normal tick.'
+        description: 'Single job to run (ear, send, queue, health). Blank starts a shift.'
         required: false
         type: string
 
+permissions:
+  contents: read
+  actions: write   # lets the shift dispatch its successor
+
 concurrency:
-  # Two senders at once is how the same person gets the same follow-up twice.
-  # mo_lock guards the local case; this guards the CI case. Never cancel a run
-  # in flight: it may be between a Gmail send and the row that records it.
+  # One shift at a time. A restart cron that fires while a shift is running
+  # waits as the single pending run, and a newer one replaces it, so chains
+  # cannot multiply. Never cancel a run in flight: it may be between a Gmail
+  # send and the row that records it.
   group: outreach-heartbeat
   cancel-in-progress: false
 
 jobs:
-  tick:
+  shift:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 355
     steps:
       - uses: actions/checkout@v4
 
@@ -48,6 +53,7 @@ jobs:
       - run: npm ci --omit=dev
 
       - name: Run
+        id: run
         env:
           SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
           GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
@@ -58,8 +64,15 @@ jobs:
           set -euo pipefail
           if [ -n "${{ inputs.job }}" ]; then
             node scripts/tick.js --job=${{ inputs.job }}
-          elif [ "${{ github.event.schedule }}" = "30 14 * * 1-5" ]; then
-            node scripts/tick.js --job=health
           else
-            node scripts/tick.js
+            node scripts/shift.js
           fi
+
+      # Runs even if the shift step failed, as long as the shift asked for it.
+      # A shift that hit its time limit mid-window must hand over, or the day
+      # goes dark until the next restart cron is delivered.
+      - name: Hand off to the next shift
+        if: always() && steps.run.outputs.next == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run outreach.yml --ref "${{ github.ref_name }}"

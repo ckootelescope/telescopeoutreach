@@ -403,7 +403,7 @@ This is the complete list. If something is not here, it is not scheduled.
 
 | Runner | Where | When | Does |
 |---|---|---|---|
-| The robot | GitHub Actions, `.github/workflows/outreach.yml` → `scripts/tick.js` | Every 15 min, weekdays | Ear (reconcile sends and replies), market sends, `action_queue`, daily health pulse. Every run writes a `job_run` row |
+| The robot | GitHub Actions, `.github/workflows/outreach.yml` → `scripts/shift.js` → `scripts/tick.js` | Every 15 min, weekdays 6am-8pm PT | Ear (reconcile sends and replies), market sends, `action_queue`, daily health pulse at 7:30. Every tick writes `job_run` rows |
 | Daily Follow-up Processor | claude.ai cloud routine | 8am PT daily | Drafts due company follow-ups in Superhuman. Reads `followups.json` from the remote |
 | Weekly team email | claude.ai cloud routine | Sundays 8am PT | Drafts Calvin's weekly update |
 | Briefs | `/briefs` in a session | On demand | Pre-call briefs, written via `scripts/brief_write.js` |
@@ -413,6 +413,12 @@ This is the complete list. If something is not here, it is not scheduled.
 exhausted the Gmail per-user rate limit that the robot shares. Do not recreate them, and do
 not run full sweeps (`mo_sync.js`, `sync_replies.js`) by hand while the robot is running
 unless the ear is broken.
+
+**The robot does not rely on GitHub's cron for timing.** GitHub delivers scheduled runs
+1-2.5h late or drops them. One run holds a ~5h40m shift, ticks on the wall clock, and
+dispatches its own successor; the hourly cron only restarts a dead chain. Do not "fix" late
+runs by adding more cron lines. To check it is alive: `select * from job_run order by id desc
+limit 5` should show a tick within the last 15 minutes during the window.
 
 Gmail's rate limit is per user and shared by everything using these OAuth credentials. When
 `job_run` shows `throttled`, look for another caller before touching code.
