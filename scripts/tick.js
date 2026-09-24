@@ -35,10 +35,12 @@ const JOBS = {
   ear:    ['scripts/ear.js', '--apply'],
   // One small bite. Pacing lives on step.send_after, so this exits in seconds.
   send:   ['scripts/mo_send.js', '--apply'],
+  // Dashboard intents. Cheap, and the only place the web tier reaches Gmail.
+  queue:  ['scripts/queue.js', '--apply'],
   health: ['scripts/health.js', '--apply'],
 };
 
-const DEFAULT = ['ear', 'send'];
+const DEFAULT = ['ear', 'queue', 'send'];
 const EX_TEMPFAIL = 75;
 
 async function main() {
