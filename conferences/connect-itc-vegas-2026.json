@@ -1,0 +1,865 @@
+{
+  "slug": "itc-vegas-2026",
+  "event": "ITC",
+  "where": "Vegas",
+  "dates": "Sep 29 to Oct 1, 2026",
+  "subject": "Meet up at ITC? | Telescope Partners",
+  "email": [
+    "Hey {first} - my Principal Chris and I will be at ITC in Vegas next week and wanted to see if you're free to grab a coffee? For context, we're an early growth (Seed-Series B) VC firm investing out of our third fund ($275M). We were started by a former Sequoia partner and have been spending a lot of time in insurance.",
+    "Would love to hear what you're seeing at {company} and swap notes. LMK if you have 15 minutes between meetings!"
+  ],
+  "linkedin_after_email": "Hey {first} - just sent you an email but would love to meet up at ITC next week if you have time!",
+  "log": [
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/collin-bhojwani",
+      "name": "Collin Bhojwani",
+      "company": "Allianz Life",
+      "email": "collin.bhojwani@allianzlife.com",
+      "route": "email",
+      "draft_ids": [
+        "draft006cc8f37dea9747",
+        "draft00a64eebb391af41"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/taylor-sieverling",
+      "name": "Taylor Sieverling",
+      "company": "Allianz",
+      "email": "taylor.sieverling@allianzlife.com",
+      "route": "email",
+      "draft_ids": [
+        "draft008455c66530034c",
+        "draft00e66b36de3ad047"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/justin-young-95274832",
+      "name": "Justin Young",
+      "company": "Unum",
+      "email": "jyoung3@unum.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00f60a0c6a378949",
+        "draft00570a3232886c48"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/andrew-lerner-217b267",
+      "name": "Andrew Lerner",
+      "company": "IA Capital Group",
+      "email": null,
+      "route": "salesnav",
+      "draft_ids": [
+        "draft0075f4337936db4a"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/ravipnshah",
+      "name": "Ravi Shah",
+      "company": "IA Capital Group",
+      "email": "ravi@iacapgroup.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00702ffdbe044a45",
+        "draft00f6992208569e4f"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/richiecarchia",
+      "name": "Richie Carchia",
+      "company": "Certificial",
+      "email": "rcarchia@certificial.com",
+      "route": "salesnav",
+      "draft_ids": [
+        "draft000e3f777f5b254c"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/rick-viton-8aa16822",
+      "name": "Rick Viton",
+      "company": "IA Capital Group",
+      "email": "rviton@iacapgroup.com",
+      "route": "email",
+      "draft_ids": [
+        "draft0037878d0a400d4e",
+        "draft0045c6a62a06e84b"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/rikardsteiber",
+      "name": "Rikard Steiber",
+      "company": "GoodTrust",
+      "email": "rikard@mygoodtrust.com",
+      "route": "email",
+      "draft_ids": [
+        "draft0061a544f6d09646",
+        "draft00822538aa9e6542"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/cooper-larue",
+      "name": "Cooper Larue",
+      "company": "American Family Ventures",
+      "email": null,
+      "route": "salesnav",
+      "draft_ids": [
+        "draft002058942454db44"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/aaronewebster",
+      "name": "Aaron Webster",
+      "company": "Cameron Ventures",
+      "email": "aaron.webster@cameron.vc",
+      "route": "email",
+      "draft_ids": [
+        "draft00696177216abf4f",
+        "draft007409817da15c40"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/brian-gong-vc",
+      "name": "Brian Gong",
+      "company": "Cameron Ventures",
+      "email": "brian.gong@cameron.vc",
+      "route": "email",
+      "draft_ids": [
+        "draft00bee392e3123a4e",
+        "draft00925619a723aa41"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/amanda-livia-joseph",
+      "name": "Amanda Joseph",
+      "company": "American Family Ventures",
+      "email": "amanda@amfamventures.com",
+      "route": "email",
+      "draft_ids": [
+        "draft006e9bc244440c48",
+        "draft00c7c83c35f7ea40"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/mikemansell1",
+      "name": "Mike Mansell",
+      "company": "American Family Ventures",
+      "email": "mike@amfamventures.com",
+      "route": "email",
+      "draft_ids": [
+        "draft008548e93c490f4a",
+        "draft00f4157a944bfe48"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/melahr",
+      "name": "Molly Lahr",
+      "company": "American Family Ventures",
+      "email": "molly@amfamventures.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00de6ffcaafad846",
+        "draft00475ccbde88bd44"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/david-giles-996077228",
+      "name": "David Giles",
+      "company": "American Family",
+      "email": "david.giles@afics.com",
+      "route": "salesnav",
+      "draft_ids": [
+        "draft00813d9ed93e4242"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/ben-bergsma",
+      "name": "Ben Bergsma",
+      "company": "Munich Re Ventures",
+      "email": "ben@munichreventures.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00a633e07edb8546",
+        "draft0064f18ddcbc7642"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/wypler",
+      "name": "Daniel Wypler",
+      "company": "QBE Ventures",
+      "email": "daniel.wypler@qbe.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00c86cfcc8763646",
+        "draft004f7a294f060244"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/jonsoberg",
+      "name": "Jon Soberg",
+      "company": "MS&AD Ventures",
+      "email": null,
+      "route": "salesnav",
+      "draft_ids": [
+        "draft00fa038171c0ed45"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/maryftobin",
+      "name": "Mary Tobin",
+      "company": "Liberty Mutual",
+      "email": "mary.tobin@libertymutual.com",
+      "route": "email",
+      "draft_ids": [
+        "draft003ad1a6a9804846",
+        "draft0005cc90e04efe4b"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/joshuajdodson",
+      "name": "Josh Dodson",
+      "company": "Assurant Ventures",
+      "email": "josh.dodson@assurant.com",
+      "route": "email",
+      "draft_ids": [
+        "draft0089bf2275266442",
+        "draft0045b8e73172934b"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/leigh-gaffney",
+      "name": "Leigh Gaffney",
+      "company": "Assurant Ventures",
+      "email": "leigh.gaffney@assurant.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00fc7bd86ae14f41",
+        "draft00685eca2d6fec49"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/kirahgoldberg",
+      "name": "Kirah Goldberg",
+      "company": "Intact Private Capital",
+      "email": "kirah.goldberg@intact.net",
+      "route": "email",
+      "draft_ids": [
+        "draft005e118059217444",
+        "draft0064fc11a7716d45"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/sabrina-hou-6291008",
+      "name": "Sabrina Hou",
+      "company": "Guidewire",
+      "email": "shou@guidewire.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00b24a7681125e47",
+        "draft0092a3716f08c846"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/srinidhikundur",
+      "name": "Srinidhi Kundur",
+      "company": "Travelers",
+      "email": "skundur@travelers.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00c494d39a10344e",
+        "draft00bb38c2128c5849"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/lauradinan",
+      "name": "Laura Haber",
+      "company": "Nassau",
+      "email": "ldinanhaber@nfg.com",
+      "route": "email",
+      "draft_ids": [
+        "draft009c12d21081de44",
+        "draft0018c41ac77cd94b"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/smgold",
+      "name": "Stephen Goldstein",
+      "company": "Tetra G",
+      "email": "stephen@tetrag.co",
+      "route": "email",
+      "draft_ids": [
+        "draft00b8dc577da7234a",
+        "draft0095876c6c942942"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/tom-hemmings-b538bba1",
+      "name": "Tom Hemmings",
+      "company": "Greenlight Re",
+      "email": "themmings@greenlightre.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00c279ad003c5d48",
+        "draft00f30e6db8987743"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/tjolonilua",
+      "name": "TJ Olonilua",
+      "company": "Accelerant",
+      "email": "tj.olonilua@accelins.com",
+      "route": "email",
+      "draft_ids": [
+        "draft0036ef3e3a35e64a",
+        "draft002ef2f6148ac849"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/giovanninani",
+      "name": "Giovanni Nani",
+      "company": "Aquiline",
+      "email": "gnani@aquiline.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00965c6bc47f5d40",
+        "draft0064f2c1c614d649"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/jordanwalt3rs",
+      "name": "Jordan Walters",
+      "company": "ManchesterStory",
+      "email": "walters@manchesterstory.com",
+      "route": "email",
+      "draft_ids": [
+        "draft007cd12c4de18349",
+        "draft00136b4f29babd41"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/mads-faartoft",
+      "name": "Mads Jensen",
+      "company": "ManchesterStory",
+      "email": "jensen@manchesterstory.com",
+      "route": "email",
+      "draft_ids": [
+        "draft009cd9268a275e4c",
+        "draft0056c311cb5dd247"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/andrewwegrzyn",
+      "name": "Andrew Wegrzyn",
+      "company": "SixThirty Ventures",
+      "email": null,
+      "route": "salesnav",
+      "draft_ids": [
+        "draft007aedcdee7ca840"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/andrewpitz",
+      "name": "Andrew Pitz",
+      "company": "HighScale Ventures",
+      "email": "andrew@highscaleventures.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00025080f4af944a",
+        "draft005839befa542445"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/jake-bodanis",
+      "name": "Jake Bodanis",
+      "company": "Portage",
+      "email": "jbodanis@portageinvest.com",
+      "route": "email",
+      "draft_ids": [
+        "draft0034cd95b2de5548",
+        "draft00e166abe5937d4f"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/rmhlai",
+      "name": "Ricky Lai",
+      "company": "Portage",
+      "email": "rlai@portageinvest.com",
+      "route": "email",
+      "draft_ids": [
+        "draft007b0e12ff59ee4b",
+        "draft0095c8574315d749"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/daria-pelini-81930017a",
+      "name": "Daria Pelini",
+      "company": "Plug and Play",
+      "email": "d.pelini@pnptc.com",
+      "route": "email",
+      "draft_ids": [
+        "draft000bc2a1eea44a4c",
+        "draft00251df6bc872b41"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/paularamoneda",
+      "name": "Paula Ramoneda",
+      "company": "Plug and Play",
+      "email": "p.ramoneda@pnptc.com",
+      "route": "email",
+      "draft_ids": [
+        "draft005b0b2bc923c843",
+        "draft007f07e2c8c3ff44"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/rafaelsainz",
+      "name": "Rafael Sainz",
+      "company": "Plug and Play",
+      "email": "r.sainz@pnptc.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00388da5950bb742",
+        "draft00d01d71ffdda049"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/ryan-frisbie-6707344a",
+      "name": "Ryan Frisbie",
+      "company": "Viewpoint",
+      "email": "ryan@viewpoint.vc",
+      "route": "email",
+      "draft_ids": [
+        "draft00c2c18288842145",
+        "draft008b469ea9787e45"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/sean-song-80864141",
+      "name": "Sean Song",
+      "company": "Viewpoint",
+      "email": "sean@viewpoint.vc",
+      "route": "email",
+      "draft_ids": [
+        "draft0032b3cdf5306c41",
+        "draft007d9f1a04215141"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/stephen-schroder-98635352",
+      "name": "Stephen Schroder",
+      "company": "Next Level Ventures",
+      "email": "stephen@nextlevelvc.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00a476ea1561d349",
+        "draft004496e6ec25b945"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/stephen-mcgovern",
+      "name": "Stephen McGovern",
+      "company": "Crystal Venture Partners",
+      "email": "steve@crystalventurepartners.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00107957fd07e148",
+        "draft0000bb3e6b0a6b4e"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/patrickklas",
+      "name": "Patrick Klas",
+      "company": "Kauffman Fellows",
+      "email": null,
+      "route": "salesnav",
+      "draft_ids": [
+        "draft00553380a8d54641"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/demiladeobayomi",
+      "name": "Demi Obayomi",
+      "company": "Sapphire Ventures",
+      "email": "demi@sapphireventures.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00bc8129c3a4224c",
+        "draft0049a6de80aedb45"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/benjamin-thomas-daniels",
+      "name": "Ben Daniels",
+      "company": "Backcountry Ventures",
+      "email": "ben@backcountry.vc",
+      "route": "email",
+      "draft_ids": [
+        "draft00b9e68dc52d2d41",
+        "draft0064d352dfa6134b"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/ellisjr",
+      "name": "Jonathan Ellis",
+      "company": "InnovateHealth Ventures",
+      "email": "jonathan@innovatehealth.vc",
+      "route": "email",
+      "draft_ids": [
+        "draft00c54e51bed24744",
+        "draft0046cc70fde9de42"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/cat-jordan",
+      "name": "Cat Jordan",
+      "company": "Crystal Venture Partners",
+      "email": "cat@crystalventurepartners.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00b5a9e3f0969f4b",
+        "draft00f63d4872e2bc4a"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/giao-phan-b56236131",
+      "name": "Giao Phan",
+      "company": "Eos Ventures",
+      "email": "giao@eosvc.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00bcfdb81f785547",
+        "draft0018e89ac84cf940"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/ColtonReif",
+      "name": "Colton Reif",
+      "company": "Allstate",
+      "email": "colton.reif@allstate.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00f80808fc098447",
+        "draft00e7bc6e56143c42"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/AbhiC",
+      "name": "Abhi Chandrasekhara",
+      "company": "Customers Bank",
+      "email": "abhic@customersbank.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00959cd2ef014946",
+        "draft00d1f810dd597740"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/andrewjustincohen",
+      "name": "Andrew Cohen",
+      "company": "Snapsheet",
+      "email": "andy@snapsheet.me",
+      "route": "email",
+      "draft_ids": [
+        "draft006766d33aaa6443",
+        "draft00638fd105b8524a"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/jeffreybsimon",
+      "name": "Jeffrey Simon",
+      "company": "Aon",
+      "email": "jeffrey.simon@aon.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00a91d1acb5a4749",
+        "draft0097c0ad4f7c1e4b"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/martinburlingame",
+      "name": "Martin Burlingame",
+      "company": "Bridge Specialty",
+      "email": "martin@cig-llc.biz",
+      "route": "salesnav",
+      "draft_ids": [
+        "draft00f16fda0df1e444"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/callymyhrum",
+      "name": "Cally Myhrum",
+      "company": "Lotus",
+      "email": "cally@insuredbylotus.com",
+      "route": "email",
+      "draft_ids": [
+        "draft000c351c0450144f",
+        "draft005e5da73fa23b49"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/smkuhn",
+      "name": "Sonja Kuhn",
+      "company": "MintCover",
+      "email": "sonja@mintcover.net",
+      "route": "email",
+      "draft_ids": [
+        "draft00b781488d65644d",
+        "draft00e3844391610d48"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/douglasvermulm",
+      "name": "Douglas Mulm",
+      "company": "Turris",
+      "email": "douglas@turrisfi.com",
+      "route": "email",
+      "draft_ids": [
+        "draft003852811703464f",
+        "draft004e900351080e44"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/kylegeoghan",
+      "name": "Kyle Geoghan",
+      "company": "Indemn",
+      "email": "kyle@indemn.ai",
+      "route": "email",
+      "draft_ids": [
+        "draft00698ed1be4a6d4c",
+        "draft005faeec9b47864a"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/ethancberg",
+      "name": "Ethan Berg",
+      "company": "Phyll",
+      "email": "ethan@phyll.ai",
+      "route": "email",
+      "draft_ids": [
+        "draft00cc6a50f191f04e",
+        "draft00564bc84efcc048"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/christyclane",
+      "name": "Christy Lane",
+      "company": "Flora",
+      "email": "christy@heyflora.com",
+      "route": "email",
+      "draft_ids": [
+        "draft002531a2b8700445",
+        "draft00e080106247b247"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/lukebutton",
+      "name": "Luke Button",
+      "company": "Hedge",
+      "email": "lb@hedgespecialty.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00336abb8b51f44a",
+        "draft00c0cf9abc854444"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/diego-silva-villalba-3614629b",
+      "name": "Diego Villalba",
+      "company": "Loro",
+      "email": "diego@loroinsurance.com",
+      "route": "email",
+      "draft_ids": [
+        "draft0030c00baa4d7a4a",
+        "draft003e632bbee0a640"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/ashlyn-lackey",
+      "name": "Ashlyn Lackey",
+      "company": "Prudential",
+      "email": null,
+      "route": "salesnav",
+      "draft_ids": [
+        "draft00c44bcc6bbace44"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/brandonrockow",
+      "name": "Brandon Rockow",
+      "company": "Bonzah",
+      "email": "brandon@bonzah.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00e6d9f6cbb0d643",
+        "draft00c034c799cadd4f"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/hylton-irons",
+      "name": "Hylton Irons",
+      "company": "Listen Ventures",
+      "email": null,
+      "route": "salesnav",
+      "draft_ids": [
+        "draft0054e81a611e434c"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/tarik-galijasevic-1563201",
+      "name": "Tarik Galijasevic",
+      "company": "Allstate",
+      "email": null,
+      "route": "salesnav",
+      "draft_ids": [
+        "draft00ca649c65998245"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/wbbetteridge",
+      "name": "Will Betteridge",
+      "company": "Fair",
+      "email": null,
+      "route": "salesnav",
+      "draft_ids": [
+        "draft00812046d2ded74b"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/yeneric",
+      "name": "Eric Yen",
+      "company": "Stream",
+      "email": "eric@stream.claims",
+      "route": "email",
+      "draft_ids": [
+        "draft00cb678dd968ff46",
+        "draft00b655a74b40c443"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/giladshai",
+      "name": "Gilad Shai",
+      "company": "BMI Capital",
+      "email": "gshai@bmicapital.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00a899bfb10a1946",
+        "draft004f0565f6b7424b"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/eric-david-schneider",
+      "name": "Eric Schneider",
+      "company": "AKKO",
+      "email": "eric@getakko.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00a0f5efbe55624e",
+        "draft0038fcd6c056e547"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/jameel-ahmed-8178244b",
+      "name": "Jameel Ahmed",
+      "company": "Northwestern Mutual",
+      "email": "jameelahmed@northwesternmutual.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00e8afbae9b1804f",
+        "draft006d5872f2387d41"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/robert-wesley-9494b1120",
+      "name": "Robert Wesley",
+      "company": "Cameron Ventures",
+      "email": "robert.wesley@cameronvc.com",
+      "route": "salesnav",
+      "draft_ids": [
+        "draft00586649319b424b"
+      ]
+    },
+    {
+      "drafted_on": "2026-09-23",
+      "linkedin": "https://www.linkedin.com/in/rongonen",
+      "name": "Ron Gonen",
+      "company": "Allianz Strategic Ventures",
+      "email": "ron.gonen@allianzlife.com",
+      "route": "email",
+      "draft_ids": [
+        "draft00ec7713a98d8a45",
+        "draft0043567dc3638946"
+      ]
+    }
+  ]
+}

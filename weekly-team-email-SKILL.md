@@ -7,11 +7,46 @@ You are generating Calvin Koo's weekly team update email for Telescope Partners.
 
 ## STEP 1: Gather Data
 
-### 1A: Outreach Metrics from Google Sheet
-Use the Google Drive `read_file_content` tool to read the Outreach Tracker spreadsheet:
-- File ID: `1Sk9HndYNzXj_tHg8-T4EGqSqkPk1QKXH2UOQt23s7CA`
-- Extract: total companies outreached this week, replies received this week.
-- Count unique companies with SENT actions in the past 7 days.
+### 1A: Outreach Metrics from Supabase
+
+Query the Telescope outreach database for this week's metrics. Use the
+`mcp__plugin_telescope_postgres__execute_sql` tool (search for it via ToolSearch
+if not loaded). If the postgres MCP is unavailable, fall back to running SQL via
+bash against the Supabase connection string in the project's `.env` file.
+
+**Net new companies outreached this week:**
+```sql
+SELECT * FROM dash_weekly ORDER BY week_of DESC LIMIT 4;
+```
+This returns `week_of`, `net_new`, `restarts`, and `total` for recent weeks.
+Use the row matching the current week (week_of = Monday of this week).
+`net_new + restarts` is the "Company outreach" number. If the current week has
+no row yet, the number is 0.
+
+**Replies received this week:**
+```sql
+SELECT * FROM an_net_new_weekly ORDER BY week DESC LIMIT 4;
+```
+This returns `week`, `net_new`, `replied`, and `pct` (reply rate). Use the
+`replied` count from the current week's row.
+
+**Active sequences (optional context):**
+```sql
+SELECT * FROM dash_summary;
+```
+This gives a snapshot: total companies, active sequences, replied sequences,
+due now, etc.
+
+If the postgres plugin times out, use bash as a fallback:
+```bash
+cd /sessions/*/mnt/telescopeoutreach && node -e "
+  require('dotenv').config();
+  const {Client} = require('pg');
+  const c = new Client({connectionString: process.env.SUPABASE_DB_URL});
+  c.connect().then(() => c.query('SELECT * FROM dash_weekly ORDER BY week_of DESC LIMIT 4'))
+    .then(r => { console.log(JSON.stringify(r.rows)); c.end(); });
+"
+```
 
 ### 1B: Company Conversations from Google Calendar
 Use the Google Calendar `list_events` tool for the past 7 days (Monday through Sunday):
