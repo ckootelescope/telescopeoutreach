@@ -58,16 +58,6 @@ async function gmailDraft(t, payload) {
 // Each handler returns a result object, or throws. A throw with .throttled set
 // leaves the row queued rather than burning an attempt.
 const HANDLERS = {
-  /** Record that a LinkedIn touch actually happened. Pure database. */
-  async mark_linkedin_touched(c, p) {
-    const r = await c.query(
-      `update market.nudge set touched_at = now(), channel = $2, note = $3
-        where contact_id = $1 returning contact_id`,
-      [p.contact_id, p.channel || 'inmail', p.note || null]);
-    if (!r.rowCount) throw new Error('no nudge row for contact ' + p.contact_id);
-    return { summary: 'linkedin touch recorded' };
-  },
-
   /**
    * An investor touch the mailbox cannot see. Calvin texts people, and without
    * this the investor tab keeps showing someone as never contacted the week
@@ -93,26 +83,6 @@ const HANDLERS = {
         [p.target_id]).catch(() => {});
     }
     return { summary: 'draft created', draft_id: d.id };
-  },
-
-  /** The LinkedIn message as a draft to self, profile URL as the subject. */
-  async draft_linkedin(c, p, t) {
-    if (!p.contact_id) throw new Error('needs contact_id');
-    const ct = (await c.query(
-      `select full_name, linkedin_url from market.contact where id = $1`, [p.contact_id])).rows[0];
-    if (!ct) throw new Error('no contact ' + p.contact_id);
-    const body = (p.body_html || '') ||
-      (await c.query(`select body_html from market.step where contact_id=$1 and step_no=1`,
-        [p.contact_id])).rows[0]?.body_html;
-    if (!body) throw new Error('no body to send');
-    const d = await gmailDraft(t, {
-      subject: ct.linkedin_url || ('LinkedIn: ' + ct.full_name),
-      html: body,
-    });
-    await c.query(
-      `insert into market.nudge (contact_id, draft_id, status) values ($1,$2,'queued')
-       on conflict (contact_id) do update set draft_id = excluded.draft_id`, [p.contact_id, d.id]);
-    return { summary: 'linkedin draft created', draft_id: d.id };
   },
 };
 

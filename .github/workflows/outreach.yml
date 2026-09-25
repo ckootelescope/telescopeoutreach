@@ -22,7 +22,7 @@ on:
   workflow_dispatch:
     inputs:
       job:
-        description: 'Single job to run (ear, send, queue, health). Blank starts a shift.'
+        description: 'Single job to run (ear, queue, health, probe). Blank starts a shift.'
         required: false
         type: string
 

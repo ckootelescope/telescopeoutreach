@@ -38,7 +38,6 @@ const ME = 'calvin@telescopepartners.com';
 // twice its cadence: a single missed tick is noise, two in a row is a signal.
 const EXPECTED_QUIET_MIN = {
   ear: 90,
-  send: 45,
   queue: 45,
   health: 2880,
 };
@@ -80,36 +79,12 @@ async function main() {
     }
 
     // -------------------------------------------------------------- queues
-    const overdue = await one(
-      `select count(*)::int n, min(due_date)::text oldest from market.v_due
-        where due_date < pt_today() - 2`);
-    if (overdue[0].n > 0) {
-      needsYou.push(`${overdue[0].n} market steps overdue, oldest ${overdue[0].oldest}`);
-    }
-
     const drafts = await one(
       `select count(*)::int n, min(ref_date)::text oldest from v_broken_state
         where issue = 'drafted_not_sent' and ref_date < now() - interval '48 hours'`);
     if (drafts[0].n > 0) {
       needsYou.push(`${drafts[0].n} drafts unsent in Superhuman, oldest ${String(drafts[0].oldest).slice(0, 10)}`);
     }
-
-    // ------------------------------------------------- impossible states
-    // method and status must agree. When they do not, v_due silently skips the
-    // contact and the cadence freezes with no error anywhere. Found 2026-09-23:
-    // 15 contacts, 51 frozen steps, 9 of them owed a follow-up to someone who
-    // had already received an opener.
-    const mism = await one(
-      `select count(*)::int n from market.contact
-        where (method = 'email'    and status = 'manual')
-           or (method = 'salesnav' and status in ('active','queued'))`);
-    if (mism[0].n > 0) broken.push(`${mism[0].n} contacts have method and status disagreeing, cadence frozen`);
-
-    const stuck = await one(`select count(*)::int n from market.step where status = 'sending'`);
-    if (stuck[0].n > 0) broken.push(`${stuck[0].n} steps stuck mid-send, check the mailbox before retrying`);
-
-    const failed = await one(`select count(*)::int n from market.step where status = 'failed'`);
-    if (failed[0].n > 0) needsYou.push(`${failed[0].n} market steps marked failed, will not retry on their own`);
 
     // --------------------------------------------------------------- stale
     for (const [label, sql] of [

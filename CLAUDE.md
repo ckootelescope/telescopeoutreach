@@ -403,7 +403,13 @@ This is the complete list. If something is not here, it is not scheduled.
 
 | Runner | Where | When | Does |
 |---|---|---|---|
-| The robot | GitHub Actions, `.github/workflows/outreach.yml` → `scripts/shift.js` → `scripts/tick.js` | Every 15 min, weekdays 6am-8pm PT | Ear (reconcile sends and replies), market sends, `action_queue`, daily health pulse at 7:30. Every tick writes `job_run` rows |
+| The robot | GitHub Actions, `.github/workflows/outreach.yml` → `scripts/shift.js` → `scripts/tick.js` | Every 15 min, weekdays 6am-8pm PT | Ear (reconcile company sends and replies), `action_queue`, daily health pulse at 7:30. Every tick writes `job_run` rows |
+
+**Market outreach (expert diligence) was removed on 2026-09-25 at Calvin's request.** The
+`mo_*` scripts, `/marketoutreach` and `market-outreach/SPEC.md` are gone; git history has
+them. The `market.*` schema and its data (contacts, steps, sends, replies) are still in
+Supabase, and the batch files are still in `market-outreach/<slug>/`. Nothing sends market
+email any more. Do not rebuild it here unless Calvin asks.
 | Daily Follow-up Processor | claude.ai cloud routine | 8am PT daily | Drafts due company follow-ups in Superhuman. Reads `followups.json` from the remote |
 | Weekly team email | claude.ai cloud routine | Sundays 8am PT | Drafts Calvin's weekly update |
 | Briefs | `/briefs` in a session | On demand | Pre-call briefs, written via `scripts/brief_write.js` |

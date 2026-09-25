@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 // Re-mint the Google refresh token in .env.
 //   node scripts/reauth_google.js
+//   node scripts/reauth_google.js --client=<downloaded client_secret_*.json>
 // Opens a browser, you click Allow, it writes GMAIL_REFRESH_TOKEN back to .env.
+// With --client it first writes GMAIL_CLIENT_ID and GMAIL_CLIENT_SECRET from the
+// OAuth client file Google Cloud gives you, so moving to a new project is one step.
 // Nothing is printed to the terminal except status - no tokens are echoed.
 
 const http = require('http');
@@ -14,6 +17,12 @@ const ENV_PATH = path.join(__dirname, '..', '.env');
 const PORT = 53682;
 const REDIRECT = `http://localhost:${PORT}/oauth2callback`;
 const SCOPES = [
+  // Full mailbox: mark_sent and the ear read, queue.js writes drafts. Asking
+  // for gmail.readonly alone mints a token that cannot draft or label, and the
+  // robot's mail actions would fail.
+  'https://mail.google.com/',
+  // Drafts, for queue.js (dashboard "draft an email" buttons).
+  'https://www.googleapis.com/auth/gmail.compose',
   'https://www.googleapis.com/auth/gmail.readonly',
   'https://www.googleapis.com/auth/spreadsheets',
   // Weekly OS: read the calendar to plan around, write to-dos as Tasks so they
@@ -29,16 +38,27 @@ function readEnv() {
   return { raw, env };
 }
 
-function writeRefreshToken(token) {
+function writeEnvVar(key, value) {
   const { raw } = readEnv();
   const lines = raw.split(/\r?\n/);
   let found = false;
   const out = lines.map(l => {
-    if (/^\s*GMAIL_REFRESH_TOKEN\s*=/.test(l)) { found = true; return 'GMAIL_REFRESH_TOKEN=' + token; }
+    if (l.trim().startsWith(key + '=') || l.trim().startsWith(key + ' =')) { found = true; return key + '=' + value; }
     return l;
   });
-  if (!found) out.push('GMAIL_REFRESH_TOKEN=' + token);
+  if (!found) out.push(key + '=' + value);
   fs.writeFileSync(ENV_PATH, out.join('\n'));
+}
+const writeRefreshToken = token => writeEnvVar('GMAIL_REFRESH_TOKEN', token);
+
+/** Adopt a downloaded OAuth client file (Desktop app type: "installed"). */
+function adoptClientFile(file) {
+  const j = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const c = j.installed || j.web;
+  if (!c || !c.client_id || !c.client_secret) throw new Error('not an OAuth client file: ' + file);
+  writeEnvVar('GMAIL_CLIENT_ID', c.client_id);
+  writeEnvVar('GMAIL_CLIENT_SECRET', c.client_secret);
+  console.log('client from ' + path.basename(file) + ' written to .env (project ' + c.project_id + ')');
 }
 
 function post(hostname, p, body) {
@@ -51,6 +71,8 @@ function post(hostname, p, body) {
 }
 
 async function main() {
+  const clientArg = process.argv.find(a => a.startsWith('--client='));
+  if (clientArg) adoptClientFile(clientArg.slice(9));
   const { env } = readEnv();
   if (!env.GMAIL_CLIENT_ID || !env.GMAIL_CLIENT_SECRET) {
     console.error('GMAIL_CLIENT_ID / GMAIL_CLIENT_SECRET missing from .env');

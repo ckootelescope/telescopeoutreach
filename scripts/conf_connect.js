@@ -18,7 +18,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { guard } = require('./mo_render');
+const { guard } = require('./copy_guard');
 
 const args = process.argv.slice(2);
 const cmd = args[0];

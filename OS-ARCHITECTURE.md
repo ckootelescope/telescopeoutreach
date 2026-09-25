@@ -202,7 +202,13 @@ subagent, Superhuman draft, Calvin reviews and sends.
 
 ---
 
-## 6. Market outreach — fully automated, plus LinkedIn
+## 6. Market outreach — REMOVED 2026-09-25
+
+> Removed at Calvin's request after it locked the Gmail API twice in two days. The code is
+> gone (git history keeps it); the `market.*` data remains in Supabase. What follows is the
+> original design, kept only as a record.
+
+### 6.0 Original design
 
 ### 6.1 Intake
 

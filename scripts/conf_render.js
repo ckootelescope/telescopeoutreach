@@ -19,7 +19,7 @@
  */
 const fs = require('fs');
 const path = require('path');
-const { guard, toText } = require('./mo_render');
+const { guard, toText } = require('./copy_guard');
 
 const DATA = path.join(__dirname, '..', 'conferences', 'itc-vegas-2026.json');
 const HTML = process.argv.includes('--html');

@@ -3,8 +3,8 @@
  * The robot. One entry point the scheduler calls; everything else is a job.
  * See OS-ARCHITECTURE.md section 2.
  *
- *   node scripts/tick.js                  ear then send  (the normal tick)
- *   node scripts/tick.js --job=send       one job
+ *   node scripts/tick.js                  ear then queue (the normal tick)
+ *   node scripts/tick.js --job=queue      one job
  *   node scripts/tick.js --job=health     the daily pulse
  *   node scripts/tick.js --dry            show what would run, touch nothing
  *
@@ -33,8 +33,6 @@ const jobArg = process.argv.find(a => a.startsWith('--job='));
 const JOBS = {
   // Cheap change detection, then the reconcilers only if the mailbox moved.
   ear:    ['scripts/ear.js', '--apply'],
-  // One small bite. Pacing lives on step.send_after, so this exits in seconds.
-  send:   ['scripts/mo_send.js', '--apply'],
   // Dashboard intents. Cheap, and the only place the web tier reaches Gmail.
   queue:  ['scripts/queue.js', '--apply'],
   health: ['scripts/health.js', '--apply'],
@@ -42,11 +40,11 @@ const JOBS = {
   probe:  ['scripts/gmail_probe.js'],
 };
 
-const DEFAULT = ['ear', 'queue', 'send'];
+const DEFAULT = ['ear', 'queue'];
 const EX_TEMPFAIL = 75;
 
 // Jobs that call the Gmail API. All of them share one per-user rate limit.
-const GMAIL = new Set(['ear', 'send', 'queue', 'health', 'probe']);
+const GMAIL = new Set(['ear', 'queue', 'health', 'probe']);
 
 // Minutes of total Gmail silence after the Nth throttle in a row. Once Google
 // throttles this mailbox, every call made while throttled restarts a 15-minute
@@ -62,8 +60,8 @@ const BACKOFF_MIN = [30, 60, 120, 240];
  * is why every tick used to start blind.
  *
  * The streak counts consecutive throttled Gmail jobs, newest first. Only an 'ok'
- * from ear or probe ends it, because those always call Gmail; an 'ok' from send
- * or queue can mean there was nothing to do and Gmail was never asked.
+ * from ear or probe ends it, because those always call Gmail; an 'ok' from queue
+ * or health can mean there was nothing to do and Gmail was never asked.
  */
 async function gmailGate(c) {
   const rows = (await c.query(

@@ -19,8 +19,7 @@
  *
  * What it deliberately does NOT do: reimplement the reconcilers. Their matching
  * rules are subtle and hard won. mark_sent knows the Nth outbound in a thread is
- * step N. mo_sync matches by thread or exact sender and never by domain, because
- * a dozen experts share one carrier domain. sync_replies knows an out-of-office
+ * step N. sync_replies knows an out-of-office
  * is not a reply. Rewriting that under time pressure would trade a quota problem
  * for a correctness problem, which is a far worse trade.
  *
@@ -64,21 +63,14 @@ async function main() {
   // Everything we might care about hearing from.
   const known = new Set();
   for (const r of (await c.query(
-    `select lower(email) e from contact where email is not null
-     union select lower(email) from market.contact where email is not null`)).rows) {
+    `select lower(email) e from contact where email is not null`)).rows) {
     known.add(r.e);
   }
   const threads = new Set();
   for (const r of (await c.query(
-    `select thread_id id from step where thread_id is not null
-     union select thread_id from market.step where thread_id is not null`)).rows) {
+    `select thread_id id from step where thread_id is not null`)).rows) {
     threads.add(r.id);
   }
-  // mo_send records its own sends as it makes them, so our outbound on a market
-  // thread is never news. Counting it as news ran the full sweeps after every
-  // send and kept the mailbox rate-limited.
-  const marketThreads = new Set((await c.query(
-    `select distinct thread_id id from market.step where thread_id is not null`)).rows.map(r => r.id));
 
   const cur = (await c.query(`select history_id from mail_cursor where id = 1`)).rows[0];
 
@@ -122,7 +114,6 @@ async function main() {
     for (const h of (j.history || [])) {
       for (const a of (h.messagesAdded || [])) {
         const m = a.message;
-        if ((m.labelIds || []).includes('SENT') && marketThreads.has(m.threadId)) continue;
         ids.push(m);
       }
     }
@@ -200,7 +191,6 @@ async function main() {
 function runAll() {
   runScript(['scripts/mark_sent.js', '--apply'], 'mark_sent');
   runScript(['scripts/sync_replies.js', '--apply'], 'sync_replies');
-  runScript(['scripts/mo_sync.js', '--apply'], 'mo_sync');
 }
 function reconcile(nKnown, nThreads) {
   console.log('reconciling (' + nKnown + ' addresses, ' + nThreads + ' threads tracked)');
