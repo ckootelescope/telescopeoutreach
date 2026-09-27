@@ -17779,9 +17779,10 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-09-12",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "drafted",
+      "body": "<div>Hey Dan - wanted to bump this in case it got buried. One pattern we keep seeing in freight forwarding is that pilots convert once response time visibly drops, from a multi-day turnaround to same day, since low urgency is usually what kills these deals even when everyone agrees the tool is valuable. I think Nexcade is well positioned there given how much of quoting is just turnaround speed. Worth a quick chat still?</div>",
+      "draftId": "draft004fe768ecd78c4f",
+      "processedAt": "2026-09-27T15:20:09.967Z"
     },
     {
       "slug": "nexcade",
@@ -17796,9 +17797,10 @@
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-09-15",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "drafted",
+      "body": "<div>Hey Dan - following up again. Something else we've noticed is that the products that land in freight tend to start with one narrow lane, a single quoting flow proven on a customer's own data, rather than pitching a full TMS replacement, since ripping out an embedded system is a much harder ask. I think that's the right entry point for Nexcade too. How are you thinking about your next raise?</div>",
+      "draftId": "draft00fbbca40060e848",
+      "processedAt": "2026-09-27T15:20:09.967Z"
     },
     {
       "slug": "nexcade",
@@ -17813,8 +17815,10 @@
       "emailNumber": 4,
       "round": 2,
       "sendDate": "2026-09-20",
-      "status": "pending",
-      "body": "<div>Hey Dan - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in Nexcade.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>"
+      "status": "drafted",
+      "body": "<div>Hey Dan - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in Nexcade.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>",
+      "draftId": "draft00a28d61c77d5545",
+      "processedAt": "2026-09-27T15:20:09.967Z"
     },
     {
       "slug": "contractor_commerce",
@@ -17829,9 +17833,10 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-09-12",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "drafted",
+      "body": "<div>Hey Will - wanted to bump this in case it slipped by. One thing we've noticed in home services software is that PE-backed operators are a particularly fast-moving buyer segment, since landing one group can open the door to referrals across five or ten sister companies, versus selling to independent owner-operators one at a time through cold outbound. I think Contractor Commerce is well set up to lean into that. Still worth grabbing time?</div>",
+      "draftId": "draft0007b55f0ee53440",
+      "processedAt": "2026-09-27T15:20:09.967Z"
     },
     {
       "slug": "contractor_commerce",
@@ -17846,9 +17851,10 @@
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-09-15",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "drafted",
+      "body": "<div>Hey Will - following up again. Something we keep seeing in trades software is that these deals spread through tight contractor networks, and the demo itself ends up being the close because it has to feel obviously better than picking up the phone. I think that dynamic plays well for Contractor Commerce. How are you thinking about your next raise?</div>",
+      "draftId": "draft00e4563b9c78984c",
+      "processedAt": "2026-09-27T15:20:09.967Z"
     },
     {
       "slug": "contractor_commerce",
@@ -17863,8 +17869,10 @@
       "emailNumber": 4,
       "round": 2,
       "sendDate": "2026-09-20",
-      "status": "pending",
-      "body": "<div>Hey Will - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in ContractorCommerce.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>"
+      "status": "drafted",
+      "body": "<div>Hey Will - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in ContractorCommerce.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>",
+      "draftId": "draft00c39737de83d64a",
+      "processedAt": "2026-09-27T15:20:09.967Z"
     },
     {
       "slug": "olympian",
@@ -17879,9 +17887,10 @@
       "emailNumber": 2,
       "round": 2,
       "sendDate": "2026-09-12",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "drafted",
+      "body": "<div>Hey Brendan - wanted to bump this in case it got buried. Something we keep seeing with AI voice tools selling into SMB trades is that the fastest deployments require no behavior change from the team using them, and the real stickiness comes from the data piling up over time rather than any one feature. I think Olympian fits that pattern well. Still worth finding time to connect?</div>",
+      "draftId": "draft00f5d18aaf8ee24d",
+      "processedAt": "2026-09-27T15:20:09.967Z"
     },
     {
       "slug": "olympian",
@@ -17896,9 +17905,10 @@
       "emailNumber": 3,
       "round": 2,
       "sendDate": "2026-09-15",
-      "status": "pending",
-      "body": null,
-      "needsDraft": true
+      "status": "drafted",
+      "body": "<div>Hey Brendan - following up again. One pattern in home services software is that field sales and in-person trust building compress the sales cycle to under two weeks, and PE-backed operators tend to move fastest as a buyer segment. I think that's a path worth leaning into for Olympian. How are you thinking about your next raise?</div>",
+      "draftId": "draft001cb91b2289e741",
+      "processedAt": "2026-09-27T15:20:09.967Z"
     },
     {
       "slug": "olympian",
@@ -17913,8 +17923,10 @@
       "emailNumber": 4,
       "round": 2,
       "sendDate": "2026-09-20",
-      "status": "pending",
-      "body": "<div>Hey Brendan - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in Olympian.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>"
+      "status": "drafted",
+      "body": "<div>Hey Brendan - know I've followed up now a few times, but hopefully the persistence has conveyed our interest in Olympian.</div><div><br></div><div>As I mentioned, I'm very interested in what you're building and I think we'd be able to add value as an investment partner. I'd love to hear your feedback on whether there may be better timing, if you have other partners in mind, etc.</div><div><br></div><div>Know as a founder you're busy with a lot of things, so will find a time to reach back out later if I don't hear back. LMK your thoughts and if a chat in the next couple of weeks makes sense!</div>",
+      "draftId": "draft0062d3542f8f0c45",
+      "processedAt": "2026-09-27T15:20:09.967Z"
     },
     {
       "slug": "champ",
