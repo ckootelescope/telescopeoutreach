@@ -7,6 +7,7 @@ const TABS = [
   { href: '/investors', label: 'Investors' },
   { href: '/analytics', label: 'Outreach' },
   { href: '/market-map', label: 'Market Map' },
+  { href: '/podcasts', label: 'Podcasts' },
 ];
 
 export function Nav({ current }: { current: string }) {

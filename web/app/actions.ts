@@ -88,6 +88,15 @@ export async function setTargetStatus(formData: FormData) {
   refresh();
 }
 
+export async function togglePodcast(formData: FormData) {
+  const id = Number(formData.get('id'));
+  const to = String(formData.get('to') || 'listened');
+  if (!id) return;
+
+  await db().from('os_podcast').update({ status: to === 'listened' ? 'listened' : 'queued' }).eq('id', id);
+  revalidatePath('/podcasts');
+}
+
 /**
  * Inline edit on the Hard to Crack table. Only two fields are writable, and both
  * are Calvin's own words: the one-liner and what he did this week. Everything
