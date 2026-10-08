@@ -9,6 +9,13 @@ Sheets are read as source data only; nothing is ever written back to them.
 
 The app is **Telescope OS**: Dashboard, Week, Hard to Crack, Investors, Outreach.
 
+**The Dashboard tab is a command center with exactly three sections**: call prep, the
+Break-In queue, and HTC escalations, in that order. They are written by the three scheduled
+tasks in "What Runs Where" into `os_daily_feed` (one row per kind per day, `db/os11.sql`);
+the page renders `v_os_feed_latest`. Calvin's Touched / Skip / Posted marks live in
+`os_feed_action` so a re-run never wipes them. Those tasks no longer post to Slack.
+Do not add other sections to the Dashboard; week and meeting views live on the Week tab.
+
 - Connection string: `SUPABASE_DB_URL` in `.env`. Check it with `node scripts/db.js`.
 - Schema: `db/schema.sql`. Tables are `company`, `company_domain`, `contact`, `sequence`,
   `step`, `email_event`, `prior_check`. Reporting views are `dash_*`, `an_*`, and `v_*`
@@ -122,6 +129,7 @@ portfolio_tie_in: [relevant Telescope portfolio company or team member connectio
 affinity_status: [no prior interaction / prior interaction >90 days with details / BLOCKED within 90 days]
 affinity_spoken: [yes/no — has someone on the Telescope team actually HAD A CONVERSATION with this company (meeting/call), not just sent an outbound email]
 funding_stage: [last known round + amount, if public. If unknown, leave blank.]
+harmonic_funding_stage: [the exact Harmonic fundingStage value, e.g. SEED, PRE_SEED, SERIES_A, VENTURE_UNKNOWN. Drives the Block 1 fund descriptor.]
 trigger: [specific recent event like partnership, funding announcement, expansion. If none, leave blank.]
 headcount: [approximate, if known]
 market: [the market to sweep Granola on, e.g. "industrial distribution", "application security"]
@@ -152,6 +160,18 @@ The email has three blocks. Lead with the CTA and who Telescope is in the first 
 Personalized greeting, CTA to chat, and Telescope intro all upfront in the first paragraph.
 
 > Hey [First Name] - I love what you're building at [Company] and wanted to see if you're free to chat next week? We're a Series A fund led by Mickey Arabelovic (former Sequoia partner) focused on B2B software and AI. We're on our third fund ($275M) and lead $5-30M rounds in a handful of founders each year.
+
+**Fund descriptor depends on stage (added 2026-10-08).** Check `funding.fundingStage` in Harmonic
+`get_companies` for the company's domain every time.
+
+| Harmonic `fundingStage` | Second sentence opens with |
+|---|---|
+| `SEED` | "We're a Series A fund led by Mickey Arabelovic..." (unchanged) |
+| Anything else (`PRE_SEED`, `SERIES_A`, `SERIES_B`, later, `VENTURE_UNKNOWN`, blank) | "We're an early growth VC (seed to Series B) led by Mickey Arabelovic..." |
+
+Only that phrase changes. The rest of the sentence ("(former Sequoia partner) focused on B2B
+software and AI. We're on our third fund ($275M) and lead $5-30M rounds...") stays as written.
+Put the Harmonic stage in the research brief as `harmonic_funding_stage` so this is never guessed.
 
 The greeting can be personalized. If someone on the team has SPOKEN to the company, reference that prior conversation. The Telescope intro is always included. The CTA ("free to chat next week?") should always be in the first sentence or two.
 
@@ -435,6 +455,9 @@ email any more. Do not rebuild it here unless Calvin asks.
 | Daily Follow-up Processor | claude.ai cloud routine | 8am PT daily | Drafts due company follow-ups in Superhuman. Reads `followups.json` from the remote |
 | Weekly team email | claude.ai cloud routine | Sundays 8am PT | Drafts Calvin's weekly update |
 | Briefs | `/briefs` in a session | On demand | Pre-call briefs, written via `scripts/brief_write.js` |
+| Daily Call Prep | claude.ai scheduled task | 6:41am PT weekdays | Today's external calls with context and focus items. Writes `os_daily_feed` kind `call_prep` |
+| Daily Break-In List | claude.ai scheduled task | 6:52am PT weekdays | 5 priority + 5 non-priority CK Break-In companies to touch. Writes `os_daily_feed` kind `break_in` |
+| HTC Escalation | claude.ai scheduled task | 8:52am PT Tue/Thu | Top 5 tapped-out companies with route and paste-ready ask. Writes `os_daily_feed` kind `htc` |
 
 **There are no Windows scheduled tasks.** `TelescopeFollowupScheduler` and
 `TelescopeMarketOutreachDaily` were retired on 2026-09-24. Their full mailbox sweeps
