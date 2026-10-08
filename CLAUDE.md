@@ -76,6 +76,13 @@ If Calvin's phrasing points one way but the data points the other, **say so and 
 failure in this system is sending a first-contact opener to a founder who has already had four
 emails.
 
+## Owner Gate
+
+Before any Round 1 draft, check the **Owner** column (H) in the CG + CK Master Pipeline sheet.
+Only `CK` companies get a note from Calvin. `CG` companies belong to Chris and get no direct note
+from Calvin unless he says otherwise for that company. Blank owner means ask. Full table in
+`.claude/commands/outreach.md`.
+
 ## What You Do
 
 When Calvin says "outreach to [URL]" or "reach out to [company]", YOU handle everything end-to-end. Calvin provides ONLY a company URL. You do the rest. DO NOT ask Calvin to provide contact details, email bodies, JSON, thread IDs, or any other data. You find and generate ALL of that yourself.
