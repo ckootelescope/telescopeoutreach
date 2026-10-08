@@ -1,0 +1,1635 @@
+{
+ "project": "instockrx",
+ "contacts": [
+  {
+   "linkedin_url": "https://www.linkedin.com/in/mikekoelzer",
+   "angle": "customer",
+   "company_name": "Kay Pharmacy",
+   "apollo": {
+    "first_name": "Mike",
+    "last_name": "Koelzer",
+    "title": "Owner",
+    "email": "mike@kaypharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Kay Pharmacy",
+    "organization_domain": "kaypharmacy.com",
+    "id": "60679e6c44143d0001b39dca"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/marc-ost-15850a257",
+   "angle": "customer",
+   "company_name": "Community Pharmacy Services",
+   "apollo": {
+    "first_name": "Marc",
+    "last_name": "Ost",
+    "title": "Chief Executive Officer",
+    "email": "marc@ericsrx.com",
+    "email_status": "verified",
+    "organization_name": "Community Pharmacy Services",
+    "organization_domain": "cpsrxllc.com",
+    "id": "642417182813060001d112ed"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/rupesh-manek-9868541a7",
+   "angle": "customer",
+   "company_name": "Rochelle Pharmacy",
+   "apollo": {
+    "first_name": "Rupesh",
+    "last_name": "Manek",
+    "title": "Owner/Pharmacist-in Charge",
+    "email_status": "unavailable",
+    "organization_name": "Rochelle Pharmacy",
+    "organization_domain": "rochellerx.com",
+    "id": "61f66a446df028000182e7c2"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/mark-land-8a80461b",
+   "angle": "customer",
+   "company_name": "Panhandle Drug Store",
+   "apollo": {
+    "first_name": "Mark",
+    "last_name": "Land",
+    "title": "Owner",
+    "email": "mark@panhandledrugstore.com",
+    "email_status": "verified",
+    "organization_name": "Panhandle Drug Store",
+    "id": "5e811d5b87af1d00012884e4"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/robert-bullington-269827a",
+   "angle": "customer",
+   "company_name": "Preferred Pharmacy",
+   "apollo": {
+    "first_name": "Robert",
+    "last_name": "Bullington",
+    "title": "Owner Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "Preferred Pharmacy Sevierville",
+    "organization_domain": "preferredpharmacyrx.com",
+    "id": "66fcb7351b4966000174ab5e"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/barry-patterson-24636b68",
+   "angle": "customer",
+   "company_name": "Medicine Shoppe",
+   "apollo": {
+    "first_name": "Barry",
+    "last_name": "Patterson",
+    "title": "Pharmacy Owner",
+    "email": "1146@medicineshoppe.com",
+    "email_status": "verified",
+    "organization_name": "Medicine Shoppe Pharmacy",
+    "id": "5adca86ca6da9861ff82b493"
+   },
+   "force_salesnav": "store-number inbox, not a personal address"
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/courtney-quinby-609707202",
+   "angle": "customer",
+   "company_name": "Centralia Pharmacy",
+   "apollo": {
+    "first_name": "Courtney",
+    "last_name": "Quinby",
+    "title": "Owner",
+    "email": "courtney@centraliapharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Centralia Pharmacy Group",
+    "organization_domain": "centraliapharmacy.com",
+    "id": "60c1b3dbeb218a0001e8e078"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/eric-shoffner-4a680a1",
+   "angle": "customer",
+   "company_name": "iCareRx",
+   "apollo": {
+    "first_name": "Eric",
+    "last_name": "Shoffner",
+    "title": "Pharmacy Owner",
+    "email_status": "unavailable",
+    "organization_name": "iCareRx",
+    "organization_domain": "icarerx.com",
+    "id": "55bfbdc173696422e8a93500"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/brian-crook-rph-mba-b25a322",
+   "angle": "customer",
+   "company_name": "Bi-Mart",
+   "apollo": {
+    "first_name": "Brian",
+    "last_name": "Crook",
+    "title": "Vice President of Pharmacy",
+    "email_status": "unavailable",
+    "organization_name": "Bi-Mart",
+    "organization_domain": "bimart.com",
+    "id": "64eee2d264df070001b7dc77"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/richardkos",
+   "angle": "customer",
+   "company_name": "Gates Pharmacy",
+   "apollo": {
+    "first_name": "Richard",
+    "last_name": "Kos",
+    "title": "Owner",
+    "email": "rkos@mutualdrug.com",
+    "email_status": "verified",
+    "organization_name": "Gates Pharmacy",
+    "organization_domain": "gatespharmacy.net",
+    "id": "66fc84850cbf900001611af7"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/keith-lorang-a8884342",
+   "angle": "customer",
+   "company_name": "Keith's Pharmacy",
+   "apollo": {
+    "first_name": "Keith",
+    "last_name": "Lorang",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Keith's Pharmacy",
+    "id": "54a266e6746869331832e51f"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/jason-saucedo-b00a98247",
+   "angle": "customer",
+   "company_name": "Roger's Pharmacy",
+   "apollo": {
+    "first_name": "Jason",
+    "last_name": "Saucedo",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Roger's Pharmacy",
+    "organization_domain": "rogersrxdumas.com",
+    "id": "640f46106b8803000153ec9f"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/briana-anton-885238133",
+   "angle": "customer",
+   "company_name": "People & Paws Pharmacy",
+   "apollo": {
+    "first_name": "Briana",
+    "last_name": "Anton",
+    "title": "Owner/Pharmacist",
+    "email": "briana@peopleandpawsrx.com",
+    "email_status": "verified",
+    "organization_name": "Wailea People & Paws Pharmacy",
+    "organization_domain": "peopleandpawsrx.com",
+    "id": "5d57d253f65125ee60aedf72"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/dawn-eklum-71302858",
+   "angle": "customer",
+   "company_name": "South Dayton Pharmacy",
+   "apollo": {
+    "first_name": "Dawn",
+    "last_name": "Eklum",
+    "title": "Pharmacy Owner",
+    "email_status": "unavailable",
+    "organization_name": "South Dayton Pharmacy",
+    "id": "57d65c86a6da9854396da8f3"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/david-stanley-6228152b",
+   "angle": "customer",
+   "company_name": "your pharmacy",
+   "apollo": {
+    "first_name": "David",
+    "last_name": "Stanley",
+    "title": "Owner/Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "Independent Pharmacy Cooperative",
+    "organization_domain": "ipcrx.com",
+    "id": "601d8313f2b1090001a1bc35"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/ami-modi-5aa6396",
+   "angle": "customer",
+   "company_name": "your pharmacy",
+   "apollo": {
+    "first_name": "Ami",
+    "last_name": "Modi",
+    "title": "Co-Owner",
+    "email_status": "unavailable",
+    "organization_name": "Independent Pharmacy",
+    "id": "57dd3ca4a6da987b59da62de"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/owen-m-bondurant-72850454",
+   "angle": "customer",
+   "company_name": "Independent Rx",
+   "apollo": {
+    "first_name": "Owen",
+    "last_name": "Bondurant",
+    "title": "Partner",
+    "email": "owen@independent-rx.com",
+    "email_status": "verified",
+    "organization_name": "Independent Rx",
+    "organization_domain": "independentrxconsulting.com",
+    "id": "54a7429f74686965d9980524"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/farah-shaikh-24339a174",
+   "angle": "customer",
+   "company_name": "MediWell Pharmacy",
+   "apollo": {
+    "first_name": "Farah",
+    "last_name": "Shaikh",
+    "title": "Pharmacist & Owner",
+    "email_status": "unavailable",
+    "organization_name": "MediWell Pharmacy",
+    "organization_domain": "mediwellpharmacynj.com",
+    "id": "60aae149587ec000016ebe3a"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/craig-goodson-2772a229",
+   "angle": "customer",
+   "company_name": "Quality Care Pharmacy",
+   "apollo": {
+    "first_name": "Craig",
+    "last_name": "Goodson",
+    "title": "Owner/Manager",
+    "email": "craig@qcprx.net",
+    "email_status": "verified",
+    "organization_name": "Quality Care Pharmacy and Compounding",
+    "organization_domain": "qualitycarewylie.com",
+    "id": "66f79400d075000001e8332e"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/lynn-shumake-pd-41236971",
+   "angle": "customer",
+   "company_name": "VitaScript",
+   "apollo": {
+    "first_name": "Lynn",
+    "last_name": "Shumake",
+    "title": "Owner, Compounding Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "VitaScript Compounding Pharmacy",
+    "id": "5571454f7369642c018d1200"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/mark-binkley-02003410",
+   "angle": "customer",
+   "company_name": "Health & Wellness Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Mark",
+    "last_name": "Binkley",
+    "title": "Compounding Pharmacist & Owner",
+    "email": "mbinkley@myhwcp.com",
+    "email_status": "verified",
+    "organization_name": "Health & Wellness Compounding Pharmacy",
+    "organization_domain": "myhwcp.com",
+    "id": "6513f0e4d88d0800017eadbe"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/issamsaad",
+   "angle": "customer",
+   "company_name": "Compounding Pharmacy Solutions",
+   "apollo": {
+    "first_name": "Issam",
+    "last_name": "Saad",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Compounding Pharmacy Solutions",
+    "id": "66f6ac0e30b4dd000168d2c7"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/jim-kolar-ba5184151",
+   "angle": "customer",
+   "company_name": "Save Rite Pharmacy",
+   "apollo": {
+    "first_name": "Jim",
+    "last_name": "Kolar",
+    "title": "Owner/Compounding Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "Save Rite Pharmacy & Compounding",
+    "id": "60e731f7f1470000013cdc1a"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/linda-hayes-pharmd-abaahp-5ba65291",
+   "angle": "customer",
+   "company_name": "Pure Pharmacy",
+   "apollo": {
+    "first_name": "Linda",
+    "last_name": "Hayes",
+    "title": "Director of Pharmacy",
+    "email": "linda@purerxcompounding.com",
+    "email_status": "verified",
+    "organization_name": "Pure Pharmacy",
+    "organization_domain": "purerxcompounding.com",
+    "id": "61b3644acc6ab300013a1c7e"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/scott-sumners-pharmd-33b26728b",
+   "angle": "customer",
+   "company_name": "Annie's Apothecary",
+   "apollo": {
+    "first_name": "Scott",
+    "last_name": "Sumners",
+    "title": "Owner/Compounding Pharmacist",
+    "email": "scott@anniesrx.com",
+    "email_status": "verified",
+    "organization_name": "Annie's Apothecary",
+    "id": "6548f71ee41fcd000127d91d"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/kelechi-agbi-pharm-d-bcgp-r-ph-02874ba2",
+   "angle": "customer",
+   "company_name": "Agbi's Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Kelechi",
+    "last_name": "Agbi",
+    "title": "Compounding Pharmacist/Owner",
+    "email_status": "unavailable",
+    "organization_name": "Agbi's Compounding Pharmacy",
+    "id": "5d57d09df651256d5b1ade1e"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/josh-morgan-1ba97b28",
+   "angle": "customer",
+   "company_name": "Morgan Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Josh",
+    "last_name": "Morgan",
+    "title": "Pharmacist / Owner",
+    "email": "josh@morgancompounding.com",
+    "email_status": "verified",
+    "organization_name": "Morgan Compounding Pharmacy",
+    "organization_domain": "morgancompounding.com",
+    "id": "5b26737ca6da9877e205d0cd"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/jace-clark-93728287",
+   "angle": "customer",
+   "company_name": "Camelback Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Jace",
+    "last_name": "Clark",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Camelback Compounding Pharmacy",
+    "id": "54a78edb74686968296acd3f"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/dawn-ipsen-pharmd-124a658",
+   "angle": "customer",
+   "company_name": "Clark's Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Dawn",
+    "last_name": "Ipsen",
+    "title": "Owner / Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "Clark's Compounding Pharmacy",
+    "organization_domain": "clarkspharmacywa.com",
+    "id": "60b2e1f5cd8eea00010edc4a"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/matthew-frazier-pharmd-119506107",
+   "angle": "customer",
+   "company_name": "Your Corner Drugstore",
+   "apollo": {
+    "first_name": "Matthew",
+    "last_name": "Frazier",
+    "title": "Owner/Compounding Pharmacist",
+    "email": "mfrazier@chegg.com",
+    "email_status": "verified",
+    "organization_name": "Your Corner Drugstore",
+    "id": "60a8f347054d1300010f7098"
+   },
+   "force_salesnav": "Apollo email is at chegg.com, not his pharmacy"
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/gene-gresh-59765433",
+   "angle": "customer",
+   "company_name": "Pioneer Health Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Gene",
+    "last_name": "Gresh",
+    "title": "Chief Pharmacist",
+    "email": "gene@thefeelgoodlab.com",
+    "email_status": "verified",
+    "organization_name": "The Feel Good Lab",
+    "organization_domain": "thefeelgoodlab.com",
+    "id": "66f5f412d323cb00014614ab"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/vish-p-a5596916",
+   "angle": "customer",
+   "company_name": "Strive Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Vish",
+    "last_name": "P",
+    "title": "Co-Owner",
+    "email_status": "unavailable",
+    "organization_name": "Strive Compounding Pharmacy",
+    "organization_domain": "strivepharmacy.com",
+    "id": "69a2cf48e8232d0001169114"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/rickupsoncompoundingpharmacist",
+   "angle": "customer",
+   "company_name": "Palm Beach Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Rick",
+    "last_name": "Upson",
+    "title": "Owner/Pharmacist in Charge",
+    "email_status": "unavailable",
+    "organization_name": "Palm Beach Compounding Pharmacy",
+    "id": "54c2a83c7468697af71c1ab6"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/sharonsteen",
+   "angle": "customer",
+   "company_name": "Central Pharmacy",
+   "apollo": {
+    "first_name": "Sharon",
+    "last_name": "Steen",
+    "title": "Pharmacy Owner",
+    "email": "sharon@mycentralpharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Central Pharmacy & Compounding Lab",
+    "organization_domain": "mycentralpharmacy.com",
+    "id": "66f900887f4d3300010a9b79"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/hamid-bakhteyar-pharmd-rph-faca-663670a",
+   "angle": "customer",
+   "company_name": "Carolina Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Hamid",
+    "last_name": "Bakhteyar",
+    "title": "CEO and Chief Pharmacist",
+    "email": "drhamidb@ccpcary.com",
+    "email_status": "verified",
+    "organization_name": "Carolina Compounding Pharmacy",
+    "organization_domain": "carolinacompounding.com",
+    "id": "624534314c0eeb000199c030"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/haresh-patel-a6129b77",
+   "angle": "customer",
+   "company_name": "Rx Care Pharmacy",
+   "apollo": {
+    "first_name": "Haresh",
+    "last_name": "Patel",
+    "title": "Co-Owner",
+    "email_status": "unavailable",
+    "organization_name": "Rx Care Pharmacy",
+    "organization_domain": "2lourx.com",
+    "id": "5b2f7be8a6da982d30308e10"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/tomdepietro",
+   "angle": "customer",
+   "company_name": "DePietro's Pharmacy",
+   "apollo": {
+    "first_name": "Tom",
+    "last_name": "DePietro",
+    "title": "Pharmacy Owner",
+    "email": "tom@depietrospharmacy.com",
+    "email_status": "verified",
+    "organization_name": "DePietro's Pharmacy",
+    "organization_domain": "depietropharmacy.com",
+    "id": "6219c679aed7320001af4c5f"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/chris-adlakha-1a7b2a65",
+   "angle": "customer",
+   "company_name": "Smithville Pharmacy",
+   "apollo": {
+    "first_name": "Chris",
+    "last_name": "Adlakha",
+    "title": "Owner",
+    "email": "cadlakha@smithvillepharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Smithville Pharmacy",
+    "id": "57d32e8ea6da98655f9bbca2"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/al-nelson-b06735a5",
+   "angle": "customer",
+   "company_name": "Medicine Cabinet Pharmacy",
+   "apollo": {
+    "first_name": "Al",
+    "last_name": "Nelson",
+    "title": "Company Owner",
+    "email_status": "unavailable",
+    "organization_name": "Medicine Cabinet Pharmacy",
+    "id": "6125d2c5f962fe0001fdce61"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/mark-zilner-b4a5902",
+   "angle": "customer",
+   "company_name": "Diamond Pharmacy",
+   "apollo": {
+    "first_name": "Mark",
+    "last_name": "Zilner",
+    "title": "President & CEO Owner",
+    "email": "mzilner@diamondpharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Diamond Pharmacy Services",
+    "organization_domain": "diamondpharmacy.com",
+    "id": "57dad1f6a6da984a6c6ea498"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/willdouglas-crimsoncarerx",
+   "angle": "customer",
+   "company_name": "Cody Drug",
+   "apollo": {
+    "first_name": "Will",
+    "last_name": "Douglas",
+    "title": "Business Owner",
+    "email": "will@codydrugrx.com",
+    "email_status": "verified",
+    "organization_name": "Cody Drug",
+    "organization_domain": "codydrugrx.com",
+    "id": "5fcf1100e1549600015b0599"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/matt-binder-348b11132",
+   "angle": "customer",
+   "company_name": "Duvall Family Drugs",
+   "apollo": {
+    "first_name": "Matt",
+    "last_name": "Binder",
+    "title": "Owner",
+    "email": "matt@duvallfamilydrugs.com",
+    "email_status": "verified",
+    "organization_name": "Duvall Family Drugs",
+    "id": "5e745328b94cf000015cccbf"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/joseph-nguyen-b37692240",
+   "angle": "customer",
+   "company_name": "St. Bernard Drugs",
+   "apollo": {
+    "first_name": "Joseph",
+    "last_name": "Nguyen",
+    "title": "Owner",
+    "email": "joseph@stbernarddrugs.com",
+    "email_status": "verified",
+    "organization_name": "St Bernard Drugs",
+    "organization_domain": "stbernarddrugs.com",
+    "id": "65d46b73ae69130001b0b23b"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/gulzeb-aziz-8809b247",
+   "angle": "customer",
+   "company_name": "Gem Drugs",
+   "apollo": {
+    "first_name": "Gulzeb",
+    "last_name": "Aziz",
+    "title": "President",
+    "email": "gulzeb@gemdrugs.com",
+    "email_status": "verified",
+    "organization_name": "Gem Drugs",
+    "organization_domain": "gemdrugs.com",
+    "id": "54ebae907468694311d4260d"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/dared-price-33589a153",
+   "angle": "customer",
+   "company_name": "Graves Drugs",
+   "apollo": {
+    "first_name": "Dared",
+    "last_name": "Price",
+    "title": "Company Owner",
+    "email": "dared@oreadrx.com",
+    "email_status": "verified",
+    "organization_name": "Oread Rx",
+    "organization_domain": "oreadrx.com",
+    "id": "5e769869d37a9a0001c2974e"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/ryan-gurley-ab8479168",
+   "angle": "customer",
+   "company_name": "Baldwin Pharmacy",
+   "apollo": {
+    "first_name": "Ryan",
+    "last_name": "Gurley",
+    "title": "Independent Business Owner",
+    "email_status": "unavailable",
+    "organization_name": "Baldwin Pharmacy",
+    "id": "5d4495dca3ae6138d0ff859e"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/wessam-wes-yousef-rph-mba-3712546b",
+   "angle": "customer",
+   "company_name": "Medi-Mart",
+   "apollo": {
+    "first_name": "Wessam",
+    "last_name": "Yousef",
+    "title": "Owner/CEO",
+    "email_status": "unavailable",
+    "organization_name": "Medi-Mart Long Term Care Pharmacy",
+    "id": "66053737a2406d00066a84f5"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/mike-horosko-74a557b2",
+   "angle": "customer",
+   "company_name": "Aurora LTC Pharmacy",
+   "apollo": {
+    "first_name": "Mike",
+    "last_name": "Horosko",
+    "title": "Pharmacy Owner",
+    "email": "mike.horosko@auroraltc.com",
+    "email_status": "verified",
+    "organization_name": "Aurora Long Term Care Pharmacy",
+    "organization_domain": "auroraltc.com",
+    "id": "653b439597e227000163ef51"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/jim-anderson-9229b679",
+   "angle": "customer",
+   "company_name": "Long Term Care Rx",
+   "apollo": {
+    "first_name": "Jim",
+    "last_name": "Anderson",
+    "title": "President/Owner",
+    "email": "janderson@longtermcarerx.com",
+    "email_status": "verified",
+    "organization_name": "Long Term Care Rx",
+    "organization_domain": "longtermcarerx.com",
+    "id": "5aad5dcba6da98c326762ce4"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/daniel-amoh-354558383",
+   "angle": "customer",
+   "company_name": "Express LTC Pharmacy",
+   "apollo": {
+    "first_name": "Daniel",
+    "last_name": "Amoh",
+    "title": "Pharmacy Owner",
+    "organization_name": "Express LTC Pharmacy & Medical Supply",
+    "id": "696d02a4aa45af00013d6ce4"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/kelley-schild-718294168",
+   "angle": "customer",
+   "company_name": "Partner Care Pharmacy",
+   "apollo": {
+    "first_name": "Kelley",
+    "last_name": "Schild",
+    "title": "Owner",
+    "email": "kschild@partnercarepharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Partner Care Pharmacy Services",
+    "organization_domain": "partnercarepharmacy.com",
+    "id": "60f4d8a078e5a60001dced59"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/douglas-hynek-4704a5327",
+   "angle": "customer",
+   "company_name": "Hawthorn LTC Pharmacy",
+   "apollo": {
+    "first_name": "Douglas",
+    "last_name": "Hynek",
+    "title": "Co-Owner",
+    "email_status": "unavailable",
+    "organization_name": "Hawthorn LTC Pharmacy",
+    "organization_domain": "hawthornltc.com",
+    "id": "66e4b80a09d9aa0001858aa0"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/richie-ray-rph",
+   "angle": "customer",
+   "company_name": "Richie's Specialty Pharmacy",
+   "apollo": {
+    "first_name": "Richie",
+    "last_name": "Ray",
+    "title": "Pharmacist/Owner",
+    "email": "richie@kih-llc.com",
+    "email_status": "verified",
+    "organization_name": "Kingdom Investment Holdings",
+    "organization_domain": "kih-llc.com",
+    "id": "69e47779823fa50001cc37c5"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/dlavar-a-881137121",
+   "angle": "customer",
+   "company_name": "Pharma Plus Pharmacy",
+   "apollo": {
+    "first_name": "Dlavar",
+    "last_name": "Athar",
+    "title": "Chief Executive Officer",
+    "email_status": "unavailable",
+    "organization_name": "Pharma Plus Pharmacy",
+    "id": "6119099598c81d0001157d61"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/chiedozie-chukwuneke-pharm-d-csp-13619a151",
+   "angle": "customer",
+   "company_name": "Linden Specialty Pharmacy",
+   "apollo": {
+    "first_name": "Chiedozie",
+    "last_name": "Chukwuneke",
+    "title": "Pharmacist-in-Charge",
+    "email_status": "unavailable",
+    "organization_name": "Linden Retail Specialty Pharmacy",
+    "organization_domain": "lindenspecialty.com",
+    "id": "612bad2007cf23000188296d"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/tylermtreharne",
+   "angle": "customer",
+   "company_name": "NewEra Pharmacy",
+   "apollo": {
+    "first_name": "Tyler",
+    "last_name": "Treharne",
+    "title": "Owner/Founder",
+    "email": "tyler@newerapharmacy.com",
+    "email_status": "verified",
+    "organization_name": "NewEra Pharmacy",
+    "organization_domain": "newerapharmacy.com",
+    "id": "54a126a069702d8cfcda5000"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/joseph-lee-8b3b125b",
+   "angle": "customer",
+   "company_name": "Medicine Cabinet Pharmacy",
+   "apollo": {
+    "first_name": "Joseph",
+    "last_name": "Lee",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Medicine Cabinet Pharmacy",
+    "id": "5d635ce4f651258224475259"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/michael-anton-9a705549",
+   "angle": "customer",
+   "company_name": "People & Paws Pharmacy",
+   "apollo": {
+    "first_name": "Michael",
+    "last_name": "Anton",
+    "title": "Owner/President",
+    "email": "mike@peopleandpawsrx.com",
+    "email_status": "verified",
+    "organization_name": "Wailea People & Paws Pharmacy",
+    "organization_domain": "peopleandpawsrx.com",
+    "id": "54a18c3d7468697b23a8d001"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/sherman-white-jr-5b881a26",
+   "angle": "customer",
+   "company_name": "200 Pharmacy",
+   "apollo": {
+    "first_name": "Sherman",
+    "last_name": "White",
+    "title": "Owner",
+    "email": "sherman@200pharmacy.com",
+    "email_status": "verified",
+    "organization_name": "200 Pharmacy & Home Medical Supplies",
+    "organization_domain": "200pharmacy.com",
+    "id": "666d9f144e4d6c0001ab075f"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/charles-tabouchirani-b6a8b368",
+   "angle": "customer",
+   "company_name": "Cherry's Pharmacy",
+   "apollo": {
+    "first_name": "Charles",
+    "last_name": "Tabouchirani",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Cherry's Pharmacy",
+    "organization_domain": "cherryspharmacy.com",
+    "id": "54a5fda27468693442a64eb9"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/ryan-lavarnway-94119556",
+   "angle": "customer",
+   "company_name": "Brooks Medical Pharmacy",
+   "apollo": {
+    "first_name": "Ryan",
+    "last_name": "Lavarnway",
+    "title": "President",
+    "email_status": "unavailable",
+    "organization_name": "Brooks Medical Pharmacy",
+    "id": "54a46c147468692abf3dd045"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/walt-jeter-0b7919177",
+   "angle": "customer",
+   "company_name": "Medicine Man Compounding Pharmacy",
+   "apollo": {
+    "first_name": "Walt",
+    "last_name": "Jeter",
+    "title": "Business Owner",
+    "email_status": "unavailable",
+    "organization_name": "Medicine Man Compounding Pharmacy",
+    "organization_domain": "medicinemansc.com",
+    "id": "684e9eec7d4c1700010373e4"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/ryan-isacsson-pharmd-mba-286734129",
+   "angle": "customer",
+   "company_name": "Northwell Health",
+   "apollo": {
+    "first_name": "Ryan",
+    "last_name": "Isacsson",
+    "title": "System Director, Pharmacy Business Services",
+    "email": "ryan.isacsson@nuvancehealth.org",
+    "email_status": "verified",
+    "organization_name": "Northwell Health",
+    "organization_domain": "northwell.edu",
+    "id": "6408b7f0fb5edc00014f99a5"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/aaron-dunlap-06731a36a",
+   "angle": "customer",
+   "company_name": "Klinger and Rings Pharmacy",
+   "apollo": {
+    "first_name": "Aaron",
+    "last_name": "Dunlap",
+    "title": "Pharmacy Owner",
+    "email_status": "unavailable",
+    "organization_name": "Klinger and Rings Pharmacy",
+    "id": "69be2fc91eae9f000104ec33"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/ahunna-freeman-pharmd-582a2a80",
+   "angle": "customer",
+   "company_name": "Southside Discount Pharmacy",
+   "apollo": {
+    "first_name": "Ahunna",
+    "last_name": "Freeman",
+    "title": "Owner and Pharmacy Manager",
+    "email": "drfreeman@southsidediscountrx.com",
+    "email_status": "verified",
+    "organization_name": "Southside Discount Pharmacy",
+    "organization_domain": "southsidediscountrx.com",
+    "id": "6614fbd4ad3e8a0007099e8a"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/alan-kennedy-b2721615",
+   "angle": "customer",
+   "company_name": "Medicap Pharmacy",
+   "apollo": {
+    "first_name": "Alan",
+    "last_name": "Kennedy",
+    "title": "Pharmacist Owner",
+    "email_status": "unavailable",
+    "organization_name": "Medicap Pharmacy",
+    "id": "6274c5768381b90001a1d680"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/andrew-komuves-jr-rph-56164854",
+   "angle": "customer",
+   "company_name": "Allen Family Drug",
+   "apollo": {
+    "first_name": "Andrew",
+    "last_name": "Komuves",
+    "title": "Co-Owner/Pharmacist in Charge",
+    "email": "andy@allenfamilydrug.com",
+    "email_status": "verified",
+    "organization_name": "Allen Family Drug",
+    "organization_domain": "allenfamilydrug.com",
+    "id": "660588cbc9f6ce0008329f83"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/andy-kramer-34261872",
+   "angle": "customer",
+   "company_name": "Kramer's Pharmacy",
+   "apollo": {
+    "first_name": "Andy",
+    "last_name": "Kramer",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Kramer's Pharmacy",
+    "organization_domain": "kramerspharmacy.com",
+    "id": "5ffabe1d20af4f0001270dbc"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/bhavesh-bobby-patel-6762026b",
+   "angle": "customer",
+   "company_name": "Ocala Pharmacy",
+   "apollo": {
+    "first_name": "Bhavesh",
+    "last_name": "Patel",
+    "title": "Director/Chief Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "Ocala Pharmacy",
+    "id": "57e1995ea6da987dc46ed68d"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/bruce-landers-b5b50219",
+   "angle": "customer",
+   "company_name": "Everett's Pharmacy",
+   "apollo": {
+    "first_name": "Bruce",
+    "last_name": "Landers",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Everett's Pharmacy",
+    "id": "54ec1ae0746869444cd09150"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/bryan-thompson-02aa208",
+   "angle": "customer",
+   "company_name": "Medicine Shoppe",
+   "apollo": {
+    "first_name": "Bryan",
+    "last_name": "Thompson",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "The Medicine Shoppe",
+    "id": "5e5f7e8d22b856000164b106"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/caroline-yacoub-1182b369",
+   "angle": "customer",
+   "company_name": "Oracle Pharmacy",
+   "apollo": {
+    "first_name": "Caroline",
+    "last_name": "Yacoub",
+    "title": "Pharmacist and Owner",
+    "email_status": "unavailable",
+    "organization_name": "Oracle Pharmacy",
+    "id": "54a4266d7468693442a95630"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/casey-tarpley-b2535b7a",
+   "angle": "customer",
+   "company_name": "Lee-Goodrum Pharmacy",
+   "apollo": {
+    "first_name": "Casey",
+    "last_name": "Tarpley",
+    "title": "Owner",
+    "email": "casey@leegoodrum.com",
+    "email_status": "verified",
+    "organization_name": "Lee-Goodrum Pharmacy",
+    "organization_domain": "leegoodrumhealth.com",
+    "id": "66f7664b27096c00012fbeda"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/chad-huntsman-12782b62",
+   "angle": "customer",
+   "company_name": "JJ Beans Pharmacy Group",
+   "apollo": {
+    "first_name": "Chad",
+    "last_name": "Huntsman",
+    "title": "Independent Pharmacy Owner",
+    "email": "chad@jjbeansgroup.com",
+    "email_status": "verified",
+    "organization_name": "JJ Beans Pharmacy Group",
+    "id": "60666f5449c87a000181387d"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/cheryl-stoukides-463a8023",
+   "angle": "customer",
+   "company_name": "Simpson's Pharmacy",
+   "apollo": {
+    "first_name": "Cheryl",
+    "last_name": "Stoukides",
+    "title": "Pharmacist in Charge",
+    "email_status": "unavailable",
+    "organization_name": "Simpson's Pharmacy",
+    "id": "5fd062913ed59f00016997d5"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/clinthopkinspharmd",
+   "angle": "customer",
+   "company_name": "Eddie's Pharmacy",
+   "apollo": {
+    "first_name": "Clint",
+    "last_name": "Hopkins",
+    "title": "COO/Owner/Pharmacist",
+    "email": "clint@eddiespharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Eddie's Pharmacy",
+    "organization_domain": "eddiespharmacy.com",
+    "id": "66fe4b3634b8ca0001b25bcd"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/curt-willett-232350a6",
+   "angle": "customer",
+   "company_name": "Hendersonville Health Mart",
+   "apollo": {
+    "first_name": "Curt",
+    "last_name": "Willett",
+    "title": "Pharmacist/Owner",
+    "email_status": "unavailable",
+    "organization_name": "Hendersonville Health Mart",
+    "organization_domain": "hendersonvillehealthmart.com",
+    "id": "60faeecee4892800018880fc"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/dallas-lonardo-942502183",
+   "angle": "customer",
+   "company_name": "Med-Source Pharmacy",
+   "apollo": {
+    "first_name": "Dallas",
+    "last_name": "Lonardo",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Med-Source Pharmacy",
+    "id": "612a3b057a5b7d0001eea631"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/dan-fucarino-8ba6223a",
+   "angle": "customer",
+   "company_name": "Carrollwood Compounding Center",
+   "apollo": {
+    "first_name": "Dan",
+    "last_name": "Fucarino",
+    "title": "Owner/Pharmacist",
+    "email": "dan@carrollwoodpharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Carrollwood Compounding Center",
+    "id": "54a3a1437468692fa2d01906"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/devin-trone-75b14212",
+   "angle": "customer",
+   "company_name": "Medicap Pharmacy",
+   "apollo": {
+    "first_name": "Devin",
+    "last_name": "Trone",
+    "title": "Pharmacist and Owner/Operator",
+    "email_status": "unavailable",
+    "organization_name": "Medicap Pharmacies",
+    "id": "54a46c0b74686938ac796646"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/dipak-patel-0bb4b870",
+   "angle": "customer",
+   "company_name": "Medicine Shoppe",
+   "apollo": {
+    "first_name": "Dipak",
+    "last_name": "Patel",
+    "title": "Chief Executive Officer",
+    "email": "dpatel@shillingtonms.com",
+    "email_status": "verified",
+    "organization_name": "The Medicine Shoppe 2057",
+    "id": "5941e818a6da982a18be030d"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/don-piela-jr-pharmd-1b43917",
+   "angle": "customer",
+   "company_name": "Madden's Pharmacy",
+   "apollo": {
+    "first_name": "Don",
+    "last_name": "Piela",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Madden's Pharmacy",
+    "organization_domain": "maddenspharmacy.com",
+    "id": "54a1ffb574686935be2a2304"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/dr-marc-hoang-pharmd-28b97035",
+   "angle": "customer",
+   "company_name": "Payless Pharmacy",
+   "apollo": {
+    "first_name": "Marc",
+    "last_name": "Hoang",
+    "title": "CEO/Owner",
+    "email": "jvladion@proweaver.net",
+    "email_status": "verified",
+    "organization_name": "Payless Pharmacy Group",
+    "organization_domain": "paylesspharmacy.info",
+    "id": "57e13454a6da987ddc7336ab"
+   },
+   "force_salesnav": "Apollo email belongs to someone else (proweaver.net)"
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/dr-peyman-kimasi-pharmd-rph-19974329",
+   "angle": "customer",
+   "company_name": "VIP Pharmacy",
+   "apollo": {
+    "first_name": "Peyman",
+    "last_name": "Kimasi",
+    "title": "Co Owner",
+    "email_status": "unavailable",
+    "organization_name": "VIP Pharmacy",
+    "id": "54a50b2c7468692fa2d01906"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/emil-slewa-1b2b4a31b",
+   "angle": "customer",
+   "company_name": "Emery Village Pharmacy",
+   "apollo": {
+    "first_name": "Emil",
+    "last_name": "Slewa",
+    "title": "Pharmacy Owner",
+    "email": "rx@emeryvillagepharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Emery Village Pharmacy",
+    "organization_domain": "emeryvillagepharmacy.com",
+    "id": "673463dd5212b3000119480a"
+   },
+   "force_salesnav": "shared store inbox (rx@), not a personal address"
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/garrett-strawn-pharmd-7ab16822b",
+   "angle": "customer",
+   "company_name": "Athena Compounding",
+   "apollo": {
+    "first_name": "Garrett",
+    "last_name": "Strawn",
+    "title": "Owner/Pharmacist in Charge",
+    "email": "garrett.strawn@athenacompounding.com",
+    "email_status": "verified",
+    "organization_name": "Athena Compounding",
+    "organization_domain": "athenacompounding.com",
+    "id": "662c6fe38c43f400072d30a1"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/geor-j-3b04811b4",
+   "angle": "customer",
+   "company_name": "Greenleaf Pharmacy",
+   "apollo": {
+    "first_name": "George",
+    "last_name": "Joseph",
+    "title": "Owner - Pharmacist in Charge",
+    "email_status": "unavailable",
+    "organization_name": "Greenleaf Pharmacy",
+    "organization_domain": "mygreenleafpharmacy.com",
+    "id": "624bff8fa7119c000185a76f"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/gregdeese",
+   "angle": "customer",
+   "company_name": "Oakhurst Pharmacy",
+   "apollo": {
+    "first_name": "Greg",
+    "last_name": "Deese",
+    "title": "Owner",
+    "email": "rx@oakhurstrxnc.com",
+    "email_status": "verified",
+    "organization_name": "Oakhurst Pharmacy",
+    "id": "626a39ad08c44a00013a0911"
+   },
+   "force_salesnav": "shared store inbox (rx@), not a personal address"
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/hemant-hirpara-25a24174",
+   "angle": "customer",
+   "company_name": "Care Central Pharmacy",
+   "apollo": {
+    "first_name": "Hemant",
+    "last_name": "Hirpara",
+    "title": "Pharmacist, PIC",
+    "email_status": "unavailable",
+    "organization_name": "Care Central Pharmacy",
+    "id": "54c27c247468697af720259f"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/imran-kazmi-67997b235",
+   "angle": "customer",
+   "company_name": "Fulton Care Pharmacy",
+   "apollo": {
+    "first_name": "Imran",
+    "last_name": "Kazmi",
+    "title": "President",
+    "email_status": "unavailable",
+    "organization_name": "Fulton Care Pharmacy",
+    "id": "66adec8c9050c00001c68cb4"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/jarednekos-pharmd",
+   "angle": "customer",
+   "company_name": "Dedrick's Pharmacy",
+   "apollo": {
+    "first_name": "Jared",
+    "last_name": "Nekos",
+    "title": "Owner and President",
+    "email": "pharmacist@dedrickspharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Dedrick's Pharmacy",
+    "organization_domain": "dedrickspharmacy.com",
+    "id": "64868c2d224cbb000174fe3f"
+   },
+   "force_salesnav": "shared store inbox (pharmacist@), not a personal address"
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/jeff-neidig-a217b17a",
+   "angle": "customer",
+   "company_name": "Medi-Wise Pharmacy",
+   "apollo": {
+    "first_name": "Jeff",
+    "last_name": "Neidig",
+    "title": "Owner, Pharmacist",
+    "email": "jeffneidig@mediwisepharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Medi-Wise Pharmacy",
+    "organization_domain": "mediwisepharmacy.com",
+    "id": "54a6e4e0746869682934e601"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/jerry-shelby-48103a191",
+   "angle": "customer",
+   "company_name": "Easley Health Mart",
+   "apollo": {
+    "first_name": "Jerry",
+    "last_name": "Shelby",
+    "title": "Pharmacy Owner",
+    "email_status": "unavailable",
+    "organization_name": "Easley HealthMart Pharmacy",
+    "organization_domain": "easleypharmacy.com",
+    "id": "61b35d66c6e3fd00014b2fb8"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/john-forbes-6591b913",
+   "angle": "customer",
+   "company_name": "Medicap Pharmacy",
+   "apollo": {
+    "first_name": "John",
+    "last_name": "Forbes",
+    "title": "Pharmacy Owner/Manager",
+    "email_status": "unavailable",
+    "organization_name": "Medicap Pharmacy",
+    "id": "54a8ca267468692d1ccbc505"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/john-komara-pharmd-a3980696",
+   "angle": "customer",
+   "company_name": "Medina Family Pharmacy",
+   "apollo": {
+    "first_name": "John",
+    "last_name": "Komara",
+    "title": "President/Owner",
+    "email_status": "unavailable",
+    "organization_name": "Medina Family Pharmacy & Compounding Lab",
+    "id": "65fa74130efc130007ac06f9"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/katie-perry-2841498a",
+   "angle": "customer",
+   "company_name": "Germantown Pharmacy",
+   "apollo": {
+    "first_name": "Katie",
+    "last_name": "Perry",
+    "title": "Pharmacy Owner",
+    "email_status": "unavailable",
+    "organization_name": "Germantown Pharmacy",
+    "id": "5dc96e337515230001f42004"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/ken-balasiano-a293297",
+   "angle": "customer",
+   "company_name": "Medicap Pharmacy",
+   "apollo": {
+    "first_name": "Ken",
+    "last_name": "Balasiano",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Medicap Pharmacy",
+    "id": "54a5aaf37468692fa28120a0"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/kenneth-ukauwa-pharmd-60bba345",
+   "angle": "customer",
+   "company_name": "Pinecroft Pharmacy",
+   "apollo": {
+    "first_name": "Kenneth",
+    "last_name": "Ukauwa",
+    "title": "Owner/Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "Pinecroft Pharmacy",
+    "id": "55709d8a736964211fea0700"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/lance-wheeler-56077a224",
+   "angle": "customer",
+   "company_name": "Curexa",
+   "apollo": {
+    "first_name": "Lance",
+    "last_name": "Wheeler",
+    "title": "Chief Operating Officer",
+    "email": "lwheeler@curexa.com",
+    "email_status": "verified",
+    "organization_name": "Curexa Pharmacy",
+    "organization_domain": "curexa.com",
+    "id": "63161b120a1bb50001819eaf"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/leib-gershkovich-64465673",
+   "angle": "customer",
+   "company_name": "Elm Pharmacy",
+   "apollo": {
+    "first_name": "Leib",
+    "last_name": "Gershkovich",
+    "title": "Pharmacist and Owner",
+    "email_status": "unavailable",
+    "organization_name": "Elm Pharmacy",
+    "organization_domain": "elmpharmacy.biz",
+    "id": "5e7bf1b30fc0dc0001c665d2"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/mark-mandel-727b2314",
+   "angle": "customer",
+   "company_name": "Mark Drugs",
+   "apollo": {
+    "first_name": "Mark",
+    "last_name": "Mandel",
+    "title": "Pharmacist-Owner",
+    "email": "mark.m@markdrugs.com",
+    "email_status": "verified",
+    "organization_name": "Mark Drugs",
+    "organization_domain": "markdrugs.com",
+    "id": "6079ad21edeaa800011acbc4"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/normlevine",
+   "angle": "customer",
+   "company_name": "Parkside Pharmacy",
+   "apollo": {
+    "first_name": "Norm",
+    "last_name": "Levine",
+    "title": "Owner and Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "Parkside Pharmacy",
+    "id": "54a287ab74686935be5dac29"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/prashant-koyani-4a556028",
+   "angle": "customer",
+   "company_name": "Imperial Pharmacy",
+   "apollo": {
+    "first_name": "Prashant",
+    "last_name": "Koyani",
+    "title": "Pharmacist Owner",
+    "email_status": "unavailable",
+    "organization_name": "Imperial Pharmacy",
+    "id": "54a4e794746869344287d96c"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/rod-halbert-a84ba918",
+   "angle": "customer",
+   "company_name": "ReUnion Rx",
+   "apollo": {
+    "first_name": "Rod",
+    "last_name": "Halbert",
+    "title": "Owner/Managing Member",
+    "email": "rod@reunionrx.com",
+    "email_status": "verified",
+    "organization_name": "ReUnion RX",
+    "organization_domain": "reunionrx.com",
+    "id": "54a3265c74686933189ea857"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/sean-corkrean-4a933336",
+   "angle": "customer",
+   "company_name": "Corkreans The Pharmacist",
+   "apollo": {
+    "first_name": "Sean",
+    "last_name": "Corkrean",
+    "title": "Owner",
+    "email_status": "unavailable",
+    "organization_name": "Corkreans The Pharmacist",
+    "id": "614e94eac90ca90001d72658"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/shawnnairnrph",
+   "angle": "customer",
+   "company_name": "ACORx Pharmacy",
+   "apollo": {
+    "first_name": "Shawn",
+    "last_name": "Nairn",
+    "title": "Owner / Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "ACORx Pharmacy",
+    "organization_domain": "acorxpharmacy.com",
+    "id": "64295df80542fe0001054c12"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/siobhanatchley",
+   "angle": "customer",
+   "company_name": "Blanco Pharmacy",
+   "apollo": {
+    "first_name": "Siobhan",
+    "last_name": "Atchley",
+    "title": "Owner/Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "Blanco Pharmacy & Wellness",
+    "id": "57db14dfa6da986de20b2ce4"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/steve-hoffart-a278a621",
+   "angle": "customer",
+   "company_name": "Magnolia Pharmacy",
+   "apollo": {
+    "first_name": "Steve",
+    "last_name": "Hoffart",
+    "title": "President",
+    "email": "steveh@magnoliapharmacy.com",
+    "email_status": "verified",
+    "organization_name": "Magnolia Pharmacy",
+    "organization_domain": "magnoliapharmacy.com",
+    "id": "66f694b16f84a2000107e60f"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/steven-horst-33074626",
+   "angle": "customer",
+   "company_name": "Horst Pharmacy",
+   "apollo": {
+    "first_name": "Steven",
+    "last_name": "Horst",
+    "title": "Business Owner",
+    "email_status": "unavailable",
+    "organization_name": "Horst Pharmacy",
+    "organization_domain": "horstpharmacy.com",
+    "id": "5ed18e93e5534200013536a8"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/tal-rozene-60511b24",
+   "angle": "customer",
+   "company_name": "WellCreek Pharmacy",
+   "apollo": {
+    "first_name": "Tal",
+    "last_name": "Rozene",
+    "title": "Pharmacist and Owner",
+    "email": "charleston@wellcreekpharmacy.com",
+    "email_status": "verified",
+    "organization_name": "WellCreek Pharmacy",
+    "id": "54a600137468693442261eba"
+   },
+   "force_salesnav": "store-location inbox (charleston@), not a personal address"
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/tom-thompson-59650091",
+   "angle": "customer",
+   "company_name": "Concord Medicap Pharmacy",
+   "apollo": {
+    "first_name": "Tom",
+    "last_name": "Thompson",
+    "title": "Pharmacist Manager/Owner",
+    "email_status": "unavailable",
+    "organization_name": "Concord Medicap Pharmacy",
+    "id": "5b18f950a6da983067d35a56"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/tushar-mehta-883b4814",
+   "angle": "customer",
+   "company_name": "Broadway Ave Pharmacy",
+   "apollo": {
+    "first_name": "Tushar",
+    "last_name": "Mehta",
+    "title": "Pharmacy Owner",
+    "email_status": "unavailable",
+    "organization_name": "Broadway Ave Pharmacy",
+    "id": "55bf23257369640649953a00"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/tyler-dearing-434b2730a",
+   "angle": "customer",
+   "company_name": "Myrtle Drugs",
+   "apollo": {
+    "first_name": "Tyler",
+    "last_name": "Dearing",
+    "title": "Pharmacy Owner",
+    "email_status": "unavailable",
+    "organization_name": "Cascadia Pharmacy Group",
+    "organization_domain": "cascadiapharmacygroup.com",
+    "id": "666592e7447d670001b90d93"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/uzair-chachar-ab7178275",
+   "angle": "customer",
+   "company_name": "Life Care Pharmacy",
+   "apollo": {
+    "first_name": "Uzair",
+    "last_name": "Chachar",
+    "title": "Pharmacy Owner/Pharmacist in Charge",
+    "email_status": "unavailable",
+    "organization_name": "Life Care Pharmacy",
+    "id": "64622580e702040001a2d4a9"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/victor-falah-61a61965",
+   "angle": "customer",
+   "company_name": "Irmat Pharmacy",
+   "apollo": {
+    "first_name": "Victor",
+    "last_name": "Falah",
+    "title": "Owner/Pharmacist",
+    "email_status": "unavailable",
+    "organization_name": "Irmat Pharmacy",
+    "id": "67569817c41509000123e6bc"
+   }
+  },
+  {
+   "linkedin_url": "https://www.linkedin.com/in/vimal-bhakta-b1001452",
+   "angle": "customer",
+   "company_name": "Medicine Shoppe",
+   "apollo": {
+    "first_name": "Vimal",
+    "last_name": "Bhakta",
+    "title": "Pharmacist/Owner",
+    "email": "2015@medicineshoppe.com",
+    "email_status": "verified",
+    "organization_name": "Medicine Shoppe Pharmacy of Greenville",
+    "id": "55705b557369647fef2b0900"
+   },
+   "force_salesnav": "store-number inbox, not a personal address"
+  }
+ ]
+}

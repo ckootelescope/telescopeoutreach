@@ -1,0 +1,56 @@
+{
+  "slug": "tandem",
+  "company": "Tandem",
+  "fetchedAt": "2026-09-17T00:00:00Z",
+  "what_they_do": "Tandem sits on top of the CAD and PLM stack hardware teams already run and keeps one live record of design intent, requirements, CAD changes and review decisions. It turns work happening inside CAD sessions into the engineering paperwork teams assemble by hand today: change order drafts, design review packets, change impact analyses and traceability records. It replaces the manual reconstruction of why a part changed and what else that change touches, which currently lives in spreadsheets, email threads and individual engineers' memory.",
+  "vertical": "hardware engineering teams in regulated and high-consequence product categories",
+  "primary_theme": 2,
+  "secondary_theme": 8,
+  "theme_fit_rationale": "Tandem holds one workflow together across CAD, PLM, Slack, Teams and Excel, systems never designed to reconcile with each other, and the connective record it accumulates is what turns it into a system of record over time. Secondary fit to theme 8 because much of the captured context is review and decision conversation.",
+  "workflow_artifacts": [
+    "change orders",
+    "design review packets",
+    "change impact analyses",
+    "traceability records",
+    "requirements documents",
+    "CAD model and drawing revisions",
+    "PLM entries"
+  ],
+  "recent_signals": [
+    {"date": "2026-09", "type": "product", "summary": "Domain and brand migration from tandemai.io to tandem.inc, live via permanent redirect; team email addresses moved to @tandem.inc", "url": "https://tandem.inc/"},
+    {"date": "2026-08-29", "type": "product", "summary": "New platform page introduces Tandem Watch, which observes work inside CAD and captures model changes, drawing updates and design-session context", "url": "https://tandem.inc/platform"},
+    {"date": "2026-08", "type": "product", "summary": "Integration surface broadened past a single-CAD wedge to Solidworks, Fusion, Onshape and NX, plus PLM systems, Teams, Slack, Google Workspace and Excel", "url": "https://tandem.inc/"},
+    {"date": "2026-08", "type": "news", "summary": "Named customer logos published on the homepage, concentrated in regulated hardware: Fluxergy, Endiatx, Vaxon Space, Starlight Cardiovascular, Tusk, Daily's", "url": "https://tandem.inc/"},
+    {"date": "2026-09", "type": "hiring", "summary": "Live careers page linked from the homepage, actively recruiting", "url": "https://tandem.inc/"},
+    {"date": "2026-09", "type": "news", "summary": "NEGATIVE - DO NOT USE. Harmonic headcount 7, down from 9 thirty days ago and 11 ninety days ago; the prior co-founder/CTO shows an end date around 2026-05 with a different co-founder now in the CTO seat.", "url": null}
+  ],
+  "market": "hardware engineering workflow software, PLM and CAD adjacent engineering systems of record",
+  "market_patterns": [
+    {
+      "pattern": "The products that land in engineering orgs sit beside the existing system of record and automate one painful repeated step inside the engineer's own workflow, handing output back into whatever the team already uses. Adoption comes from being native to the domain rather than from being a better general-purpose tool.",
+      "failure_mode": "The ones that stall ask the team to migrate the system of record before the product can prove anything. A prior migration that went badly leaves durable wariness, and that memory, not the feature comparison, is usually what kills the deal."
+    },
+    {
+      "pattern": "Pilots convert when the buyer can watch the product run on their own drawings and their own data and see a before-and-after inside the evaluation itself, with the daily practitioner validating usability and the business owner validating output quality before anything goes to procurement.",
+      "failure_mode": "The ones that stall lead with a polished demo on vendor data and leave the accuracy question open, so the evaluation turns into an unbounded review exercise instead of a decision."
+    },
+    {
+      "pattern": "Accounts expand outward from the point solution into the integration layer, and the product becomes hard to displace at the moment it starts holding the links between artifacts that previously lived in separate systems. That connective record, not the original feature, is what makes it permanent.",
+      "failure_mode": "The ones that stall stay adjacent to the operating workflow, so the team quietly keeps its old coordination tool running alongside and the new product never becomes the place people look first."
+    }
+  ],
+  "research_grade": "A",
+  "funding": "Seed, Sept 2025. Sources conflict on size (Harmonic ~$4.7M; Apollo and Dealroom ~$200K Antler). Do not quote a figure.",
+  "headcount": "7 current, declining from 9 thirty days ago and 11 ninety days ago",
+  "prior_insights": [
+    "Round 1 Email 4 paragraph 2: I think Tandem is solving a clear pain point for engineering teams where the reasoning behind a design decision leaves with the person who made it. Over time, that captured intent could support a broader platform where a team can ask what breaks if a part changes, and I think that's a much larger problem than documentation.",
+    "Round 1 Email 3 (fixed template): following up - how have you been thinking about your next raise?",
+    "Round 1 Email 2 (fixed template): wanted to follow up to see if you're free to connect in the next couple of weeks?",
+    "Round 1 Email 1 body was never stored in the tracker (body_html null), so the do-not-repeat list is incomplete for the opener."
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Kunal - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses that hold one workflow together across systems that were never designed to talk to each other. Hardware engineering is a good example, where change orders, design review packets and traceability records get assembled by hand out of CAD files, PLM entries and review decisions that only exist in email. I think the tools that matter here are the ones holding the links between those artifacts rather than producing another document, because that record is what becomes the system of record over time.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}
