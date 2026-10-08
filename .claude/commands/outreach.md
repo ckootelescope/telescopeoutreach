@@ -24,6 +24,12 @@ This guard exists because the Round 1 opener ("I love what you're building at [C
 wanted to see if you're free to chat next week?") reads as a first contact. Sending it to a
 founder who has already received four emails is the worst failure mode in this system.
 
+## Block 2 (Email 1 insight paragraph)
+
+Before drafting, read `references/block2-spec.md` in full, every time. Do not draft Block 2 from
+memory of an earlier run. Run `node scripts/block2_check.js "<paragraph>"` on the result and
+compare it to the last 5 Block 2s it prints before creating the Superhuman draft.
+
 ## Steps 1-5
 
 Follow the Round 1 flow in `CLAUDE.md` exactly as written: research subagent producing a Writing

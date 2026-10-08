@@ -129,6 +129,11 @@ market_patterns:
   - pattern: [how companies in this market get bought, adopted or expanded. Generalized.]
     failure_mode: [the contrast. "The ones that stall..."]
   - [2-3 total. Empty if the market is not covered in Calvin's calls.]
+founder_thesis: [the founder's own explanation of why this problem exists and why existing tools
+                miss it, from their blog, launch post, podcast or docs. Paraphrased in plain words,
+                never quoted. Blank if none found.]
+incumbent_design: [what the incumbent tools in this workflow were originally built for, and the
+                  assumption that no longer holds. Blank if unclear.]
 research_grade: [A = a usable market pattern plus a primary source read. B = one of the two.
                  C = neither, only Harmonic deltas. Do NOT draft on a C; surface it to Calvin.]
 ```
@@ -150,12 +155,26 @@ Personalized greeting, CTA to chat, and Telescope intro all upfront in the first
 
 The greeting can be personalized. If someone on the team has SPOKEN to the company, reference that prior conversation. The Telescope intro is always included. The CTA ("free to chat next week?") should always be in the first sentence or two.
 
-#### Block 2: Insight (VARIABLE — the creative part)
+#### Block 2: Insight (VARIABLE, the creative part)
 
 This is the only variable block. Blocks 1 and 3 are fixed; all content goes here.
 
-**Build it in four moves.** This structure also drives Round 1 Email 4 paragraph 2 and Round 2
-Emails 2 and 3. See "Market Pattern Insights" below for the sourcing and the hard rules.
+**Read `references/block2-spec.md` in full on every invocation, before drafting.** It is the
+spec for this block: research, the angle table, shape (2 to 4 sentences, 35 to 95 words), banned
+stems, the recent-output check, fail-closed rules, the output format, and the gold and anti
+examples drawn from the openers founders actually replied to. Run
+`node scripts/block2_check.js "<paragraph>"` before the draft goes to Superhuman. It flags the
+mechanical failures and prints the last 5 Block 2s to compare against.
+
+Show Calvin the result as `Revised Block 2` plus a one or two line `Why` alongside the draft.
+
+The four-move structure below is **retired for Email 1 Block 2** (rebuilt 2026-10-08, after the
+Aug 17 to 31 batch on that template drew a 13% Email 1 reply rate). It still drives the other
+three slots.
+
+#### Four-move pattern structure (Email 4 paragraph 2, Round 2 Emails 2 and 3 only)
+
+See "Market Pattern Insights" below for the sourcing and the hard rules.
 
 1. **Earned position.** "We've been spending a lot of time in [market]" — establishes you have
    a view without proving anything.
@@ -187,6 +206,9 @@ of those agencies can see on their own, and that's the part that's hard to displ
 **If no market pattern is available** (see the coverage note below), fall back to a thesis-level
 structural insight about the company drawn from the matched investment theme. Do not invent a
 pattern, and do not fabricate having spent time in a market.
+
+For Email 1 Block 2, the market pattern is research input, not a template. Use it to understand
+the mechanism, then write to `references/block2-spec.md`.
 
 #### Block 3: Close (FIXED, updated 2026-08-17)
 
@@ -222,7 +244,7 @@ Where the middle-block content comes from. **This applies to exactly four slots:
 
 | Engine | Slot |
 |---|---|
-| Round 1 | Email 1, Block 2 |
+| Round 1 | Email 1, Block 2 (as research input, written to `references/block2-spec.md`) |
 | Round 1 | Email 4, paragraph 2 (weighted to the GTM pattern) |
 | Round 2 | Email 2 |
 | Round 2 | Email 3 |
@@ -356,7 +378,7 @@ Four paragraphs. Paragraphs 1, 3, and 4 are fixed. Paragraph 2 is a NEW insight 
 
 **Paragraph 2 (variable — a GTM pattern + Telescope value-add):**
 
-Use the four-move structure from Block 2, but **weighted to the GTM pattern** rather than to the
+Use the four-move pattern structure (above, under Block 2), but **weighted to the GTM pattern** rather than to the
 product: how companies in this market land, convert pilots, expand accounts, or stall. It must be
 a different pattern from the one used in Email 1, since paragraph 3 already carries the
 Telescope-can-help line. Same sourcing and confidentiality rules as "Market Pattern Insights".

@@ -219,7 +219,7 @@ An entry with `round: 2` and `needsDraft: true` has no body yet. Load
 `research/<slug>.json` and draft from the cache. **Do not re-research** — the dossier is at most
 10 days old by Email 3.
 
-Both carry a **market pattern insight** built on the four moves in `CLAUDE.md` Block 2: earned
+Both carry a **market pattern insight** built on the four moves in `CLAUDE.md` (Four-move pattern structure, under Block 2): earned
 position, the pattern, the failure mode, then the company tie-in. Move 4 is not optional. A
 pattern with no tie-in reads as a generic market take.
 
