@@ -17974,7 +17974,8 @@
       "body": "<div>Hey Jagannath - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in AI for back-office operations and the pattern we keep seeing is that the accounts that grow start with one painful queue, prove it on throughput, and then pick up the workflows sitting next to it. The ones that stall either pitch a broad agent platform before earning trust on a single process, or win the first workflow with so much hands-on setup that every expansion turns into another services project. I think Champ is interesting though because the Builder Agent lets an ops team describe the next process in plain English, which could make the second and third workflows much cheaper to stand up than the first.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "mixedbread",
@@ -18022,7 +18023,8 @@
       "body": "<div>Hey Aamir - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in AI infrastructure and the pattern we keep seeing is that self-serve is a great way to get developers in, but the bigger contracts come once the product sits in a production workflow where the customer can see the quality difference in their own results. The ones that stall stay a component that's easy to swap for whatever the cloud provider bundles next. I think Mixedbread is interesting though because owning the embeddings, reranker, and index together means retrieval quality is yours end to end, and that's a lot harder to replace than a single piece of the stack.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "agentmail",
@@ -18070,7 +18072,8 @@
       "body": "<div>Hey Haakam - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in agent infrastructure and the pattern we keep seeing is that the tools developers keep are the ones that build something up over time, whether that's identity, permissions, or the record of what the agent actually did. The ones that stall are thin layers that are easy to connect and just as easy to rip out once a platform ships something native. I think AgentMail is interesting though because every inbox builds up the agent's threaded history with real counterparties, and for platforms provisioning an inbox per customer, usage grows with their customer base without needing a new sale.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "luminal",
@@ -18118,7 +18121,8 @@
       "body": "<div>Hey Joe - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in AI infrastructure and the pattern we keep seeing is that inference deals get decided in a short pilot on the customer's own model, measured on latency and cost per request rather than benchmarks. The ones that stall hand the buyer another piece of infrastructure to operate, so even a clear speedup loses to the work of running it. I think Luminal is interesting though because offering the compiler as a managed cloud means a team can point a real workload at it and see the difference without taking on new ops work, and the on-prem license is there once they want it inside their own environment.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "ahoy",
@@ -18166,7 +18170,8 @@
       "body": "<div>Hey Kevin - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in GTM tooling and the pattern we keep seeing is that sales tools expand when they become the place reps actually work every day, and seat growth follows from there. The ones that stall end up as a helpful add-on next to the CRM, which makes them the first thing cut once the incumbent ships something similar natively. I think Ahoy is interesting though because drafting the next step for a rep to approve gives people a reason to open it every day, and one-click migration off HubSpot or Salesforce means a team doesn't have to run two systems while they decide.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "vector-legal",
@@ -18214,7 +18219,8 @@
       "body": "<div>Hey Mitch - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in legal tech and the pattern we keep seeing is that the companies that win start with one repeatable, high-volume piece of work a customer can buy without a big decision, then grow as that customer's volume grows. The ones that stall try to sell a broad platform up front and end up filed under nice-to-have. I think Vector is interesting though because formations and first commercial contracts are that easy first purchase for a startup, and if the quality holds, you're already the default counsel when the financings, hiring and eventually the exit come around.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "roma",
@@ -18262,7 +18268,8 @@
       "body": "<div>Hey Ujwal - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in CPG and the thing that decides these deals is usually whether a brand can see real dollars come back on its own data before anyone has to commit to anything. The tools that stall get read as another dashboard sitting on top of the accounting system. I think Roma is interesting though because pulling deductions straight from the distributors and disputing the invalid ones means the ROI shows up as recovered cash almost right away, which I think is the easiest way to get a finance team to say yes and then expand into the rest of trade spend.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "arca",
@@ -18310,7 +18317,8 @@
       "body": "<div>Hey Spencer - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in life sciences software and the pattern we keep seeing is that the products that land start with one painful, deadline-driven job, prove it without an IT project, and then expand once the customer's own data lives there. The ones that stall pitch a broad AI transformation and get stuck in a long validation and procurement cycle before anyone sees value. I think Arca is interesting though because answering an FDA information request or drafting against a company's prior submissions is exactly that kind of urgent, bounded job, and once a team's submission history sits in Arca, the next filing becomes a natural place to expand.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "buddy",
@@ -18358,7 +18366,8 @@
       "body": "<div>Hey Aaron - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in CPG and wholesale ops and the timing that seems to decide these deals is the moment a brand lands a big retailer or its PO volume jumps, before it has standardized on an ERP. The ones that stall show up right after a brand has implemented a new system and ask to become one more layer on top of it. I think Buddy is interesting though because it works with the email, EDI, ERP and accounting tools a brand already has rather than replacing them, so it can land at that break point without forcing a migration and grow from order entry into invoicing and cash.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "epsilon",
@@ -18406,7 +18415,8 @@
       "body": "<div>Hey Rustin - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in healthcare services and the pattern we keep seeing is that the companies that scale fastest sell to whoever holds the contract across many sites, so one signature opens up dozens of locations. The ones that stall go facility by facility or start with large health systems, where a single deal can take over a year. I think Epsilon is interesting though because a reading contract is something imaging groups already sign for their whole network, which means one relationship can roll out across every site they run.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "lightswitch",
@@ -18454,7 +18464,8 @@
       "body": "<div>Hey Monica - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in CPG operations and the pattern we keep seeing is that the vendors who grow inside a brand start by owning one workflow end to end, like getting a retailer PO all the way through the 3PL and the invoice, and only add the next piece once that runs reliably. The ones that stall sell a single step like PO parsing, which buyers end up comparing to the cost of a virtual assistant. I think Lightswitch is interesting though because building and running the automations as an ops partner means you can start with whatever hurts most for a brand and keep taking on adjacent work like deductions and freight, which is how you become the system they can't operate without.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "zolvo",
@@ -18502,7 +18513,8 @@
       "body": "<div>Hey Isabela - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in financial back-office automation and the pattern we keep seeing is that the vendors who expand start with one bounded workflow that a single ops owner is accountable for, then grow into the adjacent work that same team already owns. The ones that stall try to cross-sell into a workflow run by a different buyer and end up starting a new sale from scratch inside the same account. I think Zolvo is interesting though because verification, reconciliation, collections and portfolio monitoring tend to sit with the same servicing team at a factor or ABL lender, so proving one of them gives you a natural path into the rest.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     },
     {
       "slug": "mendo",
@@ -18550,7 +18562,8 @@
       "body": "<div>Hey Quentin - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in enterprise AI and the pattern we keep seeing is that rollouts turn into real budget when someone accountable can point to a result against a baseline the business already tracks, like hours saved or outside spend replaced. The ones that stall report on activity and general productivity, so they stay experiments with no clear owner when renewal comes around. I think Mendo is interesting though because the usage and impact data you collect inside Copilot and ChatGPT is exactly what the person who bought those licenses needs to defend and expand them, which ties Mendo to the renewal conversation rather than the training budget.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
       "sendDate": "2026-10-03",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-08T15:16:23.118Z"
     }
   ]
 }
