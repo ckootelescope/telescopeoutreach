@@ -14245,7 +14245,9 @@
       "body": "<div>Hey Luke - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-08-25",
-      "status": "drafted"
+      "status": "completed",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "interfere",
@@ -17941,9 +17943,11 @@
       "body": "<div>Hey Jagannath - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r6590997331827627933",
-      "draftedAt": "2026-09-25T15:52:45.016Z"
+      "draftedAt": "2026-09-25T15:52:45.016Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "champ",
@@ -17975,7 +17979,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "mixedbread",
@@ -18022,7 +18027,7 @@
       "subject": "Telescope <> Mixedbread Intro",
       "body": "<div>Hey Aamir - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in AI infrastructure and the pattern we keep seeing is that self-serve is a great way to get developers in, but the bigger contracts come once the product sits in a production workflow where the customer can see the quality difference in their own results. The ones that stall stay a component that's easy to swap for whatever the cloud provider bundles next. I think Mixedbread is interesting though because owning the embeddings, reranker, and index together means retrieval quality is yours end to end, and that's a lot harder to replace than a single piece of the stack.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-10-03",
+      "sendDate": "2026-10-12",
       "status": "completed",
       "processedAt": "2026-10-08T15:16:23.118Z"
     },
@@ -18039,9 +18044,11 @@
       "body": "<div>Hey Haakam - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r-8954601249206873720",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "agentmail",
@@ -18073,7 +18080,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "luminal",
@@ -18088,9 +18096,11 @@
       "body": "<div>Hey Joe - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r-5626049333717976778",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "luminal",
@@ -18122,7 +18132,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "ahoy",
@@ -18137,9 +18148,11 @@
       "body": "<div>Hey Kevin - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r-1664208079695474728",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "ahoy",
@@ -18171,7 +18184,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "vector-legal",
@@ -18186,9 +18200,11 @@
       "body": "<div>Hey Mitch - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r8899905756927897580",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "vector-legal",
@@ -18220,7 +18236,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "roma",
@@ -18267,7 +18284,7 @@
       "subject": "Telescope <> Roma Intro",
       "body": "<div>Hey Ujwal - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in CPG and the thing that decides these deals is usually whether a brand can see real dollars come back on its own data before anyone has to commit to anything. The tools that stall get read as another dashboard sitting on top of the accounting system. I think Roma is interesting though because pulling deductions straight from the distributors and disputing the invalid ones means the ROI shows up as recovered cash almost right away, which I think is the easiest way to get a finance team to say yes and then expand into the rest of trade spend.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-10-03",
+      "sendDate": "2026-10-12",
       "status": "completed",
       "processedAt": "2026-10-08T15:16:23.118Z"
     },
@@ -18284,9 +18301,11 @@
       "body": "<div>Hey Spencer - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r-8404353171656385606",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "arca",
@@ -18316,9 +18335,10 @@
       "subject": "Telescope <> Arca Intro",
       "body": "<div>Hey Spencer - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.</div><div><br></div><div>We've been spending a lot of time in life sciences software and the pattern we keep seeing is that the products that land start with one painful, deadline-driven job, prove it without an IT project, and then expand once the customer's own data lives there. The ones that stall pitch a broad AI transformation and get stuck in a long validation and procurement cycle before anyone sees value. I think Arca is interesting though because answering an FDA information request or drafting against a company's prior submissions is exactly that kind of urgent, bounded job, and once a team's submission history sits in Arca, the next filing becomes a natural place to expand.</div><div><br></div><div>This is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.</div><div><br></div><div>I'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts.</div>",
       "emailNumber": 4,
-      "sendDate": "2026-10-03",
+      "sendDate": "2026-10-12",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "buddy",
@@ -18333,9 +18353,11 @@
       "body": "<div>Hey Aaron - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r6977410288577653056",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "buddy",
@@ -18367,7 +18389,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "epsilon",
@@ -18382,9 +18405,11 @@
       "body": "<div>Hey Rustin - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r-8469294717478839844",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "epsilon",
@@ -18416,7 +18441,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "lightswitch",
@@ -18431,9 +18457,11 @@
       "body": "<div>Hey Monica - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r6296356817211918461",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "lightswitch",
@@ -18465,7 +18493,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "zolvo",
@@ -18480,9 +18509,11 @@
       "body": "<div>Hey Isabela - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r1094254593759260461",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "zolvo",
@@ -18514,7 +18545,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "mendo",
@@ -18529,9 +18561,11 @@
       "body": "<div>Hey Quentin - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-09-23",
-      "status": "drafted",
+      "status": "completed",
       "draftId": "r-420722904178550875",
-      "draftedAt": "2026-09-25T15:52:45.018Z"
+      "draftedAt": "2026-09-25T15:52:45.018Z",
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     },
     {
       "slug": "mendo",
@@ -18563,7 +18597,8 @@
       "emailNumber": 4,
       "sendDate": "2026-10-03",
       "status": "completed",
-      "processedAt": "2026-10-08T15:16:23.118Z"
+      "processedAt": "2026-10-08T19:19:02.599Z",
+      "note": "Sequence finished by Calvin 2026-10-08 (not on Break-In); draft deleted"
     }
   ]
 }
