@@ -121,3 +121,28 @@ export async function setHtcMode(formData: FormData) {
   await db().from('os_hard_to_crack').update({ cadence_mode: mode }).eq('id', id);
   revalidatePath('/hard-to-crack');
 }
+
+/**
+ * Check off or skip an item on the command center feed (call prep, Break-In,
+ * HTC). Stored apart from the feed row so a same-day re-run of the scheduled
+ * task never wipes what Calvin already acted on. Sending the current status
+ * again clears it, so every control is a toggle.
+ */
+export async function setFeedItem(formData: FormData) {
+  const kind = String(formData.get('kind') || '');
+  const forDate = String(formData.get('for_date') || '');
+  const key = String(formData.get('key') || '');
+  const to = String(formData.get('to') || '');
+  if (!['call_prep', 'break_in', 'htc'].includes(kind) || !forDate || !key) return;
+
+  const s = db();
+  if (to === 'done' || to === 'skipped') {
+    await s.from('os_feed_action').upsert(
+      { kind, for_date: forDate, item_key: key, status: to, acted_at: new Date().toISOString() },
+      { onConflict: 'kind,for_date,item_key' });
+  } else {
+    await s.from('os_feed_action').delete()
+      .eq('kind', kind).eq('for_date', forDate).eq('item_key', key);
+  }
+  revalidatePath('/dashboard');
+}
