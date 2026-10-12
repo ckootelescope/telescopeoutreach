@@ -18613,7 +18613,8 @@
       "body": "<div>Hey Michael - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-10-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-12T20:28:57.455Z"
     },
     {
       "slug": "maven-bio",
@@ -18658,7 +18659,8 @@
       "body": "<div>Hey Kushal - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-10-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-12T20:28:57.455Z"
     },
     {
       "slug": "trestle",
@@ -18703,7 +18705,8 @@
       "body": "<div>Hey Aziz - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-10-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-12T20:28:57.455Z"
     },
     {
       "slug": "mentium",
@@ -18748,7 +18751,8 @@
       "body": "<div>Hey Jonathan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-10-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-12T20:28:57.455Z"
     },
     {
       "slug": "runloop",
@@ -18793,7 +18797,8 @@
       "body": "<div>Hey Nathan - wanted to follow up to see if you're free to connect in the next couple of weeks? Would love to see where Telescope can help out with what you're building.</div>",
       "emailNumber": 2,
       "sendDate": "2026-10-10",
-      "status": "pending"
+      "status": "completed",
+      "processedAt": "2026-10-12T20:28:57.455Z"
     },
     {
       "slug": "sira",
