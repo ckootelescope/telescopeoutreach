@@ -5,7 +5,52 @@ four-move structure for Email 1 Block 2 only. Email 4 paragraph 2 and Round 2 Em
 still use the four-move structure in `CLAUDE.md`.
 
 Last rebuilt 2026-10-08 from 137 Round 1 threads where the founder replied to Email 1 and a
-contrast set of 48 openers that never got a reply (May 18 to Sep 21, 2026).
+contrast set of 48 openers that never got a reply (May 18 to Sep 21, 2026). Draft-from-corpus
+step and voice checks added 2026-10-12 (see below), from 394 Round 1 openers pulled verbatim
+from Gmail into `references/opener-corpus.jsonl`.
+
+## Draft from the corpus (required, every invocation)
+
+Rules alone produced paragraphs in the model's voice, not Calvin's: abstract nouns, clever
+closing lines ("shifts who keeps the margin", "keeps what it already paid to learn"). Calvin
+rejected those. The fix is to write from his real openers, word for word, not from a summary
+of them.
+
+1. After the research brief is back, run
+   `node scripts/winners.js --market "<brief.market>" --about "<brief.what_they_do>"`.
+   It prints the 5 closest openers founders replied to (engaged first), each with the line the
+   founder reacted to, plus 2 same-market openers that got no reply.
+2. Read all of them before writing. The winners are the style reference. The rest of this file
+   is guardrails.
+3. Write **3 variants**. Each one is modeled on a named winner: its sentence count, sentence
+   length, how plainly it names the problem, and how it ends. Use different winners and
+   different angles across the 3.
+4. Copy the shape, not the stock phrases. Several older winners use stems that are now banned
+   ("spending a ton of time", "what I like about"). `winners.js` marks them with "!" and ranks
+   clean winners slightly higher. The stems were fine once and are worn out now. Older winners
+   also use dashes and colons. Ignore those too, since the hard style rules still apply.
+5. If a variant reads more like the no-reply examples than the winners, throw it out.
+
+What Calvin's winners do, and what model drafts do instead:
+
+| Calvin's winners | Model drafts that got rejected |
+|:-|:-|
+| Name the work concretely. "Processing POs, matching invoices, and chasing collections" | Name abstractions. "Context," "margin," "the chain," "intelligence layer" |
+| Say how it feels in plain words. "Is brutal." "Weirdly unsolved." | Narrate like a columnist. "Quietly," "finally," "nobody in the chain" |
+| End on a real question the founder can answer | End on a clever line that sums it up |
+| Sound like one person writing to another | Sound like a thesis statement |
+| Often start with "I" or a direct opinion | Start with a general claim about the industry |
+
+**What the 394-opener corpus says (May 18 to Oct 8, bounces and empty Block 2s removed).**
+Small samples, single-label judgment calls, and confounded by month. Use as direction, not law.
+
+| Finding | Numbers |
+|:-|:-|
+| A closing question helps | In May and July, the only months with both, openers ending on a question got 40% and 39% Email 1 replies vs 16% and 24% without. Engaged replies 12% vs 5% overall. The question disappeared after July and was never tested again. |
+| Credential or "time spent" lead-ins hurt | 21% Email 1 reply with one vs 30% without |
+| "Disguised problem" reframes ("it's not X, it's Y") underperform | 16% Email 1 reply, the lowest of the common angles |
+| "Real cost is downstream" and "incumbent built for a different problem" lead | 38% and 33% Email 1 reply. Engaged rates 18% and 12% |
+| Length matters only at the extremes | 60 to 130 words all land at 23 to 26%. Over 130 words drops to 14% |
 
 ## What the data says
 
@@ -65,7 +110,7 @@ order of hit rate.
 | Incumbent built for a different problem | "Most tools were built for X. Companies that start with Y have a different problem." | Kudwa, CrunchAtlas, DeepIDV, Fortify |
 | The real cost is downstream | "The cost isn't the email, it's the audit finding months later." | Compuvi, Trade Lab, Cerulean |
 | Pain scales with growth | "It gets worse every time the brokerage adds volume, so growth means adding people." | Handle, Brick Dynamics, Lightswitch |
-| Disguised problem | "Speed is really a data problem disguised as a sales problem." | PromptLab |
+| Disguised problem (retired 2026-10-12. Lowest Email 1 reply rate, 16% across 69 openers, and `block2_check.js` now fails the "it's not X, it's Y" form) | "Speed is really a data problem disguised as a sales problem." | PromptLab |
 | Borrowed model from another field | "Bringing the pen testing model to incident response." | Reflex |
 | Buyer behavior and adoption | "Practices adopt fastest when nothing changes in the systems staff already use." | QuantumLoopAi, Atonomic |
 | Honest tension the company resolves | "Does forward deployed work make the next deployment easier, or not?" | Evos |
@@ -84,13 +129,19 @@ economics, distribution, implementation friction, budget ownership.
 2. One sentence on the mechanism. Why it breaks, ideally with a concrete scene or the moment it
    gets expensive.
 3. One sentence tying the company to the break. Name what the company does, in plain words.
-4. Optional. One specific question the founder is uniquely placed to answer, which tests the
-   insight. "Whether the trust curve is shorter than you expected" is good. "How you're thinking
-   about the US market" is not. The question counts toward the 4 sentences.
+4. Default. End on one specific question the founder is uniquely placed to answer, which
+   tests the insight. "Whether the trust curve is shorter than you expected" is good. "How
+   you're thinking about the US market" is not. The question counts toward the 4 sentences.
+   Leave it out only when the winner you modeled the variant on has none.
 
 **Hard style rules.** No em dashes, en dashes, double hyphens or spaced hyphens used as dashes.
 No colons or semicolons. Plain English, conversational, compact, opinionated. Contractions are
-fine. Write the way Calvin talks.
+fine. Write the way Calvin talks, which means the way the winners from `scripts/winners.js` read.
+
+**Voice bans (2026-10-12).** No abstract payoff nouns (margin, leverage, moat, flywheel, unlock,
+intelligence layer, control plane). No narrator adverbs (quietly, finally, fundamentally,
+ultimately). No aphorism or chiasmus endings ("keeps what it paid to learn", "shifts who keeps
+the margin"). No "it isn't X, it's Y" reframes. `block2_check.js` flags all of these.
 
 **Banned stems.** These are worn out from overuse or read as AI. Do not use them, or close
 variants.
@@ -121,7 +172,15 @@ IT depth").
    database is unreachable, query `step` where `step_no = 1` through the Supabase MCP instead.
 2. **Swap test.** Replace the company name with a competitor's. If the paragraph still reads
    true, it is too generic. Rewrite.
-3. **Homepage test.** If the founder could find the sentence on their own site, it fails.
+3. **Homepage test.** If the founder could find the sentence on their own site, it fails. Save
+   the homepage text to `research/<slug>-site.txt` and pass `--site` to `block2_check.js`. Get the
+   text verbatim from the built-in browser (`get_page_text`); WebFetch summarizes and will not
+   do. Add the about or mission page too when the founder's thesis lives there. It
+   flags any 5-word run shared with the site. Restating their own pitch (for example "70% of
+   resolution time is gathering context") is the most common way a draft fails this test.
+3b. **Side-by-side test.** Read each variant next to the winner it was modeled on. If it is
+   more abstract, longer per sentence, or ends on a punchline where the winner ends on a
+   question, rewrite it.
 4. **"AI makes this better" test.** If the insight reduces to "AI automates the manual thing", it
    fails.
 5. **Fail closed.** If public evidence does not support a differentiated insight, do not
@@ -130,12 +189,21 @@ IT depth").
 ## Output
 
 ```
-Revised Block 2
-[one best paragraph]
+Block 2 options
 
-Why
-[one or two short lines. The angle used and the sentence you expect the founder to quote back.]
+A. [paragraph]
+   Modeled on: [winner company]. Angle: [angle]. Expected quote back: "[sentence]"
+B. [paragraph]
+   Modeled on: ...
+C. [paragraph]
+   Modeled on: ...
+
+Pick: [A/B/C and one line why]
 ```
+
+Every variant has passed `block2_check.js` (mechanical and voice) before it is shown. Log all
+three plus the pick to `logs/block2_drafts.jsonl` (see `scripts/block2_edits.js`) so Calvin's
+edits can be compared with what went out.
 
 ## Gold examples
 

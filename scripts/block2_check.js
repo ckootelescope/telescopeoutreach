@@ -31,6 +31,41 @@ const BANNED = [
   [/help (lead|drive) our|alongside my principal/i, 'credential lead-in'],
 ];
 
+/**
+ * Voice checks, added 2026-10-12. The model's own voice reaches for a clever closing line
+ * ("shifts who keeps the margin", "keeps what it already paid to learn"). None of Calvin's
+ * replied-to openers do that. They are plain, concrete and usually end on a specific question.
+ */
+const VOICE = [
+  [/\b(margin|leverage|moat|flywheel|unlock(s|ed)?|tailwinds?|paradigm|intelligence layer|control plane)\b/i, 'abstract payoff noun'],
+  [/\b(quietly|finally|fundamentally|essentially|ultimately|truly)\b/i, 'narrator adverb'],
+  [/\bwho (keeps|owns|captures|wins)\b|\bshifts? (who|where|the)\b/i, 'clever "who keeps / shifts who" payoff'],
+  [/\b(paid|pays) to (learn|know)\b|\bbuys? (it|that \w+) back\b/i, 'aphorism'],
+  [/\b(isn't|is not) (the|really the) \w+,? (it's|it is)\b|\bdisguised as\b|\bwearing .{0,30} clothes\b/i, '"it\'s not X, it\'s Y" reframe (disguised-problem openers had the lowest Email 1 reply rate, 16%)'],
+  [/\bnobody in the chain\b|\beveryone in the chain\b/i, 'abstract system narration'],
+];
+
+function voice(p) {
+  const out = [];
+  for (const [re, label] of VOICE) if (re.test(p)) out.push('voice: ' + label);
+  const sentences = p.split(/(?<=[.?!])\s+/).filter(s => s.trim());
+  const last = sentences[sentences.length - 1] || '';
+  if (!/\?\s*$|\bcurious (whether|how|if|what|why|which)\b/i.test(last)) out.push('warn: no closing question (May and July openers with one got about 40% Email 1 replies vs 16 to 24% without)');
+  return out;
+}
+
+/** Long shared phrases with the company's own site text means it fails the homepage test. */
+function homepage(p, siteText) {
+  const words = s => s.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').split(/\s+/).filter(Boolean);
+  const site = ' ' + words(siteText).join(' ') + ' ';
+  const w = words(p), hits = new Set();
+  for (let i = 0; i + 5 <= w.length; i++) {
+    const g = w.slice(i, i + 5).join(' ');
+    if (site.includes(' ' + g + ' ')) hits.add(g);
+  }
+  return [...hits].map(g => 'homepage: shares "' + g + '" with the company site');
+}
+
 function check(p) {
   const out = [];
   if (/—|–|--| - /.test(p)) out.push('dash (em, en, double hyphen or spaced hyphen)');
@@ -39,7 +74,7 @@ function check(p) {
   const sentences = p.split(/(?<=[.?!])\s+/).filter(s => s.trim());
   if (sentences.length < 2 || sentences.length > 4) out.push(`${sentences.length} sentences (want 2 to 4)`);
   const words = p.split(/\s+/).filter(Boolean).length;
-  if (words < 35 || words > 95) out.push(`${words} words (want 35 to 95)`);
+  if (words < 45 || words > 95) out.push(`${words} words (want 45 to 95)`);
   if (/\$\d|\d+%|\d+x\b|\braised\b|\bseed round\b/i.test(p)) out.push('metric or funding used in Block 2');
   for (const [re, label] of BANNED) if (re.test(p)) out.push('banned: ' + label);
   return out;
@@ -66,16 +101,26 @@ async function recent(n) {
   } finally { await c.end(); }
 }
 
-module.exports = { check, block2 };
+module.exports = { check, block2, voice, homepage, BANNED };
 
 if (require.main === module) (async () => {
   const args = process.argv.slice(2);
   const ri = args.indexOf('--recent');
   const n = ri >= 0 ? parseInt(args[ri + 1] || '5', 10) : 5;
-  const draft = args.filter((a, i) => ri < 0 || (i !== ri && i !== ri + 1)).join(' ').trim();
+  const si = args.indexOf('--site');
+  const sitePath = si >= 0 ? args[si + 1] : null;
+  const skip = new Set();
+  if (ri >= 0) { skip.add(ri); skip.add(ri + 1); }
+  if (si >= 0) { skip.add(si); skip.add(si + 1); }
+  const draft = args.filter((a, i) => !skip.has(i)).join(' ').trim();
   if (draft) {
     const p = check(draft);
-    console.log(p.length ? 'FAIL\n  ' + p.join('\n  ') : 'PASS mechanical checks');
+    const v = voice(draft);
+    const h = sitePath ? homepage(draft, require('fs').readFileSync(sitePath, 'utf8')) : [];
+    const hard = [...p, ...v.filter(x => !x.startsWith('warn')), ...h];
+    console.log(hard.length ? 'FAIL\n  ' + hard.join('\n  ') : 'PASS mechanical and voice checks');
+    v.filter(x => x.startsWith('warn')).forEach(x => console.log('  ' + x));
+    if (!sitePath) console.log('  note: pass --site <file with the company homepage text> to run the homepage test');
   }
   try {
     const rows = await recent(n);

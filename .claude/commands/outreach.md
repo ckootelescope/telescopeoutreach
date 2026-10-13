@@ -41,8 +41,18 @@ Companies). Match on the Website column.
 ## Block 2 (Email 1 insight paragraph)
 
 Before drafting, read `references/block2-spec.md` in full, every time. Do not draft Block 2 from
-memory of an earlier run. Run `node scripts/block2_check.js "<paragraph>"` on the result and
-compare it to the last 5 Block 2s it prints before creating the Superhuman draft.
+memory of an earlier run.
+
+1. Run `node scripts/winners.js --market "<brief.market>" --about "<brief.what_they_do>"` and read
+   every opener it prints. Draft from those, not from the spec's summary.
+2. Write 3 variants, each modeled on a named winner.
+3. Save the homepage text to `research/<slug>-site.txt`, then run
+   `node scripts/block2_check.js --site research/<slug>-site.txt "<paragraph>"` on each variant.
+   Any FAIL line (mechanical, voice or homepage) means rewrite. Compare to the last 5 Block 2s.
+4. Show Calvin the 3 variants in the spec's Output format, with a pick.
+5. Log them: `node scripts/block2_edits.js --log <slug> <file.json>` with
+   `{"company","domain","variants":[...],"pick":"A"}`.
+6. Build the Superhuman draft with the pick. Calvin can swap in another variant before he sends.
 
 ## Steps 1-5
 

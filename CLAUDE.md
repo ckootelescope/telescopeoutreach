@@ -193,7 +193,16 @@ examples drawn from the openers founders actually replied to. Run
 `node scripts/block2_check.js "<paragraph>"` before the draft goes to Superhuman. It flags the
 mechanical failures and prints the last 5 Block 2s to compare against.
 
-Show Calvin the result as `Revised Block 2` plus a one or two line `Why` alongside the draft.
+**Draft from Calvin's real openers, not from the rules (2026-10-12).** Run
+`node scripts/winners.js --market "<market>" --about "<what_they_do>"` first. It prints the
+closest verbatim Block 2s founders replied to, from `references/opener-corpus.jsonl` (394
+openers, May 18 to Oct 8). Write 3 variants, each modeled on a named winner, and run each
+through `block2_check.js --site research/<slug>-site.txt`, which now also flags voice failures
+(abstract payoff nouns, narrator adverbs, aphorism endings, "it's not X, it's Y") and phrases
+lifted from the homepage. Show Calvin the 3 variants with a pick, and log them with
+`node scripts/block2_edits.js --log`. Weekly, run `node scripts/block2_edits.js --report`
+to compare logged drafts with what actually went out, and fold the edits Calvin repeats into
+the spec.
 
 The four-move structure below is **retired for Email 1 Block 2** (rebuilt 2026-10-08, after the
 Aug 17 to 31 batch on that template drew a 13% Email 1 reply rate). It still drives the other

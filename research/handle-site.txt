@@ -1,0 +1,51 @@
+The definitive back office for the insurance industry
+Book a demo
+TRUSTED BY
+AS SEEN IN Forbes El Economista Cronista Latamlist DPL News El Español
+THE REALITY TODAY
+The insurance back office still runs by hand, on systems that don't talk to each other
+Information is scattered across portals, email, CRMs and Excel, and moving it from one place to another still depends on people. The work repeats, the tools are fragmented, and the only way to grow is to hire, because operations scale as fast as the policies do.
+01 Slow quotes lose business
+Quoting takes days. By the time you respond, the client has already signed with a faster broker.
+02 Policies nobody tracks
+Policies that exist at the insurer but not in your CRM. Commissions lost without anyone noticing.
+03 Payments in the dark
+Policies marked as paid that aren't. Cancellations that arrive by surprise, when it's already too late.
+04 Stalled reconciliation
+Hours matching spreadsheets against portals. Errors found when they can no longer be fixed.
+PLATFORM
+Two layers, one built on the other
+LAYER 02 Vertical Agents
+Autonomous execution layer
+AI agents that run complete workflows end to end. They work like full-time employees: they quote, validate and collect with 99% accuracy.
+Personal Lines Quoting Commercial Lines Quoting Payment Validation Multi-Channel Collections
+LAYER 01 System of Record
+Control tower for leadership
+The central database of your operation. Handle connects directly to your insurer portals and your internal systems, with no manual integrations and no relying on someone to update the CRM.
+YOUR TOOLS Email WhatsApp Calls CRM ERP Excel
+Insurer portals 100+
+See how the platform works
+AGENTS IN PRODUCTION
+Four agents working today for real clients
+Personal Lines Quoting agent
+Quotes through insurer portals for auto and major medical. It fills out every form, extracts coverages and prices, and builds the full comparison.
+See the agent
+THE IMPACT
+What takes your team hours, the agent does in minutes
+Quote a car Across 5 insurers A person ~1 hour Agent <10 min 6x faster
+Quote major medical Up to 10 insurers A person ~3 hours Agent 20 min 9x faster
+Quote a fleet Across 3 to 5 insurers A person ~3 hours Agent 45 min 4x faster
+Quote a complex risk From request to comparison A person 2 to 5 days Agent <2 hours 24x faster
+CUSTOMERS
+Results from clients already running on Handle
+Pimsa Seguros Personal Lines Quoting agent
+The carrier comparison in under 10 minutes
+The agent works 10 carrier portals in parallel. 94.5% of quotes got a response from at least one carrier, the first at a median of 6.9 minutes.
+Read the case study
+INTEGRATIONS
+Works with what you already use
+No migrations. No change to your stack. Handle operates inside the tools your team already works in.
+Your back office, solved
+In 30 minutes we'll show you Handle running real workflows from your operation. No generic demo, no script.
+Book a demo
+See the agents
