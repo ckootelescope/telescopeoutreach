@@ -17,7 +17,6 @@ const toText = html => String(html || '')
 
 const BANNED = [
   [/i spen[dt] most (of )?(my )?time/i, 'stock opener "I spend most of my time"'],
-  [/spending a (lot|ton) of time/i, 'stock opener "spending a lot/ton of time"'],
   [/thematic (work|investors?)/i, '"thematic work / thematic investors"'],
   [/pattern we keep seeing/i, '"the pattern we keep seeing"'],
   [/the ones that stall/i, '"the ones that stall"'],
@@ -34,7 +33,7 @@ const BANNED = [
 /**
  * Voice checks, added 2026-10-12. The model's own voice reaches for a clever closing line
  * ("shifts who keeps the margin", "keeps what it already paid to learn"). None of Calvin's
- * replied-to openers do that. They are plain, concrete and usually end on a specific question.
+ * replied-to openers do that. They are plain and concrete. Since 2026-10-17 Block 2 follows a fixed talk track (see block2-spec.md).
  */
 const VOICE = [
   [/\b(margin|leverage|moat|flywheel|unlock(s|ed)?|tailwinds?|paradigm|intelligence layer|control plane)\b/i, 'abstract payoff noun'],
@@ -50,7 +49,11 @@ function voice(p) {
   for (const [re, label] of VOICE) if (re.test(p)) out.push('voice: ' + label);
   const sentences = p.split(/(?<=[.?!])\s+/).filter(s => s.trim());
   const last = sentences[sentences.length - 1] || '';
-  if (!/\?\s*$|\bcurious (whether|how|if|what|why|which)\b/i.test(last)) out.push('warn: no closing question (May and July openers with one got about 40% Email 1 replies vs 16 to 24% without)');
+  // 2026-10-17: Calvin's talk track ends on the fit line, not a question. Check the template instead.
+  if (!/^we've been spending a ton of time in the .+ space and came across .+ as part of that work\.?$/i.test((sentences[0] || '').trim())) out.push('template: sentence 1 should be "we\'ve been spending a ton of time in the [market] space and came across [company] as part of that work."');
+  if (!/^i think you guys are addressing a very real pain point/i.test((sentences[1] || '').trim())) out.push('template: sentence 2 should open "i think you guys are addressing a very real pain point"');
+  if (!/^i think we'd be a great fit for you guys given our work in the space and given the stage you guys are at\.?$/i.test(last.trim())) out.push('template: last sentence should be "i think we\'d be a great fit for you guys given our work in the space and given the stage you guys are at."');
+  if (/[A-Z]/.test(p)) out.push('lowercase: the whole email is lowercase (2026-10-17)');
   return out;
 }
 

@@ -40,6 +40,11 @@ Companies). Match on the Website column.
 
 ## Block 2 (Email 1 insight paragraph)
 
+**Since 2026-10-17 Block 2 is Calvin's fixed talk track, and the whole email is lowercase.** See the
+top section of `references/block2-spec.md`. Research still feeds the one variable one-liner. Steps 1
+to 2 below (winners and 3 variants) are retired for Email 1. Still run `block2_check.js` with
+`--site`, and still log the draft.
+
 Before drafting, read `references/block2-spec.md` in full, every time. Do not draft Block 2 from
 memory of an earlier run.
 

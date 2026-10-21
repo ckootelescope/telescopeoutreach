@@ -9,6 +9,55 @@ contrast set of 48 openers that never got a reply (May 18 to Sep 21, 2026). Draf
 step and voice checks added 2026-10-12 (see below), from 394 Round 1 openers pulled verbatim
 from Gmail into `references/opener-corpus.jsonl`.
 
+## Current talk track (set by Calvin 2026-10-17, overrides everything below)
+
+Calvin rejected two batches of variant-style Block 2s on Oct 17 as templated and over-engineered.
+From now on Block 2 is a fixed three sentence talk track. Only the market and the pain point
+change.
+
+> we've been spending a ton of time in the [market] space and came across [company] as part of that
+> work. i think you guys are addressing a very real pain point [the one-liner], as we learned
+> through our conversations with [who]. i think we'd be a great fit for you guys given our work in
+> the space and given the stage you guys are at.
+
+The reference Calvin gave (Cara, getcara.ai, insurance brokers):
+
+> we've been spending a ton of time in the insurance distribution space and came across cara as part
+> of that work. i think you guys are addressing a very real pain point alongside the AMS as we
+> learned through our conversations with brokers. i think we'd be a great fit for you guys given our
+> work in the space and given the stage you guys are at.
+
+Rules.
+
+1. **The whole email is lowercase.** Greeting, names, company names, Block 1, Block 2, Block 3,
+   including the Calendly anchor text. Calvin's Oct 8 sends already went out this way.
+2. **The one-liner is the only creative part, and it carries the email.** One clause that clearly
+   explains why the business is interesting: the concrete pain, named in the buyer's terms. All the
+   research below (founder sources, Granola sweep, the four break questions) still feeds it. It must
+   pass the swap test (false if you put in a competitor's name) and the homepage test.
+2b. **Plain English test (added 2026-10-17).** Calvin should understand the one-liner on first
+   read without knowing the market. Say what goes wrong in everyday words ("manufacturers overpaying
+   suppliers without realizing it, like invoices still billed at old contract prices"), not in the
+   industry's terms ("index decreases that never make it into the erp", "cost creep after the
+   award", "lifetime buy"). If a sentence needs the research to make sense, rewrite it.
+3. **"as we learned through our conversations with [who]" must be true.** [who] is the buyer type
+   Telescope has actually spoken with in this market, from the Granola sweep or Affinity (brokers,
+   procurement teams at manufacturers, plant operators). If there were no real conversations in the
+   market, drop the clause rather than invent one.
+4. **"spending a ton of time in the [market] space" must be true** (same test as the old
+   Market Pattern Insights rule). Name the market the way a founder in it would.
+5. **No closing question.** The fit sentence ends the paragraph. The old question default is retired
+   for Email 1.
+6. Still banned in the one-liner: dashes, colons, semicolons, metrics or funding, abstract payoff
+   nouns, narrator adverbs, "it's not X, it's Y", homepage phrases.
+7. Write one version and, if the pain point could go two ways, one alternate one-liner. The
+   three-variant step below is retired for Email 1.
+
+`block2_check.js` now checks the three fixed sentences and lowercase, and no longer bans
+"spending a ton of time" or warns on a missing question.
+
+Everything after this section is kept as history and as research guidance for the one-liner.
+
 ## Draft from the corpus (required, every invocation)
 
 Rules alone produced paragraphs in the model's voice, not Calvin's: abstract nouns, clever

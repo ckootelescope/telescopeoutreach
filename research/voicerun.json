@@ -1,0 +1,78 @@
+{
+  "slug": "voicerun",
+  "company": "VoiceRun",
+  "fetchedAt": "2026-10-18T22:00:00Z",
+  "what_they_do": "VoiceRun builds and runs phone-based voice agents for enterprises, mainly contact centers. Agents are defined in code with regression tests and simulations, every call is stored as one record (recording, transcript, events, evals), and VoiceScore scores every call for QA instead of a sample. It replaces no-code voice agent builders plus manual call-sampling QA, and fine-tunes models on the customer's own call data.",
+  "vertical": "Enterprise contact centers / phone-based customer operations (horizontal, with a banking focus in recent writing)",
+  "primary_theme": 8,
+  "secondary_theme": 3,
+  "theme_fit_rationale": "VoiceRun sits inside the phone conversation itself and keeps every call as a single record with transcript, events and evals, then uses that first-party data for QA and fine-tuning, which is the conversational system-of-record pattern. Secondary fit is Theme 3 (testing/evals infrastructure for agents), but that angle was already used in Round 1 Email 4.",
+  "workflow_artifacts": [
+    "call recordings",
+    "diarized call transcripts",
+    "call events",
+    "per-call QA scores with cited quotes and coaching notes",
+    "human annotations",
+    "regression tests and adversarial simulations",
+    "telephony connections (SIP, PSTN, CCaaS)"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-08",
+      "type": "blog",
+      "summary": "Engineering post 'Beyond Audio In, Text Out' on what they gained from hosting their own speech recognition",
+      "url": "https://voicerun.com/research/"
+    },
+    {
+      "date": "2026-08-01",
+      "type": "news",
+      "summary": "Aggregator reports $5.5M seed (likely a re-report of the Jan 2026 Flybridge round, low confidence as new news)",
+      "url": "https://www.ai-market-watch.com/news/company/voicerun"
+    },
+    {
+      "date": "2026-07",
+      "type": "blog",
+      "summary": "Customer story 'Live by 8:53 PM': phone agent built and shipped in one evening",
+      "url": "https://voicerun.com/research/"
+    },
+    {
+      "date": "2026-07",
+      "type": "blog",
+      "summary": "'Everyone Sells One-Way Doors': perspective on what banks want from voice AI",
+      "url": "https://voicerun.com/research/"
+    },
+    {
+      "date": "2026-10-18",
+      "type": "product",
+      "summary": "Site now leads with VoiceScore (score every call, not a sample) and an Audio Control Plane that holds each call under one call ID; per-minute pricing with pilot credited to year one",
+      "url": "https://voicerun.com"
+    }
+  ],
+  "market": "enterprise voice AI / contact center automation",
+  "market_patterns": [
+    {
+      "pattern": "Deployments land on a narrow slice of call volume or a single queue with clear success criteria, then expand into more volume, teams and adjacent call types once quality is proven.",
+      "failure_mode": "The ones that stall get pitched as a broad transformation and need heavy integration before they can prove anything."
+    },
+    {
+      "pattern": "Buyers benchmark against the outsourced labor they already pay for, and the vendors that win take on the same accountability for quality that the service provider carried.",
+      "failure_mode": "When the buyer is left owning quality risk, the work drifts back to the services provider."
+    },
+    {
+      "pattern": "Adoption sticks when the product becomes part of daily operations and builds up the customer's own context over time.",
+      "failure_mode": "The ones that stall treat rollout as a technical setup and never become part of how the team operates."
+    }
+  ],
+  "research_grade": "A",
+  "funding": "Seed, $5.5M (Jan 2026, led by Flybridge; Link Ventures, RRE). Harmonic total $5.5M.",
+  "headcount": "7 (down from 8 over 90 days; flat YoY). Web traffic +66% over 90 days.",
+  "prior_insights": [
+    "Hey Nick,\n\nI've been following the voice AI space and VoiceRun caught my eye so wanted to reach out. Most voice agent tools I've seen are drag-and-drop builders that work great for a demo and fall apart when you need real business logic. The code-first approach makes sense because the hard part isn't the voice, it's wiring the agent into the systems it needs to actually do something useful. I'd be curious what use cases are driving the most adoption right now and whether it's more inbound or outbound.\n\nFor context, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year.\n\nWould love to chat even if you're not raising. LMK your thoughts.",
+    "Hey Nick - hope you've been well. Wanted to follow up again because I'm confident that we can be valuable in what you're building.\n\nAs I\u2019ve spent more time learning about VoiceRun, I think the hard part in voice is getting from a good demo to something you can actually trust in production. The voice layer itself is getting easier, but testing agents, handling edge cases, and improving them once they\u2019re live is still really hard. If VoiceRun becomes the place developers build and improve those agents over time, I think there\u2019s a natural path to own much more of how companies run workflows over the phone.\n\nThis is a pattern we're really familiar with - helping software and AI companies accelerate GTM once they have a strong initial wedge, while using our operations team to expand the product into a broader platform. Telescope was built around Mickey's experience at Sequoia helping Seed and Series A companies scale beyond the early stage.\n\nI'm not sure how you're thinking about fundraising, but I'd love to connect ahead of time and start building a relationship. We think about these partnerships over multiple years and really value working with high-quality folks. I'm happy to reach out later if it works better, but LMK your thoughts."
+  ],
+  "round2": {
+    "email1_body_drafted": "<div>Hey Nick - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.</div><div><br></div><div>I'm a big fan of businesses that sit inside the conversations where work happens and turn them into the record of what actually happened. Phone-based customer operations is a great example, where call recordings, transcripts and QA scores usually live in separate tools and only a small sample ever gets reviewed. I think most voice tools today focus on handling the call, but buyers are increasingly looking for a system that keeps every call as a usable record the rest of the business can work from.</div><div><br></div><div>I'd love to hear how you guys are thinking of the problem - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.</div>",
+    "email1_body_sent": null,
+    "sentDate": null
+  }
+}

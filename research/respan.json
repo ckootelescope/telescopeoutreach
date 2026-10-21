@@ -1,0 +1,91 @@
+{
+  "slug": "respan",
+  "company": "Respan",
+  "fetchedAt": "2026-10-18T22:00:00Z",
+  "what_they_do": "Respan (formerly Keywords AI) is a gateway and observability platform for teams building LLM and agent products. One API routes requests across many models with fallbacks, caching and budget limits, and the same traffic feeds tracing, monitoring, error tracking, evals and guardrails. It replaces a stack of separate gateway, logging and eval tools, or an in-house tracing build.",
+  "vertical": "AI engineering teams / developer infrastructure for LLM and agent applications",
+  "primary_theme": 3,
+  "secondary_theme": 9,
+  "theme_fit_rationale": "Core fit is Theme 3: observability, evals and routing rebuilt for agents as the primary users of software. Secondary is Theme 9 via the new in-gateway guardrails (prompt injection and jailbreak blocking) and red teaming. Note the 8/19/2026 email already used the Theme 3 thesis.",
+  "workflow_artifacts": [
+    "LLM requests and responses",
+    "traces and spans (model calls, tool calls, retrievals, agent turns)",
+    "production logs",
+    "evaluation datasets and golden datasets (CSV or log-based)",
+    "cost, latency and token usage metrics",
+    "per-key and per-customer budgets and rate limits",
+    "error groups and incidents"
+  ],
+  "recent_signals": [
+    {
+      "date": "2026-10-16",
+      "type": "blog",
+      "summary": "Post on building an in-house agent tracing system and build vs buy",
+      "url": "https://www.respan.ai/blog"
+    },
+    {
+      "date": "2026-10-15",
+      "type": "product",
+      "summary": "Launched Span-02, an open-weight decision model that returns its best answer by a deadline",
+      "url": "https://www.respan.ai/blog"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "product",
+      "summary": "Error tracking: error groups, incidents and the span behind each error",
+      "url": "https://www.respan.ai/blog"
+    },
+    {
+      "date": "2026-09-30",
+      "type": "blog",
+      "summary": "Customer story on tracing agent tool calls at scale",
+      "url": "https://www.respan.ai/blog"
+    },
+    {
+      "date": "2026-09-28",
+      "type": "product",
+      "summary": "Launched Respan Router (task-aware model routing, no markup) and Guardrails inside the gateway",
+      "url": "https://www.respan.ai/blog"
+    },
+    {
+      "date": "2026-09-24",
+      "type": "product",
+      "summary": "Launched Span-01, a reasoning classifier for AI traces",
+      "url": "https://www.respan.ai/blog"
+    },
+    {
+      "date": "2026-09-22",
+      "type": "blog",
+      "summary": "Customer story on running evals in production against golden datasets",
+      "url": "https://www.respan.ai/blog"
+    }
+  ],
+  "market": "LLM / agent observability, evals and AI gateways",
+  "market_patterns": [
+    {
+      "pattern": "Observability becomes a must-have once a team runs several agents in production and starts hitting runs that complete without errors but produce the wrong output.",
+      "failure_mode": "Tools that only report errors and uptime end up as a dashboard nobody acts on."
+    },
+    {
+      "pattern": "Stickiness comes from the production context a tool builds up (traces, session history, company-specific policies), which then feeds evals and optimization.",
+      "failure_mode": "Tools that only see one slice of traffic get consolidated away when the buyer cleans up tool sprawl."
+    },
+    {
+      "pattern": "Teams often build tracing in-house first and switch when nobody owns maintaining it or a new workload hits a scale inflection.",
+      "failure_mode": "Without a switching event, long integration-heavy evaluations stall even after a good demo."
+    }
+  ],
+  "research_grade": "A",
+  "funding": "$5M seed (Mar 18, 2026, led by Gradient with Y Combinator). Harmonic: $5.5M total over 2 rounds, stage PRE_SEED.",
+  "headcount": "22 (up from 13 six months ago; down from 24 in the last 30 days). Web traffic +55% over 90 days.",
+  "prior_insights": [
+    "Hey Raymond,\n\nLove what you're building at Respan and wanted to reach out. Obviously a crowded space in LLM observability and routing, but I think the companies that win will be the ones that own the full engineering workflow - gateway, evals, cost controls - rather than just one slice of it. I'd be curious how you're thinking about differentiation as more players enter.\n\nFor context, Telescope is an early growth VC focused on B2B software and AI (Engine, Fathom, FundraiseUp). We're on our third fund ($275M) and lead $5-25M rounds in a handful of founders each year. I work closely with Chris Gaertner who invested in AI infrastructure companies like DataRobot.\n\nWould love to chat even if you're not raising. LMK your thoughts.",
+    "Raymond, wanted to follow up as I've been doing more work. I think the companies that win in LLM observability will be the ones that move beyond monitoring into active optimization. Routing, cost management, and quality scoring are all wedges that get stickier over time.\n\nIf now isn't the right time, totally understand. But would love to connect whenever there's a window.",
+    "Hey Raymond - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.\n\nOne theme I've been increasingly more excited about is the infrastructure that has to get rebuilt as agents become a bigger part of how software gets used. Observability is a good example, because traditional monitoring can tell you that something broke, but not why an agent made a bad decision across a chain of model and tool calls. Why I wanted to reach out again and what stood out to me about Respan is that the gateway, tracing, and evals all sit on the same execution data, which gives you a path from simply watching agents to becoming the layer teams actually use to run and improve them in production.\n\nWould love to chat more about what we've heard over a call - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts."
+  ],
+  "round2": {
+    "email1_body_drafted": null,
+    "email1_body_sent": "Hey Raymond - Know I've reached out a couple times but wanted to see if now is a better time. I lead our vertical AI investing at Telescope, a $275M Series A fund started by a former Sequoia partner. We lead $5-30M Series A investments in a handful of exceptional companies each year.\n\nOne theme I've been increasingly more excited about is the infrastructure that has to get rebuilt as agents become a bigger part of how software gets used. Observability is a good example, because traditional monitoring can tell you that something broke, but not why an agent made a bad decision across a chain of model and tool calls. Why I wanted to reach out again and what stood out to me about Respan is that the gateway, tracing, and evals all sit on the same execution data, which gives you a path from simply watching agents to becoming the layer teams actually use to run and improve them in production.\n\nWould love to chat more about what we've heard over a call - are you free to chat next week? Would love to talk even if you're not raising - LMK your thoughts.",
+    "sentDate": "2026-08-19"
+  }
+}

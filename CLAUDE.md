@@ -164,6 +164,8 @@ The email has three blocks. Lead with the CTA and who Telescope is in the first 
 
 #### Block 1: Opener + CTA + Telescope Intro (SEMI-FIXED)
 
+Written in all lowercase since 2026-10-17 (the template below shows casing for readability only).
+
 Personalized greeting, CTA to chat, and Telescope intro all upfront in the first paragraph.
 
 > Hey [First Name] - I love what you're building at [Company] and wanted to see if you're free to chat next week? We're a Series A fund led by Mickey Arabelovic (former Sequoia partner) focused on B2B software and AI. We're on our third fund ($275M) and lead $5-30M rounds in a handful of founders each year.
@@ -185,6 +187,13 @@ The greeting can be personalized. If someone on the team has SPOKEN to the compa
 #### Block 2: Insight (VARIABLE, the creative part)
 
 This is the only variable block. Blocks 1 and 3 are fixed; all content goes here.
+
+**Talk track since 2026-10-17 (Calvin).** Block 2 is three fixed sentences with one variable
+one-liner: "we've been spending a ton of time in the [market] space and came across [company] as
+part of that work. i think you guys are addressing a very real pain point [one-liner], as we learned
+through our conversations with [who]. i think we'd be a great fit for you guys given our work in the
+space and given the stage you guys are at." No closing question. Full rules at the top of
+`references/block2-spec.md`. **The whole email is lowercase**, Blocks 1 to 3, names included.
 
 **Read `references/block2-spec.md` in full on every invocation, before drafting.** It is the
 spec for this block: research, the angle table, shape (2 to 4 sentences, 35 to 95 words), banned
