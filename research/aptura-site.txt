@@ -1,0 +1,25 @@
+Aptura — Reliable AI for Regulated Industries
+From frontier models to frontline deployment
+Reliable AI in regulated industries.
+We help train and evaluate AI to master real-world tasks in finance, healthcare, and legal.
+Experts Datasets RL Environments Real Outcomes
+Proudly working with domain experts from
+DOMAIN EXPERTISE
+Close Collaboration. Fast iteration. Domain Experts
+There's no substitute for expertise. Our internal team, comprising healthcare, finance, legal and AI specialists, works directly with AI researchers to scope and deliver every project. Physicians, attorneys, and investment analysts with years of high-stakes experience, supported by a platform built for structured, high-quality data collection at scale. Fast iteration. Real judgment. Data that holds up.
+CURATED DATASETS
+High-quality datasets. Domain-specific data that reflects the real complexity of regulated work.
+Curated Data
+Medical imaging, financial models, legal contracts. We structure data for training and evaluation with the nuance these domains demand and fit to your requirements.
+Finance Investment decks DCF models LBO models Legal M&A contracts NDA clauses Case law Healthcare Dental scans Radiology Clinical notes
+RL ENVIRONMENTS
+RL environments. Real mastery requires real testing. Rich environments loaded with real data—verifiable rewards, custom tooling, data licensing support.
+Verifiable Tasks
+We combine expert knowledge, curated datasets, engineering, and real world tasks to build the best training grounds for agentic AI. Agents complete tasks in finance spreadsheets, medical records, legal documents—with measurable outcomes.
+Voices from our experts.
+Physicians, analysts, and specialists shaping the future of AI.
+"After completing my profile, I was matched quickly with a project involving real stock market research. No endless interviews — just a clear offer and fast onboarding."
+"I review oncology cases from home to help train AI models that support cancer diagnosis. The flexibility is invaluable — I can schedule this work around my hospital shifts and family life."
+"I'm using my background in finance to train AI on real-world deal structures and regulatory details. It's satisfying to see that my nuanced knowledge is helping AI become more reliable."
+"I work remotely, annotating complex oncology cases for AI training. The setup is straightforward, the platform is user-friendly, and I don't waste time commuting."
+Close collaboration. Fast iteration.

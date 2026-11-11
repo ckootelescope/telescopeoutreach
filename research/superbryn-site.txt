@@ -1,0 +1,12 @@
+NOTE: Not verbatim. WebFetch declined verbatim reproduction and direct HTTP to the site is blocked by the egress proxy (403). Closest available extraction of homepage content, fetched 2026-10-17.
+
+Source: https://superbryn.com
+SuperBryn: voice AI reliability platform to evaluate and monitor voice agents, find why they fail and how to fix them.
+- Pre-deployment evals: generates test scenarios from the customer's own data sources before launch.
+- Production observability: evaluates every production call (not a sample); tracks latency, accuracy, sentiment, task completion across STT, LLM and TTS; sub-second alerting.
+- Root cause analysis: traces failures through the voice pipeline to identify whether transcription, reasoning or synthesis broke.
+- Compliance: targets regulated industries (healthcare, financial services, insurance) with audit trails and compliance reporting.
+- Coming soon: self-learning loop (Observer Agent feeds Improver Agent, which updates the main agent); multi-model routing across providers.
+- Integrations (FAQ): Vapi, Retell, Bland.ai, custom implementations.
+- Funding mention: $1.2M raise led by Kalaari Capital (Economic Times link).
+- CTAs: Book a demo, watch a demo, newsletter.

@@ -1,0 +1,256 @@
+PharmAssess Digital Solutions
+-->
+Loading...
+Award-winning clinical pharmacy software
+Digital solutions to
+streamline
+pharmacy workflow
+Grow your pharmacy practice by enabling efficient provision of advanced clinical services. PharmAssess equips your organization with a suite of online modules accessible via any internet-connected device to empower efficient, revenue-generating clinical care.
+Minor Ailments
+'>
+Minor Ailments
+Appointments
+'>
+Appointments
+Med Reviews
+'>
+Med Reviews
+Mobile Refills
+'>
+Mobile Refills
+PMS Integration
+'>
+PMS Integration
+-->
+Minor Ailments
+Chronic Diseases
+Appointments
+Vaccinations
+POC Testing
+Med Reviews
+Rx Adaptations
+Pharmaceutical Opinions
+Mobile Refills
+Mobile Patient App
+Patient Communication & Marketing
+PMS Integration
+-->
+Start free trial
+-->
+Explore modules & features
+-->
+PHIPA Compliant
+-->
+600+
+Pharmacies
+200,000+
+Patients served
+PHIPA
+Compliant
+Available modules
+Minor Ailments
+Chronic Diseases
+Appointments
+Vaccinations
+POC Testing
+Med Reviews
+Rx Adaptations
+Pharmaceutical Opinions
+Mobile Refills
+Mobile Patient App
+Communication & Marketing
+PMS Integration
+Medical Directives
+Incident Reporting
+Travel Health
+IVR
+Minor Ailments
+Embrace your prescribing rights with a streamlined, integrated and award-winning interface based on licensed content from internationally renowned medical information provider, MedSask.
+Automate documentation, assessment, and prescribing for up to 56 minor ailment conditions.
+Currently available in the following provinces: ON, BC, AB, SK, MB, NS, NL, NB, PEI.
+56 minor ailments included
+Easily select which minor ailments you want to include
+Prepare yourself for upcoming scope expansion by customizing your minor ailment list
+Practice with confidence knowing you have the most up-to-date information, licensed by MedSask
+Save time by not having to search for information in multiple places
+Reduce the risk of missing important information by using an all inclusive solution
+Province-based minor ailment inclusion
+Easily filter your minor ailment list on a province-by-province basis
+Quickly see which provinces include which minor ailments
+All provinces included with exception to Quebec
+Differential diagnosis
+Minor ailment based differential diagnosis
+Licensed medical images from DermNet NZ for visual support
+Bite-sized condition description for quick reference
+Assess with ease and confidence, considering all differentials
+Smart red flag identification
+View key referral information at a glance
+Act on red flags with confidence
+Assess patient risk and make informed decisions
+Make appropriate referrals to other healthcare professionals more efficiently
+MedSask's evidence-based red flags are trusted, peer-reviewed, and up-to-date
+Chronic Diseases
+Manage ongoing chronic disease programs for conditions such as diabetes, hypertension, asthma, and more - all within a single, streamlined workflow.
+Structured, evidence-based assessments
+Step-by-step clinical pathways guide pharmacists through condition-specific assessments, ensuring consistency and completeness across every patient encounter.
+Automated documentation
+Progress notes, care plans, and billing documentation are generated automatically, reducing administrative burden and keeping records audit-ready.
+-->
+Appointments
+Streamline patient access to your pharmacy's clinical services with a personalized online patient portal, tailored to your pharmacy's needs.
+Appointment Customizability
+Create customized appointments that cater to the services provided by your pharmacy. Set your appointment availability, as well as unique hours.
+Patient Interface
+Streamline patient access to your pharmacy's clinical services with a personalized online patient portal, tailored to your pharmacy's needs.
+Browse included features
+Online waitlist and remote patient pre-registration
+Triage & screening questionnaire, adhering to national vaccination guideline regulations
+Patient waitlist automation, allowing patients to be notified 48h prior to their appointment
+Custom appointment offerings (PrEP HIV consults, specialty health consult, etc.)
+E-mail patient notifications
+Follow-up appointment reminders via built-in calendar
+Automated patient appointment scheduling, based on pharmacy availability
+Immunization inventory tracking
+Automated documentation of patient immunization records and POC tests
+Vaccinations
+Run high-volume immunization clinics with confidence. PharmAssess automates triage, consent, documentation, and inventory tracking from a single interface.
+Online pre-registration & triage
+Patients complete screening questionnaires and consent forms online before arrival, dramatically reducing wait times and front-desk workload.
+Inventory & lot tracking
+Track vaccine inventory, expiry dates, and lot numbers automatically - keeping your clinic compliant and your shelves optimally stocked.
+POC Testing
+Document and manage point-of-care testing services - from rapid strep and flu tests to blood glucose and INR monitoring - all within the PharmAssess platform.
+Integrated result documentation
+Record test results directly in the patient's clinical record with structured fields, ensuring traceability and accurate billing documentation.
+Follow-up workflow
+Automatically trigger follow-up actions, referrals, or treatment recommendations based on POC test outcomes, closing the loop on every patient interaction.
+Med Reviews
+Automate all documentation forms for all types of medication review services (annual, diabetes, and follow-up).
+Available in all Canadian provinces except for Quebec.
+Rx Adaptations
+Exercise your scope of practice with confidence. PharmAssess provides structured workflows for all types of prescription adaptations, ensuring every adaptation is properly documented and billed.
+Supported adaptation types
+Document dose changes, route changes, regimen changes, therapeutic substitutions, and emergency supply dispensing with condition-specific, pre-populated forms.
+Streamlined billing documentation
+Generate government-compliant billing records automatically at the point of care, reducing administrative follow-up and claim errors.
+Pharmaceutical Opinions
+Document and submit formal pharmaceutical opinions for prescriber communication, drug therapy problem resolution, and clinical consultations - all in minutes.
+Structured opinion templates
+Choose from categorized templates covering drug interactions, therapy optimization, adherence concerns, and unnecessary drug therapy - pre-populated with patient context.
+Prescriber fax integration
+Send completed pharmaceutical opinions directly to prescribers via integrated fax, keeping communication seamless and records automatically archived.
+Mobile Refills
+Set up your pharmacy with its own patient-facing refill app, allowing patients to refill their medications on-demand. Patients receive automatic email notifications when their medications are ready for pickup.
+Available in all Canadian provinces except for Quebec.
+Mobile Patient App
+Give your patients a dedicated mobile experience branded to your pharmacy. The PharmAssess patient app enables refills, appointment booking, and direct messaging - all from a patient's smartphone.
+White-label ready
+The app is configurable to your pharmacy's branding, creating a professional patient-facing digital presence without any development effort on your part.
+Two-way communication
+Patients can message your pharmacy team, receive automated pickup notifications, and view their care history - improving engagement and loyalty.
+-->
+Patient Communication & Marketing
+Stay connected with your patients between visits using targeted, automated outreach - from seasonal vaccination campaigns to chronic disease check-in reminders.
+Automated recall & reminder campaigns
+Schedule email and SMS campaigns triggered by clinical events such as upcoming refill dates, missed follow-ups, or seasonal health initiatives.
+Segmented patient lists
+Target the right patients with the right message by filtering your patient roster by condition, medication, last visit date, or service history.
+PMS Integration
+Automatically transfer documentation from PharmAssess directly to your pharmacy management system - eliminating double-entry and keeping patient records perfectly in sync.
+Write-back functionality transfers documentation forms, patient details, prescription and billing information directly to your PMS. PHIPA compliant throughout.
+Medical Directives
+Extend your pharmacist's prescribing authority beyond standard scope through a Collaborative Prescribing Agreement (CPA) with a partner physician. Medical directives allow pharmacists to independently initiate, modify, or discontinue drug therapy under pre-approved protocols - without requiring a patient-specific order each time.
+Structured CPA-based workflows
+PharmAssess guides pharmacists through directive-specific assessment pathways aligned to your CPA's standing orders, ensuring every intervention is clinically appropriate, consistently documented, and audit-ready.
+Expanded patient care capacity
+Deliver physician-level interventions for chronic disease management, acute care, and preventive health - improving patient outcomes while generating new billable service opportunities for your pharmacy.
+-->
+Incident Reporting
+Document near-misses, medication errors, and adverse events quickly and consistently. PharmAssess guides pharmacy staff through a structured incident reporting workflow that meets provincial regulatory requirements.
+Structured error documentation
+Capture all relevant details - incident type, contributing factors, patient impact, and immediate actions taken - using pre-built templates that align with accreditation standards.
+Audit-ready records
+All incident reports are securely stored and searchable, supporting quality improvement initiatives, internal reviews, and external audits without additional administrative effort.
+Travel Health
+Deliver comprehensive pre-travel consultations from within PharmAssess. Assess destination-specific health risks, recommend and document vaccines, medications, and preventive advice in a single structured workflow.
+Destination-based risk assessment
+Built-in travel health guidelines help pharmacists identify required and recommended vaccinations, malaria prophylaxis, and travel-related health precautions for each patient's itinerary.
+Automated travel health documentation
+Generate patient-ready travel health summaries and vaccination records automatically, reducing consultation time and ensuring every visit is thoroughly documented.
+-->
+IVR (Intelligent Voice Recognition)
+Automate inbound patient phone calls with a smart, pharmacy-configured IVR system. Patients can refill prescriptions, check order status, and reach the right department - without waiting on hold.
+Automated refill processing
+Patients call in and verbally request medication refills. The IVR system captures prescription details and routes the request directly into the PharmAssess workflow, ready for pharmacist review.
+Reduces front-desk call volume
+Offload routine calls - refill requests, hours of operation, and prescription readiness inquiries - so your team can focus on higher-value patient interactions.
+-->
+Trusted by
+At Pack4U Ontario, a busy central fill pharmacy, we use PharmAssess to conduct our medication reviews with patients remotely. It saves the pharmacy a substantial amount of time via its integration with the pharmacy management software, where medications, patient demographic info and doctor details auto-fill the documentation. Pharmaceutical opinion billing & documentation is integrated which allows us to easily bridge this additional service, and the automatic faxing function allows us to skip sending faxes manually. There are also auto-fill features that suggest pre-populated efficacy & safety information based on medication/indication input. The module also comes with a handy, integrated adverse effect search that generates the most prevalent ADEs for inputted medications. Overall, pharmacies benefit from a greatly streamlined med review process that saves a significant amount of time!
+Gurroop Kalra (PharmD, R.Ph.)
+Clinical Services Pharmacist, Pack4U Ontario
+PharmAssess Software has been a game-changer for our pharmacy operations. Its intuitive interface and robust features make compliance, workflow management, and reporting seamless. The software has significantly improved
+our efficiency, ensuring accuracy in assessments and streamlining our processes. The customer support team is responsive and always ready to assist, making the overall experience even better. I highly recommend
+PharmAssess to any pharmacy looking for a reliable and very helpful software.
+Essam Siha (R.Ph.)
+Pharmacy Owner, Scarborough DrugMart & Clinic
+PharmAssess provides a unique solution to streamline minor ailment prescribing, particularly in busy pharmacy environments where time is of the essence. The minor ailment module is a way for pharmacies to practice their expanded scope of practice, easily, with greater confidence and accuracy. PMS-integration, a step-by-step diagnostic workflow, as well as DermNet-integrated condition photographs and MedSask-integrated therapeutic algorithms come together to improve the way pharmacies can manage this clinical service.
+Ahmed Abu el Shouhoud (BSc. Pharm, APA, Certified Diabetes Educator)
+Pharmacy Owner, Pharmasave #3018
+PharmAssess is the first of its kind to provide a diagnostic edge in the pharmacy workflow, supporting pharmacists in the treatment process of common ailments. It not only optimizes the use of valuable time, but it can also reinforce the patient-pharmacist interaction. This comprehensive yet efficient diagnostic tool may be the future of minor ailment treatment especially in a busy environment.
+Jay Khetia (BScPharm, RPh)
+SDM Pharmacy Owner/Associate
+First-class minor ailments software
+Award-winning
+2019
+2021
+2022
+2023
+LDFP BPC 2019
+Leslie Dan Faculty of Pharmacy Business Plan Competition, 2019
+1st place winner of the 2019 Leslie Dan Faculty of Pharmacy Business Plan Competition
+View media post
+QEC 2021
+Queens Entrepreneurship Competition, 2021
+2nd place winner of the 2021
+Queens Entrepreneurship Competition
+View media post
+GHP 2022
+Global Health & Pharma, 2022
+Best Retail Pharmacy Minor Ailments Digital Health Software 2022, by Global Health & Pharma (GHP)
+View award
+GHP 2023
+Global Health & Pharma, 2023
+Best Intuitive Clinical Pharmacy Software Provider 2023, by Global Health & Pharma (GHP)
+View award
+-->
+Integration to Empower your Workflow
+Efficient pharmacy practice starts with an optimized workflow. At PharmAssess, we prioritize saving time by enabling smooth, reliable, and seamless integrations with third-parties.
+Pricing
+PharmAssess Clinical Management System: Full Suite Bundle
+PMS-integrated access to all modules
+$150
+/ mo
+FillAssist
+Fillware-exclusive
+All modules integrated directly with your Fillware system
+$95
+/ mo
+Modernize your Pharmacy
+Get started with a 30-day free trial
+Get started for free
+Visualize your return on investment
+ROI Calculator
+See how quickly PharmAssess pays for itself
+Analytics Dashboard
+View and analyze all your clinical data in one convenient dashboard.
+Unlimited Pharmacists
+Pharmacy owners add their staff to a subscribed location of their choice and assign them a role (e.g. pharmacist).
+Support 24/7
+Subscribed accounts receive a dedicated account manager upon request.
+Data Security
+Sophisticated software infrastructure keeping your patient data PHIPA & PIPEDA compliant.
+Included modules:
+Loading...
+-->
+Top

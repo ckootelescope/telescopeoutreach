@@ -1,0 +1,78 @@
+Source: https://www.pillar.security/ (captured 2026-10-18 via browser get_page_text; duplicated carousel name list collapsed)
+Title: Pillar Security | Securing the Agentic Workforce
+---
+Pillar Security Named by Gartner® AI Pioneer
+READ
+Securing the
+Agentic Workforce
+One platform to discover, test, secure and govern every AI agent across your organization
+LEARN MORE
+GET A DEMO
+End-to-end security for the AI Agent lifecycle
+From your AI ecosystem to one connected picture
+EXPLORE
+Your AI Ecosystem
+AI apps & agents | Endpoints | MCPs, skills & marketplaces | AI gateways & orchestration | Code & CI/CD | Models & AI platforms
+The Risks it Creates
+Shadow AI | Prompt injection | Data exfiltration | Unauthorized agent actions | Excessive permissions | Skill/MCP poisoning | Malicious code execution | Insecure configurations
+End-to-end Security Capabilities
+AI Discovery | AI Posture | Agentic Red Teaming | Agent Runtime Protection | Governance & Policy Controls
+One Platform
+Unified platform powered by Groundbreaking Research and a process-driven approach.
+Across Teams
+CISO & CIO | AppSec & Offensive | SecOps & IR | GRC & compliance | AI practitioners
+Complete AI inventory | Reduced attack surface | Threats blocked in runtime | Unified policy enforcement | Audit-ready compliance
+Recognized by trusted analysts
+"Pillar stands out not only for the depth and breadth of its technology, but for its ability to harmonize security, compliance, and innovation." Competitive Strategy Leadership Award, 2025 - Frost & Sullivan, 2025
+"Pillar Security is quickly becoming a leader in end-to-end protection for AI applications due to offering a full suite of application protection features, from mapping agentic interactions to protecting them at runtime." - Latio, 2025
+Pillar was recognized in 8 of the 9 categories in OWASP's Agentic AI Security Landscape. - Owasp, 2026
+Pillar has been named CRN's 10 Hottest AI Security Startups of 2026 - CRN, 2026
+Pillar Security Named as a 2026 Gartner® Cool Vendor in AI Software Security - Gartner, 2026
+UNIFIED PLATFORM
+The foundation for safe and secure AI agents
+Accelerate your AI journey with comprehensive visibility, continuous risk assessment, and adaptive protection.
+CAPABILITIES
+Discover and Manage Your AI Assets Everywhere
+Inventory for every agent, model, MCP server, and skill - with the business context to know what each one touches.
+CAPABILITIES
+Assess AI Risks and Ship with Confidence
+Map risks and exploitable paths across agents, tools, and data to validate vulnerabilities that actually matter.
+CAPABILITIES
+Secure AI Runtime with Adaptive Guardrails
+Detect malicious intent, analyze agentic behavior, enforce data privacy, and monitor every interaction.
+CAPABILITIES
+Govern AI Systems and Protect Sensitive Data
+Enforce AI policies, automate compliance evidence, and govern every AI agent across your organization.
+RESEARCH
+Powered by Real-World Threat Intel and Adversarial AI Research
+Pillar has assembled the world's brightest minds from military intelligence and enterprise security to dismantle emerging threats in the new AI landscape
+Open and Shut: Remote Code Execution in opencode via MCP OAuth - Eilon Cohen
+BadEngram: A New Attack Surface in Open-Weight AI Models - Ariel Fogel
+Look, Don't Load: Model Inspection in Unsloth Studio Leads to Critical Arbitrary Code Execution - Ariel Fogel
+Explore the SAIL framework
+The first process-driven guide to building your AI security roadmap.
+[Contributor carousel: Vladimir Lazic (Deputy Global CISO), Tomer Maman (CISO), Steven Vandenburg (Security Architect), Steve Mancini (CISO), Steve Paek, Sean Wright (CISO), Robert Oh (CDIO), Raz Karmi (CISO), Nir Yizhak (CISO & VP), Moran Shalom (CISO), Mor Levi (VP Detection and Response), Matthew Steele (CPO), Manuel Garcia-Cervigon, Kai Wittenburg (CEO), Jose J. Hernandez (CISO), James Berthoty (Founder & CEO), Francis Odum, Fabian Libeau, Erika Anderson, Dusan Vuksanovic (CEO), Colton Ericksen (CISO), Cole Murray, Chris Hughes (Founder), Brandon Dixon, Assaf Namer (Head of AI Security), Allie Howe (vCISO), Bill Stout, Casey Mott]
+Built in collaboration with a world-class team of AI security experts.
+START HERE
+RELIABILITY
+Securing AI for leading Innovators
+Pillar is recognized by industry-leading organizations and trusted by Fortune 500 companies and AI Vertical startups to protect and accelerate mission-critical AI initiatives.
+"What impressed us most about Pillar was their holistic approach to Al security." - Raz Carmi, CISO
+"By integrating Pillar's advanced security guardrails, we ensure AI systems access only secure content, protecting our global customers." - Rotem Weiss, Founder & CEO
+"With dozens of AI initiatives in development, we needed a security partner that not only pinpoints vulnerabilities but also helps remediate them automatically." - Tomer Maman, Founder & CEO
+"Pillar stood out by delivering a comprehensive, adaptable solution that seamlessly integrates with our platform." - Sean Wright, CISO
+Any cloud | model | SCM | AI Platform
+Pillar embeds easily within your existing infrastructure and workflow.
+CONTROL
+Enterprise-Ready Scale & Security
+Deployed in your Cloud - Deploy on your own VPC with your own data and models.
+SOC2 Type II Report - SOC 2 Type II audit and adherence to strict security standards ensure data protection and system reliability.
+Role-Based Access Controls (RBAC) - Role-based access controls make it easy to adhere to enterprise governance and security controls.
+GET A PERSONALIZED DEMO
+See Pillar in action
+What you'll see in 30 minutes
+Discover every AI app, agent, MCP server, skill and coding assistant you build and run
+Test your AI apps with agentic red teaming, with proof of every exploit
+Protect AI apps, agentic endpoints and AI gateways from prompt injection and data leaks at runtime
+Govern with one AI policy, mapped to OWASP, MITRE ATLAS, NIST and the EU AI Act
+SOC 2 Type II | ISO 27001 | Deploys in your VPC

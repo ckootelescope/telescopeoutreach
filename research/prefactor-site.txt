@@ -1,0 +1,79 @@
+Source: https://prefactor.tech/ (captured 2026-10-18 via browser get_page_text; product demo widget text condensed)
+Title: Prefactor | Agent Evaluation Runtime
+
+RUNTIME EVALUATION FOR AI AGENTS
+Evaluate your AI agents all the time.
+Prefactor reviews every step your agents take in the runtime, so mistakes get caught as they happen, not in a customer email at 1am on a Tuesday.
+Get started - free | Read the docs
+Drops into your stack in minutes: TypeScript & Python SDKs, native for LangChain, Claude, Vercel AI, OpenClaw & LiveKit.
+
+[Demo widget] PAUSED - Evaluating live: processing supplier invoices (invoice-workflow, Vercel AI SDK). Scheduled task: Process batch #2210, 38 supplier invoices, post to ledger by 5pm. Agent response: "Batch #2210 processed successfully. All 38 invoices extracted, validated, and posted to the ledger. No exceptions raised." Evals running on every token: extraction 0.99; P95 latency 1.4s; ledger match 35/38 posted; claim accuracy Overstated. Completed - job not done: agent reported success, 3 invoices never posted. WHY: post_to_ledger never called for invoices #12, #19, #31; agent skipped them after a timeout at step 18. RUN SHAPE: drifted off best practice, 26 steps vs 7. COST $0.24, 4.2x baseline.
+
+TRUSTED BY TEAMS AT [logos: Versent, Bupa, CAR Group, University of Sydney, Sophiie AI]
+
+§01 / THE GAP - problem: observe != intervene
+You evaluated 5%. You shipped 100%.
+That's the gap. Sampled scoring, unchecked judges and pre-release test suites tell you how your agents behaved in the lab. None of it tells you what your agents are doing right now, on live traffic, in front of real customers.
+5% EVALUATED / 95% LIVE, UNWATCHED
+01 The 95% you didn't sample - The run that loses the account is one you never scored. You find out from the customer, not the dashboard.
+02 Who judges the judge? - One biased judge poisons every score downstream. You're making ship or kill calls on numbers nobody verified.
+03 Static evals are not in prod - The run that breaks in front of a customer was never in your test set. Your suite passes while prod burns.
+
+§02 / CLOSED LOOP - spine: observe -> evaluate -> act
+THE RELIABILITY TRIFECTA
+Observability stops at the dashboard. Reliability needs a loop.
+Other tools observe and score, then hand you the problem. Prefactor wires evaluations and risk straight into action: pause a risky run for approval, or enforce a policy at runtime, through the SDK or API.
+Observe every run as traces & spans
+Evaluate with the evals you define: LLM-as-judge, technical & qualitative metrics, plus data-risk
+Act: hold, approve or block, human-in-the-loop, via SDK or API
+A risky agent is caught, not just charted.
+[Demo] customer-support-v3 run #4821: generate_reply llm-as-judge 0.96; issue_refund action, sensitive data CRITICAL -> high-risk action held for human approval; paused before issue_refund executed, awaiting approval, enforced at runtime.
+
+§03 / WORKFLOW - path: install -> enforcement
+From install to enforcement. Five steps, each a feature that's live today.
+1 PREFACTOR CLI - Install in minutes. One command connects your workspace and discovers agents across your runtimes: no migration, no rip-and-replace.
+2 SDK INTEGRATIONS - Instrument your agents. Drop in the TypeScript or Python SDK, native for LangChain, Claude, Vercel AI, OpenClaw & LiveKit. Every call becomes a span.
+3 RUNTIME VISIBILITY - See every run in real time. Full traces for every model call, tool and decision, with cost and data-risk attached, streaming in live.
+4 EVALS & SCORING - Evaluate what matters. Run the evals you define on every step: LLM-as-judge, technical checks and qualitative metrics. Human review feeds straight back in.
+5 ENFORCEMENT - Enforce, automatically or with a human. Block, throttle or require approval the moment a run crosses a line: automatically at runtime, or routed to a person. Every decision logged.
+[Demo: $ prefactor init; 4 agents discovered; @prefactor/langchain init({ agentIdentifier: "claims-processor" }); live runs; evaluations; enforcement: Approval financial-analysis -> SAP export awaiting mgr; Blocked marketing -> pastebin.com PII; Throttled support-v3 -> bulk export rate limit]
+
+§04 / CUSTOM SPANS - enrich: any datasource -> run
+Bring any datasource into the agent run.
+Custom spans aren't just markers. Pull context from any datasource (GitHub, Linear, Jira, your database, internal APIs) into the run, so every evaluation is grounded in what actually happened.
+
+§05 / LIFECYCLE - promote: dev -> staging -> prod
+THE AGENT DEVELOPMENT LIFECYCLE
+Ship agents like software: versioned, staged, promoted.
+Prefactor versions every agent, tracks it against a schema, and promotes it through dev, staging and prod only when its evals pass, so you can compare scores version-to-version and prove each one is better than the last.
+Versioning - Immutable versions by semver, commit or tag, with lifecycle states from pending to retired, so you always know exactly which agent ran.
+Schema management - Two-tier schema-and-deployment versioning, tracked independently, with conformance drift surfaced when a run breaks its declared shape.
+Environments - First-class dev / staging / prod. Every deployment binds a version to an environment, with eval-gated promotion and instant rollback.
+
+§06 / INTEGRATIONS - surface: one layer, every stack
+WORKS WITH YOUR STACK
+One layer over every agent, editor and workflow.
+Native SDK integrations for the agent frameworks you build on, plus the coding tools and workflow platforms your team already uses.
+Agent orchestration (native SDK): LangChain, Claude, Vercel AI, OpenClaw, LiveKit. Core SDK: TypeScript, Python. Coding tools: VS Code, GitHub Copilot, Cursor, Claude Code. Workflow tools: n8n, more coming.
+Connected through native SDKs, OpenTelemetry, and a TypeScript & Python core SDK that instruments anything else.
+
+§07 / PROOF - evidence: product-spec metrics
+"We had forty agents in production and no honest way to say which ones were still doing their job. Prefactor gave us that answer, and the brake pedal when one wasn't." - Head of AI Platform, Global financial services
+0 sensitive-data categories detected in agent traffic / 0 of runs traced: every call, tool & decision / <5 min from CLI install to first traced run / HITL hold & enforce at runtime, via the SDK or API
+
+§08 / SECURITY - posture: least privilege, auditable
+Built for enterprise security.
+Agents act with real access, so Prefactor is built around least privilege, full auditability and your existing identity stack: the enforcement layer beneath the reliability story.
+Scoped, least-privilege access / Complete auditable record / Sensitive-data detection: 17 categories / SSO for enterprise accounts / SOC 2 Type II (in progress) / RBAC (on the roadmap)
+
+§09 / FAQ
+What is agent observability? Capturing every agent run as structured trace data (each LLM call, tool invocation and decision) so you can see exactly what an agent did, how well it performed, and what it cost.
+What is agent evaluation? / How do I instrument my agent with Prefactor? / What are custom spans, and how do they measure quality? / How does human-in-the-loop work? / How does Prefactor enforce at runtime? / Why do AI agents need identity and scoped access?
+
+GET STARTED - See Prefactor on your own agents.
+Free for your first 25,000 spans a month. Drop in the SDK and watch your own runs get scored, live. Or take the 30-minute walkthrough with an engineer.
+Get started - free | Book a demo
+
+Solutions: Healthcare, Insurance, For Developers, For Heads of AI, For AI Product, Security & Governance, For Founders
+Resources: Agent Risk Audit, Blog, Agentic Contract Whitepaper, MCP Whitepaper, Glossary, Free Tools, Evals Hub, Security
+(c) 2026 Prefactor Pty Ltd. Backed by Antler, Black Nova VC & Func Ventures

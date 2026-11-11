@@ -1,0 +1,16 @@
+The Agentic Data Company
+NEW
+Open Yap 1K: Publicly available dataset
+The Agentic Data Company
+The interface between humans and computers is changing. For sixty years, people have communicated with machines through keyboards, mice, and screens - a series of workarounds for the medium humans actually use to communicate with one another. Recent progress in speech models suggests that this is ending. Within a decade, most interaction with intelligence will be conducted through speech, and the systems on the other end will respond with fluency approaching that of a person.
+Voice is the hardest modality. Speech carries not only words but identity, emotion, intent, hesitation, and the texture of a room. To train a model that hears the way humans do, you need data that captures all of it - at scale, across languages, across the long tail of how people actually talk.
+Current speech models are trained largely on audiobooks, podcasts, scraped video, and synthetic dialogue. None of these are conversation. People do not speak the way narrators read or the way podcasters perform, and models trained without real conversational data exhibit characteristic failures: they miss intent, mishandle turn-taking, and feel uncanny in extended use. The gap between current training data and the data required to close these failures is large, and it is not closing on its own. Conversation is not present on the open internet at the scale or fidelity that frontier training requires. It cannot be synthesized without inheriting the limitations of the model that generates it. It has to be collected.
+We design and collect audio datasets. We record real people in real conversations, at the scale frontier labs require, and work with the teams training the models that will define the next era of computing. Every hour is consented, licensed, and paid for at the source. Every dataset is built for frontier training.
+- Christian Vestergaard & Matias Drejer
+Frontier labs work with us to solve their hardest data problems. Tell us where your model breaks - we'll design the collection around it.
+Request a custom dataset.
+Company: About | Research | Contact | Terms of use | Privacy notice | Cookie policy
+Public Datasets: Open Yap 1K
+Private Datasets: Task-oriented calls | Accented English | Multilingual conversations | Hinglish ASR | Multi-party conversations | Turn-taking evals
+Connect: Discord | GitHub | Hugging Face | LinkedIn
+Backed by Y Combinator

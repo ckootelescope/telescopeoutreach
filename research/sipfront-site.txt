@@ -1,0 +1,57 @@
+Source: https://sipfront.com/ (homepage visible text, captured 2026-10-17 via browser get_page_text; demo-widget fragments condensed)
+Title: Sipfront | Voice testing for teams that ship voice
+
+One platform for voice quality assurance
+Know your voice works before your customers do.
+Outages, bad releases and broken voicebots cost you customers before the first support ticket. Catch them first, on one platform. No SIP specialists to hire.
+Book a demo | Start a free trial
+No credit card required · EU-hosted · 14-day trial, all products unlocked
+[Demo: app.sipfront.com / probe / nightly-regression-eu1 PASS #142, 100 concurrent EU-FRA; MOS 4.32, jitter 12ms, loss 0.02%, RTT 38ms; DTMF on trunk-eu-1 (47 scenarios); Hold + transfer; T.38 fax; AI anomaly: MOS dropped 0.3 at 14:32 - investigating peer sbc-2]
+
+TRUSTED BY VOICE TEAMS SHIPPING PREMIER PRODUCTS
+1.5M+ Voice AI test minutes shipped | 25 yrs of SIP, RTP & WebRTC engineering | 100% EU-hosted, EU-developed | 14 days full-access trial, no credit card
+
+START WITH YOUR PROBLEM
+What voice testing problem are you solving?
+Pick the question that sounds most like your quarter. Each one leads to the outcome it protects, the product behind it, and a 14-day trial with the workflow already wired up for you.
+"Is the service up right now?" — Hear about an outage before your customers and your SLA penalties do. 24/7 synthetic-call monitoring with SLA dashboards. BEAT
+"Can I ship this voice change safely?" — Stop a bad release before it reaches a customer. Functional regression on every deploy, wired into your CI/CD. PROBE
+"What breaks at 100,000 calls?" — Find your breaking point in a test, not during your busiest hour. Load and stress testing on SBCs, media servers and IVRs. PROBE
+"Does the WebRTC app work on their computer?" — It passes in the lab, then fails on the agent's locked-down laptop. Corporate security software, VPNs, firewalls and home-office VPN hairpinning break WebRTC in ways no vendor lab can reproduce. Readiness-test the real end-to-end path up front, or on demand when a failure won't reproduce. LENS
+"Does the voicebot still do what it should?" — Protect your brand and your EU AI Act standing every time the bot changes. End-to-end validation with audit evidence by default. ECHO
+Replace Hammer or Cyara, cleanly. — Cut testing TCO by 50 to 70%. Modern SaaS, EU compliance, 50% off year one with migration tooling included. MIGRATION
+
+THE PLATFORM
+One engine. Four products. Same evidence format.
+One platform to buy, one dashboard to learn, one evidence format for ops, QA and compliance. A SIP regression, a voicebot transcript and a WebRTC session all look the same, so you retire four separate tools and four invoices in favour of one. The technical detail lives in the product pages, your team will want those.
+Beat — MONITORING + SLA — Is the service up right now, and is call quality acceptable?
+Probe — ACTIVE CALL TESTING — If I deploy this change, what breaks, and what breaks at 100,000 calls?
+Lens — BROWSER & MOBILE APP TESTING — Does the call work in the customer's browser, and in your mobile app?
+Echo — AI VOICEBOT TESTING — Does the voicebot still do what it should after this release?
+See all products in detail
+
+Create, run and analyze every test by talking.
+The Sipfront AI Assistant is the core way to work the platform: spin up a single test run, assemble a full test book, or stand up a long-running time series with anomaly detection, then run and analyze it, all in plain English.
+From a one-off check to continuous monitoring with anomaly detection, your existing team configures, schedules and triages tests in plain language, without a scarce SIP specialist or a scripting backlog.
+Meet the AI Assistant
+[Demo chat: YOU: Set up a monitor that calls +4915123456789 every 5 minutes and alerts me on Slack if MOS drops below 3.8. AI: Done. Created the Beat schedule "PROD-MOS-watch", set a 5-min interval from your eu-fra agent, and wired the alert into your #voice-ops Slack channel. First run starts in 30 seconds. YOU: What caused the failure at 14:32? AI: SIP 503 Service Unavailable from upstream sbc-2. Correlates with the config push at 14:30, same window saw a 6x spike in 503s on that peering.]
+
+"Sipfront is our independent truth layer. It ensures our global Voice AI isn't just stable, it's a competitive advantage that protects our revenue and defines our brand." — Josef Lapka, CPTO at CloudTalk
+
+Protect your revenue — Every outage and quality drop is silent churn and an SLA penalty waiting to happen. Catch issues before customers feel them, and keep the forensic evidence that proves the fix and ends the dispute.
+One platform, one bill — Monitoring, regression, load, browser and voicebot testing on a single engine. One platform to procure, one format to learn, no stitching point tools together or paying four vendors for overlapping coverage.
+Compliance as a by-product — The same evidence stream that runs your daily quality testing doubles as EU AI Act and GDPR audit evidence. 100% EU-hosted. No separate compliance workstream, no last-minute audit scramble.
+Built on 25 years of voice — From the founders of rtpengine and the Kamailio experts, the open-source software moving a meaningful slice of the world's voice traffic. 1.5M+ AI test minutes shipped, in production for CloudTalk, Parloa and others.
+
+PRICING
+Four tiers. Built for the way voice teams actually scale.
+From €89/mo, less than the cost of a single prevented outage. Each tier adds the next product to the ladder and never strips capability, so you only pay for the coverage you have grown into.
+Starter from €89/mo — 1,000 min/mo — BEAT
+Growth from €449/mo — 5,000 min/mo — BEAT, PROBE
+Carrier from €1,349/mo (MOST POPULAR) — 25,000 min/mo — BEAT, PROBE, LENS
+Enterprise — Let's talk — Custom volume & terms — BEAT, PROBE, LENS, ECHO
+See full pricing & comparison
+
+See what a quality problem costs you, before it does.
+14 days, all four products, no credit card. Pick the outcome you care about and the AI Assistant walks you through your first test. If you don't convert, your work pauses for 6 months, we don't delete it.
+Start free trial | See pricing

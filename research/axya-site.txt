@@ -1,0 +1,377 @@
+URL: https://axya.co/
+Captured: 2026-10-18 via browser document.body.innerText
+
+Axya Secures $17 Million CAD in Funding. Read the announcement →
+
+Products
+
+Resources
+
+Company
+
+Book a tailored walkthrough
+
+ERP Integrations
+
+AI Procurement Execution Platform for Manufacturers
+
+Axya is an AI-powered procurement execution platform for manufacturers, connecting suppliers and ERP systems to streamline RFQs, purchase orders, and supplier collaboration.
+
+Book a tailored walkthrough
+
+Explore the workflow
+
+Trusted by top companies
+
+CUSTOMER PROOF
+Real Results from Manufacturers Like You
+
+Real procurement outcomes from manufacturers using Axya across complex RFQ and PO workflows.
+
+Avior Integrated Products
+
+Discover how Avior uses Axya to manage complex RFQs and track their data.
+
+Read More
+
+Airbus A220
+
+Learn how Airbus leverages Axya to achieve a staggering 90% reduction in RFQ processing time.
+
+Read More
+
+Hyco Canada
+
+Read how Hyco Canada reached new heights of optimization thanks to Axya’s RFQ Module.
+
+Read More
+
+Read more case studies
+
+Discover how other companies solved their procurement challenges using Axya.
+
+Read Case Studies
+
+Why Procurement Execution Breaks Outside the ERP
+The Most Complex Products in the 
+World Still Run This Part by Inbox.
+
+Supplier confirmations, quote updates, and date changes arrive outside the ERP.
+
+Buyers reconcile the same information across inboxes and spreadsheets.
+
+Late changes remain hidden until they put production at risk.
+
+Axya Turns Supplier Responses into Structured Updates.
+
+Supplier responses become structured data.
+
+Buyers review changes and exceptions.
+
+Approved updates flow back to the ERP.
+
+Axya complements
+
+these ERPs
+
+(and more).
+
+AI-POWERED PLATFORM
+One Execution Layer Between Suppliers and Your ERP.
+
+Axya uses AI to structure supplier responses, while automating routine follow-up and surfacing exceptions for buyer review. Approved changes sync back to your ERP.
+
+How Axya Keeps ERP Data Current
+Reads Every Supplier Response
+
+Email, PDF, EDI, and portal responses become structured procurement data.
+
+Structures What Changed
+
+Dates, quantities, prices, and confirmations are captured with context.
+
+Automates Routine Follow-Up
+
+Axya follows up automatically while buyers stay in control of approvals.
+
+Surfaces Exceptions Early
+
+Late orders and supplier changes are flagged before they become production problems.
+
+Start with the Workflow That Hurts Most.
+Order Management
+
+Move your process from reactive to proactive and reduce late deliveries.
+
+Learn More
+
+RFQ Management
+
+Reduce costs with an RFQ process that’s optimized and efficient.
+
+Learn More
+
+Vendor Management
+
+Evaluate, onboard, and oversee vendors. Manage and update contracts with ease.
+
+Learn More
+
+What Our Users Say
+
+The Axya platform saves us a lot of time when it comes to bid follow-up. It's easy to add relevant information, drawings and so on to the subcontractors and notify them all at the same time, which saves a lot of e-mail exchanges.
+
+What's more, the fact that the bids are put into an Excel file makes it much easier to award contracts. 
+
+Our purchasing team saved time and gained better visibility of all our requests.
+
+Alexandre Loignon
+
+Operations Manager
+
+Axya helped us grow our business. We do not have a lot of time to do business development. This is where Axya comes in!
+
+David Lefebvre
+
+Co-Owner, Mechanical Engineer
+
+The Axya platform has significantly helped us improve our bidding process. 
+Given our organization's high turnover rate, it was very easy to lose track of our bidding processes through endless email chains, and we struggled to find suppliers that were suitable for our needs.
+
+Joey S.
+
+Technical Specialist
+
+Great discovery!
+
+The quote requests made it much easier for us to process them. In just a few clicks I had all the information I needed to make a decision. The platform is very easy to use. The technical team supports us throughout the process and listens to our needs.
+
+Kathy C.
+
+Strategic Buyer
+
+As OSI is a company focused on innovation in both its products and operations, we are constantly on the lookout for partners who share our vision. We needed to automate and develop our supplier network, and Axya helped us achieve this. The ease of implementation and communication with their platform, as well as their technical support, enabled us to integrate this solution easily and in record time.
+
+Frederic Maheux
+
+Ops & Products Dev. Director
+
+Perfect tool to find and manage a large group of suppliers! We used the Axya directory to find new local partners for specific parts that we needed. Those parts were critical, and we wanted suppliers with specific certifications. Their customer support team was really helpful in finding the suppliers that we were looking for at first and now we are fully autonomous with the tool.
+
+Ramee Mossa
+
+CEO
+
+Dynamic platform created by dynamic people!
+What do I like best about Axya?
+The ease of use and access, the availability of team, the quick and comprehensive feedback on tenders/proposal, and the constant improvement.
+
+Philippe G.
+
+Admin. Director
+
+I noticed a marked reduction in the number of non-value added tasks and the information is centralized in one page.
+
+Anonymous
+
+Industrial Eng.
+
+"Perfect solution for communication between customers and manufacturing suppliers".
+What I like Axya for:
+- Supplier discovery
+- Efficient interface for quote comparison and project tracking.
+- Excellent, customized customer service
+
+Valentin B.
+
+Procurement
+
+FAQs
+
+Straight answers to the questions we hear from procurement and supply chain leaders.
+
+How much does it cost for suppliers?
+
+Nothing! It's completely free for suppliers.
+
+How are suppliers expected to interact with Axya?
+
+Suppliers don’t need to change their workflow: they can receive a standardized email from Axya users, access a landing page, or connect through a login-less portal on the platform.
+
+What level of involvement is required from Purchasing, IT, and Engineering?
+
+Axya is designed to be deployed with minimal disruption to existing processes and systems.
+
+Purchasing typically leads the project by helping map current workflows, identifying key suppliers, validating business objectives, and driving adoption within the procurement team.
+
+IT is usually involved during the integration phase to support ERP connectivity, security reviews, and data synchronization. Because Axya complements existing ERP systems rather than replacing them, the IT effort is generally focused and time-bound.
+
+Engineering, Operations, or Planning teams may participate to validate visibility requirements, exception management workflows, and reporting needs, but they are rarely heavily involved in the implementation itself.
+
+Most successful projects are led by Procurement with support from IT and key operational stakeholders.
+
+What does a typical 30/60/90-day implementation plan look like?
+
+While many customers are fully deployed within 4 to 6 weeks, a typical 90-day rollout follows three phases:
+
+Days 0-30: Foundation & Integration
+
+- Kickoff and process review
+- ERP integration setup
+- Initial user training
+- Pilot supplier onboarding
+- Configuration and testing
+
+Days 31-60: Adoption & Expansion
+
+- Broader supplier onboarding
+- Activation of automated workflows
+- ERP synchronization validation
+- User adoption coaching
+- KPI baseline establishment
+
+Days 61-90: Optimization & Scale
+
+- Full deployment across targeted suppliers
+- Process optimization
+- Visibility and performance reporting
+- ROI measurement
+- Expansion to additional sites, teams, or business units if applicable
+
+Our team works closely with customers throughout the process to ensure a smooth transition and rapid time to value.
+
+How do customers ensure successful user adoption?
+
+The most successful deployments focus on outcomes rather than software.
+
+Internally, adoption is driven by helping buyers spend less time on supplier follow-ups, ERP maintenance, and status requests, while giving them more time for strategic activities such as supplier development, sourcing, and risk management.
+
+For suppliers, adoption is accelerated because Axya adapts to their preferred way of working. Suppliers can collaborate through email, portal access, landing pages, EDI, APIs, or other communication methods, minimizing the need for significant behavioral change.
+
+Customers typically position Axya as a procurement transformation initiative that improves visibility, accountability, and efficiency rather than as a technology project.
+
+What are the most common implementation challenges?
+
+Like any transformation initiative, there are a few common challenges:
+
+Supplier onboarding
+
+Engaging suppliers early and communicating the benefits clearly is important to accelerate participation and maximize value.
+
+ERP data quality
+
+Many organizations discover that purchase order information, supplier records, or existing processes need refinement before automation can deliver its full impact.
+
+Change management
+
+Moving from reactive procurement processes to more proactive and strategic workflows often requires adjustments to established habits and responsibilities.
+
+Integration planning
+
+While ERP integrations are typically straightforward, alignment on business rules, data ownership, and workflow expectations helps ensure a successful deployment.
+
+Our implementation team has experience guiding manufacturers through these challenges and follows a proven onboarding process to help customers achieve value quickly.
+
+Who is Axya for?
+
+Axya is built for manufacturers that rely on a large supplier network and would like to scale their procurement operations more efficiently.
+
+Our customers typically:
+
+- Manage hundreds of suppliers and purchase orders
+- Operate complex supply chains across one or multiple sites
+- Use ERP systems such as SAP, Oracle, Infor, Epicor, or NetSuite
+- Have procurement teams spending too much time on operational work
+- Need better supplier visibility and more accurate ERP data
+- Are growing and want to scale without continuously adding headcount
+
+Axya is particularly well suited for organizations in:
+
+- Aerospace & Defense Manufacturing
+- Transportation & Automotive
+- Mining & Resources
+- Industrial Equipment & Machinery
+- Space & Advanced Manufacturing
+- Packaging & Paper Products
+- Custom Manufacturing & Metal Fabrication
+
+Many of our customers come to us because they recognize one or more of the following challenges:
+
+- We're constantly firefighting
+- We spend too much time chasing suppliers
+- We discover delays too late
+- We're growing faster than our team can scale
+- Our ERP doesn't always reflect supplier reality
+
+If these challenges sound familiar, Axya can help connect your suppliers, buyers, and ERP systems to create real-time visibility, reduce manual work, and enable procurement teams to focus on more strategic initiatives.
+
+Does Axya integrate with my ERP?
+
+Yes! Axya is made to complete your ERPs. Axya doesn't replace an ERP, it augments it.
+
+TAILORED TO YOUR ENVIRONMENT
+See How Axya Fits Your Procurement Process
+
+Bring your ERP, current workflow, and the procurement problem you want to solve. We’ll tailor the walkthrough from there.
+
+Book a tailored walkthrough
+
+Address
+1155 Metcalfe Street, Suite 1583, Montréal, QC H3B 2V6
+
+Contact
+Canada: +1 438 600-8933
+USA: +1 844 996-2812
+hello@axya.co
+
+ERP Integrations
+
+All ERP Integrations
+
+Genius
+
+Infor
+
+Epicor
+
+Sage
+
+Acumatica
+
+Resources
+
+Case Studies
+
+Blog
+
+Events & Webinars
+
+Guides & Ebooks
+
+Brand Kit
+
+Company
+
+About
+
+Contact
+
+Careers
+
+© 2026. Axya, Inc. All rights reserved.
+
+Privacy
+
+Terms of Services
+
+Security
+
+Service Status
+
+We use essential cookies to make this site work. With your permission, we also use analytics cookies to understand how the site is used and improve your experience. Privacy Policy
+
+If you decline, your information won’t be tracked when you visit this website. A single cookie will be used in your browser to remember your preference not to be tracked.
+
+Cookies settings
+Accept
+Decline

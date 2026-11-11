@@ -1,0 +1,85 @@
+SOURCE: https://arkestro.com/ (homepage, document.body.innerText, captured 2026-10-17 via browser)
+---
+Contact
+Amplify procurement’s impact.
+Unlock millions of margin.
+
+The only predictive procurement platform for accelerated net growth.
+
+Book a demo
+Explore the platform
+
+ENTERPRISE IMPACT
+
+18.8% average savings on all spend
+KES’s transformative bet on AI
+
+How faster decisions and bigger wins made KES Procurement the best-performing Koch portfolio procurement team
+
+Read story
+
+LATEST FROM ARKESTRO
+
+Arkestro Unveils New Continuous Procurement Capability and MCP Connectivity at Optimal ’26
+
+PLATFORM
+
+Platform overview
+Predictive sourcing
+Continuous procurement
+Patented sciences
+Integrations
+Security & compliance
+
+SOLUTIONS
+
+Executives
+Procurement & supply chain leaders
+Spend optimization
+Competitive sourcing
+Supplier collaboration
+Spend categories
+
+RESOURCES
+
+Resource center
+Success stories
+Blog
+Analyst reports
+Events
+Glossary
+
+COMPANY
+
+Partners
+About us
+Leadership
+Careers
+Press & news
+Trust center
+Contact
+Privacy Policy
+|
+Terms of use
+
+Copyright © 2026 Arkestro. All rights reserved.
+
+=====
+SOURCE: https://arkestro.com/about/ (main content, document.body.innerText after full scroll, captured 2026-10-17)
+---
+Procurement was built to react. We built Arkestro to predict.
+
+Arkestro is the only Predictive Procurement platform helping enterprise teams improve pricing, move faster, and influence more spend with the resources they already have. By combining AI with game theory and behavioral science, we give teams a stronger starting point for every negotiation and make their best outcomes repeatable.
+
+Remote-first work environment
+Healthcare & competitive compensation
+Professional development opportunities
+
+=====
+SOURCE: https://arkestro.com/leadership/ (DOM textContent, leadership entries)
+---
+Rob DeSantis
+Chief Executive Officer and Co-Founder
+
+Edmund Zagorin
+Chief Strategy Officer and Co-Founder

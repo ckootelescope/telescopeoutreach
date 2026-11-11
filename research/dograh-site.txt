@@ -1,0 +1,74 @@
+Source: https://www.dograh.com/ (captured 2026-10-18 via browser get_page_text; duplicated marquee lists collapsed)
+Title: Dograh | The Open Source Vapi Alternative — Voice Agents You Can Fork
+---
+THE SELF HOSTABLE VOICE AGENT PLATFORM · OSS ALTERNATIVE TO VAPI & RETELL
+[Self-Hosted] voice agents._
+Open Source workflow builder for Voice Agents
+RECOGNITIONS: #1 PRODUCT OF THE DAY | #1 PRODUCT OF THE WEEK | #3 PRODUCT OF THE MONTH DEVELOPER TOOLS | #3 REPOSITORY OF THE DAY | NVIDIA INCEPTION PROGRAM
+§ THE STACK YOU BRING
+Fork every box.
+Click any node to see the providers you can plug in. Pick your inbound channel, STT, LLM, TTS, and telephony. Or skip the cascade entirely and switch the whole pipeline to speech-to-speech.
+INBOUND CALL + OUTBOUND · WIDGET
+§ SPEECH-TO-SPEECH · ONE MODEL, AUDIO IN/OUT - S2S Gemini 3.1 Flash Live
+OR
+§ CASCADE · STT -> LLM -> TTS - STT Dograh | LLM Dograh (BRAIN) | TTS Dograh | SIP Twilio (TELEPHONY)
+Production agent - YOUR STACK, RUNNING - LIVE
+§ INTEGRATIONS
+OPENAI, GEMINI, GOOGLE, GROQ, OPENROUTER, AZURE, AWS, HUGGING FACE, MINIMAX, SARVAM, GLADIA, ASSEMBLYAI, SPEECHMATICS, DEEPGRAM, ELEVENLABS, CARTESIA, INWORLD, CAMB.AI, RIME, SPEACHES, SMALLEST AI, XAI, PLIVO, TELNYX, TWILIO, VOBIZ, VONAGE, CLOUDONIX, ASTERISK, LANGFUSE, TUNER
+01 ON-PREM · DATA RESIDENCY · ENTERPRISE-READY
+Your data never leaves.
+Deploy Dograh on-prem or inside the VPC of your own cloud - even the AI models can be served within your perimeter or fully air-gapped, so no calls, recordings, transcripts, or model inference ever leave your boundary. Data security, data residency, and compliance, built in by default.
+Auditable open source, enterprise-ready for the most regulated industries and jurisdictions.
+YOUR DATA BOUNDARY - ON-PREM · YOUR CLOUD: voice calls, recordings, transcripts, prompts, customer PII, models served in-perimeter, fully air-gapped. NEVER LEAVES · NEVER TRAINED ON
+DATA SECURITY | DATA RESIDENCY | COMPLIANCE | NO VENDOR COMPLIANCE RISK
+HIPAA | GDPR | SOC 2 | ISO 27001 | CCPA
+Data stays in your perimeter, so your existing certifications and controls keep covering it — no third-party vendor to audit.
+02 MODEL CONTEXT PROTOCOL
+Build by writing.
+Dograh ships a Model Context Protocol server. Point Claude Code, OpenClaw, Cursor, or any agent runtime at it: they can spin up, modify, and deploy full voice agents on your stack, without leaving the IDE.
+CLAUDE CODE · MCP · DOGRAH
+> Build me an AI calling agent for EMI reminders and collections with Dograh.
+created agent: emi_collections_v1 / generated: reminder + soft-collection scripts / wired: twilio · webhook · pre_call_fetch
+> Add a CRM fetch step before the call begins with Dograh.
+added node: pre_call_fetch / wired to: llm.context
+WORKS WITH: CLAUDE CODE · OPENCLAW · CURSOR · CODEX · ANY MCP CLIENT
+03 2X CONVERSIONS · PRE-RECORDED + TTS
+2x conversion. More humane.
+Real human voice clips, mixed with TTS, in the same cloned voice. The LLM picks a pre-recorded line when one fits, and falls back to TTS only when it doesn't. Unprecedented latency gains. Cost down up to 3x. Sounds actually human.
+HUMAN (PRE-RECORDED) | TTS (LIVE, SAME VOICE) | SEAMLESS
+04 SPEECH-TO-SPEECH
+Real-time. Audio-to-audio.
+Audio goes in, audio comes out. No transcription cascade, no text round-trip. The same conversation feels fluid, natural, and precise: real turn-taking, real interruption handling, ultra-low latency.
+Use Gemini 3.1 Flash Live (or Vertex AI) or GPT Realtime 2
+CASCADE 3 HOPS · SLOWER: STT, LLM, TTS - TEXT ROUND-TRIP · 3 HOPS · CASCADE LATENCY
+SPEECH-TO-SPEECH 1 HOP · FASTER: S2S - AUDIO IN · AUDIO OUT · FLUID
+REAL TURN-TAKING · REAL INTERRUPTION · INTUITIVE FEEL · 70+ LANGUAGES
+05 SELF-HOSTED STACK · DATA SOVEREIGNTY
+Run the whole stack on your infra.
+Full data sovereignty. Lower latency as a bonus. Plug in Voxtral, Kokoro, Whisper, whatever runs in your VPC. One of the most-requested features in the repo, and arguably the reason a lot of teams cannot use a hosted voice-agent vendor at all.
+STT and TTS are production-ready. LLM swapping is in beta.
+STT Whisper (OPENAI · OSS) | STT Voxtral (MISTRAL · OSS) | STT Canary Qwen (NVIDIA · OSS) | TTS Kokoro (OSS) | TTS Chatterbox (OSS) | TTS your voice clone (YOUR WEIGHTS)
+... AND ANY MODEL YOU CAN HOST
+06 THREE WAYS TO RUN
+Same stack. Where you want it.
+Run Dograh yourself on your own servers. Let us run it for you on our managed cloud. Or have us deploy the entire stack inside your VPC and operate it for you.
+SELF-HOST · OSS - Run it yourself. Clone the repo, docker compose up, you're running. Forever free, BSD 2-Clause, your servers, your data. FORK ON GITHUB
+MANAGED · CLOUD - Let us run it. Our fully-managed cloud, same stack, zero ops. We host, patch, and scale. You build agents and ship them. TRY CLOUD FREE
+PRIVATE CLOUD · MANAGED - Your VPC, our ops. We deploy the entire stack inside your cloud. Data stays on-premise. We handle orchestration, upgrades, and reliability. TALK TO FOUNDERS
+07 INDUSTRIES · JURISDICTIONS
+Built for the regulated world.
+Slots inside your existing compliance perimeter. Skip the vendor review dance: no HIPAA review on us, no GDPR sign-off on us, no SOC 2 on us. The code is open, so your security team can audit every line before a single call goes out.
+Fintech | Healthtech | Telemedicine | Insurance | Banking | Legal intake | Pharma | Defense | Government
+EU / GDPR | Switzerland | UK | Saudi Arabia | UAE | Singapore | South Korea | Japan | USA | Canada
+REGIONAL LANGUAGE SUPPORT · ON-PREM DEPLOYMENTS · AUDITABLE OSS
+08 QUESTIONS WORTH ASKING
+Things worth asking.
+Why open source?
+Three reasons. (1) Your data never leaves your premises, critical for fintech, healthtech, defense, EU/GDPR. (2) You can read the code, audit it, fork it; no vendor lock-in. (3) No vendor compliance dance: you don't need us to be SOC 2 or HIPAA or GDPR-certified because we don't see your data.
+How does the MCP integration work?
+What's the latency like?
+Can I use my own STT and TTS?
+Do you support multiple languages?
+Can I integrate with my CRM, Slack, Calendly, or webhooks?
+What about compliance: HIPAA, GDPR, SOC 2?
+How is this different from Vapi, Retell, or LiveKit?

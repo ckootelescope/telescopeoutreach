@@ -1,0 +1,35 @@
+Test, Monitor and Self Improve voice agents
+Launch in minutes, not weeks. Test your agent before going live, monitor real production calls, and continuously improve with Cekura's intelligent insight.
+The reliability layer for voice agents.
+Self-improving agents
+Cekura flags issues → reproduces in simulation → suggests fixes automatically.
+Detect failure Generate eval Patch prompt Re-run gate
+Benchmarking
+Run the same scenarios across platforms and models. Pick the one that actually performs.
+Adversarial red-teaming
+Probe for jailbreaks, leaks, and off-script behavior.
+Pre-production simulation
+Run thousands of synthetic conversations before go-live.
+Production monitoring
+Live drift detection across every call.
+Cekura integrates with your existing tools and platforms, letting teams scale AI without disrupting workflows.
+Trusted where reliability is non-negotiable.
+We set up key metrics on Cekura and could easily compare between our old and new stack. Zero regression on key workflows, every node and integration preserved post-migration.
+Cekura has become a critical part of our development pipeline. Now we don't ship any agents to production without first aggressively testing them on Cekura.
+Cekura lets our AI agent deliver precision onboarding at scale. We test every release against thousands of synthetic patients before it ever reaches a real one.
+Build self-improving loops.
+Three loops your team already runs: fully automated, version-controlled, and observable end-to-end.
+Test
+Run thousands of synthetic conversations against every release. Gate every deploy on the suite.
+Appointment booking Cancellation mid-sentence Insurance query off-script Emergency escalation Refund flow adversarial Spanish accent billing Multi-turn handoff
+Know exactly how your agent stacks up.
+Benchmark your own infrastructure setup over time, or run a head-to-head vendor bake-off across providers: same scenarios, same scoring, no guesswork.
+How Voice Agents Know When a Caller Has Stopped Talking
+Voice agents infer turn-end from VAD and streaming STT; neither is sufficient. How Cekura's voice agent checks each close against the call's own audio.
+Voicemail detection testing for voice AI
+Voicemail detection testing checks whether your outbound agent classifies what picked up, then takes the right branch. The six scenarios that catch real defects, and how to run them on every release.
+Voice AI Latency: How to Monitor and Improve Every Layer
+Measure voice AI latency at every layer: endpointing, ASR, LLM TTFT, TTS, and transport. Monitor p50, p95, and p99, and diagnose spikes with Cekura.
+Built for enterprises.
+The security and compliance infrastructure voice AI demands: HIPAA, SOC 2, and GDPR, not as checkboxes but as defaults.
+YC launch: Teams often test by manually calling their agents or listening through thousands of recorded calls, which is slow, error-prone and doesn't provide the coverage teams need.

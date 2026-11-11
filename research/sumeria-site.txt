@@ -1,0 +1,88 @@
+Source: https://sumeria.ai/ (homepage visible text, captured 2026-10-17 via browser get_page_text; Spanish original; animated demo/dashboard fragments condensed)
+Title: Sumeria — Auditoría de agentes de IA · chat y voz
+
+EN VIVO
+AUDITORÍA Y ENTRENAMIENTO DE IA CONVERSACIONAL
+¿Sabes qué le está respondiendo tu chatbot de IA a cada cliente?
+Nosotros sí. Auditamos cada conversación de tus agentes de IA —chat, voz y correo— en una sola plataforma: detectamos alucinaciones, riesgos legales y de compliance antes de que lleguen al cliente, y devolvemos cada hallazgo como dato para entrenar un agente mejor.
+Solicitar auditoría piloto — 100 conversaciones · informe en 10 días hábiles
+Chat · Voz · Correo · una plataforma | Auditoría 100% · sin muestreo | Datos para entrenar tu agente | Pautas alineadas a ISO 42001 · EU AI Act · Ley 21.719
+[Demo: sesión #4087 web widget, captura Chat 312/h, Voz 86/h, Correo; score de conformidad /100; críticos; normativos]
+
+EL PROBLEMA
+Tu agente hace miles de llamadas al día. Nadie escucha ninguna.
+La escucha manual cubre, en el mejor de los casos, el 3% de las interacciones. Con agentes de IA el volumen se multiplica — y con él, tres riesgos que ya están ocurriendo en producción:
+CRÍTICO — Alucinaciones con consecuencias. Montos incorrectos, descuentos inventados, condiciones que no existen. Cada una es un compromiso verbal con un cliente real — y un reclamo en camino.
+NORMATIVO — Incumplimiento regulatorio. Horarios de contacto, presión indebida, tratamiento de datos. La normativa de protección al consumidor aplica igual si quien llama es una IA — y el regulador ya está mirando.
+SILENCIOSO — Degradación invisible. Un cambio de modelo o de prompt altera el comportamiento del agente sin que nadie lo note. Sin monitoreo continuo, te enteras por los clientes que perdiste.
+
+LA PLATAFORMA
+Una sola plataforma de aseguramiento para toda tu operación conversacional
+Auditamos cada conversación de tu operación — la tenga un agente de IA o una persona. Tres servicios, un mismo estándar de calidad.
+NUEVO — Auditoría de agentes IA. Testing adversarial antes del lanzamiento — simulamos al cliente agresivo, al confundido, al que intenta manipular — y monitoreo del 100% de las llamadas en producción, con alertas en tiempo real. (Solicitar piloto)
+QUALITY AUDIT — Auditoría de equipos humanos. Análisis del 100% de las llamadas con 15 variables emocionales en la voz de agente y cliente. 5 veces más económico que la escucha manual, sin sesgos ni fatiga. (Solicitar demo)
+CUSTOMER INSIGHT — Inteligencia de conversaciones. Clasificación de todas tus interacciones — llamadas, correos, chats, SMS — para detectar motivos de contacto, emociones y oportunidades de mejora en tiempo real. (Conocer el servicio)
+
+EL CICLO
+No es solo QA: cada conversación auditada vuelve como entrenamiento — y como evidencia para legal y compliance.
+Conversaciones (chat · voz · correo) -> Auditoría + scoring (100% · pauta) -> Dataset etiquetado (errores con contexto) -> Agente reentrenado (mejor experiencia)
+Calidad del agente · antes -> después: 71% -> 92% | −84% incidentes en producción | 0 reclamos por dato inventado | Evidencia lista para legal y compliance
+
+RESULTADOS MEDIDOS
+Números de operaciones reales, no de un deck
+100% de las interacciones auditadas, frente al ~3% que alcanza la escucha manual.
+5× más económico que la auditoría manual de llamadas.
++8,7% en compromisos de pago al detectar y gestionar llamadas críticas.
+−22% en gastos operativos de un cliente de cobranza a los 3 meses.
+
+CÓMO TRABAJAMOS
+Auditoría antes, durante y después del despliegue
+FASE 01 · PRE-LANZAMIENTO — Testing adversarial. Simulamos cientos de contrapartes difíciles y documentamos exactamente dónde falla tu agente antes de que hable con un cliente real.
+FASE 02 · PRODUCCIÓN — Monitoreo continuo. Scoring automático de cada llamada: precisión de la información, cumplimiento normativo, calidad de trato. Alertas inmediatas cuando algo se desvía.
+FASE 03 · REPORTE — Informe accionable. Hallazgos clasificados por severidad, transcripciones marcadas y recomendaciones concretas. Evidencia lista para tu equipo legal y tu directorio.
+
+LA EVIDENCIA · PLATAFORMA EN PRODUCCIÓN
+Cada llamada termina en evidencia, no en opinión
+La plataforma procesa los audios, los transcribe con separación de hablantes y los evalúa contra tu pauta. Tu equipo revisa, ajusta y exporta — y cada hallazgo se vuelve una mejora medible del agente. Todo queda trazado.
+[Demo: llamada_2381 · Pauta de Evaluación · Agente IA · Evaluada por Sumeria Bot · revisada por QA humano · 87/100. INICIO ¿Se identifica e informa que la llamada es con un asistente virtual? SÍ. NEGOCIACIÓN ¿Las condiciones ofrecidas existen en la política del cliente? NO. NEGOCIACIÓN ¿Respeta los límites de presión permitidos por normativa? SÍ. CIERRE ¿Resume compromisos y próximos pasos correctamente? REVISAR.]
+[Insights últimos 15 días: 4.875 audios auditados (▲17,3%); 93,6% tasa de éxito de procesamiento; 28.560 minutos transcritos; 12 hallazgos críticos; exportable Power BI]
+CICLO CERRADO
+01 · Hallazgo — El agente ofrecía descuentos fuera de política en el 6% de las llamadas auditadas. (12 casos críticos)
+02 · Acción — Ajuste de prompt y regla de validación de ofertas; los casos quedan como set de evaluación. (aplicado por tu equipo)
+03 · Resultado — Cero reincidencias en 14 días, verificado contra la misma pauta. (score 71 -> 92)
+Transcripción con separación de hablantes. Evaluación automática + revisión humana. Pautas configurables por campaña. Dashboards exportables a Power BI. Multi-sucursal y gestión de roles. Carga por API o arrastre de archivos.
+Tus datos son tuyos. Los datasets, hallazgos e insights generados sobre tus conversaciones quedan en tu propiedad, bajo el acuerdo de tratamiento de datos del servicio. Nosotros auditamos; el activo es tuyo.
+
+CLIENTES
+Operaciones exigentes, en sus palabras
+"La plataforma permite visualizar los comportamientos de mi equipo y medirlos en tiempo real. Su tecnología te da la posibilidad de eficientar el número de supervisores que requieres para alcanzar los objetivos." — Gerente de Cobranza en Terreno
+"Nos ha permitido revisar la cartera de clientes en mucho menos tiempo. Ha mejorado significativamente la gestión del equipo comercial y transformado la forma de trabajar de la empresa." — Gerente de Cobranza
+Press: La Tercera, Terra, Radio La Clave
+
+SEGURIDAD Y CUMPLIMIENTO
+Tus grabaciones, tratadas como lo que son: datos sensibles
+Cubrimos cada frente que tu industria exige: compliance de IA, protección de datos, seguridad de la información y experiencia de cliente — con evidencia, no con sellos.
+Encriptación de punta a punta — Datos protegidos en tránsito y en reposo, con controles de acceso estrictos.
+GDPR y CCPA — Prácticas alineadas con los estándares internacionales de privacidad de datos.
+Trazabilidad total — Cada evaluación queda con evidencia, timestamp y registro de quién revisó qué — auditoría sobre la auditoría.
+Un estándar para cada frente del cumplimiento. No vendemos sellos: diseñamos las pautas de evaluación alineadas a los marcos que tu industria exige —del compliance de IA a la protección de datos, la seguridad de la información y la calidad de atención— y te entregamos la evidencia para demostrarlo ante quien corresponda.
+Compliance de IA y normativa: ISO/IEC 42001, NIST AI RMF, EU AI Act, Normativa SERNAC. Protección de datos: Ley 21.719 Chile, GDPR Europa, CCPA EE.UU. Seguridad de la información: encriptación de punta a punta, control de acceso por rol, trazabilidad total. Experiencia y calidad: ISO 18295 contact centers, COPC calidad de atención.
+
+PREGUNTAS — Lo que nos preguntan antes de partir
+¿Pueden auditar un agente de cualquier proveedor? ¿Qué necesito enviar para la auditoría piloto? ¿Cómo protegen los datos de mis clientes? ¿Cuánto cuesta? ¿Puedo usar los resultados para mejorar o entrenar mi agente? ¿También auditan equipos humanos?
+
+DEL BLOG — Últimos análisis sobre IA, datos y QA conversacional
+Fallo judicial sobre IA de Google en centros de contacto | Señales de CX en tiempo real para 2026 | Cómo pasar contexto a agentes humanos en LiveOps | Salesforce adquiere Fin por 3,6 mil millones | El mercado de experiencia de cliente con IA crecerá exponencialmente | Dialpad y Google Workspace: innovación en 2026
+
+CALCULADORA — ¿Cuántas conversaciones de tu IA nadie está revisando?
+Mueve el control con tu volumen real. La escucha manual alcanza apenas un ~3%; el resto pasa sin que nadie lo vea.
+10.000 conversaciones de IA al mes | 300 revisadas con escucha manual (~3%) — muestreo, no cobertura | 9.700 sin revisar hoy (97%) — ciego cada mes | Con Sumeria 100% — 0 sin revisar
+Cada conversación sin revisar puede ser una alucinación, una promesa fuera de política o un dato sensible mal manejado — exposición directa bajo la Ley 21.719, con multas de hasta 20.000 UTM. Auditar el 100% no es un lujo: es la única forma de saber qué dijo tu agente.
+Auditar el 100%
+
+Audita 100 llamadas de tu agente. Mira lo que encuentra.
+Nos envías las grabaciones o nos conectamos a tu plataforma. En 10 días hábiles recibes el informe completo de hallazgos. Tú decides qué hacer con él.
+Solicitar auditoría piloto
+
+Auditoría y QA de conversaciones con IA. Desde 2016 analizando interacciones comerciales en español — humanas y, ahora, también de inteligencia artificial.
+Footer: Plataforma, Resultados, Blog, Nosotros, Campañas de llamadas con IA, Contacto, Términos y privacidad. contacto@sumeria.ai. Av. Apoquindo 5555, Of. 1101, Las Condes, Santiago. © 2026 Sumeria. Hecho en Santiago, Chile.

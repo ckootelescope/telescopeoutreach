@@ -1,0 +1,91 @@
+Source: https://roark.ai/ (captured 2026-10-18 via browser get_page_text, <main>)
+
+NEW - Voice model benchmarks, ranked on live calls
+Test, monitor, and improve the voice AI agents you already run.
+Roark is the QA and evals platform for voice AI, not another agent builder. Simulate your agent against hundreds of callers before launch, then score every production call on 500+ audio-native metrics: catch what breaks, prove the fix, and ship with evidence.
+Get started free / Book a demo
+Start free with $50 in credit, no card needed. Works with Vapi, Retell, LiveKit, Pipecat + your stack.
+SOC 2 TYPE II / HIPAA BAA / BACKED BY YC
+NOW IMPROVING - Pronunciation 71 -> 94 - Catch / Simulate / Validate / Verify - Caught mispronounced "metoprolol"
+SCORING PRODUCTION VOICE AI FOR TEAMS AT: radiantgraph
+
+01 · HOW ROARK WORKS
+One loop. Always improving.
+Catch it in production, prove the fix in simulation, ship with evidence, then Roark watches the next call. This is how an agent self-improves: a loop, with you in it.
+01 · CATCH - Roark scores every live call and files what breaks.
+Live · scoring every call - 1,284 today
+Caller: I was charged twice, I need a refund. Agent: No problem, I've refunded it to your card.
+Identity not verified: Refund issued to an unconfirmed caller. Compliance
+02 · SIMULATE - Your fix, replayed against realistic simulated callers.
+Testing your candidates 82 / 240 - prompt · soften tone (fail) - model · gpt-4o -> 4.1 (fail) - voice · calmer pacing (fail)
+03 · REVIEW - Every change explicit and diffed, ready to apply.
+Your fix, diffed - support_v3 -> v4 - Prompt / Model / Tool
+- Issue the refund right away.
++ Verify the caller's identity, then issue the refund.
+04 · VERIFY - You ship, and Roark confirms the metric moved on live calls.
+Verifying support_v4 in production - 418 calls scored - Pronunciation, since your deploy 71->86 - Issue recurrence: watching… - Quality score 86 - Regressions on other metrics: none
+you ship it, and Roark scores every call from the first minute
+…and the loop runs again on the next call.
+Follow one issue around the loop
+
+CUSTOMERS
+Teams ship faster when they can hear what breaks.
+Production voice AI scored on every conversation: pronunciation, empathy and resolution across their support and sales calls. (radiantgraph)
+Healthcare calls evaluated for disclosures and identity checks: compliance scoring on every conversation, automatically.
+Client voice agents validated in simulation before they go live: evidence that a build is ready, not a hunch.
+
+02 · SIMULATE BEFORE LAUNCH
+Break it in staging, not in production.
+Run your agent against hundreds of simulated callers (realistic personas, accents, background noise and edge cases) and get every conversation scored before a customer ever dials in.
+Scenarios & personas - Hundreds of simulated callers (the angry one, the rambler, the interrupter) built from your real call types.
+Red teaming - Adversarial callers that try to break it (prompt injection, jailbreaks, social engineering) so your agent holds policy under attack.
+45 languages & accents - Native accents, code-switching and background noise, in every market your agent answers.
+Load & health tests - Peak-volume concurrency and always-on health checks, so the agent that passed in staging survives launch day.
+Regression testing - Rerun the whole suite on every change and diff it against your last green baseline, so fixing one caller never breaks another.
+Run it in CI - Every prompt or model change runs the suite before it merges: quality gates for conversations, not just code.
+Pre-launch suite · booking_v2 - 182 / 200 passed - Angry caller · refund demand pass 92 - Red team · prompt injection pass 90 - Gulf Arabic · lobby noise pass 88 - Interrupts mid-disclosure fail 61 - Rambler · 3 intents in one turn pass 85 - Peak load · 250 concurrent pass
+1 failure filed as an issue: fix it before launch, not after
+Run your first suite
+
+03 · POST-CALL ANALYSIS
+500+ metrics. Your models, not just an LLM.
+Every production call scored as it lands: issues filed, alerts fired, dashboards and OTEL traces on tap, for voice calls and chat threads alike. And where most tools grade a transcript with an LLM, Roark runs purpose-built audio models on the call itself, measuring what your customer actually heard.
+platform.roark.ai/calls/c_8f42 - +1 (415) 555-0134 -> support_v2 - Today 14:32 · 3m 42s · Vapi - 91
+Caller: I was told the refund would arrive by Friday… Agent: Let me check that for you, one moment.
+Dead air: 3.8s before the agent responded. Issue #482 filed
+METRICS: Pronunciation 94 / Empathy 84 / Instruction following 97 / Response time 88 / DISCLOSURES / IDENTITY CHECK / + 60 MORE SCORED
+Audio-native - CUSTOM MODELS: Pronunciation, Accent clarity, Emotion, Vocal stress, Pace & pauses, Interruptions
+Conversational - LLM + RULES: Resolution, Empathy, Task success, Hallucination, Repetition, Tone
+Compliance - POLICY: Disclosures, PII exposure, Identity check, Script adherence
+Performance - LATENCY: Time-to-first-word, Turn latency, ASR WER, Barge-in handling
+500+ metrics out of the box / custom metrics, your rules / Audio + LLM models on every call
+See a scored call on your own audio
+
+ROARK LIVE BENCH
+Which voice stack is best? We call them all and find out.
+Our public leaderboard for realtime voice AI: every speech-to-text, language model and speech engine combination, called over the real phone network and scored end to end by the same engine that scores your production calls.
+300+ MODEL COMBINATIONS / 8,000+ SCORED CALLS
+View the leaderboard / How we measure
+Free to read, no signup. New sweeps publish as models ship. benchmarks.roark.ai
+Your agent isn't on the board. Put it through the same calls. Test your agent
+The same call, every time - One reference agent, one scenario, one impatient caller who interrupts and corrects. Only the models change.
+Scored, not reviewed - Task completion, response time, misheard turns and time to first word, weighted into one score.
+Receipts attached - Every number links to the calls behind it, transcript and audio included.
+Versioned suites - Each sweep publishes under a suite version, so this board stays comparable to the last.
+
+04 · THE WHOLE PLATFORM
+Everything, before launch and after.
+Simulation testing before you ship. Post-call analysis once you are live. Self-improvement connecting the two. Every capability first class, one click deep.
+BEFORE LAUNCH - Simulation testing: Scenarios & personas; Red teaming; Multilingual testing (45 languages); Load testing; Health checks; Regression testing; CI/CD gates
+IN PRODUCTION - Post-call analysis: 500+ metrics; Pronunciation testing (Drug names, SKUs and people, verified from the waveform); Custom metrics; Human review & ground truth; Issue tracker; Alerts & monitors; Tracing & dashboards
+ALWAYS IMPROVING - Self-improvement: Prompt optimizer; Ground-truth tuning; Model, voice & infra fixes; Fix verification; Live verification
+
+05 · GET STARTED
+First call scored in under a minute.
+One click on any platform below and production calls stream in on their own, or send any recording with a few lines of code.
+Node · Python, plus a REST API for CI/CD and webhooks the instant a call is scored
+INDUSTRIES - Built for the calls you actually take. Healthcare / Finance / Insurance / Home Services / Customer Support / Hospitality / Retail
+SOC 2 TYPE II / HIPAA BAA AVAILABLE - Enterprise-grade from day one: annual pen tests, SSO/SAML, role-based access, configurable retention.
+Bring a recording. We'll score it live.
+See your own agent measured on the audio it actually produced, in the demo, in real time. Stop guessing whether your voice AI works.
+Book a demo / Get started free - support@roark.ai

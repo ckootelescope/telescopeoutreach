@@ -1,0 +1,92 @@
+Source: https://getvalenceai.com/ (captured 2026-10-18 via browser get_page_text)
+Title: Valence AI | Emotion AI for Voice
+
+Valence AI announces $5M Seed round. See the release here.
+
+AI for Emotional Intelligence
+
+Valence's emotion AI helps companies understand how their customers feel, from their first sales conversation to each support call. Access emotion AI infrastructure to analyze human voices and to improve agentic AI conversational fluency.
+
+Book a demo
+
+Trusted By
+
+Drive results from your data
+Emotional intelligence for customer obsessed teams
+Designed to help teams respond with empathy, deliver trust, and build stronger relationships at scale.
+Support Agent | AI QA | Voice Agent
+
+Try Pulse API
+Analyze emotions live during a conversation with our emotionally intelligent copilot for next best action prompts. Or use post-call for analytics to do better next time.
+Learn more
+
+Capture Interactions
+Integrate with human or AI voice agentic stacks to capture voice streams
+Classify Emotions
+Classify real-time emotions from the vocal tone and speech of your customers
+Respond with Empathy
+Track and respond to inflection points in conversations to drive positive business outcomes for customer based teams
+
+Emotion AI that drives real results
+Boost sales, loyalty, and feedback by putting emotion at the core of every AI experience.
+Learn more
+
+Agentic AI with human understanding
+Generate empathetic voice agents with emotion AI, moving beyond the uncanny valley to deliver natural, human-like experiences.
+Efficiency with a human feel
+Boost revenue with more efficient and effective conversations with generative AI, without losing the traditional high-touch emotional connection.
+Emotion intelligence = business intelligence
+Power your software with EQ for customer understanding. Optimize your user flows and feedback loops while knowing user reactions every step of the way.*
+
+Have a different use case?
+Send us a message and let's discuss.
+Contact Us
+
+The emotional alignment problem
+Valence believes in the power of robust and representatively diverse AI to revolutionize the way we live, work, and connect.
+See our beliefs
+
+This worked perfectly and made my day. • Happy
+The customer doesn't want it. • Sad
+This is unacceptable and shouldn't have happened. • Angry
+I understand and will proceed as discussed. • Neutral
+I don't understand why this isn't working. • Irritated
+Thank you so much for the help! • Excited
+I'm not sure this would be the best plan. • Nervous
+I feel genuinely good about this outcome. • Happy
+
+Emotional intelligence in AI is foundational to safe and meaningful human-AI interaction. In order to reach emotional alignment, we must train AI to accurately detect, contextually interpret, and appropriately respond to human emotions.
+
+We've earned the confidence of major voices
+Designed to help teams respond with empathy, deliver trust, and build stronger relationships at scale.
+
+15% Increase in sales close rates*
+"It's not just about analyzing emotional quotient. It's the ability to take tone, cadence, phrasing, and context, and produce a measure that's more meaningful to me as an agent." - Jacob Bailon, Director of Engineering at Datamark
+
+90% Improvement in customer feedback*
+"Valence's emotion AI allows us to offer a personalized experience through Thea that helps users understand and care for their emotional state in real time, while also giving us insight into how people feel as they use our app." - Rachelle Barrack, Founder at Thea
+
+10% Increase in revenue per customer*
+*from Cogito's telecom emotion AI case study
+
+Frequently asked questions
+Answers about Valence AI, real-time voice emotion detection, integrations, and data handling.
+What does Valence AI do?
+Who is Valence built for?
+Does Valence work in real time?
+How does Valence integrate with existing tech stacks?
+What data security / compliance certifications does Valence have?
+How does Valence handle customer voice data?
+
+Improve Customer Understanding with Emotion AI
+Enhance every interaction with emotion AI
+Book a demo
+
+Products: Pulse Emotion API | Agent Assist | AI Agent | AI QA | AI IVR
+Solutions: Contact Centers | Voice Agents | Conversational Intelligence
+Resources: Documentation | Careers | Blog | Glossary | Press
+Company: About | Contact | Privacy Policy | Security & Compliance | Data Processing | Terms of Service
+
+(c) 2026 Valence Vibrations, Inc. All rights reserved.
+388 Market Street, Suite 1450, San Francisco, CA 94111
+support@valencevibrations.com

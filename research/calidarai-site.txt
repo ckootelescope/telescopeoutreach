@@ -1,0 +1,5 @@
+NOTE: Not verbatim. WebFetch declined verbatim reproduction and direct HTTP to the site is blocked by the egress proxy (403). Closest available extraction of homepage content, fetched 2026-10-17.
+
+Source: https://calidar.net
+Homepage could not be fetched: robots.txt disallows automated fetching (WebFetch ROBOTS_DISALLOWED) and direct HTTP is blocked by proxy.
+Fallback description (Harmonic): voice AI validation platform running realistic conversation simulations across 50+ languages and accents, with dynamic personas, real-time analytics and automated testing to ensure accuracy and security of voice AI systems.

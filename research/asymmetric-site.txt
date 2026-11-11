@@ -1,0 +1,20 @@
+Asymmetric Security — The first AI-native DFIR company
+VPN logon, stolen credentials Encoded PowerShell beacon Credential dumping Lateral movement to DC-01 Data exfiltrated
+Building the future of incident response
+Asymmetric is the first AI‑native Digital Forensics and Incident Response company. Our mission is to accelerate AI cyberdefense.
+We offer faster and deeper cyber investigations than other firms.
+<24 hrs Initial findings and containment guidance, walked through by a dedicated DFIR lead. Our cyber analysts leverage frontier AI to move 2x faster than other firms, getting you answers when it matters most.
+1M+ events Deeper findings, pulled from a wider range of data sources, with concrete recommendations to harden your posture.
+expert investigators Every investigation is led by a team of technical experts, with experience from top cyber firms like CrowdStrike, Palo Alto Networks, and S-RM.
+How we respond From first call to full recovery
+24/7 availability Day or night, Asymmetric has analysts on standby to pick up the phone when an incident occurs. We'll immediately get you scheduled for an intake call at your earliest convenience.
+Intake and scoping One of our expert DFIR leads will join a scoping call to understand the details of your incident, provide initial advice, and kick off the investigation.
+Findings within 24 hours Within 24 hours, we will walk you through initial findings and provide recommendations on containment.
+Staying resilient After your investigation completes, we offer threat hunts and configuration reviews to ensure your environment is as secure as possible.
+Accelerate AI cyberdefense to meet the security challenges of the AGI era.
+Asymmetric is the first AI-native Digital Forensics and Incident Response company. We combine forensic experts with in-house AI systems to deliver faster, deeper investigations. Whatever the incident, our analysts cut through the noise to deliver clear findings and support your technical and legal teams on the path forward.
+An analyst is on standby around the clock. We'll get you into an intake call at your earliest convenience and start the investigation immediately.
+Company
+Accelerate AI cyberdefense to address the security challenges of the AGI era.
+Asymmetric Security is the first AI-native Digital Forensics and Incident Response company. In a world with abundant intelligence, AI agents will not just automate existing workflows, but make new kinds of work possible — work that was previously too slow or expensive to perform at scale.
+In cyberdefense, automated digital forensics (deep cybersecurity investigations currently led by human experts), will become ubiquitous. Today's security operations centers face a shortage of analytic capacity; of the thousands of alerts that come in, most receive only surface-level review, and only a tiny fraction can be investigated deeply. Automated digital forensics will change this, revolutionizing cyberdefense by dramatically reducing the number of attacks that go undetected.

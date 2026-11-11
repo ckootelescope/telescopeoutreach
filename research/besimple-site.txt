@@ -1,0 +1,45 @@
+Source: https://besimple.ai/ (captured 2026-10-18 via browser innerText; carousel repeats removed)
+
+Backed by Y Combinator
+We make AI understand you.
+We are a leading data research lab on human interaction powering the next generation of speech and omni-models.
+Get Data | Explore Research
+Our Mission
+Diverse and complex human interactions enabled us to land on the moon. Interaction is much more than handling end-of-turns and barge-ins.
+Our mission is to enable the most emotionally intelligent AI models that unlock the next level of human-AI interaction.
+What are the best conversations you've had recently? That's the bar we're aiming for.
+Our Research
+We publish original research and open source our datasets on production failures we see in voice systems today.
+EVALUATION - September 10, 2026 - Duplex Cue
+An audio benchmark for measuring how an ongoing speaker responds when a listener contributes during the turn—whether the speaker continues unchanged, adapts in-turn, or yields the floor.
+Duplex Cue assigns two independent labels to each local interaction. Cue intent describes Speaker B's contribution. Observed response describes Speaker A's behavior.
+FINE-TUNING - August 28, 2026 - Inkling Post-Training
+We post-trained Thinking Machines' Inkling on selections of 1, 25, and 100 hours of VoiceCodeBench-style speech.
+Our training goal was not to teach Inkling a lookup table of canonical values. It was to make the model better at hearing the acoustic structure that makes those values recoverable.
+BENCHMARK - July 7, 2026 - Vocal Affect Bench
+A public, test-only benchmark for evaluating whether AI audio models can identify expressed vocal emotion from raw speech — without transcripts or contextual metadata.
+A customer who says "that's fine" may be conceding, joking, or signaling frustration. Automatic speech recognition preserves the phrase but strips the vocal delivery that makes the exchange interpretable.
+BENCHMARK - May 1, 2026 - Voice Code Bench
+WER measures transcript similarity. Production voice interfaces need something stricter: the exact email, command, account identifier, URL, date, file path, dollar amount, product code, or measurement a downstream system must act on.
+Voice Code Bench is intentionally narrower than universal audio suites. It asks one product-critical question: did the transcript preserve every structured entity a downstream workflow needs?
+Our Data
+From everyday conversations to specialist domains, built around the way people actually speak.
+01 CONVERSATION - Long conversations: Natural, extended, full-duplex conversation data between two speakers.
+02 TRAINING ENVIRONMENTS - Reinforcement learning: Environments built using real human speech to improve instruction following and conversational handling.
+03 LANGUAGES & ACCENTS - Multi-lingual: Speech across diverse languages and accents, spanning more than 100 countries and locales.
+04 GROUP DYNAMICS - Multi-speaker: Natural conversations between three or more speakers.
+05 DOMAIN KNOWLEDGE - Specialist domains: Conversations or script reading in finance, medicine, education, and other specialist fields.
+06 PROFESSIONAL VOICES - Voice actors: Professional voice actor recordings with a custom commercial license.
+Have interesting data you can license? Get in touch with us!
+Our Approach
+We work alongside your researchers to define what matters, design the rubric, and build the dataset together.
+Can a pause feel natural? A DEFINITION IN PROGRESS - Naturalness. Speech without hesitation. Speech that feels right for the moment—including the pauses, overlaps, and imperfections of a real conversation. Refined together. Yes. Let's make room for thinking.
+Our Highlights (From Yi Zhong on X): Fine-tuning Inkling with targeted human speech; Introducing Duplex Cue; Duplex Cue at NeurIPS; When Low Word Error Rate Still Breaks a Voice Product; Can Inkling detect emotions in speech?; New models on Voice Code Bench; Inkling before fine-tuning; Introducing Vocal Affect Bench; Introducing Voice Code Bench
+Trusted by researchers at frontier AI labs
+01 Build evaluations - Build evaluations with the highest quality human data.
+02 Train models - Collect just the right data you need to push the model frontier.
+03 Run benchmarks - Add your latest models to our public benchmarks and run on exclusive datasets.
+04 License data - Find out how much your data is worth through a data partnership.
+05 Research partners - Explore an open question in human interaction together.
+Let's talk
+© 2025 Besimple, Inc. All rights reserved.

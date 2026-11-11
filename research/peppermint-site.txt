@@ -1,0 +1,54 @@
+Bring scientific precision to the finances behind every study
+Peppermint is the AI-powered financial operations platform designed exclusively for clinical research.
+We combine expert billers with intelligent automation to capture the revenue you've already earned, within the systems you already run.
+The problem
+Revenue leaks. Hours disappear. No one can see the whole picture.
+Contracts, CTMS, payment portals, spreadsheets, bank accounts, accounting — the financial record of your research is spread across all of them and reconciled by none. Collecting what you've earned is grueling. Growing it is nearly impossible.
+Unscheduled MRI Sponsor dispute Underpaid Overpaid MRI never billed
+Our solution
+The same rigor you bring to the science, applied to the money.
+Our AI reads every contract and captures every visit at the source, validates it against what was billed and what was paid, and reconciles continually. Our expert billers make the calls that need judgment, so every number you report is one you can defend.
+Realize your revenue, grow to your potential
+3x reduction in days sales outstanding 6x improvement in time to invoice 25% of staff time reclaimed 15% missing revenue found
+How we operate
+Live in a week, inside the systems you already run.
+We connect to your existing CTMS, EDC, and accounting systems and start reconciling against live studies. Nothing migrates. No one retrains. The first findings land in days.
+Connect We plug into the systems you already run — CTMS, EDC, accounting — so your team keeps working exactly as they do today.
+Reconcile Every visit, procedure, and contract term is matched against what was billed and what was paid, to find what's missing.
+Report You can finally see what each study is worth, what's outstanding, and what was missed.
+No forced system change No disruption to workflows No CTMS or EDC replacement
+Human expertise where it matters. AI to make it scale.
+Expert billers handle the decisions that need judgment — a contract that reads two ways, a payment that doesn't look right. All within a platform that runs at machine speed.
+Capture Validate Invoice Collect Reconcile Recover
+Every revenue event recorded as it happens, down to the CTMS build behind it.
+One view. Every study. Every dollar.
+Months of manual reconciliation, replaced by a single source of truth — updated as the work happens, traceable to the contract term that earned it.
+Activity to invoice Time from a billable activity to invoice out the door
+Invoice to payment How long payment takes, by study, site, and payer
+Outstanding AR with aging What you're owed right now, and how long it's been waiting
+Projected revenue What your active studies will earn from the work still ahead
+The only platform built for how clinical trial finance actually works
+You run multimillion-dollar trials to an exacting standard. But nothing you already own was built to reconcile a bespoke trial contract against the visits that fulfilled it — so that work falls to people and spreadsheets.
+Real-time activity capture Review accuracy of data capture in real time to ensure billing is right.
+Line-by-line invoice accuracy Every line item checked against the CTA and budget rules before it goes out.
+Continuous invoice creation Sponsor-ready invoices generated the moment activity is confirmed, not at the month's end.
+Effortless sponsor/CRO follow-up Aging invoices chased until paid, disputes worked to resolution.
+Always-on payment reconciliation Every payment matched to study, visit, invoice, and site straight from the bank.
+Proactive revenue recovery Unbilled activities, amendment changes, and underpayments found and billed.
+Full-picture leadership visibility Collected, outstanding, and expected revenue by study, always current.
+The people driving clinical trials
+Independent sites, site networks, hospital systems, academic medical centers — and the sponsors and CROs who depend on them.
+Peppermint runs your trial billing end to end—capture through collections—so your team can stay focused on the studies.
+Your billers keep control of the work. Peppermint handles the volume behind them, so they move faster and nothing slips.
+Cleaner invoices from your sites, fewer disputes to work through, and far less time spent on either. We're building the rails everyone in the trial can run on.
+Turn research into a business line you can actually measure, and grow it without adding headcount.
+Is Peppermint another software tool our team has to operate? No. Peppermint combines technology with an operating team that performs the underlying revenue work.
+That's one of the two ways sites use Peppermint. We can take it on, running billing end to end so your team can stay focused on the studies. Or we can back you up, with your billers keeping control of the work while Peppermint handles the volume behind them.
+Peppermint is built to remove work, not add it. We handle routine tasks and investigations independently, and involve your team only when an approval, a correction, or clinical context is genuinely required.
+Peppermint works across the systems and data sources you already use — CTMS, EDC or eSource, contracts, sponsor portals, email, bank data, and accounting systems. We connect to your existing environment rather than forcing a rip-and-replace implementation.
+Peppermint determines what is owed, prepares invoices, tracks outstanding revenue, follows up with sponsors and CROs, reconciles payments, investigates exceptions, and provides financial reporting. Your team keeps the decisions that need clinical context or institutional authority: approving exceptions, confirming what happened at a visit, and any judgment call about the study itself.
+Peppermint checks financial activity against contracts, amendments, and available source data rather than assuming every system is correct. Missing or conflicting information is flagged for investigation.
+AI structures contracts, interprets fragmented data, and prepares the work — but it doesn't operate without controls. Our billers review consequential outputs and handle anything ambiguous, contradictory, or requiring judgment.
+Follow-ups are branded and written to sound like your site, and our billers handle sensitive conversations directly and professionally. What sponsors and CROs experience is a site that bills accurately and follows up consistently.
+Our revenue diagnostic reviews historical activity, contracts, amendments, invoices, and payments to identify missed billables, unpaid items, incorrect rates, and unreconciled cash. Many customers start here, then expand into ongoing revenue operations.
+Pricing depends on the scope of work Peppermint manages — study volume, workflows, systems, and implementation complexity.

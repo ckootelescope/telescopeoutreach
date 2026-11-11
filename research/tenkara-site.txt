@@ -1,0 +1,343 @@
+SOURCE: https://tenkara.ai/ (browser, document.body.innerText, verbatim, captured 2026-10-17; repeated industry ticker and duplicated nav labels kept as rendered)
+==========================================================================
+Capabilities
+About
+Contact
+Partner Login
+Get Started
+
+AP& <Y0SJLB QU9[
+
+Fortifying America's Supply Chains
+
+Take Control Of Your Operation
+Tenkara builds AI workflows, bespoke to how you work.
+
+Get Started
+
+13:05:51
+Trusted by top Suppliers, Factories and Brands.
+Meet The System Your Systems Are Missing
+Citric Acid
+MAT-0047
+New ETA
++18 days
+·
+Email
+Price
++50%
+·
+ERP
+On hand
+Reply sent
+·
+WMS
+LISTENING · EMAIL · ERP · WMS
+EMAIL · APEX CHEM
+08:12
+Order running 18 days late
+ERP · PRICE ALERT
+09:03
+Citric Acid +50% → $342 / MT
+WMS · CUSTOMER
+09:41
+Inventory on hand for MAT-0047
+ONE RECORD · ALWAYS CURRENT
+Centralize Disparate Data
+
+Version 3.3.1
+
+Connect your records and deploy agents to keep the information relevant.
+
+Understand and Execute Orders
+
+Version 3.5.1
+
+Stop wondering and start asking. Every cost center, bottleneck, and trend, answered from your own data.
+
+Ask Rosie anything…
+Never Do Anything Twice
+
+Version 3.6.1
+
+Configure highly reliable workflows that run a workflow once, and it runs on its own, custom built for producers.
+
+TO
+supplier@apexchem.com
+SENT
+Jul 12
+Cost on Citric Acid, 4,000 kg?
+RE
+Apex Chem
+Quoted: $342 / MT.
+Jul 12
+SAVING TO COST RECORD…
+COST RECORD · CITRIC ACID
+Apex Chem · Jul 12
+$342 / MT
+REQUOTE AGENT · ACTIVATING ·
+Re-quote Apex Chem
+End of month
+Source alternative vendors
+Weekly
+Flag drift beyond ±5%
+Instant
+NEXT ENGAGEMENT · IN 5 DAYS
+ASK ONCE · NEVER TWICE
++ Many More
+#1 Factory Upgrade
+From Firefighting To Flywheel
+
+Tenkara does critical work that slips through the cracks.
+
+Upgrading
+ALL SYSTEMS LIVE
+Delivering Outcomes, Not Excuses
+
+20%
+Reduce Procurement Spend By
+
+30sec
+Freight Quotes In
+
+1day
+Cut Audit Prep Time To
+
+2,500+
+monthly
+Messages Your Team Didn't Have To Send
+
+Complete spatial awareness
+Welcome To Your Command Center
+
+Tenkara is an operational model for your factory.
+It provides a single place to receive and act on intelligence.
+
+COMMAND CENTER
+PRODUCTION PLANNING
+CASH FLOW
+FINANCIALS
+CLIENT MANAGEMENT
+DEMAND PLANNING
+QUALITY
+FREIGHT
+PROCUREMENT
+INTELLIGENCE
+YOURS TO DEFINE
+Your Next Module
++
+MODULE 01
+Intelligence
++
+MODULE 02
+Procurement
++
+MODULE 03
+Freight
++
+MODULE 04
+Quality
++
+MODULE 05
+Demand Planning
++
+MODULE 06
+Client Management
++
+MODULE 07
+Financials
++
+MODULE 08
+Cash Flow
++
+MODULE 09
+Production Planning
++
+MODULE 00
+Command Center
++
+Say Goodbye To Grunt Work
+
+From the factory floor to the brand behind it. We work with manufacturers, brands, distributors, and suppliers across every category.
+
+Food
+Supplements
+Cosmetics
+Chemicals
+Beverage
+OTC's
+[industry ticker repeats: Food, Supplements, Cosmetics, Chemicals, OTC's, Beverages, Food & Beverage]
+
+"Lead time surprises have basically cratered on our raw materials, and we've cut receiving delays by over 30%. Tenkara is an absolute no brainer for us."
+Conor Robbins
+Sphere Trading Co.
+
+"Tenkara allows us to run a procurement team of 5 with basically 1 single operator. Everyone here gets much more done per person."
+Connor Blakley
+Jams
+
+"Tenkara saves SOOO much time, and ends the supplier back and forth time wasters. Saves us a ton of money too on material costs."
+Lani Lazzari
+Simple Sugars
+
+"Tenkara is a must-have for chemical manufacturers. This really helps manufacturers understand the effects of delays and better yet, combat them."
+David Zamarin
+Impermea Materials
+
+"We've saved hundreds of thousands with Tenkara. Their software has identified alternative suppliers that help offset price hikes from tariffs."
+AJ Agrawal
+Elm & Rye
+
+"Tenkara helps us automate and digitize quality and compliance documentation. It's an unbelievable time saver."
+Deep Patel
+Ulo
+
+The Operator That Never Sleeps
+
+A force multiplier for every teammate.
+
+Tenkara saved us 40% on material costs and reduced sourcing time by weeks!
+AJ Agrawal
+
+98+
+Key Workflows Automated
+5K+
+Materials Managed
+HYALURONIC ACID 1% | GRADE COSM | VENDORS 4 QUAL
+NIACINAMIDE USP | GRADE USP | VENDORS 5 QUAL
+SQUALANE OLIVE | GRADE ECO | VENDORS 3 QUAL
+XANTHAN GUM | GRADE FCC | VENDORS 2 QUAL
+CITRIC ACID ANH. | GRADE FCC | VENDORS 4 QUAL
+RETINOL 50C | GRADE COSM | VENDORS 2 QUAL
+SA PHOSPHATE | GRADE USP | VENDORS 2 QUAL
+GLYCERIN 99.7% | GRADE USP | VENDORS 6 QUAL
+PANTHENOL D | GRADE COSM | VENDORS 4 QUAL
+ALLANTOIN | GRADE USP | VENDORS 2 QUAL
+CAFFEINE ANH. | GRADE USP | VENDORS 3 QUAL
+ZINC OXIDE | GRADE USP | VENDORS 4 QUAL
+
+American made, built for manufacturers and their partners, by manufacturers
+
+Explore Our AI modules that streamline logistics, procurement, QA/QC, and project management.
+
+Learn More
+
+Effortless Operations With Tenkara
+Manufacturers
+Procurers of materials and makers of industry
+"Tenkara is the #1 Upgrade we made to our factory in the last decade."
+Naftali Nagar
+owner, Vita Organica
+Distributors
+Movers of inventory and keepers of supply
+"Tenkara pinpointed much better sources of supply that helped us sell more product."
+Shai Shefer
+CEO, Salvona Technologies
+Brands
+Builders of demand and owners of shelf
+"Tenkara is truly outcome obsessed and has been transformative for Jams."
+Connor Blakley
+ceo, jams
+Start Small, And Go Live In Days
+Cradle to grave, Tenkara builds bespoke agents to support your operation.
+
+Get Started
+
+[Calendar demo, Monday to Friday]
+Purchasing mtg: SKU-2214 Run | Confirm PO quantities and supplier lead times before the run is locked for next week | Purchasing 09:00
+Production planning: Citrus Blend 40K | Line scheduling and batch sequencing for the 40K order, plus changeover windows | Production 11:30
+Quality review (post-audit) | Walk through audit findings and assign corrective actions with owners and due dates | Quality 13:30
+AP/AR reconciliation | Match open invoices to POs and chase overdue receivables before month-end close | Finance 15:00
+Freight exception call | Carrier delay on inbound glycerin: replan routing and update promised dates | Freight 16:30
+Quality review (line 2) | Investigate viscosity drift on line 2 and agree the retest plan with the shift lead | Quality 09:30
+Purchasing mtg: Amber Base 12K | Re-quote raw materials and approve the supplier switch for the amber base | Purchasing 13:00
+Production planning: SKU-1108 Run | Sequence the 1108 run around Thursday maintenance and confirm staffing | Production 14:30
+Client production update | Status call on open orders, committed ship dates and outstanding samples | Client 16:00
+Production planning: Gly Batch 7 | Resolve the capacity conflict on line 2 before the Friday dispatch window | Production 10:00
+Freight exception call | Expedite options for the delayed export container and revised customs docs | Freight 12:30
+Line of credit: bank mtg | Quarterly review of the working-capital facility and updated covenant figures | Finance 15:30
+Purchasing mtg: Clay Mask 15K | Close pricing on packaging reorder and set minimum order quantities | Purchasing 16:30
+Strategy: growth planning | New market entry and the capacity roadmap for the next fiscal year | Strategy 09:00
+Purchasing mtg: SKU-5521 Run | Negotiate reorder pricing and MOQs with the two shortlisted suppliers | Purchasing 11:00
+Quality review (pre-ship) | Release checks and certificates of analysis before Friday dispatch | Quality 14:00
+Production planning: Foam Base 60K | Materials availability and line allocation for the 60K foam base order | Production 15:30
+AP/AR reconciliation | Close out month-end supplier statements and flag disputed line items | Finance 16:30
+Client production update | Weekly recap, next-week commitments and open change requests | Client 09:30
+Production planning: Matte Coat 5K | Materials availability check and staffing plan for the Monday start | Production 11:30
+Freight exception call | Re-book the missed pickup and confirm the revised delivery appointment | Freight 14:30
+AP/AR reconciliation | Reconcile freight invoices against quotes and release payment batch | Finance 16:00
+0 MODULES LIVE
+Source Materials
+Freight & Logistics
+Formulation Tracking
+Supplier Onboarding
+Inventory Visibility
+Price Tracking
+Compliance & Documentation
+Risk Monitoring
+Vendor Management
+Build Your Command Center.
+
+Get Started
+
+Tenkara Insights
+Learn More
+Supply Chains Are Being Transformed Forever
+The Hard Truth About Building Your Own Manufacturing Plant
+Breaking Free From Supply Chain Paralysis
+6 Reasons Manufacturing Yourself Might Make Sense
+The Hidden Cost In Procurement
+The Impending Death Of The Minimum Order
+
+Privacy Policy
+Terms of Service
+© 2026 Tenkara Labs, Inc. All rights are reserved.
+modules: Intelligence, Freight, Demand Planning, Financials, Production Planning, Procurement
+Meet Tenkara: Capabilities, About, Contact Us, LinkedIn, X
+industries: Manufacturers, Suppliers & Distributors, Brands, Quality, Client Management, Cash Flow
+Optimize Your Production Workflow
+Get Started
+
+==========================================================================
+SOURCE: https://tenkara.ai/about (browser, document.body.innerText, verbatim; nav/footer/cookie banner trimmed)
+==========================================================================
+The Brain To Power Your Operations
+
+An operating system for producers.
+
+We're Hiring
+
+About Us
+
+Built By Those That Have Made Products In Factories
+
+Before I built Tenkara, I launched two manufacturing plants in Cape Canaveral, Florida.
+
+What I remember most is the coordination. Chasing suppliers who wouldn't call back. Freight moving without anyone knowing where. Prices that changed before the PO cleared. It was constant, it was invisible, and it ate the people I could least afford to lose.
+
+ERP records what happened. We still had to manage all the grunt work first. Every field in that database got there because someone opened an inbox, made a call, chased a number, and typed it in.
+
+Tenkara takes that work.
+
+Command centers that run the office side of your business so your hours move to the floor, where product gets made.
+
+This is your operational advantage.
+
+Ben Stern,
+CEO of Tenkara
+
+We Value
+Curiosity
+Ask questions to uncover the truth. Compliance breeds complacency.
+Agency
+Take ownership to create the absolute best product, bar nothing.
+Bias For Action
+Indecision is the worst decision.
+Well done > well said.
+Dedication
+Pour your heart into your craft. A bit of care makes a world of difference.
+
+Be Part of the Team Powering Smarter Operations
+Join Us
+Build Your Command Center.
+Get Started

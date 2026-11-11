@@ -1,0 +1,43 @@
+Source: https://www.getmaxim.ai/ (captured 2026-10-18 via browser innerText; homepage is now branded "Bifrost (by Maxim AI)")
+
+TRY BIFROST ENTERPRISE FREE FOR 14 DAYS.
+ALL YOUR AI, ONE PLATFORM | TRY BIFROST EDGE
+[ WE'RE OPEN SOURCE ]
+The Fastest Enterprise AI Gateway
+Built for enterprise-grade reliability, governance, and scale.
+BOOK A DEMO | GET STARTED
+Start in 30 sec: $ npx @maximhq/bifrost
+OUR NUMBERS AT A GLANCE: ADDED_LATENCY 20 MICRO-S | THROUGHPUT 5,000 REQ/S | PEAK_MEMORY 3.3 GB
+[OVER 1,000+ TEAMS USE BIFROST]
+[BENCHMARK] 50x faster than LiteLLM
+(P99 latency) Bifrost vs LiteLLM at 500 RPS on identical hardware (beyond this, LiteLLM breaks with latency going up to 4 minutes)
+MEMORY USAGE 68% LESS | P99 LATENCY 54X FASTER | THROUGHPUT 9.5X HIGHER | SUCCESS RATE 11.22% HIGHER
+[PLUG ANY MODEL IN] Built for Real-World Scale
+Compatible with all model SDKs, with outputs sent anywhere you need.
+GOVERNANCE - Organizations can manage budgets per team or virtual key, track audit logs and maintain access control via SSO.
+MCP GATEWAY - Built in MCP gateway to use all tools within the agent.
+GUARDRAILS - Real-time model protection that blocks unsafe outputs, enforces compliance, and keeps your agents secure.
+[QUICK SETUP] Drop-in replacement for any AI SDK
+Change just one line of code. Works with OpenAI, Anthropic, Vercel AI SDK, LangChain, and more.
+[BUILD FREELY, SCALE SECURELY] Production-ready features out of the box
+Everything you need to deploy, monitor, and scale AI applications in production environments.
+01 Model Catalog - Access 8+ providers and 1000+ AI models from multiple providers through a unified interface. Also support custom deployed models!
+02 Budgeting - Set spending limits and track costs across teams, projects, and models.
+03 Provider Fallback - Automatic failover between providers ensures 99.99% uptime for your applications.
+04 MCP Gateway - Centralize all MCP tool connections, governance, security, and auth. Your AI can safely use MCP tools with centralized policy enforcement. Bye bye chaos!
+05 Virtual Key Management - Create different virtual keys for different use-cases with independent budgets and access control.
+06 Unified Interface - One consistent API for all providers. Switch models without changing code.
+07 Drop-in Replacement - Replace your existing SDK with just one line change. Compatible with OpenAI, Anthropic, LiteLLM, Google Genai, Langchain and more.
+08 Built-in Observability - Out-of-the-box OpenTelemetry support for observability. Built-in dashboard for quick glances without any complex setup.
+09 Community Support - Active Discord community with responsive support and regular updates.
+[ SHIP RELIABLE AI ] Try Bifrost Enterprise with a 14-day Free Trial
+FAQ
+What is Bifrost? Bifrost is the fastest open-source LLM gateway, introducing just 11 microseconds of overhead at 5k RPS on a t3.xlarge machine. Built for reliability, security, and scale, it provides a unified layer for managing model access, enforcing guardrails, and ensuring governance across AI systems.
+How is my data protected? Bifrost offers zero-touch in-VPC deployments, so no data ever leaves your environment or passes through Bifrost/Maxim servers.
+Can Bifrost integrate with my existing AI stack? Yes. Bifrost works seamlessly with all major LLM frameworks, APIs, and model providers — including OpenAI, Anthropic, and Mistral SDKs — as well as popular frameworks like LangChain, LangGraph, and LiteLLM.
+How much does Bifrost cost? Bifrost is completely free and open source. For enterprise features and support, you can reach out to us at contact@getmaxim.ai or book a demo with us.
+How can I get started with Bifrost? npx @maximhq/bifrost
+Ready to build reliable AI applications? Join developers who trust Bifrost for their AI infrastructure
+© 2025 H3 Labs Inc. Open source under Apache 2.0 License.
+Footer features: Guardrails, Adaptive Load Balancing, Governance, Observability, Cost Optimization, LiteLLM Compatibility, Telemetry, Semantic Caching. Industries: Financial Services & Banking, Healthcare & Life Sciences, Insurance, Retail, Cybersecurity, Biotech/Pharma, Government, Telecom, Energy. MADE WITH LOTS OF LOVE BY MAXIM TEAM. PRODUCT HUNT #3 Product of the Day.
+NOTE: /about-us still describes Maxim as "an enterprise-grade AI evaluation and observability platform" (simulate, evaluate, observe AI agents) alongside Bifrost.

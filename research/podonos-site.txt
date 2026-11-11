@@ -1,0 +1,110 @@
+Podonos | Make Your Voice AI Monetizable in Every Language
+Features
+Examples
+Pricing
+Career
+Resources
+Sign in
+Sign up
+Unlock the true potential of your Voice AI
+Uncover deep insights into your voice AI to accelerate development, optimize marketing, and ensure flawless delivery
+Start your project
+Book a demo
+Introducing Podonos FlashAI Evaluation at Instant Speed
+Launches January 2026
+Instant AI-only evaluation designed for rapid iteration, large-scale testing, and automated scoring.
+Learn more
+Loved by teams at
+Problem
+Your AI model is making mistakes you can't hear
+An underperforming Voice AI model can decrease user engagement, trust, and satisfaction
+My Voice AI Model
+Overemphasized & distortion
+Implication sounds like application
+The last word heard sounds fuzzier
+Leave pronunciation is omitted
+Wrong pronunciation in Uncas
+Product
+Introducing Podonos - Make your Voice AI models a breeze
+With Podonos, you can boost your Voice AI model development faster, accurate, and better.
+Optimized workflow
+Streamline complex processes with efficient analysis workflow for voice AI models
+Without Podonos
+With Podonos
+Design and build evaluations
+Recruit 100 evaluators
+Long operation
+Analyze & visualize
+Gain insights
+Cost reduction
+Development speed
+Work time reduction
+Save cost, high efficiency
+Achieve greater efficiency and cost savings with faster analysis
+Get insights quickly
+Clear & interactive visualizations help you analyze results, get insights, and deliver the model with confident
+Features
+Everything you need to improve your Voice AI models
+An underperforming voice AI model can decrease user engagement, trust, and satisfaction
+Flexible customization
+Customize every aspect of the evaluation process, from questions and instructions with various types to criteria, ensuring it aligns seamlessly with your purpose.
+Detailed reports
+Access detailed reports that provide a clear view of evaluation results, helping you measure impact and make informed decisions with confidence.
+Collaborate with team
+Enable teamwork by sharing evaluations, feedback, and reports. Foster collaboration and ensure everyone stays aligned on goals and outcomes
+Poland
+Italy
+Japan
+France, Canada
+Spain, Mexico
+Germany
+Portugal, Brazil
+China
+Korea
+US, UK, Australia, Canada, India
+Evaluate your models across 9+ languages and 13 locales all at once.
+Evaluate Voice AI models in 9 languages and 13 locales simultaneously. Gain region-specific insights to optimize performance across diverse contexts.
+Currently supported languages include:
+Hindi
+Arabic
+Vietnamese
+, and more
+Easy to start
+For both developers and non-developers
+Python
+Web
+Go to docs
+Copy to clipboard
+Unmatched Reliability You Can Trust
+Pre-screening
+We ensure only qualified evaluators participate by conducting thorough pre-screening processes.
+Device test
+Evaluate the quality and compatibility of devices to maintain consistent standards.
+Attention test
+Check evaluator focus to ensure reliable and valid responses.
+Intelligibility test
+Verify evaluators' ability to understand and process audio accurately.
+Noise detection
+Detect evaluators in noisy environments and exclude their responses to maintain accurate results.
+Audio level adjustment
+Standardize audio levels to eliminate inconsistencies and improve accuracy.
+Examples
+Check our real world reports
+Naturalness and quality comparison of TTS APIs for US English
+Compare the naturalness and the quality across multiple voice AI models. Also identifies issues and provide valuable insights
+Speech AI Preferences Test
+Compare which one is preferred among the two Text-To-Speech models to discover which one is relevant to your use cases.
+Testimonials
+Loved by our customers
+Real stories from real users - see how Podonos is transforming voice AI modeling
+Stanislaw Andrzej Raczynski, CEO at Revoize
+Tim Jung, CEO at XL8
+Zohaib Ahmed, CEO, Resemble AI
+Will Matteson, Head of Product at Play AI
+Ready to unlock the potential of your Voice AI Model?
+Improve your model with trust
+Start your project
+Product / Home / Pricing / Workspace
+Company / Careers / Hiring! / Contact us
+Resources / Quick Guide / Docs / Blogs / Use Cases / FAQ / Subprocessors / Status / Trust Center / Privacy / Terms of Service
+(c) 2026 Podonos Inc. All rights reserved.

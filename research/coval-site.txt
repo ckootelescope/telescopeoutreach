@@ -1,0 +1,58 @@
+Source: https://www.coval.ai/ (captured 2026-10-18 via browser innerText)
+
+Coval raises $28M Series A to make voice AI deployment-ready →
+Scale voice AI agents with confidence.
+Coval gives teams the voice AI testing, evals, and QA loop to prove what works before launch, catch failures in production, and keep improving agent performance.
+Request a Demo | Start Free Trial
+Find signal in the noise.
+LATENCY 3.2S | ESCALATION TRIGGERED | AUDIO GLITCH | AGENT FAILED TO RESPOND | ISSUE RESOLVED | SENTIMENT NEGATIVE | IDENTITY VERIFIED | RESERVATION BOOKED | COMPLIANCE FAILURE
+Trusted by teams putting voice AI in front of millions of customers.
+Why Teams Need Agent Evals
+The riskiest call is the one you did not test.
+Voice AI testing matters most in the moments demos avoid: noisy callers, missing context, policy traps, tool errors, and releases that change behavior overnight.
+Launch risk hides in the long tail.
+A handful of manual QA calls will not reveal the accents, interruptions, policy traps, and edge cases that decide whether a voice agent holds up.
+Quality drifts after every change.
+Prompts, models, workflows, and vendors keep moving. Regression testing keeps yesterday's fix from becoming tomorrow's failure.
+Teams need proof they trust.
+Coval gives product, QA, operations, and compliance one voice agent evaluation layer, so readiness is measured by the same bar before and after launch.
+Full visibility into quality, consistency, and compliance.
+Bring voice AI testing, production evals, QA review, and vendor comparisons into one view, so teams can move from anecdotes to decisions.
+Scale with Confidence
+Agent insights from the first prompt to the millionth call.
+Recursive loops for agent improvement.
+Simulation, monitoring, and human review work as one loop, so every production insight becomes the next test and each release improves agent performance.
+Ship voice agents you can prove are ready.
+Use voice AI simulation to pressure-test thousands of realistic callers, hard policies, noisy audio, and the workflows manual testing cannot cover.
+Catch quality drift before customers feel it.
+Run production evals on live conversations and surface the patterns that show where resolution, safety, or experience is slipping.
+Build trust by scaling human judgement.
+Route the calls that matter to human QA, then turn reviewer judgment into sharper voice agent evals for the next release.
+The results speak for themselves. Real numbers from real deployments.
+[217]% Improvement on agent accuracy in 7 days | [3.1]M Evaluation metrics run weekly | <[15]m To first simulation via CLI
+The Continuous Quality Loop
+Voice AI evaluation, across every lifecycle stage.
+Simulate - Run thousands of realistic conversations before launch.
+Observe - Catch failures the moment they happen in production.
+Review - Turn human QA into stronger standards for the next release.
+[Demo transcript: bank IVR agent; metrics Identity Verified = No ("The agent proceeded with account-level requests without completing the required identity verification steps..."), Correct Escalation = Yes, Resolution Reached = No]
+Agent Behaviors to Evaluate
+The moments that make or break the call.
+Voice agent evaluation should follow the customer, not the happy path. Coval helps teams prove the behaviors that protect trust, revenue, and resolution.
+Protect the account. Prove identity verification holds before an agent shares sensitive information or takes action.
+Hand off without dead ends. Test escalation and transfer paths when the caller needs help, pressure rises, or policy requires it.
+Get the right details once. Validate required information collection so workflows move forward without repeated questions or missing fields.
+Keep answers grounded. Catch hallucinations, unsupported claims, and false confidence before they reach customers.
+Stay steady under pressure. See how agents handle frustrated callers, interruptions, slow talkers, and customers who ignore the script.
+Keep the call on course. Test off-topic handling when callers probe, distract, or push the agent out of character.
+Solutions
+Built for the teams accountable when agents go live.
+For Agent Platforms - Make reliability part of the sale with voice agent QA your customers can see, trust, and defend.
+For In-House Teams - Give every release a quality gate with voice AI evals that fit your stack and catch regressions before they ship.
+For Agent Behaviors - Prove the call can stay on track across identity, escalation, hallucination, and the messy moments real callers create.
+For Vendor Bakeoffs - Run the same voice AI testing across every vendor and choose the platform that performs when the scenarios get hard.
+FAQ - Clear answers for high-stakes voice AI.
+What is voice AI testing? / How is voice agent evaluation different from chatbot evaluation? / Can Coval run regression tests before launch? / Can Coval evaluate production calls? / Does Coval support human QA review? / Can Coval compare multiple voice AI vendors?
+Accelerate your agent improvement loops.
+Footer: Product (Overview, Simulate, Observe, Review); Industries (Customer Support, Financial Services, Healthcare, Hospitality, Insurance, Retail, Travel); Company; Resources (Free Voice Agent Audit, Benchmarks, Documentation, API, Trust Center). © 2026 Coval, Inc.
+Logos (per page): Chime, Perplexity, ServiceNow, StubHub, Zoom, Toast, Upstart. Compliance: SOC 2 Type II, HIPAA, GDPR (in progress).

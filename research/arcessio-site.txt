@@ -1,0 +1,164 @@
+SOURCE: https://arcessio.ai/ (browser innerText, verbatim; FAQ answers expanded) + https://arcessio.ai/about (raw HTML text, verbatim)
+CAPTURED: 2026-10-17
+
+===== https://arcessio.ai/ =====
+Trusted by the Department of War
+Get a quote ↗
+
+AI AGENTS FOR MANUFACTURING
+
+The simpler way
+to get parts made.
+
+Lower costs. Shorter lead times. Less legwork.
+
+AI agents that optimize your design, negotiate with suppliers, and manage your order through delivery.
+
+Get a quote
+See how it works
+
+From first prototype to repeat production.
+
+PART NO. RT–207
+CAD → REALITY
+INCONEL 718
+TURBINE WHEEL
+FROM YOUR FILE
+turbo_complet.step
+TO YOUR FLOOR
+Ready for assembly.
+01 / OPTIMIZE
+Make it easier
+to manufacture.
+
+Agents analyze geometry, tolerances, and materials to recommend a more economical way to make your part.
+
+YOUR RESULT
+
+Actionable design recommendations.
+Estimated cost and savings.
+
+02 / SOURCE
+Find the right supplier.
+Get better terms.
+
+Agents match your requirements to suppliers, compare complete quotes, and negotiate price and lead time for your approval.
+
+YOUR RESULT
+
+Comparable quotes.
+A supplier you choose.
+
+HOW IT WORKS
+
+Your part.
+One continuous thread.
+
+Drawings, quotes, and decisions stay together.
+Every agent works from the same requirements.
+
+01
+Review the design
+02
+Compare the options
+03
+Track the part
+Radial turbine assembly
+RT–207 / REV C
+Inconel wheel · cast housing · 25 parts
+RT–207 / 3D PREVIEW
+RADIAL WHEEL
+WHEEL TIP CLEARANCE
+
+DESIGN-FOR-MANUFACTURING REVIEW
+
+Preserve function.
+Reduce avoidable cost.
+
+Review geometry, tolerances, and material against the part’s function before proposing manufacturing changes.
+
+Hold the wheel-to-shroud tip clearance
+CRITICAL
+
+Keep the blade profile and shroud contour callouts that set tip clearance and efficiency. Confirm balance grade and operating temperature before release.
+
+Simplify the volute housing
+TEAM REVIEW
+
+Relax tolerances on non-flow surfaces and merge two machining setups on the cast volute, without affecting flow path or flange alignment. Update the drawing only after engineering approval.
+
+AI does the legwork. Your team owns the decisions.
+
+BEFORE YOU GET STARTED
+
+A few practical
+questions.
+
+Manufacturing partner? Read our supplier FAQs.
+
+How is Arcessio different from traditional sourcing platforms?
+Traditional sourcing platforms help you buy the part you've already specified. Arcessio starts with the engineering data, determines the best manufacturing path, then carries those decisions through supplier selection and production execution.
+How does Arcessio protect our engineering data?
+Protecting customer intellectual property is fundamental to our platform. We use enterprise-grade security controls, role-based access, encryption in transit and at rest, and strict access policies to safeguard your engineering data.
+Is our data used to train AI models?
+No. Your confidential engineering data, CAD files, drawings, and manufacturing information are not used to train Arcessio's or third-party AI models without your explicit permission.
+Can Arcessio analyze hundreds of parts at once?
+Yes. Arcessio is designed to analyze individual parts, assemblies, or entire BOMs at scale. Our AI can evaluate hundreds of parts simultaneously to identify manufacturing processes, materials, should-cost estimates, qualified suppliers, and opportunities to reduce cost, lead time, and complexity.
+How does Arcessio build its supplier network?
+We carefully qualify manufacturing partners based on capabilities, quality systems, certifications, production capacity, and other technical requirements. Our AI then matches each part with the suppliers best suited to manufacture it.
+Can I trust AI manufacturing recommendations?
+Arcessio is designed to augment engineering expertise—not replace it. Our AI provides transparent recommendations that engineers and procurement teams can review, validate, and refine before production decisions are made.
+
+FROM YOUR NEXT IDEA TO YOUR NEXT ORDER
+
+Let’s get your
+next part made.
+Get a quote
+
+The simpler way to get parts made.
+
+Explore
+How it works
+Supplier pricing
+Open app ↗
+Company
+About
+Resources
+Careers
+For suppliers
+Get in touch
+letsgo@arcessio.ai
+(408) 413-1278
+Request a demo
+© 2026 Arcessio
+Manufacturing Intelligence
+
+===== https://arcessio.ai/about =====
+ABOUT ARCESSIO
+We believe manufacturing should move as fast as innovation.
+WHY WE EXIST
+We founded Arcessio to change that.
+Today, even the most advanced product companies move from design to production through fragmented tools, spreadsheets, emails, supplier searches, and manual handoffs. Critical engineering context is lost, requirements are recreated, and sourcing often starts from scratch. As companies add more parts, suppliers, and production volume, these inefficiencies slow launches and make manufacturing harder to scale.
+Our AI agents turn engineering data into manufacturing decisions and carry those decisions through procurement and production. We help teams identify the right process, material, production economics, and qualified supplier for every part - making it easier to launch products, scale production on demand, and build agile, localized supply chains.
+THE TEAM
+Our Executive Team
+Bindiya Vakil, CEO & Founder
+Col. Kirk Spangenberg USMC (Ret.), President of Aerospace & Defense Division
+Kunal Shah, Chief Product & Technology Officer
+(Full biographies on page; omitted here per outreach research rules.)
+EXPERIENCE ACROSS INDUSTRIES
+Our Advisors
+Ranna Rose, Supply-chain Executive at Olympus
+Jay Gill, President & CEO of Gill Automotive Group
+Thomas Maher, SC Exec Consortium ASU, Ex-Dell SVP Service Parts
+Simin Zhou, VP of Strategy & Sustainability at UL
+James Gellert, Executive Chair, Ex-CEO of RapidRatings
+Thomas Derry, Ex-CEO of Institute for Supply Management
+Debbra Rogers, Ex-CRO of Carbon, VP at GE Additive
+Brent Stucker, Chief Technology Strategist at Wohlers
+Omer Blaier, Founder & CEO of Castor Technologies
+Elad Schiller, Co-founder & CTO of Castor Technologies
+LET’S TALK
+Request a demo.
+See what Arcessio can do for your team.
+letsgo@arcessio.ai

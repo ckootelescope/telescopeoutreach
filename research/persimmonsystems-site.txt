@@ -1,0 +1,114 @@
+SOURCE: https://www.persimmonsystems.com/ (browser innerText, verbatim). Site is a single page; no separate about or company page exists (nav links are anchors: #how, #why, #cases, #request).
+CAPTURED: 2026-10-17
+
+===== https://www.persimmonsystems.com/ =====
+Request
+
+Source the
+components / equipment / materials
+your next build
+depends on
+
+We help engineering and procurement teams find leading manufacturing partners in China and across Asia.
+
+What would you like to source?
+(rotating placeholder examples) We’re building a field robot and need motors, battery packs, and custom enclosures for ... / We need a stainless steel pressure vessel for a pilot plant. Can you help us find a manufacturer and work through the specifications?
+Work email
+Request a free supplier landscape assessment. All submissions kept confidential.
+
+Unlocking supply chains for groundbreakers
+
+Carbion
+
+30+
+Customers served
+From startups to Fortune 500
+
+100+
+Sourcing projects
+Electrical equipment, robotics, specialty materials, production lines and more
+
+2–4×
+Better cost and lead times
+With dedicated risk management across quality, IP, and policy
+
+“Persimmon Systems does a great job of asking questions to understand exactly what you need and then finding the three best suppliers for that item. We have used them for over twenty searches, and they have come through every time.”
+Read full testimonial →
+Brian Hardin, PhD
+CEO, Photara
+
+“They worked on our entire BoM, helping us not only reduce costs substantially but customize and improve the quality of components.”
+Jana Tian
+CEO, Upside Robotics
+
+“We have had a truly incredible experience acquiring some materials that we could not find outside of China – they have left us in a remarkable place with our supply chain.”
+Patrick Sarver, PhD
+CSO, Sora Fuel
+
+Persimmon’s approach
+
+Battery energy storage systems
+Xiamen, China
+Customers & partners (publicly identified)
+BESS product standards
+UL 9540
+UL 1973
+IEC 62619
+IEC 62933-5-2
+
+Combine exhaustive AI search with our engineer’s top picks
+
+Our AI engine evaluates thousands of potential supplier options, and our supply chain managers handpick and screen the best ones to meet your requirements. Whether you need a custom piece, short lead time, low MOQ, international certifications, we’ll find great suppliers for you.
+
+Streamline your procurement with Persimmon’s platform
+
+Our platform unites project context, updates, and action items into a single source of truth. Monitor progress and collaborate through email, Slack, or the channels your team already uses.
+
+24 messages
+Pressure vessel quote
+Revised drawing attached.
+Vessel_drawing.pdf
+8 replies
+# pressure-vessel
+Keep the existing nozzle layout, please.
+AL JH PS
+In one thread
+Connecting the details
+Persimmon workspace
+AI-assisted
+Pressure vessel
+Supplier quotation
+In review
+Keep existing nozzle layout
+Requirement captured
+Review the revised drawing
+Assigned to the Persimmon team
+Confirm before quoting
+Your approval moves this forward.
+Confirm
+Persimmon’s supply chain managers act as an extension of your team.
+
+You make the key decisions, and we make sure they are implemented on the production line. After your products are manufactured, we ensure they’re shipped across borders and delivered to your dock, as fast as possible.
+
+Case studies
+Component | Equipment | Production line
+
+Electromechanical components for agricultural robots
+We sourced & delivered the motors, battery, antennas, connectors, enclosures, pumps, valves, and more on this beauty.
+1 Sensors and antennas
+2 Custom battery pack
+3 Motors & tires
+(Equipment tab) 1 Pumps  2 Pressure vessels  3 Electrolyzer stack
+(Production line tab) 1 Cell Stringers  2 Solder-coated ribbon  3 Solar Cells
+50cm
+
+Ready to tap into the world’s leading manufacturing base?
+Send a request ↑
+info@persimmonsystems.com →
+
+We help engineering and procurement teams find leading manufacturing partners in China and across Asia.
+
+Services
+Approach
+Case Studies
+© 2026 Persimmon Systems

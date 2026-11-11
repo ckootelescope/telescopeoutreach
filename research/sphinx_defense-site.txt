@@ -1,0 +1,37 @@
+Engineering the Future of Space Ground Systems
+At Sphinx Defense, we develop high-performance software that powers secure, efficient space missions—keeping critical missions on track.
+Complex Missions Demand Exceptional Innovation
+Sphinx develops the advanced software solutions that make complex satellite operations and ground data transfers simpler, faster, and more secure.
+Our work supports government and commercial teams tackling high-stakes challenges—where focus, timing, and performance are everything.
+Designing Bold Solutions with Unmatched Speed and Quality
+Whether licensing our products or building custom solutions, Sphinx delivers the engineering expertise behind secure satellite operations.
+An Engineering-Driven Culture
+At Sphinx, innovation and mission-driven work converge. Our team is distributed across the United States, embracing flexibility and autonomy while maintaining a strong sense of responsibility and purpose.
+What We Do
+Advanced Software for Ground-to-Orbit Communications
+Behind every successful mission is an intricate network of systems on the ground—where coordination, timing, and security make all the difference.
+Sphinx builds the software that makes satellite operations faster, smarter, and more secure. From custom-engineered solutions to our proprietary tools like SCOPe, we help government and commercial clients solve the toughest ground-side challenges—ensuring that vital data gets where it needs to go, exactly when it needs to be there.
+Expertise That Spans Critical Domains
+Military and commercial satellite operations planning
+Commercial network operations and connectivity
+Ground data transport solutions
+Whether you're licensing one of our purpose-built platforms or partnering with our team to build something new, Sphinx delivers the speed, precision, and problem-solving mindset your mission demands.
+From satellite operations to cybersecurity, Sphinx is not afraid to explore new methods or technologies in an effort to create the best possible solution. We always keep our clients and their needs at the forefront – using our engineering expertise to exceed expectations.
+Sphinx Contact Optimization & Planning Engine (SCOPe)
+SCOPe helps eliminate one of the biggest bottlenecks in satellite operations: coordinating limited ground resources for data transfer. By identifying optimal time windows to downlink and uplink data, SCOPE, a Sphinx proprietary platform, ensures timely, efficient contact between satellites and ground stations. Contact us for more information and details on licensing opportunities.
+Ground Transport Communications
+Our ground transport solutions secure and streamline terrestrial data movement—ensuring that the infrastructure connecting operators to satellites is as resilient and responsive as the missions it supports. We help safeguard the flow of mission-critical information across complex, distributed environments.
+Mission Communications Planning
+We design software that supports comprehensive comms planning—helping operators map out secure, efficient data pathways across military and commercial satellite networks. From link scheduling to bandwidth optimization, our tools bring clarity and control to complex mission environments.
+Built to Solve Ground-Side Problems
+Sphinx was founded to address the challenges of satellite ground systems—because even the most advanced satellites can't succeed without the right software on the ground.
+Software-Focused, Engineering-Led
+Our team is made up of exceptional engineers—front-end, back-end, and infrastructure—who live and breathe code. We don't dabble in hardware or spread thin across domains. We do software, and we do it extremely well.
+Challenge the Norm
+Manual processes and siloed systems no longer cut it. We ask the hard questions and push past entrenched methods to deliver faster, more effective solutions.
+Speed as Strategy
+Every line of code we deliver is mission-ready. When outcomes matter, there's no room for mediocrity.
+Unconventional Thinking
+The hardest problems rarely come with easy answers. Innovation demands fresh perspective.
+If you're looking for a partner who brings deep expertise and bold thinking to today's satellite communication challenges, let's talk.
+News: The U.S. Space Force has awarded contracts worth a combined $17.6 million to two Colorado-based defense firms to build prototype cloud-based marketplaces that would connect military satellite operations with commercial and government-owned antennas.

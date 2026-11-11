@@ -1,0 +1,158 @@
+SOURCE: https://www.settel.ai/ (homepage, document.body.innerText after full scroll, captured 2026-10-17 via browser)
+NOTE: settel.ai has no separate about/company page; the only other page is /hire (included below). LinkedIn company About text also included.
+---
+Hire Bruce
+Cut hardware BOM costs.
+Without switching suppliers.
+
+Keep your current suppliers 'honest' with 5+ competitive quotes for 100% of your BOM parts, delivered monthly.
+
+Cut BOM costs. Effortlessly
+“Searching for suppliers, obtaining & comparing quotes is labor-intensive. A done-for-me RFQ process that reduces full BOM cost is what we need to maximise profit per product.”
+Bruno M, CTO
+
+Z3 Technology, US Robotics, 3Com
+
+Rushed buyers & engineers are too busy to compare suppliers.
+Without competitive intelligence, there's no negotiation leverage to cut BOM costs.
+Supply cost shocks are increasing: geopolitics, innovation, climate, regulations, interdependence ...
+Comparing multiple suppliers per part is laborious - default pricing from current suppliers is the norm.
+Adding more people or building ERP integrations to do this work, are too costly.
+Automatically trigger current suppliers to cut prices, leveraging 5+ competitive quotes for all BOM parts, refreshed monthly.
+Single source for 33,000+ suppliers of 144,000,000+ off-shelf electronics & mechanical components, and unlimited custom-manufactured electronics & mechanical parts too.
+Step 1: CAD/BOM > mBOM
+We scrub your 50+ part CAD/BOM to create your mBOM.
+
+You sign NDA, share your CAD/BOM, set supplier criteria.
+
+We display your mBOM in your desired app.
+
+You finalise your mBOM with a Settel engineer.
+
+Step 2: RFQs > Quotes > Supplier Comparison Report
+We source 5+ competitive quotes for all mBOM parts. Every month.
+
+We prepare & submit RFQs to 33,000+ suppliers of 144M+ electronics & mechanical components, and unlimited custom-manufactured electronics & mechanical parts too.
+
+We rank list 5+ competitive quotes for all mBOM parts, based on your supplier criteria, growing smarter over time.
+
+You chat with us to finalise your supplier quote comparison report.
+
+Step 3: Notify suppliers > Leverage negotiations
+We send a supplier quote comparison report to you / your suppliers. Every month.
+
+You leverage the quote comparison report in your ad-hoc & planned supplier negotiations.
+
+You trigger price cuts & refunds from current suppliers with price-match agreements.
+
+Automatically updated every month with latest market data, for continuous cost down.
+
+Step 4: Cut BOM costs > Maximise product profits
+Current suppliers cut pricing across your entire BOM. Every month.
+
+Your current suppliers verify authenticity of 5+ competitive quotes.
+
+When they price-match - you save.
+
+When they do not - we remind them monthly until they can't refuse.
+
+When you need help with suppliers, your personal Settel engineer steps in ... so you don’t need to.
+Learn more about the future of cost control
+
+“The reliance on people and Google Sheets to manually manage competitive BOM costing is inefficient & tedious, highlighting the need for an automated quoting solution.”
+
+Narissa C, Director of Mechanical Engineering
+
+Igor Institute, Nike
+
+Settel automates your continuous cost down process (that no one has the time to do).
+Reduce RFQ process time & cost by by 80%.
+Increase RFQ frequency to 12x per year.
+Increase RFQ coverage to 100% of your BOM.
+Learn more about Settel
+No ... more ... RFQ admin!
+
+Free yourself from this tedious process & do it 960x better.
+
+Focus on supplier collaboration
+
+Spend time building relationships with suppliers, not chasing data.
+
+Pricing - we’re on your team
+
+Pay only for negotiation leverage & actual cost savings.
+
+Quote entire product
+
+Supplier quote data for all BOM parts, from all suppliers, in one place.
+
+Integrate your apps
+
+Automate product & financial data to & from your favorite apps.
+
+Copilot or autopilot
+
+Choose your level of freedom vs control throughout the process.
+
+See how Settel frees your teams
+
+Eliminate repetitive tasks and spend time on what actually moves the needle.
+
+Engineering
+12 hours weekly
+
+added to focus on product build.
+
+Procurement & Buying
+32 hours weekly
+
+added to focus on product delivery.
+
+Hiring more buyers or building ERP integrations won’t solve the root problem. Settel will.
+Too early to hire a buyer?
+
+No need to wait when Settel cost 5x less than a traditional hire.
+
+Currently hiring a buyer?
+
+Settel delays new hire cost & makes new hires more productive.
+
+Already have 1+ buyers?
+
+Settel saves them all from this inefficient RFQ grunt work.
+
+Get supplier negotiation leverage from 5+ competitive quotes per part, monthly.
+Cut BOM costs. Continuously.
+© 2024 Settel Inc. All rights reserved.
+
+=====
+SOURCE: https://www.settel.ai/hire (document.body.innerText)
+---
+Hire Bruce
+Run a continuous cost down process. Effortlessly.
+
+Let’s chat for 15 minutes to map your current vs ideal BOM cost control process, answer your questions, discover if we're a good fit, etc.
+
+“Imagine a service that streamlines quoting by efficiently comparing suppliers for all BOM parts, to keep costs under control, without the typical headaches.”
+Matt Krugman, CTO
+
+Acroname
+
+© 2024 Settel Inc. All rights reserved.
+
+=====
+SOURCE: https://www.linkedin.com/company/settelhq/about/ (company About text)
+---
+World's first service for hardware buyers to meet BOM cost targets effortlessly.
+
+* Rushed buyers & engineers have no time to compare suppliers.
+
+* Hiring more people or building ERP automations to do this work, are too costly.
+
+* Settel sources 5+ competitive quotes per BOM part, refreshed every month, at 80% less cost than traditional plays.
+
+* Giving buyers data-backed leverage to negotiate lower pricing & trigger auto price drops - with current suppliers.
+
+Settel has relationships with 33,000+ suppliers, covering your entire hardware BOM - including 144M+ off-the-shelf electronics & mechanical components, and unlimited custom-manufactured electronics & mechanical parts too.
+
+Founded: 2024. Headquarters: San Francisco, US. Company size: 2-10 employees.

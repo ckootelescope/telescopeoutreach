@@ -1,0 +1,162 @@
+URL: https://www.faction.ai/
+Captured: 2026-10-18 via browser document.body.innerText
+
+Modules
+Integrations
+Security
+About
+Careers
+Book a Demo
+AI for the most ambitious
+manufacturers and distributors
+
+Faction is the AI platform for the industrial economy.
+Quote faster. Source smarter. Get paid.
+
+Distributors and manufacturers are using Faction to scale operations, without scaling headcount. Same team, infinite capacity.
+OUTPERFORM POINT SOLUTIONS
+Pick the Module that Matters Most.
+
+Start with sales, purchasing, or finance. Expand when you're ready.
+
+Quoting
+
+Emails and PDFs become accurate quotes in seconds.
+
+Learn More
+Order Entry
+
+Orders from any format entered directly to your ERP.
+
+Learn More
+Pricing
+
+Optimize margin while staying competitive - automatically.
+
+Learn More
+Chatbot
+
+Search products, check pricing, and get order status instantly. Anywhere.
+
+Learn More
+Product Data Enrichment
+
+Clean messy data. Standardize descriptions. Fill gaps.
+
+Learn More
+Procurement
+
+Generate POs, reconcile confirmations, and track statuses.
+
+Learn More
+AP & AR
+
+Accelerate cash with automated collections and invoice matching.
+
+Learn More
+Voice
+
+Natural language AI agents that handles calls 24/7 with live ERP data.
+
+Learn More
+Quoting & Order Entry
+
+Transform emails and PDFs into accurate quotes instantly with AI-powered automation.
+
+Product Data Enrichment
+Sourcing
+Accounts Payable
+FACTION DELIVERS
+Transforming Distribution
+in
+0%
+
+Accuracy on product matching, pricing, and vendor data extraction
+
+0x
+
+Increase in customer support and inside sales capacity
+
+12%
+
+Average gross margin expansion in first 3 months
+
+PARTNER PROFILES
+Enterprise PVF Manufacturer & Distributor
+
+A $1bn PVF manufacturer & distributor relied on 300+ reps to manually quote jobs and enter orders into their ERP. Hiring couldn't keep pace with demand, and slow quote turnaround times led to lost deals.
+
+Faction deployed AI for quoting and order entry in under four weeks, matching products with 95%+ accuracy and automating data entry end-to-end. The team eliminated backlogs, increased win rates, and stopped hiring for the year.
+
+0.0x
+
+More quotes processed per rep
+
+0%
+
+Improvement in quote-to-win rate
+
+Mid-Market Electrical Distributor
+Global Packaging Distributor
+PE-Owned Plumbing Distributor
+SPEED IS EVERYTHING
+Go live in under four weeks.
+
+We handle the heavy lifting. You focus on running your business.
+
+Book a Demo
+Today
+– Kickoff + workflow mapping
+– Connect ERP / data sources
+– Grant permissions & team access
+Week 1
+– Import historical quotes, POs, invoices
+– Configure core modules
+– Start model training on customer data
+Week 4
+– Go live across teams
+– Performance tuning + final QA
+– Transition to ongoing support
+One platform that works with every system you run.
+
+Faction connects directly to your ERP, CRM, inbox, phone system, PIM, and supplier portals. Pull live inventory, customer-specific pricing, and approval workflows in real time.
+
+We built Faction for how distributors and manufacturers actually operate.
+
+Learn More
+FAQ
+Everything you need to know about adopting AI for distribution and manufacturing.
+Who does Faction work with?
+How does Faction integrate with my ERP?
+
+Faction has pre-built integrations with the major ERPs and CRMs used by distributors and manufacturers. We connect to your existing systems to read and write data in real time - pulling product, pricing, customer, and order data, and pushing clean, validated transactions back into your ERP. There's no rip-and-replace and no disruption to how your team works.
+
+How accurate is the product matching?
+What happens with edge cases or unusual requests?
+How long does implementation take?
+Do my reps need training?
+How do you support customers post-implementation?
+Ready to see what your team
+can do with Faction?
+
+Suppliers using Faction are quoting faster,
+winning more, and growing with the team they have.
+
+Book a Demo
+Pages
+Modules
+Integrations
+About
+Careers
+Modules
+Sales
+Purchasing
+Finance
+Voice
+Resources
+Case Studies
+Blogs
+Coming Soon
+Legal
+Privacy Policy
+Terms of Service

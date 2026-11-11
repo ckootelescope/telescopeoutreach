@@ -1,0 +1,236 @@
+Sodalis | Medication access. On autopilot.
+sodalis
+Home
+Solutions
+Platform
+How it works
+Trust
+Request a Demo
+sodalis
+Request a Demo
+Home
+Solutions
+Platform
+How it works
+Trust
+Medication access.
+On autopilot.
+Purpose-built for pharmacies. Designed for the AI era.
+Instant intake
+Prescriptions entered and reviewed automatically, no wait.
+Calls answered
+Patient calls triaged live by your program's rules, no hold.
+Payor follow-through
+Benefit verification and prior-auth status, chased automatically.
+Built to fit
+Custom agents and workflows for everything else.
+Request a Demo
+Scroll to explore
+introducing Axon
+Scripts that type themselves.
+Axon is the pharmacy AI engine behind every Sodalis agent. It reads a prescription,
+reasons across the patient&rsquo;s record, and types a clean script into your system, ready
+to verify.
+incoming fax
+Northgate Family Practice
+1280 Birch Ave · Fax 555-0142
+℞
+Patient: John Doe
+DOB: 04/12/1979
+Drug
+Tirzepatide 2.5mg
+Sig
+2.5 mg SC q wk
+Diagnosis
+E66.9
+Quantity
+#4
+Refills
+rf 2
+Prescriber
+M. Chen, MD
+Axon
+Pharmacy AI engine
+Reading script
+Expanding Sig → directions
+Decoding Dx · E66.9 → Obesity
+Indication · tirzepatide ✓ obesity
+Titration · 2.5 mg starting dose ✓
+Safety · MTC / MEN2 · DUR clear
+Patient matched · John Doe
+Clinically reviewed · greenlit
+your pharmacy system
+New Rx
+Awaiting
+Drug
+Tirzepatide 2.5 mg
+Sig
+Inject 2.5 mg subcutaneously once weekly
+Sig AI · from “2.5 mg SC q wk”
+Diagnosis
+Obesity, unspecified
+ICD-10 · decoded from E66.9
+Quantity
+4 pens · 28-day
+Refills
+2
+Prescriber
+Dr. Maya Chen
+by the numbers
+Numbers that actually move.
+Trusted by top enterprise hubs, top-10 pharma, and pharmacies.
+Improve care
+Patients don't fall through the cracks
+1,000s
+dead scripts recaptured per campaign. PAP hold times drop from 30 minutes to seconds.
+Run leaner
+Your team gets out of the queue
+40–60%
+of phone calls automated end to end, plus up to 93% of data entry handled by agents.
+Grow faster
+Add scripts, not staff
+10×
+return on investment, at 70% lower cost than human teams.
+the platform
+One engine. Every channel.
+Encodes
+SOPs
+Clinical & triage protocols
+Escalation & routing logic
+Axon
+Pharmacy AI engine
+Your logic, drug knowledge & every edge case. Encoded per program.
+Runs, every channel
+Voice
+Patient intake
+Benefit verification
+Refill & adherence
+Vision
+Prescription intake
+Prior-auth forms
+Referral & enrollment
+Workflows
+Data entry
+Pharmacist verification
+Eligibility & claims
+Continuous feedback
+Dispense errors
+Call transcripts
+Pharmacist edits
+Claim rejections
+solutions
+Built for pharmacies, hubs,
+and manufacturers.
+Pharmacies, hubs, and manufacturers each break under different pressure.
+Sodalis is purpose-fit for all three.
+01
+PHARMACIES
+Cut the cost of dispensing.
+Tight margins and high labor costs. Sodalis automates calls, allowing CSRs to focus on clinical work instead of refills and status checks.
+What we replace
+Inbound and outbound patient calls
+Refill request handling
+Prescription intake admin
+Status check-ins
+02
+HUBS
+Take on more cases, not more hires.
+Labor pools restrict growth potential. Sodalis automates up to 60% of calls and up to 93% of data entry, ensuring your business model stays intact.
+What we replace
+Up to 60% of inbound call volume
+Case entry and determination
+Data entry teams
+Quality variance from labor churn
+03
+MANUFACTURERS
+Bring the patient journey in-house.
+Stand up your own patient-services operation, a hybrid hub where AI agents work alongside your team, without a wall of FTEs. Own more of the brand experience, complement the hub partners you already work with, and finally see why patients start, stall, or never fill.
+What we enable
+A hybrid hub: AI agents plus your team
+Direct-to-patient programs
+End-to-end brand ownership
+Real-time program visibility
+how it works
+Prescription in.
+Therapy out.
+Most scripts flow straight through. The ones that don&rsquo;t never fall through the
+cracks.
+Prescription in
+Intake
+Vision agents parse the script. No tech keystrokes.
+when something&rsquo;s off
+Exceptions
+Every off-case is caught and routed the right way, never stalled.
+Missing prescriber signature
+Fax-back to provider
+Invalid or unclear Sig
+Fax-back to provider
+Contraindication detected
+Route to pharmacist
+Adverse event on a call
+Escalate to your team
+Automated
+Human review
+Data entry
+eScripts and faxes land in PV1 instantly, with exception rules applied.
+Outreach
+Voice agents handle inbound questions and outbound triage.
+Therapy out
+why it matters
+Every step between a prescription & a patient starting therapy creates friction.
+Friction costs patients.
+Sodalis removes the manual work so care moves faster.
+trust
+Built for the standards your compliance team requires.
+for pharmacy operators
+Full BAA-ready. PHI handled at every layer, with audit trails.
+Audit logs
+Every agent action logged, attributable, exportable.
+Human escalation
+Edge cases routed to your team with full context preserved.
+questions
+Questions, answered.
+Do you integrate with my systems?
+Yes. We connect to the systems your pharmacy already runs on, including the major pharmacy management systems. If we haven’t integrated with yours yet, we scope it into the implementation.
+How long does implementation take?
+We typically deploy in about four weeks and reach target performance within three months. IT involvement is minimal: we manage the rollout and work most directly with your pharmacy and operations teams.
+How do you price?
+Pricing is usage-based and tiered, with a base platform fee plus a one-time implementation fee. It scales with your volume, so what you pay tracks the value you get.
+How accurate is it, and what happens when Axon isn’t sure?
+Axon is built to know its limits. When something is ambiguous or high-risk, it flags the item and routes it to your team instead of guessing. Your licensed pharmacists make the final call, and you can see exactly what Axon did and why.
+Do you train your models on our data?
+No. Your data stays yours. We use it only to run and improve your own Axon configuration, never to train models for other customers.
+What does this mean for my team?
+Axon takes the repetitive, manual work off your team’s plate so their time goes to patients and the decisions that need real clinical judgment. It lets you raise your standard of care and handle far more volume without scaling headcount.
+Get started
+See what Sodalis replaces.
+30 minutes. Map your workflow. Pinpoint where agents take over and where they don't.
+No-fluff product walkthrough
+ROI mapped to your call volume
+Implementation timeline you can plan around
+Request a Demo
+Copyright 2026
+product
+Platform
+Solutions
+How it works
+company
+sales@sodalis.ai
+legal
+Privacy Policy
+Terms of Service
+Request a Demo
+See Sodalis on your call volume.
+Tell us a little about you and what you'd like to see. We'll get back within one business
+day.
+Website
+First name
+Last name
+Work email
+Company name
+What would you like to see?
+(optional)
+Request a Demo
+Thanks - we're on it.
+Your request is in. A member of the team will reach out shortly.
+Close

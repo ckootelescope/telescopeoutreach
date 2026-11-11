@@ -1,0 +1,451 @@
+URL: https://www.mandel.ai/
+Captured: 2026-10-18 via browser document.body.innerText (after 3s load; first read returned only the cookie banner)
+
+Skip to content
+Platform
+Use cases
+Industries
+Value
+Resources
+Log in
+Book a demo
+(opens in a new tab)
+AI Coordination Layer for Supply Chain.
+
+Mandel runs sourcing and ordering from RFQ through invoice, coordinating suppliers, updating your ERP, and bringing your team the decisions that need approval.
+
+Book a demo
+(opens in a new tab)
+See Mandel at work
+Example: sourcing through order confirmation
+800 machined collars
+
+RFQ-2084 · New production order
+
+Required by
+12 Oct
+Sourcing request
+Production team
+New sourcing request
+New email
+
+Please source 800 machined collars for the October build.
+
+Drawing attached. Use our approved suppliers.
+
+RFQ ready to send
+Drawing · Quantity · Required date
+
+RFQ prepared for approved suppliers
+
+The request
+Get quotes
+Your decision
+Order confirmed
+Explore what Mandel can run
+
+Backed by
+
+Read the seed announcement
+Your ERP records the order,
+but your team still has to make it happen.
+
+Your buyers spend the day chasing replies, checking documents, and updating records. The supplier decisions you hired them to make keep waiting.
+
+09:00
+
+You sat down to compare suppliers.
+
+An example of incoming supplier work
+
+Skip animation
+Supplier email
+
+RFQ-2084
+
+Get a complete quote
+
+The supplier hasn’t included the tooling cost.
+
+Your ERP
+
+PO-7182
+
+Chase a confirmation
+
+The supplier hasn’t confirmed the PO you sent.
+
+Supplier portal
+
+Delivery 7341
+
+Collect the certificate
+
+The parts arrived without their quality documents.
+
+EDI
+
+Invoice 9846
+
+Check the invoice
+
+Match the price and quantity to what was agreed.
+
+Your buyer
+
+Today’s priority
+
+Still waiting
+
+Compare the new supplier bids
+
+Scroll through the interruptions
+
+Supplier follow-up keeps pulling your buyers away from buying decisions.
+
+Today’s priority: Compare the new supplier bids. Choose better terms for the next production run.
+
+Supplier email, RFQ-2084: Get a complete quote. The supplier hasn’t included the tooling cost.
+Your ERP, PO-7182: Chase a confirmation. The supplier hasn’t confirmed the PO you sent.
+Supplier portal, Delivery 7341: Collect the certificate. The parts arrived without their quality documents.
+EDI, Invoice 9846: Check the invoice. Match the price and quantity to what was agreed.
+
+Supplier follow-up keeps pulling your buyers away from buying decisions. Compare the new supplier bids: Still waiting. The clock illustrates incoming work, not measured task durations.
+
+See the work Mandel takes on
+From the first RFQ to the final credit.
+
+Mandel runs routine sourcing and ordering work as well as resolving delays, discrepancies, and claims.
+
+Explore all use cases
+
+Complete quotes
+
+Sourcing & quoting
+
+Send RFQs, chase responses, and compare quotes. Your buyer selects the supplier.
+
+Confirmed orders
+
+Purchase orders
+
+Get confirmations, resolve delivery changes, and keep the ERP current.
+
+Corrected invoices
+
+Invoice discrepancies
+
+Check invoices against the agreement and get discrepancies corrected.
+
+Recovered credits
+
+Claims & entitlements
+
+Mandel prepares the claim, follows it through with the supplier, and confirms the credit against the agreement.
+
+When a supplier misses the date,
+Mandel arranges a replacement for your buyer to approve.
+
+The supplier has delayed 800 collars beyond the production date. Mandel requests quotes from approved alternatives, brings the buyer a comparison, and arranges the replacement after approval.
+
+Backorder · 800 machined collars
+
+Example of a backorder resolved with buyer approval
+
+How you set the rules
+
+Northgate Components
+
+Supplier delivery
+
+23 November
+
+Mandel
+
+Find a replacement
+
+Your ERP
+
+Original date
+
+12 October
+
+Order updated
+
+8 October
+
+Approved alternatives
+
+Supplier	Arrival	Status
+Supplier A	21 Oct	Too late
+Supplier B	8 Oct	Meets need date
+Supplier C	6 Oct	Certificate expired
+
+RFQs sent · Missing terms chased · Landed costs compared
+
+Your buyer
+
+Switch line 34 to Supplier B?
+
+Additional landed cost
+
+$1,840
+
+Confirmed arrival
+
+8 October
+
+Waiting for your approval
+
+Approved by your buyer
+
+Ready for the 12 October build
+
+Scroll to see the order recovered
+
+The replacement is confirmed for 8 October and recorded in SAP.
+
+Demo only. No order will be placed.
+The parts will miss the build. Mandel reads the supplier’s reply against the PO and production need date. A six-week delay needs a recovery plan. Check every delivery change against the need date.
+One supplier can meet the date. Mandel requests quotes from approved suppliers, follows up on missing terms, and compares landed cost and arrival dates. Contact approved suppliers. Check certification before recommending.
+You approve the replacement. An alternative can deliver before the build, for $1,840 more. Mandel brings you the comparison and asks for approval. A supplier substitution needs buyer approval.
+The replacement is confirmed. After approval, Mandel arranges the replacement, cancels the backordered line, and updates the ERP with the confirmation attached. Close only when the supplier confirms and the order is current.
+Replacement order confirmed
+Original line cancelled
+SAP promise date updated
+Supplier confirmation attached
+Teach Mandel how your team works.
+
+Playbooks set the steps and approvals for each job. Mandel applies your supplier instructions as it works and keeps the documents, decisions, and result together in the case.
+
+Example RFQ using supplier instructions
+
+Select an instruction to see how Mandel applies it.
+
+Playbook
+
+Source the parts
+
+Send RFQs, chase complete quotes, and bring the supplier choice to the buyer.
+
+What Mandel does
+Knowledge Hub
+
+Supplier conventions, commercial terms, and company requirements.
+
+How this supplier receives RFQs
+How this supplier quotes prices
+Who makes the supplier decision
+
+Case
+
+Source 800 machined collars
+
+RFQ-2084 · Kacin and other approved suppliers
+
+Knowledge used·Kacin · RFQs
+
+“For Kacin, put RFQ lines in the email. Don’t attach a separate RFQ document.”
+
+RFQ sent
+To Kacin
+RFQ · 800 machined collars
+
+Please quote the following parts, including delivery date and payment terms.
+
+Part	Quantity
+Machined collar	800
+
+RFQ lines in the email · No separate RFQ attachment
+
+Mandel uses the supplier’s preferred RFQ format.
+
+See the decision trail
+
+New supplier instructions are reviewed before use. They guide the work; your approval rules determine which actions Mandel can take.
+
+Visit the trust center
+Works in the systems
+you already use.
+
+Mandel reads the request, does the follow-up, and writes the outcome back. Suppliers keep working the way they do today.
+
+Email
+Gmail
+Outlook
+ERP
+SAP
+Oracle
+NetSuite
+Dynamics 365
+Documents & exchange
+PDF
+Excel
+Portals
+EDI
+
+Mandel
+
+Work carried through
+Follow-up sent
+Quotes compared
+Order updated
+Credit requested
+
+Your opportunity
+
+What could Mandel save you?
+
+See what better prices, fewer overpayments, and less manual work could be worth.
+
+Industry
+Industrial manufacturing
+Aerospace
+Wholesale & distribution
+Electronics
+Pharma & healthcare
+Chemicals & materials
+Annual purchasing spend (USD millions)
+$
+million
+Buyers, planners & SCM team
+people
+
+Mandel checks quoted prices, tooling charges, and supplier credits.
+
+Annual savings opportunity
+
+$250K
+
+The estimate assumes savings of 0.5% of your purchasing spend.
+
+2.5 FTE
+
+of additional team capacity
+
+Annual savings opportunity: $250,000. Potential additional team capacity: 2.5 full-time equivalents. These figures are estimates based on the assumptions below.
+Assumptions & sources
+Where the value comes from
+Keep the price you negotiated
+Mandel follows up on expiring quotes and resolves price or quantity changes before they reach the invoice.
+Quote → PO → Confirmation
+Pay only what you agreed
+Mandel checks invoices against agreed terms and received quantities, then follows up on extra charges and credits you’re owed.
+Contract + confirmation + receipt → Invoice
+Handle more with the same team
+Mandel handles supplier follow-up, document checks, and ERP updates so your team can spend more time on buying decisions.
+RFQ → Follow-up → ERP update
+€60,000 in pricing discrepancies found in one week
+
+At a pharmaceutical distributor, Mandel identified pricing discrepancies in a €6 million invoice batch by checking the negotiated terms.
+
+How we measure value
+
+1%
+
+of the invoice batch
+
+Built around how your industry buys
+
+Build schedules, quote deadlines, price lists, and material requirements change the work. See how Mandel fits yours.
+
+Explore industries
+Industrial manufacturing
+
+Machinery, project builds, and purchased parts.
+
+Aerospace
+
+Aircraft and component manufacturing. Aftermarket distribution.
+
+Wholesale & distribution
+
+Industrial sourcing and price-list-led retail buying.
+
+Electronics
+
+Component distributors, connectors, and assemblies.
+
+Pharma & healthcare
+
+Pharmaceutical wholesale and medical-device manufacturing.
+
+Chemicals & materials
+
+Specialty distribution, compounders, and formulators.
+
+Build the case on your own orders.
+
+Run Mandel against your past orders and supplier correspondence to see what it would have caught and what work it could have completed. Review the findings against the source documents before choosing a live workflow.
+
+Test Mandel on your data
+(opens in a new tab)
+
+The historical review leaves your live systems unchanged.
+
+SOC 2 Type II
+View trust center ↗
+Your historical review
+
+What we’ll measure together
+
+RFQ and order workload
+Time spent on supplier follow-through
+Incomplete commitments
+Financial opportunities to validate
+
+Every finding linked to its source.
+
+Review your history
+
+Map routine work, unfinished commitments, and financial opportunities in your own records.
+
+Choose your first workflow
+
+Agree the scope, the rules, and what a useful result looks like.
+
+Put it to work
+
+Measure completed work, buyer time, and verified financial results before expanding.
+
+Common questions
+How do we start?
+What systems does Mandel connect to?
+Do suppliers have to adopt anything?
+What can Mandel do without approval?
+How is this different from a supplier portal or EDI?
+Is our email data secure?
+
+The work behind direct-materials orders, from RFQ through invoice.
+
+169 Madison Ave
+
+New York, NY 10016
+
+SOC 2 Type II
+View trust center ↗
+Platform
+Platform overview
+Connected systems
+Playbooks & knowledge
+Historical Replay
+Results
+Cost and ROI
+Explore
+Use cases
+Industries
+Resources
+Compare
+Legal
+Privacy Policy
+Outlook Add-in EULA
+Security
+Cookie Preferences
+© 2026 Mandel AI.
+LinkedIn
+X
+
+We use cookies to measure site use and identify business visitors. See our privacy policy.
+
+Decline
+Accept

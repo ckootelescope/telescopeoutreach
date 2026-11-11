@@ -1,0 +1,251 @@
+SOURCE: https://optimizedhq.com/ (homepage, document.body.innerText after full scroll, captured 2026-10-17 via browser)
+---
+Platform
+Digital workers
+Audits and digital workers.
+Security
+Company
+Partners
+Careers
+OPTIMIZED
+Talk to our team
+Finding exactly where AI creates value
+
+Optimized audits your procurement and supply chain data to find the money you’re missing, then deploys Digital Workers to capture it.
+
+Talk to our team
+
+Our clients and partners
+
+“We were up and running in ten days, and we've kept adding and building on it since. Instead of waiting a year or two, we're getting an ROI right now. We're very impressed with the team and the output that we're seeing.”
+
+Kevin Krause
+
+Vice President of Global Procurement & Logistics at Clarience Technologies
+
+“In an evolving world, we didn't need multiple AI tools, we needed a strategic partner that could scale and adapt with us. Optimized has compressed 48-hour workflows into ten minutes. This allows our team to shift their focus from operational bottlenecks to high-value strategic initiatives.”
+
+Ibrahim Koca
+
+Global Innovation Manager
+
+What we look for in your data
+Contract pricing
+
+Invoices use old prices after the contract has changed.
+
+Inventory
+
+Open orders buy parts that another plant already has available.
+
+Freight charges
+
+Freight bills charge for agreed free days or fees already included in the quote.
+
+Rebates
+
+Purchases across your companies earn a rebate, but part of it is still unpaid.
+
+Start with an audit
+
+Start with your data exports. Within a week, see what’s being missed, what it’s worth and which work Digital Workers should take on.
+
+Audit fee guarantee
+
+We’ll identify verified savings worth more than your audit fee within 30 days, or refund the fee.
+
+From opportunity to action
+Contract pricing
+Check invoices against the contract terms for each receipt, including amendments, index changes and credits already received.
+Freight rates
+Inventory
+Explore all audit areas
+OPTIMIZED
+Rebuild invoice prices from the contract
+What the Digital Workers do
+1
+Read the contract and amendments
+
+Identify which date sets the price and when the temporary surcharge expires.
+
+2
+Split an invoice across a price change
+
+One invoice covers receipts before and after an amendment. Apply the terms in effect for each receipt.
+
+3
+Subtract credits already applied
+
+Match the existing $2,000 credit to its invoice before calculating the remaining claim.
+
+$23,200
+still to claim after the supplier’s credit
+What the Digital Workers do next
+
+After buyer approval, the Digital Workers send the supported claim, follow up with the supplier and update the approved purchasing prices.
+
+View example details
+
+DIGITAL WORKERS
+
+Workers that close the leaks.
+
+Each one works a case as it arrives. Your team approves every step.
+
+Supplier Quote Intake
+
+Checks every supplier quote against your price file.
+
+See it work
+
+Inbound Shipment Exceptions
+
+Finds late inbound loads before the need date.
+
+See it work
+
+Invoice Dispute Resolution
+
+Matches each invoice to the PO and receipt before payment.
+
+See it work
+
+See all 17
+
+CUSTOMER STORIES
+
+Digital Workers at work
+
+Global Packaged Food Manufacturer
+
+Finding missed price breaks in packaging orders
+Annualized opportunity identified vs. total direct material spend in the audit baseline
+0.7%
+To first candidate findings after SAP exports were available
+1 day
+Read the case study
+
+Automotive Tier 1
+
+3% leakage found in indexed direct materials
+Leakage found in indexed direct-material spend reviewed
+3%
+Historical purchasing data reviewed
+18 months
+Read the case study
+View all case studies
+Frequently asked questions
+Is our data safe?
+How much work is this for our team?
+Does this replace our ERP?
+What does it cost?
+Finding exactly where AI creates value in your operations
+
+A 30-minute call. We’ll walk through your data and show you where we’d look first.
+
+Talk to our team
+OPTIMIZED
+
+AI for the industries we depend on.
+
+© 2026 Optimized, Inc.
+Platform
+Digital workers
+Demo library
+Case studies
+Company
+Partners
+Careers
+Security
+Privacy
+Terms
+
+=====
+SOURCE: https://optimizedhq.com/company (document.body.innerText after full scroll)
+---
+Reindustrialize the West.
+
+Bring the industries we depend on into the modern age.
+
+We build AI systems that make industrial companies more competitive. Alongside the people who keep the physical world running.
+
+What we’re building
+Golden Gate Bridge · Under construction, 1936
+The next era of industry starts with what’s already here.
+
+The food on our tables. The materials in our buildings. The energy that keeps the lights on.
+
+The businesses behind these things hold generations of knowledge, relationships, and hard-won capability. Many are still independent, still family owned, and still competing on quality and reliability.
+
+They deserve technology as ambitious as the work in front of them. Our mission starts with making these companies stronger, and making Western manufacturing competitive for the long term.
+
+Ford Model T production · Highland Park, 1913
+Put AI into
+the work itself.
+
+Quoting, purchasing, planning, and coordination take up a good team’s best hours. Optimized brings intelligence into that work, giving teams a clear view of opportunities and the tools to act on them.
+
+We work alongside the teams who run the operation, connecting their systems, preserving their knowledge, and putting AI to work where it matters to them.
+
+Better decisions. Work moving forward. Knowledge that stays with the company.
+
+Explore the Digital Worker OS
+A stronger business.
+A life beyond it.
+
+The buyer holding a broken process together. The planner checking on a production line during a daughter’s game. The team whose care and judgment keep a plant running.
+
+These are the people we build for. Giving them better tools means more room to grow the business, and more time for the people they’re doing it all for.
+
+Opportunity.
+Room to grow, hire, and invest in the future.
+
+Time back.
+Less time chasing work after hours. More time with family and friends.
+
+Empire State Building · Under construction
+A belief in what
+we can build here.
+
+Our co-founders, Jeff and Ali, met at Stanford. Optimized grew out of their research using AI to build optimization models at scale.
+
+Both came to America as immigrants. The chance to study, start a company, and build something of their own is a promise they want to help preserve.
+
+That means building for the businesses that anchor their communities, and for the people whose useful, difficult work makes opportunity possible for everyone else.
+
+Help build the next
+era of industry.
+
+We’re looking for engineers, researchers, and operators who want to make the physical world work better.
+
+Build with us
+
+San Francisco. Building for the physical world.
+
+OPTIMIZED
+
+AI for the industries we depend on.
+
+© 2026 Optimized, Inc.
+Platform
+Digital workers
+Demo library
+Case studies
+Company
+Partners
+Careers
+Security
+Privacy
+Terms
+
+=====
+SOURCE: https://optimizedhq.com/ FAQ answers (collapsed accordion, read from DOM textContent)
+---
+Is our data safe?
+Yes. SOC 2 Type I and II, ISO 27001, ISO 42001 and GDPR. Every customer’s data is isolated and encrypted. Full details in our Trust Center.
+How much work is this for our team?
+One point of contact and a set of data exports. No integration is needed to start. We work alongside your team, on-site when it matters.
+Does this replace our ERP?
+No. Optimized works on top of the systems you already run.
+What does it cost?
+The audit is a fixed price. You see what it finds, sized in dollars, before you commit to anything else.

@@ -1,0 +1,174 @@
+Tabz | Pharmacy Commerce, Payments & Checkout Platform
+Products
+Checkout
+Collect copays and payments.
+Connect
+Reach patients and close the loop.
+Invoice
+Request and track payment.
+Business types
+Manufacturers & brands
+Support patient payment and downstream ops.
+Mail-order pharmacies
+Handle remote payments and fulfillment.
+Compounding pharmacies
+Support complex orders and high copays.
+Specialty pharmacies
+Manage high-cost meds and workflows.
+Retail pharmacies
+Speed up checkout and collection.
+Hubs
+Speed up checkout and collection.
+Partners
+PMS systems
+Embed commerce into existing pharmacy workflows.
+Platforms & marketplaces
+Power pharmacy transactions at scale.
+Company
+Careers
+Join the team building pharmacy commerce.
+Security & Compliance
+How we protect pharmacy data and payments.
+Blog
+Everything happening in pharmacy commerce, from the team building it.
+Log in
+Book a demo
+HealNow is now Tabz
+Same platform, same team, just a new name. Everything you know and use is still here.
+Close
+The Pharmacy Commerce Standard
+The unified pharmacy commerce infrastructure, built to operate at scale.
+Tabz brings checkout, payment collection, fulfillment coordination, and billing into one system, so pharmacies, digital platforms, and pharma manufacturers can operate without stitching together tools that were never designed for this industry.
+Book a demo
+Log in
+Built Specifically for Pharmacy
+General commerce platforms weren't built for the pharmacy industry. Tabz was.
+Pharmacy transactions are structurally different from general commerce. They move through insurance adjudication, HSA/FSA restrictions, controlled substance requirements, manufacturer coupons, and other workflows that general-purpose payment tools were not designed to support. Tabz was built for pharmacy.
+Connected
+checkout
+Collect payment before pickup, delivery, or shipment through branded digital checkout, secure payment links, invoices, or embedded flows.
+Pharmacy-native workflows
+Tabz is designed around prescription reality: refill flows, prepayment, patient follow-up, dose escalation workflows, and fulfillment coordination.
+Deep system integrations
+Tabz connects directly into pharmacy management systems or data warehouses so prescription data, copay amounts, and patient records flow into checkout without manual entry or parallel tools.
+Built-in
+compliance
+HIPAA BAA coverage and DEA controlled substance signature capture are native to the platform, not bolted on. Let Tabz manage compliance for you, without relying on third-party certifications.
+The unified platform for the operational side of pharmacy
+Checkout, invoicing, health benefit card payments, and transaction visibility in one place. No stitching together vendors. No fragmented systems or workarounds. Just a cleaner operational layer between prescription and payment.
+Who Tabz Serves
+One platform.
+Every pharmacy model.
+Independent operators, specialty pharmacies, compounders, enterprise organizations, and pharma manufacturers. Tabz adapts to how each one operates, not the other way around.
+Brands & Manufacturers
+With HSA/FSA card payments, HIPAA-compliant infrastructure, fulfillment routing, and coupon support already built in.
+Retail Pharmacies
+Patients pay digitally before pickup. Copays and prescription prepayments handled without staff involvement.
+Compounding Pharmacies
+Collect digital payment before personalized medications are prepared. Eliminate unclaimed orders and the revenue loss that comes with them.
+Hubs
+Centralized payment visibility and control across high-volume patient support programs and fulfillment operations. Built for the complexity of managing multiple drugs, programs, and patient populations in one place.
+Mail-Order Pharmacies
+Patients pay before shipment leaves. Fewer failed deliveries, fewer inbound calls, cleaner fulfillment. Tabz connects payment confirmation directly into your dispatch workflow.
+Specialty Pharmacies
+Transaction infrastructure for high-cost therapies, with support for copay assistance programs, prior authorization workflows, and patient financing.
+Book a demo
+We integrate with any pharmacy management systems.
+Here are some examples:
+Product suite
+The complete commerce stack for pharmacy.
+Tabz connects payment, fulfillment, and reporting into a single operating platform. Every capability runs on the same pharmacy-native foundation, so nothing falls through the gap between prescription and payment.
+Increase revenue
+with higher conversions
+Copay amounts, digital wallets, and HSA/FSA card payments integrated directly into prescription workflows. Patients pay by text link or email, whether they are picking up in store or receiving a delivery. Payment is collected before the order moves.
+‍
+Pharmacy-native payments,
+embedded in your stack.
+Build Tabz's pharmacy commerce layer directly into your patient experience, platform, or PMS. HIPAA BAA coverage, DEA compliance hooks, and support for HSA/FSA card payments. The core infrastructure is already there. The compliance infrastructure is already there.
+Automated updates
+through the workflow.
+Automated text and email keeps patients informed, engaged, and paying without staff involvement. Payment links, refill reminders, RX notifications, and order updates all within your workflow.
+‍
+Bill digitally. Collect faster.
+Eliminate paper entirely.
+Send secure, branded invoices for account balances, special requests, and outstanding accounts receivable. No paper statements to print, mail, or chase. No inbound calls to process a card over the phone. Revenue moves faster, and the operational nightmare disappears.
+Book a demo
+For Partners
+Give your customers a payment experience worth staying for.
+When Tabz is embedded directly into your software, omni-channel payments become part of the native workflow. Copays, HSA/FSA card payments, controlled substance signature capture, prepayment, and reconciliation all happen inside the system your customers already run on. No parallel tools. No workarounds. No reason to look elsewhere.
+PMS Systems
+Add omni-channel payments, invoicing, and reconciliation directly into your pharmacy management system. Prescription data and copay amounts flow into digital checkout and back without manual entry, parallel tools, or re-keying.
+Technology Platforms & Marketplaces
+Bring pharmacy-native checkout into your health platform or marketplace. Tabz provides the payment infrastructure, including HIPAA BAA and controlled substance compliance, so you own the patient experience without managing the compliance layer underneath it.
+Book a demo
+Security & Compliance
+Security and data compliance designed for patient-related transactions.
+Handling transactions in pharmacy requires more than a secure payment form. A single DEA audit failure or HIPAA breach is a practice-ending event. Tabz is built so that compliance isn't something your pharmacy manages around. It's embedded in every transaction, automatically.
+No third-party certification required
+Your pharmacy isn't stuck in lengthy certification review cycles that can take months with no guarantee of approval. Tabz streamlines onboarding and payment setup so you can start processing quickly, without long integration cycles.
+HIPAA-ready
+infrastructure
+Tabz operates as a HIPAA Business Associate for every pharmacy. Patient payment data, communication records, and transaction history are handled under full HIPAA-compliant workflows.
+DEA & controlled substance compliance
+Required DEA signatures and ID numbers for controlled substance transactions are captured at checkout and archived for audit compliance. State database reporting handled by your pharmacy.
+PCI Level 1 compliant payments
+All payment transactions follow PCI DSS Level 1 standards, the highest level of payment security, to ensure secure handling of cardholder data.
+Learn more
+"Return-to-stock items are practically gone. Tabz lets us collect payment upfront, which has saved us thousands of dollars and hours of staff time."
+Community Pharmacy
+North Dallas, TX
+"Tabz streamlined our shipping and prepayment workflows. We’ve seen fewer reshipments, fewer calls, and a much smoother experience for both staff and patients."
+Las Colinas Pharmacy
+Irving, TX
+Tabz by the numbers
+The pharmacy payments infrastructure standard.
+Already at scale.
+Tabz is not a concept. It is processing billions in pharmacy transactions and interacting with millions of patients across every pharmacy model.
+Billions
+In Annual GMV Processed
+Real pharmacy transactions, including copays, HSA/FSA payments, specialty drug billing, and DTC checkout, running through pharmacy-native infrastructure today.
+50%
+Of online payments collected within the first hour
+No chasing cards. No inbound calls. No unclaimed orders.
+30%
+Boost in OTC and supplement sales
+Upsells are built into the flow, driving more revenue per order.
+75%
+Patients complete orders online
+Fewer phone calls, fewer delays, and a smoother experience for everyone.
+300 hrs+
+Saved per pharmacy per year
+The equivalent of 2 full-time employees, without the payroll.
+24–48 hrs
+Fast, predictable payouts
+Revenue lands in your account on a consistent schedule.
+The infrastructure your pharmacy needed to have from day one.
+See what it looks like when every transaction layer, including checkout, compliance, fulfillment, and billing, runs on one platform built specifically for this industry.
+Book a demo
+Frequently asked questions
+What is Tabz?
+Tabz is the Unified Pharmacy Commerce Platform. It connects checkout, payment collection, patient communication, and fulfillment into one operating layer that sits natively inside pharmacy workflows. Pharmacies use Tabz to collect payment before dispensing, automate patient outreach, reduce return-to-stock, and grow OTC revenue, all through a single platform that integrates directly with their pharmacy management system.
+Which types of pharmacies does Tabz work with?
+Tabz works across the full pharmacy spectrum: retail, compounding, specialty, mail-order, and hub pharmacies. It also supports pharma manufacturers building direct-to-patient programs, pharmacy management system vendors adding a commerce layer to their platform, and technology companies embedding pharmacy payment capabilities into their products. Each pharmacy type has workflows specific to how they operate, and Tabz is built to fit all of them.
+Which pharmacy management systems does Tabz integrate with?
+Tabz integrates natively with PioneerRx, Liberty Software, Keycentrix, PK Software, Computer-Rx, SiCompounding, and EPS. Prescription data, copay amounts, and patient records flow directly from the PMS into the Tabz checkout flow, with no manual re-entry required.
+Is Tabz HIPAA-compliant and PCI DSS certified?
+Yes. Tabz is HIPAA-ready and Level 1 PCI DSS certified. Protected health information and payment data are handled according to HIPAA and PCI DSS standards, built directly into the infrastructure rather than added on. Pharmacies, technology partners, and pharma manufacturers that build on Tabz inherit this compliance posture without having to obtain or maintain those certifications independently.
+Still have questions?
+Contact us
+Products
+Checkout
+Connect
+Invoice
+Company
+Careers
+Security & Compliance
+Blog
+Contact
+Sales
+Other requests
+Legal
+Terms of service
+Privacy policy
+Systems status
+© 2026 Tabz Inc. All rights reserved.

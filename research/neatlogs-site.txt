@@ -1,0 +1,66 @@
+Source: https://neatlogs.com/ (captured 2026-10-18 via browser, document.body.innerText)
+
+LAUNCH OFFER - First month free on paid plans - Start free
+Your agent is already running.
+That's not the same as working
+neatlogs finds what's failing, works out why, and hands you a fix.
+Copy setup prompt / Start free
+Trusted by teams at: VWO + AB Tasty, Runway, CFO.ai, Gobblecube, Vorflux, Passionfroot, CxConnect, Ziva.sh, Cipherstash, Swirls
+01 Import your traces from anywhere - Production traces LIVE - LangSmith / Braintrust / OpenTelemetry - checkout_agent.run 24.8s - support_triage 12.6s - returns_agent 9.8s - 247 spans imported
+02 Add the context your traces are missing - Context attached 2 SOURCES - retrieve_recovery_policy Tool · 420ms - Refund should have been approved - Refund policy review
+03 Catch failures other tools miss - Production incident NOW - CUSTOMER HISTORY IGNORED - Checkout requests time out - 218 Failing runs - 3 Related signals - Ready to investigate
+Ship a fix that stays fixed
+neatlogs watches production to make sure it holds.
+Investigation report - Support agent · 05 Sep - 92% High confidence - Evidence and context agree
+Root cause: Confirmed - Retry removed - create_checkout v2.8 - See what broke
+Evidence and reasoning: 12 linked - Two failing spans, three release comparisons, and four safety checks. Follow the evidence
+Recommended fix: Ready - Restore two bounded retries and return GatewayTimeout after the final retry. Know what to change
+Verification: 3 checks - Timeout path reproduced, duplicate charge blocked, and regression suite passed. Verify the fix holds
+Discuss / Open ticket / Fix in Claude
+Fix brief to Claude Code - FIXED - neatlogs fix brief: Restore two bounded retries for create_checkout, then return GatewayTimeout. Never charge the order twice.
+Found the retry policy removed in v2.8. create_checkout · span 12
+Return GatewayTimeout after the final retry. Typed failure · +28 -4
+Confirmed the duplicate charge guard. Order remains idempotent
+Checkout safety tests passed. 12 passed · no duplicate charge
+- context: current_order
++ context: current_order, delivery_history
++ after repeated service failures:
++ refund the current order or escalate
++ never offer credit after cancellation
+Refund judgment restored
+Bounded retries restored. 12 tests passed. No duplicate charge.
+Evals so simple even non-devs can run them
+Describe what good looks like, and let AI evaluate at scale.
+Book free evals working session
+Eval Run 284 - Customer support - "The undelivered order isn't eligible for a refund." - Uses customer history Pass/Fail - Makes reasonable exception Pass/Fail - Chooses proportionate remedy Pass/Fail - Sarah / Jon / AI evaluator
+Everything your agents need to keep working
+Ask @neatlogs anything - Do it in plain English, from Slack or the app. Get an answer you can verify. (Slack / In app / Linear / Notion)
+# support-agent - Mark 9:41 AM @neatlogs Which support failures are most likely causing churn?
+Investigate from the terminal - Find the root cause through the CLI or MCP. Hand your coding agent the exact fix.
+$ neatlogs ask - Why did resolution rate fall after v2.8? - Investigating agent-run-284 - ISS-284 found - 92% confidence - Fix brief ready
+Catch failures automatically - Detect critical events. Route them to the right people with impact, severity, and context.
+What happened - 14 steps · 24.8s - 3 detections - customer_history 13.6s Customer history ignored - decide_resolution 4 calls Refund exception missed - compose_reply 1.2s Dismissive response - Sarah Support / Jon Payments / Chris Engineering
+Build dashboards by asking - Describe what you want to track in plain language. Get a view tailored to your needs.
+Dashboard AI - What should this dashboard help your team understand? Where is the support agent making churn worse? - Support health Live - Failed runs 12 (+4 today) - Customers affected 47 (Across 3 plans) - Renewal revenue at risk $18.4k (Last 24 hours)
+Works everywhere your team does
+Frameworks: LangChain, CrewAI, LlamaIndex, Vercel AI SDK, Pydantic AI, Agno, DSPy, Mastra
+Coding agents: Claude Code, Cursor, Codex, Copilot
+Business tools: Slack, Linear, GitHub, Jira, Notion, Discord, Webhooks, Asana
+SDKs: Python, TypeScript, OpenTelemetry, REST API
+Plus an open SDK, to instrument anything that makes an LLM call.
+Start free. Scale when your agents do
+Bring your own model key at no extra cost. Enjoy unlimited users on every paid plan.
+Free - For trying neatlogs on a real project. $0 Forever - $5 AI credits; 3 investigations a month; Traces, sessions & replay; AI chat; 5 detectors; Unlimited detections and evals; 2 users · 1 project; 50k spans a month · hard cap; 14-day retention
+Starter (Popular) - For teams shipping agents to production. $99/month - Everything in Free, plus $50 AI credits; Autonomously surface incidents every 24 hours; Cloud agents open a PR from any issue; Unlimited users · 5 projects; PII redaction, roles & webhooks; 250k spans a month · then $10 per 100k; 30-day retention - Launch offer: First month free
+Pro - For teams running several agents at scale. $499/month - Everything in Starter, plus $250 AI credits; Autonomously surface incidents every 6 hours; Unlimited projects; Audit log & SSO; 90-day retention; 1M spans a month · then $8 per 100k; Priority support in a shared Slack channel - Launch offer: First month free
+Enterprise - For security, compliance, and scale. Custom, Annual pricing - Everything in Pro, plus Custom span volume · negotiated rate; Custom retention; SAML/SCIM & data residency; SOC 2 / ISO, DPA & security review; VPC or self-hosted ingest; Dedicated support with an SLA - Talk to us
+* A span is one ingested step of an agent run (an LLM call, a tool call, or a retriever step). A typical trace is 5–20 spans.
+FAQs
+Can't I just hand the traces to Claude? - For one small run, yes. At production scale, traces are large, repetitive, and mostly scaffolding. More context costs more and can actually make the answer worse. neatlogs compares the right runs, isolates the critical spans, and sends Claude or Cursor only the failure, likely cause, and evidence.
+Do I need to replace my current platform? / How is this different from another observability dashboard? / Does neatlogs change my code automatically? / Is neatlogs only for engineers? / Can neatlogs catch failures when the run technically succeeded? / What happens after a fix ships? / How hard is it to get started?
+Still unsure? We'll look at your stack with you. Book a demo
+Your agent is already running. Find out if it's working
+Connect your production traces in minutes. No credit card required.
+The fastest path from failure to fix.
+Footer: Product, Pricing, Book a demo, Glossary, Docs, Changelog, GitHub, SDKs, MCP, Manifesto, Blog, neatHack, Careers, YouTube, Discord, Contact, Privacy, Terms
+© 2026 neatlogs Inc. Built for teams shipping agents.

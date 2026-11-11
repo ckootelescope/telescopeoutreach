@@ -1,0 +1,292 @@
+URL: https://larkagents.com/
+Skip to content
+Book a meeting
+Specialized AI Agents for
+Wholesale Distributors
+
+Lark connects to your existing systems and deploys agents for purchasing, forecasting, inventory management, sales, and data analytics
+
+Book a meeting
+
+Backed by
+Combinator
+
+SCROLL TO LEARN MORE
+
+PRODUCT
+
+Agents at work
+01
+PO 10482
+Purchasing
+
+Identify shortages, recommend order quantities, and prepare purchase orders and vendor emails for approval.
+
+SEE IT AT WORK
+CLOSE
+02
+TODAY
+Demand forecasting
+
+Forecast item demand from sales history and market signals to guide purchasing decisions.
+
+SEE IT AT WORK
+CLOSE
+03
+Inventory monitoring
+
+Monitor stock levels, flag items that need attention, and explain why.
+
+SEE IT AT WORK
+CLOSE
+04
+Sales operations
+
+Monitor sales inboxes, update CRM deal stages, and flag stalled opportunities.
+
+SEE IT AT WORK
+CLOSE
+05
+Data analysis
+
+Ask questions in plain English and get answers grounded in data from your existing systems.
+
+SEE IT AT WORK
+CLOSE
+
+WORKS WITH
+EXAMPLE SYSTEMS
+
+Connects to the systems you already use
+
+Your ERP, email, documents, shared drives, accounting and CRM. We handle the setup with your team.
+
+ERP
+9
+
+PROPHET 21 · ECLIPSE
+CSD
+BUSINESS ONE
+BUSINESS CENTRAL
+100 / 300
+INFORM
+
+EMAIL
+
+Outlook
+Gmail
+
+DOCUMENTS
+
+PDF
+Excel
+
+SHARED DRIVES
+
+Google Drive
+SharePoint
+OneDrive
+Dropbox
+
+ACCOUNTING & CRM
+
+Don't see yours? Ask us
+
+HOW IT WORKS
+4 STEPS
+
+How Lark works
+
+01 · BOOK A MEETING · 30 MIN
+
+Show us where the manual work lives
+
+A 30-minute call about your workflows, your systems and where Lark can help first.
+
+Book a meeting
+Meeting with Lark
+Video call · with your team
+30 min
+
+PICK A TIME
+OCTOBER 2026
+
+MON
+5
+TUE
+6
+WED
+7
+THU
+8
+FRI
+9
+9:30 AM
+11:00 AM
+12:30 PM
+1:30 PM
+3:00 PM
+4:00 PM
+
+AGENDA
+
+01
+Your workflows
+02
+Your systems
+03
+Where Lark can help first
+04
+What a pilot would cover
+INVITE SENT
+Lark × Acme Distribution
+Wed, Oct 7 · 11:00–11:30 AM · Video call
+
+02 · CONNECT
+
+Connect your ERP, email and documents
+
+Lark connects to your ERP, email, documents, shared drives, accounting and CRM. We handle the setup with your team.
+
+See the systems Lark works with
+Connections
+Acme Distribution
+5 connected
+ERP
+Prophet 21
+Connected
+EMAIL
+Outlook
+Connected
+DOCUMENTS
+PDF, Excel
+Connected
+SHARED DRIVES
+SharePoint
+Connected
+ACCOUNTING & CRM
+QuickBooks, HubSpot
+Connected
+
+NEXT
+Items, vendors and rules are mapped with your team during the pilot.
+
+03 · PILOT
+
+Agents work alongside your team
+
+During the pilot we map your data, items, vendors and rules with your team and set up the first workflows. Lark builds the demand analysis from your history.
+
+Items, vendors and rules mapped
+First workflow approved, with its limits
+Demand analysis built from your history
+Agents working alongside your buyers
+DB
+Acme Distribution
+Purchasing
+Ask Lark
+
+Your worklist
+
+customers waiting first, then soonest to run out
+
+By urgency
+By vendor
+
+CUSTOMERS WAITING
+2
+
+01
+20417
+Copper elbow 90°, ½ in
+14 uncovered
+after uncommitted stock + On Order
+0 on hand · 14 backordered · sells 8.6/day
+Suggest 200
+usually 150–200 · last 200
+02
+18830
+PVC ball valve, 1 in
+6 uncovered
+after uncommitted stock + On Order
+0 on hand · 6 backordered · sells 1.9/day
+Suggest 48
+usually 48 · last 48
+
+SOONEST TO RUN OUT
+5
+
+03
+40115
+12 AWG THHN wire, 500 ft
+4d left
+restock takes ~7d
+4 sellable · nothing on order · sells 0.9/day
+Suggest 24
+usually 20–24 · last 24
+
+5 more lines in the worklist
+
+Pause
+
+04 · EXPAND
+
+Turn on more agents and workflows
+
+When the pilot works the way you want, turn on the next agent or workflow. Each one runs inside the limits you approve.
+
+Meet the agents
+Agents
+Acme Distribution
+3 of 5 on
+4 of 5 on
+Purchasing
+Replenishment POs · within limits
+Inventory monitoring
+Checks every item each morning
+Demand forecasting
+Feeds the forecast into purchasing
+Sales operations
+Sales inbox and CRM stages
+Turned on today
+Data analysis
+Questions in plain English
+NEXT
+
++ Add workflow
+EACH NEW WORKFLOW IS APPROVED WITH ITS LIMITS
+
+FAQ
+
+Questions, answered
+
+The short version. Everything else is on the FAQ page.
+
+See all questions
+
+01
+How long does it take to set up?
+02
+Does Lark replace our ERP?
+03
+Can Lark change data in our ERP?
+04
+How does Lark protect our data?
+Let Lark automate your workflows
+
+Show us where the manual work lives. We’ll map the data, decisions, and controls, then show you how Lark can take it on.
+
+Book a meeting
+
+Specialized AI agents for wholesale distributors.
+
+Product
+How it works
+Security
+FAQ
+Privacy
+Terms
+Y Combinator
+LinkedIn
+
+© 2026 Lark

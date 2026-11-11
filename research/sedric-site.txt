@@ -1,0 +1,75 @@
+Source: https://www.sedric.ai/ (captured 2026-10-18 via browser get_page_text)
+Title: Marketing & Communications Compliance AI | Sedric
+---
+Turn Compliance from a Queue into a Control
+Sedric reviews 100% of your marketing, communications, and partner content against your policies — in seconds, not days.
+Built for banks, fintechs, RIAs and ARM where every campaign is a regulatory decision.
+Book a demo
+Marketing | Communications
+UDAAP | Reg Z | TILA | ECOA | FTC | CFPB | SEC | State Reg. | FINRA | FCA | ESMA | MiFID | MiCA | FDCPA | + More
+Who's it for
+For financial services teams
+Sedric is an AI-powered platform that gives teams in regulated industries real-time guardrails on all of your content.
+Compliance and Risk Teams
+Sedric reviews 100% of customer communications, marketing assets, and partner activity against your policies. Every flag is linked to the underlying regulation, every override is logged with reasoning, and every resolution is exam-ready by design.
+Explore solutions
+Marketing and Creative Teams
+Sedric pre-screens every asset across copy, design, and video against your claims library and brand guidelines the moment it's created. The team gets a clear fix list, and compliance receives work that's already 90% clean. Fewer rounds. More campaigns out the door.
+Explore solutions
+Success Stories
+Built for modern financial institutions
+Proven to increase engagement, unlock new revenue, and grow customer value.
+From sample-based to full coverage: how Libertex rebuilt communications surveillance
+100% Communications coverage (vs. sample-based)
+More collections, fewer pushbacks — ARM case study
+2× Calls per agent, per month
+How Cedar Business Services Improved Compliance, Efficiency, and Agent Performance with Sedric
+100% QA coverage — every call audited, up from samples of about 100 calls per agent
+Policy Manager
+Automated Marketing Content & Communications Compliance
+Sedric ingests and structures your policies, translating them into preventive, detective, and corrective controls, applied through context-aware models that understand content in full.
+Marketing Content Compliance
+Approve faster. Monitor Everything
+Manage marketing compliance end to end, with AI that reviews, monitors, and enforces policies across content, teams, and channels.
+Content review and approval
+Review and approve marketing content before it goes live, with AI that connects marketing and compliance teams through clear, actionable feedback.
+Learn more
+Content monitoring and discovery
+Monitor and discover content across channels, with AI that surfaces risk and keeps compliance teams informed in real time.
+Learn more
+Communications Compliance
+Monitor 100% of Your Communications
+Control every customer interaction.
+Real Time Agent Assist
+Guide agents in real time with AI that prevents violations and improves performance during live interactions.
+Learn more
+Post Call QA
+Automatically review every interaction to detect risk, score performance, and maintain audit-ready records.
+Learn more
+Flexible Integrations
+Power your existing stack with automated AI guardrails
+1. Your integrations - Link your CRM, dialers, and design tools to begin the automated sync.
+2. Your policies - Convert manual procedures into AI controllers and regulatory rails.
+3. Enforcement & remediation - Sedric scans every asset in real-time to flag risks beforehand.
+4. Full visibility - Resolve risks via your native apps or the Dashboard to optimize AI.
+Client stories
+Don't just take our word for it
+Success stories of clients who are using Sedric to automate their compliance processes.
+Alkistis Gkiosi: "After evaluating various compliance solutions, we selected Sedric to optimise our compliance coverage and streamline operational efficiency. Sedric has been instrumental in achieving these objectives by effectively monitoring our affiliates and partners' marketing content, while reducing reliance on manual processes."
+Jonathan Goldberg: "We selected Sedric to optimize our compliance coverage and streamline operational efficiency."
+Multi-jurisdiction
+Stay compliant across every jurisdiction
+Enforce regulatory requirements across regions, states, and regulators with AI trained on your specific policies.
+Maintain consistent standards while adapting to local rules—without adding operational complexity.
+Customized on your policies - Deploy AI models that know your specific brand and rules.
+Built-in regulation libraries - Navigate complex mandates with rules for all markets.
+Ready to turn compliance from a queue into a control?
+See it on your own content and learn how Sedric can solve your specific communications and marketing compliance challenges.
+Book a demo
+115 W 30th St , New York, NY 10001
+Solution Teams: Compliance | Marketing | Experience & Operations
+Product: Marketing Compliance | Partner Content Monitoring | Communication Compliance | Real-Time Agent Assistant
+Platform: AI Technology | Trust Center | Security
+Resources: Compliance Blog | ARM Resources | FCA Compliance | News | Marketing Compliance Playbook
+Industry Focus: Fintechs & Neobanks | Financial Institutions | Crypto | Accounts Receivable Management | Trading & Securities
+© Sedric 2026. All rights reserved.

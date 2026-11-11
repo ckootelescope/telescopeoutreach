@@ -1,0 +1,201 @@
+URL: https://ordana.ai/
+Ordana
+ORDER_IN: email → parsing
+AGENT: extracting SKUs...
+CONFIRMED: 48 line items
+ERP: synced ✓
+ORDER_IN: fax → OCR
+AGENT: resolving items...
+ALERT: substitution needed
+NOTIFY: customer via SMS
+ORDER_IN: phone → voice AI
+AGENT: cart prediction...
+SUGGEST: 3 add-ons
+CONFIRMED: +$340 AOV lift
+ORDER_IN: email → parsing
+AGENT: extracting SKUs...
+CONFIRMED: 48 line items
+ERP: synced ✓
+ORDER_IN: fax → OCR
+AGENT: resolving items...
+ALERT: substitution needed
+NOTIFY: customer via SMS
+
+THE WORLD’S FIRST FULLY AUTONOMOUS ORDER DESK
+Your wholesale order desk,
+run by AI agents
+
+Ordana's AI agents do everything your order desk reps do — read orders, catch exceptions, contact retailers, and close into your ERP. Like having unlimited reps, working every channel, around the clock.
+
+Schedule a Demo →
+See how it works
+EVERY ORDER — OWNED START TO FINISH
+📨
+Order Arrives
+any channel, any format
+🧠
+Agent Takes Over
+reads, validates, decides
+⚡
+Loop Closed
+exceptions resolved, retailer confirmed
+✅
+Order Complete
+written to ERP, done
+4×
+More orders per agent, without adding headcount
+95%
+Decrease in order entry errors
+Zero
+Unanswered order calls
+80%
+Up to 80% reduction in order processing labor
+THE PROBLEM
+Your order desk is a bottleneck you can't hire your way out of
+
+Every order that comes in needs a rep to read it, validate it, chase down exceptions, negotiate substitutions, confirm with the retailer, and key it into the ERP. That's a lot of work per order — and it scales linearly with volume.
+
+⏱️
+Every order needs a human to close it
+Reading, validating, resolving exceptions, confirming back — each step requires a rep's attention before the order can move forward.
+🔄
+Exceptions stall everything
+An out-of-stock item or pricing issue triggers a back-and-forth loop. Orders sit open while reps wait for retailer replies.
+📉
+More volume means more headcount
+The order desk scales linearly with orders. There's no leverage — every new order is more manual work for someone.
+// INCOMING ORDERS — 9:04 AM
+EMAIL
+QuikStop #7 · Marlboro substitution confirmed
+9:02
+PDF
+Garden State C-Store · weekly snack reorder, order closed
+9:03
+PHONE
+Route 9 Express · call handled, Zyn restock confirmed
+9:03
+SMS
+Turnpike Stop · 3 cases Gatorade added, order updated
+9:04
+EDI
+Krauszers Group · item flag resolved, order confirmed
+9:04
+WEB
+NJ Petroleum #12 · portal order confirmed and closed
+9:05
+// All orders processed · 0 pending
+FOUR AGENTS. ONE PLATFORM.
+An order desk that never misses an order
+
+Your best order desk rep reads the order, catches the problem, calls the retailer, and enters it clean. Ordana does exactly that — for every order that comes in, across every channel, at any volume. No training, no turnover, no overtime.
+
+● ORDANA DESK
+Desk Agent
+
+Owns every order from the moment it arrives. Reads it, validates it, catches exceptions, contacts the retailer through their preferred channel to resolve them, and closes it into your ERP. No rep required.
+
+Learn more →
+● ORDANA VOICE
+Voice Agent
+
+Handles inbound phone orders so no call goes unanswered, and makes outbound calls on behalf of Desk when exceptions need a voice. Trained on your catalog, available 24/7.
+
+Learn more →
+● ORDANA PREDICT
+Predict Agent
+
+Pre-builds each retailer's cart from their ordering history before they reach out — surfacing the right products at the right time to increase AOV and speed up every order.
+
+Learn more →
+● ORDANA CHAT
+Chat Agent
+
+Handles ordering over text and chat — embedded on your portal or via SMS. Retailers type naturally, the agent understands intent, places the order, and confirms. No rep needed.
+
+Learn more →
+LIVE IN DAYS, NOT MONTHS.
+Not an implementation project. A deployment.
+DAY 1
+01
+Fast Integration
+Pre-built ERP connectors. Catalog synced, agents trained on your products, every order channel connected.
+DAY 3
+02
+Live Across Channels
+Every order channel active — email, fax, PDF, SMS, phone, EDI, web portal. Orders from any source captured, validated, and closing into your ERP.
+DAY 30
+03
+Measurable ROI
+Operational burden measurably reduced. Order desk capacity freed up. The numbers are there to show your leadership.
+ONGOING
+∞
+Scales With You
+Volume spikes, new accounts, new channels — Ordana absorbs it all. Your team stays focused on relationships, not order processing.
+DATA & TRUST
+Your data stays yours.
+Full stop.
+
+We built Ordana the way we'd want a vendor to treat our own data. No exceptions, no fine print.
+
+🔒
+Isolated by design
+Your order data, your retailer relationships, your pricing — never shared with or used to benefit another distributor.
+🌍
+GDPR standards
+We operate to GDPR standards regardless of where you're based — transparent data handling, documented practices, no surprises.
+🚫
+Your data never trains for others
+Your customer list, product catalog, and pricing are never used to improve outcomes for another distributor. The system improves overall — but nothing specific to you can be extracted or shared.
+📦
+Clean exit, always
+If you ever leave, your data leaves with you. We delete what we hold and don't retain anything after the relationship ends.
+WHY ORDANA WINS
+Built for distributors.
+Not adapted for them.
+4×
+More orders per agent
+Handle 4× the order volume without adding headcount. A productivity multiplier, not just an automation tool.
+Zero
+Retailer behavior change
+Retailers order the way they always have. Ordana captures it all — no new portals or processes for your customers.
+Any
+ERP, natively connected
+Pre-built connectors for major distribution ERPs. Your data stays in your system — Ordana is the intelligence layer on top.
+READY TO AUTOMATE YOUR ORDER DESK?
+See Ordana running on your orders
+
+A 30-minute demo using your actual order channels. We'll show you exactly how Ordana handles your exception types and integrates with your ERP.
+
+Schedule a Demo →
+Explore the Agents
+
+First automated order typically within 24 hours of go-live
+
+Ordana
+
+AI agents running wholesale ordering. Four agents, every channel, directly into your ERP.
+
+AGENTS
+Ordana Desk
+Ordana Voice
+Ordana Predict
+Ordana Chat
+RESOURCES
+News & Articles
+Events
+Industry Insights
+FAQ
+Industries
+Glossary
+For Order Desk Teams
+Integrations & Protocols
+API Documentation
+COMPANY
+About Us
+Contact Us
+Schedule a Demo
+
+© 2026 Ordana. All Rights Reserved.
+
+Terms & Conditions
+Privacy Policy

@@ -1,0 +1,35 @@
+Panels
+Home | Contact | Work 01 | About 02 | Contact 03 | Instagram | X | YouTube
+We power the next generation of Voice AI
+Panels helps voice teams get the data they need to build and ship better audio models faster.
+We create high-quality audio datasets for training and evaluation, working closely with frontier voice labs and early-stage startups to curate data that matches the needs of each team.
+If you're building the next generation of Voice AI, explore what Panels can do and see what production-ready data actually looks like.
+Our Data
+High-Quality Speaker-Separated Audio
+Our proprietary, large-scale multilingual dataset featuring speaker-separated audio across diverse topic domains.
+Single Speaker Scripted
+Single speaker audio covering a range of diverse recording environments.
+Turn Taking Evaluation
+Multilingual dataset for evaluating human-agent turn taking models across task-driven real-world scenarios
+Design Your Own
+Interested in other data? Let us know your needs.
+Process
+01 Research
+We start by understanding what you're building, how the model will be used, and where data quality matters most. From there, we define target use cases, speakers, environments, and edge cases, and translate them into clear dataset requirements and acceptance criteria.
+02 Collect
+Next, we execute the plan with end-to-end collection and production handled in-house. We collect audio to match your spec, then run rigorous QA, transcription, and review to ensure consistency and reliability. We share checkpoints and samples along the way so you can validate direction early and iterate quickly before scaling.
+03 Iterate
+Once the core dataset is delivering value, we help you grow coverage and performance over time. We identify gaps from model results and real-world feedback, then expand into new accents, noise conditions, domains, and long-tail scenarios. Each dataset evolves alongside your product and keeps getting more useful with every release.
+Q&A
+Who do you typically work with?
+We collaborate with Voice AI companies of all shapes and sizes. Whether your a new startup or a large lab, we're happy to explore how our audio data can help fill your needs.
+Can I request samples?
+Yes! We offer samples for all of our off-the-shelf datasets. For bespoke projects, samples are typically delivered within two weeks.
+Do you offer exclusive audio datasets?
+Yes, audio data can be purchased alognside exclusivity rights. For more information, please reach out regarding your specfic use case.
+Pages: Home | Work | Contact
+Socials: LinkedIn | X
+Love
+Y Combinator
+Panels
+(c) 2026 Panels Research, Inc. All rights reserved.

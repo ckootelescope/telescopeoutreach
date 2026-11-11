@@ -1,0 +1,191 @@
+URL: https://forgepoint.ai/
+Skip to main content
+Forgepoint
+The AI revenue engine
+for manufacturers
+
+Frank is an AI Inside Sales Rep that gathers requirements, builds accurate quotes, and responds before your competitors even open the RFQ.
+
+Request Demo
+→
+BACKED BY
+▶
+Meet Frank: your Inside Sales Rep that works 24/7.
+01
+Qualify
+Acknowledges new RFQs 24/7 and chases missing specs
+02
+Quote
+Prices each part based on your cost model and sends to humans for approval
+03
+Close
+Sends polished quote document to your customer and follows up automatically
+04
+Track
+Logs every email, attachment, and action in your CRM and ERP
+ND
+Nick Douglas
+Powell Pump Co.
+New RFQ
+RFQ - Impeller MP-4402, qty 500
+
+Prints and models attached - to be quoted in A395. Need pricing by Friday.
+
+MP-4402_print.pdf
+MP-4402.stp
+assembly.pdf
+housing_print.pdf
+?
+spec_sheet.pdf
+F
+Frank is reviewing 5 attachments…
+Parsed 5 attachments - 1 question for the customer
+MP-4402_print.pdf
+Material: ASTM A536
+Email - Nick Douglas
+“... to be quoted in A395”
+F
+Frank
+to nick@powellpump.com
+Send
+Sent
+
+Two quick things: we're missing the model for the housing, and your print shows ASTM A536 but the email says A395 - which is correct?
+
+Give your shop a memory...
+
+Decades of quotes, prints, and judgement live in shared drives, inboxes, and your best people's heads. Frank remembers all of it — and puts it to work on the next job.
+
+Quote_2019_rev3.pdf
+Scanned quote archive
+pricing_master_v14.xlsx
+The spreadsheet that runs the shop
+bracket_housing.step
+3D models & revisions
+Housing — sheet 2 of 4
+2D prints & tolerances
+RE: RE: FW: pricing?
+15 years of email threads
+Heat #4471 certs
+Material test reports
+Mike approved 12% margin
+Actions your people take
+No-quote jobs under $2K
+Decisions & rules of thumb
+Job history — 22,000 orders
+What you actually charged
+Vendor quote — castings
+Supplier pricing history
+...then ask it anything
+Find me likes for this part
+impeller_rev2.step
+F
+
+Found 4 impellers you've made before:
+
+P/N 4482-C
+96% match · $1,240
+
+P/N 3910-B
+92% match · $1,410
+
+P/N 5522-A
+89% match · $980
+
+P/N 2278-D
+83% match · $620
+
+Show me jobs we've run for Powell last 5 years
+F
+
+We've won 17 jobs from Powell out of 63 bids over the past 5 years — $486K total. Here they are:
+
+Impeller run — qty 40
+Mar 2026
+$64,200
+Shaft sleeves — qty 120
+Nov 2025
+$38,900
+Casing halves — qty 12
+Jun 2025
+$52,750
+Wear rings — qty 200
+Feb 2025
+$27,300
++ 13 more jobs
+2021–2024
+What's our historical A276 pricing?
+F
+
+Your PO history is up 18% since July 2024 — from $2.84 to $3.35/lb, with a spike last fall:
+
+$3.50
+$3.15
+$2.80
+$3.35/lb
+Jul '24
+Jul '25
+Jul '26
+Forged in real shops.
+NEXT UP
+SIP Manufacturing × Forgepoint
+Watch the case study
+Measured where it matters.
+91%
+
+Faster quote turnaround
+
+vs. manual process
+40+
+
+Hours saved per rep
+
+every single month
+<30
+
+Days to go live
+
+with full integration
+Works with what you already run.
+
+No rip-and-replace, no six-month implementation. Frank works with the systems you already use: your inbox, your spreadsheets, your CRM, and your ERP.
+
++50 more integrations
+
+✓
+SOC 2 Type II certified
+✓
+Encrypted at rest and in transit
+✓
+Never used to train models for anyone else's shop
+✓
+You control what Frank sees — delete anytime
+Enterprise-grade security.
+
+Your quotes, pricing, and customer history stay yours. Frank works inside your walls, not on top of them.
+
+How we handle security
+→
+Stop losing jobs to faster competitors.
+
+Book a 15 minute demo to see how Forgepoint can help you respond faster and win more jobs. No commitment required.
+
+Request Demo
+Forgepoint
+
+AI Inside Sales Rep for Manufacturers. Quote faster. Win more deals.
+
+SOC 2 Type II Certified
+Product
+Integrations
+Security
+Insights
+Company
+Book a Demo
+Contact
+LinkedIn
+X (Twitter)
+Careers
+© 2026 Forgepoint Inc. All rights reserved.
+Proudly made in the USA
+Terms of Service

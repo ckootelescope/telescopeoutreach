@@ -1,0 +1,184 @@
+URL: https://www.hymeai.com/
+Sales
+Finance
+Purchasing
+Request Demo
+The AI platform for manufacturers and distributors
+
+Grow with less. Automate work across sales, purchasing, and finance so your team focuses on customers, not admin.
+
+Request Demo
+Order Entry
+Matching 4 line items...
+Ask about customers, products...
+What Hyme AI Solves
+
+SALES
+
+Order Entry
+
+Automate quotation and order processing.
+
+Learn more →
+
+PRODUCT MATCHES
+Sent to ERP
+
+Pneumatic Cylinder 25mm
+
+SMC-CD85N25-50
+
+x4
+$87.40
+
+ISO Cylinder 50mm Bore
+
+FES-DSBC-50-100
+
+x2
+$214.50
+
+Solenoid Valve 24VDC
+
+SMC-SY5120-5LZ
+
+x6
+$62.30
+
+Pressure Regulator 1/2"
+
+SMC-AR40-04
+
+x3
+$45.80
+
+SALES
+
+Sales Intelligence
+
+Proactive insight to help reps sell more effectively.
+
+Learn more →
+
+Hyme Chat
+Give me a brief for my call with Western Industrial
+
+Pre-call brief:
+
+Last order: 34 days ago — $12,400
+Open: 2 backorders, ETA next week
+At risk: Revenue down 57%
+Bring up: SMC SY series
+
+FINANCE
+
+AP Automation
+
+Match supplier invoices and receipts to POs.
+
+Learn more →
+
+Invoice Match INV-78432 → PO-48329
+ITEM
+INVOICE
+PO
+STATUS
+Pneumatic Cylinder 25mm
+$349.60
+$349.60
+Match
+ISO Cylinder 50mm
+$429.00
+$429.00
+Match
+Solenoid Valve 24VDC
+$390.00
+$373.80
+Exception
+Pressure Regulator
+$137.40
+$137.40
+Match
+3 matched · 1 exception
+Posted to ERP
+
+PURCHASING
+
+PO Tracking
+
+Automate PO and shipment processing.
+
+Learn more →
+
+PO Tracker
+3 orders tracked
+PO-48329SMC Corp.
+Received
+PO-48331Festo AG
+Shipped
+PO-48335Parker
+Acknowledged
+Auto-synced with ERP
+Co-developed with industry veterans.
+
+AI that is trained for the complexities in your industry. We serve manufacturers & distributors across:
+
+Electrical
+Plumbing
+HVAC
+Building Materials
+Industrial
+Mechanical
+What Our Customers Say
+
+“We went from two people using Hyme to twenty-five. The results speak for themselves.”
+
+Bart Cayce
+
+Cayce Mill Supply
+
+“We run all our orders through Hyme AI across all our teams. The speed difference compared to our ERP is night and day.”
+
+Tessa Beelow
+
+Light Efficient Design
+
+“Hyme AI operate as a true delivery partner - responsive, aligned to our business model, and consistently advancing their capabilities to meet our evolving needs and expectations.”
+
+James Howlett
+
+BEW Electrical Distributors
+
+We implement in days and deliver value within a month.
+
+Seamless integrations to key industry solutions, including:
+
++ more
+
+Ready to grow your business with less?
+
+See how Hyme can automate the work your team shouldn't be doing.
+
+Get in Touch
+
+© 2026 Hyme Software, Inc.
+
+SOLUTIONS
+Sales
+Finance
+Purchasing
+CONTACT
+
+Hyme Software, Inc.
+
+1111b South Governors Ave
+
+STE 28360, Dover, DE 19904
+
+pn@hymeai.com
+
++1 (302) 237-6402
+
+LEGAL
+Privacy Policy
+Terms of Service

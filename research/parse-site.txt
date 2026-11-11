@@ -1,0 +1,55 @@
+The API for the entire internet
+3,979 live APIs — built from a sentence, kept alive automatically, and growing every time anyone asks for more.
+VS. BROWSER AGENTS
+One call instead of a hundred clicks.
+A browser agent does a task by driving a real browser — clicking, typing, waiting, solving captchas — slow, expensive, and it breaks the moment the page moves. Parse turns any action on any website — search, book, fill a form, log in, buy — into a single typed API call, with no browser running at all.
+The same task — hundreds of times faster and cheaper, and it doesn't break when the page changes.
+BUILD ANYTHING
+Not in the catalog?
+Describe it. URL in, API out.
+Paste any URL and say what you want — read data or take actions. Our agent ships a private, typed REST API — and an MCP server — in about a minute. Call it from code, or drop it straight into Claude, Cursor, or any agent. No SDK, no config, no YAML.
+turn an insurance quote site into an API — submit a driver profile, get rates back
+same endpoint over HTTP, or as an MCP tool in Claude, Cursor & any agent.
+LOW LATENCY NO BROWSERS REST + MCP TYPED JSON SELF-HEALING
+ACT
+POST endpoints that do things on the web for you or your agent.
+Book flights & hotels Search availability, compare, complete the booking.
+Fill out forms Applications, registrations, multi-step flows — one call.
+Make reservations Restaurants, appointments, time slots, any booking flow.
+READ
+GET endpoints that turn any page into structured, typed JSON.
+Real-time pricing Amazon, airlines, competitors — updated on every call.
+Search & aggregate Job boards, listings, menus become your database.
+Monitor anything Inventory, price drops, new listings, on any schedule.
+WHY PARSE
+Skip the browser. Go 100× faster.
+Other tools run a real browser for every request — loading the page, clicking, scrolling, filling forms, and waiting for it all to render. Parse talks straight to the network calls underneath, so reading data or taking an action takes milliseconds, not seconds.
+~100× faster — no headless browser, just the network layer.
+No browser means nothing to click, scroll, or type into — and no page to wait for. Every call, read or action, hits the network directly and returns in milliseconds.
+Nothing to manage
+Proxies, captcha-solving, rotation, retries, antibot — all hosted, all handled on our side. No infrastructure to stand up or pay for. Just an API key and a URL.
+Always improving
+Thousands of pre-built APIs, free to fork and contribute. Every improvement anyone pushes flows to everyone on it — so each API only gets more capable over time.
+RELIABILITY
+APIs that fix themselves.
+The usual knock on scraping a site you don't own is that it breaks the moment the site changes. Parse APIs are managed and monitored: they test themselves, and when a source site shifts underneath them, they repair and re-verify — automatically.
+Every endpoint is health-checked on a schedule with automated test probes — no babysitting on your side.
+When the source site changes and a probe fails, the break is caught automatically — usually before you ever call it.
+The agent that built the API re-reads the live site and patches the endpoint, then the fix flows to everyone on the shared API.
+The repair is re-tested against the live site before it ships, and the API stamps a fresh "last verified" you can see.
+And when you need something new, you don't wait on us — describe it in a sentence and the agent builds the endpoint into the API in minutes.
+MARKETPLACE
+Fork anything. Improve everything.
+Thousands of APIs are already built and free to call. Fork any one to make it yours, push improvements back to the catalog, and every upgrade flows to everyone on it — so the whole internet keeps getting more capable, together.
+Browse thousands of public APIs. Subscribing is an instant clone — no agent run, no credits. Call it right away.
+Want different endpoints, fields, or behavior? Fork it and change anything. The original stays untouched.
+Push your changes to the public canonical. It's free — because the whole catalog gets better every time someone does.
+Every revision anyone ships is shared. Pull the latest in one click and your API keeps pace with the site — and keeps gaining features.
+Every improvement flows to everyone on it — so each API just keeps getting better.
+Most tools drive a real headless browser — booting Chromium, rendering JavaScript, and tearing it all down on every call. We skip all of that and talk directly to the network layer a site's own frontend uses, so a request comes back in milliseconds instead of seconds.
+Authenticated APIs — logging into portals, dashboards, and CRMs to read data or take actions — are in early beta for paid plans, with robust auth flows.
+Both. GET endpoints turn any page into typed JSON. POST endpoints take actions — log into portals, fill out forms, complete bookings — and return whatever comes back, including data behind a login.
+We handle all of it. Proxy rotation, captcha-solving, retries, and antibot handling are hosted on our side. You never configure or pay for infrastructure — you just call the endpoint and we keep it working.
+It's built not to. Every API is continuously health-checked with automated test probes. When a site changes and a check fails, the API is automatically queued for repair and re-verified — that's the self-healing layer — and because APIs are shared, the fix reaches everyone on it.
+The internet is an API.
+YC launch: Headless browsers are the default for web scraping and automation, but they're painfully slow and unreliable at scale. Repeat tasks become absurdly expensive at scale due to the cost of managing hundreds of concurrent browsers.

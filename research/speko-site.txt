@@ -1,0 +1,48 @@
+Source: https://speko.ai/ (captured 2026-10-18 via browser get_page_text; long model-ranking tables condensed)
+Title: The router for voice models | Speko
+
+Backed by Y Combinator
+
+The Router for Voice AI
+Every speech model, benchmarked language by language, wired into one API.
+Get API key | Onboard your agent
+
+Router
+A hosted, provider-neutral STT, LLM and TTS data plane at router.speko.dev, with typed contracts and managed routing.
+
+Benchmark coverage by language (Speech-to-text / Text-to-speech)
+Languages: EN ES DE FR AR FIL NB HI TA TE KO ZH JA TH LT ID SW
+[Table of 38 STT models incl. deepgram:nova-3, soniox:stt-rt-v5, OpenAI GPT-4o Transcribe, cartesia:ink-whisper, google:chirp_3, Alibaba Qwen3-ASR, xai:grok-stt, assemblyai:universal-3-5-pro, ElevenLabs Scribe v2, Gladia Solaria-1, Smallest AI Pulse Pro, modulate velma-2, azure MAI-Transcribe-2, fish transcribe-1, gemini-3.5-transcribe, OpenAI Whisper-1, meta muse-voice-transcribe-1.0, Groq Whisper Large v3, Hamsa S3, munsit, nari qwen3-asr ...]
+Example: smallest:pulse - English - rank 12 - 5.1% WER / batch
+
+10 of 53 are only measured in English
+Their rank in any other language is unknown - including the model that sits at the top of the English table.
+
+4 different models win across 17 languages
+No single model is best everywhere, so the right pick changes with the language your users speak.
+
+Score against cost, per stage
+Speech-to-text | LLM | Text-to-speech | Speech-to-speech
+Accuracy (WER, conversational) vs Finalize (ms, p50)
+[Table excerpt] Qwen3-ASR Fast 12.0% 33ms; Qwen3-ASR 12.0% 25ms; Qwen3-ASR Realtime 12.2% 889ms; Scribe v2 Realtime 12.5% 1.75s; Gemini 3.5 Transcribe Live 13.1% 1.28s; GPT Live Transcribe 13.5% 620ms; Grok Voice Transcribe 1.0 13.7% 1.13s; Universal-3.6 Pro 13.7% 505ms; Muse Voice Transcribe 14.2%; Velma 2 14.4% 1.21s; Pulse 14.5% 839ms; Universal-3.5 Pro 14.5% 408ms; stt-rt-v5 16.6% 340ms; Ink-2 16.7% 587ms; GPT Realtime Whisper 16.8% 1.14s; GPT Transcribe 16.8% 817ms; Nova-3 17.0% 189ms; Chirp 3 18.4%; Flux 19.7% 712ms; GPT-4o-mini Transcribe 20.6% 822ms; flux-general-multi 21.4% 854ms; Gradium ASR 24.2% 1.13s; (32 models total)
+
+Gateway
+The open customer-side runtime for LiveKit and Pipecat: provider-direct streaming, local BYOK credentials and optional Speko-managed routes.
+
+Run and observe your voice workers
+Use the native Gateway integrations in your framework, or call the hosted Router through its public OpenAPI and AsyncAPI contracts.
+LiveKit (Python): Native Gateway services for provider-direct voice and a managed Router LLM.
+Pipecat (Python)
+Claude / Cursor (MCP)
+
+from livekit.agents import AgentSession
+from speko_gateway.livekit import LLM, STT, TTS
+session = AgentSession(
+    stt=STT(credential_source="auto"),
+    llm=LLM(model="auto", objective="balanced"),
+    tts=TTS(credential_source="auto"),
+)
+
+Point your agent at Speko
+$ claude mcp add --transport http speko https://mcp.speko.ai/mcp
+Read the docs | Get API key

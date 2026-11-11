@@ -1,0 +1,388 @@
+Source: https://www.usesyntro.com/
+Captured: 2026-10-17
+
+Meet Us at the American Automotive Summit, Booth #31 in Detroit, MI on September 15-16
+Procure
+hardware
+at the speed
+of AI
+
+Syntro automatically discovers, selects, and manages component suppliers, from prototype to production, for every hardware manufacturer in the world
+
+Book a Demo
+BACKED BY
++
+New order
+Dashboard
+Workflow
+Quotes
+Purchase orders
+Build plan
+Review
+Library
+Insights
+Quotes
+›
+Leftover sheet metal quotes July 26
+Parker Matthews
+Admin
+✓
+Review
+47 lines confirmed
+✓
+Award
+8 parts · 3 suppliers
+3
+Analysis
+ready to issue
+Award analysis
+Share with supplier
+Export to ERP
+Issue PO
+Syntro agent
+4
+supplier documents read
+→
+47
+quote lines parsed
+→
+62
+tier combinations priced
+→
+8
+awards recommended
+4 min
+last quote 2:14pm · ready 2:18pm
+AWARDED BASKET
+$118,290
+VS. NEXT-BEST BID
+−$23,109
+VS. MAR 26 ROUND
+−$3,322
+LEFT ON THE TABLE
+$0
+Consolidated award
+8 parts · 3 suppliers
+PART
+SUPPLIER
+QTY
+EXTENDED
+VS. NEXT
+EVAP Housing
+18261 · 120 ea
+Kestrel Metalworks
+120
+$40,582
+−$9,283
+Screen, HVAC Return
+18727 · 120 ea
+Halstead Fabrication
+250
+$4,350
+−$1,270
+Denest Well Subassy
+18162 · 40 ea
+Halstead Fabrication
+40
+$54,856
+−$11,838
+Sheet Mtl Bracket, LH
+18904 · 40 ea
+Northgate Precision
+40
+$4,786
+—
+Cover, Access Panel
+18990 · 200 ea
+Kestrel Metalworks
+250
+$3,150
+−$300
+Gasket, EVAP
+19004 · 120 ea
+Halstead Fabrication
+500
+$2,100
+—
+Sheet Mtl Bracket, RH
+18905 · 40 ea
+Northgate Precision
+40
+$4,786
+—
+Rivet Nut Plate
+19210 · 760 ea
+Kestrel Metalworks
+1000
+$3,680
+−$418
+Total
+$118,290
+−$23,109
+Price spread per part
+negotiation headroom
+Denest Well Subassy
+50%
+EVAP Housing
+47%
+Screen, HVAC Return
+42%
+Rivet Nut Plate
+29%
+Cover, Access Panel
+19%
+Sheet Mtl Bracket, LH
+single
+Sheet Mtl Bracket, RH
+single
+Gasket, EVAP
+single
+Spend vs. previous rounds
+same BOM
+$105k
+Jun 25
+$118k
+Jan 26
+$122k
+Mar 26
+$118k
+This round
+“Sourcing a full machine used to take 60 hours. With Syntro, it’s 6 and we tested a new supplier and still cut that part’s cost in half”
+Alex
+SUPPLY CHAIN MANAGER, FOOD ROBOTICS COMPANY
+60 → 6
+HRS TO SOURCE A MACHINE
+“Within week one, Syntro caught 2 design revisions that would’ve broken live POs, saving us $20K in rework. This is the fastest speed to value I have seen of any vendor”
+Brian
+HEAD OF MANUFACTURING, HUMANOID ROBOTICS COMPANY
+$20K
+SAVED IN REWORK
+Autonomous capabilities
+for the entire hardware lifecycle
+01
+Find Every Source
+
+Autonomously scan global supplier websites and catalogs to surface qualified sources for every part
+
+DISCOVER
+02
+Evaluate Quotes Automatically
+
+Normalize and benchmark every bid against live supplier performance data and should-cost models, automating quote requests, evaluation, and supplier negotiation preparation
+
+SELECT
+03
+Manage POs 24/7
+
+Agents work supplier accounts 24/7, issuing POs, chasing confirmations, and automating routine purchasing
+
+EXECUTE
+04
+Monitor BOMs continuously
+
+Monitor BOM and supply base continuously, flagging changes, obsolescence, and performance shifts, then surfacing verified alternatives and triggering re-quotes automatically
+
+ADAPT
+Connect your stack and Syntro picks up the context
+
+Activate out of the box integrations instantly or let us build a custom integration for you
+
+Collaboration
+Office 365
+ERP
+PLM
+Teamcenter
+Windchill
+PLM
+Fusion Cloud PLM
+MES
+First Resonance
+Built for outcomes
+3x
+Speed
+
+Ship hardware sooner at lower BOM cost
+
+10x
+Scale
+
+More categories, more suppliers, more spend covered with 0 new hires
+
+15%+
+Savings
+
+Cut admin time to zero and find savings on parts of the BOM no buyer had time for
+
+<72 hours
+Setup
+
+Speed to value in days, not weeks or quarters
+
+Built for every hardware stage
+STAGE 01
+New Product Introduction
+
+Launch RFQs the instant a BOM is drafted, and keep finding compatible parts as the design evolves
+
+01
+STAGE 02
+Scaling Production
+
+Automatically re-quote and multi-source as volumes climb, so a single supplier hiccup doesn’t stall the ramp
+
+02
+STAGE 03
+Mass Production
+
+Flag delay risk on open POs before it hits the line, and catch price creep before it hits margin
+
+03
+STAGE 04
+End of Life
+
+Track every component’s lifecycle before your supplier tells you and have its replacement already sourced
+
+04
+Built for every industry
+Robotics & Automation
+
+Autonomous systems and precision hardware sourcing.
+
+Actuators
+Sensors
+Power systems
+Automotive
+
+EV and legacy component supply chains.
+
+Powertrain
+Electronics
+Safety
+Consumer Electronics
+
+Fast-moving component procurement.
+
+Displays
+PCBA
+Batteries
+Semiconductors
+
+High-volume silicon and wafer procurement.
+
+Wafers
+Packaging
+IP Cores
+Aerospace & Defense
+
+Flight-critical parts with full traceability and compliance.
+
+Avionics
+Machined parts
+ITAR
+Industrials
+
+Heavy equipment and industrial component sourcing.
+
+Castings
+Hydraulics
+Fabrication
+MedTech
+
+Regulated device components with documented quality.
+
+ISO 13485
+Precision parts
+Electronics
+Energy
+
+Components for power generation, storage, and grid.
+
+Batteries
+Inverters
+Turbines
+Robotics & Automation
+
+Autonomous systems and precision hardware sourcing.
+
+Actuators
+Sensors
+Power systems
+Automotive
+
+EV and legacy component supply chains.
+
+Powertrain
+Electronics
+Safety
+Consumer Electronics
+
+Fast-moving component procurement.
+
+Displays
+PCBA
+Batteries
+Semiconductors
+
+High-volume silicon and wafer procurement.
+
+Wafers
+Packaging
+IP Cores
+Aerospace & Defense
+
+Flight-critical parts with full traceability and compliance.
+
+Avionics
+Machined parts
+ITAR
+Industrials
+
+Heavy equipment and industrial component sourcing.
+
+Castings
+Hydraulics
+Fabrication
+MedTech
+
+Regulated device components with documented quality.
+
+ISO 13485
+Precision parts
+Electronics
+Energy
+
+Components for power generation, storage, and grid.
+
+Batteries
+Inverters
+Turbines
+Built for enterprise grade security
+SOC2 Certified
+Supports CUI & ITAR
+FedRAMP Infrastructure
+Hosted in GovCloud
+Your suppliers are waiting
+Your agents are ready
+
+What are you waiting for?
+
+Book a Demo
+
+Procure hardware at the speed of AI
+
+Home
+About
+Customers
+Careers
+Privacy
+Terms of Service
+Book a Demo
+SOC II
+ISO 27001
+IP
+ITAR
+IP
+hello@usesyntro.com
+© 2026 Syntro Inc. All Rights Reserved
+Born in Palo Alto, CA
+Syntro

@@ -1,0 +1,186 @@
+URL: https://nurona.ai/
+NURONA
+
+AI AGENTS FOR EXTERNAL OPERATIONS
+
+Automate the Work Your ERP Doesn’t
+
+Nurona connects to your existing ERP, TMS, WMS, email and documents to automate billing, order processing, supply-chain planning and logistics workflows—reducing manual work, processing time and operational cost.
+
+Deploy in weeks around your existing business rules and systems. No ERP replacement or multi-year transformation.
+
+See Nurona in Action
+Explore Workflows
+
+Live with freight brokers, distributors and manufacturers. 82% of documents processed with zero human touches.
+
+Agent activity
+Live
+DOCUMENT · VENDOR
+Read a vendor invoice, matched it to the PO, posted it to the ERP
+SMS · SUPPLIER
+Answered "where's my payment?" with the sent date and amount
+EMAIL · CUSTOMER
+Read a quote request and sent pricing back in minutes
+HELD FOR REVIEW
+Bank-detail change requested by email. Payment paused, owner notified.
+Works across every channel and format
+Email
+SMS
+WhatsApp
+Voice
+PDFs & scans
+ERP · TMS · CRM
+Your systems are digital. The work around them isn't.
+
+Orders arrive as PDFs. Invoices come in as attachments. Suppliers call to ask where their payment is. Your team retypes, checks, chases and replies, all day. It's slow, error-prone, and it only scales with headcount.
+
+20+ hrs
+per week your ops team spends on manual data entry
+5 days
+average delay caused by missing or mismatched documents
+40%
+of inbound calls and emails are simple status questions
+
+WHAT NURONA DOES
+
+One AI workforce for documents, processing and communication.
+Read anything
+
+Invoices, POs, delivery proofs, quote requests, contracts, scans and email attachments. Nurona extracts, classifies and validates them in any format, no templates needed.
+
+Do the work
+
+Match documents to orders, flag mismatches, create bills and payables, update your ERP, TMS or CRM, and route exceptions to the right person.
+
+Talk to everyone
+
+Agents answer and follow up with customers, vendors and suppliers over email, SMS, WhatsApp and voice, in multiple languages, using your live data.
+
+HOW IT WORKS
+
+Live in weeks, not quarters.
+01
+Connect
+
+Plug into your inbox, phone lines and systems of record. No rip-and-replace.
+
+02
+Set your rules
+
+Describe how your business works in plain English. Nurona turns it into agents with guardrails and approvals.
+
+03
+Go live and improve
+
+Test on your real history first, then launch. Every action is traced, and agents get better with each correction.
+
+USE CASES
+
+Built for the work your team does every day.
+Order-to-cash and billing
+
+Check delivery documents, build invoices and get paid faster with zero-touch billing.
+
+Accounts payable
+
+Capture vendor invoices, match them to orders and answer payment questions automatically.
+
+Quotes and RFQs
+
+Read incoming requests and send accurate quotes in minutes, not hours.
+
+Customer and vendor support
+
+Answer status, order and payment questions around the clock over SMS, email and voice.
+
+Document intake
+
+Turn any inbound document into clean, validated data in your systems.
+
+Recruiting
+
+Screen, interview and schedule high-volume candidates, then hand the best matches to your recruiters.
+
+Explore Talmyra →
+Have a different workflow?
+Tell us about it
+Used across
+Logistics
+Manufacturing
+Distribution
+Healthcare
+Professional services
+
+WHY NURONA
+
+AI that takes action, safely.
+
+Most AI tools answer questions. Nurona closes the loop, with controls your finance and ops leaders trust.
+
+Acts, not just answers
+
+Updates your systems and finishes the task instead of handing it back.
+
+Works outside your walls
+
+Built for conversations with customers, vendors and suppliers, not only internal teams.
+
+Guardrails you control
+
+Approval limits, sender verification and redaction are enforced in code, not left to the model.
+
+Every action explained
+
+A full trace of what the agent read, decided and did, ready for audit.
+
+Fast to launch
+
+Weeks, not months, with no army of consultants required.
+
+CUSTOMER STORIES
+
+Different industries. Same back-office pain.
+US FREIGHT BROKER
+"Our billing team used to spend every morning chasing delivery paperwork. Now invoices go out the day a load delivers, and carriers stopped calling us about payments."
+CFO
+70% less time spent on billing
+3 days faster from delivery to invoice
+600+ payment questions answered by AI each month
+MEDICAL DEVICE MANUFACTURER
+"Supplier confirmations, certificates and POs used to live in a dozen inboxes. Nurona reads them, updates our ERP and flags only what needs a human."
+VP of Supply Chain
+85% of supplier documents processed automatically
+Same day PO confirmations, down from 2 days
+15 hrs saved per buyer every week
+HARDWARE DISTRIBUTOR, EUROPE
+"We're a team of twelve. Nurona handles quotes and order questions in three languages, so we compete with distributors ten times our size."
+CEO
+10 min quote turnaround, down from 4 hours
+45% fewer order-status emails reaching the team
+3 languages handled by one AI agent
+Give your team its time back.
+
+Send us a week of your real documents. We'll show you what Nurona automates, before you sign anything.
+
+Book a demo
+NURONA
+
+AI for companies that make, move, and get paid.
+
+LINKS
+Home
+Solutions
+Platform
+About Us
+Case Studies
+PRODUCTS
+Plantryx
+Talmyra
+Book a Workflow Assessment
+LET'S KEEP IN TOUCH
+Submit
+
+© 2026 Nurona, Inc. All rights reserved.
+
+Privacy Policy

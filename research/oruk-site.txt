@@ -1,0 +1,84 @@
+Source: https://oruk.ai/ (captured 2026-10-18 via browser get_page_text)
+Title: oruk - Speech understanding API
+
+Oruk Resonance 2 is now in preview.
+Apply for early access
+
+Hear what the transcript misses.
+Speech understanding models for transcription and vocal delivery. Choose a model for recorded audio or live speech, with language support and outputs that vary by model.
+Try the demo | Get an API key
+
+BACKED BY [a16z speedrun, NVIDIA Inception - per logos]
+RESEARCH BACKGROUNDS [Stanford, Berkeley, Cambridge - per logos]
+
+try Spectra-2
+r u ok?
+understand how things are said
+Hear the difference
+
+For products that listen.
+Voice agents | Contact centers | Sales teams | Hardware & robotics | Media & captions | Meetings & research | Games & experiences | Developer platforms
+
+Give your agent a better ear.
+Let your agent pick up on hesitation, frustration, or excitement, then use that context to shape its response.
+Phrase-level emotion | Conversation review | Response design
+Explore live speech
+Caller: "I'm not sure what to do next." - worried, hesitant
+Make room for a clearer explanation.
+Illustrative workflow
+
+Research highlights
+- Experiment, Sep 11, 2026: Orukeet: a new shape for speech recognition. An open speech model for 25 languages, with fitted Gabor filters.
+- Literature review, Sep 24, 2026: A voice. Many meanings. Small differences in speech acquire meaning within communities.
+- Experiment, Sep 22, 2026: Making Orukeet twice as fast. A faster Orukeet offshoot, with the accuracy tradeoff measured.
+- Explainer, Sep 9, 2026: How a quantum memory learns what to connect.
+- Experiment, Sep 6, 2026: We taught a fruit fly to hear human emotion. A speech model built from 499 fruit fly neurons.
+- Experiment, Jul 9, 2026: Speech models learn physics. Six speech systems learn the same filter shape, predicted by signal theory.
+- Experiment, Jul 20, 2026: The shape of a voice. Speech models organize voices into shapes you can explore in 3-D.
+- Experiment, Aug 10, 2026: Universal, with an accent. Emotion structure transfers across languages, with a measurable gap.
+- Experiment, Oct 1, 2026: What is tone of voice? Pitch, texture and timing contribute to overlapping impressions of a voice.
+- Explainer, Sep 25, 2026: Speech models meet handwritten math.
+
+More audio. Less spend.
+Prices in USD. Included minutes reset monthly.
+Hobby $9/month - Speech understanding 250 min/month; Transcription (Orukeet) 20,000 min/month; 7-day free trial
+Builder (Recommended) $49/month - Speech understanding 2,500 min/month; Transcription ~109,000 min/month; 7-day free trial
+Production $199/month - Speech understanding 20,000 min/month; Transcription ~442,000 min/month; 7-day free trial
+Enterprise - Contact us; custom; Schedule a 30-minute call
+Now serving: Resonance 2 - emotion and style on existing plans; new organizations need separate approval.
+
+Benchmarks
+Oruk at the top of the evaluations below.
+Independently benchmarked by Speko
+- Human speech, emotion accuracy: Oruk Resonance 91% (1st); emotion2vec+ large 88%; qwen3-asr-flash 65%
+- Synthetic speech, emotion accuracy: Oruk Resonance 48% (1st); MERaLiON-SER-v1 33%; Oruk Fourier 33%
+Oruk evaluations (published methods & results)
+- Speech emotion, 7-class accuracy: Oruk Resonance 1 77.8% (1st); emotion2vec+ seed 68.7%; emotion2vec+ large 68.6% (all 64 models)
+- Sarcasm, Macro-F1x100 (MUStARD 5-fold): Oruk Resonance 1 56.2 (1st); Deepgram nova-3 51.7
+- Vocal Affect Bench, 7-class accuracy: Oruk Resonance 2 49.3% (1st); Gemini 3.8 Flash 45.7%; Gemini 3.5 Flash 44.3% (Oruk trained on all 280 clips; not held out.)
+
+Talk to the people behind the models.
+Bring us your audio and your use case. We'll help you find the right model and integration.
+Discuss an integration
+
+Build with Oruk
+Send audio. Get a transcript, speaker turns, and vocal context.
+Explore the docs | API reference
+
+Common questions
+What exactly does Oruk do?
+Oruk turns speech into transcripts, speaker turns, and labels for emotion and delivery. Choose a model for recorded audio or live conversations.
+How is it different from speech-to-text?
+Speech-to-text tells you what was said. Oruk also analyzes how it sounded: frustrated, excited, hesitant, sarcastic, and more.
+What can I build with it?
+Voice agents with more context, searchable call reviews, expressive captions, research tools, and other products that work with speech.
+Can I try my own audio? / Does it work in real time? / Which languages and formats are supported? / What happens to my recordings? / How accurate are the results? / How does pricing work?
+
+Customer stories
+
+oruk - We train speech AI to understand words, tone, and speaking style.
+Product: Capabilities, Models, Try the demo, Get API access, Manage subscription, Comply waitlist, Pricing, Benchmarks
+Developers: API docs, SDKs, MCP server, Production guide, Service status, Changelog
+Learn: Research, Guides, Glossary, Comparisons, Voice emotion analyzer, AI speech detector
+Company: About, Customer stories, Community, Security, Responsible use, Contact us
+(c) 2026 oruk labs. All rights reserved.

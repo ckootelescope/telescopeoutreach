@@ -1,0 +1,82 @@
+SOURCE: https://supplyveins.com/ (browser innerText, verbatim). Site is a single landing page; no about or company page (only links: login, Calendly demo, legal pages). The COMMERCIAL / DEFENSE toggle was clicked both ways; visible text was identical in both states on 2026-10-17.
+CAPTURED: 2026-10-17
+
+===== https://supplyveins.com/ =====
+COMMERCIAL
+DEFENSE
+Sign in
+Book a demo
+
+BUILT FOR THE COMPANIES BUILDING AMERICA
+
+SCALING THE SUPPLY CHAINS
+BEHIND AMERICAN INDUSTRIAL POWER
+
+AI-native supply chain intelligence to build, manage, and scale from prototype to production while staying in control.
+
+Book a demo
+Pause motion
+How SupplyVeins helps
+REAL-TIME VISIBILITY
+
+See every supplier, order, and constraint in one connected view.
+
+SMARTER DECISIONS
+
+Turn fragmented signals into clear priorities for your team.
+
+SCALE WITH CONFIDENCE
+
+Build resilient operations that move as fast as your business.
+
+POWERING EVERY INDUSTRY THAT MOVES THE WORLD
+
+BUILT ACROSS AIR, LAND, SEA, AND SPACE.
+AIR
+
+Aviation, aerospace, and air-cargo networks.
+
+LAND
+
+Freight, transportation, and ground logistics.
+
+SEA
+
+Shipping, ports, and maritime operations.
+
+SPACE
+
+Launch, satellites, and orbital infrastructure.
+
+70%
+
+of the defense industrial base is small business. SupplyVeins is built for them—and for the companies that depend on them.
+
+BUILT FOR THE NEW AMERICAN INDUSTRIAL BASE
+
+THE ECOSYSTEM BEHIND INDUSTRIAL STRENGTH.
+
+American industrial strength is built by an ecosystem: startups, machine shops, specialty suppliers, shipyards, and thousands of operators making sure everything arrives when it matters. SupplyVeins exists to help these companies scale.
+
+BUILDING HARD THINGS IS HARD. SCALING THEM IS HARDER.
+
+Tell us a little about your operation and we’ll shape the conversation around where you’re going. You’ll hear back from a person within one business day.
+
+Prefer email? info@supplyveins.com
+
+Your name
+Company
+Work email
+What are you building? (optional)
+Request a demo
+
+A focused 30-minute conversation. No setup required.
+
+For the companies building America, and the allies building alongside us.
+
+Terms
+Privacy
+Cookies
+Data Processing Addendum
+Sign in
+© 2026 SupplyVeins

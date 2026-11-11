@@ -1,0 +1,131 @@
+Source: https://pensero.ai/ (captured 2026-10-18 via browser, document.body.innerText)
+
+Book a demo
+Agentic ROI
+AI Deployment
+Delivery Intelligence
+Talent & Benchmarking
+Code Quality
+CapEx Analysis
+PLATFORM
+FEATURED
+Pensero MCP
+RESOURCES
+Blog
+ROI Calculator
+PENSERO FOR
+USE CASES
+CEOs
+CTOs
+CFOs
+Product Leaders
+Engineering Managers
+Investors
+COMPARE VS
+DX
+Swarmia
+Haystack
+Span
+Jellyfish
+Waydev
+LinearB
+FarosAI
+Sleuth
+Customers
+Sources
+Pricing
+WEBINAR - PROVING THE ROI OF AI, WITH CLEDARA
+The Intelligence behind Agentic Deployment
+Agent performance
+Cost per unit of work
+Agentic transformation monitoring
+Pensero helps you choose the best and most efficient combination of humans and agents that yields the most effective output.
+Let's talk
+pensero.ai/dashboard
+MEASURING THE AGENTIC WORKFORCE AT FAST-GROWING COMPANIES AROUND THE WORLD
+THE PENSERO INTELLIGENCE
+The Intelligence that helps you choose the best and most efficient combination of humans and agents
+Objective visibility into every agentic contribution.
+Agentic ROI
+Proves what your agentic AI investment returned — cost per unit of delivered work, comparable across humans, AI-assisted and agents. Battle-tested across millions of datapoints, so the return is evidence, not a vendor's projection.
+Learn more
+AI Deployment
+Tracks agent and assistant adoption, delivered output, quality outcomes, and cost per unit of work to prove what your AI investment actually returned.
+Learn more
+Delivery Intelligence
+Provides real-time visibility into output, flow, and roadmap alignment, separating human, AI-assisted, and agent contribution so you can see where delivery compounds and where it stalls.
+Learn more
+Talent & Benchmarking
+Compare agents, models and vendors on identical work, on the same scale as humans, so you can see where the line should sit.
+Learn more
+Code Quality
+Measures code health, review effectiveness, defect trends, and rework, tracing each back to the human or agent that caused it so speed never comes at the cost of quality.
+Learn more
+CapEx & Finance
+Delivers finance-ready reports that track CapEx, R&D capitalization, and how agent and human spend allocates across projects, for audit compliance and executive decision-making.
+Learn more
+FEATURED
+PENSERO MCP
+Your engineering intelligence, now queryable.
+Query your live Pensero data straight from Claude, ChatGPT or any MCP-compatible assistant. Ask about agent performance, cost per unit of work, quality or benchmarks in plain language.
+Discover Pensero MCP
+30%
+Average increase in delivered output
+25%
+Reduction in agent spend that produced nothing
+60%
+Improvement in cost per unit of delivered work
+Agent budgets are approved on promise today. Pensero turns them into a portfolio with a return.
+CUSTOMER STORIES
+Loved by high-performing teams
+What changed when output became measurable: in their words, with their numbers.
+"Pensero is giving us visibility into how we are using AI and how we are spending money on it." Jordi Abad, CTO
+"Demystifying engineering productivity." Justin Nguyen, Director of Engineering
+"Finally a tool that truly increases velocity." Nick Traylor, Head of Engineering at Stord
+"Pensero is story points after the fact. With Pensero we go 4x faster." Andrew Eye, CEO and Founder at ClosedLoop
+"It's a way to sit with an engineer and show them everything they've done, and learn from it." Ignasi Vegas, CEO and Co-founder at Cubbo
+"What we were looking for was visibility into AI usage. Until Pensero, that visibility did not exist." Raul Gómez, VP of Technology
+"Pensero is my compass for knowing where the team is headed." Jordi Miró, CTO at Zynap
+SEAT CODE
+Persuit
+Stord
+ClosedLoop
+Cubbo
+Exoticca
+Zynap
+SOURCES
+Every agent, assistant and human in one system of record
+Your entire delivery stack, translated into comparable signals. No new workflow, no instrumentation project.
+Explore all integrations
+DON'T JUST TAKE OUR WORD FOR IT
+EFFORTLESS OBSERVABILITY
+"Pensero gives me daily peace of mind. I know exactly what the team is working on. The built-in reporting & analytics make team observability effortless, and the leaderboards give us the clarity we need for performance reviews and promotions decisions." Jose-Luis Vilar, Co-Founder and CPTO
+LIVE IN ONE DAY
+"Pensero gives me a clear, non-engineer's view of team productivity. It helps me spot champions who adopt new tools fastest and turn their practices into inspiration for the rest of the team. Rather than being a policing tool, it provides a data-driven foundation for bragging rights, better conversations, and benchmarking against peers worldwide. And the best part: it was truly plug-and-play — we were live in just one day." Jean-François Legourd, Co-founder
+CONVERSATIONS BACKED BY EVIDENCE
+"Pensero offers a modern approach to performance management by providing real-time, actionable insights and continuous improvement. Its features are designed to enhance clarity, accountability, and productivity within teams. As a manager that helped me have honest and actionable feedback with my teams enabling them for growth." Natxo Treig, Sr. Engineering Manager
+FROM 70% TO 30% MAINTENANCE
+"15 engineers. $50M a year. We didn't know exactly how our work was different from where we wanted to go. In one view, we can show engineers everything they did… and they learn a lot of insights. Now we went from 70% to 30% maintenance… it's where we want it to be. It's like the lighthouse of our engineering team." Ignasi Vegas, Co-founder and CEO
+TOP 5% GLOBALLY, VERIFIED
+"I was being told we were slow to ship, but I didn't have any visibility as to why that was. Pensero is story points after the fact — we go 4x faster. Engineers love it because they get to brag: they can say they're in the top 5 percent globally, based on an independent third party. Pensero is why you want to work here." Andrew Eye, CEO and Founder
+HOW IT WORKS
+Get started in minutes. See insights in hours.
+Connect your stack. See months of history from day one.
+1 HOUR - Connect & Structure
+Repositories, tickets, chat and AI tools connect automatically. Every unit of work, human, AI-assisted or agent, is structured and scored on the same scale.
+1 DAY - Analyse & Attribute
+Output separated by source: human, AI-assisted, agent-only. Cost per unit of delivered work, rework attribution, and where agents are creating bottlenecks upstream.
+1 WEEK - Calibrate & Decide
+Head-to-head agent comparison against benchmark. Which agents stay, where the next one goes, and what to keep human with board-ready numbers behind each answer.
+PRICING
+We fit your needs
+Simple plans. Scale as your team grows.
+STARTER - Free - Everything you need to start. Up to 5 users; 1 code repository; Delivery metrics; Quality metrics; Collaboration metrics; AI Impact tracking; Engineering investment tracking; Team and individual reports; 90-day data retention
+GROWTH - $50 / seat / month - For teams at scale. Everything in Starter; Unlimited users; Unlimited code repositories; SSO / SAML and directory sync; API/MCP access; 1-year data retention
+MOST POPULAR
+ENTERPRISE - Usage Based Pricing - Get R&D capitalization and on-prem. Everything in Growth; R&D capitalization; On-prem and custom integrations; Devin integration included; Dedicated CSM and priority support; Custom onboarding and training; API access; MCP capabilities
+See what your agents are actually delivering
+Connect one repository and get months of history back. No instrumentation, no workflow change. Your own data, in minutes.
+Let's talk
+© 2026
+OFFICES: Barcelona, Madrid, New York, San Francisco (SOON)

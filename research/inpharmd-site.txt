@@ -1,0 +1,424 @@
+InpharmD™
+     -->
+COVID-19 UPDATE -
+ There's new COVID-19 evidence every day. We collect it and make it publicly available here. 
+ -->
+Toggle navigation
+ -->
+Sign Up
+Log In
+Log In
+Sign Up
+Sign Up
+Log In
+Log In
+Sign Up
+InpharmD™
+Close
+ -->
+Save 
+time
+ with our researchers + AI 
+→
+ -->
+Add Drug Information Pharmacists
+Without Adding FTEs
+So you can practice at top of license.
+Get Started Free
+Trusted by 
+20,000+
+ clinical pharmacists.
+ -->
+ -->
+Play Circle
+Learn about InpharmD™ in 
+under 90 seconds
+Play Circle
+Learn about InpharmD™ in 
+under 90 seconds
+ -->
+What is 
+InpharmD™
+?
+Literature searching is tedious. InpharmD™ is here to help.
+Clinical pharmacists can ask any question, anytime, from anywhere, and we’ll perform a custom literature search.
+(And a 
+32%
+ chance it’s already been asked.)
+ -->
+        More than 30 of the world's best health systems hire an InpharmD™ virtual DI pharmacist, yielding:
+163,946
+Clinical Pharmacist Hours Saved
+ -->
+4x +
+ROI
+100%
+Customer Satisfaction Rate
+This is how InpharmD™ transforms 
+LITERATURE
+.
+What's Being Asked...
+                    Do patients that have a history of drug abuse or alcohol abuse need higher doses of heparin?
+                    What other steroid options are alternatives for triamcinolone 40mg/ml for interarticular injections
+                    Is there any data for administration of dalbavancin over more than 30 minutes?
+                    Can you summarize all the phase II and phase III Onswik (insulin efsitora alfa-gobe) studies as well as any internati...
+                    I would like a literature review on studies looking at medication warning optimization in the electronic health recor...
+What would you like to ask InpharmD™?
+InpharmD's Answer
+GPT's Answer
+Author:
+Naveed Aijaz, PharmD, BCPS + InpharmD™ AI
+                      LEARN MORE 
+                  Published evidence addressing whether higher heparin doses are needed in patients with a history of drug or alcohol abuse is limited. One comparative study of patients with and without opioid use disorder (OUD) undergoing percutaneous coronary intervention (PCI) demonstrated that after receiving the same weight-based dose of heparin, the OUD group had significantly shorter activated clotting times (ACTs) at 2 and 30 minutes, suggesting the potential need for higher doses of heparin in PCI; ho...
+Literature Review
+References
+A search of the published medical literature revealed
+                      2 studies                      investigating the researchable question:
+Do patients that have a history of drug abuse or alcohol abuse need higher doses of heparin?
+Level of evidence
+                        C - Multiple studies with limitations or conflicting results  
+READ MORE→
+Author:
+ Open AI GPT
+Heparin Dosage in Patients with History of Drug or Alcohol Abuse
+        Patients with a history of drug abuse or alcohol abuse 
+do not generally require higher doses of heparin
+ solely based on their abuse history.
+        However, there are several clinical considerations:
+Liver function:
+ Chronic alcohol abuse can lead to liver dysfunction, which may alter the metabolism of anticoagulants and affect coagulation status.
+Coagulation status:
+ Drug or alcohol abuse may impact baseline coagulation parameters, potentially influencing heparin sensitivity.
+Concurrent medications:
+ Patients abusing substances may be on other medications that interact with heparin.
+Monitoring:
+ Regardless of abuse history, close monitoring of activated partial thromboplastin time (aPTT) or anti-Xa levels is essential to tailor heparin dosing.
+Conclusion:
+ There is no standardized recommendation to increase heparin doses in patients solely based on a history of drug or alcohol abuse. Dosing should be individualized based on clinical response and laboratory monitoring.
+Consultation with a healthcare professional and regular monitoring are essential when managing anticoagulation therapy in these patients.
+InpharmD's Answer
+GPT's Answer
+Author:
+Naveed Aijaz, PharmD, BCPS + InpharmD™ AI
+                      LEARN MORE 
+                  Potential alternatives to triamcinolone acetonide 40 mg/mL for intra-articular injection include methylprednisolone acetate, betamethasone, triamcinolone hexacetonide, and dexamethasone formulations. However, comparative evidence is limited and heterogeneous, with outcomes varying by corticosteroid, dose, joint, indication, and follow-up period. Furthermore, societal guidelines do not identify a preferred corticosteroid preparation or establish dose equivalence to triamcinolone acetonide 40 m...
+Background
+Literature Review
+References
+The 2026 multisociety guideline from the American Society of Regional Anesthesia and Pain Medicine, American Academy of Pain Medicine, American Society of Interventional Pain Physicians, and International Pain and Spine Intervention Society states that there is limited evidence to guide selection of one intra-articular corticosteroid over another. The most commonly used preparations were methylprednisolone acetate, triamcinolone hexacetonide, and triamcinolone acetonide, and the guideline concluded that different preparations appear to have similar effectiveness but may differ in duration of action; evidence was insufficient to recommend one preparation over another. Comparative evidence included methylprednisolone acetate and triamcinolone acetonide at 20- and 40-mg doses for shoulder injections, with no differences in pain or function among preparations or doses, while 40 mg of either triamcinolone or methylprednisolone was described as commonly used for hip intra-articular inject...
+READ MORE→
+A search of the published medical literature revealed
+                      5 studies                      investigating the researchable question:
+What other steroid options are alternatives for triamcinolone 40mg/ml for interarticular injections?
+Level of evidence
+                        B - One high-quality study or multiple studies with limitations  
+READ MORE→
+[1] Benzon HT, Provenzano DA, Nagpal A, et al. Use and safety of corticosteroid injections in joints and musculoskeletal soft tissue: guidelines from the American Society of Regional Anesthesia and Pain Medicine, the American Academy of Pain Medicine, the American Society of Interventional Pain Physicians, and the International Pain and Spine Intervention Society. Reg Anesth Pain Med. 2026;51(7):746-773. Published 2026 Jul 6. doi:10.1136/rapm-2024-105656
+[2] Kolasinski SL, Neogi T, Hochberg MC, et al. 2019 American College of Rheumatology/Arthritis Foundation Guideline for the Management of Osteoarthritis of the Hand, Hip, and Knee. Arthritis Rheumatol. 2020;72(2):220-233. doi:10.1002/art.41142
+[3] Jones IA, Togashi R, Wilson ML, Heckmann N, Vangsness CT Jr. Intra-articular treatment options for knee osteoarthritis. Nat Rev Rheumatol. 2019;15(2):77-90. doi:10.1038/s41584-018-0123-4
+[4] Bensa A, Salerno M, Moraca G, Boffa A, McIlwraith CW, Filardo G. Intra-articular corticosteroids for the treatment of osteoarthritis: A systematic review and meta-analysis on the comparison of different molecules and doses. J Exp Orthop. 2024;11(3):e12060. Published 2024 Jun 21. doi:10.1002/jeo2.12060
+Author:
+ Open AI GPT
+Steroid Alternatives for Triamcinolone 40mg/ml in Intra-articular Injections
+Triamcinolone acetonide 40mg/ml is a commonly used corticosteroid for intra-articular injections to reduce inflammation and pain. If you're considering alternatives, here are some other steroid options frequently used for similar indications:
+Common Steroid Alternatives for Intra-articular Injection
+Steroid
+Typical Concentration
+Comments
+Betamethasone acetate and phosphate
+6 mg/mL (Betamethasone)
+Available as Celestone; rapid onset and long duration; often used as a mixture of phosphate (quick) and acetate (slow) forms.
+Methylprednisolone acetate
+40 mg/mL
+Popular intra-articular steroid with a slightly shorter duration than triamcinolone; marketed as Depo-Medrol.
+Hydrocortisone acetate
+25-50 mg/mL
+Less potent; rarely used for joints but sometimes in soft tissue injections.
+Dexamethasone sodium phosphate
+4 mg/mL
+Water-soluble, fast-acting but shorter duration; less commonly used intra-articularly due to rapid systemic absorption.
+Notes:
+Choice of steroid may depend on joint size, desired duration of effect, and patient-specific factors.
+Triamcinolone and methylprednisolone are considered the most commonly used agents for many joints.
+Always ensure proper sterile technique and dosing guidelines are followed.
+Consult clinical protocols or a specialist when choosing a steroid preparation.
+InpharmD's Answer
+GPT's Answer
+Author:
+Naveed Aijaz, PharmD, BCPS + InpharmD™ AI
+                      LEARN MORE 
+                  Available literature describing dalbavancin infusions administered over longer than 30 minutes is very limited. A small pilot study reported administration of dalbavancin 1,500 mg over 60 to 90 minutes for catheter-related bloodstream infections, with 100% clinical success and no reported adverse events. A 2019 case report also described a graded challenge in a patient with documented vancomycin anaphylaxis in which the final 1,500 mg dalbavancin dose was infused over 60 minutes. The DALVANCE...
+Background
+Literature Review
+References
+AbbVie Medical Information reported that a search of the published medical literature identified no pertinent information regarding continuous infusion of Dalvance (dalbavancin). The U.S. prescribing information also contains no relevant information regarding continuous infusion. AbbVie notes that Dalvance is indicated for treatment of acute bacterial skin and skin structure infections caused by susceptible gram-positive organisms and does not endorse use inconsistent with the approved labeling. [1] 
+READ MORE→
+A search of the published medical literature revealed
+                      2 studies                      investigating the researchable question:
+Is there any data for administration of dalbavancin over more than 30 minutes?
+Level of evidence
+                        C - Multiple studies with limitations or conflicting results  
+READ MORE→
+[1] Personal correspondence. Abbvie. September 30, 2026.
+Author:
+ Open AI GPT
+Dalbavancin Administration Duration Data
+Dalbavancin is a long-acting lipoglycopeptide antibiotic commonly used for treating acute bacterial skin and skin structure infections (ABSSSI). The standard administration protocol typically involves intravenous infusion over 30 minutes.
+Question:
+ Is there any data supporting administration of dalbavancin over more than 30 minutes?
+Available Data on Extended Infusion Times
+Current FDA-approved dosing guidelines recommend dalbavancin be infused intravenously over 30 minutes for both single-dose and two-dose regimens. However, there is limited direct clinical data on safety or efficacy with infusion durations longer than 30 minutes.
+Some published literature and clinical practice notes indicate that infusion times can be extended beyond 30 minutes in certain clinical situations to accommodate patient tolerance or IV access issues, but formal pharmacokinetic and safety studies on longer infusions are scarce.
+Summary of Key Points
+Dalbavancin Infusion Duration Data
+Source
+Infusion Duration
+Comments
+FDA Prescribing Information
+30 minutes
+Standard recommended infusion duration. No mention of longer durations.
+Clinical Trials (e.g., DISCOVER 1 & 2)
+30 minutes
+Protocol-specified infusion time; no reported data on longer infusions.
+Case Reports / Clinical Practice
+Up to 60 minutes (anecdotal)
+Extended infusion times used occasionally to mitigate infusion reactions; limited data on outcomes.
+Expert Opinion / Reviews
+Variable
+Possible to extend infusion time for tolerance; no controlled studies available.
+References
+Dalvance (dalbavancin) FDA prescribing information
+Domenech O, et al. Dalbavancin: a review of a new lipoglycopeptide antibiotic. Infect Dis Ther. 2016.
+Boucher HW, et al. Once-weekly dalbavancin versus daily conventional therapy for skin infection. N Engl J Med. 2014;370(23):2169-2179.
+Note: Clinicians considering infusion durations beyond 30 minutes should evaluate patient-specific factors and consult institutional protocols or infectious disease specialists.
+InpharmD's Answer
+GPT's Answer
+Author:
+Muna Said, PharmD, BCPS + InpharmD™ AI
+                      LEARN MORE 
+                  Please see Tables 1-7 for details on the study designs, efficacy outcomes, and safety findings of published Phase II and III Onswik (insulin efsitora alfa-gobe) studies. Overall, once-weekly Onswik demonstrated similar or non-inferior glycemic control compared with once-daily long-acting insulins (glargine and degludec) and was generally well tolerated.
+Literature Review
+References
+A search of the published medical literature revealed
+                      7 studies                      investigating the researchable question:
+Can you summarize all the phase II and phase III Onswik (insulin efsitora alfa-gobe) studies as well as any international studies if available?
+Level of evidence
+                        A - Multiple high-quality studies with consistent results  
+READ MORE→
+Author:
+ Open AI GPT
+Summary of Phase II and Phase III Studies of Onswik (Insulin Efsitora Alfa-Gobe)
+Onswik
+ (Insulin efsitora alfa-gobe) is a biosimilar insulin product developed for glycemic control in diabetes mellitus. Below is a summary of all known Phase II and Phase III clinical studies, including any international trial data available as of 2024.
+Phase II Studies
+Study Identifier
+Design
+Population
+Objectives
+Key Findings
+Regions
+Study 201 – Dose-Finding
+Randomized, double-blind, parallel-group
+Adults with Type 1 Diabetes Mellitus (T1DM)
+Assess efficacy, safety, and optimal dosing of Onswik vs. reference insulin
+                    Demonstrated comparable pharmacokinetics and pharmacodynamics to originator insulin. Well tolerated with no unexpected adverse events.
+United States, Europe
+Study 202 – Glycemic Control
+Open-label, controlled
+Adults with Type 2 Diabetes Mellitus (T2DM)
+Evaluate glycemic control and immunogenicity over 12 weeks
+Onswik achieved non-inferior HbA1c reduction; low immunogenicity similar to comparator insulin.
+Japan, South Korea
+Phase III Studies
+Study Identifier
+Design
+Population
+Duration
+Primary Endpoint
+Key Outcomes
+Regions
+Study 301 – Efficacy and Safety in T1DM
+Randomized, double-blind, parallel-group
+Adult T1DM patients
+26 weeks
+Change in HbA1c from baseline
+                    Onswik demonstrated equivalent HbA1c reduction compared to reference insulin with similar hypoglycemia rates.
+Europe, USA, Canada
+Study 302 – Efficacy and Safety in T2DM
+Randomized, double-blind
+Adult T2DM patients inadequately controlled on oral agents
+26 weeks
+HbA1c reduction and safety profile
+                    Non-inferior glycemic control; safety profile consistent with known insulin therapies.
+International multi-center (USA, Europe, Asia)
+Study 303 – Switching Study
+Open-label, switching design
+Patients switching from originator insulin
+12 weeks
+Safety and immunogenicity post-switch
+No increase in adverse events or immunogenic response after switching to Onswik.
+Europe, Japan
+International Studies and Registries
+Beyond clinical trials, post-marketing surveillance and registry data from international sources including Europe and Asia have been collected, showing consistent safety and efficacy profiles with the clinical trial results. No unexpected safety signals have been reported.
+Summary
+Onswik has demonstrated equivalence to the reference insulin in both type 1 and type 2 diabetes over multiple Phase II and Phase III studies.
+Studies spanned multiple geographic regions including North America, Europe, and Asia, supporting global applicability.
+Safety profiles, including hypoglycemia incidence and immunogenicity, were comparable to originator insulins.
+Switching studies confirmed no loss of efficacy or safety concerns when transitioning patients from originator products.
+*Note: This summary is based on publicly available clinical trial data and regulatory submissions as of mid-2024. For detailed protocols and full data sets, consult the relevant clinical trial registries and published articles.
+InpharmD's Answer
+GPT's Answer
+Author:
+Naveed Aijaz, PharmD, BCPS + InpharmD™ AI
+                      LEARN MORE 
+                  Studies of medication warning optimization in the electronic health record generally report reduced alert burden and improved clinician responses after removal of low-value warnings, adjustment of severity and triggering criteria, incorporation of patient-specific information, and selective use of noninterruptive decision support. These efforts commonly involve multidisciplinary review, clinician feedback, and ongoing monitoring. Pediatric evidence emphasizes customized dosing rules that acco...
+Background
+Literature Review
+References
+General population:
+Several reviews have evaluated strategies to optimize medication-related electronic health record (EHR) alerts. A 2023 scoping review of 16 post-implementation medication-alert optimization studies identified six primary interventions: alert inactivation, severity reclassification, addition of contextual information, adjustment of triggering thresholds, provision of additional information within alerts, and encounter-specific suppression. Alerts were commonly selected for optimization based on firing frequency, clinician or pharmacist feedback, or review of clinical significance, generally through multidisciplinary processes involving pharmacists and physicians. Alert inactivation reduced alert quantity by 1% to 25.3%, while severity reclassification reduced alert quantity by 1% to 16.5% in 6 of 7 studies and increased alert acceptance by 4.2% to 50.2%; high-severity alerts reached 100% acceptance in studies reporting this outcome. Overall, alert quantity or f...
+READ MORE→
+A search of the published medical literature revealed
+                      11 studies                      investigating the researchable question:
+Please provide a literature review of studies assessing medication warning optimization in the electronic health record in general patients as well as pediatric and oncology populations. 
+Level of evidence
+                        C - Multiple studies with limitations or conflicting results  
+READ MORE→
+[1] Ledger TS, Brooke-Cowden K, Coiera E. Post-implementation optimization of medication alerts in hospital computerized provider order entry systems: a scoping review. J Am Med Inform Assoc. 2023;30(12):2064-2071. doi:10.1093/jamia/ocad193
+[2] Van Dort BA, Zheng WY, Sundar V, Baysari MT. Optimizing clinical decision support alerts in electronic medical records: a systematic review of reported strategies adopted by hospitals. J Am Med Inform Assoc. 2021;28(1):177-183. doi:10.1093/jamia/ocaa279
+[3] Chaparro JD, Beus JM, Dziorny AC, et al. Clinical Decision Support Stewardship: Best Practices and Techniques to Monitor and Improve Interruptive Alerts. Appl Clin Inform. 2022;13(3):560-568. doi:10.1055/s-0042-1748856
+[4] Kim GR, Lehmann CU; Council on Clinical Information Technology. Pediatric aspects of inpatient health information technology systems. Pediatrics. 2008;122(6):e1287-e1296. doi:10.1542/peds.2008-2963
+[5] Dufendach KR, Lehmann CU, Spooner SA; COUNCIL ON CLINICAL INFORMATION TECHNOLOGY . Special Requirements of Electronic Health Record Systems in Pediatrics: Clinical Report. Pediatrics. 2024;154(4):e2024068509. doi:10.1542/peds.2024-068509
+[6] Goldspiel B, Hoffman JM, Griffith NL, et al. ASHP guidelines on preventing medication errors with chemotherapy and biotherapy. Am J Health Syst Pharm. 2015;72(8):e6-e35. doi:10.2146/sp150001
+[7] Elsaid KA, Garguilo S, Collins CM. Chemotherapy e-prescribing: opportunities and challenges. Integr Pharm Res Pract. 2015;4:39-48. Published 2015 May 21. doi:10.2147/IPRP.S84232
+[8] Sklarin NT, Granovsky S, O'Reilly EM, Zelenetz AD. Electronic Chemotherapy Order Entry: A Major Cancer Center's Implementation. J Oncol Pract. 2011;7(4):213-218. doi:10.1200/JOP.2011.000266
+[9] Potashner R, Meyer N, Patterson E, Jessa K, Yan AP. A Case Study: Optimizing CDS for Pediatric Oncology Trials by Transitioning from Interruptive to Passive Alerts. Appl Clin Inform. 2025;16(3):589-594. doi:10.1055/a-2555-2441
+Author:
+ Open AI GPT
+Literature Review: Medication Warning Optimization in Electronic Health Records (EHRs)
+        Medication warning alerts in electronic health records (EHRs) play a critical role in enhancing patient safety by preventing adverse drug events (ADEs). However, suboptimal alert design often leads to alert fatigue, resulting in high override rates and reduced clinical effectiveness. This review synthesizes global studies addressing medication warning optimization in EHR systems, focusing broadly on all patient populations and zooming in on pediatric and oncology-specific contexts.
+1. Global Perspectives on Medication Warning Optimization in EHRs (All Patient Populations)
+        Numerous international studies highlight both the challenges and successes in optimizing medication-related clinical decision support (CDS) alerts in EHRs. Common themes include balancing alert sensitivity and specificity, reducing unnecessary alerts, and improving usability through tailored interfaces.
+Alert Fatigue and Override Rates:
+ Research consistently documents high override rates, often exceeding 70%, particularly for drug–drug interaction and allergy alerts. For example, a systematic review by Baysari et al. (2017) emphasized that over-alerting causes clinicians to ignore critical warnings, compromising safety outcomes.
+Customization and Tiered Alerting:
+ Studies in the US, Europe, and Australia reveal that customizable alert thresholds and tiered alert systems that prioritize high-risk warnings improve clinician responsiveness. Wright et al. (2016) demonstrated that modifying alert logic based on local epidemiology and workflow reduced unnecessary interruptions.
+User-Centered Design Approaches:
+ Integrating clinician feedback and usability testing during alert development is associated with better alert acceptance. For instance, research by Phansalkar et al. (2013) advocates for iterative design incorporating end-user input and cognitive workload considerations.
+Key References
+Baysari, M.T., et al. (2017). "A systematic review of the impact of medication-related clinical decision support alerts on clinician behavior." Journal of the American Medical Informatics Association.
+Wright, A., et al. (2016). "Analysis of clinical decision support alert overrides in the intensive care unit." Journal of the American Medical Informatics Association.
+Phansalkar, S., et al. (2013). "Drug–drug interaction alert overrides in the intensive care unit: an observational study." BMC Medical Informatics and Decision Making.
+2. Medication Warning Optimization in Pediatric Populations
+        Pediatrics presents unique challenges for alert optimization due to weight-based dosing, off-label medication use, and developmental pharmacokinetics. Studies emphasize the need for pediatric-specific alert rules and customization.
+Weight-Based and Age-Specific Dosing Alerts:
+ Several studies (e.g., Kaushal et al., 2014) highlight improvements in alert specificity when CDS systems incorporate patient weight and age for dose range checking.
+Reducing False Positives:
+ Modifications to alert logic to tolerate minor clinically insignificant deviations reduce alert burden without compromising safety, as reported by Korn et al. (2019).
+Integration of Pediatric Pharmacology Databases:
+ Incorporating pediatric-focused drug databases enhances the relevance of alerts. For example, Cresswell et al. (2019) found that integration of pediatric formularies improved alert acceptance.
+Key References
+Kaushal, R., et al. (2014). "Impact of a clinical decision support tool on improving pediatric medication dosing safety." Pediatrics.
+Korn, W.S., et al. (2019). "Optimizing Pediatric Medication Alerts by Reducing False Positive Interruptions." Journal of Pediatric Pharmacology and Therapeutics.
+Cresswell, K., et al. (2019). "Pediatric clinical decision support: tailoring medication alerts to children." Journal of Medical Systems.
+3. Medication Warning Optimization in Oncology Populations
+        Oncology patients often receive complex, high-risk chemotherapy regimens requiring precise dosing and vigilant monitoring. Alert optimization in oncology EHR modules addresses these complexities.
+Specialized Chemotherapy Alerts:
+ Customized alerts for dosing limits, drug combinations with potential toxicities, and lab value triggers (e.g., neutropenia alerts) have been shown to improve safety (Hicks et al., 2013).
+Integration with Protocol-Based Ordering:
+ Oncology-specific CPOE (Computerized Physician Order Entry) systems that link alerts with standardized treatment protocols reduce irrelevant alerts and enhance adherence (Leung et al., 2018).
+Reducing Alert Overrides through Multidisciplinary Review:
+ Collaborative refinement of alerts involving pharmacists, oncologists, and informaticians helps balance sensitivity and specificity, as reported in a multi-center study by O’Connor et al. (2020).
+Key References
+Hicks, C., et al. (2013). "Optimizing chemotherapy dosing alerts in electronic health records to improve patient safety." Journal of Oncology Practice.
+Leung, K., et al. (2018). "Protocol-driven oncology ordering systems reduce medication errors and alert fatigue." Journal of the American Medical Informatics Association.
+O’Connor, M., et al. (2020). "Collaborative approaches to refining oncology medication alerts: a multi-center study." Journal of Clinical Oncology Informatics.
+Summary and Future Directions
+        Medication warning optimization in EHRs remains a critical area for improving medication safety globally. Across all populations, reducing alert fatigue through tailored alert thresholds, enhanced specificity, and integration of clinical workflows are key strategies. Pediatric and oncology settings require specialized adaptations reflecting their distinct clinical complexities. Future studies should focus on leveraging artificial intelligence and machine learning to create adaptive alerts that learn from clinician behavior and patient outcomes, further refining alert relevance and effectiveness.
+InpharmD™ AI
+&times;
+                    Every day, we scrape the internet from places like PubMed (but also a thousand other disparate websites) 
+                    to gather a current, comprehensive clinical library of 
+ + clinical studies (and counting).
+                    When you ask a question, it prompts a search and summary by AI, with reinforcement learning by our drug information trained, board certified clinical pharmacists.
+Close
+Why choose InpharmD™?
+Find answers, not documents.
+Before InpharmD™
+                Your team spends hours per week cobbling together literature from different studies, many behind paywalls, leaving little time for action.
+                TI opportunities are discovered (or presented by third parties) months after the fact, resulting in costly missed savings.
+                Decisions may be made without a complete picture, or pushed out while gathering consensus.
+After InpharmD™
+                InpharmD™ delivers customized, actionable drug information in real time, so you can focus on execution.
+                Your team stays informed immediately when new data emerges or prices change, and you’ll always be the first to know when any changes impact your formulary.
+                With InpharmD™, your team can make faster, more informed decisions and move forward with confidence.
+Our 
+Outcomes
+Make evidence-based pharmacy pay for itself
+On-demand drug information, P&T and shortage support, funded from existing budget lines.
+4:1
+Guaranteed ROI, budget neutral
+Move pharmacists to top-of-license work
+A year of drug information and P&T work absorbed by InpharmD, so pharmacists took on new roles.
+8,930
+Pharmacist hours saved, equal to 4.3 FTE
+Keep P&T moving as the system grows
+More drugs, more hospitals, and InpharmD doubling P&T throughout.
+2x
+P&T throughput
+What Clinical Pharmacists Are Saying...
+Assists in our research and is a great way or us to get an answer to a medical question without spending an average of 2 hours researching UptoDate or PubMed ourselves.
+&mdash;
+   Jordan C., PharmD, New Jersey
+Huge time saver with thorough responses.
+&mdash;
+   Jane D., PharmD, Georgia
+I’d never heard of a DI pharmacist before, now I have one. In. My. Pocket. Amazing!
+Holy Shhh. Cow! Holy Cow! These summaries are beautiful.
+&mdash;
+   Jane D., PharmD, Georgia
+I just want to say: This is such a brilliant idea! You people are genius.
+OH MY GOD WHERE HAVE YOU BEEN ALL MY LIFE!
+I can’t tell you how much time I spend literature searching. And how I CANNOT STAND PAYWALLS. THIS IS UNBELIEVABLE!! (covers face for sec) thank you, thank you, thank you!
+So they’re basically connecting academic researchers with front line providers and then automating everything. It’s simply brilliant.
+The clinical pharmacist was our secret weapon anyway. (Smiles wryly) This pharmacist AI seems superhuman. I’m just blown away, honestly. (Looks at camera somberly.)
+It’s an ENTIRE DI DEPARTMENT, that lives in Epic. Give me a second. I’m just having a hard time wrapping my head around that.
+Sorry just give me a second, my mind is blown.
+Stop reading and just download the app already! I’ve tried all of them. This is by far the most advanced, best-in-class.
+What would you like to ask InpharmD™?
+Sign up for a free trial & start right away.
+Get Started Free
+Get Started Free
+FAQs
+Fellowship Opportunities
+Rotation Opportunities
+Free Pilot
+Privacy Policy
+Terms of Use
+Cookie Policy
+Press
+Careers
+Events
+  Facebook
+ Twitter
+  LinkedIn
+  Instagram
+  Medium
+ -->
+          SOC 2 (Type II)
+Questions?
+ Contact us at 
+support@inpharmd.com
+      We use cookies and similar technologies to improve site performance, understand how visitors use our website, and enhance your experience.
+      Some cookies are necessary for the site to work; others run only if you consent. You can accept all or reject non-essential cookies.
+Reject non-essential
+Manage preferences
+Accept all
+Manage cookie preferences
+Necessary cookies stay on.
+Necessary
+Core security and navigation.
+ Support widgets
+E.g. Zendesk chat.
+Cancel
+Save preferences

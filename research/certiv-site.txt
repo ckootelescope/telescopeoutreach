@@ -1,0 +1,63 @@
+AI Agent Assurance for Endpoints
+6,160,000 AGENTIC ACTIONS SECURED
+Certiv secures agents. So you can run them confidently.
+We were impressed by the quality of the Certiv platform, the architectural approach, and the team's technical depth and responsiveness throughout the process.
+Every founder cares about productivity. I want my entire team working at 10x by leveraging agents. Certiv provides the safety net for all agents running on workstations.
+Certiv makes all agent actions visible, so you can block the bad, and allow the good. It's no longer just about the actors, it's about seeing the actions and safeguarding executions.
+AI agents represent one of the most important technology shifts in decades. AI agents are non-deterministic and enterprises need new security controls to govern these autonomous systems.
+THE CHALLENGE Enabling vs. Securing Agentic Work
+Everyone is adopting agentic tools for the business value...
+Increase Productivity One engineer plus a fleet of agents now outputs what used to take a whole team.
+Innovate Faster Agents ship code, answer customers, and clear backlogs around the clock.
+Boost Competitiveness First movers compound their lead while everyone else waits for permission.
+...and the same adoption is exposing new risk.
+Shadow AI Coding agents, workflow automation, and homegrown agents on local models, all spun up faster than IT can inventory them.
+Visibility Gap No single view of what every agent touches, calls, or sends downstream.
+Uncontrolled Risk Agents inherit their owner's permissions and act non-deterministically. One bad step is a breach, not a bug.
+THE SOLUTION Complete Visibility and Control
+Give your people the freedom to work with AI. Know what's running, understand what it does, and control what happens next.
+Discover Understand Protect Control
+Detect every agent, model, and tool call on the endpoint, sanctioned or shadow. See which AI your people use, including tools your team never approved.
+We work with the tools you already run. Jamf Iru Intune Workspace ONE Splunk CrowdStrike SentinelOne Netskope Google Cloud AWS Azure Cloudflare Slack Microsoft Teams
+One Install, Total Visibility, No Infrastructure
+Your security stack wasn't designed for agents, and it shows.
+Certiv sits at the runtime layer of the endpoint (below every application, above the OS). Our lightweight sensor intercepts agent actions before they execute, giving you intent-level visibility and policy enforcement with zero app configuration changes.
+Endpoint-native interception, no network proxy required
+Deploys in minutes, no kernel module, simple MDM push
+Selective traffic inspection keeps endpoint overhead low
+Any agent. Agents Models Apps & browsers Tools OS
+Certiv stays at the endpoint. Your stack can change.
+Enable Agents. Enforce Policy. Mitigate Risk.
+Ship faster with guardrails, not gates
+Measure AI adoption by team, tool, and use case, not anecdotes
+Auto-approve trusted workflows with zero developer friction
+Reduce tool sprawl while driving standardization
+One control plane for every AI agent
+Discover and govern shadow AI before it becomes a security event
+Central policy surface for who, what, and where agents can act
+Audit-ready reporting for compliance, risk, and cost attribution
+Stop threats before they execute
+Pre-execution controls block exfiltration, privilege abuse, and drift
+Enforce least privilege for agents, tools, and credentials
+Intent-level policy enforcement: control what agents do, not just what they access
+I'm a security leader rolling out Claude Code and other AI agents across my company. What security controls should I evaluate?
+Before you roll out Claude Code or any other agent, six controls are worth evaluating, from finding every agent running on your endpoints to keeping a record an auditor will accept. Certiv does all six from a single endpoint agent.
+The AI Agent Policies Certiv Enforces. Every AI agent assurance rule Certiv enforces before an agent action runs, and what it protects against.
+Certiv is an AI agent assurance platform that authorizes an agent's actions before they execute, allowing or blocking each tool call right on the endpoint where the agent runs.
+When an OpenAI Agent Escaped Its Sandbox. Why endpoint runtime enforcement stops an escaped agent before it can act.
+The runtime security platforms worth shortlisting for enterprise AI agents actually stop a bad action instead of logging it after the fact, and Certiv does that on the endpoint by clearing every agent action before it runs.
+The Rules That Matter for Codex and Claude Code. Why the rules for the bypass modes teams actually use define the real security posture.
+The way to stop an AI agent from exfiltrating data or doing something unsafe is to check each action against policy before it runs, since an alert that fires afterward can't call back data that has already left.
+AI Agent Gateway vs AI Agent Assurance. Compare an AI agent gateway with AI agent assurance for agent coverage, execution context, pre-execution policy, and off-network control at the endpoint.
+An AI firewall filters prompts and responses as they cross the network, AI governance writes down policy and reports on risk after the fact, and AI agent runtime control allows or blocks each action as the agent tries to take it. Certiv is in that last category.
+Not All AI Agent Security Solutions Are the Same. Vendors claim visibility over AI agents, but their architectures diverge in ways that have real consequences for what you can actually see and stop.
+Certiv provides AI Agent Assurance for the endpoint: shadow discovery, real-time monitoring, and pre-execution policy enforcement for every AI agent installed on your endpoints. Works with any model, framework, or tool.
+Certiv discovers every agent, copilot, and automation installed on the endpoint, sanctioned or shadow. Real-time monitoring of reasoning chains, tool calls, and data flows. Visibility proxies, EDR, and observability tools can't match.
+Yes. Certiv enforces policy at execution, not after. Organizations define what agents can do, access, and call, and when. Certiv blocks, pauses, or steers risky actions before damage occurs.
+Certiv deploys on macOS, Windows, Linux, and containers. It sits at the point of intent on the endpoint, so it works with hosted models, local models, any agent framework, and any tool, without needing to route traffic through a network proxy.
+EDR sees processes but not agent intent. A CASB sees sanctioned SaaS but not local-model or shadow agents. Network proxies miss the point of intent, local tools, and endpoint context. Certiv sits where the agent reasons and acts, so it sees the semantic behavior those tools cannot: reasoning chains, tool calls, and data flows across every agent on the endpoint.
+Certiv discovers every agent, copilot, and automation installed on the endpoint, sanctioned or not, including agents running against local models that never touch the network. Continuous discovery keeps the inventory current as employees install new tools, so security and IT teams see the full agentic footprint instead of only what passes through a gateway.
+Yes. Certiv is designed to complement EDR, CASB, SIEM, and identity providers rather than replace them. It adds the missing runtime layer for AI agents: semantic visibility and pre-execution enforcement that existing controls were not built to provide, and it forwards signals so your team can investigate agent behavior alongside the rest of your stack.
+Because Certiv authorizes model requests and tool calls before they run, it produces a continuous, queryable record of what every agent attempted, what policy decided, and what actually happened. Security teams use that record to prove governance continuously, investigate incidents, and demonstrate control over the agentic workforce to auditors.
+Certiv discovers and governs MCP usage on the endpoint. When an agent connects to an MCP server or calls an MCP tool, Certiv sees that connection in its runtime context and can authorize, pause, or block the tool call before it executes.
+Ready to put your agents to work with confidence? See which agents are running, what they can access, and how Certiv stops risky actions before they execute.

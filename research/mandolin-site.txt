@@ -1,0 +1,60 @@
+Mandolin | Precision automation for specialty drugs
+Mandolin raises $40M to automate access to life-saving medicines.
+Blog Company
+Get in Contact
+Precision automation
+for specialty drugs
+Mandolin replaces fragmented workflows with AI agents that execute the end-to-end lifecycle, including intake, benefits, prior authorizations, and revenue cycle management. Increase throughput without increasing headcount.
+Get in Contact
+Scale profitability while improving quality of care
+Increase speed, increased revenue
+Faster benefits checks and authorizations lead to more completed treatments, quicker payments, and stronger top-line growth.
+Reduce bad debt and overhead
+Automated accuracy ensures coverage is verified and payments are collected — cutting manual work and preventing revenue leakage.
+Elevate patient experience
+Faster intake and approvals means that patients have clearer expectations and fewer delays.
+Back office full of your best employee
+AI models now perform the labor historically found in a back office: Navigating systems, reading faxes, making phone calls, and reasoning with data. Mandolin is the first and only company designed from the ground up to cover the end-to-end back office tasks for administering specialty drugs.
+Our results speak for themselves
+Mandolin helps infusion centers accelerate authorizations, reduce denials, and unlock more revenue — all without adding staff. Explore real-world case studies showing how clinics are scaling profitably while improving patient access and experience.
+24x
+increase in speed
+Previously, staff processed an average of 250 documents per day manually, with each document taking 20 minutes and up to 3 days to make it into the EHR. With Mandolin’s AI agents, that same workflow now takes just 3 minutes per document, with end-to-end turnaround under 2 hours — a 24x improvement in speed. What once required over 100 full-time staff has become a streamlined, automated process, enabling faster patient starts and a more efficient back office.
+CEO, national AIC company
+0
+day backlog
+Mandolin eliminated a 4-day prescription backlog by automating intake workflows that previously relied on 2–3 full-time staff. Before go-live, the team processed 200–300 new prescriptions per day manually, spending 10–12 minutes per Rx and struggling to stay ahead. Now, the backlog is zero, and prescriptions are processed in real time — accelerating patient access and freeing up staff to focus on higher-value clinical tasks.
+SVP of Operations, top 20 specialty pharmacy
+13
+Outsourced FTEs
+Mandolin’s automation enabled a national AIC to scale to 4,500+ patients/month while refocusing 13 outsourced roles on complex cases instead of repetitive task. By replacing fragmented, labor-intensive workflows with AI agents, they streamlined operations, reduced overhead, and accelerated time to therapy — all without increasing headcount.
+Director of FP&A, national AIC company
+Workflows , not widgets
+No APIs. No integrations. Every step, fully automated.
+Intake & Onboarding
+Mandolin instantly reads, interprets, and acts on referral forms, lab reports, and clinical notes — regardless of formatting or source and enters it into your EHR.
+Benefits Verification
+Mandolin performs full benefits investigations by navigating payer portals, extracting eligibility data, and making outbound calls — just like a trained back-office specialist.
+Patient Out-Of-Pocket Estimation
+Calculates patient out-of-pocket costs with precision — factoring in real-time benefits, site-specific fee schedules, co-pay assistance, GPO and 340B pricing, and drug acquisition costs.
+Medical Policy Review & Prior Authorization
+Compares medical policy requirements with patient charts then compiles and submits prior auths via portals, faxes and phone calls.
+Claims Statusing and Appeal Automation
+Tracks claim status automatically by making portal checks or payer calls then interpreting remits so your team doesn’t spend hours chasing for updates.
+Fully Compliant,
+Always Transparent
+Mandolin is built with compliance at its core — every action our AI agents take is logged, traceable, and aligned with payer requirements and healthcare regulations.
+Let’s talk
+We'll be in touch within 24 hours.
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Company
+Blog Careers
+Contact
+info@mandolin.com 2261 Market Street
+STE 86638
+San Francisco, CA 94114
+Social
+LinkedIn
+© 2025 Coral Automation, Inc.
+Privacy Policy

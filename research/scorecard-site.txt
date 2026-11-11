@@ -1,0 +1,9 @@
+NOTE: Not verbatim. WebFetch declined verbatim reproduction and direct HTTP to the site is blocked by the egress proxy (403). Closest available extraction of homepage content, fetched 2026-10-17.
+
+Source: https://scorecard.io
+Scorecard: platform for testing and improving AI agents. Main pitch: run your agent through thousands of realistic scenarios and get feedback in minutes.
+- Experiments: lab for testing ideas quickly, with a Playground for hands-on testing.
+- Prompt management: versioned prompts stored in one shared place, with history of what worked.
+- Metrics: validated metric library with industry benchmarks; customize or create new metrics.
+- Pre-launch testing: structured tests at scale (10,000 scenarios mentioned) before shipping; deploy agents without working in an IDE.
+- CTAs: Book a demo, newsletter. Nav: product, pricing, docs, blog, careers.

@@ -1,0 +1,337 @@
+Medsense Health — Operational infrastructure for pharmacy clinical services
+Platform
+Platform overview
+The unified operating layer for pharmacy clinical services.
+Clinical Operations
+Trained operators who run the workflow alongside your team.
+Provider Network
+State medical groups, CPAs, and 100M+ covered lives.
+For patients
+How patients find a program — covered by many plans.
+Programs
+All programs
+How clinical programs come together at your pharmacy.
+Medication Adherence
+Real-time PDC tracking, RTM revenue line.
+Hypertension
+RPM with home BP cuffs.
+Diabetes
+RPM with glucose monitoring.
+Weight Management
+RPM + GLP-1 support.
+Pricing
+Customers
+Case studies
+Pharmacy partners and measured outcomes.
+ROI calculator
+Project encounters and clinical revenue.
+Resources
+About us
+The team, the thesis, the operating principles.
+Industry partners
+Associations, networks, and pharmacy technology partners.
+News & field notes
+Press, partnerships, product, and operational essays.
+Resources
+Guides, playbooks, and cheat sheets for pharmacy teams.
+For patients
+Sign in
+Schedule a demo
+→
+Now serving
+500+
+pharmacies nationwide
+A recurring clinical revenue line for improving outcomes.
+Operational in weeks.
+Medsense handles enrollment, monitoring, and billing. Your pharmacy runs the monthly care management review call and documentation — and earns $25 per enrolled patient, per month. No new staff, no reimbursement risk.
+Schedule a partnership demo
+→
+Explore the platform
+Avg. adherence · RTM cohort
+88.3%
++1.2pt
+Patient encounters · Nov
+1,184
++18%
+OPS
+PT
+RX
+RPT
+$
+Pharmacy Operations
+Riverside Pharmacy · This month
+Live
+Enrolled
+412
++24
+Adherence
+88.3%
++1.2pt
+Encounters
+1,184
++18%
+RTM revenue
+$58.2k
++11%
+Enrollment · 30 days
+All programs
+Today’s intervention queue
+12 open
+Patient
+Program
+Trigger
+Owner
+Status
+EM
+E. M.
+RPM · HTN
+BP &gt; 160 / 100
+Medsense Care
+Outreach
+RD
+R. D.
+RTM · Adherence
+3-day miss · Metformin
+Medsense Care
+Pharmacist
+JK
+J. K.
+RTM · Adherence
+Refill due · 2d
+Pharmacy
+Resolved
+We optimize the delivery of clinical services through these industry leaders
+How it works
+A turnkey path from enrollment to revenue.
+Medsense delivers the technology, workflows, and clinical operations to stand up a revenue-generating monitoring or adherence program in weeks — not quarters.
+01 / Identify
+Patient identification & program matching
+We review your panel, match patients to the program that fits, and route them into onboarding.
+02 / Enroll
+Onboarding & consent
+Outreach, scheduling, and informed consent handled by our clinical operations team — with full audit trail.
+03 / Operate
+Monitoring & intervention
+Connected devices stream adherence and physiologic data. Triggered events become pharmacist or care-team interventions.
+04 / Earn
+Pharmacy revenue
+Medsense handles documentation, billing, and payer claims under our clinical entity. Pharmacies earn a flat $25 per enrolled patient, per month, per program for the monthly care management review call and documentation — no billing complexity, no reimbursement risk.
+Revenue enablement
+Turn medication adherence into a scalable clinical service line.
+RTM and RPM are Medicare Part B revenue lines — not one-off pilots. Medsense lets you operate them at panel scale, without rebuilding clinical, technical, or operational capacity.
+Revenue-generating monitoring programs aligned to RTM and RPM clinical services.
+Recurring revenue per enrolled patient, with predictable encounter cadence.
+Per-program economics surfaced live in your operations dashboard.
+Encounter capture and time tracking built into pharmacist workflows.
+See pharmacy economics
+→
+Revenue summary
+Q3 · Riverside Pharmacy
+YoY +42%
+Billable encounters
+3,412
+PMPM · care management review
+$25
+Net program revenue
+$85.3k
+By program
+Med adherence
+$34.2k
+Hypertension
+$22.5k
+Diabetes
+$17.5k
+Weight management
+$11.1k
+What your pharmacy keeps
+What Medsense operates
+Patient relationships
+✓
+Patient identification & program matching
+Pharmacist clinical judgment
+✓
+Outreach, scheduling, enrollment
+Final intervention & documentation
+✓
+Onboarding & device logistics
+Storefront workflows
+✓
+Adherence & physiologic monitoring
+Local relationships with prescribers
+✓
+Provider coordination & routing
+Revenue capture
+✓
+Documentation, billing, reporting
+Operational outsourcing
+We handle the operational complexity so pharmacies can focus on patient care.
+Medsense isn’t a software vendor. We run the program with you — with a dedicated clinical operations team that owns outreach, onboarding, monitoring, and billing workflows.
+Patient outreach and onboarding handled end-to-end.
+24/7 monitoring with pharmacist-routed intervention triage.
+Provider coordination and intervention tracking.
+Encounter documentation captured automatically — Medsense handles the claim.
+Inside our clinical operations
+→
+Platform
+A clinical infrastructure platform — not a device catalog.
+Workflow orchestration, patient engagement, monitoring, and reporting in one operational system, designed around pharmacy economics.
+▦
+Operations dashboards
+KPI cards, intervention queues, and program health visible across pharmacy and operator views.
+↯
+Workflow orchestration
+Identification, matching, onboarding, monitoring, and intervention in one workflow.
+◍
+Patient engagement
+Adherence, scheduling, and check-in flows across mobile, voice, and SMS — routed to clinical staff when intervention is needed.
+⌬
+Provider connectivity
+Bi-directional updates with prescribers, payers, and care teams — without bolt-on integrations.
+∑
+Analytics & reporting
+Adherence, intervention, encounter, and revenue analytics — per program, per pharmacy, per cohort.
+⊡
+Monitoring infrastructure
+Connected adherence sensors, smart pill organizers, and cellular hubs — framed as infrastructure, not gadgets.
+Explore the platform
+→
+Integrated ecosystem
+Hardware, software, and clinical operations as one operating layer.
+Devices and patient touchpoints feed a unified workflow engine, surfacing actionable events to the right clinical owner — with provider connectivity and revenue built in.
+Patient layer
+Devices
+SmartBox & pill organizers
+Hub
+Cellular gateway
+Engagement
+Patient mobile & SMS
+Caregivers
+Notifications & visibility
+Medsense Platform
+Workflow & clinical operations engine
+Orchestrates patient identification, program matching, monitoring, intervention, documentation, and billing.
+Match
+Monitor
+Intervene
+Earn
+Clinical layer
+Pharmacy
+Pharmacist workspace
+Providers
+Prescriber & care-team relay
+Operators
+Medsense Clinical Ops
+Payers
+500+ contracted plans
+Outcomes
+Operationally sophisticated. Clinically credible. Built to scale.
+250
+K+
+Med events / month
+Adherence and monitoring events captured across the network.
+10
+M+
+Events monitored to date
+Cumulative across all Medsense programs since inception.
+88
+%
+Average adherence
+Across enrolled RTM cohorts (12-mo blended).
+500+
+Pharmacies live
+Independents, regional groups, and pharmacy networks.
+Provider network
+500
++
+Payer contracts · nationwide revenue infrastructure
+Medsense provides access to a payer-connected provider network, with revenue pathways already negotiated — so pharmacies launch earning from day one, not waiting on paperwork.
+Explore the provider network
+→
+ME
+AK
+VT
+NH
+WA
+MT
+ND
+MN
+WI
+MI
+NY
+MA
+CT
+RI
+OR
+ID
+WY
+SD
+IA
+IL
+IN
+OH
+PA
+NJ
+DE
+CA
+NV
+UT
+CO
+NE
+MO
+KY
+WV
+VA
+MD
+DC
+HI
+AZ
+NM
+KS
+AR
+TN
+NC
+SC
+OK
+LA
+MS
+AL
+GA
+TX
+FL
+From the field
+“We were trying to launch RTM ourselves for almost a year. With Medsense, we had a real revenue-generating program live within six weeks — and we didn’t have to hire a single new staff member to run it.”
+DM
+Dana M.
+· Owner, Cedar Apothecary
+Add a clinical revenue line to your pharmacy.
+Bring us your panel and your goals. We’ll come back with a program plan, an economic model, and a launch timeline.
+Schedule a partnership demo
+→
+Talk to our team
+The operational infrastructure layer powering modern pharmacy clinical services.
+Platform
+Operations dashboards
+Workflow orchestration
+Patient engagement
+Analytics & reporting
+Solutions
+Independent pharmacies
+Regional and chain
+Clinical operations
+Network
+Provider network
+Partnerships
+Company
+About
+Insights
+News
+Contact
+© 2026 Medsense Health, Inc. · HIPAA-aligned operations
+Team sign in
+Your Privacy Choices
+Privacy & legal
+Medsense Health uses cookies, analytics, and advertising pixels (Google Analytics, Meta Pixel, HubSpot) to operate the site and reach pharmacies that may benefit from our services. California residents can review or update their tracking preferences via
+Your Privacy Choices
+or by contacting
+contact@medsense.health
+.

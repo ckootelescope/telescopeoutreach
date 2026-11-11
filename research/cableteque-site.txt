@@ -1,0 +1,156 @@
+[SOURCE: https://cableteque.com/ homepage and /about, get_page_text, verbatim, captured 2026-10-17]
+
+Quote Wire Harnesses
+70% Faster - Win More Business
+
+Cableteque is the AI-powered quoting software built exclusively for wire harness and cable assembly manufacturers. Forward an RFQ package and get an accurate, customer-ready quote in days, not weeks.
+
+Book a Live Demo →
+See the Product
+
+Trusted by 100+ leading harness manufacturers
+FOR WIRE HARNESS & CABLE ASSEMBLY MANUFACTURERS
+Quoting is how you win more work. Make it your competitive advantage
+
+Slow quotes cost you new business. Bad quotes cost you margin. Fix both with Cableteque.
+
+Respond before competitors do
+Turn quotes around in days, not weeks, and win new business you're currently losing on timing.
+Quote accurately, every time
+Know your real costs on materials and labor before you send a quote to a customer.
+Handle more work without adding headcount
+Grow your quoting capacity without growing your team.
+Get a Demo
+100+
+Customers
+Wire harness manufacturers quoting in Cableteque
+500+
+Users
+Estimators, engineers and buyers using it every day
+100K+
+Quotes per year
+processed through Cableteque
+10M+
+Parts in the library
+2M with full datasheet-level detail
+HOW IT WORKS
+From customer drawing to winning quote
+01
+Forward the RFQ
+Send the customer's email or package as it arrives. Cableteque AI builds the BOM and wire list and flags what the customer didn't define.
+02
+Price every part
+Live contract pricing from your distributors, plus your ERP inventory and price lists. The best offer is picked by your rules.
+03
+Fill your labor template
+Your work centers and time standards, counted from the BOM and wire list the way your engineers count.
+04
+Send the quote
+Set margins across every quantity break and send a customer-ready quote.
+Explore the Product
+BUILT ON MORE THAN AI
+The engine behind every Cableteque quote
+CABLETEQUE AI
+The first AI built for wire harnesses
+Cableteque AI reads the whole quote package including information on and off the drawing, and creates a BOM, a wire list and a short list of review items.
+See Cableteque AI
+CABLETEQUE COMPONENT LIBRARY
+10 million parts. 2 million with full datasheet detail.
+Cableteque Component Library knows what every part is, what its attributes are, which cavity components work with it, what it mates with, and what tooling it needs. Maintained by dozens of librarians.
+Explore the library
+CONNECTED SUPPLY CHAIN
+Every major distributor, at your negotiated price
+Cableteque's material sourcing connects with 30+ distributors using your own API keys so you get your contract prices, plus your ERP inventory, Excel price lists and supplier RFQs read by Cableteque AI. The best offer is picked automatically.
+See all integrations
++ 30 others
+AFTER YOU WIN THE ORDER
+Your quote data keeps working
+Every Cableteque quote is built on structured data, not a spreadsheet. When the job is won, that data is ready to go wherever your team needs it, with nothing retyped.
+ONE QUOTE
+One source of truth
+Bill of materials
+Wire lists
+Labor routing
+Material costs
+Quantity breaks
+ERP & CRM
+Items, BOMs, routings and costs for work orders, purchasing and inventory, with quote values and history on every opportunity.
+Manufacturing floor
+The same BOM, wire lists and labor routing your team builds from, ready for cut lists, formboards and work instructions.
+CUSTOMER STORIES
+Wire harness manufacturers that quote faster and win more business
+"It’s astonishing how quickly our metrics changed. Before Cableteque, a normal quote took at least five days, and when things got busy, the queue could mean waiting a month just for a quote. Now, we’ve cut that time in half, and the backlog is gone, even during our busiest months."
+Kelly Grato
+Resco Electronics
+"We were quoting on average a week to week-and-a-half turnaround on an average size package. It's honestly two to three days using Cableteque. It took us from a position where we always had in our minds that we need to hire additional quoting personnel, to now we don't even think about that as one of our initiatives. I could probably do five times as many quotes as we're doing now without needing to hire additional people"
+Derrick Lang
+Carr Manufacturing Company
+"The proof is in the pudding. When you actually use it and recognize what it will do, you won't need me to tell you. You'll be able to see it. We thought we heard about what it would do, and we just sat and thought, 'No, it really can't do all that.' And when it could, it blows your mind away."
+Benjamin LeClair
+S&Y Industries
+View all case studies
+WHY CABLETEQUE
+Wire Harness Software by Wire Harness People
+The right tools didn't exist. So the people who lived the problem built them.
+35 years in the industry
+Arik Vrobel owned and operated El-Com Systems for 35 years, a wire harness manufacturer he sold to Aptiv. He created Cableteque because he'd lived the problem firsthand.
+60+ wire harness & software experts
+Solving wire harness problems is all we do. We ship new features constantly — built around the problems wire harness manufacturers deal with.
+The #1 quoting software for wire harness & cable assembly
+More than 100 manufacturers and 500+ users process over 100,000 quotes a year through Cableteque.
+About Us
+SECURITY & COMPLIANCE
+Built for the programs that demand it
+Cableteque is designed for the security requirements of defense and aerospace wire harness manufacturers, without slowing your team down.
+FedRAMP Ready (legacy) — Cableteque is listed on the FedRAMP Marketplace and undergoing full FedRAMP Moderate Equivalency
+ITAR registered — registered with the U.S. State Department
+AWS GovCloud — defense programs run on CabletequeGov with U.S.-only data residency
+U.S. persons only — only U.S. persons can access CabletequeGov and its data
+Your data stays yours — no customer data is shared or used to train/fine-tune LLMs
+See our security
+CABLETEQUEGOV
+A dedicated environment on AWS GovCloud
+For CUI and ITAR-controlled programs, with access limited to U.S. persons.
+Ready to quote fasterand win more business?
+Book a 30-minute demo. See a quote built live from your own drawings.
+Book a Live Demo →
+See the Product
+Frequently asked questions
+What is Cableteque?
+Who is Cableteque for?
+How is Cableteque different from Excel, an ERP or a generic quoting tool?
+How much faster is quoting with Cableteque?
+How much does Cableteque cost?
+Is Cableteque secure enough for defense work?
+How long does onboarding take?
+
+=== /about ===
+ABOUT CABLETEQUE
+Wire harness software by
+Wire harness people
+Cableteque was created by people from the industry to solve the problems they faced for decades.
+50+
+Wire harness & software experts on our team
+35 yrs
+of running a wire harness manufacturer
+100+
+Wire harness manufacturers quoting with Cableteque
+Get Demo
+THE FOUNDING STORY
+He built a wire harness company. Then he built the tools it needed.
+Arik Vrobel spent 35 years running El-Com Systems, an Aerospace and Defense wire harness manufacturer he built from the ground up.
+When he sold El-Com to Aptiv, he didn't walk away from the industry. He started asking a different question: why don't the right tools exist?
+Cableteque is the answer. 50+ wire harness and software experts, all working on one problem — because nobody else was going to solve it.
+See Our Vision →
+NEWS
+Latest News from Cableteque
+NEWS RELEASE: OCTOBER 2026
+Cableteque wins Best Enterprise or B2B Technology Innovation at the 2026 OCTANE High Tech Awards
+NEWS RELEASE: SEPTEMBER 2026
+Cableteque Brings AI-Powered Wire Harness Quoting Platform to Europe
+NEWS RELEASE: AUGUST 2026
+Cableteque Joins the FedRAMP® Marketplace as the only AI-Powered Wire Harness Operating System
+HOW WE WORK
+Pioneering / Insightful / Agile
+THE TEAM
+Arik Vrobel, Founder & CEO. Viktoras Kovaliovas, CTO. Ofer Amram, CFO. Prarthana Gupta, Director of Customer Success. Joel Pointon, Director of Product. Yuval Aronoff, Director of Data & Security. Aidan Vrobel, Director of Sales.

@@ -1,0 +1,76 @@
+Source: https://okareo.com/ (homepage visible text, captured 2026-10-17 via browser get_page_text; demo-widget fragments condensed)
+Title: Okareo. Simulate real users. Ship reliable voice and text agents.
+
+SYNTHETIC USERS. LIVE
+Simulate real users.
+Ship reliable voice agents.
+
+Watch a synthetic driver call your voice agent in Spanish, switch to English mid-call, and trip an edge case before it ever reaches a customer.
+
+VOICE / TEXT / HEADLESS
+Start for Free | Book a demo
+10k+ edges found this week | 30+ languages & dialects | ∞ parallel drivers
+
+TRUSTED BY TEAMS SHIPPING REAL AGENTS
+From global enterprises to fast-moving startups
+
+SYNTHETIC USERS
+Drivers act like real users. Not like scripts.
+A Driver is a synthetic user with personality, context, and a goal. They interact with your agent across long, multi-turn conversations and expose edges your QA scripts won't — at a scale your team can't match by hand.
+LEARN HOW DRIVERS WORK
+
+DRIVERS · 12 ACTIVE · 3 FOUND EDGES
+FRUSTRATED RETURNER: "It's been 31 days. ONE day past your policy. Are you serious?" en-US · 22 turns · edge
+CONFUSED SENIOR: "Hello? Is anyone there? I think I pressed something." en-US · 14 turns · passed
+POWER USER: "Skip the intro. I need invoice history for Q3 in CSV." en-US · 9 turns · passed
+BILINGUAL SWITCHER: "Hola, my husband's on the line — can we switch to English?" es→en · 17 turns · edge
+
+[Demo transcript: caller reports undelivered order in Spanish with traffic noise, switches to English; trace shows stt.transcribe, router.classify, lang.detect, policy.lookup, order.fetch, tts.synthesize, vad.segment, switch.detect (failed), prompt.build, db.query, audio.encode, auth, llm.haiku, llm.sonnet, eval.judge, stream.flush]
+
+30+ languages & locales | noise · crosstalk · clipping | one timeline, three views
+
+VOICE
+Voice agents, tested like real calls.
+Synthetic callers in 30+ languages, with the noise and clipping and crosstalk your real customers actually call from. Audio, transcript, and trace land on the same timeline — so Conversation Designers and Engineers debug the same call, in the same view.
+EXPLORE VOICE
+
+EXPLORATION
+Tests verify.
+Drivers explore.
+Traditional QA writes scripts and asserts on outcomes you already know to check. Drivers don't have a script — they have personality and a goal, and they wander. What you get back is a map of every behavior your agent actually has, including the ones nobody could have written down beforehand.
+"In the first run we found 47 edges across our 12 happiest paths. Six of them were already shipping in production."
+EDGES DISCOVERED BY DRIVERS, NOT BY YOUR TEAM
+
+EVAL IN CI
+Gate every PR on real conversations.
+Run synthetic-user simulations on every commit. No more vibe testing. Catch regressions in tone, policy, tool use, or routing before they ship — with judge, symbolic, and audio-based evals on the same scorecard.
+WIRE OKAREO INTO YOUR CI
+[Demo PR #284 feat(voice): add bilingual switch handling — okareo sim text agent (40 drivers), voice agent (12 drivers), eval bilingual_switcher failed; 1 of 14 scenarios regressed — merge blocked.]
+
+PRODUCTION failed call -> TEST LIBRARY +1 scenario -> NEXT PR eval gate -> DEVELOPMENT fix -> ship. closed loop.
+CLOSED LOOP
+Production failures become tests.
+Every escaped failure in production becomes a synthetic scenario that runs on your next PR. Your test library gets stronger every week — without anyone hand-writing new tests. The agents that survive Okareo don't just ship; they get harder to break.
+SEE THE LOOP
+
+Your AI shouldn't be a black box.
+Unlock visibility today.
+Get Started | Talk to us
+
+WORKS WITH YOUR STACK
+WHAT YOU GET
+Why teams pick Okareo.
+Six things Okareo does that the rest of the category doesn't. Or can't.
+01 / MODALITY — Voice and text, one platform. Stop switching tools when modalities change.
+02 / COVERAGE — Find edges, not just bugs. Synthetic users explore behaviors humans wouldn't think to try.
+03 / DEBUG SURFACE — Trace and transcript, one view. Designers and engineers debug the same call.
+04 / WORKFLOW — Eval on every PR. Wire Okareo into CI. Gate releases on real conversation quality.
+05 / LOOP — Production feeds development. Failed real calls become tomorrow's test scenarios.
+06 / TEAM — Built for cross-functional teams. Conversation Designers, Engineers, ML, and QA in one workspace.
+Learn More
+
+May 8, 2026 — Introducing compliance-owasp: OWASP LLM Top 10 and Agentic AI Top 10 testing on Okareo
+February 20, 2026 — Why Evals Are the CI/CD Pipeline for Agentic AI
+
+Footer: Website (Synthetic Users, Voice Agents, Agent Monitoring, Evaluation, Eval in CI) | Use Cases (Voice Agents, Agentic AI, RAG, MCP) | Developer (Blogs, Docs, App Login) | Company (Privacy Policy, Contact us, LinkedIn, Pricing, Jobs @ Okareo)
+Copyright ©2026 Okareo. All rights reserved.

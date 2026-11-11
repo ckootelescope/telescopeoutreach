@@ -1,0 +1,45 @@
+Safe, trustworthy AI tools for Emergency Management
+Trusted by Emergency Managers nationwide
+Learn how EM1 accelerates agencies in blue and grey skies
+Modernizing Emergency Plans Before Outdated Binders Became a Liability
+How a four-person EMAP-accredited team north of Columbus uses EM1 to catch plan contradictions, streamline after-action reports, and query resources from the field.
+Staying Ahead of Hazmat Compliance When Manual Tracking Hit Its Limit
+How Illinois' fourth-largest county uses EM1 to review 620 Tier II facility plans, build auditable compliance records, and pursue EMAP accreditation, all with a staff of 15.
+When Student Safety Can't Wait for a Playbook
+How a 1.5-person emergency management office used EM1 to build a campus EpiPen program from scratch, with no existing higher-ed template to follow.
+Your agentic, all-knowing intern
+Curious to competent. EM1's agentic assistant thinks about how to best accomplish your task using the assets at its fingertips.
+Multi-step projects. Watch the agent as it builds a to-do list and works through your project step by step.
+Vetted answers. EM1 grounds every answer in vetted sources: the Knowledge Base, EM1 Library, and Trusted Web Sites
+Transparent and fast. See exactly which source supplied answer context, with a single click to auto-scroll directly to the source content.
+No prompt experience required. EM1 enhances your prompt, teaching you along the way
+Knowledge base. Bring life to your plans, policies & procedures
+Unlimited storage. Create your agency's true institutional knowledge.
+Large document support. 1,000+ page plans, no problem.
+Your data, protected. All data is protected from model training and EM1 will never use your data without consent.
+EM1 Library. The industry's doctrine and lesson learned
+One of a kind. The go-to place to find doctrine, standards, examples, and templates.
+Share amongst peers. Enable peers to leverage your hard won lessons by sharing to the library.
+Curated by hand, always up to date. Every document is hand-picked and updated by EM1's team of career emergency managers.
+FEMA CISA REMS ICS NQS NIMS Integrating knowledge from
+Crosswalks. AI assisted plan reviews and compliance checks
+Industry specific standards. Assess against pre-built crosswalks for EOPs, HMPs, School Safety, Tier 2, and more.
+Human in the loop. EM1's tools allow for human intervention to adjust status and add notes.
+Audit ready. Export assessments to PDF to send to a counterpart or to meet statutory audit requirements.
+Accelerate accreditation. Work toward accreditation faster with off-the-shelf standard.
+CPG101 HMP CWPP ESFs NQS NIMS Built-in crosswalks including
+Get your first scorecard. Submit your EOP or HMP for a free evaluation
+Who built EM1?
+Will the documents we provide be used exclusively for our municipality, or could our documents be utilized for other purposes or entities?
+Is EM1 using LLMs? Did EM1 train its AI model, or use an existing model?
+If we terminate the contract before the end of the term, can we ensure the removal of our data from the platform?
+A letter from our CEO
+EM1 is not my first company. It will be my last.
+After building and selling my first company, I wanted to find something I could spend the rest of my life working on. Whatever it was, I wanted to know I was helping people.
+My research started with the weather and the rising count in billion dollar disasters. It's what the meteorologists kept saying that stuck: "Our partners in Emergency Management...".
+That's how I learned about our nation's one-stop-shop for disasters: a patchwork of unsung, uncelebrated heroes helping prepare, mitigate, respond, and recover across our country.
+With a broadening portfolio, and decreasing funding, Emergency Managers acknowledged they were not set up for success.
+The tools that exist are old, overpriced, and built without customer obsession. We intend to change that.
+If we're successful, we'll make the lives of EMs better and our citizens and communities safer and more resilient.
+The leading AI-enabled Solution for Emergency Management.
+Get started, accelerate your agency

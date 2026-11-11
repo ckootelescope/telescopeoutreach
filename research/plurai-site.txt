@@ -1,0 +1,9 @@
+NOTE: Not verbatim. WebFetch declined verbatim reproduction and direct HTTP to the site is blocked by the egress proxy (403). Closest available extraction of homepage content, fetched 2026-10-17.
+
+Source: https://plurai.ai
+Plurai: "AI Agent Trust Platform" for testing, evaluating and protecting production AI agents.
+- Simulation: generates realistic multi-turn test scenarios to cover edge cases, with CI/CD automation. Claims 15x edge-case coverage, 7x faster time to production.
+- Evals & Guardrails: builds small language model judges and guardrails tailored to the use case. Claims >43% fewer failures, >8x lower cost than GPT-5-mini, <100ms latency.
+- Research/open source: papers, blog, open-source IntellAgent evaluation framework on GitHub.
+- Claude integration: plugin for building evals from within Claude.
+- Logos under "trusted by developers": Microsoft, Google, NVIDIA, IBM, Red Hat. Cites Gartner market-guide mentions.
